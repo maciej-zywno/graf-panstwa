@@ -1,0 +1,3836 @@
+{
+ "chunk": "ministerstwa-G2",
+ "generatedAt": "2026-09-17",
+ "coverageNote": "Zakres: MSWiA i MS z organami podległymi/nadzorowanymi. MSWiA: KGP, KGSG, KG PSP, SOP, UdSC, ZER MSWiA, Biuro Nadzoru Wewnętrznego (Inspektor NW – organ z zał. do rozp. DU/2025/999), Rada ds. Uchodźców (obsługa KPRM → parent pl-kprm) oraz 4 jednostki podległe z wykazu M.P. 2023 poz. 1128 (NIST, CPD, ZZM, COPE). Pominięto: jednostki nadzorowane przez MSWiA (Akademia Policji, Akademia Pożarnicza, WSSG, CNBOP-PIB, MORATEX, PIM MSWiA, SP ZOZ-y – uczelnie/instytuty/podmioty lecznicze, poza zakresem rundy), RARS (wg strony MSWiA nadzorowana przez MSWiA – do rozstrzygnięcia z chunkiem urzedy-prm), Komisję Wspólną Rządu i ST (chunk ciala-doradcze), wojewodów (chunk wojewodowie), komendy wojewódzkie i jednostki terenowe. MS: CZSW, KSSiP, IWS, IES, AWS; pominięto Instytut Ekspertyz Ekonomicznych i Finansowych oraz Instytut Ekspertyz Medycznych w Łodzi, Muzeum Żołnierzy Wyklętych, okręgowe inspektoraty SW, zakłady karne/areszty, zakłady poprawcze, komisje kodyfikacyjne i rady przy MS, sądy powszechne i wojskowe (chunk sadownictwo; brak kanonicznego ID węzła zbiorczego – krawędź nadzoru administracyjnego MS nad sądami do dodania tam). Najnowsze obwieszczenie MSWiA o wykazie jednostek znalezione w ELI to M.P. 2023 poz. 1128 (nowszego brak w wynikach wyszukiwania ELI). Dyrektor KSSiP i Rektor AWS nie zweryfikowani (strony niedostępne/niepobrane). Daty powołania podano tylko tam, gdzie źródło je podaje (ministrowie – M.P. 2025 poz. 690; Boroń, Kuster – info.policja.pl; Roguska – biogram; członkowie Rady ds. Uchodźców – strona Rady).",
+ "nodes": {
+  "pl-ministerstwo-spraw-wewnetrznych-i-administracji": {
+   "id": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "type": "department",
+   "subtype": "ministry",
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Ministerstwo Spraw Wewnętrznych i Administracji",
+   "shortName": "MSWiA",
+   "description": "Urząd administracji rządowej obsługujący Ministra Spraw Wewnętrznych i Administracji, kierującego działami: administracja publiczna, sprawy wewnętrzne oraz wyznania religijne i mniejszości narodowe i etniczne. Utworzone rozporządzeniem RM z 20.11.2015 r. (Dz.U. poz. 1946); zakres działania ministra określa rozporządzenie PRM z 25.07.2025 r. (Dz.U. poz. 999).",
+   "aliases": [
+    "MSWiA",
+    "Ministerstwo Spraw Wewnętrznych"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 20 listopada 2015 r. w sprawie utworzenia Ministerstwa Spraw Wewnętrznych i Administracji, § 1 (Dz.U. 2015 poz. 1946)",
+    "url": "https://eli.gov.pl/eli/DU/2015/1946/ogl",
+    "act": "DU/2015/1946",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/mswia",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "42",
+   "parent": null,
+   "level": 1,
+   "head": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-czeslaw-mroczek",
+      "name": "Czesław Mroczek",
+      "positionId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+      "positionName": "Sekretarz Stanu w MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "Platforma Obywatelska",
+      "imageUrl": "https://www.gov.pl/photo/format/95e2c634-0b45-484c-ad00-f0cb9607c6ee/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/mswia/kierownictwo-mswia",
+      "startedAtSource": null,
+      "note": "Poseł na Sejm (biogram gov.pl)."
+     },
+     {
+      "id": "pl-tomasz-szymanski",
+      "name": "Tomasz Szymański",
+      "positionId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+      "positionName": "Sekretarz Stanu w MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/145d6ae0-2013-4bb8-b016-795a180a2273/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/mswia/kierownictwo-mswia",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-wieslaw-szczepanski",
+      "name": "Wiesław Szczepański",
+      "positionId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+      "positionName": "Sekretarz Stanu w MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "Nowa Lewica",
+      "imageUrl": "https://www.gov.pl/photo/format/9d1d36c6-2c8d-4779-bb5a-91a0b99e07d8/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/mswia/kierownictwo-mswia",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-magdalena-roguska",
+      "name": "Magdalena Roguska",
+      "positionId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+      "positionName": "Sekretarz Stanu w MSWiA",
+      "type": "appointed",
+      "startedAt": "2025-07-30",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/24c54c72-74c5-4137-8a6c-4e1deb2b91af/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/mswia/kierownictwo-mswia",
+      "startedAtSource": "https://www.gov.pl/web/mswia/magdalena-roguska",
+      "note": null
+     },
+     {
+      "id": "pl-wieslaw-lesniakiewicz",
+      "name": "Wiesław Leśniakiewicz",
+      "positionId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+      "positionName": "Podsekretarz Stanu w MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/fa03f7b0-70a7-47db-a7df-c05f11235aa6/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/mswia/kierownictwo-mswia",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-maciej-duszczyk",
+      "name": "Maciej Duszczyk",
+      "positionId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+      "positionName": "Podsekretarz Stanu w MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/bfee7502-4039-4c46-80fa-2b81fa0b5915/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/mswia/kierownictwo-mswia",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-katarzyna-jedruszczak",
+      "name": "Katarzyna Jędruszczak",
+      "positionId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+      "positionName": "Dyrektor Generalny MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/5cb28e07-63e1-4890-bc34-0e62c4d69ad0/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/mswia/kierownictwo-mswia",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1946/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl",
+     "https://www.gov.pl/web/mswia/kierownictwo-mswia"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-minister-spraw-wewnetrznych-i-administracji": {
+   "id": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Minister Spraw Wewnętrznych i Administracji",
+   "shortName": "Minister SWiA",
+   "description": "Członek Rady Ministrów kierujący działami administracji rządowej: administracja publiczna, sprawy wewnętrzne, wyznania religijne oraz mniejszości narodowe i etniczne (rozp. PRM Dz.U. 2025 poz. 999). Nadzoruje Policję, Straż Graniczną, PSP, SOP i Urząd do Spraw Cudzoziemców; dysponent części 17, 42 i 43 budżetu.",
+   "aliases": [
+    "Szef MSWiA",
+    "minister właściwy do spraw wewnętrznych"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Prezesa Rady Ministrów z dnia 25 lipca 2025 r. w sprawie szczegółowego zakresu działania Ministra Spraw Wewnętrznych i Administracji, § 1 (Dz.U. 2025 poz. 999)",
+    "url": "https://eli.gov.pl/eli/DU/2025/999/ogl",
+    "act": "DU/2025/999",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/mswia",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [
+    "administracja publiczna",
+    "sprawy wewnętrzne",
+    "wyznania religijne oraz mniejszości narodowe i etniczne"
+   ],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marcin-kierwinski",
+      "name": "Marcin Kierwiński",
+      "positionId": "pl-minister-spraw-wewnetrznych-i-administracji",
+      "positionName": "Minister Spraw Wewnętrznych i Administracji",
+      "type": "appointed",
+      "startedAt": "2025-07-24",
+      "acting": false,
+      "status": "verified",
+      "party": "Platforma Obywatelska",
+      "imageUrl": "https://www.gov.pl/photo/format/66497c9e-2934-4b1f-8321-d63aa85ab0bd/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/690/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 24.07.2025 r. (M.P. poz. 690); wcześniej szef MSWiA 13.12.2023–2024."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/999/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl",
+     "https://www.gov.pl/web/mswia/marcin-kierwinski"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komenda-glowna-policji": {
+   "id": "pl-komenda-glowna-policji",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komenda Główna Policji",
+   "shortName": "KGP",
+   "description": "Urząd obsługujący Komendanta Głównego Policji – centralny organ administracji rządowej właściwy w sprawach ochrony bezpieczeństwa ludzi oraz utrzymania bezpieczeństwa i porządku publicznego, podległy ministrowi właściwemu do spraw wewnętrznych (ustawa o Policji, art. 5). Kieruje ok. 100-tysięczną formacją Policji.",
+   "aliases": [
+    "Policja",
+    "KGP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 kwietnia 1990 r. o Policji, art. 5 ust. 1 (Dz.U. 2025 poz. 636 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1990/179/ogl",
+    "act": "DU/1990/179",
+    "article": "art. 5 ust. 1"
+   },
+   "officialUrl": "https://policja.pl",
+   "bipUrl": "https://bip.kgp.policja.gov.pl",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-komendant-glowny-policji",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-roman-kuster",
+      "name": "Roman Kuster",
+      "positionId": "pl-komenda-glowna-policji",
+      "positionName": "I Zastępca Komendanta Głównego Policji",
+      "type": "appointed",
+      "startedAt": "2024-06-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://info.policja.pl/inf/kierownictwo/komendanci",
+      "startedAtSource": "https://info.policja.pl/inf/kierownictwo/komendanci",
+      "note": null
+     },
+     {
+      "id": "pl-rafal-kochanczyk",
+      "name": "Rafał Kochańczyk",
+      "positionId": "pl-komenda-glowna-policji",
+      "positionName": "Zastępca Komendanta Głównego Policji",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://info.policja.pl/inf/kierownictwo/komendanci",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-tomasz-michulka",
+      "name": "Tomasz Michułka",
+      "positionId": "pl-komenda-glowna-policji",
+      "positionName": "Zastępca Komendanta Głównego Policji",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://info.policja.pl/inf/kierownictwo/komendanci",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/179/ogl",
+     "https://info.policja.pl/inf/kierownictwo/komendanci",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komendant-glowny-policji": {
+   "id": "pl-komendant-glowny-policji",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komendant Główny Policji",
+   "shortName": "Komendant Główny Policji",
+   "description": "Centralny organ administracji rządowej w sprawach ochrony bezpieczeństwa ludzi oraz utrzymania bezpieczeństwa i porządku publicznego; przełożony wszystkich policjantów. Powoływany i odwoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych (art. 5 ust. 3 ustawy o Policji).",
+   "aliases": [
+    "KGP",
+    "Szef Policji"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 kwietnia 1990 r. o Policji, art. 5 ust. 1 i 3 (Dz.U. 2025 poz. 636 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1990/179/ogl",
+    "act": "DU/1990/179",
+    "article": "art. 5 ust. 1 i 3"
+   },
+   "officialUrl": "https://policja.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-komenda-glowna-policji",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-boron",
+      "name": "Marek Boroń",
+      "positionId": "pl-komendant-glowny-policji",
+      "positionName": "Komendant Główny Policji",
+      "type": "appointed",
+      "startedAt": "2024-03-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://info.policja.pl/inf/kierownictwo/komendanci",
+      "startedAtSource": "https://info.policja.pl/inf/kierownictwo/komendanci",
+      "note": "gen. insp.; od 22.12.2023 p.o., od 21.03.2024 Komendant Główny Policji (info.policja.pl)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/179/ogl",
+     "https://info.policja.pl/inf/kierownictwo/komendanci",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komenda-glowna-strazy-granicznej": {
+   "id": "pl-komenda-glowna-strazy-granicznej",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komenda Główna Straży Granicznej",
+   "shortName": "KGSG",
+   "description": "Urząd obsługujący Komendanta Głównego Straży Granicznej – centralny organ administracji rządowej podległy ministrowi właściwemu do spraw wewnętrznych (art. 3 ust. 1 ustawy o Straży Granicznej). Straż Graniczna ochrania granicę państwową i kontroluje ruch graniczny.",
+   "aliases": [
+    "Straż Graniczna",
+    "SG",
+    "KGSG"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 12 października 1990 r. o Straży Granicznej, art. 3 ust. 1 (Dz.U. 2026 poz. 367 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1990/462/ogl",
+    "act": "DU/1990/462",
+    "article": "art. 3 ust. 1"
+   },
+   "officialUrl": "https://www.strazgraniczna.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-komendant-glowny-strazy-granicznej",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-tomasz-michalski",
+      "name": "Tomasz Michalski",
+      "positionId": "pl-komenda-glowna-strazy-granicznej",
+      "positionName": "Zastępca Komendanta Głównego Straży Granicznej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.strazgraniczna.pl/pl/straz-graniczna/kierownictwo-sg",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-grzegorz-niemiec",
+      "name": "Grzegorz Niemiec",
+      "positionId": "pl-komenda-glowna-strazy-granicznej",
+      "positionName": "Zastępca Komendanta Głównego Straży Granicznej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.strazgraniczna.pl/pl/straz-graniczna/kierownictwo-sg",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-wioleta-gorzkowska",
+      "name": "Wioleta Gorzkowska",
+      "positionId": "pl-komenda-glowna-strazy-granicznej",
+      "positionName": "Zastępca Komendanta Głównego Straży Granicznej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.strazgraniczna.pl/pl/straz-graniczna/kierownictwo-sg",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/462/ogl",
+     "https://www.strazgraniczna.pl/pl/straz-graniczna/kierownictwo-sg",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komendant-glowny-strazy-granicznej": {
+   "id": "pl-komendant-glowny-strazy-granicznej",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komendant Główny Straży Granicznej",
+   "shortName": "Komendant Główny SG",
+   "description": "Centralny organ administracji rządowej podległy ministrowi właściwemu do spraw wewnętrznych, przełożony wszystkich funkcjonariuszy Straży Granicznej. Powoływany i odwoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych (art. 3 ust. 2 ustawy o SG).",
+   "aliases": [
+    "Komendant Główny SG"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 12 października 1990 r. o Straży Granicznej, art. 3 ust. 1–2 (Dz.U. 2026 poz. 367 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1990/462/ogl",
+    "act": "DU/1990/462",
+    "article": "art. 3 ust. 1–2"
+   },
+   "officialUrl": "https://www.strazgraniczna.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-komenda-glowna-strazy-granicznej",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-robert-bagan",
+      "name": "Robert Bagan",
+      "positionId": "pl-komendant-glowny-strazy-granicznej",
+      "positionName": "Komendant Główny Straży Granicznej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.strazgraniczna.pl/pl/straz-graniczna/kierownictwo-sg",
+      "startedAtSource": null,
+      "note": "gen. dyw. SG; data powołania nie podana na stronie SG."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/462/ogl",
+     "https://www.strazgraniczna.pl/pl/straz-graniczna/kierownictwo-sg",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komenda-glowna-panstwowej-strazy-pozarnej": {
+   "id": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komenda Główna Państwowej Straży Pożarnej",
+   "shortName": "KG PSP",
+   "description": "Urząd obsługujący Komendanta Głównego Państwowej Straży Pożarnej – centralny organ administracji rządowej w sprawach organizacji krajowego systemu ratowniczo-gaśniczego oraz ochrony przeciwpożarowej, podległy ministrowi właściwemu do spraw wewnętrznych (art. 9 ust. 1 ustawy o PSP).",
+   "aliases": [
+    "Państwowa Straż Pożarna",
+    "PSP",
+    "KG PSP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 sierpnia 1991 r. o Państwowej Straży Pożarnej, art. 9 ust. 1 (Dz.U. 2025 poz. 1312 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1991/400/ogl",
+    "act": "DU/1991/400",
+    "article": "art. 9 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/kgpsp",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-komendant-glowny-panstwowej-strazy-pozarnej",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-pawel-frysztak",
+      "name": "Paweł Frysztak",
+      "positionId": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+      "positionName": "Zastępca Komendanta Głównego PSP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/kgpsp/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-slawomir-sierpatowski",
+      "name": "Sławomir Sierpatowski",
+      "positionId": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+      "positionName": "Zastępca Komendanta Głównego PSP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/kgpsp/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-grzegorz-szyszko",
+      "name": "Grzegorz Szyszko",
+      "positionId": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+      "positionName": "Zastępca Komendanta Głównego PSP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/kgpsp/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/400/ogl",
+     "https://www.gov.pl/web/kgpsp/kierownictwo",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komendant-glowny-panstwowej-strazy-pozarnej": {
+   "id": "pl-komendant-glowny-panstwowej-strazy-pozarnej",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komendant Główny Państwowej Straży Pożarnej",
+   "shortName": "Komendant Główny PSP",
+   "description": "Centralny organ administracji rządowej w sprawach organizacji krajowego systemu ratowniczo-gaśniczego oraz ochrony przeciwpożarowej. Powoływany spośród oficerów PSP i odwoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych (art. 9 ust. 2 ustawy o PSP).",
+   "aliases": [
+    "Komendant Główny PSP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 sierpnia 1991 r. o Państwowej Straży Pożarnej, art. 9 ust. 1–2 (Dz.U. 2025 poz. 1312 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1991/400/ogl",
+    "act": "DU/1991/400",
+    "article": "art. 9 ust. 1–2"
+   },
+   "officialUrl": "https://www.gov.pl/web/kgpsp",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wojciech-kruczek",
+      "name": "Wojciech Kruczek",
+      "positionId": "pl-komendant-glowny-panstwowej-strazy-pozarnej",
+      "positionName": "Komendant Główny Państwowej Straży Pożarnej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/kgpsp/kierownictwo",
+      "startedAtSource": null,
+      "note": "nadbryg.; data powołania nie podana na stronie KG PSP."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/400/ogl",
+     "https://www.gov.pl/web/kgpsp/kierownictwo",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sluzba-ochrony-panstwa": {
+   "id": "pl-sluzba-ochrony-panstwa",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Służba Ochrony Państwa",
+   "shortName": "SOP",
+   "description": "Jednolita, umundurowana i uzbrojona formacja wykonująca zadania z zakresu ochrony najważniejszych osób i obiektów w państwie (ustawa z 8.12.2017 r. o SOP). Kieruje nią Komendant SOP – centralny organ administracji rządowej podległy ministrowi właściwemu do spraw wewnętrznych (art. 9).",
+   "aliases": [
+    "SOP",
+    "dawne Biuro Ochrony Rządu"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 grudnia 2017 r. o Służbie Ochrony Państwa, art. 1 i art. 9 ust. 1 (Dz.U. 2025 poz. 34 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/138/ogl",
+    "act": "DU/2018/138",
+    "article": "art. 1 i art. 9 ust. 1"
+   },
+   "officialUrl": "https://sop.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-komendant-sop",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/138/ogl",
+     "https://sop.gov.pl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komendant-sop": {
+   "id": "pl-komendant-sop",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komendant Służby Ochrony Państwa",
+   "shortName": "Komendant SOP",
+   "description": "Centralny organ administracji rządowej podległy ministrowi właściwemu do spraw wewnętrznych, przełożony funkcjonariuszy SOP. Powoływany i odwoływany przez Prezesa Rady Ministrów w uzgodnieniu z Prezydentem RP, na wniosek ministra właściwego do spraw wewnętrznych (art. 11 ust. 1 ustawy o SOP).",
+   "aliases": [
+    "Komendant SOP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 grudnia 2017 r. o Służbie Ochrony Państwa, art. 9 ust. 1 i art. 11 ust. 1 (Dz.U. 2025 poz. 34 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/138/ogl",
+    "act": "DU/2018/138",
+    "article": "art. 9 ust. 1 i art. 11 ust. 1"
+   },
+   "officialUrl": "https://sop.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-sluzba-ochrony-panstwa",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": "Strona sop.gov.pl (stan 17.09.2026) podaje: pełniący obowiązki płk SOP Maciej Lewiński; strona MSWiA (wykaz organów) wciąż podaje gen. bryg. SOP Radosława Jaworskiego jako Komendanta – rozbieżność źródeł, przyjęto stan wg strony SOP.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-maciej-lewinski",
+      "name": "Maciej Lewiński",
+      "positionId": "pl-komendant-sop",
+      "positionName": "pełniący obowiązki Komendanta SOP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": true,
+      "status": "acting",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://sop.gov.pl/pl/kierownictwo-sop/komendant-sop",
+      "startedAtSource": null,
+      "note": "płk SOP; p.o. Komendanta SOP wg sop.gov.pl. Na stronie MSWiA figuruje gen. bryg. SOP Radosław Jaworski."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/138/ogl",
+     "https://sop.gov.pl/pl/kierownictwo-sop/komendant-sop",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-urzad-do-spraw-cudzoziemcow": {
+   "id": "pl-urzad-do-spraw-cudzoziemcow",
+   "type": "department",
+   "subtype": "central_office",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Urząd do Spraw Cudzoziemców",
+   "shortName": "UdSC",
+   "description": "Urząd obsługujący Szefa Urzędu do Spraw Cudzoziemców – centralny organ administracji rządowej właściwy w sprawach wjazdu, pobytu i wyjazdu cudzoziemców, nadawania statusu uchodźcy, ochrony uzupełniającej, azylu i ochrony czasowej (art. 16 ustawy o cudzoziemcach). Nadzór sprawuje minister właściwy do spraw wewnętrznych.",
+   "aliases": [
+    "UdSC",
+    "Urząd ds. Cudzoziemców"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach, art. 16 (Dz.U. 2025 poz. 1079 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2013/1650/ogl",
+    "act": "DU/2013/1650",
+    "article": "art. 16"
+   },
+   "officialUrl": "https://www.gov.pl/web/udsc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-szef-urzedu-do-spraw-cudzoziemcow",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-arkadiusz-szymanski",
+      "name": "Arkadiusz Szymański",
+      "positionId": "pl-urzad-do-spraw-cudzoziemcow",
+      "positionName": "Dyrektor Generalny Urzędu do Spraw Cudzoziemców",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/a91899d5-ca31-427b-9550-abeac354f8a1/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/udsc/kierownictwo-udsc",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2013/1650/ogl",
+     "https://www.gov.pl/web/udsc/kierownictwo-udsc",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-urzedu-do-spraw-cudzoziemcow": {
+   "id": "pl-szef-urzedu-do-spraw-cudzoziemcow",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Szef Urzędu do Spraw Cudzoziemców",
+   "shortName": "Szef UdSC",
+   "description": "Centralny organ administracji rządowej właściwy w sprawach wjazdu i pobytu cudzoziemców, statusu uchodźcy, ochrony uzupełniającej, azylu i ochrony czasowej. Powoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych spośród osób wyłonionych w otwartym naborze (art. 17 ust. 1 ustawy o cudzoziemcach).",
+   "aliases": [
+    "Szef UdSC"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach, art. 16–17 (Dz.U. 2025 poz. 1079 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2013/1650/ogl",
+    "act": "DU/2013/1650",
+    "article": "art. 16–17"
+   },
+   "officialUrl": "https://www.gov.pl/web/udsc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-urzad-do-spraw-cudzoziemcow",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-tomasz-cytrynowicz",
+      "name": "Tomasz Cytrynowicz",
+      "positionId": "pl-szef-urzedu-do-spraw-cudzoziemcow",
+      "positionName": "Szef Urzędu do Spraw Cudzoziemców",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/842931b4-2b53-458b-a01f-b24ef94e1d71/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/udsc/kierownictwo-udsc",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2013/1650/ogl",
+     "https://www.gov.pl/web/udsc/kierownictwo-udsc",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-do-spraw-uchodzcow": {
+   "id": "pl-rada-do-spraw-uchodzcow",
+   "type": "commission",
+   "subtype": "adjudicative_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada do Spraw Uchodźców",
+   "shortName": "Rada ds. Uchodźców",
+   "description": "Organ administracji publicznej rozpatrujący odwołania od decyzji Szefa Urzędu do Spraw Cudzoziemców w sprawach o nadanie lub pozbawienie statusu uchodźcy i ochrony uzupełniającej (art. 89p ustawy o udzielaniu cudzoziemcom ochrony). 12 członków powołuje Prezes Rady Ministrów na 5-letnią kadencję; obsługę zapewnia KPRM (art. 89zb). VI kadencja od 28.03.2024 r.",
+   "aliases": [
+    "RdU",
+    "Rada ds. Uchodźców"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej, art. 89p i 89r (Dz.U. 2026 poz. 862 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+    "act": "DU/2003/1176",
+    "article": "art. 89p i 89r"
+   },
+   "officialUrl": "https://www.gov.pl/web/rada-ds-uchodzcow",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 2,
+   "head": "pl-przewodniczacy-rady-do-spraw-uchodzcow",
+   "headOf": null,
+   "seatsCount": 12,
+   "status": "active",
+   "statusNote": "VI kadencja powołana 28.03.2024 r.; PRM powołał 15.04.2025 r. trzech dodatkowych członków (art. 89r ust. 4). Stan składu wg strony Rady.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jolanta-zaborska",
+      "name": "Jolanta Zaborska",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Wiceprzewodnicząca Rady do Spraw Uchodźców",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-szymon-cheba",
+      "name": "Szymon Cheba",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-beata-dzienis",
+      "name": "Beata Dzienis",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-agnieszka-fraczkiewicz",
+      "name": "Agnieszka Frączkiewicz",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2025-04-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-jakub-jamka",
+      "name": "Jakub Jamka",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-10-22",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-anita-janusz",
+      "name": "Anita Janusz",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-jaroslaw-lysio",
+      "name": "Jarosław Łysio",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-lukasz-paszka",
+      "name": "Łukasz Paszka",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2025-04-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-joanna-skupiewska-morawska",
+      "name": "Joanna Skupiewska-Morawska",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-eligiusz-stachniak",
+      "name": "Eligiusz Stachniak",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2025-06-02",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-rafal-swic",
+      "name": "Rafał Świć",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-malgorzata-terlikowska",
+      "name": "Małgorzata Terlikowska",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2025-04-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-adam-urbisz",
+      "name": "Adam Urbisz",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     },
+     {
+      "id": "pl-ewa-yoriadis",
+      "name": "Ewa Yoriadis",
+      "positionId": "pl-rada-do-spraw-uchodzcow",
+      "positionName": "Członek Rady",
+      "type": "appointed",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+     "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-przewodniczacy-rady-do-spraw-uchodzcow": {
+   "id": "pl-przewodniczacy-rady-do-spraw-uchodzcow",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Przewodniczący Rady do Spraw Uchodźców",
+   "shortName": "Przewodniczący RdU",
+   "description": "Kieruje pracami Rady do Spraw Uchodźców, reprezentuje ją i wyznacza składy orzekające (art. 89w ustawy o udzielaniu cudzoziemcom ochrony). Wybierany przez Radę spośród jej członków (art. 89u ust. 1).",
+   "aliases": [
+    "Przewodnicząca Rady ds. Uchodźców"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej, art. 89u ust. 1 i art. 89w (Dz.U. 2026 poz. 862 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+    "act": "DU/2003/1176",
+    "article": "art. 89u ust. 1 i art. 89w"
+   },
+   "officialUrl": "https://www.gov.pl/web/rada-ds-uchodzcow",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-rada-do-spraw-uchodzcow",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-aleksandra-ziuzia",
+      "name": "Aleksandra Ziuzia",
+      "positionId": "pl-przewodniczacy-rady-do-spraw-uchodzcow",
+      "positionName": "Przewodnicząca Rady do Spraw Uchodźców",
+      "type": "elected",
+      "startedAt": "2024-03-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+      "note": "Data 28.03.2024 to powołanie Rady VI kadencji; data wyboru na przewodniczącą nie podana."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+     "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-zaklad-emerytalno-rentowy-mswia": {
+   "id": "pl-zaklad-emerytalno-rentowy-mswia",
+   "type": "department",
+   "subtype": "central_office",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Zakład Emerytalno-Rentowy Ministerstwa Spraw Wewnętrznych i Administracji",
+   "shortName": "ZER MSWiA",
+   "description": "Jednostka budżetowa obsługująca Dyrektora ZER MSWiA – organ emerytalny ustalający prawo do zaopatrzenia emerytalnego funkcjonariuszy Policji, ABW, AW, CBA, SG, SM, SOP, PSP i Służby Celno-Skarbowej oraz ich rodzin (art. 32 ustawy o zaopatrzeniu emerytalnym funkcjonariuszy; rozp. MSWiA Dz.U. 2024 poz. 550). Organ podległy MSWiA.",
+   "aliases": [
+    "ZER MSWiA",
+    "Zakład Emerytalno-Rentowy"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie MSWiA z dnia 8 kwietnia 2024 r. w sprawie organu emerytalnego właściwego do ustalenia prawa do zaopatrzenia emerytalnego funkcjonariuszy Policji (…) oraz ich rodzin, § 2 (Dz.U. 2024 poz. 550)",
+    "url": "https://eli.gov.pl/eli/DU/2024/550/ogl",
+    "act": "DU/2024/550",
+    "article": "§ 2"
+   },
+   "officialUrl": "https://www.gov.pl/web/zermswia",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-dyrektor-zer-mswia",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/550/ogl",
+     "https://eli.gov.pl/eli/DU/1994/214/ogl",
+     "https://www.gov.pl/web/zermswia/kierownictwo",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-zer-mswia": {
+   "id": "pl-dyrektor-zer-mswia",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Zakładu Emerytalno-Rentowego MSWiA",
+   "shortName": "Dyrektor ZER MSWiA",
+   "description": "Organ emerytalny właściwy w sprawach zaopatrzenia emerytalnego funkcjonariuszy służb mundurowych podległych MSWiA (§ 2 rozp. MSWiA z 8.04.2024 r.). Powoływany i odwoływany przez ministra właściwego do spraw wewnętrznych; dysponent środków budżetu trzeciego stopnia.",
+   "aliases": [
+    "Dyrektor ZER"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie MSWiA z dnia 8 kwietnia 2024 r. w sprawie organu emerytalnego właściwego do ustalenia prawa do zaopatrzenia emerytalnego funkcjonariuszy Policji (…) oraz ich rodzin, § 2 ust. 1–2 (Dz.U. 2024 poz. 550)",
+    "url": "https://eli.gov.pl/eli/DU/2024/550/ogl",
+    "act": "DU/2024/550",
+    "article": "§ 2 ust. 1–2"
+   },
+   "officialUrl": "https://www.gov.pl/web/zermswia",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-zaklad-emerytalno-rentowy-mswia",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-olga-bulhak",
+      "name": "Olga Bułhak",
+      "positionId": "pl-dyrektor-zer-mswia",
+      "positionName": "Dyrektor Zakładu Emerytalno-Rentowego MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/zermswia/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/550/ogl",
+     "https://www.gov.pl/web/zermswia/kierownictwo",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-biuro-nadzoru-wewnetrznego": {
+   "id": "pl-biuro-nadzoru-wewnetrznego",
+   "type": "department",
+   "subtype": "oversight_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Biuro Nadzoru Wewnętrznego",
+   "shortName": "BNW",
+   "description": "Komórka organizacyjna w MSWiA, przy pomocy której Inspektor Nadzoru Wewnętrznego wykonuje zadania nadzoru ministra nad Policją, Strażą Graniczną, SOP i PSP (ustawa z 21.06.1996 r. o szczególnych formach sprawowania nadzoru przez ministra właściwego do spraw wewnętrznych, art. 11a i n.). Utworzone w 2018 r.",
+   "aliases": [
+    "BNW MSWiA"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 czerwca 1996 r. o szczególnych formach sprawowania nadzoru przez ministra właściwego do spraw wewnętrznych, art. 11a (Dz.U. 2025 poz. 529 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/491/ogl",
+    "act": "DU/1996/491",
+    "article": "art. 11a"
+   },
+   "officialUrl": "https://www.gov.pl/web/mswia/biuro-nadzoru-wewnetrznego",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-inspektor-nadzoru-wewnetrznego",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/491/ogl",
+     "https://www.gov.pl/web/mswia/biuro-nadzoru-wewnetrznego",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-inspektor-nadzoru-wewnetrznego": {
+   "id": "pl-inspektor-nadzoru-wewnetrznego",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Inspektor Nadzoru Wewnętrznego",
+   "shortName": "Inspektor Nadzoru Wewnętrznego",
+   "description": "Organ, przy pomocy którego minister właściwy do spraw wewnętrznych sprawuje nadzór nad podległymi służbami i ich funkcjonariuszami (art. 11a ustawy o szczególnych formach sprawowania nadzoru). Powoływany i odwoływany przez ministra właściwego do spraw wewnętrznych (art. 11b ust. 1).",
+   "aliases": [
+    "INW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 czerwca 1996 r. o szczególnych formach sprawowania nadzoru przez ministra właściwego do spraw wewnętrznych, art. 11a–11b (Dz.U. 2025 poz. 529 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/491/ogl",
+    "act": "DU/1996/491",
+    "article": "art. 11a–11b"
+   },
+   "officialUrl": "https://www.gov.pl/web/mswia/biuro-nadzoru-wewnetrznego",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-biuro-nadzoru-wewnetrznego",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-miroslaw-grabowiecki",
+      "name": "Mirosław Grabowiecki",
+      "positionId": "pl-inspektor-nadzoru-wewnetrznego",
+      "positionName": "Inspektor Nadzoru Wewnętrznego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/491/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-narodowy-instytut-samorzadu-terytorialnego": {
+   "id": "pl-narodowy-instytut-samorzadu-terytorialnego",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Narodowy Instytut Samorządu Terytorialnego",
+   "shortName": "NIST",
+   "description": "Państwowa jednostka budżetowa podległa MSWiA z siedzibą w Łodzi, prowadząca badania, analizy i szkolenia na rzecz jednostek samorządu terytorialnego. Utworzona w 2015 r. zarządzeniem MSWiA; ujęta w wykazie jednostek podległych (M.P. 2023 poz. 1128).",
+   "aliases": [
+    "NIST"
+   ],
+   "legalSource": {
+    "title": "Obwieszczenie MSWiA z dnia 6 października 2023 r. w sprawie wykazu jednostek organizacyjnych podległych Ministrowi Spraw Wewnętrznych i Administracji lub przez niego nadzorowanych, załącznik, cz. I (jednostki podległe) (M.P. 2023 poz. 1128)",
+    "url": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+    "act": "MP/2023/1128",
+    "article": "załącznik, cz. I (jednostki podległe)"
+   },
+   "officialUrl": "https://www.nist.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-dyrektor-nist",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+     "https://www.nist.gov.pl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-dyrektor-nist": {
+   "id": "pl-dyrektor-nist",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Narodowego Instytutu Samorządu Terytorialnego",
+   "shortName": "Dyrektor Narodowego Instytutu Samorządu Terytorialnego",
+   "description": "Kieruje Narodowym Instytutem Samorządu Terytorialnego – jednostką budżetową podległą MSWiA.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Obwieszczenie MSWiA z dnia 6 października 2023 r. w sprawie wykazu jednostek organizacyjnych podległych Ministrowi Spraw Wewnętrznych i Administracji lub przez niego nadzorowanych, załącznik, cz. I (M.P. 2023 poz. 1128)",
+    "url": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+    "act": "MP/2023/1128",
+    "article": "załącznik, cz. I"
+   },
+   "officialUrl": "https://www.nist.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-narodowy-instytut-samorzadu-terytorialnego",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-pawel-swianiewicz",
+      "name": "Paweł Swianiewicz",
+      "positionId": "pl-dyrektor-nist",
+      "positionName": "Dyrektor Narodowego Instytutu Samorządu Terytorialnego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-centrum-personalizacji-dokumentow-mswia": {
+   "id": "pl-centrum-personalizacji-dokumentow-mswia",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Centrum Personalizacji Dokumentów Ministerstwa Spraw Wewnętrznych i Administracji",
+   "shortName": "CPD MSWiA",
+   "description": "Państwowa jednostka budżetowa podległa MSWiA, personalizująca dokumenty tożsamości (dowody osobiste, paszporty, karty pobytu) i inne dokumenty publiczne. Ujęta w wykazie jednostek podległych MSWiA (M.P. 2023 poz. 1128).",
+   "aliases": [
+    "CPD MSWiA",
+    "CPD"
+   ],
+   "legalSource": {
+    "title": "Obwieszczenie MSWiA z dnia 6 października 2023 r. w sprawie wykazu jednostek organizacyjnych podległych Ministrowi Spraw Wewnętrznych i Administracji lub przez niego nadzorowanych, załącznik, cz. I (jednostki podległe) (M.P. 2023 poz. 1128)",
+    "url": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+    "act": "MP/2023/1128",
+    "article": "załącznik, cz. I (jednostki podległe)"
+   },
+   "officialUrl": "https://www.gov.pl/web/cpd",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-dyrektor-cpd-mswia",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+     "https://www.gov.pl/web/cpd"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-dyrektor-cpd-mswia": {
+   "id": "pl-dyrektor-cpd-mswia",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Centrum Personalizacji Dokumentów MSWiA",
+   "shortName": "Dyrektor Centrum Personalizacji Dokumentów MSWiA",
+   "description": "Kieruje Centrum Personalizacji Dokumentów MSWiA – jednostką budżetową podległą MSWiA.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Obwieszczenie MSWiA z dnia 6 października 2023 r. w sprawie wykazu jednostek organizacyjnych podległych Ministrowi Spraw Wewnętrznych i Administracji lub przez niego nadzorowanych, załącznik, cz. I (M.P. 2023 poz. 1128)",
+    "url": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+    "act": "MP/2023/1128",
+    "article": "załącznik, cz. I"
+   },
+   "officialUrl": "https://www.gov.pl/web/cpd",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-centrum-personalizacji-dokumentow-mswia",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-krystian-ciecka",
+      "name": "Krystian Ciećka",
+      "positionId": "pl-dyrektor-cpd-mswia",
+      "positionName": "Dyrektor Centrum Personalizacji Dokumentów MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-zarzad-zasobow-mieszkaniowych-mswia": {
+   "id": "pl-zarzad-zasobow-mieszkaniowych-mswia",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Zarząd Zasobów Mieszkaniowych Ministerstwa Spraw Wewnętrznych i Administracji",
+   "shortName": "ZZM MSWiA",
+   "description": "Państwowa jednostka budżetowa podległa MSWiA, gospodarująca zasobem mieszkaniowym i nieruchomościami pozostającymi w dyspozycji ministra właściwego do spraw wewnętrznych. Ujęta w wykazie jednostek podległych MSWiA (M.P. 2023 poz. 1128).",
+   "aliases": [
+    "ZZM MSWiA"
+   ],
+   "legalSource": {
+    "title": "Obwieszczenie MSWiA z dnia 6 października 2023 r. w sprawie wykazu jednostek organizacyjnych podległych Ministrowi Spraw Wewnętrznych i Administracji lub przez niego nadzorowanych, załącznik, cz. I (jednostki podległe) (M.P. 2023 poz. 1128)",
+    "url": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+    "act": "MP/2023/1128",
+    "article": "załącznik, cz. I (jednostki podległe)"
+   },
+   "officialUrl": "https://www.gov.pl/web/zzm",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-dyrektor-zzm-mswia",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+     "https://www.gov.pl/web/zzm"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-dyrektor-zzm-mswia": {
+   "id": "pl-dyrektor-zzm-mswia",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Zarządu Zasobów Mieszkaniowych MSWiA",
+   "shortName": "Dyrektor Zarządu Zasobów Mieszkaniowych MSWiA",
+   "description": "Kieruje Zarządem Zasobów Mieszkaniowych MSWiA – jednostką budżetową podległą MSWiA.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Obwieszczenie MSWiA z dnia 6 października 2023 r. w sprawie wykazu jednostek organizacyjnych podległych Ministrowi Spraw Wewnętrznych i Administracji lub przez niego nadzorowanych, załącznik, cz. I (M.P. 2023 poz. 1128)",
+    "url": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+    "act": "MP/2023/1128",
+    "article": "załącznik, cz. I"
+   },
+   "officialUrl": "https://www.gov.pl/web/zzm",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-zarzad-zasobow-mieszkaniowych-mswia",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-tomasz-karolczuk",
+      "name": "Tomasz Karolczuk",
+      "positionId": "pl-dyrektor-zzm-mswia",
+      "positionName": "Dyrektor Zarządu Zasobów Mieszkaniowych MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-centrum-obslugi-projektow-europejskich-mswia": {
+   "id": "pl-centrum-obslugi-projektow-europejskich-mswia",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Centrum Obsługi Projektów Europejskich Ministerstwa Spraw Wewnętrznych i Administracji",
+   "shortName": "COPE MSWiA",
+   "description": "Państwowa jednostka budżetowa podległa MSWiA, wdrażająca programy i fundusze europejskie w obszarze spraw wewnętrznych (m.in. FAMI, FBW, IZGW). Ujęta w wykazie jednostek podległych MSWiA (M.P. 2023 poz. 1128).",
+   "aliases": [
+    "COPE MSWiA",
+    "COPE"
+   ],
+   "legalSource": {
+    "title": "Obwieszczenie MSWiA z dnia 6 października 2023 r. w sprawie wykazu jednostek organizacyjnych podległych Ministrowi Spraw Wewnętrznych i Administracji lub przez niego nadzorowanych, załącznik, cz. I (jednostki podległe) (M.P. 2023 poz. 1128)",
+    "url": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+    "act": "MP/2023/1128",
+    "article": "załącznik, cz. I (jednostki podległe)"
+   },
+   "officialUrl": "https://www.gov.pl/web/cope",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": "pl-dyrektor-cope-mswia",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+     "https://www.gov.pl/web/cope"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-dyrektor-cope-mswia": {
+   "id": "pl-dyrektor-cope-mswia",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Centrum Obsługi Projektów Europejskich MSWiA",
+   "shortName": "Dyrektor Centrum Obsługi Projektów Europejskich MSWiA",
+   "description": "Kieruje Centrum Obsługi Projektów Europejskich MSWiA – jednostką budżetową podległą MSWiA.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Obwieszczenie MSWiA z dnia 6 października 2023 r. w sprawie wykazu jednostek organizacyjnych podległych Ministrowi Spraw Wewnętrznych i Administracji lub przez niego nadzorowanych, załącznik, cz. I (M.P. 2023 poz. 1128)",
+    "url": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+    "act": "MP/2023/1128",
+    "article": "załącznik, cz. I"
+   },
+   "officialUrl": "https://www.gov.pl/web/cope",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-centrum-obslugi-projektow-europejskich-mswia",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-mariusz-kasprzyk",
+      "name": "Mariusz Kasprzyk",
+      "positionId": "pl-dyrektor-cope-mswia",
+      "positionName": "Dyrektor Centrum Obsługi Projektów Europejskich MSWiA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-ministerstwo-sprawiedliwosci": {
+   "id": "pl-ministerstwo-sprawiedliwosci",
+   "type": "department",
+   "subtype": "ministry",
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Ministerstwo Sprawiedliwości",
+   "shortName": "MS",
+   "description": "Urząd administracji rządowej obsługujący Ministra Sprawiedliwości, kierującego działem sprawiedliwość (rozp. PRM Dz.U. 2025 poz. 1005). Utworzone rozporządzeniem RM z 3.11.1999 r. (Dz.U. poz. 1024). Obsługuje m.in. nadzór administracyjny nad sądami powszechnymi, Służbę Więzienną oraz rejestry (KRS, KRK, księgi wieczyste).",
+   "aliases": [
+    "MS",
+    "Ministerstwo Sprawiedliwości RP"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 3 listopada 1999 r. w sprawie utworzenia Ministerstwa Sprawiedliwości, § 1 (Dz.U. 1999 poz. 1024)",
+    "url": "https://eli.gov.pl/eli/DU/1999/1024/ogl",
+    "act": "DU/1999/1024",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "37",
+   "parent": null,
+   "level": 1,
+   "head": "pl-minister-sprawiedliwosci",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-arkadiusz-myrcha",
+      "name": "Arkadiusz Myrcha",
+      "positionId": "pl-ministerstwo-sprawiedliwosci",
+      "positionName": "Sekretarz Stanu w Ministerstwie Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "Platforma Obywatelska",
+      "imageUrl": "https://www.gov.pl/photo/format/b972a9ce-3f45-4b53-ad21-b31499a3c9fb/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-maria-ejchart",
+      "name": "Maria Ejchart",
+      "positionId": "pl-ministerstwo-sprawiedliwosci",
+      "positionName": "Podsekretarz Stanu w Ministerstwie Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/8560f28e-c918-443f-9ab7-220a49188fbd/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-dariusz-mazur",
+      "name": "Dariusz Mazur",
+      "positionId": "pl-ministerstwo-sprawiedliwosci",
+      "positionName": "Podsekretarz Stanu w Ministerstwie Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/97309705-ecb0-4cf6-a1f6-ff2203b26ea4/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-slawomir-palka",
+      "name": "Sławomir Pałka",
+      "positionId": "pl-ministerstwo-sprawiedliwosci",
+      "positionName": "Podsekretarz Stanu w Ministerstwie Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/73869fd9-063e-4cbc-9560-0a301a2a5284/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": "Biogram opublikowany 10.10.2025 r."
+     },
+     {
+      "id": "pl-wojciech-kutyla",
+      "name": "Wojciech Kutyła",
+      "positionId": "pl-ministerstwo-sprawiedliwosci",
+      "positionName": "Dyrektor Generalny Ministerstwa Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/d15d8b91-5436-4647-9034-6768f57ade9c/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1999/1024/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1005/ogl",
+     "https://www.gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-minister-sprawiedliwosci": {
+   "id": "pl-minister-sprawiedliwosci",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Minister Sprawiedliwości",
+   "shortName": "Minister Sprawiedliwości",
+   "description": "Członek Rady Ministrów kierujący działem administracji rządowej sprawiedliwość (rozp. PRM Dz.U. 2025 poz. 1005); dysponent części 15 i 37 budżetu. Z mocy ustawy sprawuje urząd Prokuratora Generalnego (art. 1 § 2 Prawa o prokuraturze) i nadzór administracyjny nad sądami powszechnymi.",
+   "aliases": [
+    "Minister Sprawiedliwości – Prokurator Generalny",
+    "Szef MS"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Prezesa Rady Ministrów z dnia 25 lipca 2025 r. w sprawie szczegółowego zakresu działania Ministra Sprawiedliwości, § 1 (Dz.U. 2025 poz. 1005)",
+    "url": "https://eli.gov.pl/eli/DU/2025/1005/ogl",
+    "act": "DU/2025/1005",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-ministerstwo-sprawiedliwosci",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [
+    "sprawiedliwość"
+   ],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-waldemar-zurek",
+      "name": "Waldemar Żurek",
+      "positionId": "pl-minister-sprawiedliwosci",
+      "positionName": "Minister Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": "2025-07-24",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/b01fcad0-d9b2-4589-b8a7-fec4adba2490/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/690/ogl",
+      "note": "Sędzia; powołany postanowieniem Prezydenta RP z 24.07.2025 r. (M.P. poz. 690). Z urzędu Prokurator Generalny."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/1005/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl",
+     "https://www.gov.pl/web/sprawiedliwosc/waldemar-zurek"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-centralny-zarzad-sluzby-wieziennej": {
+   "id": "pl-centralny-zarzad-sluzby-wieziennej",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Centralny Zarząd Służby Więziennej",
+   "shortName": "CZSW",
+   "description": "Jednostka organizacyjna Służby Więziennej (art. 8 ust. 1 pkt 1 ustawy o SW), przy pomocy której Dyrektor Generalny SW kieruje formacją: okręgowymi inspektoratami, zakładami karnymi, aresztami śledczymi i ośrodkami szkolenia. Dyrektor Generalny podlega Ministrowi Sprawiedliwości (art. 10 ust. 1); statut CZSW nadaje MS.",
+   "aliases": [
+    "Służba Więzienna",
+    "SW",
+    "CZSW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej, art. 8 ust. 1 pkt 1 i art. 10 (Dz.U. 2025 poz. 1750 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+    "act": "DU/2010/523",
+    "article": "art. 8 ust. 1 pkt 1 i art. 10"
+   },
+   "officialUrl": "https://www.sw.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": "pl-dyrektor-generalny-sluzby-wieziennej",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-stanislaw-kotula",
+      "name": "Stanisław Kotula",
+      "positionId": "pl-centralny-zarzad-sluzby-wieziennej",
+      "positionName": "Zastępca Dyrektora Generalnego Służby Więziennej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sw.gov.pl/strona/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-bartlomiej-turbiarz",
+      "name": "Bartłomiej Turbiarz",
+      "positionId": "pl-centralny-zarzad-sluzby-wieziennej",
+      "positionName": "Zastępca Dyrektora Generalnego Służby Więziennej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sw.gov.pl/strona/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-arkadiusz-sujecki",
+      "name": "Arkadiusz Sujecki",
+      "positionId": "pl-centralny-zarzad-sluzby-wieziennej",
+      "positionName": "Zastępca Dyrektora Generalnego Służby Więziennej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sw.gov.pl/strona/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/523/ogl",
+     "https://www.sw.gov.pl/strona/kierownictwo",
+     "https://eli.gov.pl/eli/MP/2024/1040/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-generalny-sluzby-wieziennej": {
+   "id": "pl-dyrektor-generalny-sluzby-wieziennej",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Generalny Służby Więziennej",
+   "shortName": "Dyrektor Generalny SW",
+   "description": "Kieruje Centralnym Zarządem Służby Więziennej i jednostkami organizacyjnymi SW; przełożony funkcjonariuszy; podlega Ministrowi Sprawiedliwości (art. 10 ustawy o SW). Powoływany i odwoływany przez Prezesa Rady Ministrów na wniosek Ministra Sprawiedliwości (art. 64 ust. 1).",
+   "aliases": [
+    "DG SW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej, art. 10 i art. 64 ust. 1 (Dz.U. 2025 poz. 1750 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+    "act": "DU/2010/523",
+    "article": "art. 10 i art. 64 ust. 1"
+   },
+   "officialUrl": "https://www.sw.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-centralny-zarzad-sluzby-wieziennej",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-renata-niziolek",
+      "name": "Renata Niziołek",
+      "positionId": "pl-dyrektor-generalny-sluzby-wieziennej",
+      "positionName": "Dyrektor Generalny Służby Więziennej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sw.gov.pl/strona/kierownictwo",
+      "startedAtSource": null,
+      "note": "płk SW; data powołania nie podana na stronie SW."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/523/ogl",
+     "https://www.sw.gov.pl/strona/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-krajowa-szkola-sadownictwa-i-prokuratury": {
+   "id": "pl-krajowa-szkola-sadownictwa-i-prokuratury",
+   "type": "department",
+   "subtype": "state_legal_person",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Krajowa Szkoła Sądownictwa i Prokuratury",
+   "shortName": "KSSiP",
+   "description": "Państwowa osoba prawna z siedzibą w Krakowie, kształcąca i doskonaląca kadry sądów powszechnych i prokuratury (aplikacje sędziowska i prokuratorska, szkolenie ustawiczne). Utworzona ustawą z 23.01.2009 r.; Minister Sprawiedliwości sprawuje nadzór nad zgodnością jej działania z ustawą i statutem (art. 1 ust. 3).",
+   "aliases": [
+    "KSSiP",
+    "Krajowa Szkoła"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o Krajowej Szkole Sądownictwa i Prokuratury, art. 1 (Dz.U. 2022 poz. 217 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/157/ogl",
+    "act": "DU/2009/157",
+    "article": "art. 1"
+   },
+   "officialUrl": "https://www.kssip.gov.pl",
+   "bipUrl": "https://bip.kssip.gov.pl",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": "pl-dyrektor-kssip",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/157/ogl",
+     "https://www.kssip.gov.pl",
+     "https://eli.gov.pl/eli/MP/2024/1040/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-kssip": {
+   "id": "pl-dyrektor-kssip",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Krajowej Szkoły Sądownictwa i Prokuratury",
+   "shortName": "Dyrektor KSSiP",
+   "description": "Organ Krajowej Szkoły kierujący jej działalnością i reprezentujący ją na zewnątrz. Powoływany przez Ministra Sprawiedliwości na 5 lat po zasięgnięciu opinii Krajowej Rady Sądownictwa i Krajowej Rady Prokuratorów (art. 12 ust. 1 ustawy o KSSiP).",
+   "aliases": [
+    "Dyrektor Krajowej Szkoły"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o Krajowej Szkole Sądownictwa i Prokuratury, art. 12 ust. 1 (Dz.U. 2022 poz. 217 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/157/ogl",
+    "act": "DU/2009/157",
+    "article": "art. 12 ust. 1"
+   },
+   "officialUrl": "https://www.kssip.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-krajowa-szkola-sadownictwa-i-prokuratury",
+   "seatsCount": 1,
+   "status": "unverified",
+   "statusNote": "Strona kssip.gov.pl (podstrona 'Organy Krajowej Szkoły') nie udostępniła nazwiska Dyrektora (403/404 przy pobieraniu 17.09.2026); nazwisko do uzupełnienia.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/157/ogl",
+     "https://www.kssip.gov.pl/o-nas/organy-krajowej-szkoly"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-instytut-wymiaru-sprawiedliwosci": {
+   "id": "pl-instytut-wymiaru-sprawiedliwosci",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Instytut Wymiaru Sprawiedliwości",
+   "shortName": "IWS",
+   "description": "Instytut badawczy podległy Ministrowi Sprawiedliwości (wykaz M.P. 2024 poz. 1040, cz. I), prowadzący badania nad funkcjonowaniem wymiaru sprawiedliwości, analizy orzecznictwa i ekspertyzy dla MS; działa na podstawie ustawy o instytutach badawczych i statutu nadanego przez MS.",
+   "aliases": [
+    "IWS"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 30 kwietnia 2010 r. o instytutach badawczych, art. 1 (instytut badawczy); wykaz M.P. 2024 poz. 1040 (Dz.U. 2026 poz. 741 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+    "act": "DU/2010/618",
+    "article": "art. 1 (instytut badawczy); wykaz M.P. 2024 poz. 1040"
+   },
+   "officialUrl": "https://iws.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": "pl-dyrektor-iws",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-maciej-domanski",
+      "name": "Maciej Domański",
+      "positionId": "pl-instytut-wymiaru-sprawiedliwosci",
+      "positionName": "Zastępca Dyrektora Instytutu Wymiaru Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://iws.gov.pl/kierownictwo/",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl",
+     "https://eli.gov.pl/eli/MP/2024/1040/ogl",
+     "https://iws.gov.pl/kierownictwo/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-dyrektor-iws": {
+   "id": "pl-dyrektor-iws",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Instytutu Wymiaru Sprawiedliwości",
+   "shortName": "Dyrektor IWS",
+   "description": "Kieruje Instytutem Wymiaru Sprawiedliwości – instytutem badawczym podległym Ministrowi Sprawiedliwości; dyrektora instytutu badawczego powołuje minister nadzorujący (ustawa o instytutach badawczych).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 30 kwietnia 2010 r. o instytutach badawczych, art. 24 i n. (Dz.U. 2026 poz. 741 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+    "act": "DU/2010/618",
+    "article": "art. 24 i n."
+   },
+   "officialUrl": "https://iws.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-instytut-wymiaru-sprawiedliwosci",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-piotr-rylski",
+      "name": "Piotr Rylski",
+      "positionId": "pl-dyrektor-iws",
+      "positionName": "Dyrektor Instytutu Wymiaru Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://iws.gov.pl/kierownictwo/",
+      "startedAtSource": null,
+      "note": "dr hab., prof. UW"
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl",
+     "https://iws.gov.pl/kierownictwo/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-instytut-ekspertyz-sadowych": {
+   "id": "pl-instytut-ekspertyz-sadowych",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Instytut Ekspertyz Sądowych im. prof. dra Jana Sehna w Krakowie",
+   "shortName": "IES",
+   "description": "Instytut badawczy podległy Ministrowi Sprawiedliwości (wykaz M.P. 2024 poz. 1040, cz. I), wykonujący ekspertyzy sądowe (toksykologia, genetyka, badania dokumentów, wypadki drogowe) na zlecenie sądów i prokuratur oraz prowadzący badania naukowe i szkolenia; działa na podstawie ustawy o instytutach badawczych.",
+   "aliases": [
+    "IES",
+    "Instytut Sehna"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 30 kwietnia 2010 r. o instytutach badawczych, art. 1 (instytut badawczy); wykaz M.P. 2024 poz. 1040 (Dz.U. 2026 poz. 741 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+    "act": "DU/2010/618",
+    "article": "art. 1 (instytut badawczy); wykaz M.P. 2024 poz. 1040"
+   },
+   "officialUrl": "https://www.gov.pl/web/ies",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": "pl-dyrektor-ies",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl",
+     "https://eli.gov.pl/eli/MP/2024/1040/ogl",
+     "https://www.gov.pl/web/ies/kierownictwo-ies"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-dyrektor-ies": {
+   "id": "pl-dyrektor-ies",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Instytutu Ekspertyz Sądowych",
+   "shortName": "Dyrektor IES",
+   "description": "Kieruje Instytutem Ekspertyz Sądowych im. prof. dra Jana Sehna w Krakowie – instytutem badawczym podległym Ministrowi Sprawiedliwości; dyrektora instytutu badawczego powołuje minister nadzorujący (ustawa o instytutach badawczych).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 30 kwietnia 2010 r. o instytutach badawczych, art. 24 i n. (Dz.U. 2026 poz. 741 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+    "act": "DU/2010/618",
+    "article": "art. 24 i n."
+   },
+   "officialUrl": "https://www.gov.pl/web/ies",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": null,
+   "headOf": "pl-instytut-ekspertyz-sadowych",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-dariusz-zuba",
+      "name": "Dariusz Zuba",
+      "positionId": "pl-dyrektor-ies",
+      "positionName": "Dyrektor Instytutu Ekspertyz Sądowych",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/ies/kierownictwo-ies",
+      "startedAtSource": null,
+      "note": "prof. dr hab."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl",
+     "https://www.gov.pl/web/ies/kierownictwo-ies"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-akademia-wymiaru-sprawiedliwosci": {
+   "id": "pl-akademia-wymiaru-sprawiedliwosci",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Akademia Wymiaru Sprawiedliwości",
+   "shortName": "AWS",
+   "description": "Uczelnia służb państwowych nadzorowana przez Ministra Sprawiedliwości, będąca jednostką organizacyjną Służby Więziennej (art. 8 ust. 1 pkt 3a i ust. 1a ustawy o SW); kształci funkcjonariuszy SW i kadry wymiaru sprawiedliwości. Ujęta w wykazie jednostek nadzorowanych przez MS (M.P. 2024 poz. 1040).",
+   "aliases": [
+    "AWS",
+    "dawna Szkoła Wyższa Wymiaru Sprawiedliwości"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej, art. 8 ust. 1a (Dz.U. 2025 poz. 1750 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+    "act": "DU/2010/523",
+    "article": "art. 8 ust. 1a"
+   },
+   "officialUrl": "https://aws.edu.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-sprawiedliwosci",
+   "level": 2,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Rektor-Komendant nie zweryfikowany (strona uczelni nie była pobierana w tej rundzie).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/523/ogl",
+     "https://eli.gov.pl/eli/MP/2024/1040/ogl",
+     "https://www.gov.pl/web/sprawiedliwosc/jednostki-organizacyjne-podlegle-lub-nadzorowane"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  }
+ },
+ "edges": {
+  "e-narodowy-instytut-samorzadu-terytorialnego--dept-head--dyrektor-nist": {
+   "id": "e-narodowy-instytut-samorzadu-terytorialnego--dept-head--dyrektor-nist",
+   "type": "dept_head",
+   "fromId": "pl-narodowy-instytut-samorzadu-terytorialnego",
+   "toId": "pl-dyrektor-nist",
+   "cite": "statut jednostki (zarządzenie MSWiA); wykaz M.P. 2023 poz. 1128",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--narodowy-instytut-samorzadu-terytorialnego": {
+   "id": "e-min-mswia--oversees--narodowy-instytut-samorzadu-terytorialnego",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-narodowy-instytut-samorzadu-terytorialnego",
+   "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1d – wykaz jednostek podległych (M.P. 2023 poz. 1128, cz. I)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-centrum-personalizacji-dokumentow-mswia--dept-head--dyrektor-cpd-mswia": {
+   "id": "e-centrum-personalizacji-dokumentow-mswia--dept-head--dyrektor-cpd-mswia",
+   "type": "dept_head",
+   "fromId": "pl-centrum-personalizacji-dokumentow-mswia",
+   "toId": "pl-dyrektor-cpd-mswia",
+   "cite": "statut jednostki (zarządzenie MSWiA); wykaz M.P. 2023 poz. 1128",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--centrum-personalizacji-dokumentow-mswia": {
+   "id": "e-min-mswia--oversees--centrum-personalizacji-dokumentow-mswia",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-centrum-personalizacji-dokumentow-mswia",
+   "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1d – wykaz jednostek podległych (M.P. 2023 poz. 1128, cz. I)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-zarzad-zasobow-mieszkaniowych-mswia--dept-head--dyrektor-zzm-mswia": {
+   "id": "e-zarzad-zasobow-mieszkaniowych-mswia--dept-head--dyrektor-zzm-mswia",
+   "type": "dept_head",
+   "fromId": "pl-zarzad-zasobow-mieszkaniowych-mswia",
+   "toId": "pl-dyrektor-zzm-mswia",
+   "cite": "statut jednostki (zarządzenie MSWiA); wykaz M.P. 2023 poz. 1128",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--zarzad-zasobow-mieszkaniowych-mswia": {
+   "id": "e-min-mswia--oversees--zarzad-zasobow-mieszkaniowych-mswia",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-zarzad-zasobow-mieszkaniowych-mswia",
+   "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1d – wykaz jednostek podległych (M.P. 2023 poz. 1128, cz. I)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-centrum-obslugi-projektow-europejskich-mswia--dept-head--dyrektor-cope-mswia": {
+   "id": "e-centrum-obslugi-projektow-europejskich-mswia--dept-head--dyrektor-cope-mswia",
+   "type": "dept_head",
+   "fromId": "pl-centrum-obslugi-projektow-europejskich-mswia",
+   "toId": "pl-dyrektor-cope-mswia",
+   "cite": "statut jednostki (zarządzenie MSWiA); wykaz M.P. 2023 poz. 1128",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--centrum-obslugi-projektow-europejskich-mswia": {
+   "id": "e-min-mswia--oversees--centrum-obslugi-projektow-europejskich-mswia",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-centrum-obslugi-projektow-europejskich-mswia",
+   "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1d – wykaz jednostek podległych (M.P. 2023 poz. 1128, cz. I)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2023/1128/ogl",
+     "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-ministerstwo-spraw-wewnetrznych-i-administracji--dept-head--minister-spraw-wewnetrznych-i-administracji": {
+   "id": "e-ministerstwo-spraw-wewnetrznych-i-administracji--dept-head--minister-spraw-wewnetrznych-i-administracji",
+   "type": "dept_head",
+   "fromId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1 pkt 1 (obsługę ministra zapewnia ministerstwo) / Konstytucja RP art. 149 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent--appoints--min-mswia": {
+   "id": "e-prezydent--appoints--min-mswia",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "cite": "Konstytucja RP art. 154 ust. 1 i art. 161 (powołanie na wniosek Prezesa RM; postanowienie M.P. 2025 poz. 690)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--nominates--min-mswia": {
+   "id": "e-prm--nominates--min-mswia",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "cite": "Konstytucja RP art. 154 ust. 1 i art. 161 (skład RM proponuje / zmiany na wniosek Prezesa RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--ex-officio--rada-ministrow": {
+   "id": "e-min-mswia--ex-officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 1 (w skład RM wchodzą Prezes RM i ministrowie)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--mswia-sekretarze-stanu": {
+   "id": "e-prm--appoints--mswia-sekretarze-stanu",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "cite": "Ustawa o Radzie Ministrów art. 37 ust. 3 (sekretarzy i podsekretarzy stanu powołuje Prezes RM na wniosek ministra)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-min-mswia--nominates--mswia-sekretarze-stanu": {
+   "id": "e-min-mswia--nominates--mswia-sekretarze-stanu",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "cite": "Ustawa o Radzie Ministrów art. 37 ust. 3 (wniosek właściwego ministra o powołanie sekretarza/podsekretarza stanu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-min-mswia--appoints--mswia-dyrektor-generalny": {
+   "id": "e-min-mswia--appoints--mswia-dyrektor-generalny",
+   "type": "appoints",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "cite": "Ustawa o służbie cywilnej art. 53a ust. 1 w zw. z art. 52 pkt 1 (dyrektora generalnego urzędu powołuje właściwy minister)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2008/1505/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-ministerstwo-sprawiedliwosci--dept-head--minister-sprawiedliwosci": {
+   "id": "e-ministerstwo-sprawiedliwosci--dept-head--minister-sprawiedliwosci",
+   "type": "dept_head",
+   "fromId": "pl-ministerstwo-sprawiedliwosci",
+   "toId": "pl-minister-sprawiedliwosci",
+   "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1 pkt 1 (obsługę ministra zapewnia ministerstwo) / Konstytucja RP art. 149 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent--appoints--min-ms": {
+   "id": "e-prezydent--appoints--min-ms",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-minister-sprawiedliwosci",
+   "cite": "Konstytucja RP art. 154 ust. 1 i art. 161 (powołanie na wniosek Prezesa RM; postanowienie M.P. 2025 poz. 690)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--nominates--min-ms": {
+   "id": "e-prm--nominates--min-ms",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-minister-sprawiedliwosci",
+   "cite": "Konstytucja RP art. 154 ust. 1 i art. 161 (skład RM proponuje / zmiany na wniosek Prezesa RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-ms--ex-officio--rada-ministrow": {
+   "id": "e-min-ms--ex-officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 1 (w skład RM wchodzą Prezes RM i ministrowie)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--ms-sekretarze-stanu": {
+   "id": "e-prm--appoints--ms-sekretarze-stanu",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-ministerstwo-sprawiedliwosci",
+   "cite": "Ustawa o Radzie Ministrów art. 37 ust. 3 (sekretarzy i podsekretarzy stanu powołuje Prezes RM na wniosek ministra)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-min-ms--nominates--ms-sekretarze-stanu": {
+   "id": "e-min-ms--nominates--ms-sekretarze-stanu",
+   "type": "nominates",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-ministerstwo-sprawiedliwosci",
+   "cite": "Ustawa o Radzie Ministrów art. 37 ust. 3 (wniosek właściwego ministra o powołanie sekretarza/podsekretarza stanu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-min-ms--appoints--ms-dyrektor-generalny": {
+   "id": "e-min-ms--appoints--ms-dyrektor-generalny",
+   "type": "appoints",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-ministerstwo-sprawiedliwosci",
+   "cite": "Ustawa o służbie cywilnej art. 53a ust. 1 w zw. z art. 52 pkt 1 (dyrektora generalnego urzędu powołuje właściwy minister)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2008/1505/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-min-sprawiedliwosci--ex-officio--prokurator-generalny": {
+   "id": "e-min-sprawiedliwosci--ex-officio--prokurator-generalny",
+   "type": "ex_officio",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-prokurator-generalny",
+   "cite": "Prawo o prokuraturze art. 1 § 2 (urząd Prokuratora Generalnego sprawuje Minister Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komenda-glowna-policji--dept-head--komendant-glowny-policji": {
+   "id": "e-komenda-glowna-policji--dept-head--komendant-glowny-policji",
+   "type": "dept_head",
+   "fromId": "pl-komenda-glowna-policji",
+   "toId": "pl-komendant-glowny-policji",
+   "cite": "Ustawa z dnia 6 kwietnia 1990 r. o Policji art. 5 ust. 1 (Komendant Główny Policji podległy ministrowi właściwemu do spraw wewnętrznych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1990/179/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/179/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--komendant-glowny-policji": {
+   "id": "e-min-mswia--oversees--komendant-glowny-policji",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komenda-glowna-policji",
+   "cite": "Ustawa z dnia 6 kwietnia 1990 r. o Policji art. 5 ust. 1 (Komendant Główny Policji podległy ministrowi właściwemu do spraw wewnętrznych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1990/179/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/179/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--komendant-glowny-policji": {
+   "id": "e-prm--appoints--komendant-glowny-policji",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-komendant-glowny-policji",
+   "cite": "Ustawa z dnia 6 kwietnia 1990 r. o Policji art. 5 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1990/179/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/179/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--nominates--komendant-glowny-policji": {
+   "id": "e-min-mswia--nominates--komendant-glowny-policji",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komendant-glowny-policji",
+   "cite": "Ustawa z dnia 6 kwietnia 1990 r. o Policji art. 5 ust. 3 (na wniosek ministra)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1990/179/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/179/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komenda-glowna-strazy-granicznej--dept-head--komendant-glowny-strazy-granicznej": {
+   "id": "e-komenda-glowna-strazy-granicznej--dept-head--komendant-glowny-strazy-granicznej",
+   "type": "dept_head",
+   "fromId": "pl-komenda-glowna-strazy-granicznej",
+   "toId": "pl-komendant-glowny-strazy-granicznej",
+   "cite": "Ustawa z dnia 12 października 1990 r. o Straży Granicznej art. 3 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1990/462/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/462/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--komendant-glowny-sg": {
+   "id": "e-min-mswia--oversees--komendant-glowny-sg",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komenda-glowna-strazy-granicznej",
+   "cite": "Ustawa z dnia 12 października 1990 r. o Straży Granicznej art. 3 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1990/462/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/462/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--komendant-glowny-sg": {
+   "id": "e-prm--appoints--komendant-glowny-sg",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-komendant-glowny-strazy-granicznej",
+   "cite": "Ustawa z dnia 12 października 1990 r. o Straży Granicznej art. 3 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1990/462/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/462/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--nominates--komendant-glowny-sg": {
+   "id": "e-min-mswia--nominates--komendant-glowny-sg",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komendant-glowny-strazy-granicznej",
+   "cite": "Ustawa z dnia 12 października 1990 r. o Straży Granicznej art. 3 ust. 2 (na wniosek ministra)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1990/462/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1990/462/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komenda-glowna-panstwowej-strazy-pozarnej--dept-head--komendant-glowny-panstwowej-strazy-pozarnej": {
+   "id": "e-komenda-glowna-panstwowej-strazy-pozarnej--dept-head--komendant-glowny-panstwowej-strazy-pozarnej",
+   "type": "dept_head",
+   "fromId": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+   "toId": "pl-komendant-glowny-panstwowej-strazy-pozarnej",
+   "cite": "Ustawa z dnia 24 sierpnia 1991 r. o Państwowej Straży Pożarnej art. 9 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1991/400/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/400/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--komendant-glowny-psp": {
+   "id": "e-min-mswia--oversees--komendant-glowny-psp",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+   "cite": "Ustawa z dnia 24 sierpnia 1991 r. o Państwowej Straży Pożarnej art. 9 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1991/400/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/400/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--komendant-glowny-psp": {
+   "id": "e-prm--appoints--komendant-glowny-psp",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-komendant-glowny-panstwowej-strazy-pozarnej",
+   "cite": "Ustawa z dnia 24 sierpnia 1991 r. o Państwowej Straży Pożarnej art. 9 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1991/400/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/400/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--nominates--komendant-glowny-psp": {
+   "id": "e-min-mswia--nominates--komendant-glowny-psp",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komendant-glowny-panstwowej-strazy-pozarnej",
+   "cite": "Ustawa z dnia 24 sierpnia 1991 r. o Państwowej Straży Pożarnej art. 9 ust. 2 (na wniosek ministra)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1991/400/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/400/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sluzba-ochrony-panstwa--dept-head--komendant-sop": {
+   "id": "e-sluzba-ochrony-panstwa--dept-head--komendant-sop",
+   "type": "dept_head",
+   "fromId": "pl-sluzba-ochrony-panstwa",
+   "toId": "pl-komendant-sop",
+   "cite": "Ustawa z dnia 8 grudnia 2017 r. o Służbie Ochrony Państwa art. 9 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/138/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/138/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--komendant-sop": {
+   "id": "e-min-mswia--oversees--komendant-sop",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-sluzba-ochrony-panstwa",
+   "cite": "Ustawa z dnia 8 grudnia 2017 r. o Służbie Ochrony Państwa art. 9 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/138/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/138/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--komendant-sop": {
+   "id": "e-prm--appoints--komendant-sop",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-komendant-sop",
+   "cite": "Ustawa z dnia 8 grudnia 2017 r. o Służbie Ochrony Państwa art. 11 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/138/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/138/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--nominates--komendant-sop": {
+   "id": "e-min-mswia--nominates--komendant-sop",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komendant-sop",
+   "cite": "Ustawa z dnia 8 grudnia 2017 r. o Służbie Ochrony Państwa art. 11 ust. 1 (na wniosek ministra)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/138/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/138/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent--confirms--komendant-sop": {
+   "id": "e-prezydent--confirms--komendant-sop",
+   "type": "confirms",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-komendant-sop",
+   "cite": "Ustawa o Służbie Ochrony Państwa art. 11 ust. 1 (powołanie przez Prezesa RM w uzgodnieniu z Prezydentem RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/138/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/138/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-urzad-do-spraw-cudzoziemcow--dept-head--szef-urzedu-do-spraw-cudzoziemcow": {
+   "id": "e-urzad-do-spraw-cudzoziemcow--dept-head--szef-urzedu-do-spraw-cudzoziemcow",
+   "type": "dept_head",
+   "fromId": "pl-urzad-do-spraw-cudzoziemcow",
+   "toId": "pl-szef-urzedu-do-spraw-cudzoziemcow",
+   "cite": "Ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach art. 16 ust. 2 (nadzór ministra właściwego do spraw wewnętrznych nad Szefem Urzędu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2013/1650/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2013/1650/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--szef-udsc": {
+   "id": "e-min-mswia--oversees--szef-udsc",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-urzad-do-spraw-cudzoziemcow",
+   "cite": "Ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach art. 16 ust. 2 (nadzór ministra właściwego do spraw wewnętrznych nad Szefem Urzędu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2013/1650/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2013/1650/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--szef-udsc": {
+   "id": "e-prm--appoints--szef-udsc",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-urzedu-do-spraw-cudzoziemcow",
+   "cite": "Ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach art. 17 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2013/1650/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2013/1650/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--nominates--szef-udsc": {
+   "id": "e-min-mswia--nominates--szef-udsc",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-szef-urzedu-do-spraw-cudzoziemcow",
+   "cite": "Ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach art. 17 ust. 1 (na wniosek ministra)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2013/1650/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2013/1650/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-zaklad-emerytalno-rentowy-mswia--dept-head--dyrektor-zer-mswia": {
+   "id": "e-zaklad-emerytalno-rentowy-mswia--dept-head--dyrektor-zer-mswia",
+   "type": "dept_head",
+   "fromId": "pl-zaklad-emerytalno-rentowy-mswia",
+   "toId": "pl-dyrektor-zer-mswia",
+   "cite": "Rozporządzenie MSWiA z dnia 8 kwietnia 2024 r. w sprawie organu emerytalnego właściwego do ustalenia prawa do zaopatrzenia emerytalnego funkcjonariuszy Policji (…) oraz ich rodzin § 2 ust. 1 (organ emerytalny w strukturze MSWiA; organ podległy – zał. do rozp. PRM Dz.U. 2025 poz. 999 pkt 1)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2024/550/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/550/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--dyrektor-zer": {
+   "id": "e-min-mswia--oversees--dyrektor-zer",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-zaklad-emerytalno-rentowy-mswia",
+   "cite": "Rozporządzenie MSWiA z dnia 8 kwietnia 2024 r. w sprawie organu emerytalnego właściwego do ustalenia prawa do zaopatrzenia emerytalnego funkcjonariuszy Policji (…) oraz ich rodzin § 2 ust. 1 (organ emerytalny w strukturze MSWiA; organ podległy – zał. do rozp. PRM Dz.U. 2025 poz. 999 pkt 1)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2024/550/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/550/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--appoints--dyrektor-zer": {
+   "id": "e-min-mswia--appoints--dyrektor-zer",
+   "type": "appoints",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-dyrektor-zer-mswia",
+   "cite": "Rozporządzenie MSWiA z dnia 8 kwietnia 2024 r. w sprawie organu emerytalnego właściwego do ustalenia prawa do zaopatrzenia emerytalnego funkcjonariuszy Policji (…) oraz ich rodzin § 2 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2024/550/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/550/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-biuro-nadzoru-wewnetrznego--dept-head--inspektor-nadzoru-wewnetrznego": {
+   "id": "e-biuro-nadzoru-wewnetrznego--dept-head--inspektor-nadzoru-wewnetrznego",
+   "type": "dept_head",
+   "fromId": "pl-biuro-nadzoru-wewnetrznego",
+   "toId": "pl-inspektor-nadzoru-wewnetrznego",
+   "cite": "Ustawa z dnia 21 czerwca 1996 r. o szczególnych formach sprawowania nadzoru przez ministra właściwego do spraw wewnętrznych art. 11a ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/491/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/491/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--oversees--inspektor-nadzoru-wewnetrznego": {
+   "id": "e-min-mswia--oversees--inspektor-nadzoru-wewnetrznego",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-biuro-nadzoru-wewnetrznego",
+   "cite": "Ustawa z dnia 21 czerwca 1996 r. o szczególnych formach sprawowania nadzoru przez ministra właściwego do spraw wewnętrznych art. 11a ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/491/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/491/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-mswia--appoints--inspektor-nadzoru-wewnetrznego": {
+   "id": "e-min-mswia--appoints--inspektor-nadzoru-wewnetrznego",
+   "type": "appoints",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-inspektor-nadzoru-wewnetrznego",
+   "cite": "Ustawa z dnia 21 czerwca 1996 r. o szczególnych formach sprawowania nadzoru przez ministra właściwego do spraw wewnętrznych art. 11b ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/491/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/491/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-do-spraw-uchodzcow--dept-head--przewodniczacy-rady-do-spraw-uchodzcow": {
+   "id": "e-rada-do-spraw-uchodzcow--dept-head--przewodniczacy-rady-do-spraw-uchodzcow",
+   "type": "dept_head",
+   "fromId": "pl-rada-do-spraw-uchodzcow",
+   "toId": "pl-przewodniczacy-rady-do-spraw-uchodzcow",
+   "cite": "Ustawa o udzielaniu cudzoziemcom ochrony art. 89u ust. 1 i art. 89w",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-uchodzcow--office--przewodniczacy": {
+   "id": "e-rada-uchodzcow--office--przewodniczacy",
+   "type": "office",
+   "fromId": "pl-rada-do-spraw-uchodzcow",
+   "toId": "pl-przewodniczacy-rady-do-spraw-uchodzcow",
+   "cite": "Ustawa o udzielaniu cudzoziemcom ochrony art. 89u ust. 1 (Rada wybiera przewodniczącego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-uchodzcow--elects--przewodniczacy": {
+   "id": "e-rada-uchodzcow--elects--przewodniczacy",
+   "type": "elects",
+   "fromId": "pl-rada-do-spraw-uchodzcow",
+   "toId": "pl-przewodniczacy-rady-do-spraw-uchodzcow",
+   "cite": "Ustawa o udzielaniu cudzoziemcom ochrony art. 89u ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rada-uchodzcow": {
+   "id": "e-prm--appoints--rada-uchodzcow",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-do-spraw-uchodzcow",
+   "cite": "Ustawa o udzielaniu cudzoziemcom ochrony art. 89r ust. 1 (12 członków powołuje Prezes RM na 5 lat)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+   "seatsAppointed": 12,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-zagranicznych--nominates--rada-uchodzcow": {
+   "id": "e-min-spraw-zagranicznych--nominates--rada-uchodzcow",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-rada-do-spraw-uchodzcow",
+   "cite": "Ustawa o udzielaniu cudzoziemcom ochrony art. 89r ust. 3 (po 4 osoby spośród kandydatów MSZ)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+   "seatsAppointed": 4,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-sprawiedliwosci--nominates--rada-uchodzcow": {
+   "id": "e-min-sprawiedliwosci--nominates--rada-uchodzcow",
+   "type": "nominates",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-rada-do-spraw-uchodzcow",
+   "cite": "Ustawa o udzielaniu cudzoziemcom ochrony art. 89r ust. 3 (po 4 osoby spośród kandydatów Ministra Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+   "seatsAppointed": 4,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kprm--administers--rada-uchodzcow": {
+   "id": "e-kprm--administers--rada-uchodzcow",
+   "type": "administers",
+   "fromId": "pl-kprm",
+   "toId": "pl-rada-do-spraw-uchodzcow",
+   "cite": "Ustawa o udzielaniu cudzoziemcom ochrony art. 89zb ust. 1 (obsługę Rady zapewnia KPRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-centralny-zarzad-sluzby-wieziennej--dept-head--dyrektor-generalny-sluzby-wieziennej": {
+   "id": "e-centralny-zarzad-sluzby-wieziennej--dept-head--dyrektor-generalny-sluzby-wieziennej",
+   "type": "dept_head",
+   "fromId": "pl-centralny-zarzad-sluzby-wieziennej",
+   "toId": "pl-dyrektor-generalny-sluzby-wieziennej",
+   "cite": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej art. 10 ust. 1 (Dyrektor Generalny podległy Ministrowi Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/523/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-ms--oversees--dyrektor-generalny-sw": {
+   "id": "e-min-ms--oversees--dyrektor-generalny-sw",
+   "type": "oversees",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-centralny-zarzad-sluzby-wieziennej",
+   "cite": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej art. 10 ust. 1 (Dyrektor Generalny podległy Ministrowi Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/523/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dyrektor-generalny-sw": {
+   "id": "e-prm--appoints--dyrektor-generalny-sw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-generalny-sluzby-wieziennej",
+   "cite": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej art. 64 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/523/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-ms--nominates--dyrektor-generalny-sw": {
+   "id": "e-min-ms--nominates--dyrektor-generalny-sw",
+   "type": "nominates",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-dyrektor-generalny-sluzby-wieziennej",
+   "cite": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej art. 64 ust. 1 (na wniosek ministra)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/523/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krajowa-szkola-sadownictwa-i-prokuratury--dept-head--dyrektor-kssip": {
+   "id": "e-krajowa-szkola-sadownictwa-i-prokuratury--dept-head--dyrektor-kssip",
+   "type": "dept_head",
+   "fromId": "pl-krajowa-szkola-sadownictwa-i-prokuratury",
+   "toId": "pl-dyrektor-kssip",
+   "cite": "Ustawa o KSSiP art. 12 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/157/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/157/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-ms--oversees--kssip": {
+   "id": "e-min-ms--oversees--kssip",
+   "type": "oversees",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-krajowa-szkola-sadownictwa-i-prokuratury",
+   "cite": "Ustawa o KSSiP art. 1 ust. 3 (nadzór MS nad zgodnością działania z ustawą i statutem)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/157/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/157/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-ms--appoints--dyrektor-kssip": {
+   "id": "e-min-ms--appoints--dyrektor-kssip",
+   "type": "appoints",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-dyrektor-kssip",
+   "cite": "Ustawa o KSSiP art. 12 ust. 1 (Dyrektora powołuje MS na 5 lat po zasięgnięciu opinii KRS i KRP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/157/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/157/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krs--advises--dyrektor-kssip": {
+   "id": "e-krs--advises--dyrektor-kssip",
+   "type": "advises",
+   "fromId": "pl-krajowa-rada-sadownictwa",
+   "toId": "pl-dyrektor-kssip",
+   "cite": "Ustawa o KSSiP art. 12 ust. 1 (opinia KRS przed powołaniem Dyrektora)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/157/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/157/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-instytut-wymiaru-sprawiedliwosci--dept-head--dyrektor-iws": {
+   "id": "e-instytut-wymiaru-sprawiedliwosci--dept-head--dyrektor-iws",
+   "type": "dept_head",
+   "fromId": "pl-instytut-wymiaru-sprawiedliwosci",
+   "toId": "pl-dyrektor-iws",
+   "cite": "Ustawa o instytutach badawczych art. 24 i n.; wykaz M.P. 2024 poz. 1040",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-ms--oversees--iws": {
+   "id": "e-min-ms--oversees--iws",
+   "type": "oversees",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-instytut-wymiaru-sprawiedliwosci",
+   "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1d – wykaz jednostek podległych MS (M.P. 2024 poz. 1040, cz. I pkt 2 i 4)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/1040/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/1040/ogl",
+     "https://www.gov.pl/web/sprawiedliwosc/jednostki-organizacyjne-podlegle-lub-nadzorowane"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-instytut-ekspertyz-sadowych--dept-head--dyrektor-ies": {
+   "id": "e-instytut-ekspertyz-sadowych--dept-head--dyrektor-ies",
+   "type": "dept_head",
+   "fromId": "pl-instytut-ekspertyz-sadowych",
+   "toId": "pl-dyrektor-ies",
+   "cite": "Ustawa o instytutach badawczych art. 24 i n.; wykaz M.P. 2024 poz. 1040",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-ms--oversees--ies": {
+   "id": "e-min-ms--oversees--ies",
+   "type": "oversees",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-instytut-ekspertyz-sadowych",
+   "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1d – wykaz jednostek podległych MS (M.P. 2024 poz. 1040, cz. I pkt 2 i 4)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/1040/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/1040/ogl",
+     "https://www.gov.pl/web/sprawiedliwosc/jednostki-organizacyjne-podlegle-lub-nadzorowane"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-min-ms--oversees--aws": {
+   "id": "e-min-ms--oversees--aws",
+   "type": "oversees",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-akademia-wymiaru-sprawiedliwosci",
+   "cite": "Ustawa o Służbie Więziennej art. 8 ust. 1a (uczelnia nadzorowana przez Ministra Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/523/ogl"
+    ],
+    "confidence": "high"
+   }
+  }
+ }
+}

@@ -1,0 +1,1493 @@
+{
+ "chunk": "niezalezne",
+ "verifiedAt": "2026-09-17",
+ "summary": "Weryfikacja adwersarialna: wszystkie 31 węzłów, 93 wpisy osób i 81 krawędzi. Otwarto każdą stronę sourceUrl (curl z UA; brpd.gov.pl blokuje Cloudflare – użyto snapshotu web.archive.org z 15.06.2026 i M.P. 2023 poz. 1357), sprawdzono metadane ELI wszystkich 13 aktów bazowych i 44 aktów M.P. (wszystkie 200, tytuły zgodne), przeczytano tekst ujednolicony każdego cytowanego przepisu (Konstytucja art. 202, 205, 209, 214, 227; uNIK art. 14, 21–23; uRPO art. 3, 20; uRPD art. 4, 13; urtv art. 7; uNBP art. 9, 13, 17; KW art. 157, 187, 190; uODO art. 34, 36, 45; uIPN art. 8, 10, 15, 16; uPIP art. 2, 4, 7; PKE art. 415, 417; uPKDP art. 6, 7; uRMN art. 3, 6, 10). Wynik: 0 refuted; 3 korekty dat (Sych 2019-07-29; Nowak i Wildstein 2023-06-28), 2 uzupełnienia źródeł dat (Glapiak – przewodnicząca; Wróblewski 2024-01-26), zmiana statusu Zarządu NBP na active po cross-checku (skład identyczny z nbp.pl wg Wikipedii z 29.03.2026). Części budżetowe 07, 08, 09, 10, 11, 12, 13, 14, 76, 89 potwierdzone w Dz.U. 2025 poz. 1185. Proponowane 7 brakujących krawędzi (powoływanie zastępców/DG przez szefów organów).",
+ "stats": {
+  "nodes_checked": 31,
+  "people_checked": 93,
+  "edges_checked": 81
+ },
+ "nodes": [
+  {
+   "id": "pl-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/1997/483 i DU/1995/59 OK; art. 202 ust. 2 'NIK podlega Sejmowi' potwierdzony; część 07 w Dz.U. 2025 poz. 1185; kierownictwo zgodne ze stroną nik.gov.pl/o-nik/kierownictwo-nik/."
+  },
+  {
+   "id": "pl-prezes-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 205 ust. 1 Konstytucji i art. 14 ust. 1 uNIK przeczytane – zgodne. M.P. 2025 poz. 1001 (Sejm 12.09.2025) i 1002 (Senat 17.09.2025) potwierdzają Haładyja."
+  },
+  {
+   "id": "pl-kolegium-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 22 ust. 1–2 i art. 23 uNIK zgodne (14 członków: 7+7, kadencja 3 lata). Strona NIK wymienia 13 członków (6 przedstawicieli nauk + 7 radców) – jedno miejsce nieobsadzone, zgodnie ze statusNote."
+  },
+  {
+   "id": "pl-biuro-rpo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 20 ust. 1 i 3 uRPO zgodne; ELI DU/1987/123 OK; część 08 potwierdzona; strona bip.brpo.gov.pl osiągalna."
+  },
+  {
+   "id": "pl-rpo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 209 ust. 1 Konstytucji zgodny; M.P. 2026 poz. 736/737 potwierdzają Gregorczyk-Abram (Sejm 17.07.2026, Senat 22.07.2026); strona rzecznik-i-biuro pokazuje 'Sylwia Gregorczyk-Abram, RPO IX kadencji'."
+  },
+  {
+   "id": "pl-biuro-rpd",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 13 uRPD zgodny (Rzecznik może powołać zastępcę); część 14 potwierdzona. Strona brpd.gov.pl/struktura-organizacyjna/ blokowana przez Cloudflare (curl i WebFetch) – treści statusNote (Gawroński, Figurniak) nie dało się potwierdzić; snapshot archive.org bez treści. Zostawić notę, obniżyć do 'wg stanu z chwili budowy chunku'."
+  },
+  {
+   "id": "pl-rpd",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 uRPD zgodny (wniosek Marszałka Sejmu, Marszałka Senatu, 35 posłów lub 15 senatorów; zgoda Senatu). Osoba potwierdzona w M.P. 2023 poz. 1357/1358 i w snapshocie archive.org strony o-rzeczniczce (2026-06-15): 'Urząd Rzeczniczki Praw Dziecka objęła 20 grudnia 2023 roku'."
+  },
+  {
+   "id": "pl-krrit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 214 Konstytucji i art. 7 ust. 1 urtv (2 Sejm, 1 Senat, 2 Prezydent) zgodne; część 09 potwierdzona; skład i daty na gov.pl/web/krrit/czlonkowie-krrit dokładnie jak w chunku."
+  },
+  {
+   "id": "pl-przewodniczacy-krrit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 2b urtv: 'Przewodniczącego Krajowej Rady wybierają ze swojego grona i odwołują członkowie Krajowej Rady' – potwierdzony w tekście ujednoliconym (stan 2026-08-18). Glapiak jako Przewodnicząca na gov.pl."
+  },
+  {
+   "id": "pl-nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 227 Konstytucji zgodny; ELI DU/1997/938 OK. nbp.pl i bip.nbp.pl nadal blokują ('Pardon Our Interruption') – statusNote adekwatna."
+  },
+  {
+   "id": "pl-prezes-nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 227 ust. 3 Konstytucji i art. 9 ust. 1 uNBP zgodne (Sejm na wniosek Prezydenta). M.P. 2022 poz. 484 potwierdza powołanie Glapińskiego (druga kadencja); Wikidata Q9139594 (P39 od 2016-06-21) i pl.wikipedia (prezes od 21.06.2016) – cross-check zgodny."
+  },
+  {
+   "id": "pl-rada-polityki-pienieznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 227 ust. 5 Konstytucji i art. 13 ust. 1 uNBP (Prezes + 9 członków po 3) zgodne; seatsCount 10 OK; wszystkie 9 aktów M.P. przeczytane, nazwiska zgodne."
+  },
+  {
+   "id": "pl-zarzad-nbp",
+   "status": "corrected",
+   "fixes": {
+    "status": "active",
+    "statusNote": "Skład odtworzony z postanowień Prezydenta RP w M.P. i potwierdzony cross-checkiem (pl.wikipedia, źródło nbp.pl/o-nbp/zarzad-nbp, dostęp 29.03.2026): Prezes NBP + 6 członków; stanowisko Wiceprezesa NBP – Pierwszego Zastępcy Prezesa nieobsadzone po upływie kadencji M. Kightley (od 8.03.2020, M.P. 2020 poz. 364); kadencja P. Pogonowskiego (M.P. 2020 poz. 363) upłynęła w marcu 2026. nbp.pl blokuje boty – ewentualne późniejsze zmiany nieweryfikowalne."
+   },
+   "note": "Art. 17 ust. 1–2b uNBP zgodny (Prezes + 6–8 członków, w tym 2 wiceprezesów; powołuje Prezydent na wniosek Prezesa NBP). Cross-check: pl.wikipedia 'Narodowy Bank Polski' (sekcja 'Obecny skład Zarządu', źródło nbp.pl/o-nbp/zarzad-nbp, dostęp 29.03.2026) podaje dokładnie: Glapiński, vacat (I zastępca), Lipiński, Gajęcka, Mucha, Soboń, Sura, Szałamacha – identycznie z chunkiem. M.P. 2020 poz. 364 (Kightley z dniem 8.03.2020) i 363 (Pogonowski) potwierdzają upływ kadencji w marcu 2026; brak ponownych powołań w M.P. 2024–2026. Status węzła można podnieść do active (confidence medium)."
+  },
+  {
+   "id": "pl-pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 157 § 1–3 KW przeczytany: 1 sędzia TK (wskazany przez Prezesa TK), 1 sędzia NSA (Prezes NSA), 7 osób wskazanych przez Sejm; wszystkich powołuje Prezydent postanowieniem (§ 3). Skład na pkw.gov.pl zgodny; M.P. 2024 poz. 203 wymienia 7 osób 'z dniem 14 marca 2024'."
+  },
+  {
+   "id": "pl-przewodniczacy-pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 157 § 5 KW zgodny (PKW wybiera przewodniczącego i 2 zastępców; wyłącznie sędzia TK/NSA). M.P. 2020 poz. 200 (uchwała PKW nr 10/2020 z 11.02.2020) potwierdza Marciniaka."
+  },
+  {
+   "id": "pl-kbw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 187 § 1 KW zgodny; część 11 potwierdzona; strona pkw.gov.pl/kbw/informacje-kbw osiągalna (bez nazwisk)."
+  },
+  {
+   "id": "pl-szef-kbw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 190 § 1–2b KW zgodny. Tkacz widoczny na pkw.gov.pl/organy-wyborcze/sklad-pkw jako 'Sekretarz PKW – Szef Krajowego Biura Wyborczego'. Uwaga modelowa: stanowisko ma parent=pl-pkw wbrew regule 'dept_head bez parent', ale walidator wymaga parent przy ring=satellite (usunięcie parent daje ERROR) – zostawiono bez zmian."
+  },
+  {
+   "id": "pl-uodo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 45 ust. 1 uODO zgodny; część 10 potwierdzona; zastępcy na uodo.gov.pl/pl/544."
+  },
+  {
+   "id": "pl-prezes-uodo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 34 ust. 3 uODO: 'Prezesa Urzędu powołuje i odwołuje Sejm RP za zgodą Senatu RP' – zgodny. M.P. 2024 poz. 43/44 potwierdzają Wróblewskiego."
+  },
+  {
+   "id": "pl-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8 uIPN zgodny; część 13 potwierdzona; zastępcy (Polejowski, Szpytma, Szwagrzyk) na ipn.gov.pl/pl/o-ipn/zastepcy-prezesa."
+  },
+  {
+   "id": "pl-prezes-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 uIPN zgodny (Sejm za zgodą Senatu na wniosek Kolegium). M.P. 2026 poz. 778 przeczytany: Senat 6.08.2026 'nie wyraża zgody na powołanie Mateusza Szpytmy'. Strona ipn.gov.pl/pl/o-ipn/prezes wymienia tylko byłych prezesów (Nawrocki 2021–2025) – wakat potwierdzony. Art. 10 ust. 2a (p.o. wskazany przez Marszałka Sejmu) dotyczy tylko śmierci Prezesa."
+  },
+  {
+   "id": "pl-kolegium-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 2–3 uIPN zgodny (9 członków: 2 Prezydent, 5 Sejm, 2 Senat; organ opiniodawczo-doradczy). Skład na ipn.gov.pl zgodny, funkcje przewodniczącego/zastępców zgodne."
+  },
+  {
+   "id": "pl-pip",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 uPIP: 'PIP podlega Sejmowi. Nadzór ... sprawuje Rada Ochrony Pracy' – zgodny; część 12 potwierdzona; kierownictwo na pip.gov.pl/o-nas/kierownictwo zgodne."
+  },
+  {
+   "id": "pl-glowny-inspektor-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 uPIP zgodny (Marszałek Sejmu po opinii ROP i komisji). Biogram pip.gov.pl: 'Z dniem 3 lipca 2026 r. został powołany przez Marszałka Sejmu, Włodzimierza Czarzastego, na stanowisko GIP'."
+  },
+  {
+   "id": "pl-rada-ochrony-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 1–2 uPIP zgodny (30 członków, powołuje Marszałek Sejmu, kadencja 4 lata). rop.sejm.gov.pl: 'CZŁONKOWIE ROP XII KADENCJI PRZY SEJMIE X KADENCJI', Krzysztof Gadowski – Przewodniczący. Modelowanie sector legislative/ring oversight bez parent akceptowalne."
+  },
+  {
+   "id": "pl-uke",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 413–417 PKE zgodne; część 76 potwierdzona; zastępcy Dyl i Krzywicki na uke.gov.pl/o-nas/kierownictwo/."
+  },
+  {
+   "id": "pl-prezes-uke",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 415 ust. 1–2 PKE zgodny (Sejm na wniosek PRM, kadencja 5 lat, nabór). M.P. 2025 poz. 1035 potwierdza Kunę (26.09.2025)."
+  },
+  {
+   "id": "pl-pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1–2 uPKDP zgodny (organ niezależny; 7 członków: 3 Sejm, 1 Senat, 1 Prezydent, 1 PRM, 1 RPD); część 89 potwierdzona; 7 nazwisk na pkdp.gov.pl/o-komisji/ zgodnych."
+  },
+  {
+   "id": "pl-przewodniczacy-pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 uPKDP zgodny (Sejm wybiera spośród członków). M.P. 2025 poz. 1005 potwierdza Napierałę (12.09.2025); poprzednio Bućko (M.P. 2023 poz. 1402)."
+  },
+  {
+   "id": "pl-rada-mediow-narodowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2016/929 status IN_FORCE; art. 3 (3 Sejm, 2 Prezydent) i art. 6 ust. 1 zgodne; skład na sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad zgodny (Król – przewodniczący, Babinetz, Kwiatkowski, Lichocka, Rutka)."
+  },
+  {
+   "id": "pl-przewodniczacy-rmn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 2 uRMN zgodny (wybierają członkowie ze swojego grona). Strona Sejmu: 'Wojciech Król – przewodniczący'."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-nik",
+   "personId": "pl-jacek-kozlowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl/o-nik/kierownictwo-nik/; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-nik",
+   "personId": "pl-katarzyna-budnikowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl/o-nik/kierownictwo-nik/; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-nik",
+   "personId": "pl-sylweriusz-krolak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl/o-nik/kierownictwo-nik/; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-nik",
+   "personId": "pl-malgorzata-szczepanska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl/o-nik/kierownictwo-nik/; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-prezes-nik",
+   "personId": "pl-mariusz-haladyj",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nik.gov.pl/o-nik/kierownictwo-nik/mariusz-haladyj.html: 'objęcia funkcji Prezesa NIK we wrześniu 2025 r.'; M.P. 2025 poz. 1001 (Sejm 12.09.2025) i 1002 (Senat 17.09.2025)."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-patrycja-zawadzka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-adam-marianski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-mariusz-jablonski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-karol-bielski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-czeslaw-martysz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-dawid-szescilo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-grzegorz-walendzik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-janusz-pawelczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-tomasz-sobecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-piotr-walczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-agnieszka-rejmer-kopania",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-malgorzata-humel-maciewiczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-nik",
+   "personId": "pl-grzegorz-haber",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: nik.gov.pl czlonkowie-kolegium-nik.html; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-biuro-rpo",
+   "personId": "pl-stanislaw-trociuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "bip.brpo.gov.pl/pl/content/zastepcy-rpo: 'Od dnia 1 stycznia 2002 r. pełni funkcję Zastępcy Rzecznika Praw Obywatelskich'."
+  },
+  {
+   "nodeId": "pl-biuro-rpo",
+   "personId": "pl-adam-krzywon",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: bip.brpo.gov.pl/pl/content/zastepcy-rpo; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-biuro-rpo",
+   "personId": "pl-anna-blaszczak-banasiak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: bip.brpo.gov.pl/pl/content/zastepcy-rpo; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rpo",
+   "personId": "pl-sylwia-gregorczyk-abram",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "bip.brpo.gov.pl/pl/content/rzecznik-i-biuro: 'Sylwia Gregorczyk-Abram, RPO IX kadencji'; M.P. 2026 poz. 736 (Sejm 17.07.2026) i 737 (Senat 22.07.2026) przeczytane."
+  },
+  {
+   "nodeId": "pl-rpd",
+   "personId": "pl-monika-horna-cieslak",
+   "status": "corrected",
+   "fixes": {
+    "note": "Strona brpd.gov.pl chroniona anty-botem; weryfikacja przez snapshot https://web.archive.org/web/20260615203545/https://brpd.gov.pl/o-rzeczniczce/ oraz M.P. 2023 poz. 1357 i 1358."
+   },
+   "note": "brpd.gov.pl/o-rzeczniczce/ blokowane przez Cloudflare (curl z UA i WebFetch: 'Please wait while your request is being verified'). Treść potwierdzona w snapshocie web.archive.org (2026-06-15): 'Monika Horna-Cieślak ... Urząd Rzeczniczki Praw Dziecka objęła 20 grudnia 2023 roku'. Nazwisko także w M.P. 2023 poz. 1357 (Sejm 28.11.2023) i 1358 (Senat 30.11.2023). Uzupełniam notę o źródło zastępcze."
+  },
+  {
+   "nodeId": "pl-krrit",
+   "personId": "pl-agnieszka-glapiak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: gov.pl/web/krrit/czlonkowie-krrit (z datą i organem powołującym); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-krrit",
+   "personId": "pl-hanna-karp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: gov.pl/web/krrit/czlonkowie-krrit (z datą i organem powołującym); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-krrit",
+   "personId": "pl-tadeusz-kowalski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: gov.pl/web/krrit/czlonkowie-krrit (z datą i organem powołującym); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-krrit",
+   "personId": "pl-marzena-paczuska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl: 'Marzena Paczuska, Członek KRRiT, powołana przez Prezydenta RP Andrzeja Dudę 3 października 2022'. W M.P. 2022 poz. 964 figuruje jako 'Marzena Ewa Paczuska-Tętnik' – forma nazwiska wg strony KRRiT zachowana."
+  },
+  {
+   "nodeId": "pl-krrit",
+   "personId": "pl-maciej-swirski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: gov.pl/web/krrit/czlonkowie-krrit (z datą i organem powołującym); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-przewodniczacy-krrit",
+   "personId": "pl-agnieszka-glapiak",
+   "status": "corrected",
+   "fixes": {
+    "startedAtSource": "https://www.polsatnews.pl/wiadomosc/2025-07-28/maciej-swirski-odwolany-z-funkcji-przewodniczacego-krrit/",
+    "note": "Wybrana przez członków KRRiT 28.07.2025 (art. 7 ust. 2b urtv) po odwołaniu M. Świrskiego; data ze źródła prasowego (Polsat News 28.07.2025), potwierdzona pośrednio komunikatem KRRiT z 8.08.2025: https://www.gov.pl/web/krrit/komunikat-po-posiedzeniu-krajowej-rady-radiofonii-i-telewizji-w-dniu-08082025-r"
+   },
+   "note": "Funkcja potwierdzona na gov.pl/web/krrit/czlonkowie-krrit ('Przewodnicząca KRRiT'). Data 28.07.2025: M.P. 2025 poz. 706 (uchwała Sejmu z 25.07.2025) tytułuje jeszcze Świrskiego Przewodniczącym; Polsat News 28.07.2025 ('Nową przewodniczącą KRRiT, większością czterech głosów, została wybrana Agnieszka Glapiak'); komunikat KRRiT z posiedzenia 8.08.2025 (gov.pl) nazywa Glapiak Przewodniczącą. Zamieniam startedAtSource z Wikipedii na datowany artykuł prasowy; confidence medium."
+  },
+  {
+   "nodeId": "pl-prezes-nbp",
+   "personId": "pl-adam-glapinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2022 poz. 484 (Sejm 12.05.2022) przeczytany – 'powołuje Adama Glapińskiego'. Wikidata Q9139594: P39 Prezes NBP od 2016-06-21 (bez daty końca); pl.wikipedia: prezes od 21.06.2016 (druga kadencja od 2022). startedAt '2022-05' oznacza datę uchwały o drugiej kadencji – do rozważenia zapis 2016-06-21 jako początek nieprzerwanego urzędowania."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-ireneusz-dabrowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-henryk-wnorowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-marcin-zarzecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-wieslaw-janczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-iwona-duda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-gabriela-maslowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-ludwik-kotecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-przemyslaw-litwiniuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-polityki-pienieznej",
+   "personId": "pl-joanna-tyrowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: akt w M.P. (przeczytany: nazwisko i data zgodne); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-zarzad-nbp",
+   "personId": "pl-adam-lipinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Postanowienie Prezydenta w M.P. przeczytane – nazwisko i data zgodne. Cross-check: pl.wikipedia 'Narodowy Bank Polski' (źródło nbp.pl/o-nbp/zarzad-nbp, dostęp 29.03.2026) wymienia tę osobę w obecnym Zarządzie. Status 'unverified' może pozostać (brak bezpośredniego dostępu do nbp.pl), ale confidence medium uzasadnione."
+  },
+  {
+   "nodeId": "pl-zarzad-nbp",
+   "personId": "pl-marta-gajecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Postanowienie Prezydenta w M.P. przeczytane – nazwisko i data zgodne. Cross-check: pl.wikipedia 'Narodowy Bank Polski' (źródło nbp.pl/o-nbp/zarzad-nbp, dostęp 29.03.2026) wymienia tę osobę w obecnym Zarządzie. Status 'unverified' może pozostać (brak bezpośredniego dostępu do nbp.pl), ale confidence medium uzasadnione."
+  },
+  {
+   "nodeId": "pl-zarzad-nbp",
+   "personId": "pl-rafal-sura",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Postanowienie Prezydenta w M.P. przeczytane – nazwisko i data zgodne. Cross-check: pl.wikipedia 'Narodowy Bank Polski' (źródło nbp.pl/o-nbp/zarzad-nbp, dostęp 29.03.2026) wymienia tę osobę w obecnym Zarządzie. Status 'unverified' może pozostać (brak bezpośredniego dostępu do nbp.pl), ale confidence medium uzasadnione."
+  },
+  {
+   "nodeId": "pl-zarzad-nbp",
+   "personId": "pl-pawel-mucha",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Postanowienie Prezydenta w M.P. przeczytane – nazwisko i data zgodne. Cross-check: pl.wikipedia 'Narodowy Bank Polski' (źródło nbp.pl/o-nbp/zarzad-nbp, dostęp 29.03.2026) wymienia tę osobę w obecnym Zarządzie. Status 'unverified' może pozostać (brak bezpośredniego dostępu do nbp.pl), ale confidence medium uzasadnione."
+  },
+  {
+   "nodeId": "pl-zarzad-nbp",
+   "personId": "pl-pawel-szalamacha",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Postanowienie Prezydenta w M.P. przeczytane – nazwisko i data zgodne. Cross-check: pl.wikipedia 'Narodowy Bank Polski' (źródło nbp.pl/o-nbp/zarzad-nbp, dostęp 29.03.2026) wymienia tę osobę w obecnym Zarządzie. Status 'unverified' może pozostać (brak bezpośredniego dostępu do nbp.pl), ale confidence medium uzasadnione."
+  },
+  {
+   "nodeId": "pl-zarzad-nbp",
+   "personId": "pl-artur-sobon",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Postanowienie Prezydenta w M.P. przeczytane – nazwisko i data zgodne. Cross-check: pl.wikipedia 'Narodowy Bank Polski' (źródło nbp.pl/o-nbp/zarzad-nbp, dostęp 29.03.2026) wymienia tę osobę w obecnym Zarządzie. Status 'unverified' może pozostać (brak bezpośredniego dostępu do nbp.pl), ale confidence medium uzasadnione."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-sylwester-marciniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pkw.gov.pl: 'Przewodniczący PKW Sylwester Marciniak, sędzia NSA'. M.P. 2020 poz. 100 (postanowienie z 17.01.2020, wejście w życie 17.01.2020) i M.P. 2020 poz. 200 (uchwała PKW nr 10/2020 z 11.02.2020 o wyborze Przewodniczącego) przeczytane."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-wojciech-sych",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2019-07-29"
+   },
+   "note": "M.P. 2019 poz. 894: postanowienie z 15.07.2019 powołuje 'z dniem 29 lipca 2019 r.' – data objęcia to 2019-07-29, nie data aktu. Nazwisko i funkcja (Zastępca Przewodniczącego, sędzia TK) potwierdzone na pkw.gov.pl."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-konrad-skladowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na pkw.gov.pl/organy-wyborcze/sklad-pkw; M.P. 2024 poz. 203 przeczytany: 'Powołuję z dniem 14 marca 2024 r.' – data zgodna."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-ryszard-balicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na pkw.gov.pl/organy-wyborcze/sklad-pkw; M.P. 2024 poz. 203 przeczytany: 'Powołuję z dniem 14 marca 2024 r.' – data zgodna."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-pawel-gieras",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na pkw.gov.pl/organy-wyborcze/sklad-pkw; M.P. 2024 poz. 203 przeczytany: 'Powołuję z dniem 14 marca 2024 r.' – data zgodna."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-ryszard-kalisz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na pkw.gov.pl/organy-wyborcze/sklad-pkw; M.P. 2024 poz. 203 przeczytany: 'Powołuję z dniem 14 marca 2024 r.' – data zgodna."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-maciej-klis",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na pkw.gov.pl/organy-wyborcze/sklad-pkw; M.P. 2024 poz. 203 przeczytany: 'Powołuję z dniem 14 marca 2024 r.' – data zgodna."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-arkadiusz-pikulik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na pkw.gov.pl/organy-wyborcze/sklad-pkw; M.P. 2024 poz. 203 przeczytany: 'Powołuję z dniem 14 marca 2024 r.' – data zgodna."
+  },
+  {
+   "nodeId": "pl-pkw",
+   "personId": "pl-miroslaw-suski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na pkw.gov.pl/organy-wyborcze/sklad-pkw; M.P. 2024 poz. 203 przeczytany: 'Powołuję z dniem 14 marca 2024 r.' – data zgodna."
+  },
+  {
+   "nodeId": "pl-przewodniczacy-pkw",
+   "personId": "pl-sylwester-marciniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pkw.gov.pl: 'Przewodniczący PKW Sylwester Marciniak, sędzia NSA'. M.P. 2020 poz. 100 (postanowienie z 17.01.2020, wejście w życie 17.01.2020) i M.P. 2020 poz. 200 (uchwała PKW nr 10/2020 z 11.02.2020 o wyborze Przewodniczącego) przeczytane."
+  },
+  {
+   "nodeId": "pl-szef-kbw",
+   "personId": "pl-rafal-tkacz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pkw.gov.pl/organy-wyborcze/sklad-pkw: 'Sekretarz PKW – dr Rafał Tkacz – Szef Krajowego Biura Wyborczego'. Data powołania nieustalona (brak aktu w M.P.) – startedAt null poprawnie."
+  },
+  {
+   "nodeId": "pl-uodo",
+   "personId": "pl-agnieszka-grzelak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: uodo.gov.pl/pl/544; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-uodo",
+   "personId": "pl-konrad-komornicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: uodo.gov.pl/pl/544; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-prezes-uodo",
+   "personId": "pl-miroslaw-wroblewski",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2024-01-26",
+    "startedAtSource": "https://uodo.gov.pl/pl/138/2973"
+   },
+   "note": "Nazwisko na uodo.gov.pl/pl/544 ('Mirosław Wróblewski - Prezes UODO'). Aktualność uodo.gov.pl/pl/138/2973 z 26.01.2024: 'Mirosław Wróblewski złożył ślubowanie na stanowisko Prezesa UODO' – dokładna data objęcia; M.P. 2024 poz. 43 (Sejm 16.01.2024) i 44 (Senat 17.01.2024)."
+  },
+  {
+   "nodeId": "pl-ipn",
+   "personId": "pl-karol-polejowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: ipn.gov.pl/pl/o-ipn/zastepcy-prezesa; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-ipn",
+   "personId": "pl-mateusz-szpytma",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: ipn.gov.pl/pl/o-ipn/zastepcy-prezesa; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-ipn",
+   "personId": "pl-krzysztof-szwagrzyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: ipn.gov.pl/pl/o-ipn/zastepcy-prezesa; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-tadeusz-wolsza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na ipn.gov.pl (skład Kolegium) potwierdzone; uchwała Sejmu z 16.06.2023 (M.P. 2023 poz. 598–602) powołuje 'na kadencję Kolegium następującą po kadencji, w czasie której podjęto uchwałę' – startedAt = data uchwały jest przybliżeniem; strona IPN podaje przy nazwiskach daty 04–06.07.2023 (prawdopodobnie początek kadencji)."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-wojciech-polak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na ipn.gov.pl (skład Kolegium) potwierdzone; uchwała Sejmu z 16.06.2023 (M.P. 2023 poz. 598–602) powołuje 'na kadencję Kolegium następującą po kadencji, w czasie której podjęto uchwałę' – startedAt = data uchwały jest przybliżeniem; strona IPN podaje przy nazwiskach daty 04–06.07.2023 (prawdopodobnie początek kadencji)."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-mieczyslaw-ryba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na ipn.gov.pl (skład Kolegium) potwierdzone; uchwała Sejmu z 16.06.2023 (M.P. 2023 poz. 598–602) powołuje 'na kadencję Kolegium następującą po kadencji, w czasie której podjęto uchwałę' – startedAt = data uchwały jest przybliżeniem; strona IPN podaje przy nazwiskach daty 04–06.07.2023 (prawdopodobnie początek kadencji)."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-jan-draus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na ipn.gov.pl (skład Kolegium) potwierdzone; uchwała Sejmu z 16.06.2023 (M.P. 2023 poz. 598–602) powołuje 'na kadencję Kolegium następującą po kadencji, w czasie której podjęto uchwałę' – startedAt = data uchwały jest przybliżeniem; strona IPN podaje przy nazwiskach daty 04–06.07.2023 (prawdopodobnie początek kadencji)."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-krzysztof-wyszkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na ipn.gov.pl (skład Kolegium) potwierdzone; uchwała Sejmu z 16.06.2023 (M.P. 2023 poz. 598–602) powołuje 'na kadencję Kolegium następującą po kadencji, w czasie której podjęto uchwałę' – startedAt = data uchwały jest przybliżeniem; strona IPN podaje przy nazwiskach daty 04–06.07.2023 (prawdopodobnie początek kadencji)."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-bartosz-machalica",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: ipn.gov.pl skład Kolegium + akt w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-grzegorz-motyka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: ipn.gov.pl skład Kolegium + akt w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-andrzej-nowak",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2023-06-28"
+   },
+   "note": "M.P. 2023 poz. 812: postanowienie z 27.06.2023 powołuje 'z dniem 28 czerwca 2023 r.' – startedAt 2023-06-28. Nazwisko na ipn.gov.pl (skład Kolegium) potwierdzone."
+  },
+  {
+   "nodeId": "pl-kolegium-ipn",
+   "personId": "pl-bronislaw-wildstein",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2023-06-28"
+   },
+   "note": "M.P. 2023 poz. 812: postanowienie z 27.06.2023 powołuje 'z dniem 28 czerwca 2023 r.' – startedAt 2023-06-28. Nazwisko na ipn.gov.pl (skład Kolegium) potwierdzone."
+  },
+  {
+   "nodeId": "pl-pip",
+   "personId": "pl-aneta-gronowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: pip.gov.pl/o-nas/kierownictwo; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-pip",
+   "personId": "pl-urszula-langer",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: pip.gov.pl/o-nas/kierownictwo; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-pip",
+   "personId": "pl-jaroslaw-lesniewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: pip.gov.pl/o-nas/kierownictwo; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-glowny-inspektor-pracy",
+   "personId": "pl-janusz-krason",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pip.gov.pl/o-nas/kierownictwo/janusz-krason: 'Z dniem 3 lipca 2026 r. został powołany przez Marszałka Sejmu ... na stanowisko Głównego Inspektora Pracy'."
+  },
+  {
+   "nodeId": "pl-rada-ochrony-pracy",
+   "personId": "pl-krzysztof-gadowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: rop.sejm.gov.pl (Krzysztof Gadowski – Przewodniczący); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-uke",
+   "personId": "pl-krzysztof-dyl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: uke.gov.pl/o-nas/kierownictwo/; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-uke",
+   "personId": "pl-karol-krzywicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: uke.gov.pl/o-nas/kierownictwo/; data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-prezes-uke",
+   "personId": "pl-przemyslaw-kuna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uke.gov.pl: '26 września 2025 został wybrany przez Sejm na Prezesa UKE'; M.P. 2025 poz. 1035 (uchwała Sejmu z 26.09.2025) przeczytana."
+  },
+  {
+   "nodeId": "pl-pkdp",
+   "personId": "pl-joanna-napierala",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na pkdp.gov.pl/o-komisji/ potwierdzone; biogram pkdp.gov.pl/komisja/<slug>/ nie podaje organu powołującego ani daty; w M.P. 2020–2026 brak aktu Senatu/Prezydenta/PRM/RPD dla tej osoby – organ powołujący pozostaje nieustalony."
+  },
+  {
+   "nodeId": "pl-pkdp",
+   "personId": "pl-konrad-ciesiolkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: pkdp.gov.pl/o-komisji/ + akt Sejmu w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-pkdp",
+   "personId": "pl-katarzyna-komoniewska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: pkdp.gov.pl/o-komisji/ + akt Sejmu w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-pkdp",
+   "personId": "pl-marcin-bednarczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na pkdp.gov.pl/o-komisji/ potwierdzone; biogram pkdp.gov.pl/komisja/<slug>/ nie podaje organu powołującego ani daty; w M.P. 2020–2026 brak aktu Senatu/Prezydenta/PRM/RPD dla tej osoby – organ powołujący pozostaje nieustalony."
+  },
+  {
+   "nodeId": "pl-pkdp",
+   "personId": "pl-karolina-bucko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: pkdp.gov.pl/o-komisji/ + akt Sejmu w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-pkdp",
+   "personId": "pl-justyna-kotowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na pkdp.gov.pl/o-komisji/ potwierdzone; biogram pkdp.gov.pl/komisja/<slug>/ nie podaje organu powołującego ani daty; w M.P. 2020–2026 brak aktu Senatu/Prezydenta/PRM/RPD dla tej osoby – organ powołujący pozostaje nieustalony."
+  },
+  {
+   "nodeId": "pl-pkdp",
+   "personId": "pl-agnieszka-rekas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja na pkdp.gov.pl/o-komisji/ potwierdzone; biogram pkdp.gov.pl/komisja/<slug>/ nie podaje organu powołującego ani daty; w M.P. 2020–2026 brak aktu Senatu/Prezydenta/PRM/RPD dla tej osoby – organ powołujący pozostaje nieustalony."
+  },
+  {
+   "nodeId": "pl-przewodniczacy-pkdp",
+   "personId": "pl-joanna-napierala",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pkdp.gov.pl/o-komisji/: 'Joanna Napierała – Przewodnicząca Państwowej Komisji'; M.P. 2025 poz. 1005 (Sejm 12.09.2025) przeczytany."
+  },
+  {
+   "nodeId": "pl-rada-mediow-narodowych",
+   "personId": "pl-wojciech-krol",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sejm.gov.pl rmn_sklad: 'Wojciech Król – przewodniczący'; M.P. 2024 poz. 1039 (Sejm 5.12.2024 wybiera do składu RMN). Data wyboru na przewodniczącego nieustalona (strony RMN 'uchwały'/'komunikaty' bez treści)."
+  },
+  {
+   "nodeId": "pl-rada-mediow-narodowych",
+   "personId": "pl-piotr-babinetz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: sejm.gov.pl rmn_sklad + akt w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-mediow-narodowych",
+   "personId": "pl-joanna-lichocka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: sejm.gov.pl rmn_sklad + akt w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-mediow-narodowych",
+   "personId": "pl-robert-kwiatkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: sejm.gov.pl rmn_sklad + akt w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-rada-mediow-narodowych",
+   "personId": "pl-marek-rutka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne w źródle: sejm.gov.pl rmn_sklad + akt w M.P. (przeczytany); data (jeśli podana) zgodna z aktem M.P."
+  },
+  {
+   "nodeId": "pl-przewodniczacy-rmn",
+   "personId": "pl-wojciech-krol",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sejm.gov.pl rmn_sklad: 'Wojciech Król – przewodniczący'; M.P. 2024 poz. 1039 (Sejm 5.12.2024 wybiera do składu RMN). Data wyboru na przewodniczącego nieustalona (strony RMN 'uchwały'/'komunikaty' bez treści)."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-sejm--oversees--nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 202 ust. 2 Konstytucji: 'NIK podlega Sejmowi' – zgodny; kierunek OK."
+  },
+  {
+   "id": "e-nik--dept_head--prezes-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-sejm--appoints--prezes-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 205 ust. 1: 'powoływany przez Sejm za zgodą Senatu na 6 lat' – zgodny."
+  },
+  {
+   "id": "e-senat--confirms--prezes-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 205 ust. 1 Konstytucji + art. 14 ust. 2 uNIK (Senat podejmuje uchwałę w ciągu miesiąca) – zgodny."
+  },
+  {
+   "id": "e-marszalek-sejmu--nominates--prezes-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14 ust. 1 uNIK: 'na wniosek Marszałka Sejmu lub grupy co najmniej 35 posłów' – zgodny."
+  },
+  {
+   "id": "e-marszalek-sejmu--appoints--nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21 ust. 1 uNIK: wiceprezesów (3) powołuje Marszałek Sejmu na wniosek Prezesa NIK – zgodny (brakuje krawędzi Prezes NIK→nominates→NIK, dodana w additions)."
+  },
+  {
+   "id": "e-marszalek-sejmu--appoints--kolegium-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 22 ust. 2 uNIK: Marszałek Sejmu powołuje 14 członków (7+7) – zgodny."
+  },
+  {
+   "id": "e-prezes-nik--nominates--kolegium-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 22 ust. 2: 'na wniosek Prezesa NIK' – zgodny."
+  },
+  {
+   "id": "e-prezes-nik--ex_officio--kolegium-nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 22 ust. 1: Prezes NIK jako przewodniczący Kolegium – zgodny."
+  },
+  {
+   "id": "e-kolegium-nik--advises--nik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 23 uNIK (zatwierdza/uchwala/opiniuje) – zgodny."
+  },
+  {
+   "id": "e-biuro-rpo--dept_head--rpo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-sejm--appoints--rpo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 209 ust. 1 Konstytucji – zgodny."
+  },
+  {
+   "id": "e-senat--confirms--rpo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 209 ust. 1 Konstytucji + art. 3 ust. 4 uRPO – zgodny."
+  },
+  {
+   "id": "e-marszalek-sejmu--nominates--rpo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1 uRPO: 'na wniosek Marszałka Sejmu albo grupy 35 posłów' – zgodny."
+  },
+  {
+   "id": "e-rpo--appoints--biuro-rpo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 20 ust. 3 uRPO: 'Rzecznik może powołać nie więcej niż trzech zastępców' – zgodny."
+  },
+  {
+   "id": "e-biuro-rpd--dept_head--rpd",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-sejm--appoints--rpd",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 uRPD (Sejm za zgodą Senatu) – zgodny; odwołanie do art. 72 ust. 4 Konstytucji poprawne."
+  },
+  {
+   "id": "e-senat--confirms--rpd",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 i 4 uRPD – zgodny."
+  },
+  {
+   "id": "e-marszalek-sejmu--nominates--rpd",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 uRPD: wniosek Marszałka Sejmu, Marszałka Senatu, 35 posłów lub 15 senatorów – zgodny."
+  },
+  {
+   "id": "e-marszalek-senatu--nominates--rpd",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 uRPD – Marszałek Senatu jako wnioskodawca – zgodny."
+  },
+  {
+   "id": "e-krrit--dept_head--przewodniczacy-krrit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-krrit--elects--przewodniczacy-krrit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 2b urtv – potwierdzony dosłownie."
+  },
+  {
+   "id": "e-sejm--appoints--krrit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 214 ust. 1 Konstytucji + art. 7 ust. 1 urtv (2 przez Sejm) – zgodny."
+  },
+  {
+   "id": "e-senat--appoints--krrit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 1 urtv (1 przez Senat) – zgodny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--krrit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 1 urtv (2 przez Prezydenta) – zgodny."
+  },
+  {
+   "id": "e-nbp--dept_head--prezes-nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-sejm--appoints--prezes-nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 227 ust. 3 Konstytucji + art. 9 ust. 1 uNBP – zgodny."
+  },
+  {
+   "id": "e-prezydent-rp--nominates--prezes-nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 227 ust. 3: 'na wniosek Prezydenta Rzeczypospolitej' – zgodny."
+  },
+  {
+   "id": "e-prezes-nbp--ex_officio--rada-polityki-pienieznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 227 ust. 5 Konstytucji + art. 13 ust. 1 pkt 1 uNBP (Przewodniczący Rady = Prezes NBP) – zgodny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--rada-polityki-pienieznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 227 ust. 5 (w równej liczbie) + art. 13 ust. 1 pkt 2 uNBP (9 członków) – 3 miejsca zgodne."
+  },
+  {
+   "id": "e-sejm--appoints--rada-polityki-pienieznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "jw. – 3 miejsca zgodne."
+  },
+  {
+   "id": "e-senat--appoints--rada-polityki-pienieznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "jw. – 3 miejsca zgodne."
+  },
+  {
+   "id": "e-prezes-nbp--ex_officio--zarzad-nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 17 ust. 2 uNBP: Prezes NBP jako przewodniczący Zarządu – zgodny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--zarzad-nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 17 ust. 2a uNBP: członków powołuje Prezydent na wniosek Prezesa NBP – zgodny; seatsAppointed 8 = górna granica (ustawa: 6–8 członków), akceptowalne."
+  },
+  {
+   "id": "e-prezes-nbp--nominates--zarzad-nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 17 ust. 2a: 'na wniosek Prezesa NBP' – zgodny."
+  },
+  {
+   "id": "e-zarzad-nbp--administers--nbp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 17 ust. 1: 'Działalnością NBP kieruje Zarząd' – zgodny."
+  },
+  {
+   "id": "e-pkw--dept_head--przewodniczacy-pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-pkw--elects--przewodniczacy-pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 157 § 5 KW – zgodny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 157 § 3 KW: 'Członków PKW powołuje Prezydent RP w drodze postanowienia' – zgodny (9 miejsc)."
+  },
+  {
+   "id": "e-sejm--nominates--pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 157 § 2 pkt 3 i § 4a KW: 7 osób wskazanych przez Sejm, kandydaci klubów proporcjonalnie – zgodny."
+  },
+  {
+   "id": "e-prezes-tk--nominates--pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 157 § 2 pkt 1 KW – zgodny."
+  },
+  {
+   "id": "e-prezes-nsa--nominates--pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 157 § 2 pkt 2 KW – zgodny."
+  },
+  {
+   "id": "e-kbw--dept_head--szef-kbw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-pkw--appoints--szef-kbw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 190 § 2 i 2b KW (PKW powołuje na 7 lat) – zgodny."
+  },
+  {
+   "id": "e-minister-spraw-wewnetrznych-i-administracji--nominates--szef-kbw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 190 § 2 KW: 'spośród trzech kandydatów przedstawionych przez ministra właściwego do spraw wewnętrznych' – zgodny; ID kanonu poprawne."
+  },
+  {
+   "id": "e-szef-kbw--ex_officio--pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 157 § 6 KW: Szef KBW pełni funkcję sekretarza PKW – zgodny."
+  },
+  {
+   "id": "e-kbw--administers--pkw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 187 § 1 KW – zgodny."
+  },
+  {
+   "id": "e-uodo--dept_head--prezes-uodo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-sejm--appoints--prezes-uodo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 34 ust. 3 uODO – potwierdzony dosłownie."
+  },
+  {
+   "id": "e-senat--confirms--prezes-uodo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 34 ust. 3 uODO ('za zgodą Senatu') – zgodny."
+  },
+  {
+   "id": "e-ipn--dept_head--prezes-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-sejm--appoints--prezes-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 uIPN – zgodny."
+  },
+  {
+   "id": "e-senat--confirms--prezes-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 uIPN ('za zgodą Senatu'); M.P. 2026 poz. 778 pokazuje realne użycie tej kompetencji (odmowa) – zgodny."
+  },
+  {
+   "id": "e-kolegium-ipn--nominates--prezes-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 i 3 uIPN (wniosek Kolegium, kandydat spoza grona, konkurs) – zgodny."
+  },
+  {
+   "id": "e-kolegium-ipn--advises--prezes-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 2 uIPN – zgodny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--kolegium-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 3 pkt 1 uIPN (2) – zgodny."
+  },
+  {
+   "id": "e-sejm--appoints--kolegium-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 3 pkt 2 uIPN (5) – zgodny."
+  },
+  {
+   "id": "e-senat--appoints--kolegium-ipn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 3 pkt 3 uIPN (2) – zgodny."
+  },
+  {
+   "id": "e-sejm--oversees--pip",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 uPIP: 'PIP podlega Sejmowi' – zgodny."
+  },
+  {
+   "id": "e-rada-ochrony-pracy--oversees--pip",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 zd. 2 i art. 7 ust. 1 uPIP – zgodny."
+  },
+  {
+   "id": "e-pip--dept_head--glowny-inspektor-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-marszalek-sejmu--appoints--glowny-inspektor-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 uPIP – zgodny."
+  },
+  {
+   "id": "e-marszalek-sejmu--appoints--pip",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 3 uPIP (zastępców GIP powołuje Marszałek Sejmu na wniosek GIP) – zgodny; brakuje GIP→nominates→PIP (dodana)."
+  },
+  {
+   "id": "e-rada-ochrony-pracy--advises--marszalek-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 i art. 7 ust. 8 uPIP – zgodny."
+  },
+  {
+   "id": "e-marszalek-sejmu--appoints--rada-ochrony-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 2 uPIP (30 członków) – zgodny."
+  },
+  {
+   "id": "e-rada-ochrony-pracy--advises--sejm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 1 i 7 uPIP – organ 'przy Sejmie' wyrażający stanowisko; confidence medium adekwatne."
+  },
+  {
+   "id": "e-uke--dept_head--prezes-uke",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-sejm--appoints--prezes-uke",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 415 ust. 1 PKE – zgodny."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--prezes-uke",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 415 ust. 1–2 PKE – zgodny."
+  },
+  {
+   "id": "e-minister-cyfryzacji--appoints--uke",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 417 ust. 1 PKE: minister właściwy ds. informatyzacji powołuje zastępców na wniosek Prezesa UKE – zgodny; ID kanonu poprawne."
+  },
+  {
+   "id": "e-pkdp--dept_head--przewodniczacy-pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-sejm--elects--przewodniczacy-pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 uPKDP – zgodny."
+  },
+  {
+   "id": "e-sejm--appoints--pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 2 pkt 1 uPKDP (3, większość 3/5) – zgodny."
+  },
+  {
+   "id": "e-senat--appoints--pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 2 pkt 2 – zgodny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 2 pkt 3 – zgodny."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 2 pkt 4 – zgodny."
+  },
+  {
+   "id": "e-rpd--appoints--pkdp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 2 pkt 5 – zgodny."
+  },
+  {
+   "id": "e-rada-mediow-narodowych--dept_head--przewodniczacy-rmn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-rada-mediow-narodowych--elects--przewodniczacy-rmn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 2 uRMN – zgodny."
+  },
+  {
+   "id": "e-sejm--elects--rada-mediow-narodowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 uRMN (3 wybiera Sejm) – zgodny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--rada-mediow-narodowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 i art. 6 ust. 1 uRMN (2 powołuje Prezydent spośród kandydatów klubów opozycyjnych) – zgodny."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {
+   "e-prezes-nik--nominates--nik": {
+    "id": "e-prezes-nik--nominates--nik",
+    "type": "nominates",
+    "fromId": "pl-prezes-nik",
+    "toId": "pl-nik",
+    "cite": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 21 ust. 1 (wiceprezesów NIK powołuje Marszałek Sejmu na wniosek Prezesa NIK)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/1995/59/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-prezes-nik--appoints--nik": {
+    "id": "e-prezes-nik--appoints--nik",
+    "type": "appoints",
+    "fromId": "pl-prezes-nik",
+    "toId": "pl-nik",
+    "cite": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 21 ust. 2 (dyrektora generalnego NIK powołuje i odwołuje Prezes NIK za zgodą Marszałka Sejmu)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/1995/59/ogl",
+      "https://www.nik.gov.pl/o-nik/kierownictwo-nik/"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-prezes-uodo--appoints--uodo": {
+    "id": "e-prezes-uodo--appoints--uodo",
+    "type": "appoints",
+    "fromId": "pl-prezes-uodo",
+    "toId": "pl-uodo",
+    "cite": "Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych, art. 36 ust. 1 (Prezes Urzędu może powołać do trzech zastępców)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+    "seatsAppointed": 3,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+      "https://uodo.gov.pl/pl/544"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-prezes-ipn--appoints--ipn": {
+    "id": "e-prezes-ipn--appoints--ipn",
+    "type": "appoints",
+    "fromId": "pl-prezes-ipn",
+    "toId": "pl-ipn",
+    "cite": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 16 ust. 2 (Prezes IPN powołuje nie więcej niż trzech swoich zastępców)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+    "seatsAppointed": 3,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+      "https://ipn.gov.pl/pl/o-ipn/zastepcy-prezesa"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-glowny-inspektor-pracy--nominates--pip": {
+    "id": "e-glowny-inspektor-pracy--nominates--pip",
+    "type": "nominates",
+    "fromId": "pl-glowny-inspektor-pracy",
+    "toId": "pl-pip",
+    "cite": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 4 ust. 3 (zastępców GIP powołuje Marszałek Sejmu na wniosek Głównego Inspektora Pracy)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2007/589/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-prezes-uke--nominates--uke": {
+    "id": "e-prezes-uke--nominates--uke",
+    "type": "nominates",
+    "fromId": "pl-prezes-uke",
+    "toId": "pl-uke",
+    "cite": "Ustawa z dnia 12 lipca 2024 r. – Prawo komunikacji elektronicznej, art. 417 ust. 1 (zastępców Prezesa UKE powołuje minister właściwy ds. informatyzacji na wniosek Prezesa UKE)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2024/1221/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-rpd--appoints--biuro-rpd": {
+    "id": "e-rpd--appoints--biuro-rpd",
+    "type": "appoints",
+    "fromId": "pl-rpd",
+    "toId": "pl-biuro-rpd",
+    "cite": "Ustawa z dnia 6 stycznia 2000 r. o Rzeczniku Praw Dziecka, art. 13 ust. 3 (Rzecznik może powołać zastępcę Rzecznika)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2000/69/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2000/69/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   }
+  }
+ },
+ "missing": [
+  "brpd.gov.pl (strona główna, o-rzeczniczce, struktura-organizacyjna, bip.brpd.gov.pl) chroniona anty-botem Cloudflare – weryfikacja RPD tylko przez snapshot archive.org (15.06.2026) i M.P.; treść statusNote Biura RPD (Gawroński, Figurniak) nieweryfikowalna.",
+  "nbp.pl/bip.nbp.pl blokują boty – skład Zarządu NBP i RPP potwierdzony tylko aktami M.P. i pośrednio przez Wikipedię (stan 29.03.2026); brak informacji o ewentualnym nowym I Zastępcy Prezesa NBP po marcu 2026.",
+  "PKDP: organ powołujący i data powołania 4 z 7 członków (Napierała, Bednarczyk, Kotowska, Rękas) – brak aktów w M.P. (Senat/Prezydent/PRM/RPD) i brak danych na pkdp.gov.pl; wg ustawy pozostałe miejsca to Senat (1), Prezydent (1), PRM (1), RPD (1) – przypisania nie da się ustalić.",
+  "Data wyboru Wojciecha Króla na Przewodniczącego RMN – strony Sejmu 'uchwały'/'komunikaty' RMN nie zwracają treści; startedAt null pozostaje.",
+  "Data wyboru Glapiak na Przewodniczącą KRRiT (28.07.2025) oparta na źródle prasowym; KRRiT nie opublikowała na gov.pl datowanego komunikatu o wyborze (znaleziono tylko komunikat z posiedzenia 8.08.2025 tytułujący ją Przewodniczącą).",
+  "Kolegium NIK: 14. miejsce (7. przedstawiciel nauk prawnych/ekonomicznych) nieobsadzone wg strony NIK; daty powołania członków Kolegium NIK niepublikowane.",
+  "Rada Ochrony Pracy: pełny skład 30 osób pominięty (na rop.sejm.gov.pl dostępny); data powołania Gadowskiego na przewodniczącego nieustalona.",
+  "Szef KBW Rafał Tkacz – data powołania nieustalona (brak aktu w M.P., strona KBW bez daty)."
+ ]
+}

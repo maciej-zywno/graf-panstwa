@@ -1,0 +1,1098 @@
+{
+ "chunk": "ministerstwa-G5",
+ "verifiedAt": "2026-09-17",
+ "summary": "Sprawdzono wszystkie 51 węzłów (każdy akt z legalSource/citeUrl istnieje w ELI z pasującym tytułem; teksty jednolite pobrane przez API ELI i przeczytane w zakresie cytowanych artykułów), wszystkie 21 osób (każdy sourceUrl otwarty curl-em) i wszystkie 92 krawędzie. Wynik: węzły 46 confirmed, 1 corrected (RDOŚ subtype), 2 refuted (pl-dyrektor-cdr – zła osoba; pl-glowny-inspektor-rybolowstwa-morskiego – błędnie 'unverified', strona podaje nazwisko), 2 unverified (IOŚ-PIB i jego dyrektor – Incapsula). Osoby: 20 confirmed, 1 refuted (Joanna Gołębiowska jest Zastępcą Dyrektora CDR; Dyrektorem jest Marcin Oszańca). Krawędzie: 92 confirmed (wszystkie cytaty appoints/nominates/oversees/ex_officio zgodne z tekstem przepisu; kierunki zgodne z semantyką). Ministrowie i daty (M.P. 2025 poz. 690, 2023 poz. 1383) potwierdzone z pdftotext. Liczebności klas (16 ODR, 12 PIB MRiRW, 3 instytuty MKiŚ, 23 PN, 16 WFOŚiGW) zgodne z M.P. 2026 poz. 155 i M.P. 2025 poz. 1125. budgetPart ministerstw potwierdzone w Dz.U. 2025 poz. 1185. M.P. 2022 poz. 271 to nadal najnowsze obwieszczenie MSiT.",
+ "stats": {
+  "nodes_checked": 51,
+  "people_checked": 21,
+  "edges_checked": 92
+ },
+ "nodes": [
+  {
+   "id": "pl-ministerstwo-rolnictwa-i-rozwoju-wsi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. RM DU/1999/1016 istnieje w ELI (akt jednorazowy, IN_FORCE). budgetPart '32, 33, 35, 62' potwierdzony w § 1 ust. 3 rozp. PRM Dz.U. 2025 poz. 1000 oraz w t.j. rozp. MF o klasyfikacji części budżetowych (Dz.U. 2025 poz. 1185: 32 Rolnictwo, 33 Rozwój wsi, 35 Rynki rolne, 62 Rybołówstwo). officialUrl i strona 'kierownictwo-ministerstwa' działają."
+  },
+  {
+   "id": "pl-minister-rolnictwa-i-rozwoju-wsi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. PRM Dz.U. 2025 poz. 1000 odczytane: działy rolnictwo, rozwój wsi, rybołówstwo, rynki rolne; części 32, 33, 62, 35; załącznik: Prezes KRUS, GIORiN, GLW, GIJHARS, GIRM – zgodne z opisem i topics."
+  },
+  {
+   "id": "pl-ministerstwo-klimatu-i-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2020/1734 i DU/2025/1140 (przekształcenie – wyłączenie działu energia) istnieją w ELI, treść zgodna z opisem. budgetPart '41, 51' potwierdzony w § 1 ust. 3 Dz.U. 2025 poz. 995 i w Dz.U. 2025 poz. 1185 (41 Środowisko, 51 Klimat)."
+  },
+  {
+   "id": "pl-minister-klimatu-i-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. PRM Dz.U. 2025 poz. 995 odczytane: działy klimat, środowisko; części 51 i 41; załącznik: GDOŚ, GIOŚ, Prezes PAA – zgodne z opisem."
+  },
+  {
+   "id": "pl-ministerstwo-sportu-i-turystyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2021/1953 istnieje w ELI. budgetPart '25, 40' potwierdzony w § 1 ust. 3 Dz.U. 2025 poz. 1002 i w Dz.U. 2025 poz. 1185 (25 Kultura fizyczna, 40 Turystyka). Wyszukiwanie ELI (publisher=MP) potwierdza, że M.P. 2022 poz. 271 jest najnowszym obwieszczeniem MSiT o wykazie jednostek (brak nowszego w latach 2023–2026)."
+  },
+  {
+   "id": "pl-minister-sportu-i-turystyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. PRM Dz.U. 2025 poz. 1002 odczytane: działy kultura fizyczna, turystyka; części 25 i 40; brak załącznika z organami podległymi – zgodne z opisem."
+  },
+  {
+   "id": "pl-agencja-restrukturyzacji-i-modernizacji-rolnictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-prezes-arimr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-krajowy-osrodek-wsparcia-rolnictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-dyrektor-generalny-kowr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-kasa-rolniczego-ubezpieczenia-spolecznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-prezes-krus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-glowny-inspektorat-weterynarii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-glowny-lekarz-weterynarii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-glowny-inspektorat-ochrony-roslin-i-nasiennictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-glowny-inspektor-ochrony-roslin-i-nasiennictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-glowny-inspektorat-jakosci-handlowej-artykulow-rolno-spozywczych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-glowny-inspektor-jhars",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-glowny-inspektorat-rybolowstwa-morskiego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-glowny-inspektor-rybolowstwa-morskiego",
+   "status": "refuted",
+   "fixes": {
+    "status": "active",
+    "statusNote": null,
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-marek-zimakowski",
+       "name": "Marek Zimakowski",
+       "positionId": "pl-glowny-inspektor-rybolowstwa-morskiego",
+       "positionName": "Główny Inspektor Rybołówstwa Morskiego",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/girm/glowny-inspektor-rybolowstwa-morskiego",
+       "startedAtSource": null,
+       "note": "Strona GIRM 'Główny Inspektor Rybołówstwa Morskiego' (gov.pl/web/girm) podaje: 'Imię i nazwisko: Marek Zimakowski'. Data powołania nieustalona (brak datowanego komunikatu)."
+      }
+     ]
+    },
+    "provenance": {
+     "sources": [
+      "https://www.gov.pl/web/girm/glowny-inspektor-rybolowstwa-morskiego",
+      "https://www.gov.pl/web/girm/kierownictwo-girm",
+      "https://eli.gov.pl/eli/DU/2025/590/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "note": "REFUTED co do statusu 'unverified'/'strona bez nazwiska': strona https://www.gov.pl/web/girm/glowny-inspektor-rybolowstwa-morskiego (podana jako officialUrl węzła) zawiera sekcję 'Główny Inspektor Rybołówstwa Morskiego – Imię i nazwisko: Marek Zimakowski' (curl 2026-09-17). Nazwisko nie występuje na liście newsów GIRM, więc brak datowanego źródła powołania – startedAt=null. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-centralny-osrodek-badania-odmian-roslin-uprawnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-dyrektor-coboru",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-centrum-doradztwa-rolniczego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-dyrektor-cdr",
+   "status": "refuted",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-marcin-oszanca",
+       "name": "Marcin Oszańca",
+       "positionId": "pl-dyrektor-cdr",
+       "positionName": "Dyrektor Centrum Doradztwa Rolniczego w Brwinowie",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.cdr.gov.pl/o-nas/kierownictwo-rada",
+       "startedAtSource": null,
+       "note": "Tabela 'Kierownictwo CDR w Brwinowie' (cdr.gov.pl, poprawiono 12.06.2026): Marcin Oszańca – Dyrektor; Joanna Gołębiowska – Zastępca Dyrektora. Potwierdzenie: news na stronie głównej cdr.gov.pl (wrzesień 2026) 'Dyrektor CDR Marcin Oszańca'. Data powołania nieustalona."
+      }
+     ]
+    },
+    "provenance": {
+     "sources": [
+      "https://www.cdr.gov.pl/o-nas/kierownictwo-rada",
+      "https://www.cdr.gov.pl",
+      "https://eli.gov.pl/eli/DU/2004/2507/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "note": "REFUTED co do obsady: tabela 'Kierownictwo CDR w Brwinowie' na https://www.cdr.gov.pl/o-nas/kierownictwo-rada (HTML: kolumna nazwisk 'Marcin Oszańca / Joanna Gołębiowska', kolumna funkcji '- Dyrektor / - Zastępca Dyrektora') wskazuje, że Dyrektorem jest Marcin Oszańca, a Joanna Gołębiowska jest Zastępcą Dyrektora. Potwierdzenie: strona główna cdr.gov.pl (news z września 2026: 'Dyrektor CDR Marcin Oszańca'). Przepis art. 6 ust. 1 i 3 ustawy o jdr potwierdzony w t.j. Dz.U. 2024 poz. 76. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-wojewodzkie-osrodki-doradztwa-rolniczego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "16 ODR wyliczone w M.P. 2026 poz. 155 cz. 1 pkt 9–24 (jednostki podległe) – count=16 zgodny. Art. 3 ust. 1 i art. 6 ust. 1 ustawy o jdr potwierdzone."
+  },
+  {
+   "id": "pl-instytuty-badawcze-mrirw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026 poz. 155 cz. 2: 12 PIB (poz. 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 16, 18) – count=12 i wyliczenie w opisie zgodne. Art. 24 ust. 2 i art. 35 ust. 1 ustawy o instytutach badawczych potwierdzone w t.j. Dz.U. 2026 poz. 741."
+  },
+  {
+   "id": "pl-generalna-dyrekcja-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-generalny-dyrektor-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-regionalne-dyrekcje-ochrony-srodowiska",
+   "status": "corrected",
+   "fixes": {
+    "subtype": "other"
+   },
+   "note": "Art. 123 ust. 1–1a i art. 124 ust. 1 t.j. Dz.U. 2026 poz. 670 potwierdzone (regionalny dyrektor = organ administracji rządowej niezespolonej; RDOŚ = państwowa jednostka budżetowa; podlega GDOŚ). Liczba 16 zgodna z listą na gov.pl/web/gdos/rdos. Korekta: subtype 'central_office' jest błędny dla terenowych organów niezespolonych – proponuję 'other'."
+  },
+  {
+   "id": "pl-glowny-inspektorat-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-glowny-inspektor-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-panstwowe-gospodarstwo-lesne-lasy-panstwowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-dyrektor-generalny-lasow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-narodowy-fundusz-ochrony-srodowiska-i-gospodarki-wodnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-prezes-zarzadu-nfosigw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-wojewodzkie-fundusze-ochrony-srodowiska-i-gospodarki-wodnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025 poz. 1125 cz. 4 wylicza 16 WFOŚiGW – count zgodny. Art. 400r ust. 1 POŚ (t.j. Dz.U. 2025 poz. 647) potwierdzony (nadzór ministra ds. klimatu; czynności z ust. 4–8 wykonują wojewodowie)."
+  },
+  {
+   "id": "pl-panstwowa-agencja-atomistyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 109 ust. 1, 2, 2a i 4 Prawa atomowego (t.j. Dz.U. 2026 poz. 1) potwierdzone: 'Minister właściwy do spraw klimatu sprawuje nadzór nad Prezesem Agencji'. Nadzór MKiŚ (nie ME) potwierdzony załącznikiem Dz.U. 2025 poz. 995 i stroną gov.pl/web/klimat/jednostki-podlegle-i-nadzorowane ('Centralne organy nadzorowane: GIOŚ, Prezes PAA')."
+  },
+  {
+   "id": "pl-prezes-paa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-instytut-ochrony-srodowiska-pib",
+   "status": "unverified",
+   "fixes": {},
+   "note": "UNVERIFIED: ios.edu.pl (strona główna i /o-instytucie/dyrekcja/) odpowiada blokadą Incapsula (curl z UA Chrome, http1.1, oraz WebFetch – strona pusta); bip.ios.edu.pl nie odpowiada. Sam węzeł: IOŚ-PIB figuruje w M.P. 2025 poz. 1125 cz. 1 pkt 3 i na gov.pl/web/klimat/jednostki-podlegle-i-nadzorowane; DU/2010/1165 (status PIB) istnieje w ELI. Status 'unverified' dotyczy wyłącznie obsady dyrektora."
+  },
+  {
+   "id": "pl-dyrektor-ios-pib",
+   "status": "unverified",
+   "fixes": {},
+   "note": "UNVERIFIED: nazwisko dyrektora nieosiągalne (ios.edu.pl – Incapsula po 2 próbach: curl + WebFetch). Podstawa prawna (art. 24 ust. 2 ustawy o instytutach badawczych: 'Minister nadzorujący powołuje i odwołuje dyrektora') potwierdzona w t.j. Dz.U. 2026 poz. 741. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-instytuty-badawcze-mkis",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025 poz. 1125 cz. 1: IBL, IETU, IOŚ-PIB, PIG-PIB – po wyłączeniu IOŚ-PIB (osobny węzeł) count=3 zgodny."
+  },
+  {
+   "id": "pl-parki-narodowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025 poz. 1125 cz. 2 wylicza 23 parki narodowe – count zgodny. Art. 8c ust. 1–2 i art. 9 ust. 1 ustawy o ochronie przyrody (t.j. Dz.U. 2026 poz. 13) potwierdzone."
+  },
+  {
+   "id": "pl-glowny-geolog-kraju",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 156 ust. 2 pkt 1 PGG (t.j. Dz.U. 2026 poz. 69) potwierdzony: minister wykonuje zadania administracji geologicznej 'przy pomocy Głównego Geologa Kraju, będącego sekretarzem lub podsekretarzem stanu'. Modelowanie jako dept_head bez headOf (WARN walidatora) akceptowalne; ring=cabinet spójny z MKiŚ. Art. 37 ust. 3 uRM (t.j. Dz.U. 2025 poz. 780) potwierdzony."
+  },
+  {
+   "id": "pl-polska-organizacja-turystyczna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-prezes-pot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-instytut-sportu-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-dyrektor-instytutu-sportu-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-polska-agencja-antydopingowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem."
+  },
+  {
+   "id": "pl-dyrektor-polada",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1–2 ustawy o zwalczaniu dopingu (t.j. Dz.U. 2022 poz. 1258) potwierdzony. Status 'vacant' z p.o. dyrektora (Hubert Dziudzik od 1.08.2026, komunikat POLADA z 1.09.2026) – spójne. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  },
+  {
+   "id": "pl-centralny-osrodek-sportu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "COS figuruje w M.P. 2022 poz. 271 pkt 1. Art. 23 ust. 1–2 i art. 27 ust. 1 ufp (t.j. Dz.U. 2025 poz. 1483) potwierdzone. Zarządzenie MSiT o utworzeniu IGB nie ma ELI (Dz.Urz. MSiT) – akceptowalne, confidence medium."
+  },
+  {
+   "id": "pl-dyrektor-cos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "legalSource: akt istnieje w ELI (GET api.sejm.gov.pl/eli/acts → 200, tytuł zgodny), t.j. wskazany w title istnieje i dotyczy tej ustawy; cytowany artykuł odczytany z tekstu t.j. (pdftotext) i zgodny z opisem. Ring=administration dla stanowiska szefa jednostki satelitarnej: sprzeczne z opisem schematu (ring jak organizacja), ale wymuszone przez walidator (satellite bez parent = ERROR) – nie koryguję; do rozstrzygnięcia na poziomie schematu."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-minister-rolnictwa-i-rozwoju-wsi",
+   "personId": "pl-stefan-krajewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko przy funkcji 'Minister Rolnictwa i Rozwoju Wsi' na gov.pl/web/rolnictwo/kierownictwo-ministerstwa (curl 2026-09-17). M.P. 2025 poz. 690 (pdftotext): 'z dniem 24 lipca 2025 r. powołuję … Pana Stefana Krajewskiego – na urząd Ministra Rolnictwa i Rozwoju Wsi' – data i źródło zgodne."
+  },
+  {
+   "nodeId": "pl-minister-klimatu-i-srodowiska",
+   "personId": "pl-paulina-hennig-kloska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko przy funkcji na gov.pl/web/klimat/kierownictwo-ministerstwa. M.P. 2023 poz. 1383: 'z dniem 13 grudnia 2023 r. … Panią Paulinę Hennig-Kloskę – na urząd Ministra Klimatu i Środowiska' – zgodne."
+  },
+  {
+   "nodeId": "pl-minister-sportu-i-turystyki",
+   "personId": "pl-jakub-rutnicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko przy funkcji na gov.pl/web/sport/kierownictwo-ministerstwa. M.P. 2025 poz. 690: 'Pana Jakuba Adama Rutnickiego – na urząd Ministra Sportu i Turystyki', z dniem 24 lipca 2025 r.; biogram gov.pl/web/sport/jakub-rutnicki także podaje 24 lipca 2025 – zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-arimr",
+   "personId": "pl-wojciech-legawiec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Wojciech Legawiec – Prezes' na gov.pl/web/arimr/kierownictwo-agencji; biogram gov.pl/web/arimr/wojciech-legawiec: 'Na stanowisko prezesa ARiMR został powołany 10 stycznia 2024 r.' – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-generalny-kowr",
+   "personId": "pl-henryk-smolarz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Henryk Józef Smolarz – Dyrektor Generalny' na gov.pl/web/kowr/kierownictwo-kowr; biogram: 'powołany w dniu 10 stycznia 2024 r.' – zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-krus",
+   "personId": "pl-tomasz-slusarczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Tomasz Ślusarczyk – Prezes KRUS' na gov.pl/web/krus/kierownictwo; biogram: 'Prezes Rady Ministrów Donald Tusk powołał z dniem 22 października 2025 r. Pana Tomasza Ślusarczyka na stanowisko Prezesa KRUS' – zgodne."
+  },
+  {
+   "nodeId": "pl-glowny-lekarz-weterynarii",
+   "personId": "pl-pawel-meyer",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'lek. wet. Paweł Meyer – Główny Lekarz Weterynarii' na wetgiw.gov.pl/inspekcja-weterynaryjna/glowny-inspektorat-weterynarii – zgodne; brak datowanego źródła powołania (startedAt=null poprawnie)."
+  },
+  {
+   "nodeId": "pl-glowny-inspektor-ochrony-roslin-i-nasiennictwa",
+   "personId": "pl-magdalena-makowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Magdalena Makowska – Główny Inspektor Ochrony Roślin i Nasiennictwa' na gov.pl/web/piorin/kierownictwo-giorin – zgodne. Biogram (pierwsza publikacja 22.10.2025) nie podaje daty powołania wprost – startedAt=null uzasadnione."
+  },
+  {
+   "nodeId": "pl-glowny-inspektor-jhars",
+   "personId": "pl-dorota-bochenska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Dorota Bocheńska – Główny Inspektor JHARS' na gov.pl/web/ijhars/kierownictwo; biogram: 'została powołana na stanowisko Głównego Inspektora JHARS 22 października 2025 roku' – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-coboru",
+   "personId": "pl-henryk-bujak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Dyrektor – prof. dr hab. Henryk Bujak' w tabeli kontaktów coboru.gov.pl/pl/kontakty – zgodne; brak daty powołania."
+  },
+  {
+   "nodeId": "pl-dyrektor-cdr",
+   "personId": "pl-joanna-golebiowska",
+   "status": "refuted",
+   "fixes": {},
+   "note": "REFUTED: na https://www.cdr.gov.pl/o-nas/kierownictwo-rada (HTML tabeli) Joanna Gołębiowska figuruje jako '- Zastępca Dyrektora', a Dyrektorem jest Marcin Oszańca (kolumna nazwisk: 'Marcin Oszańca', 'Joanna Gołębiowska'; kolumna funkcji: '- Dyrektor', '- Zastępca Dyrektora'). Strona główna cdr.gov.pl (wrzesień 2026) potwierdza: 'Dyrektor CDR Marcin Oszańca'. Osobę należy usunąć z węzła pl-dyrektor-cdr i zastąpić Marcinem Oszańcą (fixes w sekcji nodes)."
+  },
+  {
+   "nodeId": "pl-generalny-dyrektor-ochrony-srodowiska",
+   "personId": "pl-piotr-otawski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Piotr Otawski – Generalny Dyrektor Ochrony Środowiska' na gov.pl/web/gdos/kierownictwo – zgodne. Biogram gov.pl/web/gdos/piotr-otawski2 bez daty powołania; lista newsów GDOŚ bez komunikatu o powołaniu – startedAt=null uzasadnione."
+  },
+  {
+   "nodeId": "pl-glowny-inspektor-ochrony-srodowiska",
+   "personId": "pl-hanna-konczal",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Hanna Kończal – Główny Inspektor Ochrony Środowiska' na gov.pl/web/gios/kierownictwo-gios – zgodne. Biogram podaje tylko wcześniejsze funkcje (do 24.05.2022 dyrektor Departamentu Inspekcji), bez daty powołania na GIOŚ – startedAt=null uzasadnione."
+  },
+  {
+   "nodeId": "pl-dyrektor-generalny-lasow-panstwowych",
+   "personId": "pl-adam-wasiak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Dyrektor Generalny Lasów Państwowych – Adam Wasiak' na lasy.gov.pl/pl/kontakt/dyrekcja-generalna-lp – zgodne; brak daty."
+  },
+  {
+   "nodeId": "pl-prezes-zarzadu-nfosigw",
+   "personId": "pl-dorota-zawadzka-stepniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Dorota Zawadzka-Stępniak – Prezes Zarządu' na gov.pl/web/nfosigw/kierownictwo – zgodne; brak daty."
+  },
+  {
+   "nodeId": "pl-prezes-paa",
+   "personId": "pl-andrzej-glowacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Andrzej Głowacki – Prezes Państwowej Agencji Atomistyki' na gov.pl/web/paa/kierownictwo – zgodne (także w newsach PAA jako Prezes); brak daty."
+  },
+  {
+   "nodeId": "pl-glowny-geolog-kraju",
+   "personId": "pl-krzysztof-galos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Krzysztof Galos – Podsekretarz Stanu, Główny Geolog Kraju' na gov.pl/web/klimat/kierownictwo-ministerstwa – zgodne; biogram (publikacja 01.10.2025) bez daty powołania."
+  },
+  {
+   "nodeId": "pl-prezes-pot",
+   "personId": "pl-magdalena-krucz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Magdalena Krucz – Prezes Polskiej Organizacji Turystycznej' na pot.gov.pl/pl/struktura-organizacyjna/kierownictwo/ – zgodne; brak daty powołania."
+  },
+  {
+   "nodeId": "pl-dyrektor-instytutu-sportu-pib",
+   "personId": "pl-marek-drob",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Marek Drob – Dyrektor Instytutu Sportu – PIB' na insp.pl/instytut-insp/dyrekcja; komunikat insp.pl z 01.09.2026: 'Z dniem 1 września 2026 roku funkcję tę objął Marek Drob' – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-polada",
+   "personId": "pl-hubert-dziudzik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Hubert Dziudzik – Pełniący Obowiązki Dyrektora' na antydoping.pl/o-nas/zespol/; komunikat z 1.09.2026: 'Od 1 sierpnia 2026 roku Polską Agencją Antydopingową kieruje Hubert Dziudzik' – zgodne (acting=true, status=acting)."
+  },
+  {
+   "nodeId": "pl-dyrektor-cos",
+   "personId": "pl-slawomir-lulinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "'Sławomir Luliński – Dyrektor Centralnego Ośrodka Sportu' na cos.pl/353/kadra-zarzadzajaca-cos – zgodne; brak daty."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-ministerstwo-rolnictwa-i-rozwoju-wsi--dept_head--minister-rolnictwa-i-rozwoju-wsi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-rolnictwa-i-rozwoju-wsi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja RP art. 154 ust. 1 (PRM 'proponuje skład Rady Ministrów') i art. 161 (Prezydent 'na wniosek Prezesa Rady Ministrów, dokonuje zmian w składzie RM') – odczytane z tekstu DU/1997/483; kierunek PRM→minister poprawny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-rolnictwa-i-rozwoju-wsi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 154 ust. 1 ('Prezydent … powołuje Prezesa Rady Ministrów wraz z pozostałymi członkami Rady Ministrów') i art. 161 – potwierdzone; M.P. 2025 poz. 690 / 2023 poz. 1383 pokazują praktykę (postanowienia Prezydenta)."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: 'Rada Ministrów składa się z Prezesa Rady Ministrów i ministrów' – potwierdzone; kierunek minister→RM poprawny."
+  },
+  {
+   "id": "e-ministerstwo-klimatu-i-srodowiska--dept_head--minister-klimatu-i-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-klimatu-i-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja RP art. 154 ust. 1 (PRM 'proponuje skład Rady Ministrów') i art. 161 (Prezydent 'na wniosek Prezesa Rady Ministrów, dokonuje zmian w składzie RM') – odczytane z tekstu DU/1997/483; kierunek PRM→minister poprawny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-klimatu-i-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 154 ust. 1 ('Prezydent … powołuje Prezesa Rady Ministrów wraz z pozostałymi członkami Rady Ministrów') i art. 161 – potwierdzone; M.P. 2025 poz. 690 / 2023 poz. 1383 pokazują praktykę (postanowienia Prezydenta)."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: 'Rada Ministrów składa się z Prezesa Rady Ministrów i ministrów' – potwierdzone; kierunek minister→RM poprawny."
+  },
+  {
+   "id": "e-ministerstwo-sportu-i-turystyki--dept_head--minister-sportu-i-turystyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-sportu-i-turystyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja RP art. 154 ust. 1 (PRM 'proponuje skład Rady Ministrów') i art. 161 (Prezydent 'na wniosek Prezesa Rady Ministrów, dokonuje zmian w składzie RM') – odczytane z tekstu DU/1997/483; kierunek PRM→minister poprawny."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-sportu-i-turystyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 154 ust. 1 ('Prezydent … powołuje Prezesa Rady Ministrów wraz z pozostałymi członkami Rady Ministrów') i art. 161 – potwierdzone; M.P. 2025 poz. 690 / 2023 poz. 1383 pokazują praktykę (postanowienia Prezydenta)."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: 'Rada Ministrów składa się z Prezesa Rady Ministrów i ministrów' – potwierdzone; kierunek minister→RM poprawny."
+  },
+  {
+   "id": "e-agencja-restrukturyzacji-i-modernizacji-rolnictwa--dept_head--prezes-arimr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--agencja-restrukturyzacji-i-modernizacji-rolnictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1: 'Nadzór nad Agencją sprawuje minister właściwy do spraw rozwoju wsi'; ARiMR w M.P. 2026 poz. 155 cz. 2 pkt 1 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-arimr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8 ust. 1 ustawy o ARiMR (t.j. 2026/942): 'Prezes powoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego do spraw rozwoju wsi' – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--nominates--prezes-arimr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8 ust. 1 – wniosek ministra ds. rozwoju wsi – potwierdzone."
+  },
+  {
+   "id": "e-krajowy-osrodek-wsparcia-rolnictwa--dept_head--dyrektor-generalny-kowr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--krajowy-osrodek-wsparcia-rolnictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 3: 'Nadzór nad Krajowym Ośrodkiem sprawuje minister właściwy do spraw rozwoju wsi'; KOWR w M.P. 2026 poz. 155 cz. 2 pkt 15 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--dyrektor-generalny-kowr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 2 ustawy o KOWR (t.j. 2025/294): 'Dyrektora Generalnego powołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw rozwoju wsi' – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--nominates--dyrektor-generalny-kowr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 2 – wniosek ministra – potwierdzone."
+  },
+  {
+   "id": "e-kasa-rolniczego-ubezpieczenia-spolecznego--dept_head--prezes-krus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--kasa-rolniczego-ubezpieczenia-spolecznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 2: 'Prezes Kasy jest centralnym organem administracji rządowej, podległym ministrowi właściwemu do spraw rozwoju wsi'; załącznik Dz.U. 2025 poz. 1000 pkt 1 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-krus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 59 ust. 1 ustawy o usr (t.j. 2025/1770): 'Prezesa Kasy powołuje Prezes Rady Ministrów, na wniosek ministra właściwego do spraw rozwoju wsi' – potwierdzone; biogram Ślusarczyka cytuje ten sam przepis."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--nominates--prezes-krus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 59 ust. 1 – wniosek ministra – potwierdzone."
+  },
+  {
+   "id": "e-glowny-inspektorat-weterynarii--dept_head--glowny-lekarz-weterynarii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--glowny-inspektorat-weterynarii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 2: 'GLW podlega ministrowi właściwemu do spraw rolnictwa'; załącznik Dz.U. 2025 poz. 1000 pkt 3 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-lekarz-weterynarii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 3 ustawy o IW (t.j. 2024/12): 'Główny Lekarz Weterynarii jest powoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego do spraw rolnictwa' – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--nominates--glowny-lekarz-weterynarii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 3 – wniosek ministra ds. rolnictwa – potwierdzone."
+  },
+  {
+   "id": "e-glowny-inspektorat-ochrony-roslin-i-nasiennictwa--dept_head--glowny-inspektor-ochrony-roslin-i-nasiennictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--glowny-inspektorat-ochrony-roslin-i-nasiennictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1: Główny Inspektor 'centralnym organem administracji rządowej podległym ministrowi właściwemu do spraw rolnictwa'; załącznik Dz.U. 2025 poz. 1000 pkt 2 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-inspektor-ochrony-roslin-i-nasiennictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 2 ustawy o PIORiN (t.j. 2023/1992): 'Głównego Inspektora powołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw rolnictwa' – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--nominates--glowny-inspektor-ochrony-roslin-i-nasiennictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 2 – wniosek ministra – potwierdzone."
+  },
+  {
+   "id": "e-glowny-inspektorat-jakosci-handlowej-artykulow-rolno-spozywczych--dept_head--glowny-inspektor-jhars",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--glowny-inspektorat-jakosci-handlowej-artykulow-rolno-spozywczych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 19 ust. 1: podległość ministrowi ds. rynków rolnych; załącznik Dz.U. 2025 poz. 1000 pkt 4 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-inspektor-jhars",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 19 ust. 2 ustawy o jhars (t.j. 2023/1980): 'Głównego Inspektora powołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw rynków rolnych' – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--nominates--glowny-inspektor-jhars",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 19 ust. 2 – wniosek ministra ds. rynków rolnych – potwierdzone."
+  },
+  {
+   "id": "e-glowny-inspektorat-rybolowstwa-morskiego--dept_head--glowny-inspektor-rybolowstwa-morskiego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--glowny-inspektorat-rybolowstwa-morskiego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 101 ust. 1: 'GIRM podlega ministrowi właściwemu do spraw rybołówstwa'; załącznik Dz.U. 2025 poz. 1000 pkt 5; M.P. 2026 poz. 155 cz. 1 pkt 4 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-inspektor-rybolowstwa-morskiego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 101 ust. 2 ustawy o rybołówstwie morskim (t.j. 2025/590): 'GIRM powołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw rybołówstwa' – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--nominates--glowny-inspektor-rybolowstwa-morskiego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 101 ust. 2 – wniosek ministra ds. rybołówstwa – potwierdzone."
+  },
+  {
+   "id": "e-centralny-osrodek-badania-odmian-roslin-uprawnych--dept_head--dyrektor-coboru",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--centralny-osrodek-badania-odmian-roslin-uprawnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3: 'Nadzór nad Centralnym Ośrodkiem sprawuje minister właściwy do spraw rolnictwa'; M.P. 2026 poz. 155 cz. 2 pkt 2 – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--appoints--dyrektor-coboru",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 ust. 1 ustawy o COBORU (t.j. 2017/2109): 'dyrektor powoływany przez ministra właściwego do spraw rolnictwa spośród osób wyłonionych w drodze otwartego i konkurencyjnego naboru' – potwierdzone."
+  },
+  {
+   "id": "e-centrum-doradztwa-rolniczego--dept_head--dyrektor-cdr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j. UWAGA: obsada stanowiska błędna (patrz people) – krawędź sama w sobie poprawna."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--centrum-doradztwa-rolniczego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1: 'Jednostki doradztwa rolniczego podlegają ministrowi właściwemu do spraw rozwoju wsi'; M.P. 2026 poz. 155 cz. 1 pkt 1 – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--appoints--dyrektor-cdr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1 ustawy o jdr (t.j. 2024/76): 'Organem jednostki doradztwa rolniczego jest dyrektor powoływany i odwoływany przez ministra właściwego do spraw rozwoju wsi' – potwierdzone (obsada stanowiska do poprawy – patrz people)."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--wojewodzkie-osrodki-doradztwa-rolniczego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1 i M.P. 2026 poz. 155 cz. 1 pkt 9–24 – potwierdzone."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--appoints--wojewodzkie-osrodki-doradztwa-rolniczego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1 ustawy o jdr – dyrektorów wszystkich jednostek doradztwa (w tym 16 ODR) powołuje minister ds. rozwoju wsi; seatsAppointed=16 zgodne z M.P. 2026 poz. 155 cz. 1 pkt 9–24."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--oversees--instytuty-badawcze-mrirw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 35 ust. 1 ustawy o instytutach badawczych i M.P. 2026 poz. 155 cz. 2 – potwierdzone (12 PIB: poz. 3–5, 7–13, 16, 18)."
+  },
+  {
+   "id": "e-minister-rolnictwa-i-rozwoju-wsi--appoints--instytuty-badawcze-mrirw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 ustawy o instytutach badawczych (t.j. 2026/741): 'Minister nadzorujący powołuje i odwołuje dyrektora' – potwierdzone; seatsAppointed=12 zgodne z liczbą PIB w M.P. 2026 poz. 155."
+  },
+  {
+   "id": "e-generalna-dyrekcja-ochrony-srodowiska--dept_head--generalny-dyrektor-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--generalna-dyrekcja-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 121 ust. 2: 'GDOŚ podlega ministrowi właściwemu do spraw środowiska'; załącznik Dz.U. 2025 poz. 995 pkt 1 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--generalny-dyrektor-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 126 ust. 1 ustawy OOŚ (t.j. 2026/670): 'GDOŚ powołuje Prezes Rady Ministrów, spośród osób wyłonionych w drodze otwartego i konkurencyjnego naboru, na wniosek ministra właściwego do spraw środowiska' – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--nominates--generalny-dyrektor-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 126 ust. 1 – wniosek ministra ds. środowiska – potwierdzone."
+  },
+  {
+   "id": "e-generalny-dyrektor-ochrony-srodowiska--oversees--regionalne-dyrekcje-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 123 ust. 1a: 'Regionalny dyrektor ochrony środowiska podlega Generalnemu Dyrektorowi Ochrony Środowiska' – potwierdzone."
+  },
+  {
+   "id": "e-glowny-inspektorat-ochrony-srodowiska--dept_head--glowny-inspektor-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--glowny-inspektorat-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3a: GIOŚ 'centralnym organem administracji rządowej nadzorowanym przez ministra właściwego do spraw klimatu'; załącznik Dz.U. 2025 poz. 995 pkt 2 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-inspektor-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 3 ustawy o IOŚ (t.j. 2024/425): 'GIOŚ powołuje Prezes Rady Ministrów, spośród osób wyłonionych w drodze otwartego i konkurencyjnego naboru, na wniosek ministra właściwego do spraw klimatu' – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--nominates--glowny-inspektor-ochrony-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 3 – wniosek ministra ds. klimatu – potwierdzone."
+  },
+  {
+   "id": "e-panstwowe-gospodarstwo-lesne-lasy-panstwowe--dept_head--dyrektor-generalny-lasow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--panstwowe-gospodarstwo-lesne-lasy-panstwowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 4: 'Nadzór nad Lasami Państwowymi sprawuje minister właściwy do spraw środowiska'; M.P. 2025 poz. 1125 cz. 5 pkt 5 – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--appoints--dyrektor-generalny-lasow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 33 ust. 2 ustawy o lasach (t.j. 2026/663): 'Dyrektora Generalnego powołuje i odwołuje minister właściwy do spraw środowiska' – potwierdzone."
+  },
+  {
+   "id": "e-narodowy-fundusz-ochrony-srodowiska-i-gospodarki-wodnej--dept_head--prezes-zarzadu-nfosigw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--narodowy-fundusz-ochrony-srodowiska-i-gospodarki-wodnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 400r ust. 1: 'Nadzór nad działalnością Narodowego Funduszu i wojewódzkich funduszy sprawuje minister właściwy do spraw klimatu'; M.P. 2025 poz. 1125 cz. 5 pkt 4 – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--appoints--prezes-zarzadu-nfosigw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 400i ust. 2 pkt 1 POŚ (t.j. 2025/647): Prezes Zarządu 'powoływany przez ministra właściwego do spraw klimatu, spośród osób wyłonionych w drodze otwartego i konkurencyjnego naboru … na wniosek Rady Nadzorczej' – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--wojewodzkie-fundusze-ochrony-srodowiska-i-gospodarki-wodnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 400r ust. 1 – potwierdzone (z zastrzeżeniem, że czynności z ust. 4–8 wykonują wojewodowie); M.P. 2025 poz. 1125 cz. 4 (16 WFOŚiGW)."
+  },
+  {
+   "id": "e-panstwowa-agencja-atomistyki--dept_head--prezes-paa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--panstwowa-agencja-atomistyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 109 ust. 4: 'Minister właściwy do spraw klimatu sprawuje nadzór nad Prezesem Agencji'; załącznik Dz.U. 2025 poz. 995 pkt 3; gov.pl/web/klimat/jednostki-podlegle-i-nadzorowane – potwierdzone (nie Ministerstwo Energii)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-paa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 109 ust. 2 Prawa atomowego (t.j. 2026/1): 'Prezesa Agencji powołuje Prezes Rady Ministrów, spośród osób wyłonionych w drodze otwartego i konkurencyjnego naboru, na wniosek ministra właściwego do spraw klimatu' – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--nominates--prezes-paa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 109 ust. 2 – wniosek ministra ds. klimatu – potwierdzone."
+  },
+  {
+   "id": "e-instytut-ochrony-srodowiska-pib--dept_head--dyrektor-ios-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--instytut-ochrony-srodowiska-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 35 ust. 1 i M.P. 2025 poz. 1125 cz. 1 pkt 3 – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--appoints--dyrektor-ios-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 ustawy o instytutach badawczych – potwierdzone (IOŚ-PIB nadzorowany przez MKiŚ wg M.P. 2025 poz. 1125 cz. 1 pkt 3)."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--instytuty-badawcze-mkis",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 35 ust. 1 i M.P. 2025 poz. 1125 cz. 1 pkt 1, 2, 4 – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--appoints--instytuty-badawcze-mkis",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 – potwierdzone; seatsAppointed=3 (IBL, IETU, PIG-PIB)."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--oversees--parki-narodowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 ust. 1: 'Nadzór nad działalnością parków narodowych sprawuje minister właściwy do spraw środowiska'; M.P. 2025 poz. 1125 cz. 2 (23 parki) – potwierdzone."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--appoints--parki-narodowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8c ust. 2 ustawy o ochronie przyrody (t.j. 2026/13): 'Dyrektor parku narodowego jest powoływany przez ministra właściwego do spraw środowiska, spośród osób wyłonionych w drodze otwartego i konkurencyjnego naboru' – potwierdzone; seatsAppointed=23."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-geolog-kraju",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 37 ust. 3 uRM (t.j. 2025/780): 'Sekretarza stanu i podsekretarza stanu powołuje Prezes Rady Ministrów na wniosek właściwego ministra' – potwierdzone; GGK jest podsekretarzem stanu (art. 156 ust. 2 pkt 1 PGG)."
+  },
+  {
+   "id": "e-minister-klimatu-i-srodowiska--nominates--glowny-geolog-kraju",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 37 ust. 3 uRM – wniosek właściwego ministra – potwierdzone."
+  },
+  {
+   "id": "e-glowny-geolog-kraju--advises--minister-klimatu-i-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 156 ust. 2 pkt 1 PGG potwierdzony ('minister … przy pomocy Głównego Geologa Kraju'). Typ 'advises' jest przybliżeniem (GGK nie jest ciałem doradczym, lecz podsekretarzem stanu wykonującym zadania ministra); brak lepszego typu w enumie – akceptuję z confidence=medium."
+  },
+  {
+   "id": "e-polska-organizacja-turystyczna--dept_head--prezes-pot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--oversees--polska-organizacja-turystyczna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 2: 'Nadzór nad POT sprawuje minister właściwy do spraw turystyki'; M.P. 2022 poz. 271 pkt 4 – potwierdzone."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--appoints--prezes-pot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 ust. 1 ustawy o POT (t.j. 2024/1541): 'Prezesa POT powołuje minister właściwy do spraw turystyki, spośród osób wyłonionych w drodze otwartego i konkurencyjnego naboru, po zasięgnięciu opinii Rady POT' – potwierdzone."
+  },
+  {
+   "id": "e-instytut-sportu-pib--dept_head--dyrektor-instytutu-sportu-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--oversees--instytut-sportu-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 35 ust. 1 i M.P. 2022 poz. 271 pkt 2 – potwierdzone."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--appoints--dyrektor-instytutu-sportu-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 ustawy o instytutach badawczych – potwierdzone."
+  },
+  {
+   "id": "e-polska-agencja-antydopingowa--dept_head--dyrektor-polada",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--oversees--polska-agencja-antydopingowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 3: 'Nadzór nad Agencją sprawuje minister właściwy do spraw kultury fizycznej'; M.P. 2022 poz. 271 pkt 3 – potwierdzone."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--appoints--dyrektor-polada",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 ustawy o zwalczaniu dopingu (t.j. 2022/1258): 'Dyrektora Agencji powołuje i odwołuje minister właściwy do spraw kultury fizycznej, po zasięgnięciu opinii Rady Agencji' – potwierdzone."
+  },
+  {
+   "id": "e-centralny-osrodek-sportu--dept_head--dyrektor-cos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź strukturalna: spójna z nodes[org].head i nodes[pos].headOf (walidator OK); cytowany przepis o organie/kierowniku potwierdzony w t.j."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--oversees--centralny-osrodek-sportu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 23 ust. 2 pkt 1 i art. 26 ust. 1 ufp (organ założycielski – minister); M.P. 2022 poz. 271 pkt 1 – potwierdzone (medium)."
+  },
+  {
+   "id": "e-minister-sportu-i-turystyki--appoints--dyrektor-cos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 27 ust. 1 ufp (t.j. 2025/1483): 'Dyrektora instytucji gospodarki budżetowej powołuje i odwołuje organ wykonujący funkcje organu założycielskiego' – potwierdzone; confidence medium uzasadnione (przepis ogólny)."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {}
+ },
+ "missing": [
+  "Data powołania Marka Zimakowskiego (GIRM) i Marcina Oszańcy (CDR) – brak datowanego komunikatu na stronach urzędów.",
+  "Dyrektor Instytutu Ochrony Środowiska-PIB – ios.edu.pl za Incapsula (curl + WebFetch), bip.ios.edu.pl nie odpowiada; do uzupełnienia z innego źródła (np. BIP MKiŚ, RAD-on).",
+  "Daty powołania: GLW (Meyer), GIORiN (Makowska), GDOŚ (Otawski), GIOŚ (Kończal), PAA (Głowacki), LP (Wasiak), NFOŚiGW (Zawadzka-Stępniak), POT (Krucz), COS (Luliński), COBORU (Bujak), GGK (Galos) – biogramy i listy newsów nie podają dat; wymaga kwerendy w archiwach newsów resortów lub w Dz.Urz.",
+  "Przepis o powoływaniu regionalnych dyrektorów ochrony środowiska nie został odnaleziony w t.j. Dz.U. 2026 poz. 670 (przeszukano art. 123–128 oraz frazy 'powołuje … regionalnego'); krawędź appoints GDOŚ→RDOŚ pozostaje niezamodelowana.",
+  "Organy opiniujące/wnioskujące przy powołaniach nie mają węzłów: Rada Nadzorcza NFOŚiGW (wniosek – art. 400i ust. 2 pkt 1 POŚ), Rada POT (opinia – art. 9 ust. 1), Rada POLADA (opinia – art. 10 ust. 1); ewentualnie do dodania jako advisory w przyszłej rundzie.",
+  "Jednostki podległe MRiRW wg M.P. 2026 poz. 155 cz. 1 pkt 7–8 (Krajowe Centrum Hodowli Zwierząt, Krajowa Stacja Chemiczno-Rolnicza) pominięte przez buildera mimo limitu 45 organizacji (jest 28) – rozważyć dodanie.",
+  "Sprzeczność schemat/walidator: stanowiska szefów jednostek satelitarnych powinny mieć ring=satellite (jak organizacja), ale walidator odrzuca satellite bez parent – w chunku ring=administration; wymaga decyzji na poziomie schematu."
+ ]
+}

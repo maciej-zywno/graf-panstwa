@@ -1,0 +1,2138 @@
+{
+  "meta": {
+    "gov": "pl",
+    "name": "Graf Państwa Polskiego",
+    "generatedAt": "2026-09-17T00:00:00+02:00",
+    "version": "0.1",
+    "constituency": "pl-narod",
+    "note": "Fikstura testowa (~30 węzłów). Osoby to placeholdery — nazwiska uzupełni i zweryfikuje osobny pipeline.",
+    "changes": []
+  },
+  "nodes": {
+    "pl-narod": {
+      "id": "pl-narod",
+      "type": "constituency",
+      "subtype": null,
+      "sector": null,
+      "ring": "sovereign",
+      "name": "Naród",
+      "shortName": "Naród",
+      "description": "Władza zwierzchnia w Rzeczypospolitej Polskiej należy do Narodu, który sprawuje ją przez swoich przedstawicieli lub bezpośrednio.",
+      "aliases": [
+        "Obywatele RP",
+        "Suweren",
+        "Wyborcy"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 4",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": null,
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-sejm": {
+      "id": "pl-sejm",
+      "type": "elected",
+      "subtype": "chamber",
+      "sector": "legislative",
+      "ring": "highest",
+      "name": "Sejm Rzeczypospolitej Polskiej",
+      "shortName": "Sejm",
+      "description": "Izba niższa parlamentu. 460 posłów wybieranych w wyborach powszechnych, równych, bezpośrednich i proporcjonalnych, w głosowaniu tajnym, na 4-letnią kadencję. Sprawuje władzę ustawodawczą oraz kontrolę nad działalnością Rady Ministrów.",
+      "aliases": [
+        "Sejm RP",
+        "Izba niższa"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 95–96",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.sejm.gov.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "02",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 460,
+      "people": {
+        "type": "count",
+        "count": 460
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.sejm.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-senat": {
+      "id": "pl-senat",
+      "type": "elected",
+      "subtype": "chamber",
+      "sector": "legislative",
+      "ring": "highest",
+      "name": "Senat Rzeczypospolitej Polskiej",
+      "shortName": "Senat",
+      "description": "Izba wyższa parlamentu. 100 senatorów wybieranych w wyborach powszechnych, bezpośrednich, w głosowaniu tajnym, w jednomandatowych okręgach wyborczych. Uczestniczy w procesie ustawodawczym i wyraża zgodę na powołanie niektórych organów.",
+      "aliases": [
+        "Senat RP",
+        "Izba wyższa"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 97",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.senat.gov.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "03",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 100,
+      "people": {
+        "type": "count",
+        "count": 100
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.senat.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-prezydent-rp": {
+      "id": "pl-prezydent-rp",
+      "type": "elected",
+      "subtype": "other",
+      "sector": "executive",
+      "ring": "highest",
+      "name": "Prezydent Rzeczypospolitej Polskiej",
+      "shortName": "Prezydent RP",
+      "description": "Najwyższy przedstawiciel Rzeczypospolitej Polskiej i gwarant ciągłości władzy państwowej. Wybierany przez Naród w wyborach powszechnych na 5-letnią kadencję. Powołuje Prezesa Rady Ministrów i Radę Ministrów, jest zwierzchnikiem Sił Zbrojnych.",
+      "aliases": [
+        "Prezydent",
+        "Głowa państwa"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 126–127",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.prezydent.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "01",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-01",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-prezydent-rp",
+            "positionName": "Prezydent Rzeczypospolitej Polskiej",
+            "type": "elected",
+            "startedAt": null,
+            "acting": false,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.prezydent.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-rada-ministrow": {
+      "id": "pl-rada-ministrow",
+      "type": "department",
+      "subtype": "council",
+      "sector": "executive",
+      "ring": "highest",
+      "name": "Rada Ministrów",
+      "shortName": "Rada Ministrów",
+      "description": "Organ kolegialny władzy wykonawczej. Prowadzi politykę wewnętrzną i zagraniczną RP, kieruje administracją rządową. Składa się z Prezesa Rady Ministrów oraz ministrów. Ponosi odpowiedzialność polityczną przed Sejmem.",
+      "aliases": [
+        "Rząd",
+        "Rada Ministrów RP",
+        "Gabinet"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 146–147",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.gov.pl/web/premier",
+      "bipUrl": "https://bip.kprm.gov.pl",
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": "pl-prezes-rady-ministrow",
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.gov.pl/web/premier"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-prezes-rady-ministrow": {
+      "id": "pl-prezes-rady-ministrow",
+      "type": "dept_head",
+      "subtype": null,
+      "sector": "executive",
+      "ring": "highest",
+      "name": "Prezes Rady Ministrów",
+      "shortName": "Premier",
+      "description": "Przewodniczący Rady Ministrów; reprezentuje ją, kieruje jej pracami, koordynuje i kontroluje pracę ministrów, jest zwierzchnikiem służbowym pracowników administracji rządowej.",
+      "aliases": [
+        "Premier",
+        "Szef rządu",
+        "PRM"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 148",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.gov.pl/web/premier",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": "pl-rada-ministrow",
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-02",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-prezes-rady-ministrow",
+            "positionName": "Prezes Rady Ministrów",
+            "type": "appointed",
+            "startedAt": null,
+            "acting": false,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.gov.pl/web/premier"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-kprm": {
+      "id": "pl-kprm",
+      "type": "department",
+      "subtype": "chancellery",
+      "sector": "executive",
+      "ring": "cabinet",
+      "name": "Kancelaria Prezesa Rady Ministrów",
+      "shortName": "KPRM",
+      "description": "Urząd zapewniający obsługę Rady Ministrów, Prezesa Rady Ministrów oraz wiceprezesów Rady Ministrów. Kieruje nią Szef KPRM.",
+      "aliases": [
+        "Kancelaria Premiera"
+      ],
+      "legalSource": {
+        "title": "Ustawa o Radzie Ministrów, art. 26",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19961060492"
+      },
+      "officialUrl": "https://www.gov.pl/web/premier",
+      "bipUrl": "https://bip.kprm.gov.pl",
+      "regon": null,
+      "budgetPart": "16",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19961060492",
+          "https://www.gov.pl/web/premier"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-ministerstwo-finansow": {
+      "id": "pl-ministerstwo-finansow",
+      "type": "department",
+      "subtype": "ministry",
+      "sector": "executive",
+      "ring": "cabinet",
+      "name": "Ministerstwo Finansów",
+      "shortName": "MF",
+      "description": "Urząd obsługujący ministra właściwego do spraw budżetu, finansów publicznych i instytucji finansowych. Przygotowuje projekt ustawy budżetowej i nadzoruje Krajową Administrację Skarbową.",
+      "aliases": [
+        "MF",
+        "Resort finansów"
+      ],
+      "legalSource": {
+        "title": "Ustawa o działach administracji rządowej",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971410943"
+      },
+      "officialUrl": "https://www.gov.pl/web/finanse",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "19",
+      "parent": null,
+      "level": 0,
+      "children": [
+        "pl-kas"
+      ],
+      "head": "pl-minister-finansow",
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971410943",
+          "https://www.gov.pl/web/finanse"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-minister-finansow": {
+      "id": "pl-minister-finansow",
+      "type": "dept_head",
+      "subtype": null,
+      "sector": "executive",
+      "ring": "cabinet",
+      "name": "Minister Finansów",
+      "shortName": null,
+      "description": "Członek Rady Ministrów kierujący działem administracji rządowej; stoi na czele urzędu: Ministerstwo Finansów.",
+      "aliases": [],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 149",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.gov.pl/web/finanse",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": "pl-ministerstwo-finansow",
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-03",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-minister-finansow",
+            "positionName": "Minister Finansów",
+            "type": "appointed",
+            "startedAt": null,
+            "acting": false,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.gov.pl/web/finanse"
+        ],
+        "verifiedAt": null,
+        "confidence": "medium"
+      }
+    },
+    "pl-ministerstwo-sprawiedliwosci": {
+      "id": "pl-ministerstwo-sprawiedliwosci",
+      "type": "department",
+      "subtype": "ministry",
+      "sector": "executive",
+      "ring": "cabinet",
+      "name": "Ministerstwo Sprawiedliwości",
+      "shortName": "MS",
+      "description": "Urząd obsługujący ministra właściwego do spraw sprawiedliwości. Sprawuje nadzór administracyjny nad sądami powszechnymi, nadzoruje Służbę Więzienną i jednostki podległe.",
+      "aliases": [
+        "MS",
+        "Resort sprawiedliwości"
+      ],
+      "legalSource": {
+        "title": "Ustawa o działach administracji rządowej",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971410943"
+      },
+      "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "37",
+      "parent": null,
+      "level": 0,
+      "children": [
+        "pl-iws"
+      ],
+      "head": "pl-minister-sprawiedliwosci",
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971410943",
+          "https://www.gov.pl/web/sprawiedliwosc"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-minister-sprawiedliwosci": {
+      "id": "pl-minister-sprawiedliwosci",
+      "type": "dept_head",
+      "subtype": null,
+      "sector": "executive",
+      "ring": "cabinet",
+      "name": "Minister Sprawiedliwości",
+      "shortName": null,
+      "description": "Członek Rady Ministrów kierujący działem administracji rządowej; stoi na czele urzędu: Ministerstwo Sprawiedliwości.",
+      "aliases": [],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 149",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": "pl-ministerstwo-sprawiedliwosci",
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-04",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-minister-sprawiedliwosci",
+            "positionName": "Minister Sprawiedliwości",
+            "type": "appointed",
+            "startedAt": null,
+            "acting": false,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.gov.pl/web/sprawiedliwosc"
+        ],
+        "verifiedAt": null,
+        "confidence": "medium"
+      }
+    },
+    "pl-msz": {
+      "id": "pl-msz",
+      "type": "department",
+      "subtype": "ministry",
+      "sector": "executive",
+      "ring": "cabinet",
+      "name": "Ministerstwo Spraw Zagranicznych",
+      "shortName": "MSZ",
+      "description": "Urząd obsługujący ministra właściwego do spraw zagranicznych. Prowadzi politykę zagraniczną RP, kieruje służbą zagraniczną i placówkami dyplomatycznymi.",
+      "aliases": [
+        "MSZ",
+        "Resort dyplomacji"
+      ],
+      "legalSource": {
+        "title": "Ustawa o działach administracji rządowej",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971410943"
+      },
+      "officialUrl": "https://www.gov.pl/web/dyplomacja",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "45",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": "pl-minister-spraw-zagranicznych",
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971410943",
+          "https://www.gov.pl/web/dyplomacja"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-minister-spraw-zagranicznych": {
+      "id": "pl-minister-spraw-zagranicznych",
+      "type": "dept_head",
+      "subtype": null,
+      "sector": "executive",
+      "ring": "cabinet",
+      "name": "Minister Spraw Zagranicznych",
+      "shortName": null,
+      "description": "Członek Rady Ministrów kierujący działem administracji rządowej; stoi na czele urzędu: Ministerstwo Spraw Zagranicznych.",
+      "aliases": [],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 149",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.gov.pl/web/dyplomacja",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": "pl-msz",
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-05",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-minister-spraw-zagranicznych",
+            "positionName": "Minister Spraw Zagranicznych",
+            "type": "appointed",
+            "startedAt": null,
+            "acting": false,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.gov.pl/web/dyplomacja"
+        ],
+        "verifiedAt": null,
+        "confidence": "medium"
+      }
+    },
+    "pl-kas": {
+      "id": "pl-kas",
+      "type": "department",
+      "subtype": "executive_agency",
+      "sector": "executive",
+      "ring": "satellite",
+      "name": "Krajowa Administracja Skarbowa",
+      "shortName": "KAS",
+      "description": "Wyspecjalizowana administracja rządowa wykonująca zadania z zakresu realizacji dochodów z podatków, ceł i opłat. Kieruje nią Szef KAS podległy ministrowi finansów.",
+      "aliases": [
+        "KAS",
+        "Skarbówka"
+      ],
+      "legalSource": {
+        "title": "Ustawa o Krajowej Administracji Skarbowej, art. 1",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20160001947"
+      },
+      "officialUrl": "https://www.gov.pl/web/kas",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": "pl-ministerstwo-finansow",
+      "level": 1,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20160001947",
+          "https://www.gov.pl/web/kas"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-iws": {
+      "id": "pl-iws",
+      "type": "department",
+      "subtype": "state_legal_person",
+      "sector": "executive",
+      "ring": "satellite",
+      "name": "Instytut Wymiaru Sprawiedliwości",
+      "shortName": "IWS",
+      "description": "Jednostka badawcza nadzorowana przez Ministra Sprawiedliwości; prowadzi badania nad funkcjonowaniem wymiaru sprawiedliwości.",
+      "aliases": [
+        "IWS"
+      ],
+      "legalSource": null,
+      "officialUrl": "https://iws.gov.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": "pl-ministerstwo-sprawiedliwosci",
+      "level": 1,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://iws.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-gus": {
+      "id": "pl-gus",
+      "type": "department",
+      "subtype": "central_office",
+      "sector": "executive",
+      "ring": "administration",
+      "name": "Główny Urząd Statystyczny",
+      "shortName": "GUS",
+      "description": "Centralny organ administracji rządowej właściwy w sprawach statystyki publicznej. Prezes GUS podlega Prezesowi Rady Ministrów.",
+      "aliases": [
+        "GUS"
+      ],
+      "legalSource": {
+        "title": "Ustawa o statystyce publicznej, art. 23–24",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19950880439"
+      },
+      "officialUrl": "https://stat.gov.pl",
+      "bipUrl": "https://bip.stat.gov.pl",
+      "regon": null,
+      "budgetPart": "58",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19950880439",
+          "https://stat.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-uokik": {
+      "id": "pl-uokik",
+      "type": "department",
+      "subtype": "central_office",
+      "sector": "executive",
+      "ring": "administration",
+      "name": "Urząd Ochrony Konkurencji i Konsumentów",
+      "shortName": "UOKiK",
+      "description": "Urząd obsługujący Prezesa UOKiK — centralny organ administracji rządowej właściwy w sprawach ochrony konkurencji i konsumentów, podległy Prezesowi Rady Ministrów.",
+      "aliases": [
+        "UOKiK"
+      ],
+      "legalSource": {
+        "title": "Ustawa o ochronie konkurencji i konsumentów, art. 29",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20070500331"
+      },
+      "officialUrl": "https://uokik.gov.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "53",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20070500331",
+          "https://uokik.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-muw": {
+      "id": "pl-muw",
+      "type": "department",
+      "subtype": "voivode",
+      "sector": "executive",
+      "ring": "administration",
+      "name": "Mazowiecki Urząd Wojewódzki w Warszawie",
+      "shortName": "MUW",
+      "description": "Urząd pomocniczy wojewody mazowieckiego — przedstawiciela Rady Ministrów w województwie, zwierzchnika rządowej administracji zespolonej.",
+      "aliases": [
+        "MUW",
+        "Urząd Wojewódzki Mazowiecki"
+      ],
+      "legalSource": {
+        "title": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20090310206"
+      },
+      "officialUrl": "https://www.gov.pl/web/uw-mazowiecki",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "85/14",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": "pl-wojewoda-mazowiecki",
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20090310206",
+          "https://www.gov.pl/web/uw-mazowiecki"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-wojewoda-mazowiecki": {
+      "id": "pl-wojewoda-mazowiecki",
+      "type": "dept_head",
+      "subtype": null,
+      "sector": "executive",
+      "ring": "administration",
+      "name": "Wojewoda Mazowiecki",
+      "shortName": null,
+      "description": "Przedstawiciel Rady Ministrów w województwie mazowieckim; powoływany i odwoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej.",
+      "aliases": [],
+      "legalSource": {
+        "title": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20090310206"
+      },
+      "officialUrl": null,
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": "pl-muw",
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-06",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-wojewoda-mazowiecki",
+            "positionName": "Wojewoda Mazowiecki",
+            "type": "appointed",
+            "startedAt": null,
+            "acting": true,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20090310206"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-trybunal-konstytucyjny": {
+      "id": "pl-trybunal-konstytucyjny",
+      "type": "department",
+      "subtype": "tribunal",
+      "sector": "judicial",
+      "ring": "highest",
+      "name": "Trybunał Konstytucyjny",
+      "shortName": "TK",
+      "description": "Organ władzy sądowniczej orzekający o zgodności ustaw i umów międzynarodowych z Konstytucją. 15 sędziów wybieranych indywidualnie przez Sejm na 9 lat.",
+      "aliases": [
+        "TK"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 188–197",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://trybunal.gov.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "06",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 15,
+      "people": {
+        "type": "count",
+        "count": 15
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://trybunal.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-sad-najwyzszy": {
+      "id": "pl-sad-najwyzszy",
+      "type": "department",
+      "subtype": "court",
+      "sector": "judicial",
+      "ring": "highest",
+      "name": "Sąd Najwyższy",
+      "shortName": "SN",
+      "description": "Sprawuje nadzór nad działalnością sądów powszechnych i wojskowych w zakresie orzekania. Pierwszego Prezesa SN powołuje Prezydent RP na 6-letnią kadencję.",
+      "aliases": [
+        "SN"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 183",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.sn.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "04",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.sn.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-nsa": {
+      "id": "pl-nsa",
+      "type": "department",
+      "subtype": "court",
+      "sector": "judicial",
+      "ring": "highest",
+      "name": "Naczelny Sąd Administracyjny",
+      "shortName": "NSA",
+      "description": "Sprawuje nadzór nad działalnością wojewódzkich sądów administracyjnych w zakresie orzekania; kontroluje działalność administracji publicznej.",
+      "aliases": [
+        "NSA"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 184",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.nsa.gov.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "05",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.nsa.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-nik": {
+      "id": "pl-nik",
+      "type": "commission",
+      "subtype": "oversight_body",
+      "sector": "independent",
+      "ring": "oversight",
+      "name": "Najwyższa Izba Kontroli",
+      "shortName": "NIK",
+      "description": "Naczelny organ kontroli państwowej, podległy Sejmowi. Kontroluje działalność organów administracji rządowej, NBP, państwowych osób prawnych i innych jednostek.",
+      "aliases": [
+        "NIK"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 202–207",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.nik.gov.pl",
+      "bipUrl": "https://bip.nik.gov.pl",
+      "regon": null,
+      "budgetPart": "07",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": "pl-prezes-nik",
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.nik.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-prezes-nik": {
+      "id": "pl-prezes-nik",
+      "type": "dept_head",
+      "subtype": null,
+      "sector": "independent",
+      "ring": "oversight",
+      "name": "Prezes Najwyższej Izby Kontroli",
+      "shortName": "Prezes NIK",
+      "description": "Kieruje NIK; powoływany przez Sejm za zgodą Senatu na 6-letnią kadencję (możliwa jedna reelekcja).",
+      "aliases": [],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 205",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": null,
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": "pl-nik",
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-07",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-prezes-nik",
+            "positionName": "Prezes NIK",
+            "type": "appointed",
+            "startedAt": null,
+            "acting": false,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-rpo": {
+      "id": "pl-rpo",
+      "type": "commission",
+      "subtype": "oversight_body",
+      "sector": "independent",
+      "ring": "oversight",
+      "name": "Rzecznik Praw Obywatelskich",
+      "shortName": "RPO",
+      "description": "Stoi na straży wolności i praw człowieka i obywatela. Powoływany przez Sejm za zgodą Senatu na 5-letnią kadencję; niezawisły, odpowiada tylko przed Sejmem.",
+      "aliases": [
+        "RPO",
+        "Ombudsman"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 208–212",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://bip.brpo.gov.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "08",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-08",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-rpo",
+            "positionName": "Rzecznik Praw Obywatelskich",
+            "type": "appointed",
+            "startedAt": null,
+            "acting": false,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://bip.brpo.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-nbp": {
+      "id": "pl-nbp",
+      "type": "department",
+      "subtype": "other",
+      "sector": "independent",
+      "ring": "oversight",
+      "name": "Narodowy Bank Polski",
+      "shortName": "NBP",
+      "description": "Centralny bank państwa; ma wyłączne prawo emisji pieniądza oraz ustalania i realizowania polityki pieniężnej. Organami są Prezes NBP, Rada Polityki Pieniężnej i Zarząd.",
+      "aliases": [
+        "NBP",
+        "Bank centralny"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 227",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://nbp.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": "pl-prezes-nbp",
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://nbp.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-prezes-nbp": {
+      "id": "pl-prezes-nbp",
+      "type": "dept_head",
+      "subtype": null,
+      "sector": "independent",
+      "ring": "oversight",
+      "name": "Prezes Narodowego Banku Polskiego",
+      "shortName": "Prezes NBP",
+      "description": "Powoływany przez Sejm na wniosek Prezydenta RP na 6-letnią kadencję; przewodniczy Radzie Polityki Pieniężnej i Zarządowi NBP.",
+      "aliases": [],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 227 ust. 3",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": null,
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": "pl-nbp",
+      "seatsCount": 1,
+      "people": {
+        "type": "people",
+        "people": [
+          {
+            "id": "pl-osoba-placeholder-09",
+            "name": "(do uzupełnienia)",
+            "positionId": "pl-prezes-nbp",
+            "positionName": "Prezes NBP",
+            "type": "appointed",
+            "startedAt": null,
+            "acting": false,
+            "party": null,
+            "imageUrl": null,
+            "sourceUrl": null
+          }
+        ]
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-krrit": {
+      "id": "pl-krrit",
+      "type": "commission",
+      "subtype": "regulatory_body",
+      "sector": "independent",
+      "ring": "oversight",
+      "name": "Krajowa Rada Radiofonii i Telewizji",
+      "shortName": "KRRiT",
+      "description": "Stoi na straży wolności słowa, prawa do informacji oraz interesu publicznego w radiofonii i telewizji. 5 członków powoływanych przez Sejm (2), Senat (1) i Prezydenta (2).",
+      "aliases": [
+        "KRRiT"
+      ],
+      "legalSource": {
+        "title": "Konstytucja RP, art. 213–215",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+      },
+      "officialUrl": "https://www.gov.pl/web/krrit",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "09",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 5,
+      "people": {
+        "type": "count",
+        "count": 5
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+          "https://www.gov.pl/web/krrit"
+        ],
+        "verifiedAt": null,
+        "confidence": "high"
+      }
+    },
+    "pl-pkw": {
+      "id": "pl-pkw",
+      "type": "commission",
+      "subtype": "oversight_body",
+      "sector": "independent",
+      "ring": "oversight",
+      "name": "Państwowa Komisja Wyborcza",
+      "shortName": "PKW",
+      "description": "Stały najwyższy organ wyborczy właściwy w sprawach przeprowadzania wyborów i referendów. 9 członków powoływanych przez Prezydenta RP (7 wskazuje Sejm, po 1 — TK i NSA).",
+      "aliases": [
+        "PKW"
+      ],
+      "legalSource": {
+        "title": "Kodeks wyborczy, art. 157",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112"
+      },
+      "officialUrl": "https://pkw.gov.pl",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": "11",
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 9,
+      "people": {
+        "type": "count",
+        "count": 9
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112",
+          "https://pkw.gov.pl"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    },
+    "pl-rds": {
+      "id": "pl-rds",
+      "type": "advisory",
+      "subtype": "advisory_body",
+      "sector": "independent",
+      "ring": "oversight",
+      "name": "Rada Dialogu Społecznego",
+      "shortName": "RDS",
+      "description": "Forum dialogu trójstronnego strony pracowników, pracodawców i rządu. Opiniuje projekty aktów prawnych i strategii rządu.",
+      "aliases": [
+        "RDS"
+      ],
+      "legalSource": {
+        "title": "Ustawa o Radzie Dialogu Społecznego, art. 1",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20150001240"
+      },
+      "officialUrl": "https://www.gov.pl/web/dialog",
+      "bipUrl": null,
+      "regon": null,
+      "budgetPart": null,
+      "parent": null,
+      "level": 0,
+      "children": [],
+      "head": null,
+      "headOf": null,
+      "seatsCount": 0,
+      "people": {
+        "type": "people",
+        "people": []
+      },
+      "employeeCount": {
+        "actual": null,
+        "budget": null,
+        "source": null
+      },
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20150001240",
+          "https://www.gov.pl/web/dialog"
+        ],
+        "verifiedAt": null,
+        "confidence": "low"
+      }
+    }
+  },
+  "edges": {
+    "e-001": {
+      "id": "e-001",
+      "type": "dept_head",
+      "fromId": "pl-ministerstwo-finansow",
+      "toId": "pl-minister-finansow",
+      "cite": "Konstytucja RP art. 149 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "medium"
+      }
+    },
+    "e-002": {
+      "id": "e-002",
+      "type": "nominates",
+      "fromId": "pl-prezes-rady-ministrow",
+      "toId": "pl-minister-finansow",
+      "cite": "Konstytucja RP art. 154 ust. 1 (skład RM proponuje Prezes RM)",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "medium"
+      }
+    },
+    "e-003": {
+      "id": "e-003",
+      "type": "appoints",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-minister-finansow",
+      "cite": "Konstytucja RP art. 154 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-004": {
+      "id": "e-004",
+      "type": "ex_officio",
+      "fromId": "pl-minister-finansow",
+      "toId": "pl-rada-ministrow",
+      "cite": "Konstytucja RP art. 147 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-005": {
+      "id": "e-005",
+      "type": "dept_head",
+      "fromId": "pl-ministerstwo-sprawiedliwosci",
+      "toId": "pl-minister-sprawiedliwosci",
+      "cite": "Konstytucja RP art. 149 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "medium"
+      }
+    },
+    "e-006": {
+      "id": "e-006",
+      "type": "nominates",
+      "fromId": "pl-prezes-rady-ministrow",
+      "toId": "pl-minister-sprawiedliwosci",
+      "cite": "Konstytucja RP art. 154 ust. 1 (skład RM proponuje Prezes RM)",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "medium"
+      }
+    },
+    "e-007": {
+      "id": "e-007",
+      "type": "appoints",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-minister-sprawiedliwosci",
+      "cite": "Konstytucja RP art. 154 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-008": {
+      "id": "e-008",
+      "type": "ex_officio",
+      "fromId": "pl-minister-sprawiedliwosci",
+      "toId": "pl-rada-ministrow",
+      "cite": "Konstytucja RP art. 147 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-009": {
+      "id": "e-009",
+      "type": "dept_head",
+      "fromId": "pl-msz",
+      "toId": "pl-minister-spraw-zagranicznych",
+      "cite": "Konstytucja RP art. 149 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "medium"
+      }
+    },
+    "e-010": {
+      "id": "e-010",
+      "type": "nominates",
+      "fromId": "pl-prezes-rady-ministrow",
+      "toId": "pl-minister-spraw-zagranicznych",
+      "cite": "Konstytucja RP art. 154 ust. 1 (skład RM proponuje Prezes RM)",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "medium"
+      }
+    },
+    "e-011": {
+      "id": "e-011",
+      "type": "appoints",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-minister-spraw-zagranicznych",
+      "cite": "Konstytucja RP art. 154 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-012": {
+      "id": "e-012",
+      "type": "ex_officio",
+      "fromId": "pl-minister-spraw-zagranicznych",
+      "toId": "pl-rada-ministrow",
+      "cite": "Konstytucja RP art. 147 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-013": {
+      "id": "e-013",
+      "type": "oversees",
+      "fromId": "pl-minister-finansow",
+      "toId": "pl-kas",
+      "cite": "Ustawa o KAS art. 11 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20160001947",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20160001947"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-014": {
+      "id": "e-014",
+      "type": "oversees",
+      "fromId": "pl-minister-sprawiedliwosci",
+      "toId": "pl-iws",
+      "cite": null,
+      "citeUrl": null,
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [],
+        "confidence": "low"
+      }
+    },
+    "e-015": {
+      "id": "e-015",
+      "type": "oversees",
+      "fromId": "pl-prezes-rady-ministrow",
+      "toId": "pl-gus",
+      "cite": "Ustawa o statystyce publicznej art. 24 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19950880439",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19950880439"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-016": {
+      "id": "e-016",
+      "type": "oversees",
+      "fromId": "pl-prezes-rady-ministrow",
+      "toId": "pl-uokik",
+      "cite": "Ustawa o ochronie konkurencji i konsumentów art. 29 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20070500331",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20070500331"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-017": {
+      "id": "e-017",
+      "type": "oversees",
+      "fromId": "pl-prezes-rady-ministrow",
+      "toId": "pl-kprm",
+      "cite": "Ustawa o Radzie Ministrów art. 26",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19961060492",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19961060492"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-018": {
+      "id": "e-018",
+      "type": "dept_head",
+      "fromId": "pl-muw",
+      "toId": "pl-wojewoda-mazowiecki",
+      "cite": null,
+      "citeUrl": null,
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [],
+        "confidence": "low"
+      }
+    },
+    "e-019": {
+      "id": "e-019",
+      "type": "appoints",
+      "fromId": "pl-prezes-rady-ministrow",
+      "toId": "pl-wojewoda-mazowiecki",
+      "cite": "Ustawa o wojewodzie art. 6 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20090310206",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20090310206"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-020": {
+      "id": "e-020",
+      "type": "elects",
+      "fromId": "pl-sejm",
+      "toId": "pl-trybunal-konstytucyjny",
+      "cite": "Konstytucja RP art. 194 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 15,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-021": {
+      "id": "e-021",
+      "type": "appoints",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-sad-najwyzszy",
+      "cite": "Konstytucja RP art. 179 (na wniosek KRS)",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-022": {
+      "id": "e-022",
+      "type": "appoints",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-nsa",
+      "cite": "Konstytucja RP art. 179 (na wniosek KRS)",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-023": {
+      "id": "e-023",
+      "type": "elects",
+      "fromId": "pl-narod",
+      "toId": "pl-sejm",
+      "cite": "Konstytucja RP art. 96 ust. 2",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 460,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-024": {
+      "id": "e-024",
+      "type": "elects",
+      "fromId": "pl-narod",
+      "toId": "pl-senat",
+      "cite": "Konstytucja RP art. 97 ust. 2",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 100,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-025": {
+      "id": "e-025",
+      "type": "elects",
+      "fromId": "pl-narod",
+      "toId": "pl-prezydent-rp",
+      "cite": "Konstytucja RP art. 127 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-026": {
+      "id": "e-026",
+      "type": "appoints",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-prezes-rady-ministrow",
+      "cite": "Konstytucja RP art. 154 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-027": {
+      "id": "e-027",
+      "type": "confirms",
+      "fromId": "pl-sejm",
+      "toId": "pl-rada-ministrow",
+      "cite": "Konstytucja RP art. 154 ust. 2 (wotum zaufania)",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-028": {
+      "id": "e-028",
+      "type": "dept_head",
+      "fromId": "pl-rada-ministrow",
+      "toId": "pl-prezes-rady-ministrow",
+      "cite": "Konstytucja RP art. 147 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-029": {
+      "id": "e-029",
+      "type": "elects",
+      "fromId": "pl-sejm",
+      "toId": "pl-prezes-nik",
+      "cite": "Konstytucja RP art. 205 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-030": {
+      "id": "e-030",
+      "type": "confirms",
+      "fromId": "pl-senat",
+      "toId": "pl-prezes-nik",
+      "cite": "Konstytucja RP art. 205 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-031": {
+      "id": "e-031",
+      "type": "dept_head",
+      "fromId": "pl-nik",
+      "toId": "pl-prezes-nik",
+      "cite": "Ustawa o NIK art. 13",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19950130059",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19950130059"
+        ],
+        "confidence": "medium"
+      }
+    },
+    "e-032": {
+      "id": "e-032",
+      "type": "oversees",
+      "fromId": "pl-nik",
+      "toId": "pl-rada-ministrow",
+      "cite": "Konstytucja RP art. 203 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-033": {
+      "id": "e-033",
+      "type": "oversees",
+      "fromId": "pl-nik",
+      "toId": "pl-nbp",
+      "cite": "Konstytucja RP art. 203 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-034": {
+      "id": "e-034",
+      "type": "appoints",
+      "fromId": "pl-sejm",
+      "toId": "pl-rpo",
+      "cite": "Konstytucja RP art. 209 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-035": {
+      "id": "e-035",
+      "type": "confirms",
+      "fromId": "pl-senat",
+      "toId": "pl-rpo",
+      "cite": "Konstytucja RP art. 209 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-036": {
+      "id": "e-036",
+      "type": "appoints",
+      "fromId": "pl-sejm",
+      "toId": "pl-prezes-nbp",
+      "cite": "Konstytucja RP art. 227 ust. 3",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-037": {
+      "id": "e-037",
+      "type": "nominates",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-prezes-nbp",
+      "cite": "Konstytucja RP art. 227 ust. 3 (na wniosek Prezydenta)",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483"
+        ],
+        "confidence": "high"
+      }
+    },
+    "e-038": {
+      "id": "e-038",
+      "type": "dept_head",
+      "fromId": "pl-nbp",
+      "toId": "pl-prezes-nbp",
+      "cite": "Ustawa o NBP art. 6",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971400938",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971400938"
+        ],
+        "confidence": "medium"
+      }
+    },
+    "e-039": {
+      "id": "e-039",
+      "type": "appoints",
+      "fromId": "pl-sejm",
+      "toId": "pl-krrit",
+      "cite": "Ustawa o radiofonii i telewizji art. 7 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19930070034",
+      "seatsAppointed": 2,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19930070034"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-040": {
+      "id": "e-040",
+      "type": "appoints",
+      "fromId": "pl-senat",
+      "toId": "pl-krrit",
+      "cite": "Ustawa o radiofonii i telewizji art. 7 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19930070034",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19930070034"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-041": {
+      "id": "e-041",
+      "type": "appoints",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-krrit",
+      "cite": "Ustawa o radiofonii i telewizji art. 7 ust. 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19930070034",
+      "seatsAppointed": 2,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19930070034"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-042": {
+      "id": "e-042",
+      "type": "appoints",
+      "fromId": "pl-prezydent-rp",
+      "toId": "pl-pkw",
+      "cite": "Kodeks wyborczy art. 157 § 2",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112",
+      "seatsAppointed": 9,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-043": {
+      "id": "e-043",
+      "type": "nominates",
+      "fromId": "pl-sejm",
+      "toId": "pl-pkw",
+      "cite": "Kodeks wyborczy art. 157 § 2 pkt 3",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112",
+      "seatsAppointed": 7,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-044": {
+      "id": "e-044",
+      "type": "nominates",
+      "fromId": "pl-trybunal-konstytucyjny",
+      "toId": "pl-pkw",
+      "cite": "Kodeks wyborczy art. 157 § 2 pkt 1",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-045": {
+      "id": "e-045",
+      "type": "nominates",
+      "fromId": "pl-nsa",
+      "toId": "pl-pkw",
+      "cite": "Kodeks wyborczy art. 157 § 2 pkt 2",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112",
+      "seatsAppointed": 1,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20110210112"
+        ],
+        "confidence": "low"
+      }
+    },
+    "e-046": {
+      "id": "e-046",
+      "type": "advises",
+      "fromId": "pl-rds",
+      "toId": "pl-rada-ministrow",
+      "cite": "Ustawa o Radzie Dialogu Społecznego art. 2",
+      "citeUrl": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20150001240",
+      "seatsAppointed": 0,
+      "provenance": {
+        "sources": [
+          "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20150001240"
+        ],
+        "confidence": "low"
+      }
+    }
+  }
+}

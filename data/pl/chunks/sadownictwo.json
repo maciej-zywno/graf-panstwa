@@ -1,0 +1,4721 @@
+{
+ "chunk": "sadownictwo",
+ "generatedAt": "2026-09-17",
+ "coverageNote": "Zakres: SN (+5 izb, I Prezes), NSA (+3 izby, Prezes, wiceprezesi), 16 WSA (prezesi tylko dla Warszawy, Krakowa, Gdańska, Poznania; Wrocław – BIP nie podaje nazwiska; pozostałe unverified), TK (Prezes, 9 sędziów wg trybunal.gov.pl + 6 wybranych przez Sejm w 2026 bez ślubowania – disputed), TS (skład z M.P. 2023 poz. 1296; brak późniejszych uchwał w M.P.), KRS (25 członków z krs.pl, Przewodniczący), klasy: sądy powszechne (377 = 11 SA + 47 SO + 319 SR wg dane.gov.pl zbiór 985) i sądy wojskowe (9 wg rozp. MON Dz.U. 2014 poz. 662), Prokuratura (PG = Minister Sprawiedliwości), Prokuratura Krajowa (Prokurator Krajowy + zastępcy PG), prokuratury regionalne (11). POMINIĘTO: Zgromadzenie Ogólne Sędziów SN/NSA/TK jako osobne węzły (tylko w cite), Wiceprezes TK jako osobne stanowisko, Rzecznika Dyscyplinarnego, Krajową Radę Prokuratorów, prokuratury okręgowe/rejonowe, sądy dyscyplinarne, Kancelarię I Prezesa SN, Biuro Orzecznictwa NSA, Biuro KRS. Daty: startedAt tylko z datowanych aktów (M.P.) lub komunikatów oficjalnych; dla sędziów TK/KRS wybranych w 2026 startedAt = data wyboru przez Sejm. Krawędź e-min-sprawiedliwosci--ex-officio--prokurator-generalny ma ten sam id co w chunku ministerstwa-G2 (celowo, do deduplikacji). Sprawdzono M.P. 2025–2026 pod kątem postanowień o powołaniu I Prezesa SN i Prezesa TK – brak publikacji; użyto komunikatów sn.pl / trybunal.gov.pl.",
+ "nodes": {
+  "pl-sad-najwyzszy": {
+   "id": "pl-sad-najwyzszy",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "highest",
+   "name": "Sąd Najwyższy",
+   "shortName": "SN",
+   "description": "Naczelny organ władzy sądowniczej; sprawuje nadzór nad działalnością sądów powszechnych i wojskowych w zakresie orzekania, rozpoznaje kasacje i skargi nadzwyczajne, stwierdza ważność wyborów. Dzieli się na pięć izb; kieruje nim Pierwszy Prezes SN (art. 183 Konstytucji RP; ustawa z 8 grudnia 2017 r. o Sądzie Najwyższym).",
+   "aliases": [
+    "SN",
+    "Sąd Najwyższy RP"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 183",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 183"
+   },
+   "officialUrl": "https://www.sn.pl",
+   "bipUrl": "https://www.sn.pl",
+   "regon": null,
+   "budgetPart": "04",
+   "parent": null,
+   "level": 0,
+   "head": "pl-pierwszy-prezes-sn",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Liczba sędziów (103) = suma list sędziów izb na sn.pl (stan 2026-09-17), bez podwójnego liczenia sędziów IOZ wyznaczonych z innych izb.",
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 103
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2018/5/ogl",
+     "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-pierwszy-prezes-sn": {
+   "id": "pl-pierwszy-prezes-sn",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "judicial",
+   "ring": "highest",
+   "name": "Pierwszy Prezes Sądu Najwyższego",
+   "shortName": "I Prezes SN",
+   "description": "Kieruje Sądem Najwyższym i reprezentuje go na zewnątrz. Powoływany przez Prezydenta RP na sześcioletnią kadencję spośród 5 kandydatów wybranych przez Zgromadzenie Ogólne Sędziów SN (art. 183 ust. 3 Konstytucji RP; art. 12 ustawy o SN). Z urzędu przewodniczy Trybunałowi Stanu i zasiada w KRS.",
+   "aliases": [
+    "I Prezes SN",
+    "Pierwsza Prezes SN"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 183 ust. 3",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 183 ust. 3"
+   },
+   "officialUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/pierwszy-prezes-sadu-najwyzszego",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-sad-najwyzszy",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-zbigniew-kapinski",
+      "name": "Zbigniew Kapiński",
+      "positionId": "pl-pierwszy-prezes-sn",
+      "positionName": "Pierwszy Prezes Sądu Najwyższego",
+      "type": "appointed",
+      "startedAt": "2026-05-27",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.sn.pl/images/Prezesi/Prezes_IK_SSN_Zbigniew_Kapi%C5%84ski.jpg",
+      "sourceUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/pierwszy-prezes-sadu-najwyzszego",
+      "startedAtSource": "https://www.sn.pl/pl/aktualnosci/wydarzenia/sedzia-zbigniew-kapinski-pierwszym-prezesem-sadu-najwyzszego",
+      "note": "Powołany postanowieniem Prezydenta RP z 25.05.2026 r. z dniem 27.05.2026 r. (komunikat sn.pl). Wcześniej Prezes SN kierujący Izbą Karną (od 27.05.2023)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2018/5/ogl",
+     "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/pierwszy-prezes-sadu-najwyzszego",
+     "https://www.sn.pl/pl/aktualnosci/wydarzenia/sedzia-zbigniew-kapinski-pierwszym-prezesem-sadu-najwyzszego"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sn-izba-cywilna": {
+   "id": "pl-sn-izba-cywilna",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Izba Cywilna Sądu Najwyższego",
+   "shortName": "Izba Cywilna SN",
+   "description": "Izba Sądu Najwyższego (art. 3 ustawy o SN). Sprawy z zakresu prawa cywilnego, gospodarczego, własności intelektualnej, rodzinnego i opiekuńczego oraz rejestrowe (przedsiębiorcy, zastawy). Pracą izby kieruje Prezes SN powoływany przez Prezydenta RP na 3-letnią kadencję spośród 3 kandydatów wybranych przez zgromadzenie sędziów izby (art. 15 § 2). Liczba sędziów wg sn.pl: 32.",
+   "aliases": [
+    "Izba Cywilna SN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 grudnia 2017 r. o Sądzie Najwyższym, art. 3, art. 15 (Dz.U. 2024 poz. 622 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+    "act": "DU/2018/5",
+    "article": "art. 3, art. 15"
+   },
+   "officialUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-cywilna",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sad-najwyzszy",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 32,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-joanna-misztal-konecka",
+      "name": "Joanna Misztal-Konecka",
+      "positionId": "pl-prezes-sn-izba-cywilna",
+      "positionName": "Prezes Sądu Najwyższego kierujący pracą Izby Cywilnej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-cywilna",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl",
+     "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-cywilna"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sn-izba-karna": {
+   "id": "pl-sn-izba-karna",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Izba Karna Sądu Najwyższego",
+   "shortName": "Izba Karna SN",
+   "description": "Izba Sądu Najwyższego (art. 3 ustawy o SN). Sprawy karne, karnoskarbowe i wykroczeniowe rozpoznawane na podstawie k.p.k., k.k.s. i k.p.w., a także sprawy z orzecznictwa sądów wojskowych. Pracą izby kieruje Prezes SN powoływany przez Prezydenta RP na 3-letnią kadencję spośród 3 kandydatów wybranych przez zgromadzenie sędziów izby (art. 15 § 2). Liczba sędziów wg sn.pl: 32.",
+   "aliases": [
+    "Izba Karna SN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 grudnia 2017 r. o Sądzie Najwyższym, art. 3, art. 15 (Dz.U. 2024 poz. 622 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+    "act": "DU/2018/5",
+    "article": "art. 3, art. 15"
+   },
+   "officialUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-karna",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sad-najwyzszy",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 32,
+   "status": "vacant",
+   "statusNote": "Stanowisko Prezesa SN kierującego Izbą Karną nieobsadzone od objęcia przez Z. Kapińskiego urzędu I Prezesa SN (27.05.2026); sn.pl, stan 2026-09-17.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-igor-zgolinski",
+      "name": "Igor Zgoliński",
+      "positionId": "pl-prezes-sn-izba-karna",
+      "positionName": "Prezes Sądu Najwyższego kierujący pracą Izby Karnej (upoważniony do tymczasowego kierowania)",
+      "type": "appointed",
+      "startedAt": "2026-06-12",
+      "acting": true,
+      "status": "acting",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-karna",
+      "startedAtSource": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-karna",
+      "note": "Zarządzeniem I Prezesa SN z 12.06.2026 r. upoważniony do tymczasowego kierowania Izbą Karną do czasu powołania Prezesa SN przez Prezydenta RP."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl",
+     "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-karna"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sn-izba-pracy-i-ubezpieczen-spolecznych": {
+   "id": "pl-sn-izba-pracy-i-ubezpieczen-spolecznych",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Izba Pracy i Ubezpieczeń Społecznych Sądu Najwyższego",
+   "shortName": "Izba Pracy i US SN",
+   "description": "Izba Sądu Najwyższego (art. 3 ustawy o SN). Sprawy z zakresu prawa pracy i ubezpieczeń społecznych. Pracą izby kieruje Prezes SN powoływany przez Prezydenta RP na 3-letnią kadencję spośród 3 kandydatów wybranych przez zgromadzenie sędziów izby (art. 15 § 2). Liczba sędziów wg sn.pl: 12.",
+   "aliases": [
+    "Izba Pracy i US SN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 grudnia 2017 r. o Sądzie Najwyższym, art. 3, art. 15 (Dz.U. 2024 poz. 622 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+    "act": "DU/2018/5",
+    "article": "art. 3, art. 15"
+   },
+   "officialUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-pracy-i-ubezpieczen-spolecznych",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sad-najwyzszy",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 12,
+   "status": "vacant",
+   "statusNote": "Stanowisko Prezesa SN kierującego Izbą Pracy i US nieobsadzone (sn.pl, stan 2026-09-17).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-ewa-stryczynska",
+      "name": "Ewa Stryczyńska",
+      "positionId": "pl-prezes-sn-izba-pracy",
+      "positionName": "Prezes Sądu Najwyższego kierujący pracą Izby Pracy i Ubezpieczeń Społecznych (upoważniona do tymczasowego kierowania)",
+      "type": "appointed",
+      "startedAt": "2026-05-29",
+      "acting": true,
+      "status": "acting",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-pracy-i-ubezpieczen-spolecznych",
+      "startedAtSource": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-pracy-i-ubezpieczen-spolecznych",
+      "note": "Zarządzeniem I Prezesa SN z 29.05.2026 r. upoważniona do tymczasowego kierowania izbą do czasu wyznaczenia sędziego przez Prezydenta RP (art. 15 § 4 ustawy o SN)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl",
+     "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-pracy-i-ubezpieczen-spolecznych"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sn-izba-kontroli-nadzwyczajnej-i-spraw-publicznych": {
+   "id": "pl-sn-izba-kontroli-nadzwyczajnej-i-spraw-publicznych",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Izba Kontroli Nadzwyczajnej i Spraw Publicznych Sądu Najwyższego",
+   "shortName": "Izba KNiSP SN",
+   "description": "Izba Sądu Najwyższego (art. 3 ustawy o SN). Skargi nadzwyczajne, protesty wyborcze i stwierdzanie ważności wyborów i referendów, odwołania od uchwał KRS, sprawy z zakresu ochrony konkurencji i regulacji oraz inne sprawy prawa publicznego. Pracą izby kieruje Prezes SN powoływany przez Prezydenta RP na 3-letnią kadencję spośród 3 kandydatów wybranych przez zgromadzenie sędziów izby (art. 15 § 2). Liczba sędziów wg sn.pl: 19.",
+   "aliases": [
+    "Izba KNiSP SN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 grudnia 2017 r. o Sądzie Najwyższym, art. 3, art. 15 (Dz.U. 2024 poz. 622 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+    "act": "DU/2018/5",
+    "article": "art. 3, art. 15"
+   },
+   "officialUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-kontroli-nadzwyczajnej-i-spraw-publicznych",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sad-najwyzszy",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 19,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-krzysztof-wiak",
+      "name": "Krzysztof Wiak",
+      "positionId": "pl-prezes-sn-izba-knisp",
+      "positionName": "Prezes Sądu Najwyższego kierujący pracą Izby Kontroli Nadzwyczajnej i Spraw Publicznych",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-kontroli-nadzwyczajnej-i-spraw-publicznych",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl",
+     "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-kontroli-nadzwyczajnej-i-spraw-publicznych"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sn-izba-odpowiedzialnosci-zawodowej": {
+   "id": "pl-sn-izba-odpowiedzialnosci-zawodowej",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Izba Odpowiedzialności Zawodowej Sądu Najwyższego",
+   "shortName": "Izba OZ SN",
+   "description": "Izba Sądu Najwyższego (art. 3 ustawy o SN). Sprawy dyscyplinarne sędziów SN oraz sprawy dyscyplinarne i immunitetowe sędziów, prokuratorów i zawodów prawniczych rozpoznawane przez SN; sędziów wyznacza Prezydent RP na 5-letnią kadencję (art. 22a ustawy o SN). Pracą izby kieruje Prezes SN powoływany przez Prezydenta RP na 3-letnią kadencję spośród 3 kandydatów wybranych przez zgromadzenie sędziów izby (art. 15 § 2). Liczba sędziów wg sn.pl: 8.",
+   "aliases": [
+    "Izba OZ SN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 grudnia 2017 r. o Sądzie Najwyższym, art. 3, art. 15 (Dz.U. 2024 poz. 622 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+    "act": "DU/2018/5",
+    "article": "art. 3, art. 15"
+   },
+   "officialUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-odpowiedzialnosci-zawodowej",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sad-najwyzszy",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 8,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-maria-szczepaniec",
+      "name": "Maria Szczepaniec",
+      "positionId": "pl-prezes-sn-izba-oz",
+      "positionName": "Prezes Sądu Najwyższego kierujący pracą Izby Odpowiedzialności Zawodowej",
+      "type": "appointed",
+      "startedAt": "2026-07-09",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-odpowiedzialnosci-zawodowej",
+      "startedAtSource": "https://www.sn.pl/pl/aktualnosci/wydarzenia/prezydent-rp-powolal-sedzie-sn-marie-szczepaniec-na-prezesa-sadu-najwyzszego-kierujacego-praca-izby-odpowiedzialnosci-zawodowej",
+      "note": "Powołana postanowieniem Prezydenta RP z 9.07.2026 r. z dniem 9.07.2026 r."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl",
+     "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-odpowiedzialnosci-zawodowej"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-nsa": {
+   "id": "pl-nsa",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "highest",
+   "name": "Naczelny Sąd Administracyjny",
+   "shortName": "NSA",
+   "description": "Sąd administracyjny drugiej instancji; wraz z wojewódzkimi sądami administracyjnymi kontroluje działalność administracji publicznej (art. 184 Konstytucji RP). Sprawuje nadzór judykacyjny nad WSA, rozpoznaje środki odwoławcze od ich orzeczeń i podejmuje uchwały (art. 3 § 2 p.u.s.a.). Dzieli się na trzy izby.",
+   "aliases": [
+    "NSA"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 184",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 184"
+   },
+   "officialUrl": "https://www.nsa.gov.pl",
+   "bipUrl": "https://nsa.gov.pl/bip",
+   "regon": null,
+   "budgetPart": "05",
+   "parent": null,
+   "level": 0,
+   "head": "pl-prezes-nsa",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jan-rudowski",
+      "name": "Jan Rudowski",
+      "positionId": "pl-wiceprezes-nsa",
+      "positionName": "Wiceprezes Naczelnego Sądu Administracyjnego",
+      "type": "appointed",
+      "startedAt": "2022-04-25",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/488/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 25.04.2022 r. (M.P. poz. 488); jednocześnie Prezes Izby Finansowej."
+     },
+     {
+      "id": "pl-jerzy-siegien",
+      "name": "Jerzy Siegień",
+      "positionId": "pl-wiceprezes-nsa",
+      "positionName": "Wiceprezes Naczelnego Sądu Administracyjnego",
+      "type": "appointed",
+      "startedAt": "2022-04-25",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/489/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 25.04.2022 r. (M.P. poz. 489); jednocześnie Prezes Izby Ogólnoadministracyjnej."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-nsa": {
+   "id": "pl-prezes-nsa",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "judicial",
+   "ring": "highest",
+   "name": "Prezes Naczelnego Sądu Administracyjnego",
+   "shortName": "Prezes NSA",
+   "description": "Stoi na czele NSA, kieruje jego pracami i reprezentuje go na zewnątrz (art. 34 p.u.s.a.). Powoływany przez Prezydenta RP na sześcioletnią kadencję spośród dwóch kandydatów przedstawionych przez Zgromadzenie Ogólne Sędziów NSA (art. 185 Konstytucji RP; art. 44 p.u.s.a.). Powołuje prezesów WSA; z urzędu członek KRS.",
+   "aliases": [
+    "Prezes NSA"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 185",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 185"
+   },
+   "officialUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-nsa",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jacek-chlebny",
+      "name": "Jacek Chlebny",
+      "positionId": "pl-prezes-nsa",
+      "positionName": "Prezes Naczelnego Sądu Administracyjnego",
+      "type": "appointed",
+      "startedAt": "2022-02-18",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/227/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 3.02.2022 r. z dniem 18.02.2022 r. na sześcioletnią kadencję (M.P. 2022 poz. 227)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+     "https://eli.gov.pl/eli/MP/2022/227/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-nsa-izba-finansowa": {
+   "id": "pl-nsa-izba-finansowa",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Izba Finansowa Naczelnego Sądu Administracyjnego",
+   "shortName": "Izba Finansowa NSA",
+   "description": "Izba NSA (art. 39 p.u.s.a.): nadzór nad orzecznictwem WSA w sprawach zobowiązań podatkowych i innych świadczeń pieniężnych oraz egzekucji. Pracami izby kieruje wiceprezes NSA powoływany przez Prezydenta RP na wniosek Prezesa NSA (art. 45 § 1 p.u.s.a.).",
+   "aliases": [
+    "Izba Finansowa NSA"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 39 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 39"
+   },
+   "officialUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jan-rudowski",
+      "name": "Jan Rudowski",
+      "positionId": "pl-prezes-nsa-izba-finansowa",
+      "positionName": "Prezes Izby Finansowej NSA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-nsa-izba-gospodarcza": {
+   "id": "pl-nsa-izba-gospodarcza",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Izba Gospodarcza Naczelnego Sądu Administracyjnego",
+   "shortName": "Izba Gospodarcza NSA",
+   "description": "Izba NSA (art. 39 p.u.s.a.): nadzór nad orzecznictwem WSA w sprawach działalności gospodarczej, własności przemysłowej, budżetu, dewizowych, papierów wartościowych, ceł i bankowości. Pracami izby kieruje wiceprezes NSA powoływany przez Prezydenta RP na wniosek Prezesa NSA (art. 45 § 1 p.u.s.a.).",
+   "aliases": [
+    "Izba Gospodarcza NSA"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 39 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 39"
+   },
+   "officialUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Strona nsa.gov.pl (Sędziowie NSA, stan 2026-09-17) nie wskazuje Prezesa Izby Gospodarczej.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-nsa-izba-ogolnoadministracyjna": {
+   "id": "pl-nsa-izba-ogolnoadministracyjna",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Izba Ogólnoadministracyjna Naczelnego Sądu Administracyjnego",
+   "shortName": "Izba Ogólnoadministracyjna NSA",
+   "description": "Izba NSA (art. 39 p.u.s.a.): nadzór nad orzecznictwem WSA w pozostałych sprawach administracyjnych (m.in. budownictwo, gospodarka nieruchomościami, ochrona środowiska, samorząd terytorialny). Pracami izby kieruje wiceprezes NSA powoływany przez Prezydenta RP na wniosek Prezesa NSA (art. 45 § 1 p.u.s.a.).",
+   "aliases": [
+    "Izba Ogólnoadministracyjna NSA"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 39 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 39"
+   },
+   "officialUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jerzy-siegien",
+      "name": "Jerzy Siegień",
+      "positionId": "pl-prezes-nsa-izba-ogolnoadministracyjna",
+      "positionName": "Prezes Izby Ogólnoadministracyjnej NSA",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wsa-bialystok": {
+   "id": "pl-wsa-bialystok",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Białymstoku",
+   "shortName": "WSA w Białymstoku",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Białymstoku"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://bip.bialystok.wsa.gov.pl/131/strona-glowna.html",
+   "bipUrl": "http://bip.bialystok.wsa.gov.pl/131/strona-glowna.html",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://bip.bialystok.wsa.gov.pl/131/strona-glowna.html"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-bydgoszcz": {
+   "id": "pl-wsa-bydgoszcz",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Bydgoszczy",
+   "shortName": "WSA w Bydgoszczy",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Bydgoszczy"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://www.bydgoszcz.wsa.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://www.bydgoszcz.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-gdansk": {
+   "id": "pl-wsa-gdansk",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Gdańsku",
+   "shortName": "WSA w Gdańsku",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Gdańsku"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "https://www.bip.gdansk.wsa.gov.pl/",
+   "bipUrl": "https://www.bip.gdansk.wsa.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-pawe-mierzejewski",
+      "name": "Paweł Mierzejewski",
+      "positionId": "pl-prezes-wsa-gdansk",
+      "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Gdańsku",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.bip.gdansk.wsa.gov.pl/194,organy-wojewodzkiego-sadu-administracyjnego-w-gdansku",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "https://www.bip.gdansk.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wsa-gliwice": {
+   "id": "pl-wsa-gliwice",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Gliwicach",
+   "shortName": "WSA w Gliwicach",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Gliwicach"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://www.gliwice.wsa.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://www.gliwice.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-gorzow-wielkopolski": {
+   "id": "pl-wsa-gorzow-wielkopolski",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Gorzowie Wielkopolskim",
+   "shortName": "WSA w Gorzowie Wielkopolskim",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Gorzowie Wielkopolskim"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://www.gorzow.wsa.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://www.gorzow.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-kielce": {
+   "id": "pl-wsa-kielce",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Kielcach",
+   "shortName": "WSA w Kielcach",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Kielcach"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://www.kielce.wsa.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://www.kielce.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-krakow": {
+   "id": "pl-wsa-krakow",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Krakowie",
+   "shortName": "WSA w Krakowie",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Krakowie"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "https://bip.krakow.wsa.gov.pl/",
+   "bipUrl": "https://bip.krakow.wsa.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-anna-dumas",
+      "name": "Anna Dumas",
+      "positionId": "pl-prezes-wsa-krakow",
+      "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Krakowie",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nsa.gov.pl/sadownictwo-administracyjne/1-sadownictwo-administracyjne/sedziowie-nsa/",
+      "startedAtSource": null,
+      "note": "Nazwisko ze strony nsa.gov.pl (lista sędziów NSA)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "https://bip.krakow.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wsa-lublin": {
+   "id": "pl-wsa-lublin",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Lublinie",
+   "shortName": "WSA w Lublinie",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Lublinie"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://www.lublin.wsa.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://www.lublin.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-lodz": {
+   "id": "pl-wsa-lodz",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Łodzi",
+   "shortName": "WSA w Łodzi",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Łodzi"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://www.lodz.wsa.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://www.lodz.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-olsztyn": {
+   "id": "pl-wsa-olsztyn",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Olsztynie",
+   "shortName": "WSA w Olsztynie",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Olsztynie"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://bip.olsztyn.wsa.gov.pl/",
+   "bipUrl": "http://bip.olsztyn.wsa.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://bip.olsztyn.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-opole": {
+   "id": "pl-wsa-opole",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Opolu",
+   "shortName": "WSA w Opolu",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Opolu"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://bip.opole.wsa.gov.pl/",
+   "bipUrl": "http://bip.opole.wsa.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://bip.opole.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-poznan": {
+   "id": "pl-wsa-poznan",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Poznaniu",
+   "shortName": "WSA w Poznaniu",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Poznaniu"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "https://bip.wsa.poznan.pl/",
+   "bipUrl": "https://bip.wsa.poznan.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jakub-zielinski",
+      "name": "Jakub Zieliński",
+      "positionId": "pl-prezes-wsa-poznan",
+      "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Poznaniu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://bip.wsa.poznan.pl/256/organy-wojewodzkiego-sadu-administracyjnego-w-poznaniu.html",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "https://bip.wsa.poznan.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wsa-rzeszow": {
+   "id": "pl-wsa-rzeszow",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Rzeszowie",
+   "shortName": "WSA w Rzeszowie",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Rzeszowie"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://bip.rzeszow.wsa.gov.pl/",
+   "bipUrl": "http://bip.rzeszow.wsa.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://bip.rzeszow.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-szczecin": {
+   "id": "pl-wsa-szczecin",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Szczecinie",
+   "shortName": "WSA w Szczecinie",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Szczecinie"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "http://bip.szczecin.wsa.gov.pl/17/273/strona-glowna-bip.html",
+   "bipUrl": "http://bip.szczecin.wsa.gov.pl/17/273/strona-glowna-bip.html",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony w tej rundzie (nie przeszukano BIP tego WSA); organ i podstawa prawna zweryfikowane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "http://bip.szczecin.wsa.gov.pl/17/273/strona-glowna-bip.html"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-wsa-warszawa": {
+   "id": "pl-wsa-warszawa",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny w Warszawie",
+   "shortName": "WSA w Warszawie",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA w Warszawie"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "https://bip.warszawa.wsa.gov.pl/",
+   "bipUrl": "https://bip.warszawa.wsa.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-alojzy-skrodzki",
+      "name": "Alojzy Skrodzki",
+      "positionId": "pl-prezes-wsa-warszawa",
+      "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Warszawie",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://bip.warszawa.wsa.gov.pl/682/struktura-organizacyjna-sadu.html",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "https://bip.warszawa.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wsa-wroclaw": {
+   "id": "pl-wsa-wroclaw",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Wojewódzki Sąd Administracyjny we Wrocławiu",
+   "shortName": "WSA we Wrocławiu",
+   "description": "Sąd administracyjny pierwszej instancji (art. 3 § 1 p.u.s.a.), tworzony rozporządzeniem Prezydenta RP na wniosek Prezesa NSA (art. 16 § 2). Prezesa i wiceprezesa powołuje Prezes NSA na 5 lat (art. 21). Nadzór NSA ma charakter judykacyjny (art. 3 § 2), nie organizacyjny – parent=NSA wyłącznie dla układu grafu.",
+   "aliases": [
+    "WSA we Wrocławiu"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 25 lipca 2002 r. – Prawo o ustroju sądów administracyjnych, art. 2, art. 16 (Dz.U. 2024 poz. 1267 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "act": "DU/2002/1269",
+    "article": "art. 2, art. 16"
+   },
+   "officialUrl": "https://bip.wroclaw.wsa.gov.pl/",
+   "bipUrl": "https://bip.wroclaw.wsa.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nsa",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "unverified",
+   "statusNote": "Prezes nieustalony: strona BIP WSA we Wrocławiu 'Organy sądu' (bip.wroclaw.wsa.gov.pl/150) nie podaje nazwiska (stan 2026-09-17).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+     "https://www.nsa.gov.pl/sadownictwo-administracyjne/2-sadownictwo-administracyjne/wojewodzkie-sady-administracyjne/",
+     "https://bip.wroclaw.wsa.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-trybunal-konstytucyjny": {
+   "id": "pl-trybunal-konstytucyjny",
+   "type": "department",
+   "subtype": "tribunal",
+   "sector": "judicial",
+   "ring": "highest",
+   "name": "Trybunał Konstytucyjny",
+   "shortName": "TK",
+   "description": "Organ władzy sądowniczej orzekający o zgodności ustaw i umów międzynarodowych z Konstytucją, w sporach kompetencyjnych i skargach konstytucyjnych (art. 188–197 Konstytucji RP). Składa się z 15 sędziów wybieranych indywidualnie przez Sejm na 9 lat; Prezesa i Wiceprezesa powołuje Prezydent RP spośród kandydatów Zgromadzenia Ogólnego.",
+   "aliases": [
+    "TK"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 188–197",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 188–197"
+   },
+   "officialUrl": "https://trybunal.gov.pl",
+   "bipUrl": "https://trybunal.gov.pl",
+   "regon": null,
+   "budgetPart": "06",
+   "parent": null,
+   "level": 0,
+   "head": "pl-prezes-tk",
+   "headOf": null,
+   "seatsCount": 15,
+   "status": "disputed",
+   "statusNote": "Spór o skład i status TK: na trybunal.gov.pl (2026-09-17) figuruje 9 sędziów; Sejm w 2026 r. wybrał 8 sędziów (M.P. 2026 poz. 300–305, 603, 900), z których Prezydent RP przyjął ślubowanie od 2 (Bentkowska, Patyra); 6 wybranych nie objęło urzędu. Uchwała Sejmu z 6.03.2024 r. kwestionuje status części sędziów i orzeczeń TK.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-bogdan-swieczkowski",
+      "name": "Bogdan Święczkowski",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego (Prezes TK)",
+      "type": "elected",
+      "startedAt": "2022-02-16",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": "https://trybunal.gov.pl/o-trybunale/prezes-trybunalu-konstytucyjnego/",
+      "note": "Wybrany przez Sejm 8.02.2022, ślubowanie 16.02.2022; od 9.12.2024 Prezes TK (biogram trybunal.gov.pl)."
+     },
+     {
+      "id": "pl-bartomiej-sochanski",
+      "name": "Bartłomiej Sochański",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego (Wiceprezes TK)",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-magdalena-bentkowska",
+      "name": "Magdalena Bentkowska",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego",
+      "type": "elected",
+      "startedAt": "2026-03-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/300/ogl",
+      "note": "Wybrana przez Sejm 13.03.2026 (M.P. 2026 poz. 300); figuruje na liście sędziów TK (ślubowanie złożone). startedAt = data wyboru."
+     },
+     {
+      "id": "pl-sawomir-patyra",
+      "name": "Sławomir Patyra",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego",
+      "type": "elected",
+      "startedAt": "2026-06-11",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/603/ogl",
+      "note": "Wybrany przez Sejm 11.06.2026 (M.P. 2026 poz. 603); figuruje na liście sędziów TK (ślubowanie złożone). startedAt = data wyboru."
+     },
+     {
+      "id": "pl-justyn-piskorski",
+      "name": "Justyn Piskorski",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-jakub-stelina",
+      "name": "Jakub Stelina",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-wojciech-sych",
+      "name": "Wojciech Sych",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-rafa-wojciechowski",
+      "name": "Rafał Wojciechowski",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-jarosaw-wyrembak",
+      "name": "Jarosław Wyrembak",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-marcin-dziurda",
+      "name": "Marcin Dziurda",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego (wybrany przez Sejm, bez ślubowania)",
+      "type": "elected",
+      "startedAt": "2026-03-13",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/301/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/301/ogl",
+      "note": "Wybrany przez Sejm uchwałą z 13.03.2026 r. (M.P. 2026 poz. 301); wg trybunal.gov.pl (stan 2026-09-17) nie figuruje na liście sędziów TK – brak ślubowania wobec Prezydenta RP. startedAt = data wyboru."
+     },
+     {
+      "id": "pl-anna-korwin-piotrowska",
+      "name": "Anna Korwin-Piotrowska",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego (wybrany przez Sejm, bez ślubowania)",
+      "type": "elected",
+      "startedAt": "2026-03-13",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/302/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/302/ogl",
+      "note": "Wybrany przez Sejm uchwałą z 13.03.2026 r. (M.P. 2026 poz. 302); wg trybunal.gov.pl (stan 2026-09-17) nie figuruje na liście sędziów TK – brak ślubowania wobec Prezydenta RP. startedAt = data wyboru."
+     },
+     {
+      "id": "pl-krystian-markiewicz",
+      "name": "Krystian Markiewicz",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego (wybrany przez Sejm, bez ślubowania)",
+      "type": "elected",
+      "startedAt": "2026-03-13",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/303/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/303/ogl",
+      "note": "Wybrany przez Sejm uchwałą z 13.03.2026 r. (M.P. 2026 poz. 303); wg trybunal.gov.pl (stan 2026-09-17) nie figuruje na liście sędziów TK – brak ślubowania wobec Prezydenta RP. startedAt = data wyboru."
+     },
+     {
+      "id": "pl-dariusz-szostek",
+      "name": "Dariusz Szostek",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego (wybrany przez Sejm, bez ślubowania)",
+      "type": "elected",
+      "startedAt": "2026-03-13",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/304/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/304/ogl",
+      "note": "Wybrany przez Sejm uchwałą z 13.03.2026 r. (M.P. 2026 poz. 304); wg trybunal.gov.pl (stan 2026-09-17) nie figuruje na liście sędziów TK – brak ślubowania wobec Prezydenta RP. startedAt = data wyboru."
+     },
+     {
+      "id": "pl-maciej-taborowski",
+      "name": "Maciej Taborowski",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego (wybrany przez Sejm, bez ślubowania)",
+      "type": "elected",
+      "startedAt": "2026-03-13",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/305/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/305/ogl",
+      "note": "Wybrany przez Sejm uchwałą z 13.03.2026 r. (M.P. 2026 poz. 305); wg trybunal.gov.pl (stan 2026-09-17) nie figuruje na liście sędziów TK – brak ślubowania wobec Prezydenta RP. startedAt = data wyboru."
+     },
+     {
+      "id": "pl-maciej-berek",
+      "name": "Maciej Berek",
+      "positionId": "pl-sedzia-tk",
+      "positionName": "Sędzia Trybunału Konstytucyjnego (wybrany przez Sejm, bez ślubowania)",
+      "type": "elected",
+      "startedAt": "2026-09-04",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/900/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/900/ogl",
+      "note": "Wybrany przez Sejm uchwałą z 04.09.2026 r. (M.P. 2026 poz. 900); wg trybunal.gov.pl (stan 2026-09-17) nie figuruje na liście sędziów TK – brak ślubowania wobec Prezydenta RP. startedAt = data wyboru."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2016/2072/ogl",
+     "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/",
+     "https://eli.gov.pl/eli/MP/2026/300/ogl",
+     "https://eli.gov.pl/eli/MP/2026/301/ogl",
+     "https://eli.gov.pl/eli/MP/2026/302/ogl",
+     "https://eli.gov.pl/eli/MP/2026/303/ogl",
+     "https://eli.gov.pl/eli/MP/2026/304/ogl",
+     "https://eli.gov.pl/eli/MP/2026/305/ogl",
+     "https://eli.gov.pl/eli/MP/2026/603/ogl",
+     "https://eli.gov.pl/eli/MP/2026/900/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-prezes-tk": {
+   "id": "pl-prezes-tk",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "judicial",
+   "ring": "highest",
+   "name": "Prezes Trybunału Konstytucyjnego",
+   "shortName": "Prezes TK",
+   "description": "Kieruje pracami Trybunału i reprezentuje go na zewnątrz (art. 12 ustawy o organizacji i trybie postępowania przed TK). Powoływany przez Prezydenta RP spośród kandydatów przedstawionych przez Zgromadzenie Ogólne Sędziów TK (art. 194 ust. 2 Konstytucji RP; art. 11 ustawy).",
+   "aliases": [
+    "Prezes TK"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 194 ust. 2",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 194 ust. 2"
+   },
+   "officialUrl": "https://trybunal.gov.pl/o-trybunale/prezes-trybunalu-konstytucyjnego/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-trybunal-konstytucyjny",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-bogdan-swieczkowski",
+      "name": "Bogdan Święczkowski",
+      "positionId": "pl-prezes-tk",
+      "positionName": "Prezes Trybunału Konstytucyjnego",
+      "type": "appointed",
+      "startedAt": "2024-12-09",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://trybunal.gov.pl/o-trybunale/prezes-trybunalu-konstytucyjnego/",
+      "startedAtSource": "https://trybunal.gov.pl/o-trybunale/prezes-trybunalu-konstytucyjnego/",
+      "note": "Wg biogramu na trybunal.gov.pl powołany przez Prezydenta RP 9.12.2024 r."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2016/2072/ogl",
+     "https://trybunal.gov.pl/o-trybunale/prezes-trybunalu-konstytucyjnego/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-trybunal-stanu": {
+   "id": "pl-trybunal-stanu",
+   "type": "department",
+   "subtype": "tribunal",
+   "sector": "judicial",
+   "ring": "highest",
+   "name": "Trybunał Stanu",
+   "shortName": "TS",
+   "description": "Organ orzekający o odpowiedzialności konstytucyjnej Prezydenta RP, członków Rady Ministrów i innych najwyższych funkcjonariuszy państwa (art. 198–201 Konstytucji RP; ustawa z 26 marca 1982 r. o Trybunale Stanu). Składa się z przewodniczącego (Pierwszy Prezes SN z urzędu), 2 zastępców i 16 członków wybieranych przez Sejm na czas jego kadencji.",
+   "aliases": [
+    "TS"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 198–201",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 198–201"
+   },
+   "officialUrl": "https://www.sn.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 19,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-zbigniew-kapinski",
+      "name": "Zbigniew Kapiński",
+      "positionId": "pl-przewodniczacy-trybunalu-stanu",
+      "positionName": "Przewodniczący Trybunału Stanu (z urzędu jako Pierwszy Prezes SN)",
+      "type": "appointed",
+      "startedAt": "2026-05-27",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sn.pl/pl/aktualnosci/wydarzenia/sedzia-zbigniew-kapinski-pierwszym-prezesem-sadu-najwyzszego",
+      "startedAtSource": "https://www.sn.pl/pl/aktualnosci/wydarzenia/sedzia-zbigniew-kapinski-pierwszym-prezesem-sadu-najwyzszego",
+      "note": "Z urzędu – art. 199 ust. 2 Konstytucji RP; funkcję pełni od objęcia urzędu I Prezesa SN."
+     },
+     {
+      "id": "pl-piotr-andrzejewski",
+      "name": "Piotr Andrzejewski",
+      "positionId": "pl-zastepca-przewodniczacego-trybunalu-stanu",
+      "positionName": "Zastępca Przewodniczącego Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296)."
+     },
+     {
+      "id": "pl-jacek-dubois",
+      "name": "Jacek Dubois",
+      "positionId": "pl-zastepca-przewodniczacego-trybunalu-stanu",
+      "positionName": "Zastępca Przewodniczącego Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296)."
+     },
+     {
+      "id": "pl-marek-czeszkiewicz",
+      "name": "Marek Czeszkiewicz",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-kamila-ferenc",
+      "name": "Kamila Ferenc",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-sabina-grabowska",
+      "name": "Sabina Grabowska",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-adam-koczyk",
+      "name": "Adam Koczyk",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-jan-majchrowski",
+      "name": "Jan Majchrowski",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-marek-maecki",
+      "name": "Marek Małecki",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-marek-mikoajczyk",
+      "name": "Marek Mikołajczyk",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-maciej-miosz",
+      "name": "Maciej Miłosz",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-marcin-radwan-rohrenschef",
+      "name": "Marcin Radwan-Röhrenschef",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-przemysaw-rosati",
+      "name": "Przemysław Rosati",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-piotr-sak",
+      "name": "Piotr Sak",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-adrian-salus",
+      "name": "Adrian Salus",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-marcin-wawrzyniak",
+      "name": "Marcin Wawrzyniak",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-maciej-zaborowski",
+      "name": "Maciej Zaborowski",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-piotr-zientarski",
+      "name": "Piotr Zientarski",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     },
+     {
+      "id": "pl-jozef-zych",
+      "name": "Józef Zych",
+      "positionId": "pl-czlonek-trybunalu-stanu",
+      "positionName": "Członek Trybunału Stanu",
+      "type": "elected",
+      "startedAt": "2023-11-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1296/ogl",
+      "note": "Wybrany przez Sejm X kadencji uchwałą z 21.11.2023 r. (M.P. 2023 poz. 1296); w M.P. 2024–2026 nie odnaleziono uchwał zmieniających skład."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1982/84/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1296/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-krajowa-rada-sadownictwa": {
+   "id": "pl-krajowa-rada-sadownictwa",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "judicial",
+   "ring": "oversight",
+   "name": "Krajowa Rada Sądownictwa",
+   "shortName": "KRS",
+   "description": "Konstytucyjny organ stojący na straży niezależności sądów i niezawisłości sędziów; przedstawia Prezydentowi RP wnioski o powołanie sędziów (art. 186–187, art. 179 Konstytucji RP; ustawa z 12 maja 2011 r.). 25 członków: I Prezes SN, Prezes NSA, Minister Sprawiedliwości, osoba powołana przez Prezydenta, 15 sędziów, 4 posłów i 2 senatorów.",
+   "aliases": [
+    "KRS"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 186–187",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 186–187"
+   },
+   "officialUrl": "https://krs.pl",
+   "bipUrl": "https://bip.krs.pl",
+   "regon": null,
+   "budgetPart": "52",
+   "parent": null,
+   "level": 0,
+   "head": "pl-przewodniczacy-krs",
+   "headOf": null,
+   "seatsCount": 25,
+   "status": "disputed",
+   "statusNote": "Spór o tryb wyboru sędziów-członków KRS: Sejm uchwałą z 27.02.2026 (M.P. 2026 poz. 259) uznał wybory z 2018, 2021 i 2022 r. za dokonane z naruszeniem Konstytucji; ustawa zmieniająca tryb wyboru została zawetowana 19.02.2026; 15.05.2026 Sejm wybrał 15 sędziów (M.P. 2026 poz. 513); nowa Rada ukonstytuowała się na posiedzeniu 11.06.2026 zwołanym przez I Prezesa SN.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-dariusz-zawistowski",
+      "name": "Dariusz Zawistowski",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SN (Izba Cywilna); Przewodniczący KRS. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-wojciech-buchajczuk",
+      "name": "Wojciech Buchajczuk",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SR dla m.st. Warszawy; Wiceprzewodniczący KRS. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-aleksandra-wrzesinska-nowacka",
+      "name": "Aleksandra Wrzesińska-Nowacka",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia NSA; Wiceprzewodnicząca KRS. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-karolina-bak-lasota",
+      "name": "Karolina Bąk-Lasota",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SR Katowice-Zachód. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-monika-frackowiak",
+      "name": "Monika Frąckowiak",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SR Poznań-Nowe Miasto i Wilda; członek Prezydium. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-edyta-jefimko",
+      "name": "Edyta Jefimko",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SA w Warszawie. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-magdalena-kierszka",
+      "name": "Magdalena Kierszka",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SO w Gdańsku. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-agnieszka-kobylinska-bortkiewicz",
+      "name": "Agnieszka Kobylinska-Bortkiewicz",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia WSO w Warszawie; członek Prezydium. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-jarosaw-uczaj",
+      "name": "Jarosław Łuczaj",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia WSA w Warszawie. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-ewa-mierzejewska",
+      "name": "Ewa Mierzejewska",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SA w Lublinie. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-ukasz-piebiak",
+      "name": "Łukasz Piebiak",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SR dla m.st. Warszawy. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-bartomiej-starosta",
+      "name": "Bartłomiej Starosta",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SR w Sulęcinie; członek Prezydium. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-ukasz-zawadzki",
+      "name": "Łukasz Zawadzki",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SO w Opolu. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-katarzyna-zawislak",
+      "name": "Katarzyna Zawiślak",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SO we Wrocławiu. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-ewa-zonierczuk-dec",
+      "name": "Ewa Żołnierczuk-Dec",
+      "positionId": "pl-czlonek-krs-sedzia",
+      "positionName": "Członek Krajowej Rady Sądownictwa (wybrany przez Sejm spośród sędziów)",
+      "type": "elected",
+      "startedAt": "2026-05-16",
+      "acting": false,
+      "status": "disputed",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/513/ogl",
+      "note": "sędzia SR w Rzeszowie. Wybrany przez Sejm uchwałą z 15.05.2026 r. (M.P. 2026 poz. 513, art. 9a ustawy o KRS); kadencja od dnia po wyborze (art. 9a ust. 3). Status disputed: tryb wyboru sędziów-członków KRS przez Sejm jest przedmiotem sporu konstytucyjnego."
+     },
+     {
+      "id": "pl-robert-kropiwnicki",
+      "name": "Robert Kropiwnicki",
+      "positionId": "pl-czlonek-krs-posel",
+      "positionName": "Członek Krajowej Rady Sądownictwa (poseł wybrany przez Sejm)",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": null,
+      "note": "Poseł na Sejm RP (art. 187 ust. 1 pkt 3 Konstytucji RP); data wyboru nieustalona w tej rundzie."
+     },
+     {
+      "id": "pl-jarosaw-urbaniak",
+      "name": "Jarosław Urbaniak",
+      "positionId": "pl-czlonek-krs-posel",
+      "positionName": "Członek Krajowej Rady Sądownictwa (poseł wybrany przez Sejm)",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": null,
+      "note": "Poseł na Sejm RP (art. 187 ust. 1 pkt 3 Konstytucji RP); data wyboru nieustalona w tej rundzie."
+     },
+     {
+      "id": "pl-tomasz-zimoch",
+      "name": "Tomasz Zimoch",
+      "positionId": "pl-czlonek-krs-posel",
+      "positionName": "Członek Krajowej Rady Sądownictwa (poseł wybrany przez Sejm)",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": null,
+      "note": "Poseł na Sejm RP (art. 187 ust. 1 pkt 3 Konstytucji RP); data wyboru nieustalona w tej rundzie."
+     },
+     {
+      "id": "pl-anna-zukowska",
+      "name": "Anna Żukowska",
+      "positionId": "pl-czlonek-krs-posel",
+      "positionName": "Członek Krajowej Rady Sądownictwa (poseł wybrany przez Sejm)",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": null,
+      "note": "Poseł na Sejm RP (art. 187 ust. 1 pkt 3 Konstytucji RP); data wyboru nieustalona w tej rundzie."
+     },
+     {
+      "id": "pl-krzysztof-kwiatkowski",
+      "name": "Krzysztof Kwiatkowski",
+      "positionId": "pl-czlonek-krs-senator",
+      "positionName": "Członek Krajowej Rady Sądownictwa (senator wybrany przez Senat)",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": null,
+      "note": "Senator RP (art. 187 ust. 1 pkt 3 Konstytucji RP); data wyboru nieustalona w tej rundzie."
+     },
+     {
+      "id": "pl-kazimierz-ujazdowski",
+      "name": "Kazimierz Ujazdowski",
+      "positionId": "pl-czlonek-krs-senator",
+      "positionName": "Członek Krajowej Rady Sądownictwa (senator wybrany przez Senat)",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": null,
+      "note": "Senator RP (art. 187 ust. 1 pkt 3 Konstytucji RP); data wyboru nieustalona w tej rundzie."
+     },
+     {
+      "id": "pl-grzegorz-ksepko",
+      "name": "Grzegorz Ksepko",
+      "positionId": "pl-czlonek-krs-przedstawiciel-prezydenta",
+      "positionName": "Członek Krajowej Rady Sądownictwa (przedstawiciel Prezydenta RP)",
+      "type": "appointed",
+      "startedAt": "2025-11-07",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/503/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 6.11.2025 r. z dniem 7.11.2025 r. (M.P. 2026 poz. 503)."
+     },
+     {
+      "id": "pl-zbigniew-kapinski",
+      "name": "Zbigniew Kapiński",
+      "positionId": "pl-czlonek-krs-ex-officio",
+      "positionName": "Członek KRS z urzędu – Pierwszy Prezes Sądu Najwyższego",
+      "type": "appointed",
+      "startedAt": "2026-05-27",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://www.sn.pl/pl/aktualnosci/wydarzenia/sedzia-zbigniew-kapinski-pierwszym-prezesem-sadu-najwyzszego",
+      "note": "Art. 187 ust. 1 pkt 1 Konstytucji RP."
+     },
+     {
+      "id": "pl-jacek-chlebny",
+      "name": "Jacek Chlebny",
+      "positionId": "pl-czlonek-krs-ex-officio",
+      "positionName": "Członek KRS z urzędu – Prezes Naczelnego Sądu Administracyjnego",
+      "type": "appointed",
+      "startedAt": "2022-02-18",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/227/ogl",
+      "note": "Art. 187 ust. 1 pkt 1 Konstytucji RP."
+     },
+     {
+      "id": "pl-waldemar-zurek",
+      "name": "Waldemar Żurek",
+      "positionId": "pl-czlonek-krs-ex-officio",
+      "positionName": "Członek KRS z urzędu – Minister Sprawiedliwości",
+      "type": "appointed",
+      "startedAt": "2025-07-24",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/690/ogl",
+      "note": "Art. 187 ust. 1 pkt 1 Konstytucji RP; powołany na Ministra Sprawiedliwości 24.07.2025 (M.P. 2025 poz. 690)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2011/714/ogl",
+     "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+     "https://eli.gov.pl/eli/MP/2026/513/ogl",
+     "https://eli.gov.pl/eli/MP/2026/259/ogl",
+     "https://eli.gov.pl/eli/MP/2026/503/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-przewodniczacy-krs": {
+   "id": "pl-przewodniczacy-krs",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "judicial",
+   "ring": "oversight",
+   "name": "Przewodniczący Krajowej Rady Sądownictwa",
+   "shortName": "Przewodniczący KRS",
+   "description": "Wybierany przez Radę spośród jej członków (art. 187 ust. 2 Konstytucji RP; art. 16 ust. 1 ustawy o KRS) na czteroletnią kadencję; kieruje pracami Prezydium i reprezentuje Radę.",
+   "aliases": [
+    "Przewodniczący KRS"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 187 ust. 2",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 187 ust. 2"
+   },
+   "officialUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-krajowa-rada-sadownictwa",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-dariusz-zawistowski",
+      "name": "Dariusz Zawistowski",
+      "positionId": "pl-przewodniczacy-krs",
+      "positionName": "Przewodniczący Krajowej Rady Sądownictwa",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html",
+      "startedAtSource": null,
+      "note": "Sędzia SN (Izba Cywilna), członek KRS wybrany przez Sejm 15.05.2026 (M.P. 2026 poz. 513). Data wyboru na Przewodniczącego nieustalona (pierwsze posiedzenie nowej Rady 11.06.2026)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2011/714/ogl",
+     "https://krs.pl/pl/o-radzie/sklad-i-organizacja.html"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-sady-powszechne": {
+   "id": "pl-sady-powszechne",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "administration",
+   "name": "Sądy powszechne",
+   "shortName": "Sądy powszechne",
+   "description": "Klasa węzłów: sądy rejonowe, okręgowe i apelacyjne sprawujące wymiar sprawiedliwości w sprawach nienależących do sądów administracyjnych, wojskowych i SN (art. 1 p.u.s.p.). Łącznie 377 sądów (dane.gov.pl, zbiór 985, stan 03.2026). Nadzór judykacyjny sprawuje SN, zewnętrzny nadzór administracyjny – Minister Sprawiedliwości (art. 9a § 2).",
+   "aliases": [
+    "Sądownictwo powszechne"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 lipca 2001 r. – Prawo o ustroju sądów powszechnych, art. 1 § 1 (Dz.U. 2024 poz. 334 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+    "act": "DU/2001/1070",
+    "article": "art. 1 § 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "15",
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 377
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+     "https://dane.gov.pl/pl/dataset/985"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sady-apelacyjne": {
+   "id": "pl-sady-apelacyjne",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Sądy apelacyjne",
+   "shortName": "Sądy apelacyjne",
+   "description": "Klasa węzłów: 11 sądów apelacyjnych (II instancja dla sądów okręgowych). Prezesa sądu apelacyjnego powołuje Minister Sprawiedliwości (art. 23 § 1 p.u.s.p.). Liczba wg listy sądów powszechnych na dane.gov.pl (zbiór 985).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 lipca 2001 r. – Prawo o ustroju sądów powszechnych, art. 1 § 1, art. 23 § 1 (Dz.U. 2024 poz. 334 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+    "act": "DU/2001/1070",
+    "article": "art. 1 § 1, art. 23 § 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sady-powszechne",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 11
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+     "https://dane.gov.pl/pl/dataset/985"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sady-okregowe": {
+   "id": "pl-sady-okregowe",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Sądy okręgowe",
+   "shortName": "Sądy okręgowe",
+   "description": "Klasa węzłów: 47 sądów okręgowych. Prezesa sądu okręgowego powołuje Minister Sprawiedliwości (art. 24 § 1 p.u.s.p.). Liczba wg listy sądów powszechnych na dane.gov.pl (zbiór 985).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 lipca 2001 r. – Prawo o ustroju sądów powszechnych, art. 1 § 1, art. 24 § 1 (Dz.U. 2024 poz. 334 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+    "act": "DU/2001/1070",
+    "article": "art. 1 § 1, art. 24 § 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sady-powszechne",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 47
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+     "https://dane.gov.pl/pl/dataset/985"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sady-rejonowe": {
+   "id": "pl-sady-rejonowe",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "satellite",
+   "name": "Sądy rejonowe",
+   "shortName": "Sądy rejonowe",
+   "description": "Klasa węzłów: 319 sądów rejonowych (I instancja). Prezesa sądu rejonowego powołuje Minister Sprawiedliwości (art. 25 § 1 p.u.s.p). Liczba wg listy sądów powszechnych na dane.gov.pl (zbiór 985).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 lipca 2001 r. – Prawo o ustroju sądów powszechnych, art. 1 § 1, art. 25 § 1 (Dz.U. 2024 poz. 334 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+    "act": "DU/2001/1070",
+    "article": "art. 1 § 1, art. 25 § 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sady-powszechne",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 319
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+     "https://dane.gov.pl/pl/dataset/985"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sady-wojskowe": {
+   "id": "pl-sady-wojskowe",
+   "type": "department",
+   "subtype": "court",
+   "sector": "judicial",
+   "ring": "administration",
+   "name": "Sądy wojskowe",
+   "shortName": "Sądy wojskowe",
+   "description": "Klasa węzłów: 2 wojskowe sądy okręgowe (Warszawa, Poznań) i 7 wojskowych sądów garnizonowych (art. 3 p.u.s.w.; rozporządzenie MON z 9 maja 2014 r., Dz.U. poz. 662). Nadzór orzeczniczy sprawuje SN, nadzór administracyjny – Minister Sprawiedliwości, nadzór nad służbą wojskową – Minister Obrony Narodowej (art. 5).",
+   "aliases": [
+    "Sądownictwo wojskowe"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 sierpnia 1997 r. – Prawo o ustroju sądów wojskowych, art. 3, art. 5 (Dz.U. 2025 poz. 1614 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1997/753/ogl",
+    "act": "DU/1997/753",
+    "article": "art. 3, art. 5"
+   },
+   "officialUrl": "https://www.gov.pl/web/sprawiedliwosc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 9
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/753/ogl",
+     "https://eli.gov.pl/eli/DU/2014/662/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prokuratura": {
+   "id": "pl-prokuratura",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prokuratura",
+   "shortName": "Prokuratura",
+   "description": "Prokuraturę stanowią Prokurator Generalny, Prokurator Krajowy, pozostali zastępcy PG oraz prokuratorzy powszechnych jednostek organizacyjnych prokuratury i IPN (art. 1 § 1 Prawa o prokuraturze). Wykonuje zadania w zakresie ścigania przestępstw i stoi na straży praworządności (art. 2). Naczelnym organem jest Prokurator Generalny.",
+   "aliases": [
+    "Prokuratura RP",
+    "Powszechne jednostki organizacyjne prokuratury"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 28 stycznia 2016 r. – Prawo o prokuraturze, art. 1 (Dz.U. 2026 poz. 810 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+    "act": "DU/2016/177",
+    "article": "art. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/prokuratura-krajowa",
+   "bipUrl": "https://www.gov.pl/web/prokuratura-krajowa",
+   "regon": null,
+   "budgetPart": "88",
+   "parent": null,
+   "level": 0,
+   "head": "pl-prokurator-generalny",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl",
+     "https://www.gov.pl/web/prokuratura-krajowa"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prokurator-generalny": {
+   "id": "pl-prokurator-generalny",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prokurator Generalny",
+   "shortName": "PG",
+   "description": "Naczelny organ prokuratury; kieruje jej działalnością osobiście lub przez Prokuratora Krajowego i pozostałych zastępców (art. 13 § 1). Urząd Prokuratora Generalnego sprawuje z urzędu Minister Sprawiedliwości (art. 1 § 2 Prawa o prokuraturze).",
+   "aliases": [
+    "PG"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 28 stycznia 2016 r. – Prawo o prokuraturze, art. 1 § 2 (Dz.U. 2026 poz. 810 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+    "act": "DU/2016/177",
+    "article": "art. 1 § 2"
+   },
+   "officialUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-prokuratura",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-waldemar-zurek",
+      "name": "Waldemar Żurek",
+      "positionId": "pl-prokurator-generalny",
+      "positionName": "Prokurator Generalny",
+      "type": "appointed",
+      "startedAt": "2025-07-24",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/b01fcad0-d9b2-4589-b8a7-fec4adba2490/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/690/ogl",
+      "note": "Z urzędu jako Minister Sprawiedliwości (powołany 24.07.2025, M.P. 2025 poz. 690)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl",
+     "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prokuratura-krajowa": {
+   "id": "pl-prokuratura-krajowa",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Prokuratura Krajowa",
+   "shortName": "PK",
+   "description": "Najwyższa powszechna jednostka organizacyjna prokuratury; zapewnia obsługę Prokuratora Generalnego i Prokuratora Krajowego, udział prokuratora przed TK, SN i NSA, nadzór służbowy nad prokuraturami regionalnymi (art. 16–17 Prawa o prokuraturze). Kieruje nią Prokurator Krajowy.",
+   "aliases": [
+    "PK"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 28 stycznia 2016 r. – Prawo o prokuraturze, art. 16–17 (Dz.U. 2026 poz. 810 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+    "act": "DU/2016/177",
+    "article": "art. 16–17"
+   },
+   "officialUrl": "https://www.gov.pl/web/prokuratura-krajowa",
+   "bipUrl": "https://www.gov.pl/web/prokuratura-krajowa",
+   "regon": "363918998",
+   "budgetPart": null,
+   "parent": "pl-prokuratura",
+   "level": 1,
+   "head": "pl-prokurator-krajowy",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jacek-bilewicz",
+      "name": "Jacek Bilewicz",
+      "positionId": "pl-zastepca-prokuratora-generalnego",
+      "positionName": "Zastępca Prokuratora Generalnego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-beata-marczak",
+      "name": "Beata Marczak",
+      "positionId": "pl-zastepca-prokuratora-generalnego",
+      "positionName": "Zastępca Prokuratora Generalnego do Spraw Przestępczości Zorganizowanej i Korupcji",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-robert-hernand",
+      "name": "Robert Hernand",
+      "positionId": "pl-zastepca-prokuratora-generalnego",
+      "positionName": "Zastępca Prokuratora Generalnego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-krzysztof-sierak",
+      "name": "Krzysztof Sierak",
+      "positionId": "pl-zastepca-prokuratora-generalnego",
+      "positionName": "Zastępca Prokuratora Generalnego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-micha-ostrowski",
+      "name": "Michał Ostrowski",
+      "positionId": "pl-zastepca-prokuratora-generalnego",
+      "positionName": "Zastępca Prokuratora Generalnego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-tomasz-janeczek",
+      "name": "Tomasz Janeczek",
+      "positionId": "pl-zastepca-prokuratora-generalnego",
+      "positionName": "Zastępca Prokuratora Generalnego do Spraw Wojskowych",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-andrzej-pozorski",
+      "name": "Andrzej Pozorski",
+      "positionId": "pl-zastepca-prokuratora-generalnego",
+      "positionName": "Zastępca Prokuratora Generalnego – Dyrektor Głównej Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-marek-jamrogowicz",
+      "name": "Marek Jamrogowicz",
+      "positionId": "pl-zastepca-prokuratora-krajowego",
+      "positionName": "Zastępca Prokuratora Krajowego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl",
+     "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prokurator-krajowy": {
+   "id": "pl-prokurator-krajowy",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prokurator Krajowy",
+   "shortName": "Prokurator Krajowy",
+   "description": "Pierwszy zastępca Prokuratora Generalnego; powoływany spośród prokuratorów Prokuratury Krajowej przez Prezesa Rady Ministrów na wniosek Prokuratora Generalnego, po uzyskaniu opinii Prezydenta RP (art. 14 § 1 Prawa o prokuraturze). Powołuje prokuratorów regionalnych, okręgowych i rejonowych (art. 15 § 1).",
+   "aliases": [
+    "PK"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 28 stycznia 2016 r. – Prawo o prokuraturze, art. 14 § 1 (Dz.U. 2026 poz. 810 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+    "act": "DU/2016/177",
+    "article": "art. 14 § 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-prokuratura-krajowa",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-dariusz-korneluk",
+      "name": "Dariusz Korneluk",
+      "positionId": "pl-prokurator-krajowy",
+      "positionName": "Prokurator Krajowy – I Zastępca Prokuratora Generalnego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2",
+      "startedAtSource": null,
+      "note": "Data powołania nieustalona w tej rundzie (brak aktu w M.P.; powołanie przez PRM)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl",
+     "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prokuratury-regionalne": {
+   "id": "pl-prokuratury-regionalne",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Prokuratury regionalne",
+   "shortName": "Prokuratury regionalne",
+   "description": "Klasa węzłów: 11 prokuratur regionalnych (Białystok, Gdańsk, Katowice, Kraków, Lublin, Łódź, Poznań, Rzeszów, Szczecin, Warszawa, Wrocław) tworzonych dla obszaru co najmniej dwóch prokuratur okręgowych; nadzorują prokuratury okręgowe i rejonowe (art. 22 Prawa o prokuraturze). Prokuratora regionalnego powołuje Prokurator Krajowy (art. 15 § 1).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 28 stycznia 2016 r. – Prawo o prokuraturze, art. 22 (Dz.U. 2026 poz. 810 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+    "act": "DU/2016/177",
+    "article": "art. 22"
+   },
+   "officialUrl": "https://www.gov.pl/web/prokuratura-krajowa/lista-prokuratury-regionalne",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-prokuratura",
+   "level": 1,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 11
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl",
+     "https://www.gov.pl/web/prokuratura-krajowa/lista-prokuratury-regionalne"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  }
+ },
+ "edges": {
+  "e-prezydent-rp--appoints--sn-izba-cywilna-prezes": {
+   "id": "e-prezydent-rp--appoints--sn-izba-cywilna-prezes",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-sn-izba-cywilna",
+   "cite": "Ustawa o SN art. 15 § 2 (Prezes SN kierujący izbą – powołuje Prezydent RP po opinii I Prezesa SN spośród 3 kandydatów zgromadzenia sędziów izby)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--sn-izba-karna-prezes": {
+   "id": "e-prezydent-rp--appoints--sn-izba-karna-prezes",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-sn-izba-karna",
+   "cite": "Ustawa o SN art. 15 § 2 (Prezes SN kierujący izbą – powołuje Prezydent RP po opinii I Prezesa SN spośród 3 kandydatów zgromadzenia sędziów izby)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--sn-izba-pracy-i-ubezpieczen-spolecznych-prezes": {
+   "id": "e-prezydent-rp--appoints--sn-izba-pracy-i-ubezpieczen-spolecznych-prezes",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-sn-izba-pracy-i-ubezpieczen-spolecznych",
+   "cite": "Ustawa o SN art. 15 § 2 (Prezes SN kierujący izbą – powołuje Prezydent RP po opinii I Prezesa SN spośród 3 kandydatów zgromadzenia sędziów izby)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--sn-izba-kontroli-nadzwyczajnej-i-spraw-publicznych-prezes": {
+   "id": "e-prezydent-rp--appoints--sn-izba-kontroli-nadzwyczajnej-i-spraw-publicznych-prezes",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-sn-izba-kontroli-nadzwyczajnej-i-spraw-publicznych",
+   "cite": "Ustawa o SN art. 15 § 2 (Prezes SN kierujący izbą – powołuje Prezydent RP po opinii I Prezesa SN spośród 3 kandydatów zgromadzenia sędziów izby)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--sn-izba-odpowiedzialnosci-zawodowej-prezes": {
+   "id": "e-prezydent-rp--appoints--sn-izba-odpowiedzialnosci-zawodowej-prezes",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-sn-izba-odpowiedzialnosci-zawodowej",
+   "cite": "Ustawa o SN art. 15 § 2 (Prezes SN kierujący izbą – powołuje Prezydent RP po opinii I Prezesa SN spośród 3 kandydatów zgromadzenia sędziów izby)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/5/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-bialystok": {
+   "id": "e-prezes-nsa--appoints--wsa-bialystok",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-bialystok",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-bialystok": {
+   "id": "e-nsa--oversees--wsa-bialystok",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-bialystok",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-bydgoszcz": {
+   "id": "e-prezes-nsa--appoints--wsa-bydgoszcz",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-bydgoszcz",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-bydgoszcz": {
+   "id": "e-nsa--oversees--wsa-bydgoszcz",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-bydgoszcz",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-gdansk": {
+   "id": "e-prezes-nsa--appoints--wsa-gdansk",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-gdansk",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-gdansk": {
+   "id": "e-nsa--oversees--wsa-gdansk",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-gdansk",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-gliwice": {
+   "id": "e-prezes-nsa--appoints--wsa-gliwice",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-gliwice",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-gliwice": {
+   "id": "e-nsa--oversees--wsa-gliwice",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-gliwice",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-gorzow-wielkopolski": {
+   "id": "e-prezes-nsa--appoints--wsa-gorzow-wielkopolski",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-gorzow-wielkopolski",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-gorzow-wielkopolski": {
+   "id": "e-nsa--oversees--wsa-gorzow-wielkopolski",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-gorzow-wielkopolski",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-kielce": {
+   "id": "e-prezes-nsa--appoints--wsa-kielce",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-kielce",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-kielce": {
+   "id": "e-nsa--oversees--wsa-kielce",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-kielce",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-krakow": {
+   "id": "e-prezes-nsa--appoints--wsa-krakow",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-krakow",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-krakow": {
+   "id": "e-nsa--oversees--wsa-krakow",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-krakow",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-lublin": {
+   "id": "e-prezes-nsa--appoints--wsa-lublin",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-lublin",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-lublin": {
+   "id": "e-nsa--oversees--wsa-lublin",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-lublin",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-lodz": {
+   "id": "e-prezes-nsa--appoints--wsa-lodz",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-lodz",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-lodz": {
+   "id": "e-nsa--oversees--wsa-lodz",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-lodz",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-olsztyn": {
+   "id": "e-prezes-nsa--appoints--wsa-olsztyn",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-olsztyn",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-olsztyn": {
+   "id": "e-nsa--oversees--wsa-olsztyn",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-olsztyn",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-opole": {
+   "id": "e-prezes-nsa--appoints--wsa-opole",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-opole",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-opole": {
+   "id": "e-nsa--oversees--wsa-opole",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-opole",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-poznan": {
+   "id": "e-prezes-nsa--appoints--wsa-poznan",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-poznan",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-poznan": {
+   "id": "e-nsa--oversees--wsa-poznan",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-poznan",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-rzeszow": {
+   "id": "e-prezes-nsa--appoints--wsa-rzeszow",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-rzeszow",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-rzeszow": {
+   "id": "e-nsa--oversees--wsa-rzeszow",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-rzeszow",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-szczecin": {
+   "id": "e-prezes-nsa--appoints--wsa-szczecin",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-szczecin",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-szczecin": {
+   "id": "e-nsa--oversees--wsa-szczecin",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-szczecin",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-warszawa": {
+   "id": "e-prezes-nsa--appoints--wsa-warszawa",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-warszawa",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-warszawa": {
+   "id": "e-nsa--oversees--wsa-warszawa",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-warszawa",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--appoints--wsa-wroclaw": {
+   "id": "e-prezes-nsa--appoints--wsa-wroclaw",
+   "type": "appoints",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-wsa-wroclaw",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 21 § 1 (prezesa i wiceprezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--oversees--wsa-wroclaw": {
+   "id": "e-nsa--oversees--wsa-wroclaw",
+   "type": "oversees",
+   "fromId": "pl-nsa",
+   "toId": "pl-wsa-wroclaw",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 3 § 2 (nadzór judykacyjny NSA nad WSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-sprawiedliwosci--appoints--sady-apelacyjne": {
+   "id": "e-minister-sprawiedliwosci--appoints--sady-apelacyjne",
+   "type": "appoints",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-sady-apelacyjne",
+   "cite": "Prawo o ustroju sądów powszechnych art. 23 § 1 (prezesów sądów powołuje Minister Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+   "seatsAppointed": 11,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1070/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-sprawiedliwosci--appoints--sady-okregowe": {
+   "id": "e-minister-sprawiedliwosci--appoints--sady-okregowe",
+   "type": "appoints",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-sady-okregowe",
+   "cite": "Prawo o ustroju sądów powszechnych art. 24 § 1 (prezesów sądów powołuje Minister Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+   "seatsAppointed": 47,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1070/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-sprawiedliwosci--appoints--sady-rejonowe": {
+   "id": "e-minister-sprawiedliwosci--appoints--sady-rejonowe",
+   "type": "appoints",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-sady-rejonowe",
+   "cite": "Prawo o ustroju sądów powszechnych art. 25 § 1 (prezesów sądów powołuje Minister Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+   "seatsAppointed": 319,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1070/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sad-najwyzszy--dept-head--pierwszy-prezes-sn": {
+   "id": "e-sad-najwyzszy--dept-head--pierwszy-prezes-sn",
+   "type": "dept_head",
+   "fromId": "pl-sad-najwyzszy",
+   "toId": "pl-pierwszy-prezes-sn",
+   "cite": "Konstytucja RP art. 183 ust. 3; ustawa o SN art. 12",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nsa--dept-head--prezes-nsa": {
+   "id": "e-nsa--dept-head--prezes-nsa",
+   "type": "dept_head",
+   "fromId": "pl-nsa",
+   "toId": "pl-prezes-nsa",
+   "cite": "Konstytucja RP art. 185; p.u.s.a. art. 34 § 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-tk--dept-head--prezes-tk": {
+   "id": "e-tk--dept-head--prezes-tk",
+   "type": "dept_head",
+   "fromId": "pl-trybunal-konstytucyjny",
+   "toId": "pl-prezes-tk",
+   "cite": "Konstytucja RP art. 194 ust. 2; ustawa o TK art. 12",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krs--dept-head--przewodniczacy-krs": {
+   "id": "e-krs--dept-head--przewodniczacy-krs",
+   "type": "dept_head",
+   "fromId": "pl-krajowa-rada-sadownictwa",
+   "toId": "pl-przewodniczacy-krs",
+   "cite": "Konstytucja RP art. 187 ust. 2; ustawa o KRS art. 16 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prokuratura--dept-head--prokurator-generalny": {
+   "id": "e-prokuratura--dept-head--prokurator-generalny",
+   "type": "dept_head",
+   "fromId": "pl-prokuratura",
+   "toId": "pl-prokurator-generalny",
+   "cite": "Prawo o prokuraturze art. 1 § 2, art. 13 § 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prokuratura-krajowa--dept-head--prokurator-krajowy": {
+   "id": "e-prokuratura-krajowa--dept-head--prokurator-krajowy",
+   "type": "dept_head",
+   "fromId": "pl-prokuratura-krajowa",
+   "toId": "pl-prokurator-krajowy",
+   "cite": "Prawo o prokuraturze art. 14 § 1, art. 17",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krs--office--przewodniczacy-krs": {
+   "id": "e-krs--office--przewodniczacy-krs",
+   "type": "office",
+   "fromId": "pl-krajowa-rada-sadownictwa",
+   "toId": "pl-przewodniczacy-krs",
+   "cite": "Konstytucja RP art. 187 ust. 2 (KRS wybiera spośród swoich członków przewodniczącego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krs--elects--przewodniczacy-krs": {
+   "id": "e-krs--elects--przewodniczacy-krs",
+   "type": "elects",
+   "fromId": "pl-krajowa-rada-sadownictwa",
+   "toId": "pl-przewodniczacy-krs",
+   "cite": "Konstytucja RP art. 187 ust. 2; ustawa o KRS art. 16 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--pierwszy-prezes-sn": {
+   "id": "e-prezydent-rp--appoints--pierwszy-prezes-sn",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-pierwszy-prezes-sn",
+   "cite": "Konstytucja RP art. 183 ust. 3 (na 6 lat spośród kandydatów Zgromadzenia Ogólnego Sędziów SN; ustawa o SN art. 12 § 1 – spośród 5 kandydatów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--prezes-nsa": {
+   "id": "e-prezydent-rp--appoints--prezes-nsa",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-prezes-nsa",
+   "cite": "Konstytucja RP art. 185 (na 6 lat spośród kandydatów Zgromadzenia Ogólnego Sędziów NSA; p.u.s.a. art. 44 § 1 – spośród 2 kandydatów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--prezes-tk": {
+   "id": "e-prezydent-rp--appoints--prezes-tk",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-prezes-tk",
+   "cite": "Konstytucja RP art. 194 ust. 2 (spośród kandydatów Zgromadzenia Ogólnego Sędziów TK; ustawa o TK art. 11)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--nsa-wiceprezesi": {
+   "id": "e-prezydent-rp--appoints--nsa-wiceprezesi",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-nsa",
+   "cite": "Prawo o ustroju sądów administracyjnych art. 45 § 1 (Wiceprezesów NSA powołuje Prezydent RP na wniosek Prezesa NSA za zgodą Zgromadzenia Ogólnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--sad-najwyzszy-sedziowie": {
+   "id": "e-prezydent-rp--appoints--sad-najwyzszy-sedziowie",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-sad-najwyzszy",
+   "cite": "Konstytucja RP art. 179 (powołanie sędziów SN na wniosek KRS, na czas nieoznaczony)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krs--nominates--sad-najwyzszy": {
+   "id": "e-krs--nominates--sad-najwyzszy",
+   "type": "nominates",
+   "fromId": "pl-krajowa-rada-sadownictwa",
+   "toId": "pl-sad-najwyzszy",
+   "cite": "Konstytucja RP art. 179 (wniosek KRS o powołanie sędziów SN)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--nsa-sedziowie": {
+   "id": "e-prezydent-rp--appoints--nsa-sedziowie",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-nsa",
+   "cite": "Konstytucja RP art. 179 (powołanie sędziów NSA na wniosek KRS, na czas nieoznaczony)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krs--nominates--nsa": {
+   "id": "e-krs--nominates--nsa",
+   "type": "nominates",
+   "fromId": "pl-krajowa-rada-sadownictwa",
+   "toId": "pl-nsa",
+   "cite": "Konstytucja RP art. 179 (wniosek KRS o powołanie sędziów NSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--sady-powszechne-sedziowie": {
+   "id": "e-prezydent-rp--appoints--sady-powszechne-sedziowie",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-sady-powszechne",
+   "cite": "Konstytucja RP art. 179 (powołanie sędziów sądów powszechnych na wniosek KRS, na czas nieoznaczony)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krs--nominates--sady-powszechne": {
+   "id": "e-krs--nominates--sady-powszechne",
+   "type": "nominates",
+   "fromId": "pl-krajowa-rada-sadownictwa",
+   "toId": "pl-sady-powszechne",
+   "cite": "Konstytucja RP art. 179 (wniosek KRS o powołanie sędziów sądów powszechnych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--sady-wojskowe-sedziowie": {
+   "id": "e-prezydent-rp--appoints--sady-wojskowe-sedziowie",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-sady-wojskowe",
+   "cite": "Konstytucja RP art. 179 (powołanie sędziów sądów wojskowych na wniosek KRS, na czas nieoznaczony)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krs--nominates--sady-wojskowe": {
+   "id": "e-krs--nominates--sady-wojskowe",
+   "type": "nominates",
+   "fromId": "pl-krajowa-rada-sadownictwa",
+   "toId": "pl-sady-wojskowe",
+   "cite": "Konstytucja RP art. 179 (wniosek KRS o powołanie sędziów sądów wojskowych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sad-najwyzszy--oversees--sady-powszechne": {
+   "id": "e-sad-najwyzszy--oversees--sady-powszechne",
+   "type": "oversees",
+   "fromId": "pl-sad-najwyzszy",
+   "toId": "pl-sady-powszechne",
+   "cite": "Konstytucja RP art. 183 ust. 1 (nadzór SN nad sądami powszechnymi w zakresie orzekania)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sad-najwyzszy--oversees--sady-wojskowe": {
+   "id": "e-sad-najwyzszy--oversees--sady-wojskowe",
+   "type": "oversees",
+   "fromId": "pl-sad-najwyzszy",
+   "toId": "pl-sady-wojskowe",
+   "cite": "Konstytucja RP art. 183 ust. 1; p.u.s.w. art. 5 § 1 (nadzór SN w zakresie orzekania)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-sprawiedliwosci--oversees--sady-powszechne": {
+   "id": "e-minister-sprawiedliwosci--oversees--sady-powszechne",
+   "type": "oversees",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-sady-powszechne",
+   "cite": "Prawo o ustroju sądów powszechnych art. 9, art. 9a § 2 (zewnętrzny nadzór administracyjny Ministra Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2001/1070/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1070/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-sprawiedliwosci--oversees--sady-wojskowe": {
+   "id": "e-minister-sprawiedliwosci--oversees--sady-wojskowe",
+   "type": "oversees",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-sady-wojskowe",
+   "cite": "Prawo o ustroju sądów wojskowych art. 5 § 2 (zwierzchni nadzór organizacyjno-administracyjny)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/753/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/753/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--sady-wojskowe": {
+   "id": "e-minister-obrony-narodowej--oversees--sady-wojskowe",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-sady-wojskowe",
+   "cite": "Prawo o ustroju sądów wojskowych art. 3 § 3 (tworzenie sądów w porozumieniu z MS), art. 5 § 3 (nadzór nad czynną służbą wojskową)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/753/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/753/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--elects--trybunal-konstytucyjny": {
+   "id": "e-sejm--elects--trybunal-konstytucyjny",
+   "type": "elects",
+   "fromId": "pl-sejm",
+   "toId": "pl-trybunal-konstytucyjny",
+   "cite": "Konstytucja RP art. 194 ust. 1 (15 sędziów wybieranych indywidualnie na 9 lat); ustawa o statusie sędziów TK art. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 15,
+   "disputed": true,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2016/2073/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--elects--trybunal-stanu": {
+   "id": "e-sejm--elects--trybunal-stanu",
+   "type": "elects",
+   "fromId": "pl-sejm",
+   "toId": "pl-trybunal-stanu",
+   "cite": "Konstytucja RP art. 199 ust. 1 (2 zastępców przewodniczącego i 16 członków na czas kadencji Sejmu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 18,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1296/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-pierwszy-prezes-sn--ex-officio--trybunal-stanu": {
+   "id": "e-pierwszy-prezes-sn--ex-officio--trybunal-stanu",
+   "type": "ex_officio",
+   "fromId": "pl-pierwszy-prezes-sn",
+   "toId": "pl-trybunal-stanu",
+   "cite": "Konstytucja RP art. 199 ust. 2 (Przewodniczącym Trybunału Stanu jest Pierwszy Prezes SN)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--elects--krs-sedziowie": {
+   "id": "e-sejm--elects--krs-sedziowie",
+   "type": "elects",
+   "fromId": "pl-sejm",
+   "toId": "pl-krajowa-rada-sadownictwa",
+   "cite": "Konstytucja RP art. 187 ust. 1 pkt 2 w zw. z ustawą o KRS art. 9a ust. 1 (15 członków spośród sędziów – wybór przez Sejm; tryb sporny)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 15,
+   "disputed": true,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2011/714/ogl",
+     "https://eli.gov.pl/eli/MP/2026/513/ogl",
+     "https://eli.gov.pl/eli/MP/2026/259/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--elects--krs-poslowie": {
+   "id": "e-sejm--elects--krs-poslowie",
+   "type": "elects",
+   "fromId": "pl-sejm",
+   "toId": "pl-krajowa-rada-sadownictwa",
+   "cite": "Konstytucja RP art. 187 ust. 1 pkt 3 (4 członków spośród posłów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 4,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--elects--krs": {
+   "id": "e-senat--elects--krs",
+   "type": "elects",
+   "fromId": "pl-senat",
+   "toId": "pl-krajowa-rada-sadownictwa",
+   "cite": "Konstytucja RP art. 187 ust. 1 pkt 3 (2 członków spośród senatorów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--krs": {
+   "id": "e-prezydent-rp--appoints--krs",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-krajowa-rada-sadownictwa",
+   "cite": "Konstytucja RP art. 187 ust. 1 pkt 1 (osoba powołana przez Prezydenta RP); ustawa o KRS art. 8",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2026/503/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-pierwszy-prezes-sn--ex-officio--krs": {
+   "id": "e-pierwszy-prezes-sn--ex-officio--krs",
+   "type": "ex_officio",
+   "fromId": "pl-pierwszy-prezes-sn",
+   "toId": "pl-krajowa-rada-sadownictwa",
+   "cite": "Konstytucja RP art. 187 ust. 1 pkt 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--ex-officio--krs": {
+   "id": "e-prezes-nsa--ex-officio--krs",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-krajowa-rada-sadownictwa",
+   "cite": "Konstytucja RP art. 187 ust. 1 pkt 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-sprawiedliwosci--ex-officio--krs": {
+   "id": "e-minister-sprawiedliwosci--ex-officio--krs",
+   "type": "ex_officio",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-krajowa-rada-sadownictwa",
+   "cite": "Konstytucja RP art. 187 ust. 1 pkt 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-sprawiedliwosci--ex-officio--prokurator-generalny": {
+   "id": "e-min-sprawiedliwosci--ex-officio--prokurator-generalny",
+   "type": "ex_officio",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-prokurator-generalny",
+   "cite": "Prawo o prokuraturze art. 1 § 2 (urząd Prokuratora Generalnego sprawuje Minister Sprawiedliwości)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--prokurator-krajowy": {
+   "id": "e-prezes-rady-ministrow--appoints--prokurator-krajowy",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prokurator-krajowy",
+   "cite": "Prawo o prokuraturze art. 14 § 1 (PRM powołuje na wniosek PG, po uzyskaniu opinii Prezydenta RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prokurator-generalny--nominates--prokurator-krajowy": {
+   "id": "e-prokurator-generalny--nominates--prokurator-krajowy",
+   "type": "nominates",
+   "fromId": "pl-prokurator-generalny",
+   "toId": "pl-prokurator-krajowy",
+   "cite": "Prawo o prokuraturze art. 14 § 1 (wniosek Prokuratora Generalnego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prokurator-generalny--oversees--prokuratura-krajowa": {
+   "id": "e-prokurator-generalny--oversees--prokuratura-krajowa",
+   "type": "oversees",
+   "fromId": "pl-prokurator-generalny",
+   "toId": "pl-prokuratura-krajowa",
+   "cite": "Prawo o prokuraturze art. 13 § 1–2 (PG kieruje prokuraturą i jest przełożonym prokuratorów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prokurator-krajowy--appoints--prokuratury-regionalne": {
+   "id": "e-prokurator-krajowy--appoints--prokuratury-regionalne",
+   "type": "appoints",
+   "fromId": "pl-prokurator-krajowy",
+   "toId": "pl-prokuratury-regionalne",
+   "cite": "Prawo o prokuraturze art. 15 § 1 (prokuratora regionalnego powołuje i odwołuje Prokurator Krajowy)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 11,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prokuratura-krajowa--oversees--prokuratury-regionalne": {
+   "id": "e-prokuratura-krajowa--oversees--prokuratury-regionalne",
+   "type": "oversees",
+   "fromId": "pl-prokuratura-krajowa",
+   "toId": "pl-prokuratury-regionalne",
+   "cite": "Prawo o prokuraturze art. 17 § 2 (nadzór instancyjny i służbowy PK nad prokuraturami regionalnymi)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/177/ogl"
+    ],
+    "confidence": "high"
+   }
+  }
+ }
+}

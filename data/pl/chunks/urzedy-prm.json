@@ -1,0 +1,4396 @@
+{
+ "chunk": "urzedy-prm",
+ "generatedAt": "2026-09-17",
+ "coverageNote": "Zakres: 8 urzędów z art. 33a ustawy o działach (GUS, PKN, UOKiK, ABW, AW, CBA, URE, Prokuratoria) oraz pozostałe jednostki z wykazu KPRM 'Jednostki i organy nadzorowane przez Prezesa Rady Ministrów' (23 pozycje, stan 17.09.2026): KNF (+UKNF), RCL, RCB, KSAP, PAN, Rzecznik Finansowy, Rzecznik Praw Pacjenta, Szef Służby Cywilnej, UTK, CBOS, OSW, IEŚ, Instytut Zachodni, ISW, Instytut Felczaka; dodatkowo Rzecznik MŚP (powoływany przez PRM, brak na wykazie KPRM). Pominięto: Polski Instytut Ekonomiczny (nadzór ministra właściwego ds. finansów publicznych – art. 4 ustawy o PIE, t.j. Dz.U. 2024 poz. 1687), Agencję Rezerw Strategicznych (nadzór ministra właściwego ds. wewnętrznych – art. 30 ust. 4 ustawy o rezerwach strategicznych, choć Prezesa ARS powołuje PRM), Instytut De Republica (brak na wykazie KPRM; status niezweryfikowany), Fundację Platforma Przemysłu Przyszłości (nadzór ministra ds. gospodarki), Centrum Analiz Strategicznych (komórka KPRM, nie jednostka). Rzecznicy zamodelowani jako para 'Biuro' (organizacja) + 'Rzecznik' (stanowisko). Szef Służby Cywilnej to organ bez własnego urzędu (headOf=null). Osoby: nazwiska ze stron własnych instytucji; dla PKN, RF, CBOS i IZ (strony niedostępne/bez treści) źródłem jest oficjalny wykaz KPRM (confidence medium). Zastępcy i wiceprezesi pominięci (poza składem KNF). Daty powołania tylko tam, gdzie strona je podaje.",
+ "nodes": {
+  "pl-gus": {
+   "id": "pl-gus",
+   "type": "department",
+   "subtype": "central_office",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Główny Urząd Statystyczny",
+   "shortName": "GUS",
+   "description": "Urząd obsługujący Prezesa GUS – centralny organ administracji rządowej właściwy w sprawach statystyki publicznej (art. 23 ustawy o statystyce publicznej). Prowadzi badania statystyczne, spisy powszechne, rejestry REGON i TERYT oraz kieruje służbami statystyki publicznej (urzędy statystyczne). Nadzór nad Prezesem GUS sprawuje Prezes Rady Ministrów.",
+   "aliases": [
+    "GUS",
+    "Główny Urząd Statystyczny"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 29 czerwca 1995 r. o statystyce publicznej, art. 23 (Dz.U. 2026 poz. 851 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+    "act": "DU/1995/439",
+    "article": "art. 23"
+   },
+   "officialUrl": "https://stat.gov.pl/",
+   "bipUrl": "https://bip.stat.gov.pl/",
+   "regon": null,
+   "budgetPart": "58",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-gus",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl",
+     "https://new.stat.gov.pl/o-nas/kierownictwo-gus",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-gus": {
+   "id": "pl-prezes-gus",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prezes Głównego Urzędu Statystycznego",
+   "shortName": "Prezes GUS",
+   "description": "Centralny organ administracji rządowej właściwy w sprawach statystyki, wykonujący zadania przy pomocy służb statystyki publicznej (art. 23 ust. 1 ustawy o statystyce publicznej). Powoływany przez Prezesa Rady Ministrów spośród osób wyłonionych w otwartym i konkurencyjnym naborze (art. 24 ust. 1).",
+   "aliases": [
+    "Prezes GUS"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 29 czerwca 1995 r. o statystyce publicznej, art. 24 ust. 1 (Dz.U. 2026 poz. 851 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+    "act": "DU/1995/439",
+    "article": "art. 24 ust. 1"
+   },
+   "officialUrl": "https://new.stat.gov.pl/o-nas/kierownictwo-gus",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-gus",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-cierpial-wolan",
+      "name": "Marek Cierpiał-Wolan",
+      "positionId": "pl-prezes-gus",
+      "positionName": "Prezes Głównego Urzędu Statystycznego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://new.stat.gov.pl/sites/default/files/styles/original_webp/public/2026-04/Prezes%20GUS%20M%20Cierpia%C5%82-Wolan%20PL.jpg.webp",
+      "sourceUrl": "https://new.stat.gov.pl/o-nas/kierownictwo-gus",
+      "startedAtSource": null,
+      "note": "Nazwisko potwierdzone też na liście KPRM i w BIP GUS; strona nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl",
+     "https://new.stat.gov.pl/o-nas/kierownictwo-gus"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-polski-komitet-normalizacyjny": {
+   "id": "pl-polski-komitet-normalizacyjny",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Polski Komitet Normalizacyjny",
+   "shortName": "PKN",
+   "description": "Krajowa jednostka normalizacyjna, państwowa jednostka organizacyjna utworzona ustawą o normalizacji (art. 9). Organizuje i prowadzi opracowywanie i publikację Polskich Norm oraz reprezentuje Polskę w ISO, IEC, CEN i CENELEC. Prezes Rady Ministrów sprawuje nadzór nad PKN w zakresie określonym w art. 10 ustawy.",
+   "aliases": [
+    "PKN",
+    "Polski Komitet Normalizacyjny"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 12 września 2002 r. o normalizacji, art. 9 (Dz.U. 2015 poz. 1483 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1386/ogl",
+    "act": "DU/2002/1386",
+    "article": "art. 9"
+   },
+   "officialUrl": "https://www.pkn.pl/",
+   "bipUrl": "https://bip.pkn.pl/",
+   "regon": null,
+   "budgetPart": "65",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-pkn",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1386/ogl",
+     "https://www.pkn.pl/o-pkn",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-pkn": {
+   "id": "pl-prezes-pkn",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prezes Polskiego Komitetu Normalizacyjnego",
+   "shortName": "Prezes PKN",
+   "description": "Kieruje PKN i reprezentuje go na zewnątrz; powoływany przez Prezesa Rady Ministrów spośród osób wyłonionych w otwartym i konkurencyjnym naborze (art. 16 ust. 1 ustawy o normalizacji). Wydaje komunikaty i obwieszczenia w sprawie Polskich Norm.",
+   "aliases": [
+    "Prezes PKN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 12 września 2002 r. o normalizacji, art. 16 ust. 1 (Dz.U. 2015 poz. 1483 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/1386/ogl",
+    "act": "DU/2002/1386",
+    "article": "art. 16 ust. 1"
+   },
+   "officialUrl": "https://bip.pkn.pl/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-polski-komitet-normalizacyjny",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-ewa-zielinska",
+      "name": "Ewa Zielińska",
+      "positionId": "pl-prezes-pkn",
+      "positionName": "Prezes Polskiego Komitetu Normalizacyjnego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+      "startedAtSource": null,
+      "note": "Nazwisko z oficjalnej listy KPRM (gov.pl/web/premier); strona kierownictwa BIP PKN nie zwróciła nazwisk w treści HTML."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1386/ogl",
+     "https://bip.pkn.pl/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-uokik": {
+   "id": "pl-uokik",
+   "type": "department",
+   "subtype": "central_office",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Urząd Ochrony Konkurencji i Konsumentów",
+   "shortName": "UOKiK",
+   "description": "Urząd obsługujący Prezesa UOKiK – centralny organ administracji rządowej właściwy w sprawach ochrony konkurencji i konsumentów (art. 29 ustawy o ochronie konkurencji i konsumentów). Prowadzi postępowania antymonopolowe, kontrolę koncentracji, ochronę zbiorowych interesów konsumentów, nadzór nad pomocą publiczną i bezpieczeństwem produktów. Nadzór sprawuje Prezes Rady Ministrów.",
+   "aliases": [
+    "UOKiK",
+    "Urząd Antymonopolowy"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 16 lutego 2007 r. o ochronie konkurencji i konsumentów, art. 29 (Dz.U. 2025 poz. 1714 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2007/331/ogl",
+    "act": "DU/2007/331",
+    "article": "art. 29"
+   },
+   "officialUrl": "https://uokik.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "53",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-uokik",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/331/ogl",
+     "https://uokik.gov.pl/kierownictwo",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-uokik": {
+   "id": "pl-prezes-uokik",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prezes Urzędu Ochrony Konkurencji i Konsumentów",
+   "shortName": "Prezes UOKiK",
+   "description": "Centralny organ administracji rządowej właściwy w sprawach ochrony konkurencji i konsumentów; powoływany przez Prezesa Rady Ministrów na pięcioletnią kadencję spośród osób wyłonionych w otwartym i konkurencyjnym naborze (art. 29 ust. 3 ustawy o ochronie konkurencji i konsumentów).",
+   "aliases": [
+    "Prezes UOKiK"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 16 lutego 2007 r. o ochronie konkurencji i konsumentów, art. 29 ust. 3 (Dz.U. 2025 poz. 1714 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2007/331/ogl",
+    "act": "DU/2007/331",
+    "article": "art. 29 ust. 3"
+   },
+   "officialUrl": "https://uokik.gov.pl/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-uokik",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-tomasz-chrostny",
+      "name": "Tomasz Chróstny",
+      "positionId": "pl-prezes-uokik",
+      "positionName": "Prezes Urzędu Ochrony Konkurencji i Konsumentów",
+      "type": "appointed",
+      "startedAt": "2020-01-27",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://uokik.gov.pl/storage/zdjecia/2026/prezes-tomasz-chrostny/uokik-prezes-tomasz-chrostny-foto-01-560x840px-web-96dpi.jpg",
+      "sourceUrl": "https://uokik.gov.pl/kierownictwo",
+      "startedAtSource": "https://uokik.gov.pl/kierownictwo",
+      "note": "Powołany 27.01.2020 (biogram na uokik.gov.pl); po upływie kadencji pełni funkcję do powołania następcy (art. 29 ust. 3)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/331/ogl",
+     "https://uokik.gov.pl/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-abw": {
+   "id": "pl-abw",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Agencja Bezpieczeństwa Wewnętrznego",
+   "shortName": "ABW",
+   "description": "Służba specjalna właściwa w sprawach ochrony bezpieczeństwa wewnętrznego państwa i jego porządku konstytucyjnego; urząd administracji rządowej, przy pomocy którego działa Szef ABW (art. 1 i art. 3 ustawy o ABW oraz AW). Szef ABW podlega bezpośrednio Prezesowi Rady Ministrów, a jego działalność podlega kontroli Sejmu.",
+   "aliases": [
+    "ABW",
+    "Agencja Bezpieczeństwa Wewnętrznego"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 1, art. 3 (Dz.U. 2026 poz. 937 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+    "act": "DU/2002/676",
+    "article": "art. 1, art. 3"
+   },
+   "officialUrl": "https://www.abw.gov.pl/",
+   "bipUrl": "https://bip.abw.gov.pl/",
+   "regon": null,
+   "budgetPart": "57",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-szef-abw",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl",
+     "https://bip.abw.gov.pl/bip/kierownictwo",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-abw": {
+   "id": "pl-szef-abw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Szef Agencji Bezpieczeństwa Wewnętrznego",
+   "shortName": "Szef ABW",
+   "description": "Centralny organ administracji rządowej działający przy pomocy ABW, podległy bezpośrednio Prezesowi Rady Ministrów (art. 3 ustawy o ABW oraz AW). Powoływany i odwoływany przez Prezesa Rady Ministrów po zasięgnięciu opinii Prezydenta RP, Kolegium ds. Służb Specjalnych i sejmowej Komisji ds. Służb Specjalnych (art. 14 ust. 1).",
+   "aliases": [
+    "Szef ABW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 14 ust. 1 (Dz.U. 2026 poz. 937 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+    "act": "DU/2002/676",
+    "article": "art. 14 ust. 1"
+   },
+   "officialUrl": "https://bip.abw.gov.pl/bip/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-abw",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-rafal-syrysko",
+      "name": "płk Rafał Syrysko",
+      "positionId": "pl-szef-abw",
+      "positionName": "Szef Agencji Bezpieczeństwa Wewnętrznego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://bip.abw.gov.pl/bip/kierownictwo",
+      "startedAtSource": null,
+      "note": "BIP ABW nie podaje daty powołania (podstrona opublikowana 19.12.2023)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl",
+     "https://bip.abw.gov.pl/bip/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-aw": {
+   "id": "pl-aw",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Agencja Wywiadu",
+   "shortName": "AW",
+   "description": "Służba specjalna właściwa w sprawach ochrony bezpieczeństwa zewnętrznego państwa; urząd administracji rządowej, przy pomocy którego działa Szef AW (art. 1 i art. 3 ustawy o ABW oraz AW). Szef AW podlega bezpośrednio Prezesowi Rady Ministrów, a jego działalność podlega kontroli Sejmu.",
+   "aliases": [
+    "AW",
+    "Agencja Wywiadu"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 1, art. 3 (Dz.U. 2026 poz. 937 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+    "act": "DU/2002/676",
+    "article": "art. 1, art. 3"
+   },
+   "officialUrl": "https://aw.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "59",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-szef-aw",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl",
+     "https://aw.gov.pl/pl/ludzie/kierownictwo",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-aw": {
+   "id": "pl-szef-aw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Szef Agencji Wywiadu",
+   "shortName": "Szef AW",
+   "description": "Centralny organ administracji rządowej działający przy pomocy Agencji Wywiadu, podległy bezpośrednio Prezesowi Rady Ministrów (art. 3 ustawy o ABW oraz AW). Powoływany i odwoływany przez Prezesa Rady Ministrów po zasięgnięciu opinii Prezydenta RP, Kolegium ds. Służb Specjalnych i sejmowej Komisji ds. Służb Specjalnych (art. 14 ust. 1).",
+   "aliases": [
+    "Szef AW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 14 ust. 1 (Dz.U. 2026 poz. 937 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+    "act": "DU/2002/676",
+    "article": "art. 14 ust. 1"
+   },
+   "officialUrl": "https://aw.gov.pl/pl/ludzie/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-aw",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-pawel-szota",
+      "name": "płk Paweł Szota",
+      "positionId": "pl-szef-aw",
+      "positionName": "Szef Agencji Wywiadu",
+      "type": "appointed",
+      "startedAt": "2024-03-05",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://aw.gov.pl/pl/ludzie/kierownictwo/102,Szef-Agencji-Wywiadu.html",
+      "startedAtSource": "https://aw.gov.pl/pl/ludzie/kierownictwo/102,Szef-Agencji-Wywiadu.html",
+      "note": "Od 19.12.2023 p.o. Szefa AW, od 05.03.2024 Szef AW (biogram na aw.gov.pl)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl",
+     "https://aw.gov.pl/pl/ludzie/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-cba": {
+   "id": "pl-cba",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Centralne Biuro Antykorupcyjne",
+   "shortName": "CBA",
+   "description": "Służba specjalna do spraw zwalczania korupcji w życiu publicznym i gospodarczym oraz działalności godzącej w interesy ekonomiczne państwa; urząd administracji rządowej, przy pomocy którego działa Szef CBA (art. 1 i art. 5 ustawy o CBA). Szef CBA jest nadzorowany przez Prezesa Rady Ministrów, a jego działalność podlega kontroli Sejmu.",
+   "aliases": [
+    "CBA",
+    "Centralne Biuro Antykorupcyjne"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 czerwca 2006 r. o Centralnym Biurze Antykorupcyjnym, art. 1, art. 5 (Dz.U. 2025 poz. 712 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/708/ogl",
+    "act": "DU/2006/708",
+    "article": "art. 1, art. 5"
+   },
+   "officialUrl": "https://www.cba.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "56",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-szef-cba",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "pending_abolition",
+   "statusNote": "Ustawa likwidująca CBA (przekazanie zadań do Policji i ABW) została zawetowana przez Prezydenta RP 11.05.2026; CBA działa nadal na podstawie ustawy z 2006 r. Status pending_abolition odzwierciedla zapowiedzianą reformę, nie stan prawny.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/708/ogl",
+     "https://www.cba.gov.pl/pl/o-nas/kierownictwo",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-cba": {
+   "id": "pl-szef-cba",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Szef Centralnego Biura Antykorupcyjnego",
+   "shortName": "Szef CBA",
+   "description": "Centralny organ administracji rządowej nadzorowany przez Prezesa Rady Ministrów, działający przy pomocy CBA (art. 5 ust. 2 ustawy o CBA). Powoływany na czteroletnią kadencję i odwoływany przez Prezesa Rady Ministrów po zasięgnięciu opinii Prezydenta RP, Kolegium ds. Służb Specjalnych i sejmowej Komisji ds. Służb Specjalnych (art. 6 ust. 1).",
+   "aliases": [
+    "Szef CBA"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 czerwca 2006 r. o Centralnym Biurze Antykorupcyjnym, art. 6 ust. 1 (Dz.U. 2025 poz. 712 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/708/ogl",
+    "act": "DU/2006/708",
+    "article": "art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.cba.gov.pl/pl/o-nas/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-cba",
+   "seatsCount": 1,
+   "status": "pending_abolition",
+   "statusNote": "Ustawa likwidująca CBA (przekazanie zadań do Policji i ABW) została zawetowana przez Prezydenta RP 11.05.2026; CBA działa nadal na podstawie ustawy z 2006 r. Status pending_abolition odzwierciedla zapowiedzianą reformę, nie stan prawny.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-tomasz-strzelczyk",
+      "name": "Tomasz Strzelczyk",
+      "positionId": "pl-szef-cba",
+      "positionName": "Szef Centralnego Biura Antykorupcyjnego",
+      "type": "appointed",
+      "startedAt": "2025-04-09",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.cba.gov.pl/pl/o-nas/kierownictwo",
+      "startedAtSource": "https://www.cba.gov.pl/pl/o-nas/kierownictwo",
+      "note": "Powołany z dniem 09.04.2025 (cba.gov.pl)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/708/ogl",
+     "https://www.cba.gov.pl/pl/o-nas/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-ure": {
+   "id": "pl-ure",
+   "type": "department",
+   "subtype": "regulatory_body",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Urząd Regulacji Energetyki",
+   "shortName": "URE",
+   "description": "Urząd obsługujący Prezesa URE – centralny organ administracji rządowej realizujący zadania z zakresu regulacji gospodarki paliwami i energią oraz promowania konkurencji (art. 21 Prawa energetycznego). Udziela koncesji, zatwierdza taryfy i nadzoruje rynki energii elektrycznej, gazu i ciepła. Nadzór sprawuje Prezes Rady Ministrów (art. 33a ustawy o działach).",
+   "aliases": [
+    "URE",
+    "Urząd Regulacji Energetyki"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 10 kwietnia 1997 r. – Prawo energetyczne, art. 21 (Dz.U. 2026 poz. 43 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1997/348/ogl",
+    "act": "DU/1997/348",
+    "article": "art. 21"
+   },
+   "officialUrl": "https://www.ure.gov.pl/",
+   "bipUrl": "https://bip.ure.gov.pl/",
+   "regon": null,
+   "budgetPart": "50",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-ure",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/348/ogl",
+     "https://www.ure.gov.pl/pl/urzad/informacje-ogolne/kierownictwo",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-ure": {
+   "id": "pl-prezes-ure",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prezes Urzędu Regulacji Energetyki",
+   "shortName": "Prezes URE",
+   "description": "Centralny organ administracji rządowej – regulator rynku paliw i energii (art. 21 ust. 1–2 Prawa energetycznego). Powoływany przez Prezesa Rady Ministrów spośród osób wyłonionych w otwartym i konkurencyjnym naborze; odwoływany przez Prezesa Rady Ministrów (art. 21 ust. 2a).",
+   "aliases": [
+    "Prezes URE"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 10 kwietnia 1997 r. – Prawo energetyczne, art. 21 ust. 2a (Dz.U. 2026 poz. 43 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1997/348/ogl",
+    "act": "DU/1997/348",
+    "article": "art. 21 ust. 2a"
+   },
+   "officialUrl": "https://www.ure.gov.pl/pl/urzad/informacje-ogolne/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-ure",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-renata-mroczek",
+      "name": "Renata Mroczek",
+      "positionId": "pl-prezes-ure",
+      "positionName": "Prezes Urzędu Regulacji Energetyki",
+      "type": "appointed",
+      "startedAt": "2025-08-11",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.ure.gov.pl/dokumenty/zalaczniki/9/mini/9-15825_m1.jpg",
+      "sourceUrl": "https://www.ure.gov.pl/pl/urzad/informacje-ogolne/kierownictwo",
+      "startedAtSource": "https://www.ure.gov.pl/pl/urzad/informacje-ogolne/kierownictwo/12262,Renata-Mroczek.html",
+      "note": "Od 11.08.2025 Prezes URE na podstawie powołania przez PRM po otwartym naborze (biogram ure.gov.pl)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/348/ogl",
+     "https://www.ure.gov.pl/pl/urzad/informacje-ogolne/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prokuratoria-generalna-rp": {
+   "id": "pl-prokuratoria-generalna-rp",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prokuratoria Generalna Rzeczypospolitej Polskiej",
+   "shortName": "Prokuratoria Generalna RP",
+   "description": "Państwowa jednostka organizacyjna stojąca na straży praw i interesów Rzeczypospolitej Polskiej, w tym Skarbu Państwa i mienia państwowego (art. 1 ustawy o Prokuratorii Generalnej RP). Wykonuje zastępstwo procesowe Skarbu Państwa i państwowych osób prawnych, wydaje opinie prawne, prowadzi Sąd Polubowny. Nadzór nad Prezesem Prokuratorii sprawuje Prezes Rady Ministrów (art. 1 ust. 4).",
+   "aliases": [
+    "PGRP",
+    "Prokuratoria Generalna",
+    "Prokuratoria"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 15 grudnia 2016 r. o Prokuratorii Generalnej Rzeczypospolitej Polskiej, art. 1 (Dz.U. 2024 poz. 1192 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/2261/ogl",
+    "act": "DU/2016/2261",
+    "article": "art. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/prokuratoria",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "74",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-prokuratorii-generalnej-rp",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/2261/ogl",
+     "https://www.gov.pl/web/prokuratoria/kierownictwo",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-prokuratorii-generalnej-rp": {
+   "id": "pl-prezes-prokuratorii-generalnej-rp",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prezes Prokuratorii Generalnej Rzeczypospolitej Polskiej",
+   "shortName": "Prezes PGRP",
+   "description": "Kieruje Prokuratorią Generalną RP; powoływany przez Prezesa Rady Ministrów spośród osób wyłonionych w otwartym i konkurencyjnym naborze i przez niego odwoływany (art. 41 ust. 1 ustawy o Prokuratorii Generalnej RP). Nadzór nad Prezesem sprawuje Prezes Rady Ministrów (art. 1 ust. 4).",
+   "aliases": [
+    "Prezes Prokuratorii Generalnej"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 15 grudnia 2016 r. o Prokuratorii Generalnej Rzeczypospolitej Polskiej, art. 41 ust. 1 (Dz.U. 2024 poz. 1192 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/2261/ogl",
+    "act": "DU/2016/2261",
+    "article": "art. 41 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/prokuratoria/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-prokuratoria-generalna-rp",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-miller",
+      "name": "Marek Miller",
+      "positionId": "pl-prezes-prokuratorii-generalnej-rp",
+      "positionName": "Prezes Prokuratorii Generalnej Rzeczypospolitej Polskiej",
+      "type": "appointed",
+      "startedAt": "2025-09-24",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/prokuratoria/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/prokuratoria/prezes-marek-miller",
+      "note": "Strona kierownictwa i lista KPRM tytułują go Prezesem; biogram podaje, że 24.09.2025 'objął zastępstwo w sprawach należących do czynności Prezesa PGRP jako Pierwszy Zastępca Prezesa' – możliwe wykonywanie obowiązków Prezesa bez formalnego powołania; do weryfikacji."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/2261/ogl",
+     "https://www.gov.pl/web/prokuratoria/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-knf": {
+   "id": "pl-knf",
+   "type": "commission",
+   "subtype": "regulatory_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Komisja Nadzoru Finansowego",
+   "shortName": "KNF",
+   "description": "Kolegialny organ nadzoru nad rynkiem finansowym (sektor bankowy, kapitałowy, ubezpieczeniowy, emerytalny, instytucje płatnicze, SKOK-i, instytucje pożyczkowe) – art. 3 ust. 4 pkt 1 i art. 4 ustawy o nadzorze nad rynkiem finansowym. W skład Komisji wchodzą Przewodniczący, trzech zastępców i dziewięciu członków (art. 5). Obsługę Komisji zapewnia Urząd KNF.",
+   "aliases": [
+    "KNF",
+    "Komisja Nadzoru Finansowego"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 3 ust. 4 pkt 1, art. 5 (Dz.U. 2026 poz. 935 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+    "act": "DU/2006/1119",
+    "article": "art. 3 ust. 4 pkt 1, art. 5"
+   },
+   "officialUrl": "https://www.knf.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-przewodniczacy-knf",
+   "headOf": null,
+   "seatsCount": 13,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jacek-jastrzebski",
+      "name": "Jacek Jastrzębski",
+      "positionId": "pl-knf",
+      "positionName": "Przewodniczący KNF",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.knf.gov.pl/knf/en/komponenty/img/Jacek%20Jastrz%C4%99bski_66307.jpg",
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-dariusz-adamski",
+      "name": "Dariusz Adamski",
+      "positionId": "pl-knf",
+      "positionName": "Zastępca Przewodniczącego KNF",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-marcin-mikolajczyk",
+      "name": "Marcin Mikołajczyk",
+      "positionId": "pl-knf",
+      "positionName": "Zastępca Przewodniczącego KNF",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-krystian-wiercioch",
+      "name": "Krystian Wiercioch",
+      "positionId": "pl-knf",
+      "positionName": "Zastępca Przewodniczącego KNF",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-jaroslaw-niezgoda",
+      "name": "Jarosław Niezgoda",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – przedstawiciel ministra właściwego ds. instytucji finansowych",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-anna-matuszczak",
+      "name": "Anna Matuszczak",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – przedstawiciel ministra właściwego ds. gospodarki",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-mateusz-hebda",
+      "name": "Mateusz Hebda",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – przedstawiciel ministra właściwego ds. zabezpieczenia społecznego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-artur-sobon",
+      "name": "Artur Soboń",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – członek Zarządu NBP delegowany przez Prezesa NBP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-wojciech-dyduch",
+      "name": "Wojciech Dyduch",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – przedstawiciel Prezydenta RP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-grzegorz-karpinski",
+      "name": "Grzegorz Karpiński",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – przedstawiciel Prezesa Rady Ministrów",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-maciej-szczesny",
+      "name": "Maciej Szczęsny",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – przedstawiciel Bankowego Funduszu Gwarancyjnego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-tomasz-chrostny",
+      "name": "Tomasz Chróstny",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – przedstawiciel Prezesa UOKiK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     },
+     {
+      "id": "pl-radoslaw-kujawa",
+      "name": "Radosław Kujawa",
+      "positionId": "pl-knf",
+      "positionName": "Członek KNF – przedstawiciel ministra – Koordynatora Służb Specjalnych",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Skład Komisji wg knf.gov.pl (aktualizacja 31.12.2025)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-przewodniczacy-knf": {
+   "id": "pl-przewodniczacy-knf",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Przewodniczący Komisji Nadzoru Finansowego",
+   "shortName": "Przewodniczący KNF",
+   "description": "Kieruje pracami Komisji i reprezentuje ją na zewnątrz, a także kieruje działalnością Urzędu KNF (art. 3 ust. 4 pkt 2 i ust. 5 ustawy o nadzorze nad rynkiem finansowym). Powoływany przez Prezesa Rady Ministrów na pięcioletnią kadencję (art. 7 ust. 1); odwołanie przed upływem kadencji tylko w przypadkach z art. 8.",
+   "aliases": [
+    "Przewodniczący KNF"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 7 ust. 1 (Dz.U. 2026 poz. 935 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+    "act": "DU/2006/1119",
+    "article": "art. 7 ust. 1"
+   },
+   "officialUrl": "https://www.knf.gov.pl/o_nas/komisja",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-knf",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jacek-jastrzebski",
+      "name": "Jacek Jastrzębski",
+      "positionId": "pl-przewodniczacy-knf",
+      "positionName": "Przewodniczący Komisji Nadzoru Finansowego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.knf.gov.pl/knf/en/komponenty/img/Jacek%20Jastrz%C4%99bski_66307.jpg",
+      "sourceUrl": "https://www.knf.gov.pl/o_nas/komisja",
+      "startedAtSource": null,
+      "note": "Strona KNF nie podaje daty powołania na bieżącą kadencję."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-urzad-knf": {
+   "id": "pl-urzad-knf",
+   "type": "department",
+   "subtype": "state_legal_person",
+   "sector": "independent",
+   "ring": "satellite",
+   "name": "Urząd Komisji Nadzoru Finansowego",
+   "shortName": "UKNF",
+   "description": "Państwowa osoba prawna zapewniająca obsługę Komisji Nadzoru Finansowego i jej Przewodniczącego (art. 3 ust. 1 ustawy o nadzorze nad rynkiem finansowym). Organami Urzędu są Komisja i Przewodniczący Komisji, który kieruje działalnością Urzędu (art. 3 ust. 4). Nadzór nad działalnością Urzędu sprawuje Prezes Rady Ministrów (art. 3 ust. 3).",
+   "aliases": [
+    "UKNF",
+    "Urząd KNF"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 3 ust. 1 (Dz.U. 2026 poz. 935 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+    "act": "DU/2006/1119",
+    "article": "art. 3 ust. 1"
+   },
+   "officialUrl": "https://www.knf.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-knf",
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rcl": {
+   "id": "pl-rcl",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Rządowe Centrum Legislacji",
+   "shortName": "RCL",
+   "description": "Państwowa jednostka organizacyjna podległa Prezesowi Rady Ministrów (art. 14a ustawy o Radzie Ministrów). Koordynuje działalność legislacyjną rządu, opracowuje rządowe projekty ustaw, prowadzi Komisję Prawniczą i aplikację legislacyjną oraz wydaje z upoważnienia PRM Dziennik Ustaw i Monitor Polski (art. 14b–14c).",
+   "aliases": [
+    "RCL",
+    "Rządowe Centrum Legislacji"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 14a (Dz.U. 2025 poz. 780 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+    "act": "DU/1996/492",
+    "article": "art. 14a"
+   },
+   "officialUrl": "https://rcl.gov.pl/",
+   "bipUrl": "https://www.gov.pl/web/rcl",
+   "regon": null,
+   "budgetPart": "75",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-rcl",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://rcl.gov.pl/",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2024/808/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-rcl": {
+   "id": "pl-prezes-rcl",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prezes Rządowego Centrum Legislacji",
+   "shortName": "Prezes RCL",
+   "description": "Kieruje Rządowym Centrum Legislacji przy pomocy wiceprezesów (art. 14e ust. 1 ustawy o Radzie Ministrów). Powoływany przez Prezesa Rady Ministrów spośród osób wyłonionych w otwartym i konkurencyjnym naborze i przez niego odwoływany (art. 14e ust. 2).",
+   "aliases": [
+    "Prezes RCL"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 14e ust. 2 (Dz.U. 2025 poz. 780 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+    "act": "DU/1996/492",
+    "article": "art. 14e ust. 2"
+   },
+   "officialUrl": "https://rcl.gov.pl/category/o-rcl/kierownictwo/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-rcl",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-joanna-knapinska",
+      "name": "Joanna Knapińska",
+      "positionId": "pl-prezes-rcl",
+      "positionName": "Prezes Rządowego Centrum Legislacji",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://rcl.gov.pl/wp-content/uploads/2026/09/kierownictwo_Knapinska_new-400x516.jpg",
+      "sourceUrl": "https://rcl.gov.pl/o-rcl/kierownictwo/joanna-knapinska-p-o-prezes-rzadowego-centrum-legislacji/",
+      "startedAtSource": null,
+      "note": "Strona rcl.gov.pl i lista KPRM: Prezes RCL (adres URL podstrony zawiera dawne 'p.o.'); brak daty powołania na stronie."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://rcl.gov.pl/category/o-rcl/kierownictwo/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rzadowe-centrum-bezpieczenstwa": {
+   "id": "pl-rzadowe-centrum-bezpieczenstwa",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Rządowe Centrum Bezpieczeństwa",
+   "shortName": "RCB",
+   "description": "Państwowa jednostka budżetowa podległa Prezesowi Rady Ministrów, utworzona ustawą o zarządzaniu kryzysowym (art. 10 ust. 1). Pełni funkcję krajowego centrum zarządzania kryzysowego, obsługuje Radę Ministrów, PRM i Rządowy Zespół Zarządzania Kryzysowego, prowadzi planowanie cywilne i system Alert RCB (art. 11). Czynności z zakresu podległości wykonuje z upoważnienia PRM Minister SWiA.",
+   "aliases": [
+    "RCB",
+    "Rządowe Centrum Bezpieczeństwa"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 26 kwietnia 2007 r. o zarządzaniu kryzysowym, art. 10 ust. 1 (Dz.U. 2026 poz. 574 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+    "act": "DU/2007/590",
+    "article": "art. 10 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/rcb",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-rcb",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl",
+     "https://www.gov.pl/web/rcb/kierownictwo-rzadowego-centrum-bezpieczenstwa",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/2015/508/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-rcb": {
+   "id": "pl-dyrektor-rcb",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dyrektor Rządowego Centrum Bezpieczeństwa",
+   "shortName": "Dyrektor RCB",
+   "description": "Kieruje Rządowym Centrum Bezpieczeństwa i pełni funkcję sekretarza Rządowego Zespołu Zarządzania Kryzysowego (art. 10 ust. 2–2a ustawy o zarządzaniu kryzysowym). Powoływany i odwoływany przez Prezesa Rady Ministrów; zastępców dyrektora powołuje PRM na jego wniosek (art. 10 ust. 3).",
+   "aliases": [
+    "Dyrektor RCB"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 26 kwietnia 2007 r. o zarządzaniu kryzysowym, art. 10 ust. 2 (Dz.U. 2026 poz. 574 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+    "act": "DU/2007/590",
+    "article": "art. 10 ust. 2"
+   },
+   "officialUrl": "https://www.gov.pl/web/rcb/kierownictwo-rzadowego-centrum-bezpieczenstwa",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-rzadowe-centrum-bezpieczenstwa",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-zbigniew-muszynski",
+      "name": "Zbigniew Muszyński",
+      "positionId": "pl-dyrektor-rcb",
+      "positionName": "Dyrektor Rządowego Centrum Bezpieczeństwa",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rcb/kierownictwo-rzadowego-centrum-bezpieczenstwa",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl",
+     "https://www.gov.pl/web/rcb/kierownictwo-rzadowego-centrum-bezpieczenstwa"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-ksap": {
+   "id": "pl-ksap",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Krajowa Szkoła Administracji Publicznej im. Prezydenta Rzeczypospolitej Polskiej Lecha Kaczyńskiego",
+   "shortName": "KSAP",
+   "description": "Państwowa jednostka organizacyjna z osobowością prawną kształcąca i profesjonalizująca kadry administracji publicznej, w tym w trybie kształcenia stacjonarnego i szkoleń (art. 1 ustawy o KSAP). Statut nadaje Prezes Rady Ministrów, który sprawuje nadzór nad Szkołą w zakresie zgodności jej działania z prawem i statutem (art. 2).",
+   "aliases": [
+    "KSAP",
+    "Krajowa Szkoła Administracji Publicznej"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 14 czerwca 1991 r. o Krajowej Szkole Administracji Publicznej im. Prezydenta Rzeczypospolitej Polskiej Lecha Kaczyńskiego, art. 1 (Dz.U. 2023 poz. 1952 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1991/266/ogl",
+    "act": "DU/1991/266",
+    "article": "art. 1"
+   },
+   "officialUrl": "https://ksap.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-ksap",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/266/ogl",
+     "https://ksap.gov.pl/ksap/ksap/wladze-ksap",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-ksap": {
+   "id": "pl-dyrektor-ksap",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dyrektor Krajowej Szkoły Administracji Publicznej",
+   "shortName": "Dyrektor KSAP",
+   "description": "Kieruje Szkołą i reprezentuje ją na zewnątrz; powoływany i odwoływany przez Prezesa Rady Ministrów (art. 2 ust. 2 ustawy o KSAP).",
+   "aliases": [
+    "Dyrektor KSAP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 14 czerwca 1991 r. o Krajowej Szkole Administracji Publicznej im. Prezydenta Rzeczypospolitej Polskiej Lecha Kaczyńskiego, art. 2 ust. 2 (Dz.U. 2023 poz. 1952 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1991/266/ogl",
+    "act": "DU/1991/266",
+    "article": "art. 2 ust. 2"
+   },
+   "officialUrl": "https://ksap.gov.pl/ksap/ksap/wladze-ksap",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-ksap",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-malgorzata-bywanis-jodlinska",
+      "name": "Małgorzata Bywanis-Jodlińska",
+      "positionId": "pl-dyrektor-ksap",
+      "positionName": "Dyrektor Krajowej Szkoły Administracji Publicznej",
+      "type": "appointed",
+      "startedAt": "2024-06-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ksap.gov.pl/ksap/ksap/wladze-ksap",
+      "startedAtSource": "https://ksap.gov.pl/ksap/ksap/wladze-ksap",
+      "note": "Powołana przez PRM 13.06.2024 (ksap.gov.pl)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/266/ogl",
+     "https://ksap.gov.pl/ksap/ksap/wladze-ksap"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-pan": {
+   "id": "pl-pan",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Polska Akademia Nauk",
+   "shortName": "PAN",
+   "description": "Państwowa instytucja naukowa z osobowością prawną – korporacja uczonych i sieć instytutów naukowych (art. 1–2 ustawy o PAN). Prezes Rady Ministrów sprawuje nadzór nad Akademią w zakresie zgodności działania jej organów z ustawą i statutem, z wyłączeniem gospodarki finansowej, która podlega ministrowi właściwemu ds. szkolnictwa wyższego i nauki (art. 5).",
+   "aliases": [
+    "PAN",
+    "Polska Akademia Nauk"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 30 kwietnia 2010 r. o Polskiej Akademii Nauk, art. 1, art. 5 (Dz.U. 2026 poz. 168 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/619/ogl",
+    "act": "DU/2010/619",
+    "article": "art. 1, art. 5"
+   },
+   "officialUrl": "https://pan.pl/",
+   "bipUrl": "https://bip.pan.pl/",
+   "regon": null,
+   "budgetPart": "67",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-pan",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/619/ogl",
+     "https://pan.pl/wladze/wladze-pan/",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-pan": {
+   "id": "pl-prezes-pan",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prezes Polskiej Akademii Nauk",
+   "shortName": "Prezes PAN",
+   "description": "Kieruje działalnością Akademii, przewodniczy Zgromadzeniu Ogólnemu i Prezydium PAN (art. 16, art. 22 ustawy o PAN). Wybierany przez Zgromadzenie Ogólne spośród członków krajowych Akademii na czteroletnią kadencję (art. 15 ust. 2 pkt 2, art. 21 ust. 1).",
+   "aliases": [
+    "Prezes PAN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 30 kwietnia 2010 r. o Polskiej Akademii Nauk, art. 15 ust. 2 pkt 2, art. 21 ust. 1 (Dz.U. 2026 poz. 168 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2010/619/ogl",
+    "act": "DU/2010/619",
+    "article": "art. 15 ust. 2 pkt 2, art. 21 ust. 1"
+   },
+   "officialUrl": "https://pan.pl/wladze/wladze-pan/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-pan",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-konarzewski",
+      "name": "Marek Konarzewski",
+      "positionId": "pl-prezes-pan",
+      "positionName": "Prezes Polskiej Akademii Nauk",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pan.pl/wladze/wladze-pan/",
+      "startedAtSource": null,
+      "note": "Strona władz PAN nie podaje daty rozpoczęcia kadencji."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/619/ogl",
+     "https://pan.pl/wladze/wladze-pan/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-biuro-rzecznika-finansowego": {
+   "id": "pl-biuro-rzecznika-finansowego",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Biuro Rzecznika Finansowego",
+   "shortName": "Biuro RF",
+   "description": "Biuro, przy pomocy którego Rzecznik Finansowy wykonuje zadania w zakresie ochrony klientów podmiotów rynku finansowego: rozpatruje wnioski i skargi, prowadzi postępowania polubowne, występuje o istotne poglądy oraz prowadzi edukację finansową (ustawa o rozpatrywaniu reklamacji przez podmioty rynku finansowego, o Rzeczniku Finansowym i o Funduszu Edukacji Finansowej).",
+   "aliases": [
+    "Biuro RF",
+    "Rzecznik Finansowy",
+    "RF"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 5 sierpnia 2015 r. o rozpatrywaniu reklamacji przez podmioty rynku finansowego, o Rzeczniku Finansowym i o Funduszu Edukacji Finansowej, art. 11, art. 25 (Dz.U. 2026 poz. 823 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2015/1348/ogl",
+    "act": "DU/2015/1348",
+    "article": "art. 11, art. 25"
+   },
+   "officialUrl": "https://rf.gov.pl/",
+   "bipUrl": "https://bip.rf.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-rzecznik-finansowy",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1348/ogl",
+     "https://bip.rf.gov.pl/rf/kierownictwo",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rzecznik-finansowy": {
+   "id": "pl-rzecznik-finansowy",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Rzecznik Finansowy",
+   "shortName": "Rzecznik Finansowy",
+   "description": "Organ powoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego ds. instytucji finansowych na czteroletnią kadencję (art. 11–12 ustawy). Podejmuje działania w zakresie ochrony klientów podmiotów rynku finansowego (banków, ubezpieczycieli, funduszy, instytucji płatniczych), w tym rozpatruje wnioski i prowadzi postępowania polubowne.",
+   "aliases": [
+    "RF",
+    "Rzecznik Finansowy"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 5 sierpnia 2015 r. o rozpatrywaniu reklamacji przez podmioty rynku finansowego, o Rzeczniku Finansowym i o Funduszu Edukacji Finansowej, art. 11 (Dz.U. 2026 poz. 823 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2015/1348/ogl",
+    "act": "DU/2015/1348",
+    "article": "art. 11"
+   },
+   "officialUrl": "https://rf.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-biuro-rzecznika-finansowego",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-michal-ziemiak",
+      "name": "Michał Ziemiak",
+      "positionId": "pl-rzecznik-finansowy",
+      "positionName": "Rzecznik Finansowy",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+      "startedAtSource": null,
+      "note": "Nazwisko z oficjalnej listy KPRM (Michał Piotr Ziemiak); serwis rf.gov.pl blokuje automatyczny dostęp (Incapsula), BIP RF nie zwrócił nazwisk w HTML."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1348/ogl",
+     "https://rf.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-biuro-rzecznika-praw-pacjenta": {
+   "id": "pl-biuro-rzecznika-praw-pacjenta",
+   "type": "department",
+   "subtype": "central_office",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Biuro Rzecznika Praw Pacjenta",
+   "shortName": "Biuro RPP",
+   "description": "Biuro, przy pomocy którego Rzecznik Praw Pacjenta – centralny organ administracji rządowej właściwy w sprawach ochrony praw pacjentów – wykonuje swoje zadania (art. 42 ust. 3 ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta). Prowadzi postępowania wyjaśniające, Telefoniczną Informację Pacjenta oraz obsługuje Fundusz Kompensacyjny Szczepień Ochronnych i Fundusz Kompensacyjny Zdarzeń Medycznych.",
+   "aliases": [
+    "Biuro RPP",
+    "RPP",
+    "Rzecznik Praw Pacjenta"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 listopada 2008 r. o prawach pacjenta i Rzeczniku Praw Pacjenta, art. 42 ust. 3 (Dz.U. 2024 poz. 581 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/417/ogl",
+    "act": "DU/2009/417",
+    "article": "art. 42 ust. 3"
+   },
+   "officialUrl": "https://www.gov.pl/web/rpp",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "66",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-rzecznik-praw-pacjenta",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/417/ogl",
+     "https://www.gov.pl/web/rpp/kierownictwo-urzedu",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rzecznik-praw-pacjenta": {
+   "id": "pl-rzecznik-praw-pacjenta",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Rzecznik Praw Pacjenta",
+   "shortName": "Rzecznik Praw Pacjenta",
+   "description": "Centralny organ administracji rządowej właściwy w sprawach ochrony praw pacjentów (art. 42 ust. 1 ustawy o prawach pacjenta i Rzeczniku Praw Pacjenta). Powoływany przez Prezesa Rady Ministrów spośród osób wyłonionych w otwartym i konkurencyjnym naborze i przez niego odwoływany; nadzór sprawuje PRM (art. 42 ust. 2, art. 44–45).",
+   "aliases": [
+    "RPP",
+    "Rzecznik Praw Pacjenta"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 listopada 2008 r. o prawach pacjenta i Rzeczniku Praw Pacjenta, art. 44 ust. 1 (Dz.U. 2024 poz. 581 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/417/ogl",
+    "act": "DU/2009/417",
+    "article": "art. 44 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/rpp/kierownictwo-urzedu",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-biuro-rzecznika-praw-pacjenta",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-bartlomiej-chmielowiec",
+      "name": "Bartłomiej Chmielowiec",
+      "positionId": "pl-rzecznik-praw-pacjenta",
+      "positionName": "Rzecznik Praw Pacjenta",
+      "type": "appointed",
+      "startedAt": "2017-10-30",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/rpp/kierownictwo-urzedu",
+      "startedAtSource": "https://www.gov.pl/web/rpp/Bartlomiej-Lukasz-Chmielowiec",
+      "note": "Urząd sprawuje od 30.10.2017 (biogram gov.pl/web/rpp)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/417/ogl",
+     "https://www.gov.pl/web/rpp/kierownictwo-urzedu"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-biuro-rzecznika-msp": {
+   "id": "pl-biuro-rzecznika-msp",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Biuro Rzecznika Małych i Średnich Przedsiębiorców",
+   "shortName": "Biuro Rzecznika MŚP",
+   "description": "Biuro obsługujące Rzecznika Małych i Średnich Przedsiębiorców, który stoi na straży praw mikro-, małych i średnich przedsiębiorców, w szczególności wolności działalności gospodarczej i równego traktowania (art. 1 ustawy o Rzeczniku MŚP). Rzecznik opiniuje projekty aktów prawnych, występuje z interwencjami i może wnosić skargę nadzwyczajną.",
+   "aliases": [
+    "Biuro Rzecznika MŚP",
+    "Rzecznik MŚP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 marca 2018 r. o Rzeczniku Małych i Średnich Przedsiębiorców, art. 1 (Dz.U. 2026 poz. 461 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/648/ogl",
+    "act": "DU/2018/648",
+    "article": "art. 1"
+   },
+   "officialUrl": "https://rzecznikmsp.gov.pl/",
+   "bipUrl": "http://rzecznikmsp.bip.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-rzecznik-msp",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/648/ogl",
+     "https://rzecznikmsp.gov.pl/kierownictwo/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rzecznik-msp": {
+   "id": "pl-rzecznik-msp",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Rzecznik Małych i Średnich Przedsiębiorców",
+   "shortName": "Rzecznik MŚP",
+   "description": "Organ stojący na straży praw mikro-, małych i średnich przedsiębiorców (art. 1 ustawy o Rzeczniku MŚP). Powoływany przez Prezesa Rady Ministrów na wniosek ministra właściwego ds. gospodarki, po zasięgnięciu opinii reprezentatywnych organizacji pracodawców (art. 3), na sześcioletnią kadencję.",
+   "aliases": [
+    "Rzecznik MŚP",
+    "Rzecznik Przedsiębiorców"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 marca 2018 r. o Rzeczniku Małych i Średnich Przedsiębiorców, art. 3 ust. 1 (Dz.U. 2026 poz. 461 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/648/ogl",
+    "act": "DU/2018/648",
+    "article": "art. 3 ust. 1"
+   },
+   "officialUrl": "https://rzecznikmsp.gov.pl/kierownictwo/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-biuro-rzecznika-msp",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-agnieszka-majewska",
+      "name": "Agnieszka Majewska",
+      "positionId": "pl-rzecznik-msp",
+      "positionName": "Rzecznik Małych i Średnich Przedsiębiorców",
+      "type": "appointed",
+      "startedAt": "2024-06-23",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://rzecznikmsp.gov.pl/kierownictwo/",
+      "startedAtSource": "https://rzecznikmsp.gov.pl/kierownictwo/",
+      "note": "Powołana 23.06.2024 (rzecznikmsp.gov.pl)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/648/ogl",
+     "https://rzecznikmsp.gov.pl/kierownictwo/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-sluzby-cywilnej": {
+   "id": "pl-szef-sluzby-cywilnej",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Szef Służby Cywilnej",
+   "shortName": "Szef SC",
+   "description": "Centralny organ administracji rządowej właściwy w sprawach służby cywilnej, podległy bezpośrednio Prezesowi Rady Ministrów, który go powołuje i odwołuje (art. 10 ustawy o służbie cywilnej). Czuwa nad przestrzeganiem zasad służby cywilnej i kieruje zarządzaniem zasobami ludzkimi w korpusie; obsługę zapewnia Kancelaria Prezesa Rady Ministrów.",
+   "aliases": [
+    "Szef SC",
+    "Szef Służby Cywilnej"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 listopada 2008 r. o służbie cywilnej, art. 10 (Dz.U. 2026 poz. 590 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+    "act": "DU/2008/1505",
+    "article": "art. 10"
+   },
+   "officialUrl": "https://www.gov.pl/web/sluzbacywilna/szef-sluzby-cywilnej",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": "Organ jednoosobowy bez własnego urzędu – obsługę zapewnia KPRM (art. 10 ustawy o służbie cywilnej); dlatego headOf = null.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-anita-noskowska-piatkowska",
+      "name": "Anita Noskowska-Piątkowska",
+      "positionId": "pl-szef-sluzby-cywilnej",
+      "positionName": "Szef Służby Cywilnej",
+      "type": "appointed",
+      "startedAt": "2024-02-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/sluzbacywilna/szef-sluzby-cywilnej",
+      "startedAtSource": "https://www.gov.pl/web/sluzbacywilna/szef-sluzby-cywilnej",
+      "note": "Od 28.02.2024 (gov.pl/web/sluzbacywilna)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+     "https://www.gov.pl/web/sluzbacywilna/szef-sluzby-cywilnej"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-utk": {
+   "id": "pl-utk",
+   "type": "department",
+   "subtype": "regulatory_body",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Urząd Transportu Kolejowego",
+   "shortName": "UTK",
+   "description": "Urząd obsługujący Prezesa UTK – centralny organ administracji rządowej, krajową władzę bezpieczeństwa i regulatora transportu kolejowego (art. 10 ustawy o transporcie kolejowym). Wydaje licencje i certyfikaty bezpieczeństwa, nadzoruje bezpieczeństwo ruchu kolejowego i prawa pasażerów. Wg wykazu KPRM jednostka nadzorowana przez Prezesa Rady Ministrów, który powołuje Prezesa UTK i nadaje statut urzędu.",
+   "aliases": [
+    "UTK",
+    "Urząd Transportu Kolejowego"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 28 marca 2003 r. o transporcie kolejowym, art. 10 (Dz.U. 2025 poz. 1234 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2003/789/ogl",
+    "act": "DU/2003/789",
+    "article": "art. 10"
+   },
+   "officialUrl": "https://www.utk.gov.pl/",
+   "bipUrl": "https://bip.utk.gov.pl/",
+   "regon": null,
+   "budgetPart": "71",
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-utk",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/789/ogl",
+     "https://utk.gov.pl/pl/urzad/kierownictwo",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-utk": {
+   "id": "pl-prezes-utk",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Prezes Urzędu Transportu Kolejowego",
+   "shortName": "Prezes UTK",
+   "description": "Centralny organ administracji rządowej – krajowa władza bezpieczeństwa i regulator transportu kolejowego (art. 10 ust. 1 ustawy o transporcie kolejowym). Powoływany przez Prezesa Rady Ministrów spośród osób wyłonionych w otwartym i konkurencyjnym naborze i przez niego odwoływany (art. 11 ust. 1 i 4).",
+   "aliases": [
+    "Prezes UTK"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 28 marca 2003 r. o transporcie kolejowym, art. 11 ust. 1 (Dz.U. 2025 poz. 1234 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2003/789/ogl",
+    "act": "DU/2003/789",
+    "article": "art. 11 ust. 1"
+   },
+   "officialUrl": "https://utk.gov.pl/pl/urzad/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-utk",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-ignacy-gora",
+      "name": "Ignacy Góra",
+      "positionId": "pl-prezes-utk",
+      "positionName": "Prezes Urzędu Transportu Kolejowego",
+      "type": "appointed",
+      "startedAt": "2016",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://utk.gov.pl/pl/urzad/kierownictwo",
+      "startedAtSource": "https://utk.gov.pl/pl/urzad/kierownictwo/3571,dr-hab-inz-Ignacy-Gora.html",
+      "note": "Biogram utk.gov.pl: 'od 2016 Prezes UTK' – bez dokładnej daty."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/789/ogl",
+     "https://utk.gov.pl/pl/urzad/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-cbos": {
+   "id": "pl-cbos",
+   "type": "department",
+   "subtype": "state_legal_person",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Fundacja Centrum Badania Opinii Społecznej",
+   "shortName": "CBOS",
+   "description": "Fundacja ustanowiona ustawą, prowadząca badania opinii społecznej na użytek organów państwa i społeczeństwa (art. 1 i art. 4 ustawy o fundacji – Centrum Badania Opinii Społecznej). Organami są Rada CBOS i Dyrektor; Dyrektora powołuje Rada na pięć lat (art. 6, art. 9). Nadzór nad CBOS sprawuje Prezes Rady Ministrów (art. 13).",
+   "aliases": [
+    "CBOS",
+    "Centrum Badania Opinii Społecznej"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 20 lutego 1997 r. o fundacji – Centrum Badania Opinii Społecznej, art. 1, art. 13",
+    "url": "https://eli.gov.pl/eli/DU/1997/163/ogl",
+    "act": "DU/1997/163",
+    "article": "art. 1, art. 13"
+   },
+   "officialUrl": "https://www.cbos.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-cbos",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/163/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-dyrektor-cbos": {
+   "id": "pl-dyrektor-cbos",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dyrektor Centrum Badania Opinii Społecznej",
+   "shortName": "Dyrektor CBOS",
+   "description": "Zarząd fundacji CBOS w rozumieniu ustawy o fundacjach; kieruje Centrum. Powoływany przez Radę CBOS na okres pięciu lat (art. 9 ustawy o fundacji – Centrum Badania Opinii Społecznej); Prezes Rady Ministrów może w trybie nadzoru zawiesić Dyrektora (art. 15).",
+   "aliases": [
+    "Dyrektor CBOS"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 20 lutego 1997 r. o fundacji – Centrum Badania Opinii Społecznej, art. 9",
+    "url": "https://eli.gov.pl/eli/DU/1997/163/ogl",
+    "act": "DU/1997/163",
+    "article": "art. 9"
+   },
+   "officialUrl": "https://www.cbos.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-cbos",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-ewa-marciniak",
+      "name": "Ewa Marciniak",
+      "positionId": "pl-dyrektor-cbos",
+      "positionName": "Dyrektor Centrum Badania Opinii Społecznej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+      "startedAtSource": null,
+      "note": "Nazwisko z oficjalnej listy KPRM (dr hab. Ewa Maria Marciniak); podstrony cbos.pl o kierownictwie niedostępne (404)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/163/ogl",
+     "https://www.cbos.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-osw": {
+   "id": "pl-osw",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Ośrodek Studiów Wschodnich im. Marka Karpia",
+   "shortName": "OSW",
+   "description": "Państwowa osoba prawna prowadząca analizy sytuacji politycznej, gospodarczej i społecznej w Europie Środkowej i Wschodniej, Rosji, na Bałkanach, Kaukazie i w Azji Centralnej na potrzeby organów władzy publicznej (art. 1–2 ustawy o OSW). Nadzór sprawuje Prezes Rady Ministrów, w jego imieniu Szef KPRM (art. 3).",
+   "aliases": [
+    "OSW",
+    "Ośrodek Studiów Wschodnich"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 15 lipca 2011 r. o Ośrodku Studiów Wschodnich im. Marka Karpia, art. 1, art. 3",
+    "url": "https://eli.gov.pl/eli/DU/2011/1029/ogl",
+    "act": "DU/2011/1029",
+    "article": "art. 1, art. 3"
+   },
+   "officialUrl": "https://www.osw.waw.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-osw",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/1029/ogl",
+     "https://www.osw.waw.pl/pl/o-nas",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-osw": {
+   "id": "pl-dyrektor-osw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dyrektor Ośrodka Studiów Wschodnich",
+   "shortName": "Dyrektor OSW",
+   "description": "Kieruje Ośrodkiem i reprezentuje go na zewnątrz (art. 5 ustawy o OSW). Powoływany przez Prezesa Rady Ministrów spośród kandydatów przedstawionych przez Radę Ośrodka; odwoływany przez PRM (art. 6).",
+   "aliases": [
+    "Dyrektor OSW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 15 lipca 2011 r. o Ośrodku Studiów Wschodnich im. Marka Karpia, art. 6 ust. 2",
+    "url": "https://eli.gov.pl/eli/DU/2011/1029/ogl",
+    "act": "DU/2011/1029",
+    "article": "art. 6 ust. 2"
+   },
+   "officialUrl": "https://www.osw.waw.pl/pl/eksperci/wojciech-kononczuk",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-osw",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wojciech-kononczuk",
+      "name": "Wojciech Konończuk",
+      "positionId": "pl-dyrektor-osw",
+      "positionName": "Dyrektor Ośrodka Studiów Wschodnich",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.osw.waw.pl/pl/eksperci/wojciech-kononczuk",
+      "startedAtSource": null,
+      "note": "Biogram na osw.waw.pl nie podaje daty powołania; nazwisko także na liście KPRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/1029/ogl",
+     "https://www.osw.waw.pl/pl/eksperci/wojciech-kononczuk"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-instytut-europy-srodkowej": {
+   "id": "pl-instytut-europy-srodkowej",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Instytut Europy Środkowej",
+   "shortName": "IEŚ",
+   "description": "Państwowa osoba prawna z siedzibą w Lublinie prowadząca badania i analizy dotyczące Europy Środkowej i Środkowo-Wschodniej na potrzeby polityki zagranicznej państwa (ustawa o Instytucie Europy Środkowej). Nadzór sprawuje Prezes Rady Ministrów, a czynności nadzorcze wykonuje w jego imieniu Szef KPRM (art. 4).",
+   "aliases": [
+    "IEŚ",
+    "Instytut Europy Środkowej"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 listopada 2018 r. o Instytucie Europy Środkowej, art. 1, art. 4",
+    "url": "https://eli.gov.pl/eli/DU/2018/2270/ogl",
+    "act": "DU/2018/2270",
+    "article": "art. 1, art. 4"
+   },
+   "officialUrl": "https://ies.lublin.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-ies",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/2270/ogl",
+     "https://ies.lublin.pl/instytut/zespol/",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-ies": {
+   "id": "pl-dyrektor-ies",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dyrektor Instytutu Europy Środkowej",
+   "shortName": "Dyrektor IEŚ",
+   "description": "Kieruje Instytutem Europy Środkowej; powoływany i odwoływany przez Prezesa Rady Ministrów po zasięgnięciu opinii ministra właściwego ds. zagranicznych oraz Rady Instytutu (art. 7 ust. 1 ustawy o IEŚ).",
+   "aliases": [
+    "Dyrektor IEŚ"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 listopada 2018 r. o Instytucie Europy Środkowej, art. 7 ust. 1",
+    "url": "https://eli.gov.pl/eli/DU/2018/2270/ogl",
+    "act": "DU/2018/2270",
+    "article": "art. 7 ust. 1"
+   },
+   "officialUrl": "https://ies.lublin.pl/instytut/zespol/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-instytut-europy-srodkowej",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-grzegorz-gil",
+      "name": "Grzegorz Gil",
+      "positionId": "pl-dyrektor-ies",
+      "positionName": "Dyrektor Instytutu Europy Środkowej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ies.lublin.pl/instytut/zespol/",
+      "startedAtSource": null,
+      "note": "Strona zespołu IEŚ nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/2270/ogl",
+     "https://ies.lublin.pl/instytut/zespol/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-instytut-zachodni": {
+   "id": "pl-instytut-zachodni",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Instytut Zachodni im. Zygmunta Wojciechowskiego",
+   "shortName": "Instytut Zachodni",
+   "description": "Państwowa jednostka organizacyjna z osobowością prawną z siedzibą w Poznaniu, prowadząca badania nad Niemcami, stosunkami polsko-niemieckimi i Europą (art. 1 ustawy o Instytucie Zachodnim). Nadzór sprawuje Prezes Rady Ministrów, w jego imieniu Szef KPRM (art. 3).",
+   "aliases": [
+    "IZ",
+    "Instytut Zachodni"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 17 grudnia 2015 r. o Instytucie Zachodnim im. Zygmunta Wojciechowskiego, art. 1, art. 3",
+    "url": "https://eli.gov.pl/eli/DU/2015/2292/ogl",
+    "act": "DU/2015/2292",
+    "article": "art. 1, art. 3"
+   },
+   "officialUrl": "https://www.iz.poznan.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-instytutu-zachodniego",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/2292/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-dyrektor-instytutu-zachodniego": {
+   "id": "pl-dyrektor-instytutu-zachodniego",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dyrektor Instytutu Zachodniego",
+   "shortName": "Dyrektor IZ",
+   "description": "Kieruje Instytutem Zachodnim i reprezentuje go na zewnątrz; powoływany i odwoływany przez Prezesa Rady Ministrów, kandydatów przedstawia Rada Instytutu (art. 6 ustawy o Instytucie Zachodnim).",
+   "aliases": [
+    "Dyrektor IZ"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 17 grudnia 2015 r. o Instytucie Zachodnim im. Zygmunta Wojciechowskiego, art. 6 ust. 2",
+    "url": "https://eli.gov.pl/eli/DU/2015/2292/ogl",
+    "act": "DU/2015/2292",
+    "article": "art. 6 ust. 2"
+   },
+   "officialUrl": "https://www.iz.poznan.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-instytut-zachodni",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-michal-nowosielski",
+      "name": "Michał Nowosielski",
+      "positionId": "pl-dyrektor-instytutu-zachodniego",
+      "positionName": "Dyrektor Instytutu Zachodniego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+      "startedAtSource": null,
+      "note": "Nazwisko z oficjalnej listy KPRM (dr hab. Michał Nowosielski); serwis iz.poznan.pl nie udostępnił podstrony dyrekcji (błąd połączenia/404)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/2292/ogl",
+     "https://www.iz.poznan.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-instytut-strat-wojennych": {
+   "id": "pl-instytut-strat-wojennych",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Instytut Strat Wojennych im. Jana Karskiego",
+   "shortName": "ISW",
+   "description": "Państwowa jednostka budżetowa podległa Prezesowi Rady Ministrów, utworzona zarządzeniem nr 321 PRM z 2 grudnia 2021 r. (§ 2 ust. 1). Prowadzi badania i dokumentację strat wojennych poniesionych przez Polskę w wyniku II wojny światowej oraz działalność edukacyjną i wydawniczą.",
+   "aliases": [
+    "ISW",
+    "Instytut Strat Wojennych"
+   ],
+   "legalSource": {
+    "title": "Zarządzenie nr 321 Prezesa Rady Ministrów z dnia 2 grudnia 2021 r. w sprawie utworzenia Instytutu Strat Wojennych im. Jana Karskiego, § 2 ust. 1 (M.P. 2023 poz. 412 t.j.)",
+    "url": "https://eli.gov.pl/eli/MP/2021/1126/ogl",
+    "act": "MP/2021/1126",
+    "article": "§ 2 ust. 1"
+   },
+   "officialUrl": "https://instytutstratwojennych.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-isw",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2021/1126/ogl",
+     "https://eli.gov.pl/eli/MP/2023/412/ogl",
+     "https://instytutstratwojennych.pl/strona/114-wladze",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-isw": {
+   "id": "pl-dyrektor-isw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dyrektor Instytutu Strat Wojennych",
+   "shortName": "Dyrektor ISW",
+   "description": "Kieruje Instytutem Strat Wojennych przy pomocy nie więcej niż dwóch zastępców; powoływany i odwoływany przez Prezesa Rady Ministrów (§ 4–5 statutu Instytutu stanowiącego załącznik do zarządzenia nr 321 PRM).",
+   "aliases": [
+    "Dyrektor ISW"
+   ],
+   "legalSource": {
+    "title": "Zarządzenie nr 321 Prezesa Rady Ministrów z dnia 2 grudnia 2021 r. w sprawie utworzenia Instytutu Strat Wojennych im. Jana Karskiego, statut § 5 (M.P. 2023 poz. 412 t.j.)",
+    "url": "https://eli.gov.pl/eli/MP/2021/1126/ogl",
+    "act": "MP/2021/1126",
+    "article": "statut § 5"
+   },
+   "officialUrl": "https://instytutstratwojennych.pl/strona/114-wladze",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-instytut-strat-wojennych",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-bartosz-gondek",
+      "name": "Bartosz Gondek",
+      "positionId": "pl-dyrektor-isw",
+      "positionName": "Dyrektor Instytutu Strat Wojennych",
+      "type": "appointed",
+      "startedAt": "2025-04-16",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://instytutstratwojennych.pl/strona/114-wladze",
+      "startedAtSource": "https://instytutstratwojennych.pl/strona/114-wladze",
+      "note": "Powołany przez PRM 16.04.2025 (instytutstratwojennych.pl)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2021/1126/ogl",
+     "https://instytutstratwojennych.pl/strona/114-wladze"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-instytut-wspolpracy-polsko-wegierskiej": {
+   "id": "pl-instytut-wspolpracy-polsko-wegierskiej",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Instytut Współpracy Polsko-Węgierskiej im. Wacława Felczaka",
+   "shortName": "Instytut Felczaka",
+   "description": "Państwowa osoba prawna, której celem jest pogłębianie polsko-węgierskiej współpracy naukowej, kulturalnej i społecznej (art. 2, art. 5 ustawy o Instytucie Współpracy Polsko-Węgierskiej). Nadzór nad działalnością Instytutu sprawuje Prezes Rady Ministrów (art. 3).",
+   "aliases": [
+    "Instytut Felczaka",
+    "Instytut Współpracy Polsko-Węgierskiej"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 lutego 2018 r. o Instytucie Współpracy Polsko-Węgierskiej im. Wacława Felczaka, art. 2, art. 3 (Dz.U. 2024 poz. 251 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/538/ogl",
+    "act": "DU/2018/538",
+    "article": "art. 2, art. 3"
+   },
+   "officialUrl": "https://kurier.plus/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-instytutu-felczaka",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/538/ogl",
+     "https://kurier.plus/o-instytucie/dyrekcja/",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-instytutu-felczaka": {
+   "id": "pl-dyrektor-instytutu-felczaka",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dyrektor Instytutu Współpracy Polsko-Węgierskiej",
+   "shortName": "Dyrektor Instytutu Felczaka",
+   "description": "Kieruje Instytutem; powoływany przez Prezesa Rady Ministrów na pięcioletnią kadencję (art. 8 ust. 1, art. 9 ustawy o Instytucie Współpracy Polsko-Węgierskiej im. Wacława Felczaka).",
+   "aliases": [
+    "Dyrektor Instytutu Felczaka"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 lutego 2018 r. o Instytucie Współpracy Polsko-Węgierskiej im. Wacława Felczaka, art. 8 ust. 1 (Dz.U. 2024 poz. 251 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/538/ogl",
+    "act": "DU/2018/538",
+    "article": "art. 8 ust. 1"
+   },
+   "officialUrl": "https://kurier.plus/o-instytucie/dyrekcja/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "children": [],
+   "head": null,
+   "headOf": "pl-instytut-wspolpracy-polsko-wegierskiej",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jakub-wisniewski",
+      "name": "Jakub Wiśniewski",
+      "positionId": "pl-dyrektor-instytutu-felczaka",
+      "positionName": "Dyrektor Instytutu Współpracy Polsko-Węgierskiej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://kurier.plus/o-instytucie/dyrekcja/",
+      "startedAtSource": null,
+      "note": "Strona dyrekcji nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/538/ogl",
+     "https://kurier.plus/o-instytucie/dyrekcja/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  }
+ },
+ "edges": {
+  "e-gus--dept_head--prezes-gus": {
+   "id": "e-gus--dept_head--prezes-gus",
+   "type": "dept_head",
+   "fromId": "pl-gus",
+   "toId": "pl-prezes-gus",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--gus": {
+   "id": "e-prm--oversees--gus",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-gus",
+   "cite": "Ustawa z dnia 29 czerwca 1995 r. o statystyce publicznej, art. 23 ust. 2 (także art. 33a ust. 1 pkt 2 ustawy o działach administracji rządowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/1997/943/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--prezes-gus": {
+   "id": "e-prm--appoints--prezes-gus",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-gus",
+   "cite": "Ustawa z dnia 29 czerwca 1995 r. o statystyce publicznej, art. 24 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-polski-komitet-normalizacyjny--dept_head--prezes-pkn": {
+   "id": "e-polski-komitet-normalizacyjny--dept_head--prezes-pkn",
+   "type": "dept_head",
+   "fromId": "pl-polski-komitet-normalizacyjny",
+   "toId": "pl-prezes-pkn",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1386/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--polski-komitet-normalizacyjny": {
+   "id": "e-prm--oversees--polski-komitet-normalizacyjny",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-polski-komitet-normalizacyjny",
+   "cite": "Ustawa z dnia 12 września 2002 r. o normalizacji, art. 10 ust. 1 (także art. 33a ust. 1 pkt 5 ustawy o działach administracji rządowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1386/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1386/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/1997/943/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--prezes-pkn": {
+   "id": "e-prm--appoints--prezes-pkn",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-pkn",
+   "cite": "Ustawa z dnia 12 września 2002 r. o normalizacji, art. 16 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/1386/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/1386/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-uokik--dept_head--prezes-uokik": {
+   "id": "e-uokik--dept_head--prezes-uokik",
+   "type": "dept_head",
+   "fromId": "pl-uokik",
+   "toId": "pl-prezes-uokik",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/331/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--uokik": {
+   "id": "e-prm--oversees--uokik",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-uokik",
+   "cite": "Ustawa z dnia 16 lutego 2007 r. o ochronie konkurencji i konsumentów, art. 29 ust. 1 (także art. 33a ust. 1 pkt 6 ustawy o działach administracji rządowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/331/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/331/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/1997/943/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--prezes-uokik": {
+   "id": "e-prm--appoints--prezes-uokik",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-uokik",
+   "cite": "Ustawa z dnia 16 lutego 2007 r. o ochronie konkurencji i konsumentów, art. 29 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/331/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/331/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-abw--dept_head--szef-abw": {
+   "id": "e-abw--dept_head--szef-abw",
+   "type": "dept_head",
+   "fromId": "pl-abw",
+   "toId": "pl-szef-abw",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--abw": {
+   "id": "e-prm--oversees--abw",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-abw",
+   "cite": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 3 ust. 2 (także art. 33a ust. 1 pkt 7 ustawy o działach administracji rządowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/1997/943/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--szef-abw": {
+   "id": "e-prm--appoints--szef-abw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-abw",
+   "cite": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 14 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-aw--dept_head--szef-aw": {
+   "id": "e-aw--dept_head--szef-aw",
+   "type": "dept_head",
+   "fromId": "pl-aw",
+   "toId": "pl-szef-aw",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--aw": {
+   "id": "e-prm--oversees--aw",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-aw",
+   "cite": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 3 ust. 2 (także art. 33a ust. 1 pkt 7 ustawy o działach administracji rządowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/1997/943/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--szef-aw": {
+   "id": "e-prm--appoints--szef-aw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-aw",
+   "cite": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 14 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-cba--dept_head--szef-cba": {
+   "id": "e-cba--dept_head--szef-cba",
+   "type": "dept_head",
+   "fromId": "pl-cba",
+   "toId": "pl-szef-cba",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/708/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--cba": {
+   "id": "e-prm--oversees--cba",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-cba",
+   "cite": "Ustawa z dnia 9 czerwca 2006 r. o Centralnym Biurze Antykorupcyjnym, art. 5 ust. 2 (także art. 33a ust. 1 pkt 7a ustawy o działach administracji rządowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/708/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/708/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/1997/943/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--szef-cba": {
+   "id": "e-prm--appoints--szef-cba",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-cba",
+   "cite": "Ustawa z dnia 9 czerwca 2006 r. o Centralnym Biurze Antykorupcyjnym, art. 6 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/708/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/708/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-koordynator-sluzb--oversees--abw": {
+   "id": "e-koordynator-sluzb--oversees--abw",
+   "type": "oversees",
+   "fromId": "pl-minister-koordynator-sluzb-specjalnych",
+   "toId": "pl-abw",
+   "cite": "Ustawa z dnia 9 czerwca 2006 r. o Centralnym Biurze Antykorupcyjnym, art. 5 ust. 3 (koordynacja działalności służb specjalnych przez wyznaczonego członka RM; szczegóły w rozporządzeniu PRM Dz.U. 2025 poz. 1003)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/708/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/708/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1003/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-koordynator-sluzb--oversees--aw": {
+   "id": "e-koordynator-sluzb--oversees--aw",
+   "type": "oversees",
+   "fromId": "pl-minister-koordynator-sluzb-specjalnych",
+   "toId": "pl-aw",
+   "cite": "Ustawa z dnia 9 czerwca 2006 r. o Centralnym Biurze Antykorupcyjnym, art. 5 ust. 3 (koordynacja działalności służb specjalnych przez wyznaczonego członka RM; szczegóły w rozporządzeniu PRM Dz.U. 2025 poz. 1003)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/708/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/708/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1003/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-koordynator-sluzb--oversees--cba": {
+   "id": "e-koordynator-sluzb--oversees--cba",
+   "type": "oversees",
+   "fromId": "pl-minister-koordynator-sluzb-specjalnych",
+   "toId": "pl-cba",
+   "cite": "Ustawa z dnia 9 czerwca 2006 r. o Centralnym Biurze Antykorupcyjnym, art. 5 ust. 3 (koordynacja działalności służb specjalnych przez wyznaczonego członka RM; szczegóły w rozporządzeniu PRM Dz.U. 2025 poz. 1003)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/708/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/708/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1003/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-ure--dept_head--prezes-ure": {
+   "id": "e-ure--dept_head--prezes-ure",
+   "type": "dept_head",
+   "fromId": "pl-ure",
+   "toId": "pl-prezes-ure",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/348/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--ure": {
+   "id": "e-prm--oversees--ure",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-ure",
+   "cite": "Ustawa z dnia 4 września 1997 r. o działach administracji rządowej, art. 33a ust. 1 pkt 15",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/943/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/943/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/1997/348/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--prezes-ure": {
+   "id": "e-prm--appoints--prezes-ure",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-ure",
+   "cite": "Ustawa z dnia 10 kwietnia 1997 r. – Prawo energetyczne, art. 21 ust. 2a",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/348/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/348/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prokuratoria-generalna-rp--dept_head--prezes-prokuratorii-generalnej-rp": {
+   "id": "e-prokuratoria-generalna-rp--dept_head--prezes-prokuratorii-generalnej-rp",
+   "type": "dept_head",
+   "fromId": "pl-prokuratoria-generalna-rp",
+   "toId": "pl-prezes-prokuratorii-generalnej-rp",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/2261/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--prokuratoria-generalna-rp": {
+   "id": "e-prm--oversees--prokuratoria-generalna-rp",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prokuratoria-generalna-rp",
+   "cite": "Ustawa z dnia 15 grudnia 2016 r. o Prokuratorii Generalnej Rzeczypospolitej Polskiej, art. 1 ust. 4 (także art. 33a ust. 1 pkt 17 ustawy o działach administracji rządowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/2261/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/2261/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/1997/943/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--prezes-prokuratorii-generalnej-rp": {
+   "id": "e-prm--appoints--prezes-prokuratorii-generalnej-rp",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-prokuratorii-generalnej-rp",
+   "cite": "Ustawa z dnia 15 grudnia 2016 r. o Prokuratorii Generalnej Rzeczypospolitej Polskiej, art. 41 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/2261/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/2261/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-knf--dept_head--przewodniczacy-knf": {
+   "id": "e-knf--dept_head--przewodniczacy-knf",
+   "type": "dept_head",
+   "fromId": "pl-knf",
+   "toId": "pl-przewodniczacy-knf",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-knf--office--przewodniczacy-knf": {
+   "id": "e-knf--office--przewodniczacy-knf",
+   "type": "office",
+   "fromId": "pl-knf",
+   "toId": "pl-przewodniczacy-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 3 ust. 5",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-urzad-knf--administers--knf": {
+   "id": "e-urzad-knf--administers--knf",
+   "type": "administers",
+   "fromId": "pl-urzad-knf",
+   "toId": "pl-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 3 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--urzad-knf": {
+   "id": "e-prm--oversees--urzad-knf",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-urzad-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 3 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--przewodniczacy-knf": {
+   "id": "e-prm--appoints--przewodniczacy-knf",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-przewodniczacy-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 7 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--knf": {
+   "id": "e-prm--appoints--knf",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 9; art. 5 ust. 2 pkt 5 (3 zastępców Przewodniczącego na wniosek Przewodniczącego oraz 1 przedstawiciel PRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 4,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-finansow-i-gospodarki--ex_officio--knf": {
+   "id": "e-minister-finansow-i-gospodarki--ex_officio--knf",
+   "type": "ex_officio",
+   "fromId": "pl-minister-finansow-i-gospodarki",
+   "toId": "pl-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 5 ust. 2 pkt 1 i 1a (minister właściwy ds. instytucji finansowych i minister właściwy ds. gospodarki albo ich przedstawiciele – 2 miejsca)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-rpips--ex_officio--knf": {
+   "id": "e-minister-rpips--ex_officio--knf",
+   "type": "ex_officio",
+   "fromId": "pl-minister-rodziny-pracy-i-polityki-spolecznej",
+   "toId": "pl-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 5 ust. 2 pkt 2 (minister właściwy ds. zabezpieczenia społecznego albo jego przedstawiciel)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nbp--ex_officio--knf": {
+   "id": "e-prezes-nbp--ex_officio--knf",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-nbp",
+   "toId": "pl-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 5 ust. 2 pkt 3 (Prezes NBP albo delegowany członek Zarządu NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--knf": {
+   "id": "e-prezydent-rp--appoints--knf",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 5 ust. 2 pkt 4 (przedstawiciel Prezydenta RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-uokik--appoints--knf": {
+   "id": "e-prezes-uokik--appoints--knf",
+   "type": "appoints",
+   "fromId": "pl-prezes-uokik",
+   "toId": "pl-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 5 ust. 2 pkt 7 (przedstawiciel Prezesa UOKiK; głos doradczy – art. 5 ust. 5)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-koordynator-sluzb--appoints--knf": {
+   "id": "e-koordynator-sluzb--appoints--knf",
+   "type": "appoints",
+   "fromId": "pl-minister-koordynator-sluzb-specjalnych",
+   "toId": "pl-knf",
+   "cite": "Ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym, art. 5 ust. 2 pkt 8 (przedstawiciel ministra – Koordynatora Służb Specjalnych; głos doradczy – art. 5 ust. 5)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/1119/ogl",
+     "https://www.knf.gov.pl/o_nas/komisja"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rcl--dept_head--prezes-rcl": {
+   "id": "e-rcl--dept_head--prezes-rcl",
+   "type": "dept_head",
+   "fromId": "pl-rcl",
+   "toId": "pl-prezes-rcl",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--rcl": {
+   "id": "e-prm--oversees--rcl",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rcl",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 14a",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--prezes-rcl": {
+   "id": "e-prm--appoints--prezes-rcl",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-rcl",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 14e ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rzadowe-centrum-bezpieczenstwa--dept_head--dyrektor-rcb": {
+   "id": "e-rzadowe-centrum-bezpieczenstwa--dept_head--dyrektor-rcb",
+   "type": "dept_head",
+   "fromId": "pl-rzadowe-centrum-bezpieczenstwa",
+   "toId": "pl-dyrektor-rcb",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--rzadowe-centrum-bezpieczenstwa": {
+   "id": "e-prm--oversees--rzadowe-centrum-bezpieczenstwa",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rzadowe-centrum-bezpieczenstwa",
+   "cite": "Ustawa z dnia 26 kwietnia 2007 r. o zarządzaniu kryzysowym, art. 10 ust. 1 (czynności z zakresu podległości wykonuje z upoważnienia PRM Minister Spraw Wewnętrznych i Administracji – wg strony KPRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dyrektor-rcb": {
+   "id": "e-prm--appoints--dyrektor-rcb",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-rcb",
+   "cite": "Ustawa z dnia 26 kwietnia 2007 r. o zarządzaniu kryzysowym, art. 10 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-ksap--dept_head--dyrektor-ksap": {
+   "id": "e-ksap--dept_head--dyrektor-ksap",
+   "type": "dept_head",
+   "fromId": "pl-ksap",
+   "toId": "pl-dyrektor-ksap",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/266/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--ksap": {
+   "id": "e-prm--oversees--ksap",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-ksap",
+   "cite": "Ustawa z dnia 14 czerwca 1991 r. o Krajowej Szkole Administracji Publicznej im. Prezydenta Rzeczypospolitej Polskiej Lecha Kaczyńskiego, art. 2 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1991/266/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/266/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dyrektor-ksap": {
+   "id": "e-prm--appoints--dyrektor-ksap",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-ksap",
+   "cite": "Ustawa z dnia 14 czerwca 1991 r. o Krajowej Szkole Administracji Publicznej im. Prezydenta Rzeczypospolitej Polskiej Lecha Kaczyńskiego, art. 2 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1991/266/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1991/266/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-pan--dept_head--prezes-pan": {
+   "id": "e-pan--dept_head--prezes-pan",
+   "type": "dept_head",
+   "fromId": "pl-pan",
+   "toId": "pl-prezes-pan",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/619/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--pan": {
+   "id": "e-prm--oversees--pan",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-pan",
+   "cite": "Ustawa z dnia 30 kwietnia 2010 r. o Polskiej Akademii Nauk, art. 5 ust. 1 (nadzór z wyłączeniem gospodarki finansowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/619/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/619/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-nauki--oversees--pan": {
+   "id": "e-minister-nauki--oversees--pan",
+   "type": "oversees",
+   "fromId": "pl-minister-nauki-i-szkolnictwa-wyzszego",
+   "toId": "pl-pan",
+   "cite": "Ustawa z dnia 30 kwietnia 2010 r. o Polskiej Akademii Nauk, art. 5 ust. 1–2 (gospodarka finansowa Akademii; roczne sprawozdanie finansowe)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/619/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/619/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-pan--elects--prezes-pan": {
+   "id": "e-pan--elects--prezes-pan",
+   "type": "elects",
+   "fromId": "pl-pan",
+   "toId": "pl-prezes-pan",
+   "cite": "Ustawa z dnia 30 kwietnia 2010 r. o Polskiej Akademii Nauk, art. 15 ust. 2 pkt 2 (Zgromadzenie Ogólne Akademii)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/619/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/619/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-biuro-rzecznika-finansowego--dept_head--rzecznik-finansowy": {
+   "id": "e-biuro-rzecznika-finansowego--dept_head--rzecznik-finansowy",
+   "type": "dept_head",
+   "fromId": "pl-biuro-rzecznika-finansowego",
+   "toId": "pl-rzecznik-finansowy",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1348/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rzecznik-finansowy": {
+   "id": "e-prm--appoints--rzecznik-finansowy",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rzecznik-finansowy",
+   "cite": "Ustawa z dnia 5 sierpnia 2015 r. o rozpatrywaniu reklamacji przez podmioty rynku finansowego, o Rzeczniku Finansowym i o Funduszu Edukacji Finansowej, art. 11",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1348/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1348/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-finansow-i-gospodarki--nominates--rzecznik-finansowy": {
+   "id": "e-minister-finansow-i-gospodarki--nominates--rzecznik-finansowy",
+   "type": "nominates",
+   "fromId": "pl-minister-finansow-i-gospodarki",
+   "toId": "pl-rzecznik-finansowy",
+   "cite": "Ustawa z dnia 5 sierpnia 2015 r. o rozpatrywaniu reklamacji przez podmioty rynku finansowego, o Rzeczniku Finansowym i o Funduszu Edukacji Finansowej, art. 11 (wniosek ministra właściwego ds. instytucji finansowych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1348/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1348/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--biuro-rzecznika-finansowego": {
+   "id": "e-prm--oversees--biuro-rzecznika-finansowego",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-biuro-rzecznika-finansowego",
+   "cite": "Wykaz jednostek i organów nadzorowanych przez Prezesa Rady Ministrów (strona KPRM); ustawa o Rzeczniku Finansowym nie zawiera odrębnego przepisu o nadzorze PRM – powiązanie przez powołanie (art. 11)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1348/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow",
+     "https://eli.gov.pl/eli/DU/2015/1348/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-biuro-rzecznika-praw-pacjenta--dept_head--rzecznik-praw-pacjenta": {
+   "id": "e-biuro-rzecznika-praw-pacjenta--dept_head--rzecznik-praw-pacjenta",
+   "type": "dept_head",
+   "fromId": "pl-biuro-rzecznika-praw-pacjenta",
+   "toId": "pl-rzecznik-praw-pacjenta",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/417/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--biuro-rzecznika-praw-pacjenta": {
+   "id": "e-prm--oversees--biuro-rzecznika-praw-pacjenta",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-biuro-rzecznika-praw-pacjenta",
+   "cite": "Ustawa z dnia 6 listopada 2008 r. o prawach pacjenta i Rzeczniku Praw Pacjenta, art. 42 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/417/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/417/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rzecznik-praw-pacjenta": {
+   "id": "e-prm--appoints--rzecznik-praw-pacjenta",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rzecznik-praw-pacjenta",
+   "cite": "Ustawa z dnia 6 listopada 2008 r. o prawach pacjenta i Rzeczniku Praw Pacjenta, art. 44 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/417/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/417/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-biuro-rzecznika-msp--dept_head--rzecznik-msp": {
+   "id": "e-biuro-rzecznika-msp--dept_head--rzecznik-msp",
+   "type": "dept_head",
+   "fromId": "pl-biuro-rzecznika-msp",
+   "toId": "pl-rzecznik-msp",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/648/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rzecznik-msp": {
+   "id": "e-prm--appoints--rzecznik-msp",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rzecznik-msp",
+   "cite": "Ustawa z dnia 6 marca 2018 r. o Rzeczniku Małych i Średnich Przedsiębiorców, art. 3 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/648/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/648/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-finansow-i-gospodarki--nominates--rzecznik-msp": {
+   "id": "e-minister-finansow-i-gospodarki--nominates--rzecznik-msp",
+   "type": "nominates",
+   "fromId": "pl-minister-finansow-i-gospodarki",
+   "toId": "pl-rzecznik-msp",
+   "cite": "Ustawa z dnia 6 marca 2018 r. o Rzeczniku Małych i Średnich Przedsiębiorców, art. 3 ust. 1 (wniosek ministra właściwego ds. gospodarki)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/648/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/648/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--szef-sluzby-cywilnej": {
+   "id": "e-prm--oversees--szef-sluzby-cywilnej",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-sluzby-cywilnej",
+   "cite": "Ustawa z dnia 21 listopada 2008 r. o służbie cywilnej, art. 10 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--szef-sluzby-cywilnej": {
+   "id": "e-prm--appoints--szef-sluzby-cywilnej",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-sluzby-cywilnej",
+   "cite": "Ustawa z dnia 21 listopada 2008 r. o służbie cywilnej, art. 10 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2008/1505/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-utk--dept_head--prezes-utk": {
+   "id": "e-utk--dept_head--prezes-utk",
+   "type": "dept_head",
+   "fromId": "pl-utk",
+   "toId": "pl-prezes-utk",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/789/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--utk": {
+   "id": "e-prm--oversees--utk",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-utk",
+   "cite": "Ustawa z dnia 28 marca 2003 r. o transporcie kolejowym, art. 11 ust. 1 (ustawa nie zawiera odrębnej klauzuli nadzoru PRM; podstawą jest powoływanie i odwoływanie Prezesa UTK przez PRM oraz wykaz jednostek nadzorowanych na stronie KPRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/789/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/789/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-prm--appoints--prezes-utk": {
+   "id": "e-prm--appoints--prezes-utk",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-utk",
+   "cite": "Ustawa z dnia 28 marca 2003 r. o transporcie kolejowym, art. 11 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/789/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/789/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-cbos--dept_head--dyrektor-cbos": {
+   "id": "e-cbos--dept_head--dyrektor-cbos",
+   "type": "dept_head",
+   "fromId": "pl-cbos",
+   "toId": "pl-dyrektor-cbos",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/163/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--cbos": {
+   "id": "e-prm--oversees--cbos",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-cbos",
+   "cite": "Ustawa z dnia 20 lutego 1997 r. o fundacji – Centrum Badania Opinii Społecznej, art. 13",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/163/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/163/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--cbos": {
+   "id": "e-prm--appoints--cbos",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-cbos",
+   "cite": "Ustawa z dnia 20 lutego 1997 r. o fundacji – Centrum Badania Opinii Społecznej, art. 8 ust. 1 pkt 3–4 (przedstawiciel PRM oraz 7 przedstawicieli powołanych przez PRM do Rady CBOS)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/163/ogl",
+   "seatsAppointed": 8,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/163/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-osw--dept_head--dyrektor-osw": {
+   "id": "e-osw--dept_head--dyrektor-osw",
+   "type": "dept_head",
+   "fromId": "pl-osw",
+   "toId": "pl-dyrektor-osw",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/1029/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--osw": {
+   "id": "e-prm--oversees--osw",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-osw",
+   "cite": "Ustawa z dnia 15 lipca 2011 r. o Ośrodku Studiów Wschodnich im. Marka Karpia, art. 3 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/1029/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/1029/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dyrektor-osw": {
+   "id": "e-prm--appoints--dyrektor-osw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-osw",
+   "cite": "Ustawa z dnia 15 lipca 2011 r. o Ośrodku Studiów Wschodnich im. Marka Karpia, art. 6 ust. 2 (spośród kandydatów przedstawionych przez Radę Ośrodka)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/1029/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/1029/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-instytut-europy-srodkowej--dept_head--dyrektor-ies": {
+   "id": "e-instytut-europy-srodkowej--dept_head--dyrektor-ies",
+   "type": "dept_head",
+   "fromId": "pl-instytut-europy-srodkowej",
+   "toId": "pl-dyrektor-ies",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/2270/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--instytut-europy-srodkowej": {
+   "id": "e-prm--oversees--instytut-europy-srodkowej",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-instytut-europy-srodkowej",
+   "cite": "Ustawa z dnia 9 listopada 2018 r. o Instytucie Europy Środkowej, art. 4 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/2270/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/2270/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dyrektor-ies": {
+   "id": "e-prm--appoints--dyrektor-ies",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-ies",
+   "cite": "Ustawa z dnia 9 listopada 2018 r. o Instytucie Europy Środkowej, art. 7 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/2270/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/2270/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-instytut-zachodni--dept_head--dyrektor-instytutu-zachodniego": {
+   "id": "e-instytut-zachodni--dept_head--dyrektor-instytutu-zachodniego",
+   "type": "dept_head",
+   "fromId": "pl-instytut-zachodni",
+   "toId": "pl-dyrektor-instytutu-zachodniego",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/2292/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--instytut-zachodni": {
+   "id": "e-prm--oversees--instytut-zachodni",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-instytut-zachodni",
+   "cite": "Ustawa z dnia 17 grudnia 2015 r. o Instytucie Zachodnim im. Zygmunta Wojciechowskiego, art. 3 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/2292/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/2292/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dyrektor-instytutu-zachodniego": {
+   "id": "e-prm--appoints--dyrektor-instytutu-zachodniego",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-instytutu-zachodniego",
+   "cite": "Ustawa z dnia 17 grudnia 2015 r. o Instytucie Zachodnim im. Zygmunta Wojciechowskiego, art. 6 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/2292/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/2292/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-instytut-strat-wojennych--dept_head--dyrektor-isw": {
+   "id": "e-instytut-strat-wojennych--dept_head--dyrektor-isw",
+   "type": "dept_head",
+   "fromId": "pl-instytut-strat-wojennych",
+   "toId": "pl-dyrektor-isw",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2021/1126/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--instytut-strat-wojennych": {
+   "id": "e-prm--oversees--instytut-strat-wojennych",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-instytut-strat-wojennych",
+   "cite": "Zarządzenie nr 321 Prezesa Rady Ministrów z dnia 2 grudnia 2021 r. w sprawie utworzenia Instytutu Strat Wojennych im. Jana Karskiego, § 2 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2021/1126/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2021/1126/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dyrektor-isw": {
+   "id": "e-prm--appoints--dyrektor-isw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-isw",
+   "cite": "Zarządzenie nr 321 Prezesa Rady Ministrów z dnia 2 grudnia 2021 r. w sprawie utworzenia Instytutu Strat Wojennych im. Jana Karskiego, statut § 5",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2021/1126/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2021/1126/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-instytut-wspolpracy-polsko-wegierskiej--dept_head--dyrektor-instytutu-felczaka": {
+   "id": "e-instytut-wspolpracy-polsko-wegierskiej--dept_head--dyrektor-instytutu-felczaka",
+   "type": "dept_head",
+   "fromId": "pl-instytut-wspolpracy-polsko-wegierskiej",
+   "toId": "pl-dyrektor-instytutu-felczaka",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/538/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--instytut-wspolpracy-polsko-wegierskiej": {
+   "id": "e-prm--oversees--instytut-wspolpracy-polsko-wegierskiej",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-instytut-wspolpracy-polsko-wegierskiej",
+   "cite": "Ustawa z dnia 8 lutego 2018 r. o Instytucie Współpracy Polsko-Węgierskiej im. Wacława Felczaka, art. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/538/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/538/ogl",
+     "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dyrektor-instytutu-felczaka": {
+   "id": "e-prm--appoints--dyrektor-instytutu-felczaka",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-instytutu-felczaka",
+   "cite": "Ustawa z dnia 8 lutego 2018 r. o Instytucie Współpracy Polsko-Węgierskiej im. Wacława Felczaka, art. 8 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/538/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/538/ogl"
+    ],
+    "confidence": "high"
+   }
+  }
+ }
+}

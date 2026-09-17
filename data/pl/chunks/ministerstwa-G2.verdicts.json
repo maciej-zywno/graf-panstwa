@@ -1,0 +1,1400 @@
+{
+ "chunk": "ministerstwa-G2",
+ "verifiedAt": "2026-09-17",
+ "summary": "Sprawdzono wszystkie 37 węzłów (legalSource w ELI API: 200 i tytuł zgodny dla 21 aktów bazowych i 14 t.j./M.P.), wszystkie 57 osoby (każda strona sourceUrl otwarta curl-em, nazwisko przy funkcji odnalezione) i wszystkie 70 krawędzie (przepisy odczytane z PDF ELI przez pdftotext). Węzły: {'confirmed': 33, 'corrected': 3, 'unverified': 1}; osoby: {'confirmed': 52, 'corrected': 5}; krawędzie: {'confirmed': 68, 'corrected': 2}. Brak refuted – nazwiska, funkcje i przepisy zgadzają się ze źródłami. Korekty: daty zastępców KGP (Kochańczyk 10.01.2024, Michułka 20.06.2024 – były na stronie), data p.o. Komendanta SOP (21.07.2026, komunikat SOP), bipUrl KGP (kgp.bip.policja.gov.pl), startedAt przewodniczącej/wiceprzewodniczącej RdsU (data wyboru nieznana), doprecyzowanie cite dla IWS/IES (pkt 4 / pkt 2), AWS: dodano stanowisko Rektora-Komendanta z p.o. (Cudak od 9.09.2026). Dodano brakującą Rządową Agencję Rezerw Strategicznych (nadzór MSWiA – art. 30 ust. 4 ustawy o rezerwach strategicznych; Prezes Jan Rajchel wg gov.pl/web/rars/kierownictwo; PRM powołuje na wniosek MSWiA – art. 34 ust. 2), której nie ma w żadnym chunku ani w kanonie. Nadal nieustalony: Dyrektor KSSiP (strona 403).",
+ "stats": {
+  "nodes_checked": 37,
+  "people_checked": 57,
+  "edges_checked": 70
+ },
+ "nodes": [
+  {
+   "id": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2015/1946 (rozp. RM o utworzeniu MSWiA) – 200, tytuł zgodny. Rozp. PRM DU/2025/999 § 1 ust. 3: dysponent części 17, 42, 43; ust. 4: obsługę zapewnia MSWiA. Strona kierownictwa 17.09.2026: Kierwiński + 4 SS + 2 PS + DG – zgodne."
+  },
+  {
+   "id": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/999 § 1 ust. 2: działy administracja publiczna, sprawy wewnętrzne, wyznania religijne oraz mniejszości narodowe i etniczne – topics zgodne. Załącznik: 7 organów podległych/nadzorowanych (Dyrektor ZER, KGP, KGSG, KG PSP, Komendant SOP, Szef UdSC, Inspektor NW) – wszystkie ujęte w chunku."
+  },
+  {
+   "id": "pl-komenda-glowna-policji",
+   "status": "corrected",
+   "fixes": {
+    "bipUrl": "https://kgp.bip.policja.gov.pl/"
+   },
+   "note": "Ustawa o Policji (ELI DU/1990/179, t.j. DU/2025/636) art. 5 ust. 1 – tekst potwierdzony (pdftotext). bipUrl https://bip.kgp.policja.gov.pl nie odpowiada bezpośrednio (TLS/000); łańcuch przekierowań http→https prowadzi na https://kgp.bip.policja.gov.pl/ (200, „Biuletyn Informacji Publicznej Komendanta Głównego Policji”) – poprawiono."
+  },
+  {
+   "id": "pl-komendant-glowny-policji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 1 i 3 ustawy o Policji potwierdzone w t.j. DU/2025/636."
+  },
+  {
+   "id": "pl-komenda-glowna-strazy-granicznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SG (ELI DU/1990/462, t.j. DU/2026/367) art. 3 ust. 1 – potwierdzone."
+  },
+  {
+   "id": "pl-komendant-glowny-strazy-granicznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1–2 ustawy o SG potwierdzone (t.j. DU/2026/367)."
+  },
+  {
+   "id": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PSP (ELI DU/1991/400, t.j. DU/2025/1312) art. 9 ust. 1 – potwierdzone."
+  },
+  {
+   "id": "pl-komendant-glowny-panstwowej-strazy-pozarnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 ust. 1–2 ustawy o PSP potwierdzone."
+  },
+  {
+   "id": "pl-sluzba-ochrony-panstwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SOP (ELI DU/2018/138, t.j. DU/2025/34) art. 9 ust. 1 – potwierdzone."
+  },
+  {
+   "id": "pl-komendant-sop",
+   "status": "corrected",
+   "fixes": {
+    "statusNote": "Stanowisko obsadzone przez pełniącego obowiązki: z dniem 21.07.2026 r. pełnienie obowiązków Komendanta SOP powierzono płk. SOP Maciejowi Lewińskiemu, dotychczasowemu Zastępcy Komendanta (komunikat SOP: https://sop.gov.pl/pl/aktualnosci/1163,Plk-SOP-Maciej-Lewinski-pelniacym-obowiazki-Komendanta-Sluzby-Ochrony-Panstwa.html). Wykaz organów na stronie MSWiA (stan 17.09.2026) nadal podaje gen. bryg. SOP Radosława Jaworskiego – nieaktualne."
+   },
+   "note": "Art. 9 ust. 1 i art. 11 ust. 1 ustawy o SOP potwierdzone. sop.gov.pl/pl/aktualnosci/1163 (komunikat SOP): „Z dniem 21 lipca 2026 r. pełnienie obowiązków Komendanta SOP powierzono dotychczasowemu Zastępcy Komendanta SOP, płk. Maciejowi Lewińskiemu” – stanowisko de facto nieobsadzone (p.o.), statusNote uzupełniona o datę i źródło."
+  },
+  {
+   "id": "pl-urzad-do-spraw-cudzoziemcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o cudzoziemcach (ELI DU/2013/1650, t.j. DU/2025/1079) art. 16 ust. 1–2 – potwierdzone (ust. 2: nadzór ministra właściwego ds. wewnętrznych nad Szefem Urzędu)."
+  },
+  {
+   "id": "pl-szef-urzedu-do-spraw-cudzoziemcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 16–17 ustawy o cudzoziemcach potwierdzone (art. 17 ust. 1: powołuje PRM na wniosek MSWiA spośród osób z otwartego naboru)."
+  },
+  {
+   "id": "pl-rada-do-spraw-uchodzcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o udzielaniu cudzoziemcom ochrony (ELI DU/2003/1176, t.j. DU/2026/862) art. 89p, 89r, 89zb – potwierdzone. Strona gov.pl/web/rada-ds-uchodzcow: „Rada VI kadencji została powołana w dniu 28 marca 2024 roku”; 15.04.2025 PRM powołał 3 dodatkowych członków (art. 89r ust. 4) – seatsCount 12 to liczba ustawowa, aktualny skład 15 osób."
+  },
+  {
+   "id": "pl-przewodniczacy-rady-do-spraw-uchodzcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 89u ust. 1 (Rada wybiera przewodniczącego i wiceprzewodniczącego w głosowaniu tajnym) i art. 89w – potwierdzone."
+  },
+  {
+   "id": "pl-zaklad-emerytalno-rentowy-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. MSWiA DU/2024/550 § 2 ust. 1–3 – potwierdzone (Dyrektor Zakładu organem emerytalnym; powołuje MSWiA). Strona gov.pl/web/zermswia/kierownictwo: Dyrektor Olga Bułhak."
+  },
+  {
+   "id": "pl-dyrektor-zer-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2024/550 § 2 ust. 1–2 potwierdzone; organ w zał. do DU/2025/999 pkt 1."
+  },
+  {
+   "id": "pl-biuro-nadzoru-wewnetrznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa DU/1996/491 (t.j. DU/2025/529) art. 11a ust. 1–2 – potwierdzone (Inspektor NW organem, przy pomocy którego minister sprawuje nadzór; podlega ministrowi)."
+  },
+  {
+   "id": "pl-inspektor-nadzoru-wewnetrznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11a–11b (powołuje i odwołuje minister właściwy ds. wewnętrznych) – potwierdzone."
+  },
+  {
+   "id": "pl-narodowy-instytut-samorzadu-terytorialnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2023 poz. 1128 zał. cz. I pkt 2 – potwierdzone; ELI search nie zwraca nowszego obwieszczenia MSWiA. nist.gov.pl (17.09.2026) – działa, Dyrektor prof. Paweł Swianiewicz."
+  },
+  {
+   "id": "pl-dyrektor-nist",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Brak ustawowej podstawy powołania (statut/zarządzenie MSWiA) – legalSource = wykaz M.P., akceptowalne."
+  },
+  {
+   "id": "pl-centrum-personalizacji-dokumentow-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2023 poz. 1128 zał. cz. I pkt 4 – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-cpd-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "j.w."
+  },
+  {
+   "id": "pl-zarzad-zasobow-mieszkaniowych-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2023 poz. 1128 zał. cz. I pkt 3 – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-zzm-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "j.w."
+  },
+  {
+   "id": "pl-centrum-obslugi-projektow-europejskich-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2023 poz. 1128 zał. cz. I pkt 1 – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-cope-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "j.w."
+  },
+  {
+   "id": "pl-ministerstwo-sprawiedliwosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/1999/1024 – 200, tytuł zgodny. DU/2025/1005 § 1 ust. 3–4 (części 15 i 37; obsługa przez MS) – potwierdzone. Strona kierownictwa 17.09.2026: Żurek, Myrcha (SS), Ejchart, Mazur, Pałka (PS), Kutyła (DG) – zgodne."
+  },
+  {
+   "id": "pl-minister-sprawiedliwosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/1005 § 1 ust. 2: dział sprawiedliwość – topics zgodne; rozporządzenie nie ma załącznika z organami."
+  },
+  {
+   "id": "pl-centralny-zarzad-sluzby-wieziennej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SW (ELI DU/2010/523, t.j. DU/2025/1750) art. 8 ust. 1 pkt 1, art. 10 ust. 1–3 – potwierdzone; M.P. 2024 poz. 1040 cz. I pkt 6."
+  },
+  {
+   "id": "pl-dyrektor-generalny-sluzby-wieziennej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 i art. 64 ust. 1 ustawy o SW potwierdzone."
+  },
+  {
+   "id": "pl-krajowa-szkola-sadownictwa-i-prokuratury",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o KSSiP (ELI DU/2009/157, t.j. DU/2022/217) art. 1 ust. 1–3 – potwierdzone. M.P. 2024 poz. 1040 cz. II pkt 1 (jednostka nadzorowana). kssip.gov.pl i bip.kssip.gov.pl zwracają 403 dla curl i WebFetch (2 próby)."
+  },
+  {
+   "id": "pl-dyrektor-kssip",
+   "status": "unverified",
+   "fixes": {
+    "statusNote": "Nazwisko Dyrektora KSSiP niezweryfikowane: kssip.gov.pl i bip.kssip.gov.pl zwracają HTTP 403 (curl z UA i WebFetch, 17.09.2026). Kopia archiwalna strony (Wayback 2026) podaje jedynie „Dyrektor KSSiP prof. dr hab. Piotr…” (tekst urwany) – niewystarczające do wpisania osoby."
+   },
+   "note": "Art. 12 ust. 1 potwierdzony. Nazwisko nadal niezweryfikowane: kssip.gov.pl 403 (curl z UA, WebFetch, 4 podstrony); kopia w Wayback (2026) podaje tylko „Dyrektor KSSiP prof. dr hab. Piotr…” (urwane) oraz „Zastępca Dyrektora KSSiP ds. organizacyjnych sędzia Michał Kwiatkowski” (22.08.2026). Pozostaje unverified."
+  },
+  {
+   "id": "pl-instytut-wymiaru-sprawiedliwosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024 poz. 1040 cz. I pkt 4 – potwierdzone; ustawa o instytutach badawczych ELI DU/2010/618 (t.j. DU/2026/741) – 200. iws.gov.pl/kierownictwo: Dyrektor dr hab. Piotr Rylski."
+  },
+  {
+   "id": "pl-dyrektor-iws",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "j.w."
+  },
+  {
+   "id": "pl-instytut-ekspertyz-sadowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024 poz. 1040 cz. I pkt 2 – potwierdzone. gov.pl/web/ies/kierownictwo-ies: Dyrektor prof. dr hab. Dariusz Zuba."
+  },
+  {
+   "id": "pl-dyrektor-ies",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "j.w."
+  },
+  {
+   "id": "pl-akademia-wymiaru-sprawiedliwosci",
+   "status": "corrected",
+   "fixes": {
+    "status": "active",
+    "head": "pl-rektor-komendant-aws",
+    "statusNote": "Rektor-Komendant: od 9.09.2026 r. obowiązki Rektora-Komendanta wykonuje dr hab. Sławomir Cudak, prof. AWS (aws.edu.pl, komunikat z 16.09.2026); poprzednio dr Michał Sopiński (wzmianki do 22.06.2026). Wybór Rektora należy do Senatu Uczelni (art. 66a ust. 1 ustawy o SW).",
+    "legalSource": {
+     "title": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej, art. 8 ust. 1 pkt 3a i ust. 1a, art. 13a, art. 66a (Dz.U. 2025 poz. 1750 t.j.)",
+     "url": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+     "act": "DU/2010/523",
+     "article": "art. 8 ust. 1a; art. 13a; art. 66a"
+    }
+   },
+   "note": "Art. 8 ust. 1 pkt 3a i ust. 1a ustawy o SW potwierdzone (uczelnia służb państwowych nadzorowana przez MS); art. 13a ust. 1: „Uczelnią kieruje Rektor”; art. 66a ust. 1: Rektora powołuje Senat Uczelni na 5 lat. Strona aws.edu.pl (17.09.2026), wpis z 16.09.2026: „Dr hab. Sławomir Cudak, prof. AWS, który od 9 września 2026 r. wykonuje obowiązki Rektora-Komendanta AWS, w dniu dzisiejszym objął gabinet Rektora”. Węzeł nie miał stanowiska szefa – dodano pl-rektor-komendant-aws (additions)."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "personId": "pl-czeslaw-mroczek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/kierownictwo-mswia (17.09.2026): nazwisko przy funkcji „Sekretarz Stanu” – zgodne; UUID zdjęcia występuje na tej stronie. Biogram na gov.pl nie podaje daty powołania – startedAt=null poprawnie."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "personId": "pl-tomasz-szymanski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/kierownictwo-mswia (17.09.2026): nazwisko przy funkcji „Sekretarz Stanu” – zgodne; UUID zdjęcia występuje na tej stronie. Biogram na gov.pl nie podaje daty powołania – startedAt=null poprawnie."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "personId": "pl-wieslaw-szczepanski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/kierownictwo-mswia (17.09.2026): nazwisko przy funkcji „Sekretarz Stanu” – zgodne; UUID zdjęcia występuje na tej stronie. Biogram na gov.pl nie podaje daty powołania – startedAt=null poprawnie."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "personId": "pl-wieslaw-lesniakiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/kierownictwo-mswia (17.09.2026): nazwisko przy funkcji „Podsekretarz Stanu” – zgodne; UUID zdjęcia występuje na tej stronie. Biogram na gov.pl nie podaje daty powołania – startedAt=null poprawnie."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "personId": "pl-maciej-duszczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/kierownictwo-mswia (17.09.2026): nazwisko przy funkcji „Podsekretarz Stanu” – zgodne; UUID zdjęcia występuje na tej stronie. Biogram na gov.pl nie podaje daty powołania – startedAt=null poprawnie."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "personId": "pl-katarzyna-jedruszczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/kierownictwo-mswia (17.09.2026): nazwisko przy funkcji „Dyrektor Generalna” – zgodne; UUID zdjęcia występuje na tej stronie. Biogram na gov.pl nie podaje daty powołania – startedAt=null poprawnie."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+   "personId": "pl-magdalena-roguska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/kierownictwo-mswia: Sekretarz Stanu – zgodne. Biogram gov.pl/web/mswia/magdalena-roguska: „30 lipca 2025 r. powołana na stanowisko sekretarza stanu w MSWiA” – data potwierdzona."
+  },
+  {
+   "nodeId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "personId": "pl-marcin-kierwinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/premier/sklad-rady-ministrow: „Marcin Kierwiński – Minister Spraw Wewnętrznych i Administracji” – zgodne. M.P. 2025 poz. 690 (postanowienie Prezydenta z 24.07.2025, nr 1131.28.2025): powołanie z dniem 24.07.2025 – data potwierdzona. UUID zdjęcia nie występuje na stronie składu RM, ale na gov.pl/web/mswia/kierownictwo-mswia przy nazwisku – OK."
+  },
+  {
+   "nodeId": "pl-komendant-glowny-policji",
+   "personId": "pl-marek-boron",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "info.policja.pl/inf/kierownictwo/komendanci: „gen. insp. Marek Boroń – KOMENDANT GŁÓWNY POLICJI”, w biogramie „od 21.03.2024 r. Komendant Główny Policji” – zgodne."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-policji",
+   "personId": "pl-roman-kuster",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "info.policja.pl: „nadinsp. Roman Kuster – I ZASTĘPCA KGP”, „od 20.06.2024 r. I Zastępca Komendanta Głównego Policji” – zgodne."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-policji",
+   "personId": "pl-rafal-kochanczyk",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2024-01-10",
+    "startedAtSource": "https://info.policja.pl/inf/kierownictwo/komendanci"
+   },
+   "note": "info.policja.pl: „nadinsp. dr Rafał Kochańczyk – ZASTĘPCA KGP”; biogram: „od 10.01.2024 r. Zastępca Komendanta Głównego Policji” – data była na stronie, uzupełniono."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-policji",
+   "personId": "pl-tomasz-michulka",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2024-06-20",
+    "startedAtSource": "https://info.policja.pl/inf/kierownictwo/komendanci"
+   },
+   "note": "info.policja.pl: „nadinsp. dr Tomasz Michułka – ZASTĘPCA KGP”; biogram: „od 20.06.2024 r. Zastępca Komendanta Głównego Policji” – data była na stronie, uzupełniono."
+  },
+  {
+   "nodeId": "pl-komendant-glowny-strazy-granicznej",
+   "personId": "pl-robert-bagan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "strazgraniczna.pl/pl/straz-graniczna/kierownictwo-sg: „Komendant Główny Straży Granicznej – gen. dyw. SG Robert Bagan” – zgodne; strona MSWiA (wykaz organów) potwierdza. Brak daty na stronie."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-strazy-granicznej",
+   "personId": "pl-tomasz-michalski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "strazgraniczna.pl kierownictwo-sg: „Zastępca Komendanta Głównego SG – gen. bryg. SG Tomasz Michalski” – zgodne."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-strazy-granicznej",
+   "personId": "pl-grzegorz-niemiec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "strazgraniczna.pl kierownictwo-sg: „Zastępca Komendanta Głównego SG – gen. bryg. SG Grzegorz Niemiec” – zgodne."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-strazy-granicznej",
+   "personId": "pl-wioleta-gorzkowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "strazgraniczna.pl kierownictwo-sg: „Zastępca Komendanta Głównego SG – gen. bryg. SG Wioleta Gorzkowska” – zgodne."
+  },
+  {
+   "nodeId": "pl-komendant-glowny-panstwowej-strazy-pozarnej",
+   "personId": "pl-wojciech-kruczek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/kgpsp/kierownictwo: „nadbryg. Wojciech Kruczek – Komendant Główny PSP” – zgodne; strona MSWiA potwierdza. Brak daty."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+   "personId": "pl-pawel-frysztak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/kgpsp/kierownictwo: „nadbryg. Paweł Frysztak – Zastępca Komendanta Głównego PSP” – zgodne."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+   "personId": "pl-slawomir-sierpatowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/kgpsp/kierownictwo: „nadbryg. Sławomir Sierpatowski – Zastępca Komendanta Głównego PSP” – zgodne."
+  },
+  {
+   "nodeId": "pl-komenda-glowna-panstwowej-strazy-pozarnej",
+   "personId": "pl-grzegorz-szyszko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/kgpsp/kierownictwo: „nadbryg. dr inż. Grzegorz Szyszko – Zastępca Komendanta Głównego PSP” – zgodne."
+  },
+  {
+   "nodeId": "pl-komendant-sop",
+   "personId": "pl-maciej-lewinski",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2026-07-21",
+    "startedAtSource": "https://sop.gov.pl/pl/aktualnosci/1163,Plk-SOP-Maciej-Lewinski-pelniacym-obowiazki-Komendanta-Sluzby-Ochrony-Panstwa.html",
+    "note": "płk SOP; z dniem 21.07.2026 r. powierzono mu pełnienie obowiązków Komendanta SOP (dotychczasowy Zastępca Komendanta SOP). Strona MSWiA (wykaz organów) nadal podaje gen. bryg. SOP Radosława Jaworskiego – nieaktualne."
+   },
+   "note": "sop.gov.pl/pl/kierownictwo-sop/komendant-sop: „pełniący obowiązki – płk SOP Maciej LEWIŃSKI” – zgodne. Komunikat SOP nr 1163: „Z dniem 21 lipca 2026 r. pełnienie obowiązków Komendanta Służby Ochrony Państwa powierzono dotychczasowemu Zastępcy Komendanta SOP, płk. Maciejowi Lewińskiemu” – data uzupełniona."
+  },
+  {
+   "nodeId": "pl-szef-urzedu-do-spraw-cudzoziemcow",
+   "personId": "pl-tomasz-cytrynowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/udsc/kierownictwo-udsc: „Tomasz Cytrynowicz – Szef Urzędu do Spraw Cudzoziemców” – zgodne; strona MSWiA potwierdza. Biogram bez daty powołania."
+  },
+  {
+   "nodeId": "pl-urzad-do-spraw-cudzoziemcow",
+   "personId": "pl-arkadiusz-szymanski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/udsc/kierownictwo-udsc: „Arkadiusz Szymański – Dyrektor Generalny UdSC” – zgodne."
+  },
+  {
+   "nodeId": "pl-przewodniczacy-rady-do-spraw-uchodzcow",
+   "personId": "pl-aleksandra-ziuzia",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": null,
+    "note": "Członek Rady VI kadencji (Rada powołana 28.03.2024 r.); przewodnicząca wybrana przez Radę (art. 89u ust. 1) – data wyboru na funkcję przewodniczącej nie jest podana na stronie Rady."
+   },
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Aleksandra ZIUZIA – Przewodnicząca Rady ds. Uchodźców, członek Rady V kadencji” – nazwisko i funkcja zgodne. Data 2024-03-28 to data powołania Rady (członkostwo), nie data wyboru na przewodniczącą – strona jej nie podaje; startedAt → null."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-jolanta-zaborska",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": null,
+    "note": "Członek Rady VI kadencji (Rada powołana 28.03.2024 r.), wiceprzewodnicząca II–VI kadencji; data wyboru na wiceprzewodniczącą VI kadencji nie jest podana na stronie Rady."
+   },
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Jolanta ZABORSKA – Wiceprzewodnicząca Rady ds. Uchodźców…” – zgodne. Data 28.03.2024 to data powołania Rady, nie wyboru na wiceprzewodniczącą – startedAt → null."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-szymon-cheba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Szymon CHEBA – członek Rady ds. Uchodźców” – zgodne (brak daty przy nazwisku; 28.03.2024 = data powołania Rady VI kadencji podana w nagłówku strony – akceptowalne). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-beata-dzienis",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Beata DZIENIS – członek Rady ds. Uchodźców” – zgodne (brak daty przy nazwisku; 28.03.2024 = data powołania Rady VI kadencji podana w nagłówku strony – akceptowalne). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-agnieszka-fraczkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Agnieszka FRĄCZKIEWICZ – członek Rady ds. Uchodźców” – zgodne (data powołania podana wprost przy nazwisku). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-jakub-jamka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Jakub JAMKA – członek Rady ds. Uchodźców” – zgodne (data powołania podana wprost przy nazwisku). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-anita-janusz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Anita JANUSZ – członek Rady ds. Uchodźców” – zgodne (brak daty przy nazwisku; 28.03.2024 = data powołania Rady VI kadencji podana w nagłówku strony – akceptowalne). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-jaroslaw-lysio",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Jarosław ŁYSIO – członek Rady ds. Uchodźców” – zgodne (brak daty przy nazwisku; 28.03.2024 = data powołania Rady VI kadencji podana w nagłówku strony – akceptowalne). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-lukasz-paszka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Łukasz PASZKA – członek Rady ds. Uchodźców” – zgodne (data powołania podana wprost przy nazwisku). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-joanna-skupiewska-morawska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Joanna SKUPIEWSKA-MORAWSKA – członek Rady ds. Uchodźców” – zgodne (brak daty przy nazwisku; 28.03.2024 = data powołania Rady VI kadencji podana w nagłówku strony – akceptowalne). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-eligiusz-stachniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Eligiusz STACHNIAK – członek Rady ds. Uchodźców” – zgodne (data powołania podana wprost przy nazwisku). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-rafal-swic",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Rafał ŚWIĆ – członek Rady ds. Uchodźców” – zgodne (brak daty przy nazwisku; 28.03.2024 = data powołania Rady VI kadencji podana w nagłówku strony – akceptowalne). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-malgorzata-terlikowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Małgorzata TERLIKOWSKA – członek Rady ds. Uchodźców” – zgodne (data powołania podana wprost przy nazwisku). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-adam-urbisz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Adam URBISZ – członek Rady ds. Uchodźców” – zgodne (brak daty przy nazwisku; 28.03.2024 = data powołania Rady VI kadencji podana w nagłówku strony – akceptowalne). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-uchodzcow",
+   "personId": "pl-ewa-yoriadis",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji (tytuł strony: „Skład Rady do Spraw Uchodźców VI kadencji”): „Ewa YORIADIS – członek Rady ds. Uchodźców” – zgodne (brak daty przy nazwisku; 28.03.2024 = data powołania Rady VI kadencji podana w nagłówku strony – akceptowalne). Odwołani członkowie (Cichomski 21.10.2024, Nagler 31.03.2025) poprawnie pominięci."
+  },
+  {
+   "nodeId": "pl-dyrektor-zer-mswia",
+   "personId": "pl-olga-bulhak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/zermswia/kierownictwo: „Dyrektor Zakładu – Olga Bułhak” – zgodne; strona MSWiA potwierdza."
+  },
+  {
+   "nodeId": "pl-inspektor-nadzoru-wewnetrznego",
+   "personId": "pl-miroslaw-grabowiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra: „Inspektor Nadzoru Wewnętrznego – Inspektor: Mirosław Grabowiecki” – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-nist",
+   "personId": "pl-pawel-swianiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra: „NIST – Dyrektor: prof. dr hab. Paweł Swianiewicz” – zgodne; nist.gov.pl (II kw. 2026) potwierdza."
+  },
+  {
+   "nodeId": "pl-dyrektor-cpd-mswia",
+   "personId": "pl-krystian-ciecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra: „CPD MSWiA – Dyrektor: Krystian Ciećka” – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-zzm-mswia",
+   "personId": "pl-tomasz-karolczuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra: „ZZM MSWiA – Dyrektor: Tomasz Karolczuk” – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-cope-mswia",
+   "personId": "pl-mariusz-kasprzyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra: „COPE MSWiA – Dyrektor: Mariusz Kasprzyk” – zgodne."
+  },
+  {
+   "nodeId": "pl-minister-sprawiedliwosci",
+   "personId": "pl-waldemar-zurek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/premier/sklad-rady-ministrow: „Waldemar Żurek – Minister Sprawiedliwości” – zgodne. M.P. 2025 poz. 690: „Pana Waldemara Jana Żurka – na urząd Ministra Sprawiedliwości” z dniem 24.07.2025 – data potwierdzona. UUID zdjęcia występuje na gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa."
+  },
+  {
+   "nodeId": "pl-ministerstwo-sprawiedliwosci",
+   "personId": "pl-arkadiusz-myrcha",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa (17.09.2026): nazwisko przy funkcji „Sekretarz Stanu” – zgodne. Biogram bez daty powołania."
+  },
+  {
+   "nodeId": "pl-ministerstwo-sprawiedliwosci",
+   "personId": "pl-maria-ejchart",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa (17.09.2026): nazwisko przy funkcji „Podsekretarz Stanu” – zgodne. Biogram bez daty powołania."
+  },
+  {
+   "nodeId": "pl-ministerstwo-sprawiedliwosci",
+   "personId": "pl-dariusz-mazur",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa (17.09.2026): nazwisko przy funkcji „Podsekretarz Stanu” – zgodne. Biogram bez daty powołania."
+  },
+  {
+   "nodeId": "pl-ministerstwo-sprawiedliwosci",
+   "personId": "pl-slawomir-palka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa (17.09.2026): nazwisko przy funkcji „Podsekretarz stanu” – zgodne. Biogram bez daty powołania."
+  },
+  {
+   "nodeId": "pl-ministerstwo-sprawiedliwosci",
+   "personId": "pl-wojciech-kutyla",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/sprawiedliwosc/kierownictwo-ministerstwa (17.09.2026): nazwisko przy funkcji „Dyrektor Generalny Ministerstwa Sprawiedliwości” – zgodne. Biogram bez daty powołania."
+  },
+  {
+   "nodeId": "pl-dyrektor-generalny-sluzby-wieziennej",
+   "personId": "pl-renata-niziolek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sw.gov.pl/strona/kierownictwo: „DYREKTOR GENERALNY SŁUŻBY WIĘZIENNEJ – płk Renata Niziołek” – zgodne. Brak daty."
+  },
+  {
+   "nodeId": "pl-centralny-zarzad-sluzby-wieziennej",
+   "personId": "pl-stanislaw-kotula",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sw.gov.pl/strona/kierownictwo: „ZASTĘPCA DYREKTORA GENERALNEGO SW – płk Stanisław Kotula” – zgodne."
+  },
+  {
+   "nodeId": "pl-centralny-zarzad-sluzby-wieziennej",
+   "personId": "pl-bartlomiej-turbiarz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sw.gov.pl/strona/kierownictwo: „ZASTĘPCA DYREKTORA GENERALNEGO SW – płk Bartłomiej Turbiarz” – zgodne."
+  },
+  {
+   "nodeId": "pl-centralny-zarzad-sluzby-wieziennej",
+   "personId": "pl-arkadiusz-sujecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sw.gov.pl/strona/kierownictwo: „ZASTĘPCA DYREKTORA GENERALNEGO SW – ppłk Arkadiusz Sujecki” – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-iws",
+   "personId": "pl-piotr-rylski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "iws.gov.pl/kierownictwo/: „Dr hab. Piotr Rylski – Dyrektor Instytutu Wymiaru Sprawiedliwości” – zgodne."
+  },
+  {
+   "nodeId": "pl-instytut-wymiaru-sprawiedliwosci",
+   "personId": "pl-maciej-domanski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "iws.gov.pl/kierownictwo/: „Dr hab. Maciej Domański – Zastępca Dyrektora IWS” – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-ies",
+   "personId": "pl-dariusz-zuba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/ies/kierownictwo-ies: „Dyrektor Instytutu – prof. dr hab. Dariusz Zuba” – zgodne."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-narodowy-instytut-samorzadu-terytorialnego--dept-head--dyrektor-nist",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--narodowy-instytut-samorzadu-terytorialnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 33 ust. 1d potwierdzony (t.j. DU/2025/780); jednostka w zał. cz. I do M.P. 2023 poz. 1128 – potwierdzone; ELI nie zawiera nowszego obwieszczenia MSWiA (ostatnie 2023)."
+  },
+  {
+   "id": "e-centrum-personalizacji-dokumentow-mswia--dept-head--dyrektor-cpd-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--centrum-personalizacji-dokumentow-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 33 ust. 1d potwierdzony (t.j. DU/2025/780); jednostka w zał. cz. I do M.P. 2023 poz. 1128 – potwierdzone; ELI nie zawiera nowszego obwieszczenia MSWiA (ostatnie 2023)."
+  },
+  {
+   "id": "e-zarzad-zasobow-mieszkaniowych-mswia--dept-head--dyrektor-zzm-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--zarzad-zasobow-mieszkaniowych-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 33 ust. 1d potwierdzony (t.j. DU/2025/780); jednostka w zał. cz. I do M.P. 2023 poz. 1128 – potwierdzone; ELI nie zawiera nowszego obwieszczenia MSWiA (ostatnie 2023)."
+  },
+  {
+   "id": "e-centrum-obslugi-projektow-europejskich-mswia--dept-head--dyrektor-cope-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--centrum-obslugi-projektow-europejskich-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 33 ust. 1d potwierdzony (t.j. DU/2025/780); jednostka w zał. cz. I do M.P. 2023 poz. 1128 – potwierdzone; ELI nie zawiera nowszego obwieszczenia MSWiA (ostatnie 2023)."
+  },
+  {
+   "id": "e-ministerstwo-spraw-wewnetrznych-i-administracji--dept-head--minister-spraw-wewnetrznych-i-administracji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-prezydent--appoints--min-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 154 ust. 1 / art. 161 – standardowa podstawa; M.P. 2025 poz. 690 powołuje się wprost na art. 161 („na wniosek Prezesa Rady Ministrów”). Kierunek Prezydent→minister OK."
+  },
+  {
+   "id": "e-prm--nominates--min-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 161: zmiany w składzie RM na wniosek PRM – potwierdzone treścią M.P. 2025 poz. 690."
+  },
+  {
+   "id": "e-min-mswia--ex-officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1 – minister z urzędu członkiem RM; kierunek minister→RM OK."
+  },
+  {
+   "id": "e-prm--appoints--mswia-sekretarze-stanu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM (t.j. DU/2025/780) art. 37 ust. 3: „Sekretarza stanu i podsekretarza stanu powołuje Prezes Rady Ministrów na wniosek właściwego ministra” – potwierdzone. Krawędź prowadzi do węzła ministerstwa (brak węzłów stanowisk SS/PS) – akceptowalne, confidence medium poprawne."
+  },
+  {
+   "id": "e-min-mswia--nominates--mswia-sekretarze-stanu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM (t.j. DU/2025/780) art. 37 ust. 3: „Sekretarza stanu i podsekretarza stanu powołuje Prezes Rady Ministrów na wniosek właściwego ministra” – potwierdzone. Krawędź prowadzi do węzła ministerstwa (brak węzłów stanowisk SS/PS) – akceptowalne, confidence medium poprawne."
+  },
+  {
+   "id": "e-min-mswia--appoints--mswia-dyrektor-generalny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o służbie cywilnej (t.j. DU/2026/590) art. 53a ust. 1 w zw. z art. 52 pkt 1: DG powołuje właściwy minister – potwierdzone."
+  },
+  {
+   "id": "e-ministerstwo-sprawiedliwosci--dept-head--minister-sprawiedliwosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-prezydent--appoints--min-ms",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 154 ust. 1 / art. 161 – standardowa podstawa; M.P. 2025 poz. 690 powołuje się wprost na art. 161 („na wniosek Prezesa Rady Ministrów”). Kierunek Prezydent→minister OK."
+  },
+  {
+   "id": "e-prm--nominates--min-ms",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 161: zmiany w składzie RM na wniosek PRM – potwierdzone treścią M.P. 2025 poz. 690."
+  },
+  {
+   "id": "e-min-ms--ex-officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1 – minister z urzędu członkiem RM; kierunek minister→RM OK."
+  },
+  {
+   "id": "e-prm--appoints--ms-sekretarze-stanu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM (t.j. DU/2025/780) art. 37 ust. 3: „Sekretarza stanu i podsekretarza stanu powołuje Prezes Rady Ministrów na wniosek właściwego ministra” – potwierdzone. Krawędź prowadzi do węzła ministerstwa (brak węzłów stanowisk SS/PS) – akceptowalne, confidence medium poprawne."
+  },
+  {
+   "id": "e-min-ms--nominates--ms-sekretarze-stanu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM (t.j. DU/2025/780) art. 37 ust. 3: „Sekretarza stanu i podsekretarza stanu powołuje Prezes Rady Ministrów na wniosek właściwego ministra” – potwierdzone. Krawędź prowadzi do węzła ministerstwa (brak węzłów stanowisk SS/PS) – akceptowalne, confidence medium poprawne."
+  },
+  {
+   "id": "e-min-ms--appoints--ms-dyrektor-generalny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o służbie cywilnej (t.j. DU/2026/590) art. 53a ust. 1 w zw. z art. 52 pkt 1: DG powołuje właściwy minister – potwierdzone."
+  },
+  {
+   "id": "e-min-sprawiedliwosci--ex-officio--prokurator-generalny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo o prokuraturze (DU/2016/177) art. 1 § 2: „Urząd Prokuratora Generalnego sprawuje Minister Sprawiedliwości” – potwierdzone; kierunek minister→PG (kanon) OK."
+  },
+  {
+   "id": "e-komenda-glowna-policji--dept-head--komendant-glowny-policji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--komendant-glowny-policji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 1: KGP podległy ministrowi właściwemu ds. wewnętrznych – potwierdzone; oversees minister→KGP OK."
+  },
+  {
+   "id": "e-prm--appoints--komendant-glowny-policji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o Policji art. 5 ust. 3 (t.j. DU/2025/636): „Komendanta Głównego Policji powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych” – potwierdzone."
+  },
+  {
+   "id": "e-min-mswia--nominates--komendant-glowny-policji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o Policji art. 5 ust. 3 (t.j. DU/2025/636): „Komendanta Głównego Policji powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw wewnętrznych” – potwierdzone."
+  },
+  {
+   "id": "e-komenda-glowna-strazy-granicznej--dept-head--komendant-glowny-strazy-granicznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--komendant-glowny-sg",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1: KGSG centralnym organem podległym MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--komendant-glowny-sg",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SG art. 3 ust. 2 (t.j. DU/2026/367): powołuje PRM na wniosek MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-min-mswia--nominates--komendant-glowny-sg",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SG art. 3 ust. 2 (t.j. DU/2026/367): powołuje PRM na wniosek MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-komenda-glowna-panstwowej-strazy-pozarnej--dept-head--komendant-glowny-panstwowej-strazy-pozarnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--komendant-glowny-psp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 ust. 1: KG PSP podległy MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--komendant-glowny-psp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PSP art. 9 ust. 2 (t.j. DU/2025/1312): powołuje spośród oficerów PSP PRM na wniosek MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-min-mswia--nominates--komendant-glowny-psp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PSP art. 9 ust. 2 (t.j. DU/2025/1312): powołuje spośród oficerów PSP PRM na wniosek MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-sluzba-ochrony-panstwa--dept-head--komendant-sop",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--komendant-sop",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 ust. 1: Komendant SOP centralnym organem podległym MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--komendant-sop",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 ust. 1 ustawy o SOP (t.j. DU/2025/34): powołuje PRM w uzgodnieniu z Prezydentem, na wniosek MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-min-mswia--nominates--komendant-sop",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 ust. 1 ustawy o SOP (t.j. DU/2025/34): powołuje PRM w uzgodnieniu z Prezydentem, na wniosek MSWiA – potwierdzone."
+  },
+  {
+   "id": "e-prezydent--confirms--komendant-sop",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 ust. 1 ustawy o SOP: PRM powołuje „w uzgodnieniu z Prezydentem RP” – typ confirms (zgoda) uzasadniony, confidence medium poprawne."
+  },
+  {
+   "id": "e-urzad-do-spraw-cudzoziemcow--dept-head--szef-urzedu-do-spraw-cudzoziemcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--szef-udsc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 16 ust. 2: „Minister właściwy do spraw wewnętrznych sprawuje nadzór nad Szefem Urzędu” – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--szef-udsc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 17 ust. 1 ustawy o cudzoziemcach (t.j. DU/2025/1079): PRM powołuje Szefa Urzędu na wniosek MSWiA spośród osób z naboru – potwierdzone."
+  },
+  {
+   "id": "e-min-mswia--nominates--szef-udsc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 17 ust. 1 ustawy o cudzoziemcach (t.j. DU/2025/1079): PRM powołuje Szefa Urzędu na wniosek MSWiA spośród osób z naboru – potwierdzone."
+  },
+  {
+   "id": "e-zaklad-emerytalno-rentowy-mswia--dept-head--dyrektor-zer-mswia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--dyrektor-zer",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. MSWiA DU/2024/550 § 2 ust. 1–2 – potwierdzone (Dyrektora Zakładu powołuje i odwołuje minister właściwy ds. wewnętrznych); organ w zał. do DU/2025/999 pkt 1."
+  },
+  {
+   "id": "e-min-mswia--appoints--dyrektor-zer",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. MSWiA DU/2024/550 § 2 ust. 1–2 – potwierdzone (Dyrektora Zakładu powołuje i odwołuje minister właściwy ds. wewnętrznych); organ w zał. do DU/2025/999 pkt 1."
+  },
+  {
+   "id": "e-biuro-nadzoru-wewnetrznego--dept-head--inspektor-nadzoru-wewnetrznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-mswia--oversees--inspektor-nadzoru-wewnetrznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11a ust. 1–2: Inspektor NW podlega ministrowi – potwierdzone."
+  },
+  {
+   "id": "e-min-mswia--appoints--inspektor-nadzoru-wewnetrznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa DU/1996/491 art. 11b ust. 1 (t.j. DU/2025/529): Inspektora NW powołuje i odwołuje minister właściwy ds. wewnętrznych – potwierdzone."
+  },
+  {
+   "id": "e-rada-do-spraw-uchodzcow--dept-head--przewodniczacy-rady-do-spraw-uchodzcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-rada-uchodzcow--office--przewodniczacy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 89u ust. 1: Rada wybiera przewodniczącego spośród członków w głosowaniu tajnym – potwierdzone."
+  },
+  {
+   "id": "e-rada-uchodzcow--elects--przewodniczacy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 89u ust. 1: Rada wybiera przewodniczącego spośród członków w głosowaniu tajnym – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--rada-uchodzcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 89r ust. 1 (t.j. DU/2026/862): 12 członków powołuje PRM na 5 lat – potwierdzone; obecnie 15 członków (3 dodatkowych z art. 89r ust. 4, powołani 15.04.2025)."
+  },
+  {
+   "id": "e-min-spraw-zagranicznych--nominates--rada-uchodzcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 89r ust. 3: PRM powołuje po 4 osoby spośród kandydatów MSZ i MS (każdy przedstawia 8) – potwierdzone; seatsAppointed=4 OK."
+  },
+  {
+   "id": "e-min-sprawiedliwosci--nominates--rada-uchodzcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 89r ust. 3: PRM powołuje po 4 osoby spośród kandydatów MSZ i MS (każdy przedstawia 8) – potwierdzone; seatsAppointed=4 OK."
+  },
+  {
+   "id": "e-kprm--administers--rada-uchodzcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 89zb ust. 1: obsługę Rady zapewnia KPRM – potwierdzone; administers KPRM→Rada OK."
+  },
+  {
+   "id": "e-centralny-zarzad-sluzby-wieziennej--dept-head--dyrektor-generalny-sluzby-wieziennej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-ms--oversees--dyrektor-generalny-sw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1: DG SW podległy Ministrowi Sprawiedliwości – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--dyrektor-generalny-sw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SW art. 64 ust. 1 (t.j. DU/2025/1750): DG powołuje i odwołuje PRM na wniosek MS – potwierdzone."
+  },
+  {
+   "id": "e-min-ms--nominates--dyrektor-generalny-sw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SW art. 64 ust. 1 (t.j. DU/2025/1750): DG powołuje i odwołuje PRM na wniosek MS – potwierdzone."
+  },
+  {
+   "id": "e-krajowa-szkola-sadownictwa-i-prokuratury--dept-head--dyrektor-kssip",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-ms--oversees--kssip",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 ust. 3: MS sprawuje nadzór nad KSSiP w zakresie zgodności z ustawą i statutem – potwierdzone; M.P. 2024 poz. 1040 cz. II pkt 1."
+  },
+  {
+   "id": "e-min-ms--appoints--dyrektor-kssip",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o KSSiP art. 12 ust. 1 (t.j. DU/2022/217): Dyrektora powołuje MS na 5 lat po opinii KRS i KRP – potwierdzone."
+  },
+  {
+   "id": "e-krs--advises--dyrektor-kssip",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 12 ust. 1: opinia KRS przed powołaniem Dyrektora – przepis potwierdzony; typ advises to przybliżenie (opinia niewiążąca, art. 12 ust. 2 – milczenie = opinia pozytywna). Uwaga: identyczną rolę ma Krajowa Rada Prokuratorów przy PG (brak węzła)."
+  },
+  {
+   "id": "e-instytut-wymiaru-sprawiedliwosci--dept-head--dyrektor-iws",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-ms--oversees--iws",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1d – wykaz jednostek podległych MS (M.P. 2024 poz. 1040, zał. cz. I pkt 4)"
+   },
+   "note": "M.P. 2024 poz. 1040 zał. cz. I: pkt 4 = Instytut Wymiaru Sprawiedliwości (pkt 2 = IES) – cite uściślony."
+  },
+  {
+   "id": "e-instytut-ekspertyz-sadowych--dept-head--dyrektor-ies",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf; kierunek organizacja→stanowisko."
+  },
+  {
+   "id": "e-min-ms--oversees--ies",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o Radzie Ministrów art. 33 ust. 1d – wykaz jednostek podległych MS (M.P. 2024 poz. 1040, zał. cz. I pkt 2)"
+   },
+   "note": "M.P. 2024 poz. 1040 zał. cz. I: pkt 2 = Instytut Ekspertyz Sądowych im. prof. dra Jana Sehna w Krakowie – cite uściślony."
+  },
+  {
+   "id": "e-min-ms--oversees--aws",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8 ust. 1a ustawy o SW: uczelnia nadzorowana przez MS – potwierdzone; także M.P. 2024 poz. 1040 cz. II pkt 2."
+  }
+ ],
+ "additions": {
+  "nodes": {
+   "pl-rektor-komendant-aws": {
+    "id": "pl-rektor-komendant-aws",
+    "type": "dept_head",
+    "subtype": null,
+    "sector": "executive",
+    "ring": "satellite",
+    "parent": "pl-ministerstwo-sprawiedliwosci",
+    "name": "Rektor-Komendant Akademii Wymiaru Sprawiedliwości",
+    "shortName": "Rektor-Komendant AWS",
+    "description": "Kieruje Akademią Wymiaru Sprawiedliwości – uczelnią służb państwowych nadzorowaną przez Ministra Sprawiedliwości (art. 13a ust. 1 ustawy o Służbie Więziennej). Powoływany przez Senat Uczelni na pięcioletnią kadencję spośród pracowników Uczelni lub funkcjonariuszy ze stopniem co najmniej doktora (art. 66a ust. 1).",
+    "aliases": [
+     "Rektor AWS"
+    ],
+    "legalSource": {
+     "title": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej, art. 13a ust. 1 i art. 66a ust. 1 (Dz.U. 2025 poz. 1750 t.j.)",
+     "url": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+     "act": "DU/2010/523",
+     "article": "art. 13a ust. 1; art. 66a ust. 1"
+    },
+    "officialUrl": "https://aws.edu.pl",
+    "bipUrl": null,
+    "regon": null,
+    "budgetPart": null,
+    "level": 2,
+    "head": null,
+    "headOf": "pl-akademia-wymiaru-sprawiedliwosci",
+    "seatsCount": 1,
+    "status": "active",
+    "statusNote": "Od 9.09.2026 r. obowiązki Rektora-Komendanta wykonuje dr hab. Sławomir Cudak, prof. AWS (wykonujący obowiązki – nie powołany przez Senat); poprzednio Rektorem-Komendantem był dr Michał Sopiński (wzmianki na aws.edu.pl do 22.06.2026).",
+    "topics": [],
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-slawomir-cudak",
+       "name": "Sławomir Cudak",
+       "positionId": "pl-rektor-komendant-aws",
+       "positionName": "wykonujący obowiązki Rektora-Komendanta Akademii Wymiaru Sprawiedliwości",
+       "type": "appointed",
+       "startedAt": "2026-09-09",
+       "acting": true,
+       "status": "acting",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://aws.edu.pl/dr-hab-slawomir-cudak-prof-aws-wykonujacy-obowiazki-rektora-komendanta-objal-gabinet-rektora/",
+       "startedAtSource": "https://aws.edu.pl/dr-hab-slawomir-cudak-prof-aws-wykonujacy-obowiazki-rektora-komendanta-objal-gabinet-rektora/",
+       "note": "dr hab., prof. AWS; komunikat AWS z 16.09.2026: „od 9 września 2026 r. wykonuje obowiązki Rektora-Komendanta AWS”."
+      }
+     ]
+    },
+    "employeeCount": {
+     "actual": null,
+     "budget": null,
+     "source": null
+    },
+    "provenance": {
+     "sources": [
+      "https://aws.edu.pl/dr-hab-slawomir-cudak-prof-aws-wykonujacy-obowiazki-rektora-komendanta-objal-gabinet-rektora/",
+      "https://eli.gov.pl/eli/DU/2025/1750/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "medium"
+    }
+   },
+   "pl-rzadowa-agencja-rezerw-strategicznych": {
+    "id": "pl-rzadowa-agencja-rezerw-strategicznych",
+    "type": "department",
+    "subtype": "executive_agency",
+    "sector": "executive",
+    "ring": "satellite",
+    "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+    "name": "Rządowa Agencja Rezerw Strategicznych",
+    "shortName": "RARS",
+    "description": "Agencja wykonawcza (art. 30 ust. 1 ustawy z 17.12.2020 r. o rezerwach strategicznych) utrzymująca rezerwy strategiczne i zapasy interwencyjne ropy i paliw oraz realizująca zadania w sytuacjach kryzysowych. Działalność Agencji nadzoruje minister właściwy do spraw wewnętrznych (art. 30 ust. 4); statut nadaje MSWiA (art. 33 ust. 2).",
+    "aliases": [
+     "RARS",
+     "Agencja Rezerw Strategicznych",
+     "ARS"
+    ],
+    "legalSource": {
+     "title": "Ustawa z dnia 17 grudnia 2020 r. o rezerwach strategicznych, art. 30 (Dz.U. 2026 poz. 733 t.j.)",
+     "url": "https://eli.gov.pl/eli/DU/2021/255/ogl",
+     "act": "DU/2021/255",
+     "article": "art. 30"
+    },
+    "officialUrl": "https://rars.gov.pl",
+    "bipUrl": "https://www.gov.pl/web/rars",
+    "regon": null,
+    "budgetPart": null,
+    "level": 2,
+    "head": "pl-prezes-rars",
+    "headOf": null,
+    "seatsCount": 0,
+    "status": "active",
+    "statusNote": null,
+    "topics": [],
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-andrzej-hawryluk",
+       "name": "Andrzej Hawryluk",
+       "positionId": null,
+       "positionName": "Zastępca Prezesa Rządowej Agencji Rezerw Strategicznych",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/rars/kierownictwo",
+       "startedAtSource": null,
+       "note": null
+      },
+      {
+       "id": "pl-krzysztof-pietrzykowski",
+       "name": "Krzysztof Pietrzykowski",
+       "positionId": null,
+       "positionName": "Zastępca Prezesa Rządowej Agencji Rezerw Strategicznych",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/rars/kierownictwo",
+       "startedAtSource": null,
+       "note": null
+      }
+     ]
+    },
+    "employeeCount": {
+     "actual": null,
+     "budget": null,
+     "source": null
+    },
+    "provenance": {
+     "sources": [
+      "https://www.gov.pl/web/rars/kierownictwo",
+      "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra",
+      "https://eli.gov.pl/eli/DU/2026/733/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "pl-prezes-rars": {
+    "id": "pl-prezes-rars",
+    "type": "dept_head",
+    "subtype": null,
+    "sector": "executive",
+    "ring": "satellite",
+    "parent": "pl-ministerstwo-spraw-wewnetrznych-i-administracji",
+    "name": "Prezes Rządowej Agencji Rezerw Strategicznych",
+    "shortName": "Prezes RARS",
+    "description": "Organ Agencji kierujący jej działalnością i reprezentujący ją na zewnątrz (art. 34 ust. 1 i 4 ustawy o rezerwach strategicznych). Powoływany przez Prezesa Rady Ministrów spośród osób wyłonionych w otwartym i konkurencyjnym naborze, na wniosek ministra właściwego do spraw wewnętrznych (art. 34 ust. 2).",
+    "aliases": [
+     "Prezes ARS"
+    ],
+    "legalSource": {
+     "title": "Ustawa z dnia 17 grudnia 2020 r. o rezerwach strategicznych, art. 34 ust. 1–2 (Dz.U. 2026 poz. 733 t.j.)",
+     "url": "https://eli.gov.pl/eli/DU/2021/255/ogl",
+     "act": "DU/2021/255",
+     "article": "art. 34 ust. 1–2"
+    },
+    "officialUrl": "https://rars.gov.pl",
+    "bipUrl": null,
+    "regon": null,
+    "budgetPart": null,
+    "level": 2,
+    "head": null,
+    "headOf": "pl-rzadowa-agencja-rezerw-strategicznych",
+    "seatsCount": 1,
+    "status": "active",
+    "statusNote": null,
+    "topics": [],
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-jan-rajchel",
+       "name": "Jan Rajchel",
+       "positionId": "pl-prezes-rars",
+       "positionName": "Prezes Rządowej Agencji Rezerw Strategicznych",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/rars/kierownictwo",
+       "startedAtSource": null,
+       "note": "Nazwisko potwierdzone także na stronie MSWiA (wykaz organów i jednostek, stan 17.09.2026). Data powołania nie podana na stronie."
+      }
+     ]
+    },
+    "employeeCount": {
+     "actual": null,
+     "budget": null,
+     "source": null
+    },
+    "provenance": {
+     "sources": [
+      "https://www.gov.pl/web/rars/kierownictwo",
+      "https://eli.gov.pl/eli/DU/2026/733/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   }
+  },
+  "edges": {
+   "e-aws--dept-head--rektor-komendant-aws": {
+    "id": "e-aws--dept-head--rektor-komendant-aws",
+    "type": "dept_head",
+    "fromId": "pl-akademia-wymiaru-sprawiedliwosci",
+    "toId": "pl-rektor-komendant-aws",
+    "cite": "Ustawa o Służbie Więziennej art. 13a ust. 1 (Uczelnią kieruje Rektor)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2010/523/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2025/1750/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-rars--dept-head--prezes-rars": {
+    "id": "e-rars--dept-head--prezes-rars",
+    "type": "dept_head",
+    "fromId": "pl-rzadowa-agencja-rezerw-strategicznych",
+    "toId": "pl-prezes-rars",
+    "cite": "Ustawa o rezerwach strategicznych art. 34 ust. 1 i 4",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2021/255/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2026/733/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-min-mswia--oversees--rars": {
+    "id": "e-min-mswia--oversees--rars",
+    "type": "oversees",
+    "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+    "toId": "pl-rzadowa-agencja-rezerw-strategicznych",
+    "cite": "Ustawa z dnia 17 grudnia 2020 r. o rezerwach strategicznych art. 30 ust. 4 (minister właściwy do spraw wewnętrznych nadzoruje działalność Agencji)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2021/255/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2026/733/ogl",
+      "https://www.gov.pl/web/mswia/organy-i-jednostki-organizacyjne-podlegle-lub-nadzorowane-przez-ministra"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-prm--appoints--prezes-rars": {
+    "id": "e-prm--appoints--prezes-rars",
+    "type": "appoints",
+    "fromId": "pl-prezes-rady-ministrow",
+    "toId": "pl-prezes-rars",
+    "cite": "Ustawa z dnia 17 grudnia 2020 r. o rezerwach strategicznych art. 34 ust. 2–3",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2021/255/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2026/733/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-min-mswia--nominates--prezes-rars": {
+    "id": "e-min-mswia--nominates--prezes-rars",
+    "type": "nominates",
+    "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+    "toId": "pl-prezes-rars",
+    "cite": "Ustawa z dnia 17 grudnia 2020 r. o rezerwach strategicznych art. 34 ust. 2 (na wniosek ministra właściwego do spraw wewnętrznych)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2021/255/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2026/733/ogl"
+     ],
+     "confidence": "high"
+    }
+   }
+  }
+ },
+ "missing": [
+  "Dyrektor KSSiP – nazwisko nieustalone: kssip.gov.pl i bip.kssip.gov.pl odpowiadają 403 na curl (różne UA) i WebFetch; Wayback (2026) ma tylko urwany tekst „Dyrektor KSSiP prof. dr hab. Piotr…”, podstrona /node/10200 niezarchiwizowana. Do domknięcia ręcznie w przeglądarce.",
+  "Komendant SOP – stanowisko obsadzone tylko przez p.o. (płk Maciej Lewiński od 21.07.2026); brak w źródłach daty/aktu odwołania gen. bryg. Radosława Jaworskiego (strona MSWiA nadal go wymienia).",
+  "Obwieszczenie MSWiA o wykazie jednostek – w ELI najnowsze to M.P. 2023 poz. 1128 (sprzed rozp. DU/2025/999, które dodało dział wyznania religijne i mniejszości); wykaz może być nieaktualny, ale nowszego brak.",
+  "Daty powołania sekretarzy/podsekretarzy stanu MSWiA i MS oraz DG (poza Roguską) – biogramy gov.pl nie podają dat; startedAt=null pozostaje poprawne.",
+  "Jednostki podległe MS z M.P. 2024 poz. 1040 cz. I pominięte przez autora: Instytut Ekspertyz Ekonomicznych i Finansowych w Łodzi (pkt 1), Instytut Ekspertyz Medycznych w Łodzi (pkt 3), Centrum Cyberbezpieczeństwa w likwidacji (pkt 5) – do rozważenia w kolejnej rundzie.",
+  "Jednostki nadzorowane MSWiA z M.P. 2023 poz. 1128 cz. II (Akademia Policji, Akademia Pożarnicza, WSSG, MORATEX, CNBOP-PIB, PIM MSWiA, 28 SP ZOZ) – świadomie pominięte; nazwiska rektorów/dyrektorów są na stronie MSWiA (Malasińska-Nagórny, Klimczak, Boćko, Struszczyk, Janik).",
+  "Konwencja: wszystkie węzły dept_head w pierścieniu satellite mają parent (wbrew regule „stanowisko NIE ma parent”), ale walidator wymaga parent przy ring=satellite i identycznie zrobiono w chunkach G1/G3/G4/konstytucyjne – nie korygowano, wymaga decyzji globalnej.",
+  "Rada ds. Uchodźców: krawędź office i elects do przewodniczącego dublują się semantycznie (obie do tego samego węzła) – dopuszczalne wg schematu, nie korygowano."
+ ]
+}

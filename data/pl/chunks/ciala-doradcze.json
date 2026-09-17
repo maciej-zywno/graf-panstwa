@@ -1,0 +1,3336 @@
+{
+ "chunk": "ciala-doradcze",
+ "generatedAt": "2026-09-17",
+ "coverageNote": "Zakres: ~30 najważniejszych ciał doradczych i pomocniczych władzy wykonawczej z rejestrów KPRM (organy pomocnicze RM i PRM, inne organy doradcze, komisje wspólne), ciała ustawowe przy RM/PRM oraz rady przy Prezydencie RP (węzeł zbiorczy 17 rad + 3 osobno). POMINIĘTO: (1) kilkadziesiąt międzyresortowych zespołów i komitetów sterujących z rejestrów KPRM (np. Zespół ds. Programowania Prac Rządu, Międzyresortowy Zespół ds. Zagrożeń Terrorystycznych, Zespół ds. Migracji, Komitet Sterujący ds. KPOP, Międzyresortowy Zespół ds. likwidacji CBA, Zespół Doradców Społecznych PRM, Rada ds. Przeciwdziałania Uzależnieniom, Komisje wspólne z Polską Radą Ekumeniczną, Kościołem Ewangelicko-Augsburskim, Aliansem Ewangelicznym i Świętym Soborem Biskupów, Wyższa Komisja Dyscyplinarna SC, Komitet Polityki Ubezpieczeń Eksportowych, Rada Przeciwdziałania Uzależnieniom) – organy techniczne lub o wąskim zakresie; (2) Komitet Społeczny Rady Ministrów – zniesiony zarządzeniem nr 23 PRM z 1.03.2024 r. (M.P. 2024 poz. 187), nie istnieje; (3) Komitet Rady Ministrów do spraw Cyfryzacji – zniesiony 29.06.2026 r. (M.P. 2026 poz. 657); zastąpiony ustawowym Komitetem do spraw Cyfryzacji (węzeł w chunku); (4) Rada Bezpieczeństwa Narodowego (chunk konstytucyjne), Rada Ochrony Pracy przy Sejmie (chunk niezalezne), Rada Fiskalna (organ niezależny – poza zakresem, do dodania w chunku niezalezne/urzedy-prm), Polski Komitet ds. UNESCO (przy MSZ/MKiDN – nie figuruje w rejestrach KPRM), Rada ds. innowacji w szkolnictwie wyższym i nauce (ciało resortowe); (5) Rada Działalności Pożytku Publicznego ujęta bez składu. Osoby podano tylko tam, gdzie akt lub strona oficjalna wskazuje nazwisko (Rada Przyszłości – M.P. 2026/351; RDS; Rada Legislacyjna – kadencja XIV formalnie wygasła 2.09.2026; MRO; Komitet ds. Pożytku Publicznego; Rada Bezpieczeństwa i Obronności; Rada Gospodarcza). Aktualny przewodniczący SKRM nie jest podany w rejestrze KPRM – węzeł bez osoby. Przewodniczący KRM ds. Nadzoru nad Wdrażaniem Polityki Rządu – urząd ministra nieobsadzony od 14.08.2026 (status vacant). Ministrów-członków ciał modelowano krawędziami ex_officio do ID z ids-canon (bez tworzenia węzłów ministrów); dla członków bez ID kanonicznego (Szef BBN, Prezes RCL, Prezes Prokuratorii, Pełnomocnicy Rządu) – tylko opis. Rejestry KPRM zawierają nieaktualne podstawy prawne – odnotowano w statusNote poszczególnych węzłów.",
+ "nodes": {
+  "pl-staly-komitet-rady-ministrow": {
+   "id": "pl-staly-komitet-rady-ministrow",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Stały Komitet Rady Ministrów",
+   "shortName": "SKRM",
+   "description": "Organ pomocniczy Rady Ministrów i Prezesa RM: inicjuje, przygotowuje i uzgadnia rozstrzygnięcia albo stanowiska RM lub PRM, rozpatruje projekty dokumentów rządowych przed Radą Ministrów. Skład: przewodniczący powoływany przez PRM, przedstawiciel PRM, przedstawiciele ministrów (sekretarze/podsekretarze stanu), KPRM i RCL. Podstawa: art. 12 ust. 1 pkt 1 ustawy o Radzie Ministrów; zarządzenie nr 86 PRM z 28.11.2013 r.",
+   "aliases": [
+    "SKRM",
+    "Stały Komitet RM"
+   ],
+   "legalSource": {
+    "title": "Zarządzenie nr 86 Prezesa Rady Ministrów z dnia 28 listopada 2013 r. w sprawie Stałego Komitetu Rady Ministrów (M.P. 2021 poz. 327 t.j., zm. M.P. 2025 poz. 710), § 1 i § 3",
+    "url": "https://eli.gov.pl/eli/MP/2013/986/ogl",
+    "act": "MP/2013/986",
+    "article": "§ 1, § 3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Rejestr KPRM (strona SKRM, wersja z 27.07.2026) nie podaje nazwiska aktualnego przewodniczącego Komitetu; po zmianie z 30.07.2025 r. (M.P. 2025 poz. 710) przewodniczącym może być także sekretarz/podsekretarz stanu w KPRM albo Sekretarz RM.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+     "https://eli.gov.pl/eli/MP/2021/327/ogl",
+     "https://eli.gov.pl/eli/MP/2025/710/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komitet-ekonomiczny-rady-ministrow": {
+   "id": "pl-komitet-ekonomiczny-rady-ministrow",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komitet Ekonomiczny Rady Ministrów",
+   "shortName": "KERM",
+   "description": "Organ pomocniczy RM i PRM: analizuje sytuację gospodarczą, rekomenduje działania strategiczne w obszarze gospodarki, finansów publicznych i mienia publicznego, rozpatruje inicjatywy członków RM o istotnych skutkach finansowych. Przewodniczący – Minister Finansów i Gospodarki; wiceprzewodniczący – Szef KPRM i Minister Aktywów Państwowych; członkowie – wskazani ministrowie i Prezes RCL. Podstawa: zarządzenie nr 11 PRM z 5.02.2024 r.",
+   "aliases": [
+    "KERM"
+   ],
+   "legalSource": {
+    "title": "Zarządzenie nr 11 Prezesa Rady Ministrów z dnia 5 lutego 2024 r. w sprawie Komitetu Ekonomicznego Rady Ministrów (M.P. 2025 poz. 606 t.j., zm. M.P. 2026 poz. 14 i 886), § 1 i § 3",
+    "url": "https://eli.gov.pl/eli/MP/2024/92/ogl",
+    "act": "MP/2024/92",
+    "article": "§ 1, § 3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/inne-organy-doradcze-powolane-do-rozpatrywania-okreslonej-sprawy-lub-grupy-spraw3",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Rejestr KPRM (zakładka 'inne organy doradcze') wymienia jako podstawę nieaktualne akty (t.j. M.P. 2023 poz. 2 i zmiany z 2023 r.) obok zarządzenia nr 11/2024; brak w nim zmian z 2026 r. (M.P. 2026 poz. 14 – zmiana składu; M.P. 2026 poz. 886 – uchylenie funkcji wiceprzewodniczącego – Ministra ds. Nadzoru nad Wdrażaniem Polityki Rządu, dodanie Prezesa RCL).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/inne-organy-doradcze-powolane-do-rozpatrywania-okreslonej-sprawy-lub-grupy-spraw3",
+     "https://eli.gov.pl/eli/MP/2025/606/ogl",
+     "https://eli.gov.pl/eli/MP/2026/14/ogl",
+     "https://eli.gov.pl/eli/MP/2026/886/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komitet-do-spraw-europejskich": {
+   "id": "pl-komitet-do-spraw-europejskich",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komitet do Spraw Europejskich",
+   "shortName": "KSE",
+   "description": "Ustawowy organ pomocniczy RM koordynujący sprawy członkostwa Polski w UE: z upoważnienia RM rozstrzyga stanowiska wobec dokumentów UE, instrukcje na Radę UE i COREPER oraz projekty aktów wdrażających prawo UE. Skład: przewodniczący – minister właściwy ds. członkostwa RP w UE (lub wyznaczony sekretarz stanu), przedstawiciele ministrów, Szef KPRM, Prezes Prokuratorii Generalnej. Podstawa: ustawa z 27.08.2009 r. o Komitecie do Spraw Europejskich.",
+   "aliases": [
+    "KSE"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 sierpnia 2009 r. o Komitecie do Spraw Europejskich, art. 2–3 (Dz.U. 2024 poz. 562 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/1277/ogl",
+    "act": "DU/2009/1277",
+    "article": "art. 2–3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Od 24.07.2025 r. (M.P. 2025 poz. 689 – odwołanie Adama Szłapki z urzędu Ministra ds. UE) w RM nie ma odrębnego ministra ds. UE; działem 'członkostwo RP w UE' kieruje Minister Spraw Zagranicznych (rozp. PRM Dz.U. 2025 poz. 993, § 1 ust. 2 pkt 1), który z tego tytułu przewodniczy KSE. Rejestr KPRM podaje nieaktualny t.j. (Dz.U. 2020 poz. 2084).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+     "https://eli.gov.pl/eli/DU/2024/562/ogl",
+     "https://eli.gov.pl/eli/DU/2025/993/ogl",
+     "https://eli.gov.pl/eli/MP/2025/689/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komitet Rady Ministrów do spraw Bezpieczeństwa Narodowego",
+   "shortName": "KRM ds. Bezpieczeństwa Narodowego",
+   "description": "Organ pomocniczy RM i PRM koordynujący działania w sprawach bezpieczeństwa i obrony państwa oraz cyberbezpieczeństwa; komitet właściwy dla projektów z tego obszaru. Przewodniczący – Wiceprezes RM, Minister Obrony Narodowej; członkowie – Minister Cyfryzacji, MAP, MS, MSWiA, MSZ, Minister–Koordynator Służb Specjalnych i Szef KPRM; PRM przewodniczy, gdy uczestniczy. Podstawa: zarządzenie nr 53 PRM z 16.05.2024 r.",
+   "aliases": [
+    "KRMBN"
+   ],
+   "legalSource": {
+    "title": "Zarządzenie nr 53 Prezesa Rady Ministrów z dnia 16 maja 2024 r. w sprawie Komitetu Rady Ministrów do spraw Bezpieczeństwa Narodowego (M.P. 2025 poz. 372 t.j.), § 1 i § 3",
+    "url": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+    "act": "MP/2024/372",
+    "article": "§ 1, § 3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+     "https://eli.gov.pl/eli/MP/2025/372/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komitet-do-spraw-cyfryzacji": {
+   "id": "pl-komitet-do-spraw-cyfryzacji",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komitet do spraw Cyfryzacji",
+   "shortName": "Komitet ds. Cyfryzacji",
+   "description": "Ustawowy komitet koordynujący informatyzację państwa: rozpatruje projekty dokumentów rządowych dotyczących cyfryzacji, monitoruje i opiniuje przedsięwzięcia informatyczne o publicznym zastosowaniu oraz realizację strategii. Przewodniczący – minister właściwy ds. informatyzacji (Minister Cyfryzacji); członkowie – Szef KPRM i przedstawiciele wszystkich ministrów. Podstawa: art. 17a–17i ustawy o informatyzacji; regulamin – M.P. 2026 poz. 267.",
+   "aliases": [
+    "KdsC"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne, art. 17a–17i (Dz.U. 2025 poz. 1703 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2005/565/ogl",
+    "act": "DU/2005/565",
+    "article": "art. 17a–17i"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Zastąpił Komitet Rady Ministrów do spraw Cyfryzacji, zniesiony zarządzeniem nr 38 PRM z 29.06.2026 r. (M.P. 2026 poz. 657). Rejestr KPRM zaktualizował wpis 24.03.2026 r. (historia zmian nadal pokazuje dawną nazwę 'Komitet Rady Ministrów do spraw Cyfryzacji').",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+     "https://eli.gov.pl/eli/DU/2025/1703/ogl",
+     "https://eli.gov.pl/eli/MP/2026/267/ogl",
+     "https://eli.gov.pl/eli/MP/2026/657/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komitet-rady-ministrow-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu": {
+   "id": "pl-komitet-rady-ministrow-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komitet Rady Ministrów do spraw Nadzoru nad Wdrażaniem Polityki Rządu",
+   "shortName": "KRM ds. Nadzoru nad Wdrażaniem Polityki Rządu",
+   "description": "Organ pomocniczy RM i PRM: ustala priorytetowe zadania realizujące politykę Rządu, monitoruje i kontroluje ich wykonanie przez członków RM, wydaje polecenia co do sposobu realizacji, przedstawia RM i PRM wnioski. Przewodniczący – Minister ds. Nadzoru nad Wdrażaniem Polityki Rządu; członkowie – przewodniczący Zespołu ds. Programowania Prac Rządu, wiceprzewodniczący SKRM, Sekretarz RM, Prezes RCL. Podstawa: zarządzenie nr 46 PRM z 29.08.2025 r.",
+   "aliases": [
+    "KRM ds. NWPR",
+    "Komitet Nadzoru nad Wdrażaniem Polityki Rządu"
+   ],
+   "legalSource": {
+    "title": "Zarządzenie nr 46 Prezesa Rady Ministrów z dnia 29 sierpnia 2025 r. w sprawie Komitetu Rady Ministrów do spraw Nadzoru nad Wdrażaniem Polityki Rządu (M.P. 2025 poz. 869, zm. M.P. 2026 poz. 530), § 1 i § 3",
+    "url": "https://eli.gov.pl/eli/MP/2025/869/ogl",
+    "act": "MP/2025/869",
+    "article": "§ 1, § 3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "vacant",
+   "statusNote": "Przewodniczący Komitetu – Minister ds. Nadzoru nad Wdrażaniem Polityki Rządu: urząd nieobsadzony od odwołania Macieja Berka 14.08.2026 r. (M.P. 2026 poz. 808); zarządzenie nie zostało dotąd zmienione. Rejestr KPRM prowadzi wpis pod skróconą nazwą 'Komitetu Nadzoru nad Wdrażaniem Polityki Rządu'.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+     "https://eli.gov.pl/eli/MP/2025/869/ogl",
+     "https://eli.gov.pl/eli/MP/2026/530/ogl",
+     "https://eli.gov.pl/eli/MP/2026/808/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rzadowy-zespol-zarzadzania-kryzysowego": {
+   "id": "pl-rzadowy-zespol-zarzadzania-kryzysowego",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rządowy Zespół Zarządzania Kryzysowego",
+   "shortName": "RZZK",
+   "description": "Ustawowy organ opiniodawczo-doradczy przy Radzie Ministrów w sprawach inicjowania i koordynowania zarządzania kryzysowego. Przewodniczący – Prezes RM; zastępcy – Minister Obrony Narodowej i minister ds. wewnętrznych; członkowie – minister ds. administracji publicznej, MSZ i Minister–Koordynator Służb Specjalnych; na prawach członka uczestniczą wyznaczeni ministrowie i kierownicy urzędów. Podstawa: art. 8 ustawy o zarządzaniu kryzysowym.",
+   "aliases": [
+    "RZZK"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 26 kwietnia 2007 r. o zarządzaniu kryzysowym, art. 8–9 (Dz.U. 2026 poz. 574 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+    "act": "DU/2007/590",
+    "article": "art. 8–9"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/inne-organy-doradcze-powolane-do-rozpatrywania-okreslonej-sprawy-lub-grupy-spraw3",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/inne-organy-doradcze-powolane-do-rozpatrywania-okreslonej-sprawy-lub-grupy-spraw3",
+     "https://eli.gov.pl/eli/DU/2026/574/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-kolegium-do-spraw-sluzb-specjalnych": {
+   "id": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Kolegium do Spraw Służb Specjalnych",
+   "shortName": "Kolegium ds. Służb Specjalnych",
+   "description": "Ustawowy organ opiniodawczo-doradczy przy RM w sprawach programowania, nadzorowania i koordynowania działalności ABW, AW, SKW, SWW i CBA; opiniuje m.in. powoływanie szefów służb, ich plany i budżety. Przewodniczący – Prezes RM; członkowie – MSWiA, MSZ, MON, minister ds. finansów, Szef BBN i Minister–Koordynator Służb Specjalnych; uczestniczą szefowie służb i szef sejmowej Komisji ds. Służb Specjalnych. Podstawa: art. 11–12 ustawy o ABW oraz AW.",
+   "aliases": [
+    "Kolegium ds. Służb Specjalnych"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu, art. 11–12 (Dz.U. 2026 poz. 937 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+    "act": "DU/2002/676",
+    "article": "art. 11–12"
+   },
+   "officialUrl": "https://www.gov.pl/web/sluzby-specjalne",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2026/937/ogl",
+     "https://www.gov.pl/web/sluzby-specjalne"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komitet-do-spraw-pozytku-publicznego": {
+   "id": "pl-komitet-do-spraw-pozytku-publicznego",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komitet do spraw Pożytku Publicznego",
+   "shortName": "Komitet ds. Pożytku Publicznego",
+   "description": "Ustawowy organ administracji rządowej koordynujący i monitorujący współpracę administracji z organizacjami pozarządowymi oraz programy rozwoju społeczeństwa obywatelskiego. Przewodniczący Komitetu wchodzi w skład Rady Ministrów; członkowie – wiceprzewodniczący, przedstawiciele ministrów oraz Dyrektor Narodowego Instytutu Wolności. Obsługę zapewnia KPRM. Podstawa: art. 34a–34d ustawy o działalności pożytku publicznego i o wolontariacie.",
+   "aliases": [
+    "KdsPP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 kwietnia 2003 r. o działalności pożytku publicznego i o wolontariacie, art. 34a–34d (Dz.U. 2025 poz. 1338 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+    "act": "DU/2003/873",
+    "article": "art. 34a–34d"
+   },
+   "officialUrl": "https://www.gov.pl/web/pozytek",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/1338/ogl",
+     "https://www.gov.pl/web/pozytek",
+     "https://www.gov.pl/web/premier/kierownictwo-kprm5"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego": {
+   "id": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "type": "dept_head",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Przewodniczący Komitetu do spraw Pożytku Publicznego",
+   "shortName": "Przewodniczący KdsPP",
+   "description": "Urząd ustawowy: Przewodniczący Komitetu ds. Pożytku Publicznego kieruje pracami Komitetu i z mocy ustawy wchodzi w skład Rady Ministrów (art. 34a ust. 2). Powoływany przez Prezydenta RP na wniosek Prezesa RM w trybie art. 154 Konstytucji. Od 24.07.2025 r. urząd sprawuje Jan Grabiec, łączący go z urzędem Ministra – Członka RM, Szefa KPRM (M.P. 2025 poz. 690).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 kwietnia 2003 r. o działalności pożytku publicznego i o wolontariacie, art. 34a ust. 2 i art. 34c (Dz.U. 2025 poz. 1338 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+    "act": "DU/2003/873",
+    "article": "art. 34a ust. 2, art. 34c"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "head": null,
+   "headOf": "pl-komitet-do-spraw-pozytku-publicznego",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jan-grabiec",
+      "name": "Jan Grabiec",
+      "positionId": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+      "positionName": "Przewodniczący Komitetu do spraw Pożytku Publicznego",
+      "type": "appointed",
+      "startedAt": "2025-07-24",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/690/ogl",
+      "note": "Jednocześnie Minister – Członek Rady Ministrów, Szef KPRM (węzeł pl-minister-czlonek-rm-szef-kprm, chunk konstytucyjne). Powołany postanowieniem Prezydenta nr 1131.28.2025 z 24.07.2025 r. (M.P. 2025 poz. 690)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-dzialalnosci-pozytku-publicznego": {
+   "id": "pl-rada-dzialalnosci-pozytku-publicznego",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Działalności Pożytku Publicznego",
+   "shortName": "RDPP",
+   "description": "Ustawowy organ opiniodawczo-doradczy Przewodniczącego Komitetu ds. Pożytku Publicznego: opiniuje projekty aktów prawnych i programów rządowych dotyczących organizacji pozarządowych, pomaga w sporach administracji z organizacjami, organizuje wybory przedstawicieli NGO do komitetów monitorujących. Skład: przedstawiciele administracji rządowej, samorządu i NGO; kadencja 3 lata. Podstawa: art. 35 ustawy o działalności pożytku publicznego.",
+   "aliases": [
+    "RDPP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 kwietnia 2003 r. o działalności pożytku publicznego i o wolontariacie, art. 35 (Dz.U. 2025 poz. 1338 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+    "act": "DU/2003/873",
+    "article": "art. 35"
+   },
+   "officialUrl": "https://www.gov.pl/web/pozytek/rada-dzialalnosci-pozytku-publicznego",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-komitet-do-spraw-pozytku-publicznego",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Skład aktualnej kadencji nie był weryfikowany (strona gov.pl/web/pozytek nie była parsowana w tej rundzie).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/1338/ogl",
+     "https://www.gov.pl/web/pozytek/rada-dzialalnosci-pozytku-publicznego"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rada-legislacyjna": {
+   "id": "pl-rada-legislacyjna",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Legislacyjna przy Prezesie Rady Ministrów",
+   "shortName": "Rada Legislacyjna",
+   "description": "Ustawowy organ opiniodawczo-doradczy Rady Ministrów i Prezesa RM w sprawach systemu prawa: opiniuje projekty ustaw i innych aktów normatywnych pod kątem zgodności z Konstytucją i prawem UE oraz kierunki legislacji. Do 15 członków powoływanych przez PRM na 4-letnią kadencję; przewodniczącego powołuje PRM spośród członków. Podstawa: art. 14 ustawy o Radzie Ministrów; rozporządzenie PRM z 26.08.2022 r. w sprawie Rady Legislacyjnej.",
+   "aliases": [
+    "RL"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 14 (Dz.U. 2025 poz. 780 t.j.); rozporządzenie Prezesa Rady Ministrów z dnia 26 sierpnia 2022 r. w sprawie Rady Legislacyjnej (Dz.U. 2024 poz. 1329 t.j.), § 2",
+    "url": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+    "act": "DU/1996/492",
+    "article": "art. 14"
+   },
+   "officialUrl": "https://www.gov.pl/web/radalegislacyjna",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 15,
+   "status": "unverified",
+   "statusNote": "Strona RL (stan 17.09.2026) podaje skład XIV kadencji rozpoczętej 2.09.2022 r. (kadencja 4-letnia, formalnie upłynęła 2.09.2026 r.); brak informacji o powołaniu Rady XV kadencji – dane o przewodniczącym mogą być nieaktualne.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-szydlo",
+      "name": "Marek Szydło",
+      "positionId": "pl-rada-legislacyjna",
+      "positionName": "Przewodniczący Rady Legislacyjnej",
+      "type": "appointed",
+      "startedAt": "2022-09-02",
+      "acting": false,
+      "status": "unverified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/radalegislacyjna/sklad-rady-legislacyjnej",
+      "startedAtSource": "https://www.gov.pl/web/radalegislacyjna",
+      "note": "Przewodniczący RL XIV kadencji (od 2.09.2022 r. wg strony RL); kadencja formalnie upłynęła 2.09.2026 r., strona nadal wskazuje go jako przewodniczącego. Wiceprzewodnicząca: Elżbieta Karska."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/radalegislacyjna",
+     "https://www.gov.pl/web/radalegislacyjna/sklad-rady-legislacyjnej",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+     "https://eli.gov.pl/eli/DU/2022/1818/ogl",
+     "https://eli.gov.pl/eli/DU/2024/1329/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-dialogu-spolecznego": {
+   "id": "pl-rada-dialogu-spolecznego",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "oversight",
+   "name": "Rada Dialogu Społecznego",
+   "shortName": "RDS",
+   "description": "Ustawowe trójstronne forum dialogu strony rządowej, pracowników i pracodawców; opiniuje projekty ustaw i dokumenty rządowe, zawiera porozumienia i zajmuje stanowiska. Członków powołuje Prezydent RP (stronę rządową na wniosek PRM); z głosem doradczym uczestniczą przedstawiciele Prezydenta, NBP, GUS, Rady Fiskalnej i PIP. Przewodnictwo roczne, rotacyjne między stronami. Podstawa: ustawa z 24.07.2015 r. o Radzie Dialogu Społecznego.",
+   "aliases": [
+    "RDS"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 lipca 2015 r. o Radzie Dialogu Społecznego i innych instytucjach dialogu społecznego, art. 22–32 (Dz.U. 2026 poz. 836 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2015/1240/ogl",
+    "act": "DU/2015/1240",
+    "article": "art. 22–32"
+   },
+   "officialUrl": "https://rds.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Strona 'Skład RDS' (17.09.2026) nadal wymienia w stronie rządowej Macieja Berka jako Ministra ds. Nadzoru nad Wdrażaniem Polityki Rządu, mimo odwołania go z RM 14.08.2026 r. (M.P. 2026 poz. 808).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jan-klimek",
+      "name": "Jan Klimek",
+      "positionId": "pl-rada-dialogu-spolecznego",
+      "positionName": "Przewodniczący Rady Dialogu Społecznego",
+      "type": "appointed",
+      "startedAt": "2025-10",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://rds.gov.pl/rada-dialogu-spolecznego/sklad-rady-dialogu-spolecznego/",
+      "startedAtSource": "https://rds.gov.pl/2025/10/30/jan-klimek-nowym-przewodniczacym-rady-dialogu-spolecznego/",
+      "note": "Prezes Związku Rzemiosła Polskiego; przewodniczący RDS kadencji 2025/2026 ze strony pracodawców (komunikat RDS z 30.10.2025 r.); wiceprzewodniczącą ze strony rządowej jest Agnieszka Dziemianowicz-Bąk (MRPiPS)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://rds.gov.pl/rada-dialogu-spolecznego/sklad-rady-dialogu-spolecznego/",
+     "https://rds.gov.pl/2025/10/30/jan-klimek-nowym-przewodniczacym-rady-dialogu-spolecznego/",
+     "https://eli.gov.pl/eli/DU/2026/836/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komisja-wspolna-rzadu-i-samorzadu-terytorialnego": {
+   "id": "pl-komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "oversight",
+   "name": "Komisja Wspólna Rządu i Samorządu Terytorialnego",
+   "shortName": "KWRiST",
+   "description": "Ustawowe forum wypracowywania wspólnego stanowiska Rządu i samorządu terytorialnego; opiniuje projekty aktów prawnych dotyczących samorządu. Strona rządowa: minister ds. administracji publicznej (współprzewodniczący) i 15 przedstawicieli powoływanych przez PRM; strona samorządowa: przedstawiciele ogólnopolskich organizacji JST w równej liczbie, z własnym współprzewodniczącym. Podstawa: ustawa z 6.05.2005 r. o KWRiST.",
+   "aliases": [
+    "KWRiST"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 maja 2005 r. o Komisji Wspólnej Rządu i Samorządu Terytorialnego oraz o przedstawicielach Rzeczypospolitej Polskiej w Komitecie Regionów Unii Europejskiej, art. 2–5 i art. 11 (Dz.U. 2024 poz. 949 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2005/759/ogl",
+    "act": "DU/2005/759",
+    "article": "art. 2–5, art. 11"
+   },
+   "officialUrl": "https://www.gov.pl/web/mswia/komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Strona MSWiA podaje nieaktualną liczbę 11 przedstawicieli rządu (od 22.09.2023 r. jest ich 15 – Dz.U. 2023 poz. 1821).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/949/ogl",
+     "https://www.gov.pl/web/mswia/komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+     "https://www.gov.pl/web/premier/komisje-wspolne"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komisja-wspolna-przedstawicieli-rzadu-i-konferencji-episkopatu-polski": {
+   "id": "pl-komisja-wspolna-przedstawicieli-rzadu-i-konferencji-episkopatu-polski",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "oversight",
+   "name": "Komisja Wspólna Przedstawicieli Rządu Rzeczypospolitej Polskiej i Konferencji Episkopatu Polski",
+   "shortName": "Komisja Wspólna Rządu i Episkopatu",
+   "description": "Ustawowa komisja parytetowa złożona z upoważnionych przedstawicieli Rządu i Konferencji Episkopatu Polski; rozpatruje problemy związane z rozwojem stosunków między Państwem a Kościołem katolickim oraz sprawy interpretacji i wykonywania ustawy o stosunku Państwa do Kościoła. Nie narusza właściwości organów państwowych, kościelnych ani Stolicy Apostolskiej. Podstawa: art. 4 ustawy z 17.05.1989 r. o stosunku Państwa do Kościoła Katolickiego w RP.",
+   "aliases": [
+    "Komisja Wspólna Rządu i Episkopatu"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 17 maja 1989 r. o stosunku Państwa do Kościoła Katolickiego w Rzeczypospolitej Polskiej, art. 4 (Dz.U. 2023 poz. 1966 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1989/154/ogl",
+    "act": "DU/1989/154",
+    "article": "art. 4"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/komisje-wspolne",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Rejestr KPRM podaje jako podstawę wygasły t.j. Dz.U. 2019 poz. 1347 (aktualny t.j.: Dz.U. 2023 poz. 1966). Współprzewodniczący nie byli weryfikowani.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2023/1966/ogl",
+     "https://www.gov.pl/web/premier/komisje-wspolne"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych": {
+   "id": "pl-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "oversight",
+   "name": "Komisja Wspólna Rządu i Mniejszości Narodowych i Etnicznych",
+   "shortName": "Komisja Wspólna Rządu i Mniejszości",
+   "description": "Ustawowy organ opiniodawczo-doradczy Prezesa RM: opiniuje realizację praw i potrzeb mniejszości narodowych i etnicznych oraz projekty aktów prawnych i programów ich dotyczących. Skład: przedstawiciele ministrów (m.in. ds. wyznań, administracji, kultury, oświaty, finansów, MSZ), GUS, KPRM i IPN oraz przedstawiciele mniejszości i społeczności języka regionalnego. Podstawa: art. 23–24 ustawy o mniejszościach narodowych i etnicznych.",
+   "aliases": [
+    "KWRiMNiE"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 stycznia 2005 r. o mniejszościach narodowych i etnicznych oraz o języku regionalnym, art. 23–24 (Dz.U. 2026 poz. 75 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2005/141/ogl",
+    "act": "DU/2005/141",
+    "article": "art. 23–24"
+   },
+   "officialUrl": "https://www.gov.pl/web/mniejszosci-narodowe-i-etniczne/komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2026/75/ogl",
+     "https://www.gov.pl/web/premier/komisje-wspolne"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rzadowa-komisja-konkordatowa": {
+   "id": "pl-rzadowa-komisja-konkordatowa",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rządowa Komisja Konkordatowa",
+   "shortName": "Komisja Konkordatowa",
+   "description": "Rządowa komisja do spraw związanych z wykonywaniem Konkordatu między Stolicą Apostolską i Rzecząpospolitą Polską z 28.07.1993 r.; wraz z Kościelną Komisją Konkordatową tworzy forum uzgadniania spraw wymagających współdziałania Państwa i Kościoła. W rejestrze KPRM figuruje wśród organów doradczych powołanych do rozpatrywania określonej grupy spraw, z podstawą prawną w Konkordacie (Dz.U. 1998 nr 51 poz. 318).",
+   "aliases": [
+    "RKK"
+   ],
+   "legalSource": {
+    "title": "Konkordat między Stolicą Apostolską i Rzecząpospolitą Polską, podpisany w Warszawie dnia 28 lipca 1993 r. (Dz.U. 1998 nr 51 poz. 318)",
+    "url": "https://eli.gov.pl/eli/DU/1998/318/ogl",
+    "act": "DU/1998/318",
+    "article": null
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/inne-organy-doradcze-powolane-do-rozpatrywania-okreslonej-sprawy-lub-grupy-spraw3",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Rejestr KPRM nie podaje aktu powołującego Komisję (zarządzenia PRM) ani składu; podstawa cytowana za rejestrem.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/inne-organy-doradcze-powolane-do-rozpatrywania-okreslonej-sprawy-lub-grupy-spraw3",
+     "https://eli.gov.pl/eli/DU/1998/318/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "low"
+   }
+  },
+  "pl-rada-statystyki": {
+   "id": "pl-rada-statystyki",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Statystyki",
+   "shortName": "Rada Statystyki",
+   "description": "Ustawowy organ opiniodawczo-doradczy w sprawach statystyki przy Prezesie RM: ustala projekt programu badań statystycznych i przedstawia go RM, rekomenduje nowe badania, ocenia realizację programu, opiniuje koszty badań. Członków (administracja rządowa, samorząd, NBP, organizacje społeczne, pracodawcy, związki, 2 ekspertów) powołuje PRM na 5 lat; uczestniczy Prezes GUS. Podstawa: art. 15–17 ustawy o statystyce publicznej.",
+   "aliases": [
+    "RS"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 29 czerwca 1995 r. o statystyce publicznej, art. 15–17 (Dz.U. 2026 poz. 851 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+    "act": "DU/1995/439",
+    "article": "art. 15–17"
+   },
+   "officialUrl": "https://stat.gov.pl/rada-statystyki/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Rejestr KPRM jako 'podstawę prawną' wymienia jedynie rozporządzenia RM w sprawie programu badań statystycznych, a nie ustawę o statystyce publicznej. Skład nie był weryfikowany.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2026/851/ogl",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+     "https://stat.gov.pl/rada-statystyki/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-sluzby-publicznej": {
+   "id": "pl-rada-sluzby-publicznej",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Służby Publicznej",
+   "shortName": "RSP",
+   "description": "Ustawowy organ opiniodawczo-doradczy przy Prezesie RM w sprawach służby cywilnej: opiniuje sprawy przedstawiane przez PRM lub Szefa Służby Cywilnej, program zarządzania zasobami ludzkimi, budżet w części dotyczącej SC i projekty aktów o SC, ocenia nabory na wyższe stanowiska. 7–9 członków powołuje PRM na 4-letnią kadencję (w tym przewodniczący); obsługuje KPRM. Podstawa: art. 19–23 ustawy o służbie cywilnej.",
+   "aliases": [
+    "RSP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 listopada 2008 r. o służbie cywilnej, art. 19–23 (Dz.U. 2026 poz. 590 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+    "act": "DU/2008/1505",
+    "article": "art. 19–23"
+   },
+   "officialUrl": "https://www.gov.pl/web/sluzbacywilna/rada-sluzby-publicznej",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 9,
+   "status": "active",
+   "statusNote": "Rejestr KPRM podaje nieaktualny t.j. (Dz.U. 2022 poz. 1691). Skład i przewodniczący nie byli weryfikowani.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2026/590/ogl",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+     "https://www.gov.pl/web/sluzbacywilna/rada-sluzby-publicznej"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych": {
+   "id": "pl-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada do spraw spółek z udziałem Skarbu Państwa i państwowych osób prawnych",
+   "shortName": "Rada ds. spółek z udziałem SP",
+   "description": "Ustawowy organ opiniujący kandydatów na członków organów nadzorczych spółek z udziałem Skarbu Państwa i państwowych osób prawnych, kandydatów na pełnomocników wspólnika oraz – na wniosek spółek – kandydatów do organów zarządzających. 8 członków: 4 powołuje Prezes RM, 4 minister ds. aktywów państwowych. Podstawa: art. 24–28 ustawy o zasadach zarządzania mieniem państwowym.",
+   "aliases": [
+    "Rada ds. spółek SP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 16 grudnia 2016 r. o zasadach zarządzania mieniem państwowym, art. 24–28 (Dz.U. 2026 poz. 373 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/2259/ogl",
+    "act": "DU/2016/2259",
+    "article": "art. 24–28"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 8,
+   "status": "active",
+   "statusNote": "Skład nie był weryfikowany; adres strony własnej Rady niepotwierdzony (wpis w rejestrze KPRM 'inne organy doradcze').",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2026/373/ogl",
+     "https://www.gov.pl/web/premier/inne-organy-doradcze-powolane-do-rozpatrywania-okreslonej-sprawy-lub-grupy-spraw3"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rada-do-spraw-uchodzcow": {
+   "id": "pl-rada-do-spraw-uchodzcow",
+   "type": "commission",
+   "subtype": "adjudicative_body",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Rada do Spraw Uchodźców",
+   "shortName": "Rada ds. Uchodźców",
+   "description": "Ustawowy organ administracji publicznej rozpatrujący odwołania od decyzji i zażalenia na postanowienia Szefa Urzędu do Spraw Cudzoziemców w sprawach ochrony międzynarodowej; ma uprawnienia organu wyższego stopnia w rozumieniu KPA, analizuje orzecznictwo i gromadzi informacje o krajach pochodzenia. 12 członków powołuje Prezes RM na 5-letnią kadencję. Podstawa: art. 89p–89r ustawy o udzielaniu cudzoziemcom ochrony na terytorium RP.",
+   "aliases": [
+    "RdSU"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 13 czerwca 2003 r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej, art. 89p–89r (Dz.U. 2026 poz. 862 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+    "act": "DU/2003/1176",
+    "article": "art. 89p–89r"
+   },
+   "officialUrl": "https://www.gov.pl/web/rada-do-spraw-uchodzcow",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 12,
+   "status": "active",
+   "statusNote": "Organ orzeczniczy, nie doradczy – włączony do tego chunku, bo nie figuruje w wykazie jednostek nadzorowanych przez PRM (gov.pl) ani w zakresie chunku G2. Skład nie był weryfikowany.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2026/862/ogl",
+     "https://www.gov.pl/web/rada-do-spraw-uchodzcow"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-krajowa-rada-bezpieczenstwa-ruchu-drogowego": {
+   "id": "pl-krajowa-rada-bezpieczenstwa-ruchu-drogowego",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Krajowa Rada Bezpieczeństwa Ruchu Drogowego",
+   "shortName": "KRBRD",
+   "description": "Ustawowy międzyresortowy organ pomocniczy Rady Ministrów w sprawach bezpieczeństwa ruchu drogowego, działający przy ministrze ds. transportu: określa kierunki i koordynuje działania administracji, opracowuje programy poprawy brd, inicjuje badania i projekty aktów prawnych. Przewodniczący – minister ds. transportu; członkowie – przedstawiciele ministrów, wojewodów, KGP, KG PSP i GDDKiA. Podstawa: art. 140b–140e Prawa o ruchu drogowym.",
+   "aliases": [
+    "KRBRD"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, art. 140b–140e (Dz.U. 2024 poz. 1251 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1997/602/ogl",
+    "act": "DU/1997/602",
+    "article": "art. 140b–140e"
+   },
+   "officialUrl": "https://www.krbrd.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/1251/ogl",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+     "https://www.krbrd.gov.pl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-do-spraw-innowacyjnosci": {
+   "id": "pl-rada-do-spraw-innowacyjnosci",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada do spraw Innowacyjności",
+   "shortName": "Rada ds. Innowacyjności",
+   "description": "Organ pomocniczy Rady Ministrów zapewniający wymianę informacji i koordynację międzyresortową polityki innowacyjności: proponuje i ocenia strategiczne kierunki działań w zakresie badań, rozwoju i innowacji, technologii krytycznych oraz transferu wiedzy z uczelni do gospodarki. Przewodniczący – minister właściwy ds. gospodarki. Podstawa: zarządzenie nr 4 PRM z 18.01.2016 r. (t.j. M.P. 2026 poz. 743).",
+   "aliases": [
+    "Rada ds. Innowacyjności"
+   ],
+   "legalSource": {
+    "title": "Zarządzenie nr 4 Prezesa Rady Ministrów z dnia 18 stycznia 2016 r. w sprawie utworzenia Rady do spraw Innowacyjności (M.P. 2026 poz. 743 t.j.), § 1–3",
+    "url": "https://eli.gov.pl/eli/MP/2016/63/ogl",
+    "act": "MP/2016/63",
+    "article": "§ 1–3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/743/ogl",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-rady-ministrow2"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-przyszlosci": {
+   "id": "pl-rada-przyszlosci",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Przyszłości",
+   "shortName": "Rada Przyszłości",
+   "description": "Organ pomocniczy Prezesa RM utworzony 31.03.2026 r., mający wskazać rozwiązania systemowe dla transformacji gospodarki w wysoko rozwiniętą, o silnej bazie technologicznej: komercjalizacja badań, usuwanie barier dla innowacji, zamówienia publiczne tworzące popyt na innowacje. Przewodniczący – Andrzej Domański, Minister Finansów i Gospodarki; 18 członków wskazanych imiennie. Podstawa: zarządzenie nr 26 PRM (M.P. 2026 poz. 351).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Zarządzenie nr 26 Prezesa Rady Ministrów z dnia 31 marca 2026 r. w sprawie Rady Przyszłości (M.P. 2026 poz. 351), § 1–3",
+    "url": "https://eli.gov.pl/eli/MP/2026/351/ogl",
+    "act": "MP/2026/351",
+    "article": "§ 1–3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 19,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-andrzej-domanski",
+      "name": "Andrzej Domański",
+      "positionId": "pl-rada-przyszlosci",
+      "positionName": "Przewodniczący Rady Przyszłości",
+      "type": "appointed",
+      "startedAt": "2026-04-02",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/351/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/351/ogl",
+      "note": "Wskazany imiennie w § 3 pkt 1 zarządzenia nr 26 PRM (jako Minister Finansów i Gospodarki; węzeł ministra: pl-minister-finansow-i-gospodarki). Data = wejście w życie zarządzenia (dzień po ogłoszeniu 1.04.2026)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/351/ogl",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-do-spraw-polityki-senioralnej": {
+   "id": "pl-rada-do-spraw-polityki-senioralnej",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada do spraw Polityki Senioralnej",
+   "shortName": "Rada ds. Polityki Senioralnej",
+   "description": "Organ pomocniczy Prezesa RM o charakterze opiniodawczo-doradczym utworzony 9.06.2026 r.: formułuje opinie i rekomendacje dotyczące polityki senioralnej państwa, identyfikuje dobre praktyki, promuje współpracę międzypokoleniową. Przewodniczący – organ ds. polityki senioralnej (Pełnomocnik Rządu); 24 członków (uczelnie, JST, NGO, partnerzy społeczni) powołuje PRM. Podstawa: zarządzenie nr 37 PRM (M.P. 2026 poz. 600).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Zarządzenie nr 37 Prezesa Rady Ministrów z dnia 9 czerwca 2026 r. w sprawie Rady do spraw Polityki Senioralnej (M.P. 2026 poz. 600), § 1 i § 3",
+    "url": "https://eli.gov.pl/eli/MP/2026/600/ogl",
+    "act": "MP/2026/600",
+    "article": "§ 1, § 3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 27,
+   "status": "active",
+   "statusNote": "Zarządzenie nie wymienia nazwisk. Wg strony 'Kierownictwo KPRM' Pełnomocnikiem Rządu ds. Polityki Senioralnej jest Marzena Okła-Drewnowicz (sekretarz stanu w KPRM) – z tego tytułu powinna przewodniczyć Radzie; brak strony potwierdzającej wprost tę funkcję, dlatego osoba oznaczona jako niezweryfikowana.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marzena-okla-drewnowicz",
+      "name": "Marzena Okła-Drewnowicz",
+      "positionId": "pl-rada-do-spraw-polityki-senioralnej",
+      "positionName": "Przewodnicząca Rady do spraw Polityki Senioralnej (jako Pełnomocnik Rządu ds. Polityki Senioralnej)",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "unverified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": "Strona KPRM wskazuje ją jako Sekretarza Stanu, Pełnomocnika Rządu ds. Polityki Senioralnej; przewodnictwo w Radzie wynika z § 3 ust. 1 pkt 1 zarządzenia (organ ds. polityki senioralnej), nie z bezpośredniego wpisu na stronie."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/600/ogl",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+     "https://www.gov.pl/web/premier/kierownictwo-kprm5"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-miedzynarodowa-rada-oswiecimska": {
+   "id": "pl-miedzynarodowa-rada-oswiecimska",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Międzynarodowa Rada Oświęcimska",
+   "shortName": "MRO",
+   "description": "Organ opiniodawczo-doradczy Prezesa RM w sprawach ochrony i zagospodarowania terenów byłego niemieckiego nazistowskiego obozu Auschwitz-Birkenau oraz innych Pomników Zagłady; skupia historyków i przedstawicieli środowisk ofiar z kraju i zagranicy. Powołana zarządzeniem PRM na podstawie art. 12 ust. 1 pkt 3 ustawy o Radzie Ministrów (akty w rejestrze KPRM). Od 25.06.2024 r. przewodniczy prof. Dariusz Stola.",
+   "aliases": [
+    "MRO",
+    "Międzynarodowa Rada Oświęcimska"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 12 ust. 1 pkt 3 (Dz.U. 2025 poz. 780 t.j.) – zarządzenia PRM w sprawie Międzynarodowej Rady Oświęcimskiej (niepublikowane w M.P.; rejestr KPRM)",
+    "url": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+    "act": "DU/1996/492",
+    "article": "art. 12 ust. 1 pkt 3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-dariusz-stola",
+      "name": "Dariusz Stola",
+      "positionId": "pl-miedzynarodowa-rada-oswiecimska",
+      "positionName": "Przewodniczący Międzynarodowej Rady Oświęcimskiej",
+      "type": "appointed",
+      "startedAt": "2024-06-25",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+      "startedAtSource": "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+      "note": "Historyk, ISP PAN; wg rejestru KPRM 'od 25 czerwca 2024 r. funkcję przewodniczącego Rady pełni prof. dr hab. Dariusz Stola'."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rada-przemyslu-lotniczego": {
+   "id": "pl-rada-przemyslu-lotniczego",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Przemysłu Lotniczego",
+   "shortName": "Rada Przemysłu Lotniczego",
+   "description": "Organ pomocniczy Prezesa RM o charakterze opiniodawczo-doradczym utworzony 9.07.2026 r. dla wzmocnienia konkurencyjności przemysłu lotniczego: rekomenduje priorytety i instrumenty rozwoju, opiniuje projekty aktów prawnych, analizuje bariery dla przedsiębiorców i współpracy nauki z biznesem. Przewodniczący – minister ds. gospodarki; członkowie – przedstawiciele ministrów i branży. Podstawa: zarządzenie nr 40 PRM (M.P. 2026 poz. 680).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Zarządzenie nr 40 Prezesa Rady Ministrów z dnia 9 lipca 2026 r. w sprawie Rady Przemysłu Lotniczego (M.P. 2026 poz. 680), § 1–3",
+    "url": "https://eli.gov.pl/eli/MP/2026/680/ogl",
+    "act": "MP/2026/680",
+    "article": "§ 1–3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-kprm",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/680/ogl",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-do-spraw-promocji-marki-polski": {
+   "id": "pl-rada-do-spraw-promocji-marki-polski",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada do spraw promocji marki Polski",
+   "shortName": "Rada ds. promocji marki Polski",
+   "description": "Organ pomocniczy RM i PRM utworzony 3.08.2026 r.: identyfikuje wartość i pozycję marki Polski, opiniuje strategię jej budowy i promocji, formułuje rekomendacje i standardy komunikacji. Przewodniczący – Pełnomocnik Rządu ds. promocji marki Polski; członkowie – przedstawiciele MAP, MFiG, MKiDN, MNiSW, MSiT i MSZ, przedstawiciel Senatu oraz do 20 osób spoza administracji powoływanych przez PRM. Podstawa: M.P. 2026 poz. 755.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Zarządzenie nr 44 Prezesa Rady Ministrów z dnia 3 sierpnia 2026 r. w sprawie Rady do spraw promocji marki Polski (M.P. 2026 poz. 755), § 1–3",
+    "url": "https://eli.gov.pl/eli/MP/2026/755/ogl",
+    "act": "MP/2026/755",
+    "article": "§ 1–3"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-rada-ministrow",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/755/ogl",
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-do-spraw-cyfryzacji": {
+   "id": "pl-rada-do-spraw-cyfryzacji",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada do Spraw Cyfryzacji",
+   "shortName": "Rada ds. Cyfryzacji",
+   "description": "Ustawowy organ opiniodawczo-doradczy ministra właściwego ds. informatyzacji: opiniuje dokumenty KE i PE dotyczące informatyzacji, projekty strategii i aktów prawnych z zakresu cyfryzacji państwa oraz raporty o rejestrach i systemach teleinformatycznych; wspiera też Komitet ds. Cyfryzacji. 15–20 członków (VI kadencja 2026–2028, 19 ekspertów wg strony MC). Podstawa: art. 17 ustawy o informatyzacji.",
+   "aliases": [
+    "RdSC"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne, art. 17 (Dz.U. 2025 poz. 1703 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2005/565/ogl",
+    "act": "DU/2005/565",
+    "article": "art. 17"
+   },
+   "officialUrl": "https://www.gov.pl/web/cyfryzacja/rada-do-spraw-cyfryzacji",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 20,
+   "status": "active",
+   "statusNote": "Strona MC (VI kadencja) wymienia członków, ale nie wskazuje przewodniczącego Rady.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/1703/ogl",
+     "https://www.gov.pl/web/cyfryzacja/rada-do-spraw-cyfryzacji"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rady-konsultacyjno-doradcze-przy-prezydencie-rp": {
+   "id": "pl-rady-konsultacyjno-doradcze-przy-prezydencie-rp",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rady konsultacyjno-doradcze przy Prezydencie RP",
+   "shortName": "Rady przy Prezydencie RP",
+   "description": "Węzeł zbiorczy dla 17 rad konsultacyjno-doradczych przy Prezydencie RP Karolu Nawrockim, opartych na zewnętrznych ekspertach (m.in. Rada Młodzieży, Rada Rodziny i Demografii, Rada Zdrowia, Rada Rolnictwa, Rada Gospodarcza, Rada Bezpieczeństwa i Obronności, Rada Biznesu, Rada Nowych Mediów, Rada ds. Polonii, Rada Nowej Konstytucji). Powoływane przez Prezydenta bez odrębnej podstawy ustawowej; obsługuje Kancelaria Prezydenta RP.",
+   "aliases": [
+    "Rady przy Prezydencie"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 126 (zadania Prezydenta RP) – rady powoływane aktami Prezydenta RP bez odrębnej podstawy ustawowej; wykaz na prezydent.pl",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 126"
+   },
+   "officialUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-prezydent-rp",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Brak ustawowej lub publikowanej podstawy prawnej (rady tworzone decyzją Prezydenta RP); liczba 17 wg strony prezydent.pl z 17.09.2026 r.",
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 17
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "low"
+   }
+  },
+  "pl-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp": {
+   "id": "pl-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Bezpieczeństwa i Obronności przy Prezydencie RP",
+   "shortName": "Rada Bezpieczeństwa i Obronności",
+   "description": "Gremium konsultacyjno-doradcze Prezydenta RP powołane 12.03.2026 r.: przygotowuje opinie i ekspertyzy, wskazuje zagrożenia dla interesów RP w obszarze bezpieczeństwa i obronności (m.in. ochrona informacji niejawnych, dostęp do broni). 30 członków, w tym byli ministrowie i szefowie służb; przewodniczący – Sławomir Cenckiewicz, zastępcy – Michał Dworczyk i Tomasz Zdzikot. Nie jest tożsama z konstytucyjną Radą Bezpieczeństwa Narodowego.",
+   "aliases": [
+    "RBiO"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 126 – rada powołana aktem Prezydenta RP bez odrębnej podstawy ustawowej (strona prezydent.pl)",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 126"
+   },
+   "officialUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-bezpieczenstwa-i-obronnosci",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-prezydent-rp",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 30,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-slawomir-cenckiewicz",
+      "name": "Sławomir Cenckiewicz",
+      "positionId": "pl-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp",
+      "positionName": "Przewodniczący Rady Bezpieczeństwa i Obronności",
+      "type": "appointed",
+      "startedAt": "2026-03-12",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-bezpieczenstwa-i-obronnosci",
+      "startedAtSource": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-bezpieczenstwa-i-obronnosci",
+      "note": "Strona prezydent.pl: '12 marca 2026 r. – Powołanie Rady i inauguracyjne posiedzenie'; zastępcy przewodniczącego: Michał Dworczyk, Tomasz Zdzikot."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-bezpieczenstwa-i-obronnosci",
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rada-gospodarcza-przy-prezydencie-rp": {
+   "id": "pl-rada-gospodarcza-przy-prezydencie-rp",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Gospodarcza przy Prezydencie RP",
+   "shortName": "Rada Gospodarcza",
+   "description": "Eksperckie zaplecze Prezydenta RP w sprawach gospodarczych: dostarcza analiz, identyfikuje strategiczne kierunki rozwoju i założenia długofalowej polityki gospodarczej. W składzie ekonomiści, menedżerowie i przedstawiciele organizacji przedsiębiorców (m.in. członkowie RDS ze strony pracodawców); przewodniczący – Marek Dietl. Powołana aktem Prezydenta RP bez odrębnej podstawy ustawowej.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 126 – rada powołana aktem Prezydenta RP bez odrębnej podstawy ustawowej (strona prezydent.pl)",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 126"
+   },
+   "officialUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-gospodarcza",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-prezydent-rp",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-dietl",
+      "name": "Marek Dietl",
+      "positionId": "pl-rada-gospodarcza-przy-prezydencie-rp",
+      "positionName": "Przewodniczący Rady Gospodarczej przy Prezydencie RP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-gospodarcza",
+      "startedAtSource": null,
+      "note": "Strona prezydent.pl nie podaje daty powołania Rady."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-gospodarcza",
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rada-nowej-konstytucji-przy-prezydencie-rp": {
+   "id": "pl-rada-nowej-konstytucji-przy-prezydencie-rp",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Rada Nowej Konstytucji przy Prezydencie RP",
+   "shortName": "Rada Nowej Konstytucji",
+   "description": "Gremium powołane przez Prezydenta RP do prac nad projektem 'konstytucji nowej generacji roku 2030'; skupia konstytucjonalistów, sędziów, byłych parlamentarzystów i ekspertów (m.in. Małgorzata Manowska, Julia Przyłębska, Ryszard Legutko, Ryszard Piotrowski, Paweł Kukiz). Strona prezydent.pl nie wskazuje przewodniczącego. Powołana aktem Prezydenta RP bez odrębnej podstawy ustawowej.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 126 – rada powołana aktem Prezydenta RP bez odrębnej podstawy ustawowej (strona prezydent.pl)",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 126"
+   },
+   "officialUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-nowej-konstytucji",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-prezydent-rp",
+   "level": 3,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Strona prezydent.pl podaje skład, ale nie wskazuje przewodniczącego ani daty powołania.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-nowej-konstytucji",
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  }
+ },
+ "edges": {
+  "e-staly-komitet-rm--advises--rada-ministrow": {
+   "id": "e-staly-komitet-rm--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-staly-komitet-rady-ministrow",
+   "toId": "pl-rada-ministrow",
+   "cite": "Zarządzenie nr 86 PRM z 28.11.2013 r. ws. Stałego Komitetu Rady Ministrów, § 1–2 (M.P. 2021 poz. 327 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2013/986/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2013/986/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-staly-komitet-rm--advises--prm": {
+   "id": "e-staly-komitet-rm--advises--prm",
+   "type": "advises",
+   "fromId": "pl-staly-komitet-rady-ministrow",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Zarządzenie nr 86 PRM z 28.11.2013 r. ws. Stałego Komitetu Rady Ministrów, § 1–2 (M.P. 2021 poz. 327 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2013/986/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2013/986/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--staly-komitet-rm": {
+   "id": "e-prm--appoints--staly-komitet-rm",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-staly-komitet-rady-ministrow",
+   "cite": "Zarządzenie nr 86 PRM ws. SKRM, § 3 ust. 2 w brzmieniu M.P. 2025 poz. 710 (PRM powołuje i odwołuje Przewodniczącego SKRM)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2025/710/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2025/710/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-ekonomiczny-rm--advises--rada-ministrow": {
+   "id": "e-komitet-ekonomiczny-rm--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "toId": "pl-rada-ministrow",
+   "cite": "Zarządzenie nr 11 PRM z 5.02.2024 r. ws. KERM, § 1–2 (M.P. 2025 poz. 606 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/92/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/92/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-ekonomiczny-rm--advises--prm": {
+   "id": "e-komitet-ekonomiczny-rm--advises--prm",
+   "type": "advises",
+   "fromId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM z 5.02.2024 r. ws. KERM, § 1–2 (M.P. 2025 poz. 606 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/92/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/92/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-finansow-i-gospodarki--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-finansow-i-gospodarki--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-finansow-i-gospodarki",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (przewodniczący)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-aktywow-panstwowych--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-aktywow-panstwowych--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-aktywow-panstwowych",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (wiceprzewodniczący)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-cyfryzacji--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-cyfryzacji--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (członek)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-energii--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-energii--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-energii",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (członek)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-funduszy-i-polityki-regionalnej--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-funduszy-i-polityki-regionalnej--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-funduszy-i-polityki-regionalnej",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (członek)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-infrastruktury--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-infrastruktury--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-infrastruktury",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (członek)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-klimatu-i-srodowiska--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-klimatu-i-srodowiska--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-klimatu-i-srodowiska",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (członek)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-nauki-i-szkolnictwa-wyzszego--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-nauki-i-szkolnictwa-wyzszego--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-nauki-i-szkolnictwa-wyzszego",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (członek)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-rodziny-pracy-i-polityki-spolecznej--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-rodziny-pracy-i-polityki-spolecznej--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-rodziny-pracy-i-polityki-spolecznej",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (członek)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-rolnictwa-i-rozwoju-wsi--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-rolnictwa-i-rozwoju-wsi--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-rolnictwa-i-rozwoju-wsi",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 w brzmieniu M.P. 2026 poz. 14 (członek)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-ekonomiczny-rm": {
+   "id": "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-ekonomiczny-rm",
+   "type": "ex_officio",
+   "fromId": "pl-minister-czlonek-rm-szef-kprm",
+   "toId": "pl-komitet-ekonomiczny-rady-ministrow",
+   "cite": "Zarządzenie nr 11 PRM ws. KERM, § 3 ust. 1 pkt 2 w brzmieniu M.P. 2026 poz. 14 (wiceprzewodniczący – Szef KPRM)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/14/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/14/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-do-spraw-europejskich--advises--rada-ministrow": {
+   "id": "e-komitet-do-spraw-europejskich--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-komitet-do-spraw-europejskich",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o Komitecie do Spraw Europejskich, art. 3 (RM może upoważnić Komitet do rozpatrywania i rozstrzygania spraw)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/1277/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1277/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-zagranicznych--ex_officio--komitet-do-spraw-europejskich": {
+   "id": "e-min-spraw-zagranicznych--ex_officio--komitet-do-spraw-europejskich",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-komitet-do-spraw-europejskich",
+   "cite": "Ustawa o Komitecie do Spraw Europejskich, art. 2 ust. 2 pkt 1 (przewodniczący – minister właściwy ds. członkostwa RP w UE) w zw. z § 1 ust. 2 pkt 1 rozp. PRM z 2025 r. ws. szczegółowego zakresu działania MSZ (Dz.U. 2025 poz. 993)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2025/993/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1277/ogl",
+     "https://eli.gov.pl/eli/DU/2025/993/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-do-spraw-europejskich": {
+   "id": "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-do-spraw-europejskich",
+   "type": "ex_officio",
+   "fromId": "pl-minister-czlonek-rm-szef-kprm",
+   "toId": "pl-komitet-do-spraw-europejskich",
+   "cite": "Ustawa o Komitecie do Spraw Europejskich, art. 2 ust. 2 pkt 2 lit. b (Szef KPRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/1277/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1277/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-rm-do-spraw-bezpieczenstwa-narodowego--advises--rada-ministrow": {
+   "id": "e-komitet-rm-do-spraw-bezpieczenstwa-narodowego--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "toId": "pl-rada-ministrow",
+   "cite": "Zarządzenie nr 53 PRM z 16.05.2024 r., § 1–2 (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-rm-do-spraw-bezpieczenstwa-narodowego--advises--prm": {
+   "id": "e-komitet-rm-do-spraw-bezpieczenstwa-narodowego--advises--prm",
+   "type": "advises",
+   "fromId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Zarządzenie nr 53 PRM z 16.05.2024 r., § 1–2 (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-obrony-narodowej--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "e-min-obrony-narodowej--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie nr 53 PRM ws. KRM ds. Bezpieczeństwa Narodowego, § 3 ust. 1 (przewodniczący) (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-cyfryzacji--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "e-min-cyfryzacji--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie nr 53 PRM ws. KRM ds. Bezpieczeństwa Narodowego, § 3 ust. 1 (członek) (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-aktywow-panstwowych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "e-min-aktywow-panstwowych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-aktywow-panstwowych",
+   "toId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie nr 53 PRM ws. KRM ds. Bezpieczeństwa Narodowego, § 3 ust. 1 (członek) (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-sprawiedliwosci--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "e-min-sprawiedliwosci--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-sprawiedliwosci",
+   "toId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie nr 53 PRM ws. KRM ds. Bezpieczeństwa Narodowego, § 3 ust. 1 (członek) (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-wewnetrznych-i-administracji--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie nr 53 PRM ws. KRM ds. Bezpieczeństwa Narodowego, § 3 ust. 1 (członek) (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-zagranicznych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "e-min-spraw-zagranicznych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie nr 53 PRM ws. KRM ds. Bezpieczeństwa Narodowego, § 3 ust. 1 (członek) (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-koordynator-sluzb-specjalnych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "e-min-koordynator-sluzb-specjalnych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-koordynator-sluzb-specjalnych",
+   "toId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie nr 53 PRM ws. KRM ds. Bezpieczeństwa Narodowego, § 3 ust. 1 pkt 2 lit. f (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego": {
+   "id": "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-czlonek-rm-szef-kprm",
+   "toId": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie nr 53 PRM ws. KRM ds. Bezpieczeństwa Narodowego, § 3 ust. 1 pkt 2 lit. g (M.P. 2025 poz. 372 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2024/372/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2024/372/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-do-spraw-cyfryzacji--advises--rada-ministrow": {
+   "id": "e-komitet-do-spraw-cyfryzacji--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-komitet-do-spraw-cyfryzacji",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o informatyzacji, art. 17a ust. 1 (rozpatrywanie projektów dokumentów rządowych i przyjmowanie stanowisk)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/565/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/565/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-cyfryzacji--ex_officio--komitet-do-spraw-cyfryzacji": {
+   "id": "e-min-cyfryzacji--ex_officio--komitet-do-spraw-cyfryzacji",
+   "type": "ex_officio",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-komitet-do-spraw-cyfryzacji",
+   "cite": "Ustawa o informatyzacji, art. 17e ust. 1 pkt 1 (przewodniczący – minister właściwy ds. informatyzacji)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/565/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/565/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-do-spraw-cyfryzacji": {
+   "id": "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-do-spraw-cyfryzacji",
+   "type": "ex_officio",
+   "fromId": "pl-minister-czlonek-rm-szef-kprm",
+   "toId": "pl-komitet-do-spraw-cyfryzacji",
+   "cite": "Ustawa o informatyzacji, art. 17e ust. 1 pkt 3 lit. a (Szef KPRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/565/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/565/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-rm-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu--advises--rada-ministrow": {
+   "id": "e-komitet-rm-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-komitet-rady-ministrow-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu",
+   "toId": "pl-rada-ministrow",
+   "cite": "Zarządzenie nr 46 PRM z 29.08.2025 r., § 1–2 (M.P. 2025 poz. 869)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2025/869/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2025/869/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-rm-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu--advises--prm": {
+   "id": "e-komitet-rm-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu--advises--prm",
+   "type": "advises",
+   "fromId": "pl-komitet-rady-ministrow-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Zarządzenie nr 46 PRM z 29.08.2025 r., § 1–2 (M.P. 2025 poz. 869)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2025/869/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2025/869/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rzadowy-zespol-zarzadzania-kryzysowego--advises--rada-ministrow": {
+   "id": "e-rzadowy-zespol-zarzadzania-kryzysowego--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-rzadowy-zespol-zarzadzania-kryzysowego",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o zarządzaniu kryzysowym, art. 8 ust. 1 (organ opiniodawczo-doradczy przy RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego": {
+   "id": "e-prm--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rzadowy-zespol-zarzadzania-kryzysowego",
+   "cite": "Ustawa o zarządzaniu kryzysowym, art. 8 ust. 2 pkt 1 (przewodniczący – Prezes RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-obrony-narodowej--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego": {
+   "id": "e-min-obrony-narodowej--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-rzadowy-zespol-zarzadzania-kryzysowego",
+   "cite": "Ustawa o zarządzaniu kryzysowym, art. 8 ust. 2 pkt 2 (zastępca przewodniczącego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-wewnetrznych-i-administracji--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego": {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-rzadowy-zespol-zarzadzania-kryzysowego",
+   "cite": "Ustawa o zarządzaniu kryzysowym, art. 8 ust. 2 pkt 2 i 2a (minister ds. wewnętrznych – zastępca; minister ds. administracji publicznej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-zagranicznych--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego": {
+   "id": "e-min-spraw-zagranicznych--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-rzadowy-zespol-zarzadzania-kryzysowego",
+   "cite": "Ustawa o zarządzaniu kryzysowym, art. 8 ust. 2 pkt 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-koordynator-sluzb-specjalnych--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego": {
+   "id": "e-min-koordynator-sluzb-specjalnych--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-koordynator-sluzb-specjalnych",
+   "toId": "pl-rzadowy-zespol-zarzadzania-kryzysowego",
+   "cite": "Ustawa o zarządzaniu kryzysowym, art. 8 ust. 2 pkt 4",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/590/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/590/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kolegium-do-spraw-sluzb-specjalnych--advises--rada-ministrow": {
+   "id": "e-kolegium-do-spraw-sluzb-specjalnych--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o ABW oraz AW, art. 11 (organ opiniodawczo-doradczy przy RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--ex_officio--kolegium-do-spraw-sluzb-specjalnych": {
+   "id": "e-prm--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "cite": "Ustawa o ABW oraz AW, art. 12 ust. 2 pkt 1 (przewodniczący – Prezes RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-wewnetrznych-i-administracji--ex_officio--kolegium-do-spraw-sluzb-specjalnych": {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "cite": "Ustawa o ABW oraz AW, art. 12 ust. 2 pkt 3 lit. a",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-zagranicznych--ex_officio--kolegium-do-spraw-sluzb-specjalnych": {
+   "id": "e-min-spraw-zagranicznych--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "cite": "Ustawa o ABW oraz AW, art. 12 ust. 2 pkt 3 lit. b",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-obrony-narodowej--ex_officio--kolegium-do-spraw-sluzb-specjalnych": {
+   "id": "e-min-obrony-narodowej--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "type": "ex_officio",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "cite": "Ustawa o ABW oraz AW, art. 12 ust. 2 pkt 3 lit. c",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-finansow-i-gospodarki--ex_officio--kolegium-do-spraw-sluzb-specjalnych": {
+   "id": "e-min-finansow-i-gospodarki--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "type": "ex_officio",
+   "fromId": "pl-minister-finansow-i-gospodarki",
+   "toId": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "cite": "Ustawa o ABW oraz AW, art. 12 ust. 2 pkt 3 lit. d",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-koordynator-sluzb-specjalnych--ex_officio--kolegium-do-spraw-sluzb-specjalnych": {
+   "id": "e-min-koordynator-sluzb-specjalnych--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "type": "ex_officio",
+   "fromId": "pl-minister-koordynator-sluzb-specjalnych",
+   "toId": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "cite": "Ustawa o ABW oraz AW, art. 12 ust. 2 pkt 4",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-bbn--ex_officio--kolegium-do-spraw-sluzb-specjalnych": {
+   "id": "e-bbn--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "type": "ex_officio",
+   "fromId": "pl-bbn",
+   "toId": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "cite": "Ustawa o ABW oraz AW, art. 12 ust. 2 pkt 3 lit. e (Szef Biura Bezpieczeństwa Narodowego)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2002/676/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2002/676/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-komitet-do-spraw-pozytku-publicznego--dept_head--przewodniczacy-komitetu-do-spraw-pozytku-publicznego": {
+   "id": "e-komitet-do-spraw-pozytku-publicznego--dept_head--przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "type": "dept_head",
+   "fromId": "pl-komitet-do-spraw-pozytku-publicznego",
+   "toId": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "cite": "Ustawa o działalności pożytku publicznego i o wolontariacie, art. 34a ust. 1 pkt 1 i art. 34c ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/873/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--przewodniczacy-komitetu-do-spraw-pozytku-publicznego": {
+   "id": "e-prezydent-rp--appoints--przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "cite": "Konstytucja RP art. 154 ust. 1 w zw. z art. 34a ust. 2 ustawy o działalności pożytku publicznego (postanowienie Prezydenta M.P. 2025 poz. 690)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--nominates--przewodniczacy-komitetu-do-spraw-pozytku-publicznego": {
+   "id": "e-prm--nominates--przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "cite": "Konstytucja RP art. 154 ust. 1 (skład RM na wniosek Prezesa RM; M.P. 2025 poz. 690)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-przewodniczacy-komitetu-do-spraw-pozytku-publicznego--ex_officio--rada-ministrow": {
+   "id": "e-przewodniczacy-komitetu-do-spraw-pozytku-publicznego--ex_officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o działalności pożytku publicznego i o wolontariacie, art. 34a ust. 2 (Przewodniczący Komitetu wchodzi w skład Rady Ministrów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/873/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komitet-do-spraw-pozytku-publicznego--advises--rada-ministrow": {
+   "id": "e-komitet-do-spraw-pozytku-publicznego--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-komitet-do-spraw-pozytku-publicznego",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o działalności pożytku publicznego i o wolontariacie, art. 34b (zadania Komitetu: koordynacja i monitorowanie współpracy administracji rządowej z NGO, programy rządowe)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/873/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-rada-dzialalnosci-pozytku-publicznego--advises--przewodniczacy-komitetu-do-spraw-pozytku-publicznego": {
+   "id": "e-rada-dzialalnosci-pozytku-publicznego--advises--przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "type": "advises",
+   "fromId": "pl-rada-dzialalnosci-pozytku-publicznego",
+   "toId": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "cite": "Ustawa o działalności pożytku publicznego i o wolontariacie, art. 35 ust. 1 (organ opiniodawczo-doradczy Przewodniczącego Komitetu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/873/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-legislacyjna--advises--rada-ministrow": {
+   "id": "e-rada-legislacyjna--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-rada-legislacyjna",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o Radzie Ministrów, art. 14 ust. 1a–1b",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-legislacyjna--advises--prm": {
+   "id": "e-rada-legislacyjna--advises--prm",
+   "type": "advises",
+   "fromId": "pl-rada-legislacyjna",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Ustawa o Radzie Ministrów, art. 14 ust. 1–1b",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rada-legislacyjna": {
+   "id": "e-prm--appoints--rada-legislacyjna",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-legislacyjna",
+   "cite": "Ustawa o Radzie Ministrów, art. 14 ust. 2 (PRM powołuje członków RL); rozp. PRM ws. Rady Legislacyjnej § 2 (do 15 członków, przewodniczący i wiceprzewodniczący)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 15,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://eli.gov.pl/eli/DU/2022/1818/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-dialogu-spolecznego--advises--rada-ministrow": {
+   "id": "e-rada-dialogu-spolecznego--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-rada-dialogu-spolecznego",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o Radzie Dialogu Społecznego, art. 1–2 i art. 5 (opiniowanie projektów założeń i projektów aktów prawnych przygotowywanych przez RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1240/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1240/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--rada-dialogu-spolecznego": {
+   "id": "e-prezydent-rp--appoints--rada-dialogu-spolecznego",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-rada-dialogu-spolecznego",
+   "cite": "Ustawa o Radzie Dialogu Społecznego, art. 27 ust. 1 (Prezydent RP powołuje i odwołuje członków Rady)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1240/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1240/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--nominates--rada-dialogu-spolecznego": {
+   "id": "e-prm--nominates--rada-dialogu-spolecznego",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-dialogu-spolecznego",
+   "cite": "Ustawa o Radzie Dialogu Społecznego, art. 27 ust. 1 pkt 2 (członków strony rządowej Prezydent powołuje na wniosek PRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1240/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1240/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-rodziny-pracy-i-polityki-spolecznej--ex_officio--rada-dialogu-spolecznego": {
+   "id": "e-min-rodziny-pracy-i-polityki-spolecznej--ex_officio--rada-dialogu-spolecznego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-rodziny-pracy-i-polityki-spolecznej",
+   "toId": "pl-rada-dialogu-spolecznego",
+   "cite": "Ustawa o Radzie Dialogu Społecznego, art. 27 ust. 1 pkt 2 (strona rządowa: członkowie RM oraz przedstawiciel ministra ds. pracy odpowiedzialny za dialog społeczny)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1240/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1240/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-prezes-gus--ex_officio--rada-dialogu-spolecznego": {
+   "id": "e-prezes-gus--ex_officio--rada-dialogu-spolecznego",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-gus",
+   "toId": "pl-rada-dialogu-spolecznego",
+   "cite": "Ustawa o Radzie Dialogu Społecznego, art. 22 ust. 2 pkt 1 (przedstawiciel Prezesa GUS z głosem doradczym)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1240/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1240/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-komisja-wspolna-rzadu-i-samorzadu-terytorialnego--advises--rada-ministrow": {
+   "id": "e-komisja-wspolna-rzadu-i-samorzadu-terytorialnego--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o KWRiST, art. 2–3 (forum wspólnego stanowiska Rządu i samorządu; opiniowanie projektów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/759/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/759/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-wewnetrznych-i-administracji--ex_officio--komisja-wspolna-rzadu-i-samorzadu-terytorialnego": {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--ex_officio--komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "cite": "Ustawa o KWRiST, art. 4 ust. 2 pkt 1 i art. 11 ust. 1 pkt 1 (minister właściwy ds. administracji publicznej – współprzewodniczący ze strony rządowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/759/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/759/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--komisja-wspolna-rzadu-i-samorzadu-terytorialnego": {
+   "id": "e-prm--appoints--komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "cite": "Ustawa o KWRiST, art. 4 ust. 2 pkt 2 (15 przedstawicieli strony rządowej powołuje PRM na wniosek ministra ds. administracji publicznej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/759/ogl",
+   "seatsAppointed": 15,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/759/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-spraw-wewnetrznych-i-administracji--nominates--komisja-wspolna-rzadu-i-samorzadu-terytorialnego": {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--nominates--komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "cite": "Ustawa o KWRiST, art. 4 ust. 2 pkt 2 (wniosek ministra właściwego ds. administracji publicznej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/759/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/759/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-komisja-wspolna-przedstawicieli-rzadu-i-konferencji-episkopatu-polski--advises--rada-ministrow": {
+   "id": "e-komisja-wspolna-przedstawicieli-rzadu-i-konferencji-episkopatu-polski--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-komisja-wspolna-przedstawicieli-rzadu-i-konferencji-episkopatu-polski",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o stosunku Państwa do Kościoła Katolickiego w RP, art. 4 ust. 1 (rozpatrywanie problemów stosunków Państwo–Kościół)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1989/154/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1989/154/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych--advises--prm": {
+   "id": "e-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych--advises--prm",
+   "type": "advises",
+   "fromId": "pl-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Ustawa o mniejszościach narodowych i etnicznych oraz o języku regionalnym, art. 23 ust. 1 (organ opiniodawczo-doradczy PRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/141/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/141/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rzadowa-komisja-konkordatowa--advises--rada-ministrow": {
+   "id": "e-rzadowa-komisja-konkordatowa--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-rzadowa-komisja-konkordatowa",
+   "toId": "pl-rada-ministrow",
+   "cite": "Rejestr organów doradczych KPRM (organ powołany do rozpatrywania określonej grupy spraw – art. 12 ust. 1 pkt 2 ustawy o Radzie Ministrów; przepis ogólny)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/inne-organy-doradcze-powolane-do-rozpatrywania-okreslonej-sprawy-lub-grupy-spraw3",
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "low"
+   }
+  },
+  "e-rada-statystyki--advises--prm": {
+   "id": "e-rada-statystyki--advises--prm",
+   "type": "advises",
+   "fromId": "pl-rada-statystyki",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Ustawa o statystyce publicznej, art. 15 ust. 1–2 (organ opiniodawczo-doradczy działający przy PRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-statystyki--advises--rada-ministrow": {
+   "id": "e-rada-statystyki--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-rada-statystyki",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o statystyce publicznej, art. 15 ust. 3 pkt 2 (przedstawia RM projekt programu badań statystycznych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rada-statystyki": {
+   "id": "e-prm--appoints--rada-statystyki",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-statystyki",
+   "cite": "Ustawa o statystyce publicznej, art. 16 ust. 1 (członków Rady powołuje PRM) i art. 17 ust. 1 (kadencja 5 lat)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-gus--ex_officio--rada-statystyki": {
+   "id": "e-prezes-gus--ex_officio--rada-statystyki",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-gus",
+   "toId": "pl-rada-statystyki",
+   "cite": "Ustawa o statystyce publicznej, art. 16 ust. 2 (w pracach Rady uczestniczy Prezes GUS)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/439/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/439/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-sluzby-publicznej--advises--prm": {
+   "id": "e-rada-sluzby-publicznej--advises--prm",
+   "type": "advises",
+   "fromId": "pl-rada-sluzby-publicznej",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Ustawa o służbie cywilnej, art. 19 ust. 1–2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2008/1505/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-sluzby-publicznej--advises--szef-sluzby-cywilnej": {
+   "id": "e-rada-sluzby-publicznej--advises--szef-sluzby-cywilnej",
+   "type": "advises",
+   "fromId": "pl-rada-sluzby-publicznej",
+   "toId": "pl-szef-sluzby-cywilnej",
+   "cite": "Ustawa o służbie cywilnej, art. 19 ust. 2 pkt 1 (opinie w sprawach przedstawianych przez Szefa Służby Cywilnej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2008/1505/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rada-sluzby-publicznej": {
+   "id": "e-prm--appoints--rada-sluzby-publicznej",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-sluzby-publicznej",
+   "cite": "Ustawa o służbie cywilnej, art. 20 ust. 1–3 (PRM powołuje 7–9 członków oraz przewodniczącego i wiceprzewodniczącego Rady)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2008/1505/ogl",
+   "seatsAppointed": 9,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2008/1505/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych--advises--prm": {
+   "id": "e-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych--advises--prm",
+   "type": "advises",
+   "fromId": "pl-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Ustawa o zasadach zarządzania mieniem państwowym, art. 24–25 (opinie dla podmiotów wykonujących prawa z akcji SP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/2259/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/2259/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-prm--appoints--rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych": {
+   "id": "e-prm--appoints--rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "cite": "Ustawa o zasadach zarządzania mieniem państwowym, art. 28 ust. 1 pkt 1 (PRM powołuje 4 członków)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/2259/ogl",
+   "seatsAppointed": 4,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/2259/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-aktywow-panstwowych--appoints--rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych": {
+   "id": "e-min-aktywow-panstwowych--appoints--rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "type": "appoints",
+   "fromId": "pl-minister-aktywow-panstwowych",
+   "toId": "pl-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "cite": "Ustawa o zasadach zarządzania mieniem państwowym, art. 28 ust. 1 pkt 2 (minister ds. aktywów państwowych powołuje 4 członków)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/2259/ogl",
+   "seatsAppointed": 4,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/2259/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rada-do-spraw-uchodzcow": {
+   "id": "e-prm--appoints--rada-do-spraw-uchodzcow",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-do-spraw-uchodzcow",
+   "cite": "Ustawa o udzielaniu cudzoziemcom ochrony na terytorium RP, art. 89r ust. 1 (12 członków powołuje PRM na 5-letnią kadencję)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+   "seatsAppointed": 12,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2003/1176/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krajowa-rada-bezpieczenstwa-ruchu-drogowego--advises--rada-ministrow": {
+   "id": "e-krajowa-rada-bezpieczenstwa-ruchu-drogowego--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-krajowa-rada-bezpieczenstwa-ruchu-drogowego",
+   "toId": "pl-rada-ministrow",
+   "cite": "Prawo o ruchu drogowym, art. 140b ust. 2 (międzyresortowy organ pomocniczy RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/602/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/602/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-infrastruktury--ex_officio--krajowa-rada-bezpieczenstwa-ruchu-drogowego": {
+   "id": "e-min-infrastruktury--ex_officio--krajowa-rada-bezpieczenstwa-ruchu-drogowego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-infrastruktury",
+   "toId": "pl-krajowa-rada-bezpieczenstwa-ruchu-drogowego",
+   "cite": "Prawo o ruchu drogowym, art. 140d pkt 1 (przewodniczący – minister właściwy ds. transportu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/602/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/602/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-do-spraw-innowacyjnosci--advises--rada-ministrow": {
+   "id": "e-rada-do-spraw-innowacyjnosci--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-rada-do-spraw-innowacyjnosci",
+   "toId": "pl-rada-ministrow",
+   "cite": "Zarządzenie nr 4 PRM z 18.01.2016 r. ws. utworzenia Rady do spraw Innowacyjności, § 1 ust. 2 i § 2 (M.P. 2026 poz. 743 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2016/63/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2016/63/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-finansow-i-gospodarki--ex_officio--rada-do-spraw-innowacyjnosci": {
+   "id": "e-min-finansow-i-gospodarki--ex_officio--rada-do-spraw-innowacyjnosci",
+   "type": "ex_officio",
+   "fromId": "pl-minister-finansow-i-gospodarki",
+   "toId": "pl-rada-do-spraw-innowacyjnosci",
+   "cite": "Zarządzenie nr 4 PRM ws. Rady do spraw Innowacyjności, § 3 ust. 1 pkt 1 (przewodniczący – minister właściwy ds. gospodarki) (M.P. 2026 poz. 743 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2016/63/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2016/63/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-rada-przyszlosci--advises--prm": {
+   "id": "e-rada-przyszlosci--advises--prm",
+   "type": "advises",
+   "fromId": "pl-rada-przyszlosci",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Zarządzenie nr 26 PRM z 31.03.2026 r. ws. Rady Przyszłości, § 1 ust. 2 i § 5 ust. 1 pkt 6 (M.P. 2026 poz. 351)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/351/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/351/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-do-spraw-polityki-senioralnej--advises--prm": {
+   "id": "e-rada-do-spraw-polityki-senioralnej--advises--prm",
+   "type": "advises",
+   "fromId": "pl-rada-do-spraw-polityki-senioralnej",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Zarządzenie nr 37 PRM z 9.06.2026 r. ws. Rady do spraw Polityki Senioralnej, § 1 ust. 2 i § 4 ust. 1 pkt 5 (M.P. 2026 poz. 600)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/600/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/600/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rada-do-spraw-polityki-senioralnej": {
+   "id": "e-prm--appoints--rada-do-spraw-polityki-senioralnej",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-do-spraw-polityki-senioralnej",
+   "cite": "Zarządzenie nr 37 PRM ws. Rady do spraw Polityki Senioralnej, § 3 ust. 2 (24 członków powołuje PRM na wniosek organu ds. polityki senioralnej)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/600/ogl",
+   "seatsAppointed": 24,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/600/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-miedzynarodowa-rada-oswiecimska--advises--prm": {
+   "id": "e-miedzynarodowa-rada-oswiecimska--advises--prm",
+   "type": "advises",
+   "fromId": "pl-miedzynarodowa-rada-oswiecimska",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Rejestr organów pomocniczych PRM (KPRM): 'organ opiniodawczo-doradczy Prezesa Rady Ministrów'; art. 12 ust. 1 pkt 3 ustawy o Radzie Ministrów (przepis ogólny)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/premier/organy-pomocnicze-prezesa-rady-ministrow2",
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-rada-przemyslu-lotniczego--advises--prm": {
+   "id": "e-rada-przemyslu-lotniczego--advises--prm",
+   "type": "advises",
+   "fromId": "pl-rada-przemyslu-lotniczego",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Zarządzenie nr 40 PRM z 9.07.2026 r. ws. Rady Przemysłu Lotniczego, § 1 ust. 2 (M.P. 2026 poz. 680)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/680/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/680/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-min-finansow-i-gospodarki--ex_officio--rada-przemyslu-lotniczego": {
+   "id": "e-min-finansow-i-gospodarki--ex_officio--rada-przemyslu-lotniczego",
+   "type": "ex_officio",
+   "fromId": "pl-minister-finansow-i-gospodarki",
+   "toId": "pl-rada-przemyslu-lotniczego",
+   "cite": "Zarządzenie nr 40 PRM ws. Rady Przemysłu Lotniczego, § 3 ust. 1 pkt 1 (przewodniczący – minister właściwy ds. gospodarki)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/680/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/680/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-rada-do-spraw-promocji-marki-polski--advises--rada-ministrow": {
+   "id": "e-rada-do-spraw-promocji-marki-polski--advises--rada-ministrow",
+   "type": "advises",
+   "fromId": "pl-rada-do-spraw-promocji-marki-polski",
+   "toId": "pl-rada-ministrow",
+   "cite": "Zarządzenie nr 44 PRM z 3.08.2026 r. ws. Rady do spraw promocji marki Polski, § 1 (M.P. 2026 poz. 755)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/755/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/755/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-do-spraw-promocji-marki-polski--advises--prm": {
+   "id": "e-rada-do-spraw-promocji-marki-polski--advises--prm",
+   "type": "advises",
+   "fromId": "pl-rada-do-spraw-promocji-marki-polski",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Zarządzenie nr 44 PRM z 3.08.2026 r. ws. Rady do spraw promocji marki Polski, § 1 (M.P. 2026 poz. 755)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/755/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/755/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--rada-do-spraw-promocji-marki-polski": {
+   "id": "e-prm--appoints--rada-do-spraw-promocji-marki-polski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-do-spraw-promocji-marki-polski",
+   "cite": "Zarządzenie nr 44 PRM ws. Rady do spraw promocji marki Polski, § 3 ust. 2 (do 20 członków powołuje PRM na wniosek Przewodniczącego Rady)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/755/ogl",
+   "seatsAppointed": 20,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/755/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-do-spraw-cyfryzacji--advises--min-cyfryzacji": {
+   "id": "e-rada-do-spraw-cyfryzacji--advises--min-cyfryzacji",
+   "type": "advises",
+   "fromId": "pl-rada-do-spraw-cyfryzacji",
+   "toId": "pl-minister-cyfryzacji",
+   "cite": "Ustawa o informatyzacji, art. 17 ust. 1 (organ opiniodawczo-doradczy ministra właściwego ds. informatyzacji)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/565/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/565/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-do-spraw-cyfryzacji--advises--komitet-do-spraw-cyfryzacji": {
+   "id": "e-rada-do-spraw-cyfryzacji--advises--komitet-do-spraw-cyfryzacji",
+   "type": "advises",
+   "fromId": "pl-rada-do-spraw-cyfryzacji",
+   "toId": "pl-komitet-do-spraw-cyfryzacji",
+   "cite": "Strona MC: Rada wspiera Ministerstwo Cyfryzacji oraz Komitet do spraw Cyfryzacji; ustawa o informatyzacji art. 17 ust. 2 pkt 1a (opiniowanie dokumentów rządowych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/565/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.gov.pl/web/cyfryzacja/rada-do-spraw-cyfryzacji",
+     "https://eli.gov.pl/eli/DU/2005/565/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-rady-konsultacyjno-doradcze-przy-prezydencie-rp--advises--prezydent-rp": {
+   "id": "e-rady-konsultacyjno-doradcze-przy-prezydencie-rp--advises--prezydent-rp",
+   "type": "advises",
+   "fromId": "pl-rady-konsultacyjno-doradcze-przy-prezydencie-rp",
+   "toId": "pl-prezydent-rp",
+   "cite": "Strona prezydent.pl: 'szerokie gremia konsultacyjno-doradcze' Prezydenta RP (brak przepisu ustawowego)",
+   "citeUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp"
+    ],
+    "confidence": "low"
+   }
+  },
+  "e-prezydent-rp--appoints--rady-konsultacyjno-doradcze-przy-prezydencie-rp": {
+   "id": "e-prezydent-rp--appoints--rady-konsultacyjno-doradcze-przy-prezydencie-rp",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-rady-konsultacyjno-doradcze-przy-prezydencie-rp",
+   "cite": "Powołanie przez Prezydenta RP (akty Prezydenta niepublikowane; wykaz na prezydent.pl)",
+   "citeUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp"
+    ],
+    "confidence": "low"
+   }
+  },
+  "e-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp--advises--prezydent-rp": {
+   "id": "e-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp--advises--prezydent-rp",
+   "type": "advises",
+   "fromId": "pl-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp",
+   "toId": "pl-prezydent-rp",
+   "cite": "Strona prezydent.pl: 'gremium konsultacyjno-doradcze Prezydenta RP' (brak przepisu ustawowego)",
+   "citeUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-bezpieczenstwa-i-obronnosci",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-bezpieczenstwa-i-obronnosci"
+    ],
+    "confidence": "low"
+   }
+  },
+  "e-rada-gospodarcza-przy-prezydencie-rp--advises--prezydent-rp": {
+   "id": "e-rada-gospodarcza-przy-prezydencie-rp--advises--prezydent-rp",
+   "type": "advises",
+   "fromId": "pl-rada-gospodarcza-przy-prezydencie-rp",
+   "toId": "pl-prezydent-rp",
+   "cite": "Strona prezydent.pl: 'eksperckie zaplecze Prezydenta RP' (brak przepisu ustawowego)",
+   "citeUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-gospodarcza",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-gospodarcza"
+    ],
+    "confidence": "low"
+   }
+  },
+  "e-rada-nowej-konstytucji-przy-prezydencie-rp--advises--prezydent-rp": {
+   "id": "e-rada-nowej-konstytucji-przy-prezydencie-rp--advises--prezydent-rp",
+   "type": "advises",
+   "fromId": "pl-rada-nowej-konstytucji-przy-prezydencie-rp",
+   "toId": "pl-prezydent-rp",
+   "cite": "Strona prezydent.pl (brak przepisu ustawowego)",
+   "citeUrl": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-nowej-konstytucji",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-nowej-konstytucji"
+    ],
+    "confidence": "low"
+   }
+  }
+ }
+}

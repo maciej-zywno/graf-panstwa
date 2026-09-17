@@ -1,0 +1,24 @@
+node_modules/
+test-results/
+tests/e2e/report/
+dist/
+
+# tylko lokalnie: materiały analityczne z oryginału CivLab (nie nasze, nie do rozpowszechniania)
+reference/
+data/us-test/
+docs/01-analiza-civlab-us-gov-graph.md
+scripts/convert-civlab.py
+tests/parity/shots/
+tests/parity/scripts-v2/
+
+# tylko lokalnie: wycofane skórki robocze, historia wyboru kierunku, zrzuty robocze
+archive/
+docs/kierunki-ui/
+viewer/variants/D-styl-civlab/screenshots/
+
+# tylko lokalnie: korespondencja i dane wdrożeniowe
+docs/korespondencja/
+deploy/local.env
+deploy/NOTATKI-PRYWATNE.md
+
+.DS_Store

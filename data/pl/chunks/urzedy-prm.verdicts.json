@@ -1,0 +1,1277 @@
+{
+ "chunk": "urzedy-prm",
+ "verifiedAt": "2026-09-17",
+ "summary": "Sprawdzono wszystkie 48 węzłów (każdy legalSource w ELI: 200 + tytuł t.j. pasuje; 12 części budżetowych potwierdzonych w Dz.U. 2025 poz. 1185), wszystkie 37 rekordów osób (każda strona otwarta curl-em; wykaz KPRM 23 jednostek pobrany i porównany) i wszystkie 85 krawędzi (przepisy odczytane z tekstów jednolitych pdftotext). Węzły: {'confirmed': 47, 'corrected': 1}; osoby: {'confirmed': 30, 'corrected': 7}; krawędzie: {'confirmed': 82, 'corrected': 3}. Zero refuted. Najważniejsze korekty: Marek Miller powołany na Prezesa PGRP 12.12.2025 (nie 24.09.2025 – to data zastępstwa); Knapińska Prezes RCL od 19.01.2024; Zielińska Prezes PKN od 24.06.2022 (BIP PKN dostępny); Góra od 2016-02; Marciniak – działająca podstrona cbos.pl; nazwiska Syrysko/Szota bez stopnia 'płk'; cite krawędzi Koordynatora Służb → rozporządzenie PRM Dz.U. 2025 poz. 1003 (ustawa o CBA art. 5 ust. 3 mówi o koordynacji, nie nadzorze). Dodano 9 krawędzi: PRM→appoints→Prezes PAN (art. 21 ust. 1), Rada CBOS→Dyrektor (art. 9 ust. 2), Prezydent/Sejm/Senat→Rada CBOS (art. 8 ust. 1 pkt 1–2), Szef KPRM→oversees→OSW/IEŚ/IZ/ISW (czynności nadzorcze w imieniu PRM).",
+ "stats": {
+  "nodes_checked": 48,
+  "people_checked": 37,
+  "edges_checked": 85
+ },
+ "nodes": [
+  {
+   "id": "pl-gus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 23 ust. 1–2 i art. 24 ust. 1 t.j. Dz.U. 2026 poz. 851 (ELI 200, tytuł pasuje) – Prezes GUS centralnym organem, nadzór PRM, powołanie przez PRM po naborze. Część 58 potwierdzona w Dz.U. 2025 poz. 1185. Ring administration, parent null – OK."
+  },
+  {
+   "id": "pl-prezes-gus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 23–24 t.j. 2026/851 zgodne z opisem. headOf/head spójne."
+  },
+  {
+   "id": "pl-polski-komitet-normalizacyjny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 ust. 1–2 t.j. Dz.U. 2015 poz. 1483 (jedyny t.j. wg ELI) – PKN państwową jednostką organizacyjną; art. 10 ust. 1 nadzór PRM w zakresie 3 kategorii spraw. Część 65 potwierdzona. Wykaz KPRM wymienia PKN."
+  },
+  {
+   "id": "pl-prezes-pkn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 16 ust. 1 t.j. 2015/1483 – PRM powołuje Prezesa po naborze. Strona bip.pkn.pl/kierownictwo JEST dostępna (curl 200) i podaje nazwisko oraz datę – patrz osoby."
+  },
+  {
+   "id": "pl-uokik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 29 ust. 1 i 3 t.j. Dz.U. 2025 poz. 1714 – zgodne. Część 53 potwierdzona. Art. 33a ust. 1 pkt 6 ustawy o działach potwierdzony (t.j. 2025/1275)."
+  },
+  {
+   "id": "pl-prezes-uokik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 29 ust. 3 t.j. 2025/1714: powołanie przez PRM na 5-letnią kadencję po naborze – zgodne."
+  },
+  {
+   "id": "pl-abw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1–3 t.j. Dz.U. 2026 poz. 937 (ELI 200) – Szef ABW centralnym organem, podlega bezpośrednio PRM, kontrola Sejmu. Część 57 potwierdzona."
+  },
+  {
+   "id": "pl-szef-abw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14 ust. 1 t.j. 2026/937 – powołanie/odwołanie przez PRM po opinii Prezydenta, Kolegium i sejmowej Komisji – zgodne."
+  },
+  {
+   "id": "pl-aw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1–3 t.j. 2026/937 – zgodne. Część 59 potwierdzona."
+  },
+  {
+   "id": "pl-szef-aw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14 ust. 1 t.j. 2026/937 – zgodne."
+  },
+  {
+   "id": "pl-cba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 1–2a i art. 6 ust. 1 t.j. Dz.U. 2025 poz. 712 – zgodne (Szef CBA nadzorowany przez PRM, kontrola Sejmu). Część 56 potwierdzona. Informacja o wecie 11.05.2026 pochodzi z briefu zlecającego (stan zweryfikowany przez koordynatora); nie znalazłem jej samodzielnie w API Sejmu (endpoint processes zwraca tylko 50 rekordów) – status pending_abolition zachowany zgodnie z briefem."
+  },
+  {
+   "id": "pl-szef-cba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1 t.j. 2025/712 – kadencja 4 lata, opinie Prezydenta/Kolegium/Komisji – zgodne."
+  },
+  {
+   "id": "pl-ure",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21 ust. 1–2a t.j. Dz.U. 2026 poz. 43 (ELI 200, tytuł 'Prawo energetyczne') – zgodne; nadzór PRM wynika z art. 33a ust. 1 pkt 15 ustawy o działach (potwierdzony). Część 50 potwierdzona."
+  },
+  {
+   "id": "pl-prezes-ure",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21 ust. 2a t.j. 2026/43 – powołanie przez PRM po naborze – zgodne."
+  },
+  {
+   "id": "pl-prokuratoria-generalna-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 ust. 1 i 4 t.j. Dz.U. 2024 poz. 1192 – zgodne. Część 74 potwierdzona. Art. 33a ust. 1 pkt 17 potwierdzony."
+  },
+  {
+   "id": "pl-prezes-prokuratorii-generalnej-rp",
+   "status": "corrected",
+   "fixes": {
+    "provenance": {
+     "sources": [
+      "https://www.gov.pl/web/prokuratoria/kierownictwo",
+      "https://www.gov.pl/web/prokuratoria/prezes-marek-miller",
+      "https://www.gov.pl/web/premier/jednostki-i-organy-nadzorowane-przez-prezesa-rady-ministrow"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "note": "Art. 41 ust. 1 t.j. 2024/1192 – powołanie przez PRM po naborze – zgodne. Osoba: patrz korekta daty."
+  },
+  {
+   "id": "pl-knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 4 pkt 1 i art. 5 ust. 1–2, 5 t.j. Dz.U. 2026 poz. 935 – skład 1+3+9 = 13 zgodny ze stroną knf.gov.pl/o_nas/komisja. Ring oversight/sector independent zgodnie z briefem. Uwaga modelowa: formalnie KNF jest organem Urzędu KNF (art. 3 ust. 4), a nie odwrotnie – model 'UKNF jako satelita KNF' jest uproszczeniem, akceptowalnym."
+  },
+  {
+   "id": "pl-przewodniczacy-knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 5 i art. 7 ust. 1 t.j. 2026/935 – zgodne."
+  },
+  {
+   "id": "pl-urzad-knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1 i 3 t.j. 2026/935 – państwowa osoba prawna, nadzór PRM – zgodne. Satellite z parent=pl-knf – patrz uwaga przy pl-knf."
+  },
+  {
+   "id": "pl-rcl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14a t.j. Dz.U. 2025 poz. 780 – państwowa jednostka organizacyjna podległa PRM – zgodne. Część 75 potwierdzona."
+  },
+  {
+   "id": "pl-prezes-rcl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14e ust. 1–2 t.j. 2025/780 – zgodne. Osoba: patrz korekta daty."
+  },
+  {
+   "id": "pl-rzadowe-centrum-bezpieczenstwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 i art. 11 ust. 1 t.j. Dz.U. 2026 poz. 574 – państwowa jednostka budżetowa podległa PRM – zgodne. Wykaz KPRM wymienia RCB."
+  },
+  {
+   "id": "pl-dyrektor-rcb",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 2–3 t.j. 2026/574 – zgodne."
+  },
+  {
+   "id": "pl-ksap",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 ust. 1–1a i art. 2 ust. 1–3 t.j. Dz.U. 2023 poz. 1952 – zgodne (nazwa z imieniem Lecha Kaczyńskiego)."
+  },
+  {
+   "id": "pl-dyrektor-ksap",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 2 t.j. 2023/1952 – dyrektor powoływany i odwoływany przez PRM – zgodne."
+  },
+  {
+   "id": "pl-pan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 ust. 1 i art. 5 ust. 1–2 t.j. Dz.U. 2026 poz. 168 – zgodne. Część 67 potwierdzona."
+  },
+  {
+   "id": "pl-prezes-pan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 2 pkt 2 i art. 21 ust. 1 t.j. 2026/168 – wybór przez Zgromadzenie Ogólne, PRM dokonuje aktu powołania – w chunku brakuje krawędzi PRM→appoints (dodana w additions)."
+  },
+  {
+   "id": "pl-biuro-rzecznika-finansowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa t.j. Dz.U. 2026 poz. 823 (ELI 200, tytuł pasuje); art. 25 dotyczy uprawnień Rzecznika/pracowników Biura. Serwis rf.gov.pl i bip.rf.gov.pl blokują boty (Incapsula, także przez WebFetch) – dane organizacyjne oparte na ustawie i wykazie KPRM."
+  },
+  {
+   "id": "pl-rzecznik-finansowy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11–12 t.j. 2026/823 – powołanie przez PRM na wniosek ministra ds. instytucji finansowych, kadencja 4 lata – zgodne."
+  },
+  {
+   "id": "pl-biuro-rzecznika-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 42 ust. 1–3 t.j. Dz.U. 2024 poz. 581 – zgodne. Część 66 potwierdzona. Rzecznik Praw Pacjenta jest na wykazie KPRM – właściwie umieszczony w tym chunku."
+  },
+  {
+   "id": "pl-rzecznik-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 42 ust. 1–2 i art. 44 ust. 1 t.j. 2024/581 – zgodne."
+  },
+  {
+   "id": "pl-biuro-rzecznika-msp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 t.j. Dz.U. 2026 poz. 461 – zgodne. Brak na wykazie KPRM (chunk to odnotowuje)."
+  },
+  {
+   "id": "pl-rzecznik-msp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1–2 i art. 4 t.j. 2026/461 – zgodne (kadencja 6 lat, wniosek ministra ds. gospodarki)."
+  },
+  {
+   "id": "pl-szef-sluzby-cywilnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1–3 t.j. Dz.U. 2026 poz. 590 – zgodne; strona gov.pl/web/sluzbacywilna potwierdza obsługę przez KPRM. headOf=null uzasadnione."
+  },
+  {
+   "id": "pl-utk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 t.j. Dz.U. 2025 poz. 1234 – zgodne; ust. 4–5 (dawna klauzula nadzoru) uchylone – brak ustawowej klauzuli nadzoru PRM, opis to sygnalizuje. Część 71 potwierdzona. UTK na wykazie KPRM."
+  },
+  {
+   "id": "pl-prezes-utk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 ust. 1 t.j. 2025/1234 – zgodne."
+  },
+  {
+   "id": "pl-cbos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa Dz.U. 1997 nr 30 poz. 163 (ELI 200, brak t.j.): art. 1 fundacja, art. 8 skład Rady, art. 9 ust. 2 Dyrektor powoływany przez Radę na 5 lat, art. 13 nadzór PRM – zgodne."
+  },
+  {
+   "id": "pl-dyrektor-cbos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 ust. 1–2 i art. 15 – zgodne. Osoba: strona cbos.pl/PL/o_firmie/dyrekcja.php JEST dostępna – patrz korekta."
+  },
+  {
+   "id": "pl-osw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 ust. 1 i art. 3 ust. 1–2 Dz.U. 2011 nr 173 poz. 1029 – zgodne (czynności nadzorcze wykonuje Szef KPRM)."
+  },
+  {
+   "id": "pl-dyrektor-osw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1–2 – powołanie przez PRM spośród kandydatów Rady Ośrodka – zgodne."
+  },
+  {
+   "id": "pl-instytut-europy-srodkowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 1 i art. 4 ust. 1–3 Dz.U. 2018 poz. 2270 – zgodne."
+  },
+  {
+   "id": "pl-dyrektor-ies",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 1 – zgodne."
+  },
+  {
+   "id": "pl-instytut-zachodni",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 ust. 1–2 i art. 3 ust. 1–2 Dz.U. 2015 poz. 2292 – zgodne. Serwis iz.poznan.pl: strona główna ładuje się niepełnie (curl code 000), podstrony /pracownicy/dyrekcja, /o-instytucie/* zwracają 404, WebFetch – błąd certyfikatu."
+  },
+  {
+   "id": "pl-dyrektor-instytutu-zachodniego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1–4 – zgodne (kadencja 5 lat)."
+  },
+  {
+   "id": "pl-instytut-strat-wojennych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§ 2 ust. 1–2 zarządzenia nr 321 (t.j. M.P. 2023 poz. 412, ELI 200) – zgodne."
+  },
+  {
+   "id": "pl-dyrektor-isw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§ 5 ust. 1 statutu (załącznik do zarządzenia, wiersz po 'Załącznik do zarządzenia nr 321') – zgodne."
+  },
+  {
+   "id": "pl-instytut-wspolpracy-polsko-wegierskiej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 1 i art. 3 t.j. Dz.U. 2024 poz. 251 – zgodne."
+  },
+  {
+   "id": "pl-dyrektor-instytutu-felczaka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8 ust. 1 t.j. 2024/251 – zgodne."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-prezes-gus",
+   "personId": "pl-marek-cierpial-wolan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "new.stat.gov.pl/o-nas/kierownictwo-gus: 'Marek Cierpiał-Wolan / Prezes GUS'; także wykaz KPRM. Brak daty powołania na stronie."
+  },
+  {
+   "nodeId": "pl-prezes-pkn",
+   "personId": "pl-ewa-zielinska",
+   "status": "corrected",
+   "fixes": {
+    "sourceUrl": "https://bip.pkn.pl/kierownictwo",
+    "startedAt": "2022-06-24",
+    "startedAtSource": "https://bip.pkn.pl/kierownictwo",
+    "note": "BIP PKN: 'Ewa ZIELIŃSKA – z dniem 24 czerwca 2022 r. powołana na stanowisko Prezesa PKN; od 29.03.2022 p.o. Prezesa'."
+   },
+   "note": "bip.pkn.pl/kierownictwo dostępna (curl 200, bez Incapsuli): podaje nazwisko i datę powołania 24.06.2022 – wcześniejsza nota o niedostępności nieaktualna."
+  },
+  {
+   "nodeId": "pl-prezes-uokik",
+   "personId": "pl-tomasz-chrostny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uokik.gov.pl/kierownictwo: 'Prezes Rady Ministrów powołał Tomasza Chróstnego na stanowisko Prezesa UOKiK 27 stycznia 2020 r.' – nazwisko i data zgodne."
+  },
+  {
+   "nodeId": "pl-szef-abw",
+   "personId": "pl-rafal-syrysko",
+   "status": "corrected",
+   "fixes": {
+    "name": "Rafał Syrysko",
+    "note": "Stopień: płk. BIP ABW nie podaje daty powołania."
+   },
+   "note": "bip.abw.gov.pl/bip/kierownictwo: 'płk Rafał Syrysko – SZEF ABW'. Korekta: stopień wojskowy nie jest częścią nazwiska (pole name)."
+  },
+  {
+   "nodeId": "pl-szef-aw",
+   "personId": "pl-pawel-szota",
+   "status": "corrected",
+   "fixes": {
+    "name": "Paweł Szota"
+   },
+   "note": "aw.gov.pl/pl/ludzie/kierownictwo/102: 'płk Paweł Szota – Szef Agencji Wywiadu, 05.03.2024–obecnie' – data zgodna; korekta name (bez stopnia)."
+  },
+  {
+   "nodeId": "pl-szef-cba",
+   "personId": "pl-tomasz-strzelczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cba.gov.pl/pl/o-nas/kierownictwo: 'Z dniem 9 kwietnia 2025 r. PRM powołał Pana Tomasza Strzelczyka na Szefa CBA' – zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-ure",
+   "personId": "pl-renata-mroczek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ure.gov.pl kierownictwo + biogram 12262: 'Od 11 sierpnia 2025 roku pełni funkcję Prezesa URE na podstawie powołania przez PRM' – zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-prokuratorii-generalnej-rp",
+   "personId": "pl-marek-miller",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2025-12-12",
+    "startedAtSource": "https://www.gov.pl/web/prokuratoria/prezes-marek-miller",
+    "note": "Biogram gov.pl/web/prokuratoria: 24.09.2025 objął zastępstwo jako Pierwszy Zastępca Prezesa; 12 grudnia 2025 r. powołany na stanowisko Prezesa PGRP."
+   },
+   "note": "Biogram (gov.pl/web/prokuratoria/prezes-marek-miller) zawiera zdanie: '12 grudnia 2025 r. powołany na stanowisko Prezesa Prokuratorii Generalnej RP' – data 2025-09-24 w chunku była datą objęcia zastępstwa, nie powołania; wątpliwość poprzedniego agenta rozstrzygnięta (formalnie powołany)."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-jacek-jastrzebski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-dariusz-adamski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-marcin-mikolajczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-krystian-wiercioch",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-jaroslaw-niezgoda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-anna-matuszczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-mateusz-hebda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-artur-sobon",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-wojciech-dyduch",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-grzegorz-karpinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-maciej-szczesny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-tomasz-chrostny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-knf",
+   "personId": "pl-radoslaw-kujawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja (curl 200, 17.09.2026): nazwisko i funkcja/reprezentacja widoczne dokładnie tak, jak w chunku."
+  },
+  {
+   "nodeId": "pl-przewodniczacy-knf",
+   "personId": "pl-jacek-jastrzebski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "knf.gov.pl/o_nas/komisja: 'Jacek Jastrzębski – Przewodniczący KNF'; także wykaz KPRM. Brak daty na stronie."
+  },
+  {
+   "nodeId": "pl-prezes-rcl",
+   "personId": "pl-joanna-knapinska",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2024-01-19",
+    "startedAtSource": "https://rcl.gov.pl/o-rcl/kierownictwo/joanna-knapinska-p-o-prezes-rzadowego-centrum-legislacji/",
+    "note": "Strona rcl.gov.pl: 'w dniu 19 stycznia 2024 r. [powołana] na stanowisko Prezesa RCL' (13.12.2023 Sekretarz RM). Slug URL zawiera dawne 'p.o.', treść tytułuje ją Prezesem."
+   },
+   "note": "Strona biogramu podaje datę powołania na Prezesa RCL: 19.01.2024 – dodano startedAt. Nazwisko i funkcja zgodne (także wykaz KPRM: 'Joanna Knapińska – prezes')."
+  },
+  {
+   "nodeId": "pl-dyrektor-rcb",
+   "personId": "pl-zbigniew-muszynski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rcb/kierownictwo-rzadowego-centrum-bezpieczenstwa: 'Zbigniew Muszyński – dyrektor RCB'. Brak daty powołania."
+  },
+  {
+   "nodeId": "pl-dyrektor-ksap",
+   "personId": "pl-malgorzata-bywanis-jodlinska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ksap.gov.pl/ksap/ksap/wladze-ksap: 'powołana przez PRM Donalda Tuska na stanowisko dyrektora KSAP 13 czerwca 2024 r.' – zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-pan",
+   "personId": "pl-marek-konarzewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pan.pl/wladze/wladze-pan: 'Prezes PAN – Marek Konarzewski'; wykaz KPRM. Brak daty kadencji na stronie."
+  },
+  {
+   "nodeId": "pl-rzecznik-finansowy",
+   "personId": "pl-michal-ziemiak",
+   "status": "confirmed",
+   "fixes": {
+    "note": "Nazwisko z oficjalnego wykazu KPRM ('Michał Piotr Ziemiak – rzecznik'); rf.gov.pl i bip.rf.gov.pl (w tym /rf/kierownictwo) zwracają stronę Incapsula bez treści (curl z UA i WebFetch) – brak weryfikacji na stronie własnej."
+   },
+   "note": "Wykaz KPRM (sourceUrl) zawiera nazwisko przy funkcji – potwierdzone na tym źródle. Strona własna RF nieosiągalna po 4 próbach (Incapsula). Confidence medium zasadne."
+  },
+  {
+   "nodeId": "pl-rzecznik-praw-pacjenta",
+   "personId": "pl-bartlomiej-chmielowiec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/rpp/kierownictwo-urzedu: 'Bartłomiej Chmielowiec – Rzecznik Praw Pacjenta… Urząd sprawuje od 30 października 2017 r.' – zgodne."
+  },
+  {
+   "nodeId": "pl-rzecznik-msp",
+   "personId": "pl-agnieszka-majewska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "rzecznikmsp.gov.pl/kierownictwo: 'Agnieszka Maria Majewska – Powołana na stanowisko Rzecznika MŚP 23 czerwca 2024 r.' – zgodne."
+  },
+  {
+   "nodeId": "pl-szef-sluzby-cywilnej",
+   "personId": "pl-anita-noskowska-piatkowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/sluzbacywilna/szef-sluzby-cywilnej: 'Od 28 lutego 2024 roku Szefem Służby Cywilnej jest Anita Noskowska-Piątkowska' – zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-utk",
+   "personId": "pl-ignacy-gora",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2016-02",
+    "note": "Biogram utk.gov.pl: 'Od lutego 2016 pełni funkcję Prezesa UTK' – bez dnia."
+   },
+   "note": "utk.gov.pl/pl/urzad/kierownictwo: 'dr hab. inż. Ignacy Góra – Prezes UTK'; biogram precyzuje 'od lutego 2016' → startedAt 2016-02 (dokładniejsze niż '2016')."
+  },
+  {
+   "nodeId": "pl-dyrektor-cbos",
+   "personId": "pl-ewa-marciniak",
+   "status": "corrected",
+   "fixes": {
+    "sourceUrl": "https://www.cbos.pl/PL/o_firmie/dyrekcja.php",
+    "note": "cbos.pl/PL/o_firmie/dyrekcja.php: 'DYREKTOR – dr hab. Ewa Maria Marciniak'; także wykaz KPRM. Brak daty powołania."
+   },
+   "note": "Znaleziono działającą podstronę dyrekcji CBOS (curl 200) z nazwiskiem przy funkcji – zamieniam sourceUrl z wykazu KPRM na stronę własną; nota o 404 nieaktualna."
+  },
+  {
+   "nodeId": "pl-dyrektor-osw",
+   "personId": "pl-wojciech-kononczuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "osw.waw.pl/pl/eksperci/wojciech-kononczuk: 'Wojciech Konończuk – dyrektor – Dyrektor Ośrodka Studiów Wschodnich im. Marka Karpia'; także wykaz KPRM."
+  },
+  {
+   "nodeId": "pl-dyrektor-ies",
+   "personId": "pl-grzegorz-gil",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ies.lublin.pl/instytut/zespol: 'dr Grzegorz Gil – Dyrektor Instytutu Europy Środkowej'; także wykaz KPRM."
+  },
+  {
+   "nodeId": "pl-dyrektor-instytutu-zachodniego",
+   "personId": "pl-michal-nowosielski",
+   "status": "confirmed",
+   "fixes": {
+    "note": "Nazwisko z oficjalnego wykazu KPRM ('dr hab. Michał Nowosielski – dyrektor'); serwis iz.poznan.pl: strona główna ładuje się niepełnie, podstrona /pracownicy/dyrekcja zwraca 404, WebFetch – błąd certyfikatu (stan 17.09.2026)."
+   },
+   "note": "Wykaz KPRM (sourceUrl) zawiera nazwisko przy funkcji. Strona własna IZ nieosiągalna po 5 próbach (curl -k, różne ścieżki, WebFetch). Confidence medium zasadne."
+  },
+  {
+   "nodeId": "pl-dyrektor-isw",
+   "personId": "pl-bartosz-gondek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "instytutstratwojennych.pl/strona/114-wladze: '16 kwietnia 2025 r. PRM powołał dr. Bartosza Gondka na stanowisko dyrektora ISW' – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-instytutu-felczaka",
+   "personId": "pl-jakub-wisniewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "kurier.plus/o-instytucie/dyrekcja: 'dr Jakub Wiśniewski – Dyrektor Instytutu'; także wykaz KPRM."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-gus--dept_head--prezes-gus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--gus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 23 ust. 2 t.j. 2026/851: 'Nadzór nad Prezesem GUS sprawuje PRM' + art. 33a ust. 1 pkt 2 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--prezes-gus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 1 t.j. 2026/851 – potwierdzone."
+  },
+  {
+   "id": "e-polski-komitet-normalizacyjny--dept_head--prezes-pkn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--polski-komitet-normalizacyjny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 t.j. 2015/1483 (nadzór w zakresie obronności, współpracy z administracją, umów międzynarodowych) + art. 33a ust. 1 pkt 5 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--prezes-pkn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 16 ust. 1 t.j. 2015/1483 – potwierdzone."
+  },
+  {
+   "id": "e-uokik--dept_head--prezes-uokik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--uokik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 29 ust. 1 zd. 2 t.j. 2025/1714 + art. 33a ust. 1 pkt 6 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--prezes-uokik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 29 ust. 3 t.j. 2025/1714 – potwierdzone."
+  },
+  {
+   "id": "e-abw--dept_head--szef-abw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--abw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 2 t.j. 2026/937 ('podlegają bezpośrednio PRM') + art. 33a ust. 1 pkt 7 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--szef-abw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14 ust. 1 t.j. 2026/937 – potwierdzone."
+  },
+  {
+   "id": "e-aw--dept_head--szef-aw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--aw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 2 t.j. 2026/937 + art. 33a ust. 1 pkt 7 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--szef-aw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14 ust. 1 t.j. 2026/937 – potwierdzone."
+  },
+  {
+   "id": "e-cba--dept_head--szef-cba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--cba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 2 t.j. 2025/712 ('nadzorowanym przez PRM') + art. 33a ust. 1 pkt 7a – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--szef-cba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1 t.j. 2025/712 – potwierdzone."
+  },
+  {
+   "id": "e-koordynator-sluzb--oversees--abw",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Rozporządzenie Prezesa Rady Ministrów z dnia 25 lipca 2025 r. w sprawie szczegółowego zakresu działania Ministra – Członka Rady Ministrów, Koordynatora Służb Specjalnych, § 1 ust. 2 pkt 1–2 i § 2 (Dz.U. 2025 poz. 1003); art. 5 ust. 3 ustawy o CBA (koordynacja przez wyznaczonego członka RM)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2025/1003/ogl"
+   },
+   "note": "Art. 5 ust. 3 ustawy o CBA mówi o 'koordynowaniu', nie o nadzorze. Właściwą podstawą nadzoru jest rozporządzenie PRM z 25.07.2025 (Dz.U. 2025 poz. 1003): § 1 ust. 2 pkt 1 'sprawowanie nadzoru i kontroli działalności służb specjalnych', § 2 zadania nadzorcze, § 2 pkt 8 czynności ze stosunku służbowego Szefów ABW/AW/CBA z wyłączeniem powoływania (pdftotext, zweryfikowane)."
+  },
+  {
+   "id": "e-koordynator-sluzb--oversees--aw",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Rozporządzenie Prezesa Rady Ministrów z dnia 25 lipca 2025 r. w sprawie szczegółowego zakresu działania Ministra – Członka Rady Ministrów, Koordynatora Służb Specjalnych, § 1 ust. 2 pkt 1–2 i § 2 (Dz.U. 2025 poz. 1003); art. 5 ust. 3 ustawy o CBA (koordynacja przez wyznaczonego członka RM)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2025/1003/ogl"
+   },
+   "note": "Art. 5 ust. 3 ustawy o CBA mówi o 'koordynowaniu', nie o nadzorze. Właściwą podstawą nadzoru jest rozporządzenie PRM z 25.07.2025 (Dz.U. 2025 poz. 1003): § 1 ust. 2 pkt 1 'sprawowanie nadzoru i kontroli działalności służb specjalnych', § 2 zadania nadzorcze, § 2 pkt 8 czynności ze stosunku służbowego Szefów ABW/AW/CBA z wyłączeniem powoływania (pdftotext, zweryfikowane)."
+  },
+  {
+   "id": "e-koordynator-sluzb--oversees--cba",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Rozporządzenie Prezesa Rady Ministrów z dnia 25 lipca 2025 r. w sprawie szczegółowego zakresu działania Ministra – Członka Rady Ministrów, Koordynatora Służb Specjalnych, § 1 ust. 2 pkt 1–2 i § 2 (Dz.U. 2025 poz. 1003); art. 5 ust. 3 ustawy o CBA (koordynacja przez wyznaczonego członka RM)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2025/1003/ogl"
+   },
+   "note": "Art. 5 ust. 3 ustawy o CBA mówi o 'koordynowaniu', nie o nadzorze. Właściwą podstawą nadzoru jest rozporządzenie PRM z 25.07.2025 (Dz.U. 2025 poz. 1003): § 1 ust. 2 pkt 1 'sprawowanie nadzoru i kontroli działalności służb specjalnych', § 2 zadania nadzorcze, § 2 pkt 8 czynności ze stosunku służbowego Szefów ABW/AW/CBA z wyłączeniem powoływania (pdftotext, zweryfikowane)."
+  },
+  {
+   "id": "e-ure--dept_head--prezes-ure",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--ure",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 33a ust. 1 pkt 15 t.j. 2025/1275 – potwierdzone (Prawo energetyczne nie zawiera własnej klauzuli nadzoru)."
+  },
+  {
+   "id": "e-prm--appoints--prezes-ure",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21 ust. 2a t.j. 2026/43 – potwierdzone."
+  },
+  {
+   "id": "e-prokuratoria-generalna-rp--dept_head--prezes-prokuratorii-generalnej-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--prokuratoria-generalna-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 ust. 4 t.j. 2024/1192 + art. 33a ust. 1 pkt 17 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--prezes-prokuratorii-generalnej-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 41 ust. 1 t.j. 2024/1192 – potwierdzone."
+  },
+  {
+   "id": "e-knf--dept_head--przewodniczacy-knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-knf--office--przewodniczacy-knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 5 t.j. 2026/935: 'Przewodniczący Komisji kieruje pracami Komisji i reprezentuje ją na zewnątrz' – potwierdzone."
+  },
+  {
+   "id": "e-urzad-knf--administers--knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1 t.j. 2026/935: UKNF zapewnia obsługę Komisji – potwierdzone (semantyka 'administers' = obsługa)."
+  },
+  {
+   "id": "e-prm--oversees--urzad-knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 3 t.j. 2026/935: 'Nadzór nad działalnością Urzędu Komisji sprawuje PRM' – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--przewodniczacy-knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 1 t.j. 2026/935 – potwierdzone (kadencja 5 lat)."
+  },
+  {
+   "id": "e-prm--appoints--knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 9 (3 zastępców na wniosek Przewodniczącego) + art. 5 ust. 2 pkt 5 (przedstawiciel PRM) = 4 miejsca – potwierdzone. Uwaga: art. 5 ust. 2 pkt 8 – gdy Koordynator nie jest wyznaczony, jego miejsce obsadza przedstawiciel PRM."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--ex_officio--knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 2 pkt 1 i 1a t.j. 2026/935 – minister ds. instytucji finansowych i minister ds. gospodarki (obecnie ta sama osoba) albo ich przedstawiciele – 2 miejsca – potwierdzone."
+  },
+  {
+   "id": "e-minister-rpips--ex_officio--knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 2 pkt 2 t.j. 2026/935 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-nbp--ex_officio--knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 2 pkt 3 t.j. 2026/935 – potwierdzone (na stronie KNF: członek Zarządu NBP delegowany)."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 2 pkt 4 t.j. 2026/935 – potwierdzone."
+  },
+  {
+   "id": "e-prezes-uokik--appoints--knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 2 pkt 7 i ust. 5 (głos doradczy) t.j. 2026/935 – potwierdzone."
+  },
+  {
+   "id": "e-koordynator-sluzb--appoints--knf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 2 pkt 8 i ust. 5 t.j. 2026/935 – potwierdzone."
+  },
+  {
+   "id": "e-rcl--dept_head--prezes-rcl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--rcl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14a t.j. 2025/780 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--prezes-rcl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14e ust. 2 t.j. 2025/780 – potwierdzone."
+  },
+  {
+   "id": "e-rzadowe-centrum-bezpieczenstwa--dept_head--dyrektor-rcb",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--rzadowe-centrum-bezpieczenstwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 t.j. 2026/574 – potwierdzone; dopisek o MSWiA pochodzi ze strony KPRM, nie z ustawy."
+  },
+  {
+   "id": "e-prm--appoints--dyrektor-rcb",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 2 t.j. 2026/574 – potwierdzone."
+  },
+  {
+   "id": "e-ksap--dept_head--dyrektor-ksap",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--ksap",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 3 t.j. 2023/1952 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--dyrektor-ksap",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 2 t.j. 2023/1952 – potwierdzone."
+  },
+  {
+   "id": "e-pan--dept_head--prezes-pan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--pan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 1 t.j. 2026/168 – potwierdzone."
+  },
+  {
+   "id": "e-minister-nauki--oversees--pan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 1 zd. 2 i ust. 2 zd. 2 t.j. 2026/168: minister otrzymuje sprawozdanie finansowe i składa wniosek o uchylenie uchwały dot. gospodarki finansowej – słaba forma nadzoru; medium zasadne."
+  },
+  {
+   "id": "e-pan--elects--prezes-pan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 2 pkt 2 t.j. 2026/168 – potwierdzone. Brakuje krawędzi PRM→appoints (art. 21 ust. 1) – w additions."
+  },
+  {
+   "id": "e-biuro-rzecznika-finansowego--dept_head--rzecznik-finansowy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--appoints--rzecznik-finansowy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 t.j. 2026/823 – potwierdzone."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--nominates--rzecznik-finansowy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 t.j. 2026/823 – 'na wniosek ministra właściwego ds. instytucji finansowych' – potwierdzone."
+  },
+  {
+   "id": "e-prm--oversees--biuro-rzecznika-finansowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa t.j. 2026/823 nie zawiera klauzuli nadzoru PRM (grep 'Prezes Rady Ministrów': tylko art. 11, 14 – powołanie/odwołanie, art. 21 – statut, art. 22 – legitymacje). Podstawa: wykaz KPRM + powołanie – medium zasadne."
+  },
+  {
+   "id": "e-biuro-rzecznika-praw-pacjenta--dept_head--rzecznik-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--biuro-rzecznika-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 42 ust. 2 t.j. 2024/581 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--rzecznik-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 44 ust. 1 t.j. 2024/581 – potwierdzone."
+  },
+  {
+   "id": "e-biuro-rzecznika-msp--dept_head--rzecznik-msp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--appoints--rzecznik-msp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1 t.j. 2026/461 – potwierdzone."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--nominates--rzecznik-msp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1 t.j. 2026/461 – 'na wniosek ministra właściwego ds. gospodarki' – potwierdzone."
+  },
+  {
+   "id": "e-prm--oversees--szef-sluzby-cywilnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 2 t.j. 2026/590 – 'podlega bezpośrednio PRM' – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--szef-sluzby-cywilnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 3 t.j. 2026/590 – potwierdzone."
+  },
+  {
+   "id": "e-utk--dept_head--prezes-utk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--utk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 4–5 t.j. 2025/1234 uchylone – brak klauzuli nadzoru; podstawa: art. 11 ust. 1 + wykaz KPRM – medium zasadne."
+  },
+  {
+   "id": "e-prm--appoints--prezes-utk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 ust. 1 t.j. 2025/1234 – potwierdzone."
+  },
+  {
+   "id": "e-cbos--dept_head--dyrektor-cbos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--cbos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 13 Dz.U. 1997 poz. 163 – 'Nadzór nad CBOS sprawuje PRM' – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--cbos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8 ust. 1 pkt 3 (przedstawiciel PRM) i pkt 4 (7 przedstawicieli powołanych przez PRM) = 8 miejsc w Radzie CBOS – potwierdzone."
+  },
+  {
+   "id": "e-osw--dept_head--dyrektor-osw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--osw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1 Dz.U. 2011 poz. 1029 – potwierdzone (ust. 2: czynności wykonuje Szef KPRM – w additions)."
+  },
+  {
+   "id": "e-prm--appoints--dyrektor-osw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 2 – potwierdzone."
+  },
+  {
+   "id": "e-instytut-europy-srodkowej--dept_head--dyrektor-ies",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--instytut-europy-srodkowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 Dz.U. 2018 poz. 2270 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--dyrektor-ies",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 1 – potwierdzone."
+  },
+  {
+   "id": "e-instytut-zachodni--dept_head--dyrektor-instytutu-zachodniego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--instytut-zachodni",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1 Dz.U. 2015 poz. 2292 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--dyrektor-instytutu-zachodniego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 2 – potwierdzone."
+  },
+  {
+   "id": "e-instytut-strat-wojennych--dept_head--dyrektor-isw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--instytut-strat-wojennych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§ 2 ust. 1 zarządzenia nr 321 (t.j. M.P. 2023 poz. 412) – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--dyrektor-isw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§ 5 ust. 1 statutu (załącznik do zarządzenia) – potwierdzone."
+  },
+  {
+   "id": "e-instytut-wspolpracy-polsko-wegierskiej--dept_head--dyrektor-instytutu-felczaka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[org].head i nodes[pos].headOf."
+  },
+  {
+   "id": "e-prm--oversees--instytut-wspolpracy-polsko-wegierskiej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 t.j. 2024/251 – potwierdzone."
+  },
+  {
+   "id": "e-prm--appoints--dyrektor-instytutu-felczaka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8 ust. 1 t.j. 2024/251 – potwierdzone."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {
+   "e-prm--appoints--prezes-pan": {
+    "id": "e-prm--appoints--prezes-pan",
+    "type": "appoints",
+    "fromId": "pl-prezes-rady-ministrow",
+    "toId": "pl-prezes-pan",
+    "cite": "Ustawa z dnia 30 kwietnia 2010 r. o Polskiej Akademii Nauk, art. 21 ust. 1 (na podstawie wyboru przez Zgromadzenie Ogólne PRM dokonuje aktu powołania Prezesa Akademii)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2010/619/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2010/619/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-cbos--appoints--dyrektor-cbos": {
+    "id": "e-cbos--appoints--dyrektor-cbos",
+    "type": "appoints",
+    "fromId": "pl-cbos",
+    "toId": "pl-dyrektor-cbos",
+    "cite": "Ustawa z dnia 20 lutego 1997 r. o fundacji – Centrum Badania Opinii Społecznej, art. 9 ust. 2 (Dyrektora powołuje Rada CBOS na okres pięciu lat)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/1997/163/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/1997/163/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-prezydent-rp--appoints--cbos": {
+    "id": "e-prezydent-rp--appoints--cbos",
+    "type": "appoints",
+    "fromId": "pl-prezydent-rp",
+    "toId": "pl-cbos",
+    "cite": "Ustawa z dnia 20 lutego 1997 r. o fundacji – Centrum Badania Opinii Społecznej, art. 8 ust. 1 pkt 2 (przedstawiciel Prezydenta RP w Radzie CBOS)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/1997/163/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/1997/163/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-sejm--appoints--cbos": {
+    "id": "e-sejm--appoints--cbos",
+    "type": "appoints",
+    "fromId": "pl-sejm",
+    "toId": "pl-cbos",
+    "cite": "Ustawa z dnia 20 lutego 1997 r. o fundacji – Centrum Badania Opinii Społecznej, art. 8 ust. 1 pkt 1 (przedstawiciel Sejmu powoływany przez Prezydium Sejmu)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/1997/163/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/1997/163/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-senat--appoints--cbos": {
+    "id": "e-senat--appoints--cbos",
+    "type": "appoints",
+    "fromId": "pl-senat",
+    "toId": "pl-cbos",
+    "cite": "Ustawa z dnia 20 lutego 1997 r. o fundacji – Centrum Badania Opinii Społecznej, art. 8 ust. 1 pkt 1 (przedstawiciel Senatu powoływany przez Prezydium Senatu)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/1997/163/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/1997/163/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-szef-kprm--oversees--osw": {
+    "id": "e-szef-kprm--oversees--osw",
+    "type": "oversees",
+    "fromId": "pl-szef-kprm",
+    "toId": "pl-osw",
+    "cite": "Ustawa z dnia 15 lipca 2011 r. o Ośrodku Studiów Wschodnich im. Marka Karpia, art. 3 ust. 2 (czynności wynikające z nadzoru wykonuje w imieniu PRM Szef KPRM)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2011/1029/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2011/1029/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-szef-kprm--oversees--instytut-europy-srodkowej": {
+    "id": "e-szef-kprm--oversees--instytut-europy-srodkowej",
+    "type": "oversees",
+    "fromId": "pl-szef-kprm",
+    "toId": "pl-instytut-europy-srodkowej",
+    "cite": "Ustawa z dnia 9 listopada 2018 r. o Instytucie Europy Środkowej, art. 4 ust. 2 (czynności wynikające z nadzoru wykonuje w imieniu PRM Szef KPRM)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2018/2270/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2018/2270/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-szef-kprm--oversees--instytut-zachodni": {
+    "id": "e-szef-kprm--oversees--instytut-zachodni",
+    "type": "oversees",
+    "fromId": "pl-szef-kprm",
+    "toId": "pl-instytut-zachodni",
+    "cite": "Ustawa z dnia 17 grudnia 2015 r. o Instytucie Zachodnim im. Zygmunta Wojciechowskiego, art. 3 ust. 2 (czynności wynikające z nadzoru wykonuje w imieniu PRM Szef KPRM)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2015/2292/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2015/2292/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "e-szef-kprm--oversees--instytut-strat-wojennych": {
+    "id": "e-szef-kprm--oversees--instytut-strat-wojennych",
+    "type": "oversees",
+    "fromId": "pl-szef-kprm",
+    "toId": "pl-instytut-strat-wojennych",
+    "cite": "Zarządzenie nr 321 Prezesa Rady Ministrów z dnia 2 grudnia 2021 r. w sprawie utworzenia Instytutu Strat Wojennych im. Jana Karskiego, § 2 ust. 2 (czynności wynikające z podległości wykonuje w imieniu PRM Szef KPRM) (M.P. 2023 poz. 412 t.j.)",
+    "citeUrl": "https://eli.gov.pl/eli/MP/2021/1126/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/MP/2021/1126/ogl"
+     ],
+     "confidence": "high"
+    }
+   }
+  }
+ },
+ "missing": [
+  "Przedstawiciel Bankowego Funduszu Gwarancyjnego w KNF (art. 5 ust. 2 pkt 6) – brak węzła BFG w kanonie, krawędź nie do utworzenia w tym chunku.",
+  "Daty powołania: Cierpiał-Wolan (GUS), Jastrzębski (KNF, bieżąca kadencja), Muszyński (RCB), Konarzewski (PAN), Ziemiak (RF), Konończuk (OSW), Gil (IEŚ), Nowosielski (IZ), Wiśniewski (Felczak), Syrysko (ABW), Marciniak (CBOS) – strony własne nie podają; wymagałoby przeszukania M.P./komunikatów.",
+  "Strony własne Rzecznika Finansowego (rf.gov.pl, bip.rf.gov.pl – Incapsula) i Instytutu Zachodniego (iz.poznan.pl – 404/cert) nieosiągalne; nazwiska potwierdzone wyłącznie wykazem KPRM.",
+  "Weto Prezydenta z 11.05.2026 wobec ustawy likwidującej CBA przyjęte za briefem koordynatora – nie zweryfikowane samodzielnie (API Sejmu /processes zwraca 50 rekordów, prezydent.pl/prawo/ustawy/zawetowane nie zwrócił treści).",
+  "Zastępcy szefów (wiceprezesi GUS, PKN, UOKiK, UTK, RCL, PGRP; zastępcy Szefów ABW/AW/CBA; zastępcy RF/RPP) widoczni na wykazie KPRM – pominięci w chunku (poza KNF), zgodnie z coverageNote.",
+  "Krawędź MSWiA→RCB (czynności z zakresu podległości 'z upoważnienia PRM' wg strony KPRM) – brak podstawy ustawowej (art. 10 ustawy o zarządzaniu kryzysowym jej nie zawiera); nie dodano."
+ ]
+}

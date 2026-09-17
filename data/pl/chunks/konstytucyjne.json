@@ -1,0 +1,2641 @@
+{
+ "chunk": "konstytucyjne",
+ "generatedAt": "2026-09-17",
+ "coverageNote": "Zakres: Naród, Sejm, Senat, Zgromadzenie Narodowe, Marszałkowie (z wicemarszałkami jako people), Kancelarie Sejmu i Senatu z Szefami, Prezydent RP, KPRP (z kierownictwem), Szef KPRP, BBN i Szef BBN, Rada Bezpieczeństwa Narodowego, Rada Gabinetowa, Rada Ministrów, Prezes RM, Wiceprezesi RM (jeden węzeł pozycji, 3 osoby), KPRM (sekretarze/podsekretarze stanu jako people), Szef KPRM, Minister – Członek RM (Szef KPRM) i Minister – Koordynator Służb Specjalnych. POMINIĘTO: ministrów resortowych i ministerstwa (chunki ministerstw), organy nadzorowane przez PRM (urzedy-prm), sądy/trybunały/KRS (sadownictwo), organy niezależne (niezalezne), posłów i senatorów imiennie (Sejm/Senat jako count), skład osobowy Rady Bezpieczeństwa Narodowego (brak zweryfikowanej listy – bbn.gov.pl nieosiągalny dla curl), pełnomocników rządu, Kolegium ds. Służb Specjalnych i Komitet ds. Pożytku Publicznego (do chunku urzedy-prm/organy doradcze). Szef Kancelarii Sejmu: nazwisko nieustalone – sejm.gov.pl blokuje curl (F5/CAPTCHA), strona 'Kancelaria Sejmu' odczytana przez przeglądarkę nie podaje nazwiska; status unverified. Daty powołania sekretarzy stanu KPRM/KPRP i Szefa KPRP/BBN/Kancelarii Senatu: null (brak datowanego źródła w tej rundzie). Konwencja techniczna: stanowiska szefów jednostek satelickich (Szef KPRP, Szef BBN, Szefowie Kancelarii Sejmu/Senatu) mają ring=satellite i parent = organ nadrzędny organizacji (walidator wymaga parent przy ring=satellite). Party = klub parlamentarny wg API Sejmu (nie partia); dla senatorów i urzędników null. Art. 158 (konstruktywne wotum nieufności) opisany w węźle pl-rada-ministrow i cite krawędzi Sejm→confirms→RM, bez osobnej krawędzi.",
+ "nodes": {
+  "pl-narod": {
+   "id": "pl-narod",
+   "type": "constituency",
+   "subtype": null,
+   "sector": "legislative",
+   "ring": "sovereign",
+   "name": "Naród (obywatele Rzeczypospolitej Polskiej)",
+   "shortName": "Naród",
+   "description": "Suweren. Zgodnie z art. 4 Konstytucji RP władza zwierzchnia w Rzeczypospolitej Polskiej należy do Narodu, który sprawuje ją przez swoich przedstawicieli lub bezpośrednio. Wybiera Sejm, Senat i Prezydenta RP w wyborach powszechnych.",
+   "aliases": [
+    "Suweren",
+    "Obywatele RP",
+    "Wyborcy"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 4",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 4"
+   },
+   "officialUrl": null,
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sejm": {
+   "id": "pl-sejm",
+   "type": "elected",
+   "subtype": "chamber",
+   "sector": "legislative",
+   "ring": "highest",
+   "name": "Sejm Rzeczypospolitej Polskiej",
+   "shortName": "Sejm",
+   "description": "Izba pierwsza parlamentu, 460 posłów wybieranych na 4-letnią kadencję w wyborach powszechnych, równych, bezpośrednich i proporcjonalnych (art. 96 Konstytucji RP). Sprawuje władzę ustawodawczą i kontrolę nad działalnością Rady Ministrów (art. 95), udziela jej wotum zaufania i wybiera m.in. sędziów TK, członków KRS i Prezesa NIK.",
+   "aliases": [
+    "Sejm RP",
+    "Izba niższa"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 95–96",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 95–96"
+   },
+   "officialUrl": "https://www.sejm.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": "pl-marszalek-sejmu",
+   "headOf": null,
+   "seatsCount": 460,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 460
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://api.sejm.gov.pl/sejm/term10"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-senat": {
+   "id": "pl-senat",
+   "type": "elected",
+   "subtype": "chamber",
+   "sector": "legislative",
+   "ring": "highest",
+   "name": "Senat Rzeczypospolitej Polskiej",
+   "shortName": "Senat",
+   "description": "Izba druga parlamentu, 100 senatorów wybieranych na 4-letnią kadencję w wyborach powszechnych, bezpośrednich, w głosowaniu tajnym, w okręgach jednomandatowych (art. 97 Konstytucji RP). Uczestniczy w procesie ustawodawczym i wyraża zgodę na powołanie m.in. Prezesa NIK, RPO i Prezesa IPN.",
+   "aliases": [
+    "Senat RP",
+    "Izba wyższa"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 97",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 97"
+   },
+   "officialUrl": "https://www.senat.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": "pl-marszalek-senatu",
+   "headOf": null,
+   "seatsCount": 100,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 100
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://www.senat.gov.pl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-zgromadzenie-narodowe": {
+   "id": "pl-zgromadzenie-narodowe",
+   "type": "elected",
+   "subtype": "legislature",
+   "sector": "legislative",
+   "ring": "highest",
+   "name": "Zgromadzenie Narodowe",
+   "shortName": "Zgromadzenie Narodowe",
+   "description": "Sejm i Senat obradujące wspólnie pod przewodnictwem Marszałka Sejmu (lub w jego zastępstwie Marszałka Senatu) w przypadkach określonych w Konstytucji – m.in. przyjęcie przysięgi Prezydenta RP, uznanie trwałej niezdolności Prezydenta, postawienie go w stan oskarżenia (art. 114 Konstytucji RP).",
+   "aliases": [
+    "ZN"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 114",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 114"
+   },
+   "officialUrl": "https://www.sejm.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 560,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 560
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-marszalek-sejmu": {
+   "id": "pl-marszalek-sejmu",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "legislative",
+   "ring": "highest",
+   "name": "Marszałek Sejmu",
+   "shortName": "Marszałek Sejmu",
+   "description": "Przewodniczy obradom Sejmu, strzeże jego praw i reprezentuje Sejm na zewnątrz (art. 110 Konstytucji RP); wybierany przez Sejm z jego grona. Zastępuje Prezydenta RP w razie opróżnienia urzędu (art. 131). Zgodnie z Regulaminem Sejmu (art. 10) nadaje statut Kancelarii Sejmu i powołuje jej Szefa. Węzeł obejmuje też wicemarszałków (art. 110 ust. 1).",
+   "aliases": [
+    "Marszałek",
+    "Prezydium Sejmu"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 110",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 110"
+   },
+   "officialUrl": "https://www.sejm.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-sejm",
+   "seatsCount": 6,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wlodzimierz-czarzasty",
+      "name": "Włodzimierz Czarzasty",
+      "positionId": "pl-marszalek-sejmu",
+      "positionName": "Marszałek Sejmu",
+      "type": "elected",
+      "startedAt": "2025-11-18",
+      "acting": false,
+      "status": "verified",
+      "party": "Lewica",
+      "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/58/photo",
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2025/1189/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/1189/ogl",
+      "note": "Uchwała Sejmu z 18.11.2025 r. (M.P. 2025 poz. 1189); wcześniej wicemarszałek od 13.11.2023 r. (M.P. 2023 poz. 1263). Klub wg API Sejmu."
+     },
+     {
+      "id": "pl-krzysztof-bosak",
+      "name": "Krzysztof Bosak",
+      "positionId": "pl-marszalek-sejmu",
+      "positionName": "Wicemarszałek Sejmu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": "Konfederacja",
+      "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/33/photo",
+      "sourceUrl": "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1264/ogl",
+      "note": "M.P. 2023 poz. 1264; klub wg API Sejmu."
+     },
+     {
+      "id": "pl-szymon-holownia",
+      "name": "Szymon Hołownia",
+      "positionId": "pl-marszalek-sejmu",
+      "positionName": "Wicemarszałek Sejmu",
+      "type": "elected",
+      "startedAt": "2025-11-18",
+      "acting": false,
+      "status": "verified",
+      "party": "Polska2050",
+      "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/133/photo",
+      "sourceUrl": "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/1190/ogl",
+      "note": "M.P. 2025 poz. 1190; Marszałek Sejmu 13.11.2023–18.11.2025 (M.P. 2023 poz. 1223). Klub wg API Sejmu."
+     },
+     {
+      "id": "pl-dorota-niedziela",
+      "name": "Dorota Niedziela",
+      "positionId": "pl-marszalek-sejmu",
+      "positionName": "Wicemarszałek Sejmu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/258/photo",
+      "sourceUrl": "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1265/ogl",
+      "note": "M.P. 2023 poz. 1265."
+     },
+     {
+      "id": "pl-monika-wielichowska",
+      "name": "Monika Wielichowska",
+      "positionId": "pl-marszalek-sejmu",
+      "positionName": "Wicemarszałek Sejmu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/421/photo",
+      "sourceUrl": "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1266/ogl",
+      "note": "M.P. 2023 poz. 1266."
+     },
+     {
+      "id": "pl-piotr-zgorzelski",
+      "name": "Piotr Zgorzelski",
+      "positionId": "pl-marszalek-sejmu",
+      "positionName": "Wicemarszałek Sejmu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": "PSL-TD",
+      "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/449/photo",
+      "sourceUrl": "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1262/ogl",
+      "note": "M.P. 2023 poz. 1262; klub wg API Sejmu."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1189/ogl",
+     "https://sejm.gov.pl/wicemarszalkowie10.nsf/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-marszalek-senatu": {
+   "id": "pl-marszalek-senatu",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "legislative",
+   "ring": "highest",
+   "name": "Marszałek Senatu",
+   "shortName": "Marszałek Senatu",
+   "description": "Przewodniczy obradom Senatu, strzeże jego praw i reprezentuje Senat na zewnątrz (art. 124 w zw. z art. 110 Konstytucji RP); wybierany przez Senat z jego grona. Zgodnie z Regulaminem Senatu (art. 8) nadaje statut Kancelarii Senatu i powołuje jej Szefa. Węzeł obejmuje też wicemarszałków Senatu.",
+   "aliases": [
+    "Prezydium Senatu"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 124 w zw. z art. 110",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 124"
+   },
+   "officialUrl": "https://www.senat.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-senat",
+   "seatsCount": 5,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-malgorzata-kidawa-blonska",
+      "name": "Małgorzata Kidawa-Błońska",
+      "positionId": "pl-marszalek-senatu",
+      "positionName": "Marszałek Senatu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.senat.gov.pl/gfx/senat/_thumbs/pl/senatsenatorowie/1063/11/zdjecie/mlbce1-bWmg,kidawa-blonska1_2.jpg",
+      "sourceUrl": "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1228/ogl",
+      "note": "Uchwała Senatu z 13.11.2023 r. (M.P. 2023 poz. 1228)."
+     },
+     {
+      "id": "pl-magdalena-biejat",
+      "name": "Magdalena Biejat",
+      "positionId": "pl-marszalek-senatu",
+      "positionName": "Wicemarszałek Senatu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1240/ogl",
+      "note": "M.P. 2023 poz. 1240."
+     },
+     {
+      "id": "pl-rafal-grupinski",
+      "name": "Rafał Grupiński",
+      "positionId": "pl-marszalek-senatu",
+      "positionName": "Wicemarszałek Senatu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1240/ogl",
+      "note": "M.P. 2023 poz. 1240."
+     },
+     {
+      "id": "pl-michal-kaminski",
+      "name": "Michał Kamiński",
+      "positionId": "pl-marszalek-senatu",
+      "positionName": "Wicemarszałek Senatu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1240/ogl",
+      "note": "M.P. 2023 poz. 1240."
+     },
+     {
+      "id": "pl-maciej-zywno",
+      "name": "Maciej Żywno",
+      "positionId": "pl-marszalek-senatu",
+      "positionName": "Wicemarszałek Senatu",
+      "type": "elected",
+      "startedAt": "2023-11-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1242/ogl",
+      "note": "M.P. 2023 poz. 1242."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1228/ogl",
+     "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-kancelaria-sejmu": {
+   "id": "pl-kancelaria-sejmu",
+   "type": "department",
+   "subtype": "chancellery",
+   "sector": "legislative",
+   "ring": "satellite",
+   "name": "Kancelaria Sejmu",
+   "shortName": "Kancelaria Sejmu",
+   "description": "Urząd wykonujący zadania organizacyjno-techniczne i doradcze związane z działalnością Sejmu i jego organów oraz obsługujący Zgromadzenie Narodowe (art. 199 Regulaminu Sejmu). Kieruje nią Szef Kancelarii Sejmu powoływany przez Marszałka Sejmu (art. 200). Organizację określa statut nadawany przez Marszałka (art. 202).",
+   "aliases": [
+    "KS"
+   ],
+   "legalSource": {
+    "title": "Uchwała Sejmu RP z dnia 30 lipca 1992 r. – Regulamin Sejmu RP, art. 199–202 (M.P. 2026 poz. 573 t.j.)",
+    "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
+    "act": "MP/1992/185",
+    "article": "art. 199–202"
+   },
+   "officialUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/kancelaria",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "02",
+   "parent": "pl-sejm",
+   "level": 1,
+   "head": "pl-szef-kancelarii-sejmu",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/573/ogl",
+     "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/kancelaria",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-kancelarii-sejmu": {
+   "id": "pl-szef-kancelarii-sejmu",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "legislative",
+   "ring": "satellite",
+   "name": "Szef Kancelarii Sejmu",
+   "shortName": "Szef Kancelarii Sejmu",
+   "description": "Kieruje Kancelarią Sejmu przy pomocy nie więcej niż dwóch zastępców; jest zwierzchnikiem służbowym jej pracowników i odpowiada za wykonanie budżetu Kancelarii (art. 200–201 Regulaminu Sejmu). Powołuje i odwołuje go Marszałek Sejmu po zasięgnięciu opinii Komisji Regulaminowej, Spraw Poselskich i Immunitetowych.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Regulamin Sejmu RP, art. 200 ust. 2 (M.P. 2026 poz. 573 t.j.)",
+    "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
+    "act": "MP/1992/185",
+    "article": "art. 200 ust. 2"
+   },
+   "officialUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/kancelaria",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-sejm",
+   "level": 1,
+   "head": null,
+   "headOf": "pl-kancelaria-sejmu",
+   "seatsCount": 1,
+   "status": "unverified",
+   "statusNote": "Strona sejm.gov.pl 'Kancelaria Sejmu' nie podaje nazwiska Szefa; pozostałe podstrony sejm.gov.pl blokują automatyczny dostęp (CAPTCHA). Nazwisko do uzupełnienia ręcznie.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/573/ogl",
+     "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/kancelaria"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-kancelaria-senatu": {
+   "id": "pl-kancelaria-senatu",
+   "type": "department",
+   "subtype": "chancellery",
+   "sector": "legislative",
+   "ring": "satellite",
+   "name": "Kancelaria Senatu",
+   "shortName": "Kancelaria Senatu",
+   "description": "Urząd wykonujący zadania organizacyjno-techniczne i doradcze związane z działalnością Senatu i jego organów, w tym obsługę zadań w zakresie opieki nad Polonią (art. 98 Regulaminu Senatu). Kieruje nią Szef Kancelarii Senatu (art. 99), powoływany przez Marszałka Senatu; organizację określa statut nadawany przez Marszałka (art. 100).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Uchwała Senatu RP z dnia 23 listopada 1990 r. – Regulamin Senatu, art. 98–100 (M.P. 2025 poz. 1251 t.j.)",
+    "url": "https://eli.gov.pl/eli/MP/1991/11/ogl",
+    "act": "MP/1991/11",
+    "article": "art. 98–100"
+   },
+   "officialUrl": "https://www.senat.gov.pl/kancelaria/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "03",
+   "parent": "pl-senat",
+   "level": 1,
+   "head": "pl-szef-kancelarii-senatu",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2025/1251/ogl",
+     "https://www.senat.gov.pl/kancelaria/",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-kancelarii-senatu": {
+   "id": "pl-szef-kancelarii-senatu",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "legislative",
+   "ring": "satellite",
+   "name": "Szef Kancelarii Senatu",
+   "shortName": "Szef Kancelarii Senatu",
+   "description": "Kieruje Kancelarią Senatu i jest zwierzchnikiem służbowym wszystkich jej pracowników (art. 99 Regulaminu Senatu). Powołuje i odwołuje go Marszałek Senatu po zasięgnięciu opinii Prezydium Senatu oraz Komisji Regulaminowej, Etyki i Spraw Senatorskich (art. 8 ust. 1 pkt 19).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Regulamin Senatu, art. 8 ust. 1 pkt 19 i art. 99 (M.P. 2025 poz. 1251 t.j.)",
+    "url": "https://eli.gov.pl/eli/MP/1991/11/ogl",
+    "act": "MP/1991/11",
+    "article": "art. 8 ust. 1 pkt 19"
+   },
+   "officialUrl": "https://www.senat.gov.pl/kancelaria/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-senat",
+   "level": 1,
+   "head": null,
+   "headOf": "pl-kancelaria-senatu",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-ewa-polkowska",
+      "name": "Ewa Polkowska",
+      "positionId": "pl-szef-kancelarii-senatu",
+      "positionName": "Szef Kancelarii Senatu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.senat.gov.pl/kancelaria/kontakt-z-kancelaria/",
+      "startedAtSource": null,
+      "note": "Strona kontaktowa Kancelarii Senatu podaje: 'Szef Kancelarii Senatu – Minister Ewa Polkowska'. Data powołania nieustalona."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2025/1251/ogl",
+     "https://www.senat.gov.pl/kancelaria/kontakt-z-kancelaria/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezydent-rp": {
+   "id": "pl-prezydent-rp",
+   "type": "elected",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "highest",
+   "name": "Prezydent Rzeczypospolitej Polskiej",
+   "shortName": "Prezydent RP",
+   "description": "Najwyższy przedstawiciel Rzeczypospolitej Polskiej i gwarant ciągłości władzy państwowej (art. 126 Konstytucji RP), wybierany przez Naród na 5-letnią kadencję (art. 127). Powołuje Prezesa Rady Ministrów i Radę Ministrów (art. 154), jest najwyższym zwierzchnikiem Sił Zbrojnych (art. 134), podpisuje ustawy z prawem weta (art. 122). Organem pomocniczym jest Kancelaria Prezydenta RP.",
+   "aliases": [
+    "Prezydent",
+    "Głowa państwa"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 126–127",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 126–127"
+   },
+   "officialUrl": "https://www.prezydent.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-karol-nawrocki",
+      "name": "Karol Nawrocki",
+      "positionId": "pl-prezydent-rp",
+      "positionName": "Prezydent Rzeczypospolitej Polskiej",
+      "type": "elected",
+      "startedAt": "2025-08-06",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/prezydent/biografia",
+      "startedAtSource": "https://www.prezydent.pl/prezydent/biografia",
+      "note": "Wybrany w II turze 1.06.2025 r.; urząd objął 6.08.2025 r. składając przysięgę przed Zgromadzeniem Narodowym (biografia na prezydent.pl). Kandydat obywatelski popierany przez PiS – bez przynależności partyjnej."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://www.prezydent.pl/prezydent/biografia"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-kancelaria-prezydenta-rp": {
+   "id": "pl-kancelaria-prezydenta-rp",
+   "type": "department",
+   "subtype": "chancellery",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Kancelaria Prezydenta Rzeczypospolitej Polskiej",
+   "shortName": "KPRP",
+   "description": "Organ pomocniczy Prezydenta RP (art. 143 Konstytucji RP). Prezydent nadaje jej statut oraz powołuje i odwołuje Szefa Kancelarii. Statut nadany zarządzeniem Prezydenta z 1 kwietnia 2021 r. (M.P. 2021 poz. 338, t.j. M.P. 2024 poz. 398 ze zm.). Zapewnia obsługę Prezydenta; ze środków KPRP finansowane jest Biuro Bezpieczeństwa Narodowego.",
+   "aliases": [
+    "KPRP",
+    "Kancelaria Prezydenta"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 143; zarządzenie Prezydenta RP z dnia 1 kwietnia 2021 r. w sprawie nadania statutu KPRP (M.P. 2024 poz. 398 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 143"
+   },
+   "officialUrl": "https://www.prezydent.pl/kancelaria",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "01",
+   "parent": "pl-prezydent-rp",
+   "level": 1,
+   "head": "pl-szef-kancelarii-prezydenta-rp",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-adam-andruszkiewicz",
+      "name": "Adam Andruszkiewicz",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Sekretarz Stanu – Zastępca Szefa Kancelarii Prezydenta RP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-pawel-szefernaker",
+      "name": "Paweł Szefernaker",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Sekretarz Stanu – Szef Gabinetu Prezydenta RP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-jaroslaw-debowski",
+      "name": "Jarosław Dębowski",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Sekretarz Stanu – Zastępca Szefa Gabinetu Prezydenta RP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-marcin-przydacz",
+      "name": "Marcin Przydacz",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Sekretarz Stanu – Szef Biura Polityki Międzynarodowej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-wojciech-kolarski",
+      "name": "Wojciech Kolarski",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-mateusz-kotecki",
+      "name": "Mateusz Kotecki",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-rafal-leskiewicz",
+      "name": "Rafał Leśkiewicz",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Sekretarz Stanu – Rzecznik Prasowy Prezydenta RP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-agnieszka-jedrzak",
+      "name": "Agnieszka Jędrzak",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-karol-rabenda",
+      "name": "Karol Rabenda",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-magdalena-glowa",
+      "name": "Magdalena Głowa",
+      "positionId": "pl-kancelaria-prezydenta-rp",
+      "positionName": "Dyrektor Generalny w Kancelarii Prezydenta RP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2024/398/ogl",
+     "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-kancelarii-prezydenta-rp": {
+   "id": "pl-szef-kancelarii-prezydenta-rp",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Szef Kancelarii Prezydenta Rzeczypospolitej Polskiej",
+   "shortName": "Szef KPRP",
+   "description": "Kieruje Kancelarią Prezydenta RP; powoływany i odwoływany przez Prezydenta RP (art. 143 Konstytucji RP). Organizuje pracę Kancelarii na podstawie statutu nadanego zarządzeniem Prezydenta (M.P. 2021 poz. 338 ze zm.).",
+   "aliases": [
+    "Szef KPRP"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 143",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 143"
+   },
+   "officialUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii/zbigniew-bogucki",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-prezydent-rp",
+   "level": 1,
+   "head": null,
+   "headOf": "pl-kancelaria-prezydenta-rp",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-zbigniew-bogucki",
+      "name": "Zbigniew Bogucki",
+      "positionId": "pl-szef-kancelarii-prezydenta-rp",
+      "positionName": "Szef Kancelarii Prezydenta RP",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": "Strona 'Kierownictwo Kancelarii' prezydent.pl wymienia go jako pierwszego z funkcją 'Szef Kancelarii Prezydenta Rzeczypospolitej Polskiej'. Data powołania nieustalona z datowanego źródła."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-bbn": {
+   "id": "pl-bbn",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Biuro Bezpieczeństwa Narodowego",
+   "shortName": "BBN",
+   "description": "Urząd, przy pomocy którego Prezydent RP wykonuje zadania w zakresie bezpieczeństwa i obronności (art. 26 ustawy z dnia 11 marca 2022 r. o obronie Ojczyzny). Kieruje nim sekretarz stanu wyznaczony przez Prezydenta (Szef BBN); działalność finansowana ze środków Kancelarii Prezydenta. Organizację i zakres działania określa zarządzenie Prezydenta z 15 września 2025 r. (M.P. 2025 poz. 1021). Obsługuje Radę Bezpieczeństwa Narodowego.",
+   "aliases": [
+    "BBN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 26 (Dz.U. 2022 poz. 655)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 26"
+   },
+   "officialUrl": "https://www.bbn.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-prezydent-rp",
+   "level": 1,
+   "head": "pl-szef-bbn",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1021/ogl",
+     "https://www.prezydent.pl/aktualnosci/biuro-bezpieczenstwa-narodowego/kierownictwo-bbn"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-bbn": {
+   "id": "pl-szef-bbn",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Szef Biura Bezpieczeństwa Narodowego",
+   "shortName": "Szef BBN",
+   "description": "Sekretarz stanu wyznaczony przez Prezydenta RP do kierowania Biurem Bezpieczeństwa Narodowego (art. 26 ust. 3 ustawy o obronie Ojczyzny). Za jego pośrednictwem Prezes Rady Ministrów przekazuje Prezydentowi informacje o użyciu Sił Zbrojnych poza granicami państwa (art. 26 ust. 6).",
+   "aliases": [
+    "Szef BBN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 26 ust. 3 (Dz.U. 2022 poz. 655)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 26 ust. 3"
+   },
+   "officialUrl": "https://www.bbn.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-prezydent-rp",
+   "level": 1,
+   "head": null,
+   "headOf": "pl-bbn",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-bartosz-grodecki",
+      "name": "Bartosz Grodecki",
+      "positionId": "pl-szef-bbn",
+      "positionName": "Szef Biura Bezpieczeństwa Narodowego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+      "startedAtSource": null,
+      "note": "Na stronie 'Kierownictwo Kancelarii' prezydent.pl: 'Sekretarz Stanu w Biurze Bezpieczeństwa Narodowego – Szef Biura Bezpieczeństwa Narodowego'; wymieniony też pierwszy w 'Kierownictwo BBN'. Data wyznaczenia nieustalona."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.prezydent.pl/kancelaria/kierownictwo-kancelarii",
+     "https://www.prezydent.pl/aktualnosci/biuro-bezpieczenstwa-narodowego/kierownictwo-bbn"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-bezpieczenstwa-narodowego": {
+   "id": "pl-rada-bezpieczenstwa-narodowego",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "oversight",
+   "name": "Rada Bezpieczeństwa Narodowego",
+   "shortName": "RBN",
+   "description": "Organ doradczy Prezydenta RP w zakresie wewnętrznego i zewnętrznego bezpieczeństwa państwa (art. 135 Konstytucji RP). Skład i tryb działania określa Prezydent; obsługę zapewnia Biuro Bezpieczeństwa Narodowego. Nie ma kompetencji władczych.",
+   "aliases": [
+    "RBN"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 135",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 135"
+   },
+   "officialUrl": "https://www.bbn.gov.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Skład osobowy Rady nie został zweryfikowany (bbn.gov.pl nieosiągalny dla curl; prezydent.pl nie publikuje listy w sekcji kierownictwa).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rada-gabinetowa": {
+   "id": "pl-rada-gabinetowa",
+   "type": "advisory",
+   "subtype": "advisory_body",
+   "sector": "executive",
+   "ring": "oversight",
+   "name": "Rada Gabinetowa",
+   "shortName": "Rada Gabinetowa",
+   "description": "Rada Ministrów obradująca pod przewodnictwem Prezydenta RP, zwoływana przez Prezydenta w sprawach szczególnej wagi (art. 141 Konstytucji RP). Ma charakter konsultacyjny – nie przysługują jej kompetencje Rady Ministrów.",
+   "aliases": [],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 141",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 141"
+   },
+   "officialUrl": "https://www.prezydent.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-ministrow": {
+   "id": "pl-rada-ministrow",
+   "type": "department",
+   "subtype": "council",
+   "sector": "executive",
+   "ring": "highest",
+   "name": "Rada Ministrów",
+   "shortName": "Rada Ministrów",
+   "description": "Kolegialny organ władzy wykonawczej prowadzący politykę wewnętrzną i zagraniczną RP oraz kierujący administracją rządową (art. 146 Konstytucji RP). Składa się z Prezesa RM, wiceprezesów i ministrów (art. 147); powoływana przez Prezydenta RP i uzyskuje wotum zaufania Sejmu (art. 154). Sejm może ją odwołać wyłącznie przez konstruktywne wotum nieufności, wybierając nowego Prezesa RM (art. 158). Stan na 17.09.2026: 21 członków (po odwołaniu Macieja Berka 14.08.2026, M.P. 2026 poz. 808).",
+   "aliases": [
+    "Rząd",
+    "Rada Ministrów RP",
+    "Gabinet"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 146–147; ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów (Dz.U. 2025 poz. 780 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 146–147"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": "pl-prezes-rady-ministrow",
+   "headOf": null,
+   "seatsCount": 21,
+   "status": "active",
+   "statusNote": "Urząd Ministra do spraw Nadzoru nad Wdrażaniem Polityki Rządu nieobsadzony od 14.08.2026 (M.P. 2026 poz. 808).",
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 21
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2026/808/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-rady-ministrow": {
+   "id": "pl-prezes-rady-ministrow",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "highest",
+   "name": "Prezes Rady Ministrów",
+   "shortName": "Premier",
+   "description": "Przewodniczący Rady Ministrów: reprezentuje ją, kieruje jej pracami, koordynuje i kontroluje pracę ministrów i jest zwierzchnikiem służbowym pracowników administracji rządowej (art. 148 Konstytucji RP). Desygnowany i powoływany przez Prezydenta RP; wraz z RM uzyskuje wotum zaufania Sejmu (art. 154). Nadzoruje urzędy centralne wskazane w art. 33a ustawy o działach.",
+   "aliases": [
+    "Premier",
+    "Szef rządu",
+    "PRM"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 148",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 148"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-rada-ministrow",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-donald-tusk",
+      "name": "Donald Tusk",
+      "positionId": "pl-prezes-rady-ministrow",
+      "positionName": "Prezes Rady Ministrów",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://www.gov.pl/photo/format/0202bca6-9688-4f98-b937-523af52eac0f/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1382/ogl",
+      "note": "Postanowienie Prezydenta RP nr 1131.44.2023 z 13.12.2023 r. o powołaniu PRM (art. 154 ust. 3, po wyborze przez Sejm). Klub wg API Sejmu."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2023/1382/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wiceprezes-rady-ministrow": {
+   "id": "pl-wiceprezes-rady-ministrow",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "highest",
+   "name": "Wiceprezes Rady Ministrów",
+   "shortName": "Wicepremier",
+   "description": "Członek Rady Ministrów zastępujący Prezesa RM; w skład RM mogą być powoływani wiceprezesi (art. 147 ust. 2 Konstytucji RP), którzy mogą jednocześnie kierować działem administracji rządowej (ust. 3). Obecnie trzech wiceprezesów, każdy zarazem minister.",
+   "aliases": [
+    "Wicepremier"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 147 ust. 2–3",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 147 ust. 2"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-rada-ministrow",
+   "seatsCount": 3,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wladyslaw-kosiniak-kamysz",
+      "name": "Władysław Kosiniak-Kamysz",
+      "positionId": "pl-wiceprezes-rady-ministrow",
+      "positionName": "Wiceprezes Rady Ministrów, Minister Obrony Narodowej",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": "PSL-TD",
+      "imageUrl": "https://www.gov.pl/photo/format/faba7ae5-18d0-49b7-8520-b93330b977af/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+      "note": "M.P. 2023 poz. 1383. Klub wg API Sejmu."
+     },
+     {
+      "id": "pl-radoslaw-sikorski",
+      "name": "Radosław Sikorski",
+      "positionId": "pl-wiceprezes-rady-ministrow",
+      "positionName": "Wiceprezes Rady Ministrów, Minister Spraw Zagranicznych",
+      "type": "appointed",
+      "startedAt": "2025-07-24",
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://www.gov.pl/photo/format/0857542b-eb47-41a6-bb91-c153055e620b/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/690/ogl",
+      "note": "Wiceprezes RM od 24.07.2025 r. (M.P. 2025 poz. 690); Minister Spraw Zagranicznych od 13.12.2023 r. (M.P. 2023 poz. 1383)."
+     },
+     {
+      "id": "pl-krzysztof-gawkowski",
+      "name": "Krzysztof Gawkowski",
+      "positionId": "pl-wiceprezes-rady-ministrow",
+      "positionName": "Wiceprezes Rady Ministrów, Minister Cyfryzacji",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": "Lewica",
+      "imageUrl": "https://www.gov.pl/photo/format/a11e55e2-6116-47aa-80d7-924e32630b85/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+      "note": "M.P. 2023 poz. 1383. Klub wg API Sejmu."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-kprm": {
+   "id": "pl-kprm",
+   "type": "department",
+   "subtype": "chancellery",
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Kancelaria Prezesa Rady Ministrów",
+   "shortName": "KPRM",
+   "description": "Urząd zapewniający obsługę Rady Ministrów, Prezesa RM, wiceprezesów RM, Kolegium do Spraw Służb Specjalnych i Szefa Służby Cywilnej (art. 26 ustawy o Radzie Ministrów). Kieruje nią Szef KPRM powoływany przez Prezesa RM (art. 27); statut nadaje Prezes RM zarządzeniem (art. 31; M.P. 2024 poz. 142, t.j. M.P. 2026 poz. 72).",
+   "aliases": [
+    "KPRM",
+    "Kancelaria Premiera"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 26–31 (Dz.U. 2025 poz. 780 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+    "act": "DU/1996/492",
+    "article": "art. 26–31"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier",
+   "bipUrl": null,
+   "regon": "012261725",
+   "budgetPart": "16",
+   "parent": null,
+   "level": 0,
+   "head": "pl-szef-kprm",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-adam-szlapka",
+      "name": "Adam Szłapka",
+      "positionId": "pl-kprm",
+      "positionName": "Sekretarz Stanu, Rzecznik rządu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://www.gov.pl/photo/format/c6b86eb7-87e2-4646-9580-c4082f570d3b/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": "Klub wg API Sejmu."
+     },
+     {
+      "id": "pl-grzegorz-karpinski",
+      "name": "Grzegorz Karpiński",
+      "positionId": "pl-kprm",
+      "positionName": "Sekretarz Stanu, Zastępca Szefa Kancelarii Prezesa Rady Ministrów",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/0ecb3ab5-5eab-4686-b023-b7ef48158370/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-katarzyna-kotula",
+      "name": "Katarzyna Kotula",
+      "positionId": "pl-kprm",
+      "positionName": "Sekretarz Stanu, Pełnomocnik Rządu do Spraw Równości",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "Lewica",
+      "imageUrl": "https://www.gov.pl/photo/format/3017555c-53d0-44b0-a85b-62380e73cd77/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": "Klub wg API Sejmu."
+     },
+     {
+      "id": "pl-radoslaw-kujawa",
+      "name": "Radosław Kujawa",
+      "positionId": "pl-kprm",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/09c60dc6-50c5-4eb3-81d1-dc1ce1197f5c/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-marzena-okla-drewnowicz",
+      "name": "Marzena Okła-Drewnowicz",
+      "positionId": "pl-kprm",
+      "positionName": "Sekretarz Stanu, Pełnomocnik Rządu do spraw Polityki Senioralnej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://www.gov.pl/photo/format/0c6dcb6e-74ae-4270-97f5-a8326e05962c/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": "Klub wg API Sejmu."
+     },
+     {
+      "id": "pl-adriana-porowska",
+      "name": "Adriana Porowska",
+      "positionId": "pl-kprm",
+      "positionName": "Sekretarz Stanu, Wiceprzewodnicząca Komitetu do spraw Pożytku Publicznego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/c41bc7a9-7f69-4983-b145-a7977cd060e8/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-jakub-stefaniak",
+      "name": "Jakub Stefaniak",
+      "positionId": "pl-kprm",
+      "positionName": "Sekretarz Stanu, Zastępca Szefa Kancelarii Prezesa Rady Ministrów",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/967b1233-1d85-4c66-9be3-7677c7baead5/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-pawel-gras",
+      "name": "Paweł Graś",
+      "positionId": "pl-kprm",
+      "positionName": "Szef Gabinetu Politycznego Prezesa Rady Ministrów",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/bbb70606-5d38-4de8-b60e-ab80e191471a/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-karol-grzybowski",
+      "name": "Karol Grzybowski",
+      "positionId": "pl-kprm",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-agnieszka-rucinska",
+      "name": "Agnieszka Rucińska",
+      "positionId": "pl-kprm",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://eli.gov.pl/eli/MP/2026/72/ogl",
+     "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-kprm": {
+   "id": "pl-szef-kprm",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Szef Kancelarii Prezesa Rady Ministrów",
+   "shortName": "Szef KPRM",
+   "description": "Kieruje Kancelarią Prezesa Rady Ministrów; powoływany i odwoływany przez Prezesa RM (art. 27 ustawy o Radzie Ministrów). Obecnie funkcję łączy z urzędem Ministra – Członka Rady Ministrów (odrębny węzeł pl-minister-czlonek-rm-szef-kprm).",
+   "aliases": [
+    "Szef KPRM"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 27 (Dz.U. 2025 poz. 780 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+    "act": "DU/1996/492",
+    "article": "art. 27"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/jan-grabiec",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": "pl-kprm",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jan-grabiec",
+      "name": "Jan Grabiec",
+      "positionId": "pl-szef-kprm",
+      "positionName": "Szef Kancelarii Prezesa Rady Ministrów",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://www.gov.pl/photo/format/350bb649-05c2-4d55-9698-7505377720ed/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+      "startedAtSource": "https://www.gov.pl/web/premier/jan-grabiec",
+      "note": "Biogram gov.pl: '13 grudnia 2023 r. powołany na urząd Ministra – członka Rady Ministrów oraz Szefa Kancelarii Prezesa Rady Ministrów'. Klub wg API Sejmu."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/premier/kierownictwo-kprm5",
+     "https://www.gov.pl/web/premier/jan-grabiec"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-minister-czlonek-rm-szef-kprm": {
+   "id": "pl-minister-czlonek-rm-szef-kprm",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Minister – Członek Rady Ministrów (Szef KPRM, Przewodniczący Komitetu do spraw Pożytku Publicznego)",
+   "shortName": "Minister – Członek RM (Szef KPRM)",
+   "description": "Minister bez teki wypełniający zadania wyznaczone przez Prezesa RM (art. 149 ust. 1 Konstytucji RP); szczegółowy zakres działania określa rozporządzenie PRM z 2025 r. (Dz.U. 2025 poz. 998). Obecny minister łączy urząd z funkcją Szefa KPRM i Przewodniczącego Komitetu do spraw Pożytku Publicznego (art. 147 ust. 4 Konstytucji).",
+   "aliases": [
+    "Minister – Członek RM"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Prezesa Rady Ministrów z 2025 r. w sprawie szczegółowego zakresu działania Ministra – Członka Rady Ministrów (Dz.U. 2025 poz. 998); Konstytucja RP art. 149 ust. 1",
+    "url": "https://eli.gov.pl/eli/DU/2025/998/ogl",
+    "act": "DU/2025/998",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/jan-grabiec",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jan-grabiec",
+      "name": "Jan Grabiec",
+      "positionId": "pl-minister-czlonek-rm-szef-kprm",
+      "positionName": "Minister – Członek Rady Ministrów, Przewodniczący Komitetu do spraw Pożytku Publicznego",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://www.gov.pl/photo/format/350bb649-05c2-4d55-9698-7505377720ed/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+      "note": "Minister – Członek RM od 13.12.2023 r. (M.P. 2023 poz. 1383); ponownie powołany 24.07.2025 r. na urzędy Ministra – Członka RM i Przewodniczącego Komitetu ds. Pożytku Publicznego (M.P. 2025 poz. 690)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/998/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-minister-koordynator-sluzb-specjalnych": {
+   "id": "pl-minister-koordynator-sluzb-specjalnych",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Minister – Członek Rady Ministrów, Koordynator Służb Specjalnych",
+   "shortName": "Koordynator Służb Specjalnych",
+   "description": "Minister bez teki (art. 149 ust. 1 Konstytucji RP), któremu Prezes RM powierzył koordynację i nadzór nad służbami specjalnymi (ABW, AW, CBA, SKW, SWW); szczegółowy zakres działania określa rozporządzenie PRM z 2025 r. (Dz.U. 2025 poz. 1003). Przewodniczy Kolegium do Spraw Służb Specjalnych z upoważnienia PRM.",
+   "aliases": [
+    "Minister Koordynator Służb Specjalnych"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Prezesa Rady Ministrów z 2025 r. w sprawie szczegółowego zakresu działania Ministra – Członka Rady Ministrów, Koordynatora Służb Specjalnych (Dz.U. 2025 poz. 1003)",
+    "url": "https://eli.gov.pl/eli/DU/2025/1003/ogl",
+    "act": "DU/2025/1003",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/premier/tomasz-siemoniak",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 0,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-tomasz-siemoniak",
+      "name": "Tomasz Siemoniak",
+      "positionId": "pl-minister-koordynator-sluzb-specjalnych",
+      "positionName": "Minister – Członek Rady Ministrów, Koordynator Służb Specjalnych",
+      "type": "appointed",
+      "startedAt": "2025-07-24",
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://www.gov.pl/photo/format/bc0ac675-1bd0-4930-8b8c-719b7517a7f9/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/690/ogl",
+      "note": "Powołany 24.07.2025 r. na urząd Ministra – Członka RM, Koordynatora Służb Specjalnych (M.P. 2025 poz. 690); wcześniej Minister – Członek RM od 13.12.2023 r. (M.P. 2023 poz. 1383) oraz MSWiA (2024–2025). Klub wg API Sejmu."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/1003/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  }
+ },
+ "edges": {
+  "e-narod--elects--sejm": {
+   "id": "e-narod--elects--sejm",
+   "type": "elects",
+   "fromId": "pl-narod",
+   "toId": "pl-sejm",
+   "cite": "Konstytucja RP art. 96 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 460,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-narod--elects--senat": {
+   "id": "e-narod--elects--senat",
+   "type": "elects",
+   "fromId": "pl-narod",
+   "toId": "pl-senat",
+   "cite": "Konstytucja RP art. 97 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 100,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-narod--elects--prezydent-rp": {
+   "id": "e-narod--elects--prezydent-rp",
+   "type": "elects",
+   "fromId": "pl-narod",
+   "toId": "pl-prezydent-rp",
+   "cite": "Konstytucja RP art. 127 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--dept_head--marszalek-sejmu": {
+   "id": "e-sejm--dept_head--marszalek-sejmu",
+   "type": "dept_head",
+   "fromId": "pl-sejm",
+   "toId": "pl-marszalek-sejmu",
+   "cite": "Konstytucja RP art. 110 ust. 1–2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--elects--marszalek-sejmu": {
+   "id": "e-sejm--elects--marszalek-sejmu",
+   "type": "elects",
+   "fromId": "pl-sejm",
+   "toId": "pl-marszalek-sejmu",
+   "cite": "Konstytucja RP art. 110 ust. 1; Regulamin Sejmu art. 4 ust. 3 i art. 5 ust. 6",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 6,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1189/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1190/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--dept_head--marszalek-senatu": {
+   "id": "e-senat--dept_head--marszalek-senatu",
+   "type": "dept_head",
+   "fromId": "pl-senat",
+   "toId": "pl-marszalek-senatu",
+   "cite": "Konstytucja RP art. 124 w zw. z art. 110 ust. 1–2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--elects--marszalek-senatu": {
+   "id": "e-senat--elects--marszalek-senatu",
+   "type": "elects",
+   "fromId": "pl-senat",
+   "toId": "pl-marszalek-senatu",
+   "cite": "Konstytucja RP art. 124 w zw. z art. 110 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 5,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1228/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1240/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--ex_officio--zgromadzenie-narodowe": {
+   "id": "e-sejm--ex_officio--zgromadzenie-narodowe",
+   "type": "ex_officio",
+   "fromId": "pl-sejm",
+   "toId": "pl-zgromadzenie-narodowe",
+   "cite": "Konstytucja RP art. 114 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 460,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--ex_officio--zgromadzenie-narodowe": {
+   "id": "e-senat--ex_officio--zgromadzenie-narodowe",
+   "type": "ex_officio",
+   "fromId": "pl-senat",
+   "toId": "pl-zgromadzenie-narodowe",
+   "cite": "Konstytucja RP art. 114 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 100,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-zgromadzenie-narodowe--office--marszalek-sejmu": {
+   "id": "e-zgromadzenie-narodowe--office--marszalek-sejmu",
+   "type": "office",
+   "fromId": "pl-zgromadzenie-narodowe",
+   "toId": "pl-marszalek-sejmu",
+   "cite": "Konstytucja RP art. 114 ust. 1 (obrady pod przewodnictwem Marszałka Sejmu, w zastępstwie Marszałka Senatu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kancelaria-sejmu--dept_head--szef-kancelarii-sejmu": {
+   "id": "e-kancelaria-sejmu--dept_head--szef-kancelarii-sejmu",
+   "type": "dept_head",
+   "fromId": "pl-kancelaria-sejmu",
+   "toId": "pl-szef-kancelarii-sejmu",
+   "cite": "Regulamin Sejmu art. 200 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1992/185/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/1992/185/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--appoints--szef-kancelarii-sejmu": {
+   "id": "e-marszalek-sejmu--appoints--szef-kancelarii-sejmu",
+   "type": "appoints",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-szef-kancelarii-sejmu",
+   "cite": "Regulamin Sejmu art. 200 ust. 2 i art. 10 ust. 1 pkt 16 (po zasięgnięciu opinii Komisji Regulaminowej, Spraw Poselskich i Immunitetowych)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1992/185/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/1992/185/ogl",
+     "https://eli.gov.pl/eli/MP/2026/573/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--oversees--kancelaria-sejmu": {
+   "id": "e-marszalek-sejmu--oversees--kancelaria-sejmu",
+   "type": "oversees",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-kancelaria-sejmu",
+   "cite": "Regulamin Sejmu art. 10 ust. 1 pkt 14–17 (nadaje statut, ustala budżet, powołuje Szefa i zastępców); sejm.gov.pl: 'Szef Kancelarii Sejmu podlega Marszałkowi Sejmu'",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1992/185/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/1992/185/ogl",
+     "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/kancelaria"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kancelaria-sejmu--administers--sejm": {
+   "id": "e-kancelaria-sejmu--administers--sejm",
+   "type": "administers",
+   "fromId": "pl-kancelaria-sejmu",
+   "toId": "pl-sejm",
+   "cite": "Regulamin Sejmu art. 199 ust. 1 (zadania organizacyjno-techniczne i doradcze związane z działalnością Sejmu)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1992/185/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/1992/185/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kancelaria-senatu--dept_head--szef-kancelarii-senatu": {
+   "id": "e-kancelaria-senatu--dept_head--szef-kancelarii-senatu",
+   "type": "dept_head",
+   "fromId": "pl-kancelaria-senatu",
+   "toId": "pl-szef-kancelarii-senatu",
+   "cite": "Regulamin Senatu art. 99 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1991/11/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/1991/11/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-senatu--appoints--szef-kancelarii-senatu": {
+   "id": "e-marszalek-senatu--appoints--szef-kancelarii-senatu",
+   "type": "appoints",
+   "fromId": "pl-marszalek-senatu",
+   "toId": "pl-szef-kancelarii-senatu",
+   "cite": "Regulamin Senatu art. 8 ust. 1 pkt 19 (po zasięgnięciu opinii Prezydium Senatu oraz Komisji Regulaminowej, Etyki i Spraw Senatorskich)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1991/11/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/1991/11/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1251/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-senatu--oversees--kancelaria-senatu": {
+   "id": "e-marszalek-senatu--oversees--kancelaria-senatu",
+   "type": "oversees",
+   "fromId": "pl-marszalek-senatu",
+   "toId": "pl-kancelaria-senatu",
+   "cite": "Regulamin Senatu art. 8 ust. 1 pkt 17–19b (nadzoruje wykonanie budżetu, nadaje statut, powołuje Szefa i zastępców)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1991/11/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/1991/11/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kancelaria-senatu--administers--senat": {
+   "id": "e-kancelaria-senatu--administers--senat",
+   "type": "administers",
+   "fromId": "pl-kancelaria-senatu",
+   "toId": "pl-senat",
+   "cite": "Regulamin Senatu art. 98 (zadania organizacyjno-techniczne i doradcze związane z działalnością Senatu)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1991/11/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/1991/11/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kancelaria-prezydenta-rp--dept_head--szef-kancelarii-prezydenta-rp": {
+   "id": "e-kancelaria-prezydenta-rp--dept_head--szef-kancelarii-prezydenta-rp",
+   "type": "dept_head",
+   "fromId": "pl-kancelaria-prezydenta-rp",
+   "toId": "pl-szef-kancelarii-prezydenta-rp",
+   "cite": "Konstytucja RP art. 143",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--szef-kancelarii-prezydenta-rp": {
+   "id": "e-prezydent-rp--appoints--szef-kancelarii-prezydenta-rp",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-szef-kancelarii-prezydenta-rp",
+   "cite": "Konstytucja RP art. 143 (Prezydent powołuje i odwołuje Szefa Kancelarii)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--oversees--kancelaria-prezydenta-rp": {
+   "id": "e-prezydent-rp--oversees--kancelaria-prezydenta-rp",
+   "type": "oversees",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-kancelaria-prezydenta-rp",
+   "cite": "Konstytucja RP art. 143 (organ pomocniczy Prezydenta; Prezydent nadaje statut Kancelarii)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kancelaria-prezydenta-rp--administers--prezydent-rp": {
+   "id": "e-kancelaria-prezydenta-rp--administers--prezydent-rp",
+   "type": "administers",
+   "fromId": "pl-kancelaria-prezydenta-rp",
+   "toId": "pl-prezydent-rp",
+   "cite": "Konstytucja RP art. 143 (organ pomocniczy Prezydenta RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-bbn--dept_head--szef-bbn": {
+   "id": "e-bbn--dept_head--szef-bbn",
+   "type": "dept_head",
+   "fromId": "pl-bbn",
+   "toId": "pl-szef-bbn",
+   "cite": "Ustawa o obronie Ojczyzny art. 26 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--szef-bbn": {
+   "id": "e-prezydent-rp--appoints--szef-bbn",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-szef-bbn",
+   "cite": "Ustawa o obronie Ojczyzny art. 26 ust. 3 (Biurem kieruje sekretarz stanu wyznaczony przez Prezydenta RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--oversees--bbn": {
+   "id": "e-prezydent-rp--oversees--bbn",
+   "type": "oversees",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-bbn",
+   "cite": "Ustawa o obronie Ojczyzny art. 26 ust. 1 i 5 (Prezydent określa organizację i zakres działania Biura)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1021/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-bbn--administers--rada-bezpieczenstwa-narodowego": {
+   "id": "e-bbn--administers--rada-bezpieczenstwa-narodowego",
+   "type": "administers",
+   "fromId": "pl-bbn",
+   "toId": "pl-rada-bezpieczenstwa-narodowego",
+   "cite": "Zarządzenie Prezydenta RP z 15.09.2025 r. w sprawie organizacji oraz zakresu działania BBN (M.P. 2025 poz. 1021) – obsługa Rady Bezpieczeństwa Narodowego",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2025/1021/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2025/1021/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-rada-bezpieczenstwa-narodowego--advises--prezydent-rp": {
+   "id": "e-rada-bezpieczenstwa-narodowego--advises--prezydent-rp",
+   "type": "advises",
+   "fromId": "pl-rada-bezpieczenstwa-narodowego",
+   "toId": "pl-prezydent-rp",
+   "cite": "Konstytucja RP art. 135",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--rada-bezpieczenstwa-narodowego": {
+   "id": "e-prezydent-rp--appoints--rada-bezpieczenstwa-narodowego",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-rada-bezpieczenstwa-narodowego",
+   "cite": "Konstytucja RP art. 135 (organ doradczy Prezydenta; skład określa Prezydent RP – brak ustawowej regulacji składu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-rada-ministrow--ex_officio--rada-gabinetowa": {
+   "id": "e-rada-ministrow--ex_officio--rada-gabinetowa",
+   "type": "ex_officio",
+   "fromId": "pl-rada-ministrow",
+   "toId": "pl-rada-gabinetowa",
+   "cite": "Konstytucja RP art. 141 ust. 1 (Radę Gabinetową tworzy Rada Ministrów obradująca pod przewodnictwem Prezydenta RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 21,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-gabinetowa--office--prezydent-rp": {
+   "id": "e-rada-gabinetowa--office--prezydent-rp",
+   "type": "office",
+   "fromId": "pl-rada-gabinetowa",
+   "toId": "pl-prezydent-rp",
+   "cite": "Konstytucja RP art. 141 ust. 1 (obrady pod przewodnictwem Prezydenta RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-ministrow--dept_head--prezes-rady-ministrow": {
+   "id": "e-rada-ministrow--dept_head--prezes-rady-ministrow",
+   "type": "dept_head",
+   "fromId": "pl-rada-ministrow",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 1 i art. 148",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--prezes-rady-ministrow": {
+   "id": "e-prezydent-rp--appoints--prezes-rady-ministrow",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Konstytucja RP art. 154 ust. 1 (desygnuje i powołuje Prezesa RM); art. 154 ust. 3 i art. 155 (tryby rezerwowe)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1382/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--rada-ministrow": {
+   "id": "e-prezydent-rp--appoints--rada-ministrow",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 154 ust. 1 (powołuje pozostałych członków RM); art. 161 (zmiany w składzie na wniosek PRM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 21,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--nominates--rada-ministrow": {
+   "id": "e-prezes-rady-ministrow--nominates--rada-ministrow",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 154 ust. 1 (skład RM proponuje desygnowany Prezes RM); art. 161 (wniosek o zmianę w składzie RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--confirms--rada-ministrow": {
+   "id": "e-sejm--confirms--rada-ministrow",
+   "type": "confirms",
+   "fromId": "pl-sejm",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 154 ust. 2 (wotum zaufania bezwzględną większością głosów); art. 158 (konstruktywne wotum nieufności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--confirms--prezes-rady-ministrow": {
+   "id": "e-sejm--confirms--prezes-rady-ministrow",
+   "type": "confirms",
+   "fromId": "pl-sejm",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Konstytucja RP art. 154 ust. 2 (wotum zaufania); art. 154 ust. 3 (wybór Prezesa RM przez Sejm w trybie rezerwowym)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1382/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--wiceprezes-rady-ministrow": {
+   "id": "e-prezydent-rp--appoints--wiceprezes-rady-ministrow",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-wiceprezes-rady-ministrow",
+   "cite": "Konstytucja RP art. 154 ust. 1 w zw. z art. 147 ust. 2; art. 161",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--nominates--wiceprezes-rady-ministrow": {
+   "id": "e-prezes-rady-ministrow--nominates--wiceprezes-rady-ministrow",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wiceprezes-rady-ministrow",
+   "cite": "Konstytucja RP art. 154 ust. 1; art. 161 (na wniosek Prezesa RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wiceprezes-rady-ministrow--ex_officio--rada-ministrow": {
+   "id": "e-wiceprezes-rady-ministrow--ex_officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-wiceprezes-rady-ministrow",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kprm--dept_head--szef-kprm": {
+   "id": "e-kprm--dept_head--szef-kprm",
+   "type": "dept_head",
+   "fromId": "pl-kprm",
+   "toId": "pl-szef-kprm",
+   "cite": "Ustawa o Radzie Ministrów art. 27",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--szef-kprm": {
+   "id": "e-prezes-rady-ministrow--appoints--szef-kprm",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-kprm",
+   "cite": "Ustawa o Radzie Ministrów art. 27 (Szef KPRM powoływany i odwoływany przez Prezesa RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--oversees--kprm": {
+   "id": "e-prezes-rady-ministrow--oversees--kprm",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-kprm",
+   "cite": "Ustawa o Radzie Ministrów art. 31 (Prezes RM nadaje Kancelarii statut) i art. 28 (powołuje sekretarzy i podsekretarzy stanu w Kancelarii)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://eli.gov.pl/eli/MP/2026/72/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kprm--administers--rada-ministrow": {
+   "id": "e-kprm--administers--rada-ministrow",
+   "type": "administers",
+   "fromId": "pl-kprm",
+   "toId": "pl-rada-ministrow",
+   "cite": "Ustawa o Radzie Ministrów art. 26 ust. 1 pkt 1 (obsługa Rady Ministrów i Prezesa RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kprm--administers--prezes-rady-ministrow": {
+   "id": "e-kprm--administers--prezes-rady-ministrow",
+   "type": "administers",
+   "fromId": "pl-kprm",
+   "toId": "pl-prezes-rady-ministrow",
+   "cite": "Ustawa o Radzie Ministrów art. 26 ust. 1 pkt 1 i art. 29 (zadania realizowane z upoważnienia Prezesa RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-czlonek-rm-szef-kprm--ex_officio--rada-ministrow": {
+   "id": "e-minister-czlonek-rm-szef-kprm--ex_officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-minister-czlonek-rm-szef-kprm",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 1 i ust. 4 oraz art. 149 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--minister-czlonek-rm-szef-kprm": {
+   "id": "e-prezydent-rp--appoints--minister-czlonek-rm-szef-kprm",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-minister-czlonek-rm-szef-kprm",
+   "cite": "Konstytucja RP art. 154 ust. 1; art. 161",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--nominates--minister-czlonek-rm-szef-kprm": {
+   "id": "e-prezes-rady-ministrow--nominates--minister-czlonek-rm-szef-kprm",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-minister-czlonek-rm-szef-kprm",
+   "cite": "Konstytucja RP art. 154 ust. 1; art. 161 (na wniosek Prezesa RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-koordynator-sluzb-specjalnych--ex_officio--rada-ministrow": {
+   "id": "e-minister-koordynator-sluzb-specjalnych--ex_officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-minister-koordynator-sluzb-specjalnych",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 1 i art. 149 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--minister-koordynator-sluzb-specjalnych": {
+   "id": "e-prezydent-rp--appoints--minister-koordynator-sluzb-specjalnych",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-minister-koordynator-sluzb-specjalnych",
+   "cite": "Konstytucja RP art. 154 ust. 1; art. 161",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--nominates--minister-koordynator-sluzb-specjalnych": {
+   "id": "e-prezes-rady-ministrow--nominates--minister-koordynator-sluzb-specjalnych",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-minister-koordynator-sluzb-specjalnych",
+   "cite": "Konstytucja RP art. 154 ust. 1; art. 161 (na wniosek Prezesa RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  }
+ }
+}

@@ -1,0 +1,1745 @@
+{
+ "chunk": "ministerstwa-G4",
+ "verifiedAt": "2026-09-17",
+ "summary": "Weryfikacja adwersarialna chunku ministerstwa-G4. Wszystkie 71 aktów z legalSource/citeUrl istnieją w ELI (tytuły zgodne); dla wszystkich 27 ustaw bazowych cytowane t.j. są najnowsze w ELI. Przepisy cytowane w krawędziach odczytano z tekstów ujednoliconych (pdftotext): Konstytucja art. 147/149/154/161, uRM art. 37, uPIS art. 7–8, Pr. farm. art. 110–112, uśoz art. 31m/31o/31p/96/102/162, uABM art. 1/5/7, uURPL art. 1/3/5, uPP art. 42/44, uSIOZ art. 6, uIB art. 24, usus art. 51/66/73, u.rehab. art. 45/51, u.rynek pracy art. 257/341/344, uFGŚP art. 24, u.kombat. art. 7, uso art. 9a/9d, PO art. 8/50, uNCN art. 4/43, uNCBR art. 4/34, uNAWA art. 4–6/28, uPAN art. 5/15/16/22, uŁuk. art. 10/11/14/35, PSWiN art. 251/253/329/330/433, uOPDK art. 8/15/17, u.kinem. art. 7/10/12/14, u.archiw. art. 18, uOZ art. 90, u.bibl. art. 16; 5 rozporządzeń atrybucyjnych (§ 1 i załączniki) oraz wykazy M.P. 2025/41, 2023/1455, 2025/1028, 2026/533, 2024/996 (pozycje i liczby klas zgodne; nowszych wykazów MRPiPS/MEN/MKiDN brak w ELI). Postanowienia M.P. 2025/690, 2025/689, 2023/1383, 2025/56 potwierdzają daty 5 ministrów. Wszystkie 62 osoby sprawdzono na stronach sourceUrl – 61 nazwisk widnieje przy funkcji; IPiSS wymagał lepszego URL, NID – daty z komunikatu 30.06.2026, CIOP – tylko PDF wywiadu. Błędy merytoryczne: (1) Dyrektor CKE – powołanie reguluje art. 9d ust. 7 uso, nie ust. 12–13 (legalSource, opis, 2 krawędzie); (2) opis Centrum Łukasiewicz: organem jest Rada Centrum, nie „Kolegium Doradców” (art. 10); (3) klasa instytucji kultury: cz. II M.P. 2024/996 ma 58 pozycji łącznie z NID/NCK/IAM/BN, więc „58 poza nimi” → 54; (4) uzupełniono przepisy ustawowe o nadzorze: PISF art. 10 ust. 1 u.kinem., Łukasiewicz art. 35 ust. 1, GIS art. 8 ust. 5; (5) cite dept_head NAWA (art. 4 ust. 1) i PAN (art. 22 ust. 1). Decyzje chunku odbiegające od briefu (Prezesa NFZ powołuje MZ; RPP i PAN pod nadzorem PRM; NCBR pod MNiSW; brak Rzecznika Praw Ucznia – ELI nie zna takiego aktu) potwierdzone jako prawidłowe. Wynik: węzły {'confirmed': 76, 'corrected': 4}, osoby {'confirmed': 60, 'corrected': 2}, krawędzie {'confirmed': 120, 'corrected': 7}.",
+ "stats": {
+  "nodes_checked": 80,
+  "people_checked": 62,
+  "edges_checked": 127
+ },
+ "nodes": [
+  {
+   "id": "pl-ministerstwo-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/1999/1018 (rozp. RM o utworzeniu MZ) istnieje; rozp. DU/2025/1004 § 1 ust. 3: część 46 – budgetPart zgodna; strona kierownictwo osiągalna."
+  },
+  {
+   "id": "pl-minister-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2025/1004 § 1 ust. 2 dział zdrowie, załącznik: GIF, GIS, Prezes Biura ds. Substancji Chemicznych, Prezes URPL – opis zgodny."
+  },
+  {
+   "id": "pl-ministerstwo-rodziny-pracy-i-polityki-spolecznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2020/1735 (t.j. 2025/247) i DU/2023/2696 (zmiana nazwy) istnieją; rozp. DU/2023/2715 § 1 ust. 3: części 63, 31, 44 – zgodne."
+  },
+  {
+   "id": "pl-minister-rodziny-pracy-i-polityki-spolecznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2023/2715 § 1 ust. 2 działy rodzina, praca, zabezpieczenie społeczne; ust. 5 podległość Szefa UdSKiOR – topics i opis zgodne."
+  },
+  {
+   "id": "pl-ministerstwo-edukacji-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2023/2694 istnieje; rozp. DU/2023/2717 § 1 ust. 3 część 30, ust. 4 pkt 2 obsługa przez MEN od 1.01.2024 – zgodne."
+  },
+  {
+   "id": "pl-minister-edukacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2023/2717 § 1 ust. 2 dział oświata i wychowanie – zgodne; ID pl-minister-edukacji zgodne z kanonem."
+  },
+  {
+   "id": "pl-ministerstwo-nauki-i-szkolnictwa-wyzszego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2023/2695 istnieje; rozp. DU/2025/68 § 1 ust. 3: części 28, 67 i 90 – zgodne."
+  },
+  {
+   "id": "pl-minister-nauki-i-szkolnictwa-wyzszego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2025/68 § 1 ust. 2 dział szkolnictwo wyższe i nauka; M.P. 2026/533 cz. 9 wymienia NCN, NCBR, NAWA, Centrum Łukasiewicz – opis zgodny."
+  },
+  {
+   "id": "pl-ministerstwo-kultury-i-dziedzictwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2021/1931 istnieje; rozp. DU/2025/996 § 1 ust. 3 część 24 – zgodne."
+  },
+  {
+   "id": "pl-minister-kultury-i-dziedzictwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2025/996 § 1 ust. 2 dział kultura i ochrona dziedzictwa narodowego, § 1 ust. 5 nadzór nad NDAP – zgodne."
+  },
+  {
+   "id": "pl-generalny-konserwator-zabytkow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 90 ust. 1 t.j. DU/2024/1292: GKZ jest sekretarzem lub podsekretarzem stanu w MKiDN – potwierdzone. Węzeł dept_head bez headOf (nie jest szefem organizacji) – WARN walidatora zamierzony; ring=cabinet bez parent zgodny z regułami."
+  },
+  {
+   "id": "pl-glowny-inspektorat-sanitarny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2024/416 (najnowszy w ELI) art. 7 ust. 1–3 potwierdzone."
+  },
+  {
+   "id": "pl-glowny-inspektor-sanitarny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 8 ust. 1–2 uPIS: centralny organ podległy MZ, powołuje PRM na wniosek MZ spośród osób z naboru – potwierdzone."
+  },
+  {
+   "id": "pl-glowny-inspektorat-farmaceutyczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2026/612 art. 110 ust. 2 (nadzór MZ), art. 112 ust. 1 pkt 1 (GIF przy pomocy Głównego Inspektoratu) – potwierdzone."
+  },
+  {
+   "id": "pl-glowny-inspektor-farmaceutyczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 111 ust. 1 Prawa farmaceutycznego: powołuje PRM na wniosek MZ spośród osób z naboru – potwierdzone."
+  },
+  {
+   "id": "pl-narodowy-fundusz-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2025/1461 art. 96 ust. 1–2 (osobowość prawna, centrala + oddziały), art. 162 ust. 1 (nadzór MZ) – potwierdzone."
+  },
+  {
+   "id": "pl-prezes-nfz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 102 ust. 1–2: Prezesa powołuje minister właściwy ds. zdrowia po opinii Rady Funduszu – potwierdzone (brief mylnie wskazywał PRM; chunk ma rację)."
+  },
+  {
+   "id": "pl-aotmit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 31m ust. 1: państwowa jednostka organizacyjna z osobowością prawną nadzorowana przez MZ – potwierdzone."
+  },
+  {
+   "id": "pl-prezes-aotmit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 31o ust. 1 (organ Agencji) i art. 31p ust. 1 (powołuje MZ z naboru) – potwierdzone."
+  },
+  {
+   "id": "pl-agencja-badan-medycznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2025/259 art. 1 ust. 1 (państwowa osoba prawna, art. 9 pkt 14 ufp) i ust. 3 (statut zatwierdza MZ) – potwierdzone; ustawa nie ma osobnego przepisu o nadzorze, dlatego confidence=medium na krawędzi oversees jest właściwa."
+  },
+  {
+   "id": "pl-prezes-abm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 1 (powołuje MZ w drodze konkursu na 6 lat) i art. 7 ust. 1–3 – potwierdzone."
+  },
+  {
+   "id": "pl-urzad-rejestracji-produktow-leczniczych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2023/1223 art. 1, art. 3, art. 5 potwierdzone; załącznik rozp. DU/2025/1004 pkt 4 wymienia Prezesa URPL."
+  },
+  {
+   "id": "pl-prezes-urpl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 3 ust. 1: powołuje PRM na wniosek MZ spośród osób z naboru; art. 5 ust. 1 wiceprezesi – potwierdzone."
+  },
+  {
+   "id": "pl-biuro-rzecznika-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 42 ust. 1–3 (t.j. DU/2024/581): RPP centralny organ, nadzór PRM (ust. 2), Biuro (ust. 3) – potwierdzone. ring=administration bez parent poprawny (nadzór PRM, nie MZ)."
+  },
+  {
+   "id": "pl-rzecznik-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 42 ust. 1–2 i art. 44 ust. 1 (powołuje PRM z naboru) – potwierdzone."
+  },
+  {
+   "id": "pl-centrum-e-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2026/208 art. 6 ust. 2 (jednostka podległa MZ właściwa w zakresie systemów informacyjnych) – potwierdzone; M.P. 2025/41 poz. 7 „Centrum e-Zdrowia”."
+  },
+  {
+   "id": "pl-dyrektor-centrum-e-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Brak przepisu ustawowego o powołaniu dyrektora (statut zarządzeniem MZ) – legalSource art. 6 ust. 2 jako podstawa jednostki akceptowalna."
+  },
+  {
+   "id": "pl-nizp-pzh-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/41 poz. 38; t.j. ustawy o IB DU/2026/741 istnieje."
+  },
+  {
+   "id": "pl-dyrektor-nizp-pzh-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 uIB: minister nadzorujący powołuje i odwołuje dyrektora – potwierdzone."
+  },
+  {
+   "id": "pl-uczelnie-medyczne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/41: 9 uczelni (poz. 14, 42, 68–74) – liczba zgodna; art. 433 ust. 1 pkt 4 PSWiN potwierdzony."
+  },
+  {
+   "id": "pl-instytuty-badawcze-mz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/41: 14 instytutów (poz. 16–24, 34–38) łącznie z NIZP-PZH → 13 bez niego – liczba zgodna."
+  },
+  {
+   "id": "pl-zus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2026/199 art. 66 ust. 1–2 potwierdzone."
+  },
+  {
+   "id": "pl-prezes-zus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 73 ust. 1–2: powołuje PRM na wniosek ministra ds. zabezpieczenia społecznego po opinii Rady Nadzorczej – potwierdzone."
+  },
+  {
+   "id": "pl-fundusz-ubezpieczen-spolecznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 51 ust. 1–2 usus: FUS państwowy fundusz celowy, dysponent ZUS – potwierdzone; parent=pl-zus uzasadniony."
+  },
+  {
+   "id": "pl-pfron",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2026/884 art. 45 ust. 1–2, ust. 4 (nadzór ministra) – potwierdzone."
+  },
+  {
+   "id": "pl-prezes-zarzadu-pfron",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 51 ust. 1: Prezesa powołuje PRM na wniosek ministra ds. zabezpieczenia społecznego – potwierdzone."
+  },
+  {
+   "id": "pl-fundusz-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/620 art. 257 ust. 1–2 potwierdzone."
+  },
+  {
+   "id": "pl-fgsp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2026/186 art. 24 ust. 1–2 potwierdzone."
+  },
+  {
+   "id": "pl-urzad-do-spraw-kombatantow-i-osob-represjonowanych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2022/2039 art. 7 ust. 1–2; rozp. DU/2023/2715 § 1 ust. 5; M.P. 2023/1455 cz. 1 pkt 2 – potwierdzone."
+  },
+  {
+   "id": "pl-szef-udskior",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 7 ust. 4: powołuje i odwołuje PRM na wniosek ministra ds. zabezpieczenia społecznego – potwierdzone."
+  },
+  {
+   "id": "pl-instytut-pracy-i-spraw-socjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2023/1455 cz. 2 pkt 3 – potwierdzone; nowszego wykazu MRPiPS nie ma w ELI (sprawdzono 2024–2026)."
+  },
+  {
+   "id": "pl-dyrektor-ipiss",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 uIB potwierdzony."
+  },
+  {
+   "id": "pl-ochotnicze-hufce-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/620 art. 341 ust. 1 (państwowa jednostka budżetowa nadzorowana przez ministra ds. pracy), art. 344 ust. 1–3 – potwierdzone."
+  },
+  {
+   "id": "pl-komendant-glowny-ohp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 344 ust. 5: powołuje i odwołuje minister właściwy ds. pracy – potwierdzone."
+  },
+  {
+   "id": "pl-ciop-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2023/1455 cz. 2 pkt 1; rozp. RM DU/2002/1606 istnieje w ELI – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-ciop-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 uIB potwierdzony."
+  },
+  {
+   "id": "pl-centralna-komisja-egzaminacyjna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2025/881 art. 9a ust. 1, art. 9d ust. 1 i 6 – potwierdzone; M.P. 2025/1028 cz. I pkt 1."
+  },
+  {
+   "id": "pl-dyrektor-cke",
+   "status": "corrected",
+   "fixes": {
+    "legalSource": {
+     "title": "Ustawa z dnia 7 września 1991 r. o systemie oświaty, art. 9d ust. 7 (Dz.U. 2025 poz. 881 t.j.)",
+     "url": "https://eli.gov.pl/eli/DU/1991/425/ogl",
+     "act": "DU/1991/425",
+     "article": "art. 9d ust. 7"
+    },
+    "description": "Kieruje działalnością Centralnej Komisji Egzaminacyjnej; powołuje i odwołuje go minister właściwy do spraw oświaty i wychowania (art. 9d ust. 7 ustawy o systemie oświaty). Kandydata wyłania się w drodze konkursu ogłaszanego przez ministra (art. 9d ust. 12–13)."
+   },
+   "note": "t.j. DU/2025/881: powołanie dyrektora CKE reguluje art. 9d ust. 7 („dyrektor, którego powołuje i odwołuje minister właściwy do spraw oświaty i wychowania”); ust. 12–13 dotyczą tylko konkursu i trybu awaryjnego. Skorygowano legalSource i opis."
+  },
+  {
+   "id": "pl-osrodek-rozwoju-edukacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2026/820 art. 8 ust. 5 pkt 1 lit. b (minister prowadzi publiczne placówki doskonalenia nauczycieli o zasięgu ogólnokrajowym); M.P. 2025/1028 cz. I pkt 3 – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-ore",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Brak przepisu ustawowego – statut ORE; legalSource art. 8 ust. 5 pkt 1 lit. b PO akceptowalny."
+  },
+  {
+   "id": "pl-instytut-badan-edukacyjnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2024/1959 istnieje (status PIB); M.P. 2025/1028 cz. II pkt 1 – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-ibe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 uIB potwierdzony."
+  },
+  {
+   "id": "pl-kuratorzy-oswiaty",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 50 ust. 1–2 PO potwierdzony (powołuje minister na wniosek wojewody; konkurs)."
+  },
+  {
+   "id": "pl-narodowe-centrum-nauki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2026/101 art. 4 i 43 ust. 1 potwierdzone; M.P. 2026/533 cz. 9 pkt 6."
+  },
+  {
+   "id": "pl-dyrektor-ncn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 i 6: konkurs prowadzi Rada, Minister powołuje na wniosek Rady – potwierdzone."
+  },
+  {
+   "id": "pl-ncbr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2024/1170 art. 4 ust. 1 (ze zmianą ustawą z 26.01.2024) i art. 34 ust. 1: Dyrektora powołuje i nadzór sprawuje minister właściwy ds. szkolnictwa wyższego i nauki; M.P. 2026/533 cz. 9 pkt 5 wymienia NCBR – nadzór MNiSW potwierdzony."
+  },
+  {
+   "id": "pl-dyrektor-ncbr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 (ze zmianą z 2024 r.): powołuje minister ds. szkolnictwa wyższego i nauki po konkursie – potwierdzone."
+  },
+  {
+   "id": "pl-nawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2025/1643 art. 28 ust. 1 nadzór – potwierdzone; M.P. 2026/533 cz. 9 pkt 4."
+  },
+  {
+   "id": "pl-dyrektor-nawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1–2: powołuje i odwołuje PRM na wniosek ministra, kadencja 5 lat – potwierdzone."
+  },
+  {
+   "id": "pl-polska-akademia-nauk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 1 uPAN: nadzór PRM – potwierdzone; PAN nie figuruje w M.P. 2026/533 – ring=administration poprawny. statusNote o wyborach 22.10.2026 potwierdzona na pan.pl (Wybory Prezesa PAN na kadencję 2027–2030, komunikat 8.07.2026: 157. sesja ZO 22.10.2026)."
+  },
+  {
+   "id": "pl-prezes-pan",
+   "status": "corrected",
+   "fixes": {
+    "description": "Kieruje działalnością Akademii i składa w jej imieniu oświadczenia woli (art. 22 ust. 1 ustawy o PAN), przewodniczy Zgromadzeniu Ogólnemu (art. 16 ust. 1). Wybierany przez Zgromadzenie Ogólne PAN spośród członków krajowych (art. 15 ust. 2 pkt 2)."
+   },
+   "note": "t.j. DU/2026/168: art. 15 ust. 2 pkt 2 (wybór przez ZO) i art. 16 ust. 1 (przewodniczenie ZO) potwierdzone; kompetencję kierowania Akademią określa art. 22 ust. 1 – dodano do opisu."
+  },
+  {
+   "id": "pl-centrum-lukasiewicz",
+   "status": "corrected",
+   "fixes": {
+    "description": "Państwowa osoba prawna utworzona ustawą z 21 lutego 2019 r., koordynująca Sieć Badawczą Łukasiewicz – 22 instytuty badawcze prowadzące prace B+R dla gospodarki. Organami Centrum są Prezes i Rada Centrum Łukasiewicz (art. 10); nadzór nad działalnością Centrum sprawuje minister właściwy do spraw szkolnictwa wyższego i nauki (art. 35 ust. 1)."
+   },
+   "note": "t.j. DU/2026/194 art. 10: organami Centrum są Prezes i Rada Centrum Łukasiewicz (nie „Kolegium Doradców” – to nazwa sprzed nowelizacji). Nadzór: art. 35 ust. 1. Liczba 22 instytutów zgodna z lukasiewicz.gov.pl/poznaj-nas."
+  },
+  {
+   "id": "pl-prezes-centrum-lukasiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 ust. 1 pkt 1 (powołuje minister na 5 lat) i art. 14 ust. 1 – potwierdzone."
+  },
+  {
+   "id": "pl-rada-glowna-nauki-i-szkolnictwa-wyzszego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 329 ust. 1 pkt 1 i ust. 2 PSWiN potwierdzone."
+  },
+  {
+   "id": "pl-polska-komisja-akredytacyjna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 251 ust. 2–3 (do 100 członków + przewodniczący PSRP; powołuje minister), art. 253 ust. 4 – potwierdzone."
+  },
+  {
+   "id": "pl-uczelnie-publiczne-mnisw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/533: 65 publicznych uczelni akademickich + 31 publicznych uczelni zawodowych = 96 – liczba zgodna."
+  },
+  {
+   "id": "pl-narodowy-instytut-dziedzictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024/996 cz. II pkt 39 – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-nid",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Osoba p.o. od komunikatu NID z 30.06.2026 (nid.pl/2026/06/30/…); statusNote poprawna. Art. 15 ust. 1 uOPDK potwierdzony (t.j. DU/2026/457)."
+  },
+  {
+   "id": "pl-polski-instytut-sztuki-filmowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2023/130 art. 7 ust. 1, art. 12 – potwierdzone; M.P. 2024/996 cz. VI pkt 3."
+  },
+  {
+   "id": "pl-dyrektor-pisf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14 ust. 1: powołuje minister po konkursie – potwierdzone."
+  },
+  {
+   "id": "pl-narodowe-centrum-kultury",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024/996 cz. II pkt 35 – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-nck",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 1 uOPDK potwierdzony."
+  },
+  {
+   "id": "pl-instytut-adama-mickiewicza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024/996 cz. II pkt 9 – potwierdzone."
+  },
+  {
+   "id": "pl-dyrektor-iam",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 1 uOPDK potwierdzony."
+  },
+  {
+   "id": "pl-biblioteka-narodowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2022/2393 art. 16 ust. 1–4 potwierdzone; M.P. 2024/996 cz. II pkt 1."
+  },
+  {
+   "id": "pl-dyrektor-biblioteki-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 1 uOPDK i art. 16 ust. 4 ustawy o bibliotekach – potwierdzone."
+  },
+  {
+   "id": "pl-naczelna-dyrekcja-archiwow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "t.j. DU/2020/164 (najnowszy) art. 18 ust. 1 i 5; rozp. DU/2025/996 § 1 ust. 5 – potwierdzone."
+  },
+  {
+   "id": "pl-naczelny-dyrektor-archiwow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 18 ust. 2: powołuje PRM na wniosek ministra ds. kultury spośród osób z naboru – potwierdzone."
+  },
+  {
+   "id": "pl-instytucje-kultury-mkidn",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "count",
+     "count": 54
+    },
+    "description": "Klasa: państwowe instytucje kultury, dla których organizatorem jest Minister Kultury i Dziedzictwa Narodowego – cz. II wykazu M.P. 2024 poz. 996 liczy 58 pozycji (muzea narodowe, teatry, filharmonie, instytuty), z czego NID, NCK, IAM i BN ujęto jako osobne węzły (pozostaje 54). Dodatkowo minister współprowadzi 21 instytucji wpisanych do swojego rejestru (cz. IV) i 62 instytucje samorządowe (cz. V). Dyrektorów powołuje organizator (art. 15 uOPDK)."
+   },
+   "note": "M.P. 2024/996 cz. II ma 58 pozycji łącznie, w tym BN (1), IAM (9), NCK (35), NID (39) – więc „58 poza NID, NCK, IAM i BN” jest niespójne; po wyłączeniu 4 osobnych węzłów zostaje 54. Cz. IV = 21, cz. V = 62 potwierdzone."
+  },
+  {
+   "id": "pl-uczelnie-artystyczne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024/996 cz. I: pozycje 1–19 to uczelnie, dalsze 20–284 szkoły artystyczne i bursy (265) – liczby zgodne; art. 433 ust. 1 pkt 3 PSWiN."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-ministerstwo-zdrowia",
+   "personId": "pl-katarzyna-kacperczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-zdrowia",
+   "personId": "pl-katarzyna-kecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-zdrowia",
+   "personId": "pl-tomasz-maciejewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-zdrowia",
+   "personId": "pl-rafal-glowczynski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-minister-zdrowia",
+   "personId": "pl-jolanta-sobieranska-grenda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Skład RM: „Jolanta Sobierańska-Grenda Minister Zdrowia”; M.P. 2025/690: z dniem 24.07.2025 powołana na urząd Ministra Zdrowia."
+  },
+  {
+   "nodeId": "pl-ministerstwo-rodziny-pracy-i-polityki-spolecznej",
+   "personId": "pl-aleksandra-gajewska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-rodziny-pracy-i-polityki-spolecznej",
+   "personId": "pl-monika-sikora",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-rodziny-pracy-i-polityki-spolecznej",
+   "personId": "pl-katarzyna-nowakowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-rodziny-pracy-i-polityki-spolecznej",
+   "personId": "pl-sebastian-gajewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-rodziny-pracy-i-polityki-spolecznej",
+   "personId": "pl-malgorzata-baranowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-rodziny-pracy-i-polityki-spolecznej",
+   "personId": "pl-mateusz-hebda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-minister-rodziny-pracy-i-polityki-spolecznej",
+   "personId": "pl-agnieszka-dziemianowicz-bak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Skład RM: „Agnieszka Dziemianowicz-Bąk Ministra Rodziny, Pracy i Polityki Społecznej”; M.P. 2023/1383 z dniem 13.12.2023; nie było jej w odwołaniach M.P. 2025/689 – data 2023-12-13 aktualna."
+  },
+  {
+   "nodeId": "pl-ministerstwo-edukacji-narodowej",
+   "personId": "pl-katarzyna-lubnauer",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-edukacji-narodowej",
+   "personId": "pl-henryk-kiepura",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-edukacji-narodowej",
+   "personId": "pl-paulina-piechna-wieckiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-edukacji-narodowej",
+   "personId": "pl-izabela-zietka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-edukacji-narodowej",
+   "personId": "pl-robert-bartold",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-minister-edukacji",
+   "personId": "pl-barbara-nowacka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Skład RM: „Barbara Nowacka Minister Edukacji”; M.P. 2023/1383 z dniem 13.12.2023; brak w M.P. 2025/689."
+  },
+  {
+   "nodeId": "pl-ministerstwo-nauki-i-szkolnictwa-wyzszego",
+   "personId": "pl-marek-gzik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-nauki-i-szkolnictwa-wyzszego",
+   "personId": "pl-karolina-ziolo-puzuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-nauki-i-szkolnictwa-wyzszego",
+   "personId": "pl-maria-mrowczynska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-nauki-i-szkolnictwa-wyzszego",
+   "personId": "pl-andrzej-szeptycki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-nauki-i-szkolnictwa-wyzszego",
+   "personId": "pl-marcin-iskra",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-minister-nauki-i-szkolnictwa-wyzszego",
+   "personId": "pl-marcin-kulasek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Skład RM: „Marcin Kulasek Minister Nauki i Szkolnictwa Wyższego”; M.P. 2025/56: z dniem 17.01.2025 powołany (Marcin Robert Kulasek)."
+  },
+  {
+   "nodeId": "pl-ministerstwo-kultury-i-dziedzictwa-narodowego",
+   "personId": "pl-bozena-zelazowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-kultury-i-dziedzictwa-narodowego",
+   "personId": "pl-maciej-wrobel",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-kultury-i-dziedzictwa-narodowego",
+   "personId": "pl-slawomir-rogowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-kultury-i-dziedzictwa-narodowego",
+   "personId": "pl-marek-krawczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-ministerstwo-kultury-i-dziedzictwa-narodowego",
+   "personId": "pl-dorota-zebrowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-minister-kultury-i-dziedzictwa-narodowego",
+   "personId": "pl-marta-cienkowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Skład RM: „Marta Cienkowska Minister Kultury i Dziedzictwa Narodowego”; M.P. 2025/690: z dniem 24.07.2025."
+  },
+  {
+   "nodeId": "pl-generalny-konserwator-zabytkow",
+   "personId": "pl-bozena-zelazowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-glowny-inspektor-sanitarny",
+   "personId": "pl-pawel-grzesiowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-glowny-inspektor-farmaceutyczny",
+   "personId": "pl-lukasz-pietrzak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-prezes-nfz",
+   "personId": "pl-filip-nowak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nfz.gov.pl/o-nfz/wladze-nfz/: „dr Filip Nowak - Prezes NFZ … Decyzją Ministra Zdrowia, 9 listopada 2021 roku, został powołany na Prezesa” – nazwisko i data potwierdzone."
+  },
+  {
+   "nodeId": "pl-prezes-aotmit",
+   "personId": "pl-daniel-rutkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "aotm.gov.pl struktura: „Daniel Rutkowski Prezes AOTMiT … od 28 marca 2024 r. kieruje pracami Agencji w roli Prezesa” – potwierdzone."
+  },
+  {
+   "nodeId": "pl-prezes-abm",
+   "personId": "pl-anna-kowalczuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-prezes-urpl",
+   "personId": "pl-grzegorz-cessak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-rzecznik-praw-pacjenta",
+   "personId": "pl-bartlomiej-chmielowiec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-centrum-e-zdrowia",
+   "personId": "pl-jaroslaw-sot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-nizp-pzh-pib",
+   "personId": "pl-bernard-wasko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-prezes-zus",
+   "personId": "pl-liwiusz-laska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "zus.pl/…/prezes-zakladu: „Prezes Zakładu 1 lipca 2026 PREZES ZUS dr Liwiusz Laska” – nazwisko i data potwierdzone."
+  },
+  {
+   "nodeId": "pl-prezes-zarzadu-pfron",
+   "personId": "pl-malgorzata-lorek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-szef-udskior",
+   "personId": "pl-lech-parell",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-ipiss",
+   "personId": "pl-agnieszka-sowa-kofta",
+   "status": "corrected",
+   "fixes": {
+    "sourceUrl": "https://www.ipiss.com.pl/dyrekcja/"
+   },
+   "note": "ipiss.com.pl/ludzie/ zawiera nazwisko, ale w rozstrzelonej liście (obok zastępcy); jednoznaczna strona: ipiss.com.pl/dyrekcja/ – „dr hab. Agnieszka Sowa-Kofta — Dyrektor Instytutu Pracy i Spraw Socjalnych”."
+  },
+  {
+   "nodeId": "pl-komendant-glowny-ohp",
+   "personId": "pl-jerzy-budzyn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-ciop-pib",
+   "personId": "pl-agnieszka-szczygielska",
+   "status": "confirmed",
+   "fixes": {
+    "note": "Źródło: oficjalny PDF CIOP-PIB „Wywiad z Agnieszką Szczygielską, dyrektorką CIOP-PIB” (bez daty); BIP CIOP (menu JS) nie udostępnia statycznej strony kierownictwa."
+   },
+   "note": "PDF na ciop.pl potwierdza funkcję dyrektorki CIOP-PIB (tekst: „Wywiad z Agnieszką Szczygielską, dyrektorką Centralnego Instytutu Ochrony Pracy – PIB”); nie znaleziono statycznej strony „kierownictwo” – confidence medium."
+  },
+  {
+   "nodeId": "pl-dyrektor-cke",
+   "personId": "pl-robert-zakrzewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-ore",
+   "personId": "pl-mariusz-biniewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ore.edu.pl/2025/03/dyrekcja/: „Kierownictwo ORE Mariusz Biniewski – do 11 maja 2026 r. Lubuski Kurator Oświaty” – aktualny dyrektor; brak daty powołania (startedAt null poprawnie)."
+  },
+  {
+   "nodeId": "pl-dyrektor-ibe",
+   "personId": "pl-maciej-jakubowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-ncn",
+   "personId": "pl-krzysztof-jozwiak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ncn.gov.pl/o-ncn/dyrekcja: „30 października 2023 r. na stanowisko dyrektora NCN został powołany prof. Krzysztof Jóźwiak” – potwierdzone."
+  },
+  {
+   "nodeId": "pl-dyrektor-ncbr",
+   "personId": "pl-jerzy-malachowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-nawa",
+   "personId": "pl-wojciech-karczewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-prezes-pan",
+   "personId": "pl-marek-konarzewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pan.pl/wladze/wladze-pan/: „Prezes PAN Marek Konarzewski” – potwierdzone; kadencja 2023–2026, wybory następcy 22.10.2026."
+  },
+  {
+   "nodeId": "pl-prezes-centrum-lukasiewicz",
+   "personId": "pl-hubert-cichocki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-rada-glowna-nauki-i-szkolnictwa-wyzszego",
+   "personId": "pl-zbigniew-marciniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-polska-komisja-akredytacyjna",
+   "personId": "pl-janusz-uriasz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-nid",
+   "personId": "pl-michal-krasucki",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2026-06",
+    "startedAtSource": "https://nid.pl/2026/06/30/michal-krasucki-zostal-powolany-na-p-o-dyrektora-narodowego-instytutu-dziedzictwa/",
+    "note": "Komunikat NID z 30.06.2026: Minister KiDN Marta Cienkowska powołała Michała Krasuckiego na stanowisko p.o. dyrektora NID (bez podania daty skuteczności powołania)."
+   },
+   "note": "nid.pl/dyrekcja: „p.o. Dyrektor Michał Krasucki” – nazwisko potwierdzone, ale strona nie zawiera daty; datowanym źródłem jest komunikat z 30.06.2026 → startedAt 2026-06 (nie 2026-07)."
+  },
+  {
+   "nodeId": "pl-dyrektor-pisf",
+   "personId": "pl-kamila-dorbach",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-nck",
+   "personId": "pl-robert-piaskowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-iam",
+   "personId": "pl-olga-wysocka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-dyrektor-biblioteki-narodowej",
+   "personId": "pl-tomasz-makowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  },
+  {
+   "nodeId": "pl-naczelny-dyrektor-archiwow-panstwowych",
+   "personId": "pl-pawel-pietrzyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona sourceUrl otwarta (curl, HTTP 200): nazwisko widnieje przy tej funkcji."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-ministerstwo-zdrowia--dept_head--minister-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: RM składa się z PRM i ministrów – potwierdzone."
+  },
+  {
+   "id": "e-ministerstwo-rodziny-pracy-i-polityki-spolecznej--dept_head--minister-rodziny-pracy-i-polityki-spolecznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-rodziny-pracy-i-polityki-spolecznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-rodziny-pracy-i-polityki-spolecznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: RM składa się z PRM i ministrów – potwierdzone."
+  },
+  {
+   "id": "e-ministerstwo-edukacji-narodowej--dept_head--minister-edukacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-edukacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-edukacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-edukacji--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: RM składa się z PRM i ministrów – potwierdzone."
+  },
+  {
+   "id": "e-ministerstwo-nauki-i-szkolnictwa-wyzszego--dept_head--minister-nauki-i-szkolnictwa-wyzszego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-nauki-i-szkolnictwa-wyzszego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-nauki-i-szkolnictwa-wyzszego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: RM składa się z PRM i ministrów – potwierdzone."
+  },
+  {
+   "id": "e-ministerstwo-kultury-i-dziedzictwa-narodowego--dept_head--minister-kultury-i-dziedzictwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-kultury-i-dziedzictwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-kultury-i-dziedzictwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: RM składa się z PRM i ministrów – potwierdzone."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--nominates--generalny-konserwator-zabytkow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 37 ust. 3 uRM (t.j. DU/2025/780): sekretarza stanu powołuje PRM na wniosek ministra; art. 90 ust. 1 uOZ – potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--generalny-konserwator-zabytkow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 37 ust. 3 uRM potwierdzony (GKZ = sekretarz/podsekretarz stanu, art. 90 ust. 1 uOZ)."
+  },
+  {
+   "id": "e-glowny-inspektorat-sanitarny--dept_head--glowny-inspektor-sanitarny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-inspektor-sanitarny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--nominates--glowny-inspektor-sanitarny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--glowny-inspektorat-sanitarny",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o Państwowej Inspekcji Sanitarnej art. 7 ust. 1 i art. 8 ust. 1 i 5 (nadzór nad GIS sprawuje minister właściwy do spraw zdrowia); rozp. PRM Dz.U. 2025 poz. 1004 (załącznik pkt 2)"
+   },
+   "note": "Art. 7 ust. 1 (PIS podlega ministrowi) i art. 8 ust. 1 potwierdzone; wprost o nadzorze mówi art. 8 ust. 5 – dodano."
+  },
+  {
+   "id": "e-glowny-inspektorat-farmaceutyczny--dept_head--glowny-inspektor-farmaceutyczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-inspektor-farmaceutyczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--nominates--glowny-inspektor-farmaceutyczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--glowny-inspektorat-farmaceutyczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-narodowy-fundusz-zdrowia--dept_head--prezes-nfz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-zdrowia--appoints--prezes-nfz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 102 ust. 2 uśoz: Prezesa Funduszu powołuje minister właściwy ds. zdrowia po opinii Rady Funduszu – potwierdzone (nie PRM)."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--narodowy-fundusz-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-aotmit--dept_head--prezes-aotmit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-zdrowia--appoints--prezes-aotmit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--aotmit",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-agencja-badan-medycznych--dept_head--prezes-abm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-zdrowia--appoints--prezes-abm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--agencja-badan-medycznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o ABM nie zawiera osobnego przepisu o nadzorze; art. 1 ust. 3 (zatwierdzanie statutu) + M.P. 2025/41 poz. 1 – confidence medium właściwa."
+  },
+  {
+   "id": "e-urzad-rejestracji-produktow-leczniczych--dept_head--prezes-urpl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-urpl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--nominates--prezes-urpl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--urzad-rejestracji-produktow-leczniczych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-biuro-rzecznika-praw-pacjenta--dept_head--rzecznik-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--rzecznik-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--oversees--biuro-rzecznika-praw-pacjenta",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-centrum-e-zdrowia--dept_head--dyrektor-centrum-e-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Brak przepisu ustawowego; statut CeZ (zarządzenie MZ) – confidence medium właściwa, citeUrl nie-ELI akceptowalny dla dept_head."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--centrum-e-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-nizp-pzh-pib--dept_head--dyrektor-nizp-pzh-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-zdrowia--appoints--dyrektor-nizp-pzh-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--nizp-pzh-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--uczelnie-medyczne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-minister-zdrowia--oversees--instytuty-badawcze-mz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-zus--dept_head--prezes-zus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-zus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--nominates--prezes-zus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--oversees--zus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-zus--administers--fundusz-ubezpieczen-spolecznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 51 ust. 2 usus: dysponentem FUS jest Zakład – potwierdzone."
+  },
+  {
+   "id": "e-pfron--dept_head--prezes-zarzadu-pfron",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-zarzadu-pfron",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--nominates--prezes-zarzadu-pfron",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--oversees--pfron",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--administers--fundusz-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 257 ust. 2 DU/2025/620 – potwierdzone."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--administers--fgsp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 t.j. DU/2026/186 – potwierdzone."
+  },
+  {
+   "id": "e-urzad-do-spraw-kombatantow-i-osob-represjonowanych--dept_head--szef-udskior",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--szef-udskior",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--nominates--szef-udskior",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--oversees--urzad-do-spraw-kombatantow-i-osob-represjonowanych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-instytut-pracy-i-spraw-socjalnych--dept_head--dyrektor-ipiss",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--appoints--dyrektor-ipiss",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--oversees--instytut-pracy-i-spraw-socjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-ochotnicze-hufce-pracy--dept_head--komendant-glowny-ohp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--appoints--komendant-glowny-ohp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--oversees--ochotnicze-hufce-pracy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-ciop-pib--dept_head--dyrektor-ciop-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--appoints--dyrektor-ciop-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-rodziny-pracy-i-polityki-spolecznej--oversees--ciop-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-centralna-komisja-egzaminacyjna--dept_head--dyrektor-cke",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o systemie oświaty art. 9d ust. 7"
+   },
+   "note": "Art. 9d ust. 7: „Działalnością CKE kieruje dyrektor, którego powołuje i odwołuje minister właściwy do spraw oświaty i wychowania”; ust. 8–13 dotyczą wicedyrektorów, OKE i konkursu."
+  },
+  {
+   "id": "e-minister-edukacji--appoints--dyrektor-cke",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o systemie oświaty art. 9d ust. 7 (powołuje i odwołuje minister właściwy do spraw oświaty i wychowania; konkurs – ust. 12–13)"
+   },
+   "note": "Właściwa podstawa powołania to art. 9d ust. 7; ust. 12–13 regulują tylko konkurs. Confidence może być high."
+  },
+  {
+   "id": "e-minister-edukacji--oversees--centralna-komisja-egzaminacyjna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-osrodek-rozwoju-edukacji--dept_head--dyrektor-ore",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Brak przepisu ustawowego; statut ORE – confidence medium właściwa."
+  },
+  {
+   "id": "e-minister-edukacji--oversees--osrodek-rozwoju-edukacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-instytut-badan-edukacyjnych--dept_head--dyrektor-ibe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-edukacji--appoints--dyrektor-ibe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-edukacji--oversees--instytut-badan-edukacyjnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-minister-edukacji--appoints--kuratorzy-oswiaty",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 50 ust. 1 PO: kuratora powołuje minister na wniosek wojewody – potwierdzone; seatsAppointed=16."
+  },
+  {
+   "id": "e-narodowe-centrum-nauki--dept_head--dyrektor-ncn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--appoints--dyrektor-ncn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-narodowe-centrum-nauki--nominates--dyrektor-ncn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--oversees--narodowe-centrum-nauki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-ncbr--dept_head--dyrektor-ncbr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--appoints--dyrektor-ncbr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 1 uNCBR (w brzmieniu po ustawie z 26.01.2024): Dyrektora powołuje minister właściwy ds. szkolnictwa wyższego i nauki – potwierdzone."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--oversees--ncbr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 34 ust. 1 uNCBR + M.P. 2026/533 cz. 9 pkt 5 – nadzór MNiSW w 2026 r. potwierdzony."
+  },
+  {
+   "id": "e-nawa--dept_head--dyrektor-nawa",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o Narodowej Agencji Wymiany Akademickiej art. 4 ust. 1 (Dyrektor kieruje Agencją i reprezentuje ją na zewnątrz)"
+   },
+   "note": "Art. 5 ust. 1 mówi o zastępcach i komórkach; kompetencję kierowania określa art. 4 ust. 1."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--dyrektor-nawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1 uNAWA: powołuje i odwołuje PRM na wniosek ministra – potwierdzone."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--nominates--dyrektor-nawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1 – „na wniosek ministra właściwego do spraw szkolnictwa wyższego i nauki” – potwierdzone."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--oversees--nawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-polska-akademia-nauk--dept_head--prezes-pan",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o Polskiej Akademii Nauk art. 22 ust. 1 (Prezes Akademii kieruje działalnością Akademii) i art. 16 ust. 1"
+   },
+   "note": "Art. 16 ust. 1 dotyczy przewodniczenia ZO; kierowanie Akademią – art. 22 ust. 1."
+  },
+  {
+   "id": "e-polska-akademia-nauk--elects--prezes-pan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 2 pkt 2: Zgromadzenie Ogólne wybiera Prezesa spośród członków krajowych – kierunek i typ poprawne."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--oversees--polska-akademia-nauk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 5 ust. 1 uPAN: PRM sprawuje nadzór nad Akademią (z wyłączeniem gospodarki finansowej) – potwierdzone."
+  },
+  {
+   "id": "e-centrum-lukasiewicz--dept_head--prezes-centrum-lukasiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--appoints--prezes-centrum-lukasiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--oversees--centrum-lukasiewicz",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o Sieci Badawczej Łukasiewicz art. 35 ust. 1; obwieszczenie MNiSW M.P. 2026 poz. 533 (cz. 9 „Inne jednostki” pkt 2)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2019/534/ogl"
+   },
+   "note": "t.j. DU/2026/194 art. 35 ust. 1: minister właściwy ds. szkolnictwa wyższego i nauki sprawuje nadzór nad działalnością Centrum Łukasiewicz – dodano przepis ustawowy."
+  },
+  {
+   "id": "e-rada-glowna-nauki-i-szkolnictwa-wyzszego--advises--minister-nauki-i-szkolnictwa-wyzszego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 329 ust. 2 i art. 330 ust. 1 PSWiN potwierdzone."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--appoints--polska-komisja-akredytacyjna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 251 ust. 3 (członków PKA powołuje minister; skład: nie więcej niż 100 członków + przewodniczący PSRP) i art. 253 ust. 4 – potwierdzone; seatsAppointed=100 zgodne."
+  },
+  {
+   "id": "e-minister-nauki-i-szkolnictwa-wyzszego--oversees--uczelnie-publiczne-mnisw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-narodowy-instytut-dziedzictwa--dept_head--dyrektor-nid",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--appoints--dyrektor-nid",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--oversees--narodowy-instytut-dziedzictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-polski-instytut-sztuki-filmowej--dept_head--dyrektor-pisf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--appoints--dyrektor-pisf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--oversees--polski-instytut-sztuki-filmowej",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o kinematografii art. 10 ust. 1 (nadzór nad działalnością Instytutu sprawuje minister); obwieszczenie MKiDN M.P. 2024 poz. 996 (cz. VI pkt 3)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2005/1111/ogl"
+   },
+   "note": "t.j. DU/2023/130 art. 10 ust. 1 wprost ustanawia nadzór ministra – krawędź miała tylko obwieszczenie (confidence medium); po korekcie high."
+  },
+  {
+   "id": "e-narodowe-centrum-kultury--dept_head--dyrektor-nck",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--appoints--dyrektor-nck",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--oversees--narodowe-centrum-kultury",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-instytut-adama-mickiewicza--dept_head--dyrektor-iam",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--appoints--dyrektor-iam",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--oversees--instytut-adama-mickiewicza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-biblioteka-narodowa--dept_head--dyrektor-biblioteki-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--appoints--dyrektor-biblioteki-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--oversees--biblioteka-narodowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-naczelna-dyrekcja-archiwow-panstwowych--dept_head--naczelny-dyrektor-archiwow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź organizacja→stanowisko spójna z nodes[org].head i nodes[pos].headOf; przepis odczytany."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--naczelny-dyrektor-archiwow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--nominates--naczelny-dyrektor-archiwow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis odczytany w tekście ujednoliconym (ELI) – organ powołujący/wnioskujący i kierunek zgodne."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--oversees--naczelna-dyrekcja-archiwow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--oversees--instytucje-kultury-mkidn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  },
+  {
+   "id": "e-minister-kultury-i-dziedzictwa-narodowego--oversees--uczelnie-artystyczne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis o nadzorze/podległości odczytany w ELI; pozycja w wykazie M.P. potwierdzona."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {}
+ },
+ "missing": [
+  "Rada Dialogu Społecznego: węzeł pl-rada-dialogu-spolecznego istnieje w chunku ciala-doradcze, ale nie w ids-canon.json – krawędź MRPiPS/minister ↔ RDS (art. 22–23 ustawy o RDS, minister właściwy ds. pracy jako członek strony rządowej) należy dodać po wpisaniu ID do kanonu.",
+  "Główna Biblioteka Pracy i Zabezpieczenia Społecznego, Centrum Partnerstwa Społecznego „Dialog” (M.P. 2023/1455), Biuro do spraw Substancji Chemicznych (załącznik DU/2025/1004 pkt 3), Centrum Informatyczne Edukacji, ORPEG, IRJP (M.P. 2025/1028), OPI-PIB, Akademia Kopernikańska (M.P. 2026/533), Centrum Mieroszewskiego, Ossolineum (M.P. 2024/996 cz. VI) – świadomie pominięte w coverageNote; do rozważenia w kolejnej rundzie (limit 45 organizacji).",
+  "Daty powołania 25 osób kierownictw ministerstw (sekretarze/podsekretarze stanu, DG) i większości szefów jednostek – brak datowanych źródeł na stronach 'kierownictwo'; wymagają newsów resortowych (poza zakresem tej weryfikacji).",
+  "Dyrektor CIOP-PIB: jedynym źródłem jest niedatowany PDF wywiadu na ciop.pl (BIP CIOP oparty na JS, bez statycznej strony kierownictwa) – confidence medium.",
+  "Kwestia schematu (globalna): stanowiska dept_head jednostek-satelitów mają parent=organizacja, bo walidator wymaga parent przy ring=satellite; brief mówi „bez parent” – do rozstrzygnięcia w validate-chunk.py."
+ ]
+}

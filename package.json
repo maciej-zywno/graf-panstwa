@@ -1,0 +1,21 @@
+{
+  "name": "graf-panstwa",
+  "version": "1.0.0",
+  "description": "Polski odpowiednik [graph.civlab.org/us](https://graph.civlab.org/us): otwarty model danych państwa na szczeblu centralnym — **organ ⟂ stanowisko ⟂ osoba** + typowane relacje prawne (powołuje / zatwierdza / wybiera / wnioskuje / nadzoruje / zasiada z urzędu) z cytatem przepisu (ELI) przy każdej krawędzi.",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "pretest": "python3 scripts/build-switcher.py",
+    "test": "playwright test",
+    "test:smoke": "playwright test tests/e2e/01-smoke-and-data.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  },
+  "private": true
+}

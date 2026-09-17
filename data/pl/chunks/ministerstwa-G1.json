@@ -1,0 +1,3670 @@
+{
+ "chunk": "ministerstwa-G1",
+ "generatedAt": "2026-09-17",
+ "coverageNote": "Zakres: MON, MSZ, MC z ministrami, kierownictwem (SS/PS/DG) i wybranymi jednostkami podległymi/nadzorowanymi wg M.P. 2026 poz. 726 (MON), 871 (MSZ), 180 (MC). Rozporządzenia atrybucyjne MON (Dz.U. 2023 poz. 2707) i MC (Dz.U. 2023 poz. 2720) NIE mają załączników z wykazem jednostek — źródłem wykazów są wyłącznie obwieszczenia M.P. MON nie ma rozporządzenia RM o utworzeniu ministerstwa — istnieje z mocy ustawy z 14.12.1995 r. o urzędzie MON (art. 1 ust. 2). POMINIĘTO (MON, wykaz cz. I: 44 jednostki podległe, cz. II: 51 nadzorowanych): Inspektorat Wsparcia SZ, Dowództwo Garnizonu Warszawa, Dowództwo Wojsk Medycznych, Dowództwo Transformacji i Szkolenia SZ, Centralne Wojskowe Centrum Rekrutacji, Agencja Uzbrojenia, Agencja Rozpoznania Geoprzestrzennego i Usług Satelitarnych, Inspektorat Kontroli Wojskowej, Wojskowe Biuro Historyczne, Wojskowa Inspekcja Gospodarki Energetycznej, Wojskowy Dozór Techniczny, Władza Lotnictwa Wojskowego, Centralna Wojskowa Komisja Lekarska, wojskowe biura emerytalne, przedstawicielstwa przy NATO/UE, 10 instytutów badawczych (WIM-PIB, ITWL, WIŁ-PIB, WITU, WITPiS, WITI, WIHE, WIML, WIChiR) — z wyjątkiem IDEAS, 23 wojskowe szpitale/SPZOZ i przychodnie, ordynariaty, licea wojskowe, 4 muzea, Wojskowy Instytut Wydawniczy, Zakład Inwestycji NATO. POMINIĘTO (MSZ): pojedyncze placówki (zagregowane w węźle-klasie 'Placówki zagraniczne RP' — 138 placówek zawodowych, 254 konsulaty honorowe) i pojedyncze Instytuty Polskie (klasa, 26); Akademia Dyplomatyczna nie występuje w wykazie M.P. 2026 poz. 871 (jest komórką MSZ) — pominięta. POMINIĘTO (MC): Pełnomocnik Rządu ds. Cyberbezpieczeństwa (funkcję pełni Minister Cyfryzacji — odnotowano w nocie osoby), Prezes UKE (kanon 'niezalezne' — dodano tylko krawędź nadzoru § 1 ust. 5 rozp. atrybucyjnego). OSOBY NIEZWERYFIKOWANE (strony wojsko-polskie.pl, skw.gov.pl, sww.gov.pl, pism.pl, wbh.wp.mil.pl chronione Incapsula — nieosiągalne 17.09.2026; brak nazwisk w M.P. dla stanowisk obsadzanych przez MON/PRM): Dowódca Komponentu WOC, Komendant Główny ŻW, Szef SKW, Szef SWW, Dyrektor PISM. Dowódcy DGRSZ/DORSZ/DWOT i Szef SGWP — nazwiska z postanowień Prezydenta RP w M.P. (2024 poz. 584, 2026 poz. 577, 2024 poz. 583, 2023 poz. 1104); Szef SGWP dodatkowo potwierdzony na stronie kierownictwa MON. Daty startedAt: ministrowie — z postanowień Prezydenta (M.P. 2023 poz. 1383, 2025 poz. 690); sekretarze/podsekretarze stanu i DG — brak datowanego źródła w tej rundzie (null). Partie: tylko z klubów w API Sejmu X kadencji; Sikorski nie figuruje w API Sejmu — null. budgetPart podany z rozporządzeń atrybucyjnych (§ 1 ust. 3), nie z Dz.U. 2025 poz. 1185.",
+ "nodes": {
+  "pl-ministerstwo-obrony-narodowej": {
+   "id": "pl-ministerstwo-obrony-narodowej",
+   "type": "department",
+   "subtype": "ministry",
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Ministerstwo Obrony Narodowej",
+   "shortName": "MON",
+   "description": "Urząd administracji rządowej obsługujący Ministra Obrony Narodowej; w jego skład wchodzi Sztab Generalny Wojska Polskiego (art. 1 ust. 2 ustawy o urzędzie MON). Zapewnia obsługę ministra kierującego działem obrona narodowa oraz Siłami Zbrojnymi RP w czasie pokoju. Dysponent części 29 budżetu państwa.",
+   "aliases": [
+    "MON",
+    "Ministerstwo Obrony"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 14 grudnia 1995 r. o urzędzie Ministra Obrony Narodowej, art. 1 ust. 2 (Dz.U. 2025 poz. 445 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/56/ogl",
+    "act": "DU/1996/56",
+    "article": "art. 1 ust. 2"
+   },
+   "officialUrl": "https://www.gov.pl/web/obrona-narodowa",
+   "bipUrl": "https://www.gov.pl/web/obrona-narodowa/mapa-strony?show-bip=true",
+   "regon": "014872806",
+   "budgetPart": "29",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-minister-obrony-narodowej",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-pawel-bejda",
+      "name": "Paweł Bejda",
+      "positionId": "pl-ministerstwo-obrony-narodowej",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "PSL-TD (klub w Sejmie X kad.)",
+      "imageUrl": "https://www.gov.pl/photo/format/232a901d-8ad9-4c4c-ab94-1eab1cf52484/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/obrona-narodowa/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-cezary-tomczyk",
+      "name": "Cezary Tomczyk",
+      "positionId": "pl-ministerstwo-obrony-narodowej",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "KO (klub w Sejmie X kad.)",
+      "imageUrl": "https://www.gov.pl/photo/format/6de72a48-d956-49fd-80fd-14d681d6d2e4/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/obrona-narodowa/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-pawel-zalewski",
+      "name": "Paweł Zalewski",
+      "positionId": "pl-ministerstwo-obrony-narodowej",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/890cfe7b-bdde-4cdf-9333-64c944d10a9d/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/obrona-narodowa/kierownictwo",
+      "startedAtSource": null,
+      "note": "Poseł niezrzeszony wg API Sejmu (term10)."
+     },
+     {
+      "id": "pl-magdalena-sobkowiak-czarnecka",
+      "name": "Magdalena Sobkowiak-Czarnecka",
+      "positionId": "pl-ministerstwo-obrony-narodowej",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/f4fc70a2-3020-4cd5-924d-0fe470a59011/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/obrona-narodowa/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-stanislaw-wziatek",
+      "name": "Stanisław Wziątek",
+      "positionId": "pl-ministerstwo-obrony-narodowej",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/255334a1-08f0-43b9-9a30-b502b5b9c2b0/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/obrona-narodowa/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-michal-dziubak",
+      "name": "Michał Dziubak",
+      "positionId": "pl-ministerstwo-obrony-narodowej",
+      "positionName": "Dyrektor Generalny Ministerstwa Obrony Narodowej",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/obrona-narodowa/kierownictwo1",
+      "startedAtSource": null,
+      "note": "Strona BIP 'Kierownictwo' (wersja 45.0 z 01.07.2026)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/56/ogl",
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/obrona-narodowa/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-minister-obrony-narodowej": {
+   "id": "pl-minister-obrony-narodowej",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Minister Obrony Narodowej",
+   "shortName": "Minister ON",
+   "description": "Naczelny organ administracji rządowej kierujący działem obrona narodowa; organ, za którego pośrednictwem Prezydent RP sprawuje w czasie pokoju zwierzchnictwo nad Siłami Zbrojnymi (art. 134 ust. 2 Konstytucji, art. 1 ustawy o urzędzie MON). Zakres działania określa rozporządzenie PRM z 18.12.2023 r. (Dz.U. poz. 2707).",
+   "aliases": [
+    "MON",
+    "szef MON",
+    "Minister Obrony"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Prezesa Rady Ministrów z dnia 18 grudnia 2023 r. w sprawie szczegółowego zakresu działania Ministra Obrony Narodowej, § 1 (Dz.U. 2023 poz. 2707)",
+    "url": "https://eli.gov.pl/eli/DU/2023/2707/ogl",
+    "act": "DU/2023/2707",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/obrona-narodowa",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "29",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-ministerstwo-obrony-narodowej",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [
+    "obrona narodowa"
+   ],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wladyslaw-kosiniak-kamysz",
+      "name": "Władysław Kosiniak-Kamysz",
+      "positionId": "pl-minister-obrony-narodowej",
+      "positionName": "Wiceprezes Rady Ministrów, Minister Obrony Narodowej",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": "PSL-TD (klub w Sejmie X kad.)",
+      "imageUrl": "https://www.gov.pl/photo/format/1a97f30e-e59c-46ed-a704-96c5118e3339/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP nr 1131.45.2023 z 13.12.2023 (M.P. 2023 poz. 1383) na urzędy Wiceprezesa RM i Ministra Obrony Narodowej."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2023/2707/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://www.gov.pl/web/obrona-narodowa/kierownictwo",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-ministerstwo-spraw-zagranicznych": {
+   "id": "pl-ministerstwo-spraw-zagranicznych",
+   "type": "department",
+   "subtype": "ministry",
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Ministerstwo Spraw Zagranicznych",
+   "shortName": "MSZ",
+   "description": "Urząd administracji rządowej obsługujący Ministra Spraw Zagranicznych, utworzony rozporządzeniem RM z 3.11.1999 r. (Dz.U. Nr 91 poz. 1025) na podstawie art. 39 ustawy o Radzie Ministrów. W urzędzie działa służba zagraniczna (art. 8 ust. 2 ustawy o służbie zagranicznej); obsługuje 138 placówek zagranicznych i 26 instytutów polskich. Dysponent części 23 i 45 budżetu.",
+   "aliases": [
+    "MSZ"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 3 listopada 1999 r. w sprawie utworzenia Ministerstwa Spraw Zagranicznych, § 1 (Dz.U. 1999 Nr 91 poz. 1025)",
+    "url": "https://eli.gov.pl/eli/DU/1999/1025/ogl",
+    "act": "DU/1999/1025",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/dyplomacja",
+   "bipUrl": "https://www.gov.pl/web/dyplomacja/bip",
+   "regon": "000177916",
+   "budgetPart": "23, 45",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-minister-spraw-zagranicznych",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wladyslaw-bartoszewski",
+      "name": "Władysław Teofil Bartoszewski",
+      "positionId": "pl-ministerstwo-spraw-zagranicznych",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "PSL-TD (klub w Sejmie X kad.)",
+      "imageUrl": "https://www.gov.pl/photo/format/091630e1-af6b-4aae-a924-6df5a8ddfdab/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-marcin-bosacki",
+      "name": "Marcin Bosacki",
+      "positionId": "pl-ministerstwo-spraw-zagranicznych",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "KO (klub w Sejmie X kad.)",
+      "imageUrl": "https://www.gov.pl/photo/format/562d5e36-db75-4dc1-8d8e-13be40562880/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-ignacy-niemczycki",
+      "name": "Ignacy Niemczycki",
+      "positionId": "pl-ministerstwo-spraw-zagranicznych",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/5e2700d3-86b3-483a-a59e-0250c7094786/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-artur-harazim",
+      "name": "Artur Harazim",
+      "positionId": "pl-ministerstwo-spraw-zagranicznych",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/5dce67af-952c-48da-a481-a3cbf5f21304/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-robert-kupiecki",
+      "name": "Robert Kupiecki",
+      "positionId": "pl-ministerstwo-spraw-zagranicznych",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/f7a43015-4788-4d59-82ee-e878fd9acfa7/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-wojciech-zajaczkowski",
+      "name": "Wojciech Zajączkowski",
+      "positionId": "pl-ministerstwo-spraw-zagranicznych",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/f03a4a03-bec1-43c7-bbe7-48fef6dd26c1/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": "Podpisał wz. ministra obwieszczenie M.P. 2026 poz. 871."
+     },
+     {
+      "id": "pl-henryka-moscicka-dendys",
+      "name": "Henryka Mościcka-Dendys",
+      "positionId": "pl-ministerstwo-spraw-zagranicznych",
+      "positionName": "Szefowa Służby Zagranicznej i Dyrektor Generalna",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/44b31bee-c5e1-4fd2-9320-48379e15c531/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa",
+      "startedAtSource": null,
+      "note": "Szefa Służby Zagranicznej powołuje minister właściwy ds. zagranicznych (art. 11 ust. 3 ustawy o służbie zagranicznej)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1999/1025/ogl",
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-minister-spraw-zagranicznych": {
+   "id": "pl-minister-spraw-zagranicznych",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Minister Spraw Zagranicznych",
+   "shortName": "Minister SZ",
+   "description": "Naczelny organ administracji rządowej kierujący działami: sprawy zagraniczne oraz członkostwo RP w Unii Europejskiej (rozp. PRM z 25.07.2025 r., Dz.U. poz. 993). Kieruje służbą zagraniczną (art. 8 ust. 1 ustawy o służbie zagranicznej) i nadzoruje Polski Instytut Spraw Międzynarodowych.",
+   "aliases": [
+    "MSZ",
+    "szef MSZ",
+    "szef dyplomacji"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Prezesa Rady Ministrów z dnia 25 lipca 2025 r. w sprawie szczegółowego zakresu działania Ministra Spraw Zagranicznych, § 1 (Dz.U. 2025 poz. 993)",
+    "url": "https://eli.gov.pl/eli/DU/2025/993/ogl",
+    "act": "DU/2025/993",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/dyplomacja",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "23, 45",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-ministerstwo-spraw-zagranicznych",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [
+    "sprawy zagraniczne",
+    "członkostwo Rzeczypospolitej Polskiej w Unii Europejskiej"
+   ],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-radoslaw-sikorski",
+      "name": "Radosław Sikorski",
+      "positionId": "pl-minister-spraw-zagranicznych",
+      "positionName": "Wiceprezes Rady Ministrów, Minister Spraw Zagranicznych",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/7e79f63f-5598-49bd-91d0-6e0db002fcf8/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+      "note": "Minister SZ od 13.12.2023 (M.P. 2023 poz. 1383); 24.07.2025 odwołany i ponownie powołany na urzędy Wiceprezesa RM i Ministra SZ (M.P. 2025 poz. 689 i 690). Partia: brak w API Sejmu (nie jest posłem X kad.) — pole pozostawione puste."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/993/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-ministerstwo-cyfryzacji": {
+   "id": "pl-ministerstwo-cyfryzacji",
+   "type": "department",
+   "subtype": "ministry",
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Ministerstwo Cyfryzacji",
+   "shortName": "MC",
+   "description": "Urząd administracji rządowej obsługujący Ministra Cyfryzacji, utworzony rozporządzeniem RM z 20.04.2023 r. (Dz.U. poz. 781) z dniem 1.05.2023 r. na podstawie art. 39 ustawy o Radzie Ministrów, z wyłączeniem pracowników KPRM obsługujących dział informatyzacja. Dysponent części 27 budżetu państwa.",
+   "aliases": [
+    "MC",
+    "Ministerstwo Cyfryzacji"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 20 kwietnia 2023 r. w sprawie utworzenia Ministerstwa Cyfryzacji, § 1 (Dz.U. 2023 poz. 781)",
+    "url": "https://eli.gov.pl/eli/DU/2023/781/ogl",
+    "act": "DU/2023/781",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/cyfryzacja",
+   "bipUrl": "https://mc.bip.gov.pl/",
+   "regon": "525189465",
+   "budgetPart": "27",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-minister-cyfryzacji",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-dariusz-standerski",
+      "name": "Dariusz Standerski",
+      "positionId": "pl-ministerstwo-cyfryzacji",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/6f915c41-b2c0-4a96-b274-bf1050af5f4a/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/cyfryzacja/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-pawel-olszewski",
+      "name": "Paweł Olszewski",
+      "positionId": "pl-ministerstwo-cyfryzacji",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "KO (klub w Sejmie X kad.)",
+      "imageUrl": "https://www.gov.pl/photo/format/bc6cfcfb-2f6f-4822-8959-8902ddeedffb/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/cyfryzacja/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-michal-gramatyka",
+      "name": "Michał Gramatyka",
+      "positionId": "pl-ministerstwo-cyfryzacji",
+      "positionName": "Sekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "Polska2050 (klub w Sejmie X kad.)",
+      "imageUrl": "https://www.gov.pl/photo/format/01b9700b-fcf9-4256-a51a-8dda5c496963/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/cyfryzacja/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-rafal-rosinski",
+      "name": "Rafał Rosiński",
+      "positionId": "pl-ministerstwo-cyfryzacji",
+      "positionName": "Podsekretarz Stanu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/782fbf7b-197c-41d2-86ef-233e90ef183b/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/cyfryzacja/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
+      "id": "pl-bartosz-dominiak",
+      "name": "Bartosz Dominiak",
+      "positionId": "pl-ministerstwo-cyfryzacji",
+      "positionName": "Dyrektor Generalny",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/3e4c1fee-b714-4ca1-be7e-dc2c6cff59f9/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/cyfryzacja/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2023/781/ogl",
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/cyfryzacja/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-minister-cyfryzacji": {
+   "id": "pl-minister-cyfryzacji",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "cabinet",
+   "name": "Minister Cyfryzacji",
+   "shortName": "Minister Cyfryzacji",
+   "description": "Naczelny organ administracji rządowej kierujący działem informatyzacja; sprawuje nadzór nad Prezesem Urzędu Komunikacji Elektronicznej (§ 1 ust. 5 rozp. PRM z 18.12.2023 r., Dz.U. poz. 2720). Nadzoruje NASK-PIB, Instytut Łączności-PIB, COI i Instytut Badawczy IDEAS; podlega mu Centrum Projektów Polska Cyfrowa.",
+   "aliases": [
+    "MC",
+    "szef MC"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Prezesa Rady Ministrów z dnia 18 grudnia 2023 r. w sprawie szczegółowego zakresu działania Ministra Cyfryzacji, § 1 (Dz.U. 2023 poz. 2720)",
+    "url": "https://eli.gov.pl/eli/DU/2023/2720/ogl",
+    "act": "DU/2023/2720",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/cyfryzacja",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": "27",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-ministerstwo-cyfryzacji",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [
+    "informatyzacja"
+   ],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-krzysztof-gawkowski",
+      "name": "Krzysztof Gawkowski",
+      "positionId": "pl-minister-cyfryzacji",
+      "positionName": "Wiceprezes Rady Ministrów, Minister Cyfryzacji",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": "Lewica (klub w Sejmie X kad.)",
+      "imageUrl": "https://www.gov.pl/photo/format/48fe362f-9130-4529-9d50-02d2370b9e31/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1383/ogl",
+      "note": "Powołany postanowieniem nr 1131.45.2023 z 13.12.2023 (M.P. 2023 poz. 1383). Strona MC podaje tytuł: 'Wicepremier, Minister cyfryzacji, Pełnomocnik Rządu ds. Cyberbezpieczeństwa'."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2023/2720/ogl",
+     "https://www.gov.pl/web/premier/sklad-rady-ministrow",
+     "https://www.gov.pl/web/cyfryzacja/kierownictwo",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-sztab-generalny-wp": {
+   "id": "pl-sztab-generalny-wp",
+   "type": "department",
+   "subtype": "military",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Sztab Generalny Wojska Polskiego",
+   "shortName": "SGWP",
+   "description": "Organ wchodzący w skład Ministerstwa Obrony Narodowej (art. 1 ust. 2 ustawy o urzędzie MON), przy pomocy którego Szef SGWP — najwyższy pod względem pełnionej funkcji żołnierz w czynnej służbie — planuje, organizuje i dowodzi Siłami Zbrojnymi w czasie pokoju (art. 7a–8 ustawy). Szef SGWP jest organem pomocniczym Prezydenta RP w kierowaniu obroną państwa (art. 25 ust. 2 ustawy o obronie Ojczyzny).",
+   "aliases": [
+    "SGWP",
+    "Sztab Generalny"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 14 grudnia 1995 r. o urzędzie Ministra Obrony Narodowej, art. 1 ust. 2, art. 7a i 8 (Dz.U. 2025 poz. 445 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/56/ogl",
+    "act": "DU/1996/56",
+    "article": "art. 1 ust. 2, art. 7a, art. 8"
+   },
+   "officialUrl": "https://www.gov.pl/web/obrona-narodowa/zarzady-sztabu-generalnego-wp",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-szef-sztabu-generalnego-wp",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/56/ogl",
+     "https://www.gov.pl/web/obrona-narodowa/zarzady-sztabu-generalnego-wp",
+     "https://eli.gov.pl/eli/MP/2023/1104/ogl",
+     "https://www.gov.pl/web/obrona-narodowa/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-sztabu-generalnego-wp": {
+   "id": "pl-szef-sztabu-generalnego-wp",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Szef Sztabu Generalnego Wojska Polskiego",
+   "shortName": "Szef Sztabu Generalnego Wojska Polskiego",
+   "description": "Najwyższy pod względem pełnionej funkcji żołnierz w czynnej służbie wojskowej; podlega bezpośrednio Ministrowi ON (art. 5 ust. 1 ustawy o urzędzie MON). Mianowany przez Prezydenta RP na 3-letnią kadencję (art. 134 ust. 3 Konstytucji; art. 195 i 198 ustawy o obronie Ojczyzny).",
+   "aliases": [
+    "Szef SGWP",
+    "Szef Sztabu"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 14 grudnia 1995 r. o urzędzie Ministra Obrony Narodowej, art. 1 ust. 2, art. 7a i 8 (Dz.U. 2025 poz. 445 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/56/ogl",
+    "act": "DU/1996/56",
+    "article": "art. 1 ust. 2, art. 7a, art. 8"
+   },
+   "officialUrl": "https://www.gov.pl/web/obrona-narodowa/zarzady-sztabu-generalnego-wp",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-sztab-generalny-wp",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wieslaw-kukula",
+      "name": "gen. Wiesław Kukuła",
+      "positionId": "pl-szef-sztabu-generalnego-wp",
+      "positionName": "Szef Sztabu Generalnego WP",
+      "type": "appointed",
+      "startedAt": "2023-10-10",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/d1b114bb-20b4-469e-a1bc-882a31f5c44d/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/obrona-narodowa/kierownictwo",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1104/ogl",
+      "note": "Mianowany postanowieniem Prezydenta RP nr 112.92.2023 z 10.10.2023 (M.P. 2023 poz. 1104); kadencja 3-letnia (art. 198 ust. 1 uOO)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/56/ogl",
+     "https://www.gov.pl/web/obrona-narodowa/zarzady-sztabu-generalnego-wp",
+     "https://eli.gov.pl/eli/MP/2023/1104/ogl",
+     "https://www.gov.pl/web/obrona-narodowa/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dowodztwo-generalne-rsz": {
+   "id": "pl-dowodztwo-generalne-rsz",
+   "type": "department",
+   "subtype": "military",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dowództwo Generalne Rodzajów Sił Zbrojnych",
+   "shortName": "DGRSZ",
+   "description": "Jednostka organizacyjna podległa MON (M.P. 2026 poz. 726, cz. I pkt 1), przy pomocy której Dowódca Generalny RSZ dowodzi jednostkami wojskowymi i związkami organizacyjnymi Sił Zbrojnych niepodporządkowanymi innym dowódcom (art. 20 ustawy o obronie Ojczyzny). Siedziba: Warszawa.",
+   "aliases": [
+    "DGRSZ",
+    "Dowództwo Generalne"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 20 (Dz.U. 2025 poz. 825 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 20"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/dgrsz/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-dowodca-generalny-rsz",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.wojsko-polskie.pl/dgrsz/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/MP/2024/584/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dowodca-generalny-rsz": {
+   "id": "pl-dowodca-generalny-rsz",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dowódca Generalny Rodzajów Sił Zbrojnych",
+   "shortName": "Dowódca Generalny Rodzajów Sił Zbrojnych",
+   "description": "Dowódca rodzaju Sił Zbrojnych (art. 17 ust. 3 uOO) właściwy w zakresie dowodzenia jednostkami wojskowymi; mianowany przez Prezydenta RP na 3-letnią kadencję (art. 134 ust. 3 Konstytucji; art. 195 i 198 uOO).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 20 (Dz.U. 2025 poz. 825 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 20"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/dgrsz/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-dowodztwo-generalne-rsz",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-sokolowski",
+      "name": "gen. broni Marek Sokołowski",
+      "positionId": "pl-dowodca-generalny-rsz",
+      "positionName": "Dowódca Generalny Rodzajów Sił Zbrojnych",
+      "type": "appointed",
+      "startedAt": "2024-05-03",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2024/584/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/584/ogl",
+      "note": "Mianowany postanowieniem Prezydenta RP (MP/2024/584); strona dowództwa nieosiągalna (Incapsula) — źródłem nazwiska jest Monitor Polski."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.wojsko-polskie.pl/dgrsz/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/MP/2024/584/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dowodztwo-operacyjne-rsz": {
+   "id": "pl-dowodztwo-operacyjne-rsz",
+   "type": "department",
+   "subtype": "military",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dowództwo Operacyjne Rodzajów Sił Zbrojnych",
+   "shortName": "DORSZ",
+   "description": "Jednostka organizacyjna podległa MON (M.P. 2026 poz. 726, cz. I pkt 2), przy pomocy której Dowódca Operacyjny RSZ dowodzi operacyjnie częścią Sił Zbrojnych podporządkowaną mu do prowadzenia operacji w kraju i poza granicami (art. 21 ustawy o obronie Ojczyzny). Siedziba: Warszawa.",
+   "aliases": [
+    "DORSZ",
+    "Dowództwo Operacyjne"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 21 (Dz.U. 2025 poz. 825 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 21"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/dorsz/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-dowodca-operacyjny-rsz",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.wojsko-polskie.pl/dorsz/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/MP/2026/577/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dowodca-operacyjny-rsz": {
+   "id": "pl-dowodca-operacyjny-rsz",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dowódca Operacyjny Rodzajów Sił Zbrojnych",
+   "shortName": "Dowódca Operacyjny Rodzajów Sił Zbrojnych",
+   "description": "Dowódca rodzaju Sił Zbrojnych właściwy w zakresie dowodzenia operacyjnego (art. 21 uOO); mianowany przez Prezydenta RP na 3-letnią kadencję (art. 134 ust. 3 Konstytucji; art. 195 i 198 uOO).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 21 (Dz.U. 2025 poz. 825 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 21"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/dorsz/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-dowodztwo-operacyjne-rsz",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-ireneusz-nowak",
+      "name": "gen. dyw. Ireneusz Nowak",
+      "positionId": "pl-dowodca-operacyjny-rsz",
+      "positionName": "Dowódca Operacyjny Rodzajów Sił Zbrojnych",
+      "type": "appointed",
+      "startedAt": "2026-06-02",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/577/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/577/ogl",
+      "note": "Mianowany postanowieniem Prezydenta RP (MP/2026/577); strona dowództwa nieosiągalna (Incapsula) — źródłem nazwiska jest Monitor Polski."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.wojsko-polskie.pl/dorsz/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/MP/2026/577/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dowodztwo-wot": {
+   "id": "pl-dowodztwo-wot",
+   "type": "department",
+   "subtype": "military",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dowództwo Wojsk Obrony Terytorialnej",
+   "shortName": "DWOT",
+   "description": "Jednostka organizacyjna podległa MON (M.P. 2026 poz. 726, cz. I pkt 3), przy pomocy której Dowódca WOT dowodzi jednostkami Wojsk Obrony Terytorialnej (art. 22 ustawy o obronie Ojczyzny). Siedziba: Zegrze.",
+   "aliases": [
+    "DWOT",
+    "Dowództwo WOT"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 22 (Dz.U. 2025 poz. 825 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 22"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/dwot/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-dowodca-wot",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.wojsko-polskie.pl/dwot/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/MP/2024/583/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dowodca-wot": {
+   "id": "pl-dowodca-wot",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dowódca Wojsk Obrony Terytorialnej",
+   "shortName": "Dowódca Wojsk Obrony Terytorialnej",
+   "description": "Dowódca rodzaju Sił Zbrojnych właściwy w zakresie dowodzenia jednostkami WOT (art. 22 uOO); mianowany przez Prezydenta RP na 3-letnią kadencję (art. 134 ust. 3 Konstytucji; art. 195 i 198 uOO).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 22 (Dz.U. 2025 poz. 825 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 22"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/dwot/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-dowodztwo-wot",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-krzysztof-stanczyk",
+      "name": "gen. bryg. Krzysztof Stańczyk",
+      "positionId": "pl-dowodca-wot",
+      "positionName": "Dowódca Wojsk Obrony Terytorialnej",
+      "type": "appointed",
+      "startedAt": "2024-05-03",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2024/583/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/583/ogl",
+      "note": "Mianowany postanowieniem Prezydenta RP (MP/2024/583); strona dowództwa nieosiągalna (Incapsula) — źródłem nazwiska jest Monitor Polski."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.wojsko-polskie.pl/dwot/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/MP/2024/583/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dowodztwo-komponentu-woc": {
+   "id": "pl-dowodztwo-komponentu-woc",
+   "type": "department",
+   "subtype": "military",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dowództwo Komponentu Wojsk Obrony Cyberprzestrzeni",
+   "shortName": "DKWOC",
+   "description": "Jednostka organizacyjna podległa MON (M.P. 2026 poz. 726, cz. I pkt 7), przy pomocy której Dowódca Komponentu WOC dowodzi jednostkami wojsk obrony cyberprzestrzeni (art. 23 ustawy o obronie Ojczyzny). Siedziba: Legionowo.",
+   "aliases": [
+    "DKWOC",
+    "WOC"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 23 (Dz.U. 2025 poz. 825 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 23"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/woc/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-dowodca-komponentu-woc",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.wojsko-polskie.pl/woc/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dowodca-komponentu-woc": {
+   "id": "pl-dowodca-komponentu-woc",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dowódca Komponentu Wojsk Obrony Cyberprzestrzeni",
+   "shortName": "Dowódca Komponentu Wojsk Obrony Cyberprzestrzeni",
+   "description": "Dowódca wojsk właściwy w zakresie dowodzenia jednostkami wojsk obrony cyberprzestrzeni (art. 23 uOO); wyznaczany na stanowisko przez Ministra ON (art. 196 ust. 1 pkt 1 uOO) na 3-letnią kadencję (art. 198 ust. 1).",
+   "aliases": [],
+   "legalSource": {
+    "title": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 23 (Dz.U. 2025 poz. 825 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+    "act": "DU/2022/655",
+    "article": "art. 23"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/woc/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-dowodztwo-komponentu-woc",
+   "seatsCount": 1,
+   "status": "unverified",
+   "statusNote": "Oficjalna strona (wojsko-polskie.pl / *.gov.pl służb) nieosiągalna 17.09.2026 — zabezpieczenie anty-botowe (Incapsula) blokuje pobranie; nazwiska nie zweryfikowano, pole people puste.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://www.wojsko-polskie.pl/woc/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-zandarmeria-wojskowa": {
+   "id": "pl-zandarmeria-wojskowa",
+   "type": "department",
+   "subtype": "military",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Żandarmeria Wojskowa",
+   "shortName": "ŻW",
+   "description": "Wyodrębniona i wyspecjalizowana służba wchodząca w skład Sił Zbrojnych RP, pełniąca funkcje policyjne w wojsku. Tworzą ją Komenda Główna ŻW oraz jednostki terenowe i specjalistyczne (art. 7 ustawy o ŻW). Komenda Główna ŻW w Warszawie jest jednostką podległą MON (M.P. 2026 poz. 726, cz. I pkt 6).",
+   "aliases": [
+    "ŻW",
+    "Komenda Główna Żandarmerii Wojskowej",
+    "KGŻW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 sierpnia 2001 r. o Żandarmerii Wojskowej i wojskowych organach porządkowych, art. 6 (Dz.U. 2026 poz. 159 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2001/1353/ogl",
+    "act": "DU/2001/1353",
+    "article": "art. 6"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/kgzw/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-komendant-glowny-zw",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1353/ogl",
+     "https://www.wojsko-polskie.pl/kgzw/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-komendant-glowny-zw": {
+   "id": "pl-komendant-glowny-zw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Komendant Główny Żandarmerii Wojskowej",
+   "shortName": "Komendant Główny Żandarmerii Wojskowej",
+   "description": "Dowódca Żandarmerii Wojskowej i przełożony wszystkich jej żołnierzy; podlega bezpośrednio Ministrowi ON, który wyznacza go na stanowisko służbowe (art. 6 ust. 1–3 ustawy o ŻW).",
+   "aliases": [
+    "Komendant Główny ŻW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 24 sierpnia 2001 r. o Żandarmerii Wojskowej i wojskowych organach porządkowych, art. 6 (Dz.U. 2026 poz. 159 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2001/1353/ogl",
+    "act": "DU/2001/1353",
+    "article": "art. 6"
+   },
+   "officialUrl": "https://www.wojsko-polskie.pl/kgzw/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-zandarmeria-wojskowa",
+   "seatsCount": 1,
+   "status": "unverified",
+   "statusNote": "Oficjalna strona (wojsko-polskie.pl / *.gov.pl służb) nieosiągalna 17.09.2026 — zabezpieczenie anty-botowe (Incapsula) blokuje pobranie; nazwiska nie zweryfikowano, pole people puste.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1353/ogl",
+     "https://www.wojsko-polskie.pl/kgzw/",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-skw": {
+   "id": "pl-skw",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Służba Kontrwywiadu Wojskowego",
+   "shortName": "SKW",
+   "description": "Służba specjalna właściwa w sprawach ochrony przed zagrożeniami wewnętrznymi dla obronności państwa, bezpieczeństwa i zdolności bojowej Sił Zbrojnych RP; urząd administracji rządowej, przy pomocy którego działa Szef SKW — centralny organ administracji rządowej podległy Ministrowi ON (art. 1 i 3 ustawy o SKW oraz SWW).",
+   "aliases": [
+    "SKW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 czerwca 2006 r. o Służbie Kontrwywiadu Wojskowego oraz Służbie Wywiadu Wojskowego, art. 3 i art. 13 (Dz.U. 2026 poz. 157 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+    "act": "DU/2006/709",
+    "article": "art. 3, art. 13"
+   },
+   "officialUrl": "https://www.skw.gov.pl/",
+   "bipUrl": "https://bip.skw.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-szef-skw",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl",
+     "https://www.skw.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-skw": {
+   "id": "pl-szef-skw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Szef Służby Kontrwywiadu Wojskowego",
+   "shortName": "Szef Służby Kontrwywiadu Wojskowego",
+   "description": "Centralny organ administracji rządowej podległy Ministrowi ON (z zastrzeżeniem uprawnień PRM i Ministra Koordynatora Służb Specjalnych); powoływany przez Prezesa RM na wniosek MON (art. 3 i 13 ustawy o SKW oraz SWW). Działalność podlega kontroli Sejmu.",
+   "aliases": [
+    "Szef SKW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 czerwca 2006 r. o Służbie Kontrwywiadu Wojskowego oraz Służbie Wywiadu Wojskowego, art. 3 i art. 13 (Dz.U. 2026 poz. 157 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+    "act": "DU/2006/709",
+    "article": "art. 3, art. 13"
+   },
+   "officialUrl": "https://www.skw.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-skw",
+   "seatsCount": 1,
+   "status": "unverified",
+   "statusNote": "Oficjalna strona (wojsko-polskie.pl / *.gov.pl służb) nieosiągalna 17.09.2026 — zabezpieczenie anty-botowe (Incapsula) blokuje pobranie; nazwiska nie zweryfikowano, pole people puste.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl",
+     "https://www.skw.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-sww": {
+   "id": "pl-sww",
+   "type": "department",
+   "subtype": "service",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Służba Wywiadu Wojskowego",
+   "shortName": "SWW",
+   "description": "Służba specjalna właściwa w sprawach ochrony przed zagrożeniami zewnętrznymi dla obronności państwa, bezpieczeństwa i zdolności bojowej Sił Zbrojnych RP; urząd administracji rządowej, przy pomocy którego działa Szef SWW — centralny organ administracji rządowej podległy Ministrowi ON (art. 2 i 3 ustawy o SKW oraz SWW).",
+   "aliases": [
+    "SWW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 czerwca 2006 r. o Służbie Kontrwywiadu Wojskowego oraz Służbie Wywiadu Wojskowego, art. 3 i art. 13 (Dz.U. 2026 poz. 157 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+    "act": "DU/2006/709",
+    "article": "art. 3, art. 13"
+   },
+   "officialUrl": "https://www.sww.gov.pl/",
+   "bipUrl": "https://bip.sww.gov.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-szef-sww",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl",
+     "https://www.sww.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-sww": {
+   "id": "pl-szef-sww",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Szef Służby Wywiadu Wojskowego",
+   "shortName": "Szef Służby Wywiadu Wojskowego",
+   "description": "Centralny organ administracji rządowej podległy Ministrowi ON (z zastrzeżeniem uprawnień PRM i Ministra Koordynatora Służb Specjalnych); powoływany przez Prezesa RM na wniosek MON (art. 3 i 13 ustawy o SKW oraz SWW). Działalność podlega kontroli Sejmu.",
+   "aliases": [
+    "Szef SWW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 9 czerwca 2006 r. o Służbie Kontrwywiadu Wojskowego oraz Służbie Wywiadu Wojskowego, art. 3 i art. 13 (Dz.U. 2026 poz. 157 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+    "act": "DU/2006/709",
+    "article": "art. 3, art. 13"
+   },
+   "officialUrl": "https://www.sww.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-sww",
+   "seatsCount": 1,
+   "status": "unverified",
+   "statusNote": "Oficjalna strona (wojsko-polskie.pl / *.gov.pl służb) nieosiągalna 17.09.2026 — zabezpieczenie anty-botowe (Incapsula) blokuje pobranie; nazwiska nie zweryfikowano, pole people puste.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl",
+     "https://www.sww.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-agencja-mienia-wojskowego": {
+   "id": "pl-agencja-mienia-wojskowego",
+   "type": "department",
+   "subtype": "executive_agency",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Agencja Mienia Wojskowego",
+   "shortName": "AMW",
+   "description": "Agencja wykonawcza nadzorowana przez Ministra ON (M.P. 2026 poz. 726, cz. II pkt 1), gospodarująca mieniem Skarbu Państwa powierzonym przez MON i MSWiA, realizująca zadania zakwaterowania Sił Zbrojnych oraz zadania zlecone z zakresu obronności (ustawa z 10.07.2015 r. o AMW). Organy: Prezes Agencji i Rada Nadzorcza (art. 10).",
+   "aliases": [
+    "AMW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 10 lipca 2015 r. o Agencji Mienia Wojskowego, art. 1, 10 i 11 (Dz.U. 2025 poz. 817 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2015/1322/ogl",
+    "act": "DU/2015/1322",
+    "article": "art. 1, art. 10, art. 11"
+   },
+   "officialUrl": "https://amw.com.pl/",
+   "bipUrl": "https://amw.com.pl/pl/bip",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": "pl-prezes-amw",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1322/ogl",
+     "https://amw.com.pl/",
+     "https://amw.com.pl/pl/amw/o-agencji/kto-jest-kim",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-amw": {
+   "id": "pl-prezes-amw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Prezes Agencji Mienia Wojskowego",
+   "shortName": "Prezes Agencji Mienia Wojskowego",
+   "description": "Organ Agencji kierujący nią i reprezentujący ją na zewnątrz (art. 12 ustawy o AMW); powoływany na 3-letnią kadencję przez Prezesa RM na wniosek Ministra ON (art. 11 ust. 1–2).",
+   "aliases": [
+    "Prezes AMW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 10 lipca 2015 r. o Agencji Mienia Wojskowego, art. 1, 10 i 11 (Dz.U. 2025 poz. 817 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2015/1322/ogl",
+    "act": "DU/2015/1322",
+    "article": "art. 1, art. 10, art. 11"
+   },
+   "officialUrl": "https://amw.com.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-agencja-mienia-wojskowego",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marcin-horyn",
+      "name": "Marcin Horyń",
+      "positionId": "pl-prezes-amw",
+      "positionName": "Prezes Agencji Mienia Wojskowego",
+      "type": "appointed",
+      "startedAt": "2024-01-10",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://amw.com.pl/pl/amw/o-agencji/kto-jest-kim",
+      "startedAtSource": "https://amw.com.pl/pl/amw/o-agencji/kto-jest-kim",
+      "note": "Strona AMW: powołany 10.01.2024 decyzją Prezesa RM na wniosek MON na 3-letnią kadencję."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1322/ogl",
+     "https://amw.com.pl/",
+     "https://amw.com.pl/pl/amw/o-agencji/kto-jest-kim",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-uczelnie-wojskowe": {
+   "id": "pl-uczelnie-wojskowe",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Uczelnie wojskowe nadzorowane przez MON",
+   "shortName": "Uczelnie wojskowe",
+   "description": "Klasa węzła: 6 uczelni wojskowych nadzorowanych przez Ministra ON (M.P. 2026 poz. 726, cz. II pkt 2–7): Akademia Sztuki Wojennej, Wojskowa Akademia Techniczna, Akademia Marynarki Wojennej, Akademia Wojsk Lądowych, Lotnicza Akademia Wojskowa, Wojskowa Akademia Medyczna. Uczelnie publiczne w rozumieniu ustawy Prawo o szkolnictwie wyższym i nauce.",
+   "aliases": [
+    "ASzWoj",
+    "WAT",
+    "AMW Gdynia",
+    "AWL",
+    "LAW",
+    "WAM"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 20 lipca 2018 r. – Prawo o szkolnictwie wyższym i nauce, art. 433 (uczelnie wojskowe; nadzór MON) (Dz.U. 2024 poz. 1571 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/1668/ogl",
+    "act": "DU/2018/1668",
+    "article": "art. 433"
+   },
+   "officialUrl": "https://www.gov.pl/web/obrona-narodowa/jednostki-podlegle-i-nadzorowane",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-obrony-narodowej",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 6,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 6
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/DU/2018/1668/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-placowki-zagraniczne-rp": {
+   "id": "pl-placowki-zagraniczne-rp",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Placówki zagraniczne Rzeczypospolitej Polskiej",
+   "shortName": "Placówki zagraniczne",
+   "description": "Klasa węzła: 138 placówek zagranicznych podległych Ministrowi SZ wg obwieszczenia z 19.08.2026 r. (M.P. 2026 poz. 871, cz. I): 95 ambasad, 7 stałych przedstawicielstw przy organizacjach międzynarodowych, 33 konsulaty generalne oraz 3 inne jednostki (Biuro Polskie w Tajpej, Biuro Przedstawiciela RP w Palestynie, Przychodnia Lekarska Służby Zagranicznej); ponadto 254 urzędy konsularne kierowane przez konsulów honorowych.",
+   "aliases": [
+    "ambasady RP",
+    "konsulaty RP",
+    "stałe przedstawicielstwa RP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 stycznia 2021 r. o służbie zagranicznej, art. 7 pkt 7 i art. 8 ust. 2 (Dz.U. 2026 poz. 788 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2021/464/ogl",
+    "act": "DU/2021/464",
+    "article": "art. 7 pkt 7, art. 8 ust. 2"
+   },
+   "officialUrl": "https://www.gov.pl/web/dyplomacja/polskie-przedstawicielstwa-na-swiecie",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-zagranicznych",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 138,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 138
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/871/ogl",
+     "https://eli.gov.pl/eli/DU/2021/464/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-instytuty-polskie": {
+   "id": "pl-instytuty-polskie",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Instytuty polskie i ośrodki kultury polskiej za granicą",
+   "shortName": "Instytuty Polskie",
+   "description": "Klasa węzła: 26 instytutów polskich i ośrodków kultury polskiej (w tym Instytuty Kultury Polskiej w Londynie i Nowym Jorku) — placówki zagraniczne podległe Ministrowi SZ wg obwieszczenia z 19.08.2026 r. (M.P. 2026 poz. 871, cz. I). Instytut polski jest placówką zagraniczną w rozumieniu art. 7 pkt 7 ustawy o służbie zagranicznej.",
+   "aliases": [
+    "Instytut Polski",
+    "IP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 21 stycznia 2021 r. o służbie zagranicznej, art. 7 pkt 7 (Dz.U. 2026 poz. 788 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2021/464/ogl",
+    "act": "DU/2021/464",
+    "article": "art. 7 pkt 7"
+   },
+   "officialUrl": "https://www.gov.pl/web/dyplomacja/polskie-przedstawicielstwa-na-swiecie",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-zagranicznych",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 26,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 26
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/871/ogl",
+     "https://eli.gov.pl/eli/DU/2021/464/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-pism": {
+   "id": "pl-pism",
+   "type": "department",
+   "subtype": "state_legal_person",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Polski Instytut Spraw Międzynarodowych",
+   "shortName": "PISM",
+   "description": "Państwowa jednostka organizacyjna z osobowością prawną utworzona ustawą z 20.12.1996 r.; prowadzi badania i analizy z zakresu spraw międzynarodowych, kształci kadry i upowszechnia wiedzę o polityce zagranicznej. Jedyna jednostka nadzorowana przez Ministra SZ wg M.P. 2026 poz. 871 (cz. II); nadzór dotyczy zgodności działania z ustawą i statutem (art. 10).",
+   "aliases": [
+    "PISM"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 20 grudnia 1996 r. o Polskim Instytucie Spraw Międzynarodowych, art. 1, 5 i 10 (Dz.U. 2020 poz. 720 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/777/ogl",
+    "act": "DU/1996/777",
+    "article": "art. 1, art. 5, art. 10"
+   },
+   "officialUrl": "https://www.pism.pl/",
+   "bipUrl": "https://www.pism.pl/bip",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-zagranicznych",
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-pism",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/777/ogl",
+     "https://www.pism.pl/",
+     "https://eli.gov.pl/eli/MP/2026/871/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-pism": {
+   "id": "pl-dyrektor-pism",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Polskiego Instytutu Spraw Międzynarodowych",
+   "shortName": "Dyrektor Polskiego Instytutu Spraw Międzynarodowych",
+   "description": "Organ Instytutu kierujący nim i reprezentujący go na zewnątrz; powoływany na 5-letnią kadencję przez Prezesa RM po zasięgnięciu opinii ministra właściwego ds. zagranicznych, spośród kandydatów wyłonionych w konkursie (art. 5 ustawy o PISM).",
+   "aliases": [
+    "Dyrektor PISM"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 20 grudnia 1996 r. o Polskim Instytucie Spraw Międzynarodowych, art. 1, 5 i 10 (Dz.U. 2020 poz. 720 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1996/777/ogl",
+    "act": "DU/1996/777",
+    "article": "art. 1, art. 5, art. 10"
+   },
+   "officialUrl": "https://www.pism.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-spraw-zagranicznych",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-pism",
+   "seatsCount": 1,
+   "status": "unverified",
+   "statusNote": "Oficjalna strona (wojsko-polskie.pl / *.gov.pl służb) nieosiągalna 17.09.2026 — zabezpieczenie anty-botowe (Incapsula) blokuje pobranie; nazwiska nie zweryfikowano, pole people puste.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/777/ogl",
+     "https://www.pism.pl/",
+     "https://eli.gov.pl/eli/MP/2026/871/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-nask-pib": {
+   "id": "pl-nask-pib",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Naukowa i Akademicka Sieć Komputerowa – Państwowy Instytut Badawczy",
+   "shortName": "NASK-PIB",
+   "description": "Państwowy instytut badawczy nadzorowany przez Ministra Cyfryzacji (M.P. 2026 poz. 180, cz. II pkt 4), działający na podstawie ustawy o instytutach badawczych; status PIB nadany rozporządzeniem RM z 7.06.2017 r. Prowadzi badania w zakresie cyberbezpieczeństwa i sieci teleinformatycznych, CSIRT NASK, rejestr domeny .pl i Ogólnopolską Sieć Edukacyjną.",
+   "aliases": [
+    "NASK",
+    "NASK-PIB"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 7 czerwca 2017 r. w sprawie nadania Naukowej i Akademickiej Sieci Komputerowej statusu państwowego instytutu badawczego (Dz.U. 2017 poz. 1193); ustawa o instytutach badawczych (Dz.U. 2026 poz. 741 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2017/1193/ogl",
+    "act": "DU/2017/1193",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.nask.pl/",
+   "bipUrl": "https://bip.nask.pl/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-nask",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2017/1193/ogl",
+     "https://www.nask.pl/",
+     "https://www.nask.pl/instytut",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-nask": {
+   "id": "pl-dyrektor-nask",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor NASK-PIB",
+   "shortName": "Dyrektor NASK-PIB",
+   "description": "Organ instytutu badawczego kierujący nim i reprezentujący go (art. 24 ustawy o instytutach badawczych); powoływany i odwoływany przez ministra nadzorującego — Ministra Cyfryzacji (art. 24 ust. 2).",
+   "aliases": [
+    "Dyrektor NASK"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 7 czerwca 2017 r. w sprawie nadania Naukowej i Akademickiej Sieci Komputerowej statusu państwowego instytutu badawczego (Dz.U. 2017 poz. 1193); ustawa o instytutach badawczych (Dz.U. 2026 poz. 741 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2017/1193/ogl",
+    "act": "DU/2017/1193",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.nask.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-nask-pib",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-radoslaw-nielek",
+      "name": "dr inż. Radosław Nielek",
+      "positionId": "pl-dyrektor-nask",
+      "positionName": "Dyrektor NASK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nask.pl/instytut",
+      "startedAtSource": null,
+      "note": "Nazwisko i funkcja ze strony nask.pl/instytut (sekcja kierownictwa)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2017/1193/ogl",
+     "https://www.nask.pl/",
+     "https://www.nask.pl/instytut",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-instytut-lacznosci-pib": {
+   "id": "pl-instytut-lacznosci-pib",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Instytut Łączności – Państwowy Instytut Badawczy",
+   "shortName": "IŁ-PIB",
+   "description": "Państwowy instytut badawczy nadzorowany przez Ministra Cyfryzacji (M.P. 2026 poz. 180, cz. II pkt 3), prowadzący badania w dziedzinie telekomunikacji, technik informacyjnych i gospodarki widmem; status PIB od 2005 r., reorganizacja rozp. RM z 23.12.2015 r. (Dz.U. poz. 2319). Działa na podstawie ustawy o instytutach badawczych.",
+   "aliases": [
+    "IŁ",
+    "IŁ-PIB",
+    "Instytut Łączności"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 31 maja 2005 r. w sprawie nadania Instytutowi Łączności statusu państwowego instytutu badawczego (Dz.U. 2005 Nr 100 poz. 862); ustawa o instytutach badawczych (Dz.U. 2026 poz. 741 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2005/862/ogl",
+    "act": "DU/2005/862",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.il-pib.pl/",
+   "bipUrl": "https://www.gov.pl/web/instytut-lacznosci",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-instytutu-lacznosci",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/862/ogl",
+     "https://www.il-pib.pl/",
+     "https://www.gov.pl/web/instytut-lacznosci/kierownictwo",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-instytutu-lacznosci": {
+   "id": "pl-dyrektor-instytutu-lacznosci",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Instytutu Łączności – PIB",
+   "shortName": "Dyrektor Instytutu Łączności – PIB",
+   "description": "Organ instytutu badawczego kierujący nim (art. 24 ustawy o instytutach badawczych); powoływany i odwoływany przez ministra nadzorującego — Ministra Cyfryzacji (art. 24 ust. 2).",
+   "aliases": [
+    "Dyrektor IŁ"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 31 maja 2005 r. w sprawie nadania Instytutowi Łączności statusu państwowego instytutu badawczego (Dz.U. 2005 Nr 100 poz. 862); ustawa o instytutach badawczych (Dz.U. 2026 poz. 741 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2005/862/ogl",
+    "act": "DU/2005/862",
+    "article": "§ 1"
+   },
+   "officialUrl": "https://www.il-pib.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-instytut-lacznosci-pib",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-anna-strezynska",
+      "name": "Anna Streżyńska",
+      "positionId": "pl-dyrektor-instytutu-lacznosci",
+      "positionName": "Dyrektor Instytutu Łączności - PIB",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/instytut-lacznosci/kierownictwo",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/862/ogl",
+     "https://www.il-pib.pl/",
+     "https://www.gov.pl/web/instytut-lacznosci/kierownictwo",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-centralny-osrodek-informatyki": {
+   "id": "pl-centralny-osrodek-informatyki",
+   "type": "department",
+   "subtype": "state_legal_person",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Centralny Ośrodek Informatyki",
+   "shortName": "COI",
+   "description": "Instytucja gospodarki budżetowej (art. 23 ustawy o finansach publicznych) utworzona w 2010 r. przez MSWiA, obecnie nadzorowana przez Ministra Cyfryzacji (M.P. 2026 poz. 180, cz. II pkt 1). Buduje i utrzymuje państwowe systemy i usługi cyfrowe (m.in. mObywatel, CEPiK, rejestry państwowe).",
+   "aliases": [
+    "COI"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 sierpnia 2009 r. o finansach publicznych, art. 23–27 (instytucja gospodarki budżetowej) (Dz.U. 2025 poz. 1483 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+    "act": "DU/2009/1240",
+    "article": "art. 23, art. 27"
+   },
+   "officialUrl": "https://coi.gov.pl/",
+   "bipUrl": "https://coi.gov.pl/bip/",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-coi",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+     "https://coi.gov.pl/",
+     "https://coi.gov.pl/o-nas/",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-coi": {
+   "id": "pl-dyrektor-coi",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Centralnego Ośrodka Informatyki",
+   "shortName": "Dyrektor Centralnego Ośrodka Informatyki",
+   "description": "Kierownik instytucji gospodarki budżetowej, zarządzający nią i reprezentujący ją na zewnątrz; powoływany i odwoływany przez organ wykonujący funkcje organu założycielskiego (art. 27 ust. 1 ustawy o finansach publicznych).",
+   "aliases": [
+    "Dyrektor COI"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 sierpnia 2009 r. o finansach publicznych, art. 23–27 (instytucja gospodarki budżetowej) (Dz.U. 2025 poz. 1483 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+    "act": "DU/2009/1240",
+    "article": "art. 23, art. 27"
+   },
+   "officialUrl": "https://coi.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-centralny-osrodek-informatyki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-radoslaw-mackiewicz",
+      "name": "Radosław Maćkiewicz",
+      "positionId": "pl-dyrektor-coi",
+      "positionName": "Dyrektor Centralnego Ośrodka Informatyki",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://coi.gov.pl/o-nas/",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+     "https://coi.gov.pl/",
+     "https://coi.gov.pl/o-nas/",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-cppc": {
+   "id": "pl-cppc",
+   "type": "department",
+   "subtype": "executive_agency",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Centrum Projektów Polska Cyfrowa",
+   "shortName": "CPPC",
+   "description": "Państwowa jednostka budżetowa podległa Ministrowi Cyfryzacji (M.P. 2026 poz. 180, cz. I pkt 1); instytucja pośrednicząca wdrażająca fundusze UE na cyfryzację (FERC, wcześniej POPC) oraz inwestycje KPO i FERS w obszarze cyfrowym. Dawniej Władza Wdrażająca Programy Europejskie (WWPE).",
+   "aliases": [
+    "CPPC",
+    "WWPE"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 sierpnia 2009 r. o finansach publicznych, art. 11–12 (państwowa jednostka budżetowa tworzona przez ministra) (Dz.U. 2025 poz. 1483 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+    "act": "DU/2009/1240",
+    "article": "art. 12 ust. 1 pkt 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/cppc",
+   "bipUrl": "https://www.gov.pl/web/cppc",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-cppc",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+     "https://www.gov.pl/web/cppc",
+     "https://www.gov.pl/web/cppc/Dyrekcja",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-cppc": {
+   "id": "pl-dyrektor-cppc",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Centrum Projektów Polska Cyfrowa",
+   "shortName": "Dyrektor Centrum Projektów Polska Cyfrowa",
+   "description": "Kierownik państwowej jednostki budżetowej podległej Ministrowi Cyfryzacji; powoływany przez ministra jako organ, któremu jednostka podlega (art. 34 ust. 1 ustawy o Radzie Ministrów — przepis ogólny).",
+   "aliases": [
+    "Dyrektor CPPC"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 27 sierpnia 2009 r. o finansach publicznych, art. 11–12 (państwowa jednostka budżetowa tworzona przez ministra) (Dz.U. 2025 poz. 1483 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+    "act": "DU/2009/1240",
+    "article": "art. 12 ust. 1 pkt 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/cppc",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-cppc",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-agnieszka-krauzowicz",
+      "name": "Agnieszka Krauzowicz",
+      "positionId": "pl-dyrektor-cppc",
+      "positionName": "Dyrektor Centrum Projektów Polska Cyfrowa",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/cppc/Dyrekcja",
+      "startedAtSource": null,
+      "note": "Strona 'Dyrekcja CPPC' wymienia ją jako pierwszą (bez odrębnej etykiety stanowiska); Maciej Drabio opisany tam jako Zastępca Dyrektora."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+     "https://www.gov.pl/web/cppc",
+     "https://www.gov.pl/web/cppc/Dyrekcja",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-instytut-badawczy-ideas": {
+   "id": "pl-instytut-badawczy-ideas",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Instytut Badawczy IDEAS",
+   "shortName": "IDEAS",
+   "description": "Instytut badawczy utworzony rozporządzeniem RM z 25.02.2025 r. (Dz.U. poz. 238) na podstawie art. 5 ustawy o instytutach badawczych; prowadzi badania nad sztuczną inteligencją i nowymi technologiami, w tym na potrzeby cyberbezpieczeństwa w wymiarze militarnym. Nadzór sprawują Minister Cyfryzacji oraz Minister ON (§ 3); ujęty w wykazach obu ministrów (M.P. 2026 poz. 180 i 726).",
+   "aliases": [
+    "IDEAS",
+    "IDEAS NCBR"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 25 lutego 2025 r. w sprawie utworzenia Instytutu Badawczego IDEAS, § 1 i § 3 (Dz.U. 2025 poz. 238)",
+    "url": "https://eli.gov.pl/eli/DU/2025/238/ogl",
+    "act": "DU/2025/238",
+    "article": "§ 1, § 3"
+   },
+   "officialUrl": "https://www.ideas.edu.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": "pl-dyrektor-instytutu-ideas",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/238/ogl",
+     "https://www.ideas.edu.pl/",
+     "https://www.ideas.edu.pl/zespol/",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-dyrektor-instytutu-ideas": {
+   "id": "pl-dyrektor-instytutu-ideas",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "executive",
+   "ring": "satellite",
+   "name": "Dyrektor Instytutu Badawczego IDEAS",
+   "shortName": "Dyrektor Instytutu Badawczego IDEAS",
+   "description": "Organ instytutu badawczego kierujący nim (art. 24 ustawy o instytutach badawczych); powoływany przez ministra nadzorującego (art. 24 ust. 2) — nadzór dzielony między Ministra Cyfryzacji i Ministra ON (§ 3 rozp. RM).",
+   "aliases": [
+    "Dyrektor IDEAS"
+   ],
+   "legalSource": {
+    "title": "Rozporządzenie Rady Ministrów z dnia 25 lutego 2025 r. w sprawie utworzenia Instytutu Badawczego IDEAS, § 1 i § 3 (Dz.U. 2025 poz. 238)",
+    "url": "https://eli.gov.pl/eli/DU/2025/238/ogl",
+    "act": "DU/2025/238",
+    "article": "§ 1, § 3"
+   },
+   "officialUrl": "https://www.ideas.edu.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ministerstwo-cyfryzacji",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-instytut-badawczy-ideas",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-piotr-sankowski",
+      "name": "prof. dr hab. Piotr Sankowski",
+      "positionId": "pl-dyrektor-instytutu-ideas",
+      "positionName": "Dyrektor Instytutu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.ideas.edu.pl/zespol/",
+      "startedAtSource": null,
+      "note": null
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/238/ogl",
+     "https://www.ideas.edu.pl/",
+     "https://www.ideas.edu.pl/zespol/",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  }
+ },
+ "edges": {
+  "e-ministerstwo-obrony-narodowej--dept_head--minister-obrony-narodowej": {
+   "id": "e-ministerstwo-obrony-narodowej--dept_head--minister-obrony-narodowej",
+   "type": "dept_head",
+   "fromId": "pl-ministerstwo-obrony-narodowej",
+   "toId": "pl-minister-obrony-narodowej",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 39 ust. 1 i 3 (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--minister-obrony-narodowej": {
+   "id": "e-prezydent-rp--appoints--minister-obrony-narodowej",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-minister-obrony-narodowej",
+   "cite": "Konstytucja RP art. 154 ust. 1 (powołanie Rady Ministrów) w zw. z art. 154 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--nominates--minister-obrony-narodowej": {
+   "id": "e-prezes-rady-ministrow--nominates--minister-obrony-narodowej",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-minister-obrony-narodowej",
+   "cite": "Konstytucja RP (na wniosek Prezesa RM) art. 154 ust. 1 (powołanie Rady Ministrów) w zw. z art. 154 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--ex_officio--rada-ministrow": {
+   "id": "e-minister-obrony-narodowej--ex_officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 1 (Rada Ministrów składa się z Prezesa RM i ministrów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--ministerstwo-obrony-narodowej": {
+   "id": "e-prezes-rady-ministrow--appoints--ministerstwo-obrony-narodowej",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-ministerstwo-obrony-narodowej",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 37 ust. 3 (sekretarzy i podsekretarzy stanu powołuje Prezes RM na wniosek ministra) (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 5,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/obrona-narodowa/kierownictwo"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--nominates--ministerstwo-obrony-narodowej": {
+   "id": "e-minister-obrony-narodowej--nominates--ministerstwo-obrony-narodowej",
+   "type": "nominates",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-ministerstwo-obrony-narodowej",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 37 ust. 3 (wniosek ministra o powołanie sekretarza/podsekretarza stanu) (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 5,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/obrona-narodowa/kierownictwo"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-ministerstwo-spraw-zagranicznych--dept_head--minister-spraw-zagranicznych": {
+   "id": "e-ministerstwo-spraw-zagranicznych--dept_head--minister-spraw-zagranicznych",
+   "type": "dept_head",
+   "fromId": "pl-ministerstwo-spraw-zagranicznych",
+   "toId": "pl-minister-spraw-zagranicznych",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 39 ust. 1 i 3 (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--minister-spraw-zagranicznych": {
+   "id": "e-prezydent-rp--appoints--minister-spraw-zagranicznych",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-minister-spraw-zagranicznych",
+   "cite": "Konstytucja RP art. 161 (zmiana w składzie RM na wniosek Prezesa RM; M.P. 2025 poz. 690) oraz art. 154 ust. 1 (pierwotne powołanie 13.12.2023)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--nominates--minister-spraw-zagranicznych": {
+   "id": "e-prezes-rady-ministrow--nominates--minister-spraw-zagranicznych",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-minister-spraw-zagranicznych",
+   "cite": "Konstytucja RP (na wniosek Prezesa RM) art. 161 (zmiana w składzie RM na wniosek Prezesa RM; M.P. 2025 poz. 690) oraz art. 154 ust. 1 (pierwotne powołanie 13.12.2023)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2025/690/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-spraw-zagranicznych--ex_officio--rada-ministrow": {
+   "id": "e-minister-spraw-zagranicznych--ex_officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 1 (Rada Ministrów składa się z Prezesa RM i ministrów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--ministerstwo-spraw-zagranicznych": {
+   "id": "e-prezes-rady-ministrow--appoints--ministerstwo-spraw-zagranicznych",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-ministerstwo-spraw-zagranicznych",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 37 ust. 3 (sekretarzy i podsekretarzy stanu powołuje Prezes RM na wniosek ministra) (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 6,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-spraw-zagranicznych--nominates--ministerstwo-spraw-zagranicznych": {
+   "id": "e-minister-spraw-zagranicznych--nominates--ministerstwo-spraw-zagranicznych",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-ministerstwo-spraw-zagranicznych",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 37 ust. 3 (wniosek ministra o powołanie sekretarza/podsekretarza stanu) (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 6,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/dyplomacja/kierownictwo-ministerstwa"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-ministerstwo-cyfryzacji--dept_head--minister-cyfryzacji": {
+   "id": "e-ministerstwo-cyfryzacji--dept_head--minister-cyfryzacji",
+   "type": "dept_head",
+   "fromId": "pl-ministerstwo-cyfryzacji",
+   "toId": "pl-minister-cyfryzacji",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 39 ust. 1 i 3 (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--minister-cyfryzacji": {
+   "id": "e-prezydent-rp--appoints--minister-cyfryzacji",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-minister-cyfryzacji",
+   "cite": "Konstytucja RP art. 154 ust. 1 (powołanie Rady Ministrów) w zw. z art. 154 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--nominates--minister-cyfryzacji": {
+   "id": "e-prezes-rady-ministrow--nominates--minister-cyfryzacji",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-minister-cyfryzacji",
+   "cite": "Konstytucja RP (na wniosek Prezesa RM) art. 154 ust. 1 (powołanie Rady Ministrów) w zw. z art. 154 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1383/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--ex_officio--rada-ministrow": {
+   "id": "e-minister-cyfryzacji--ex_officio--rada-ministrow",
+   "type": "ex_officio",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-rada-ministrow",
+   "cite": "Konstytucja RP art. 147 ust. 1 (Rada Ministrów składa się z Prezesa RM i ministrów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--ministerstwo-cyfryzacji": {
+   "id": "e-prezes-rady-ministrow--appoints--ministerstwo-cyfryzacji",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-ministerstwo-cyfryzacji",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 37 ust. 3 (sekretarzy i podsekretarzy stanu powołuje Prezes RM na wniosek ministra) (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 4,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/cyfryzacja/kierownictwo"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--nominates--ministerstwo-cyfryzacji": {
+   "id": "e-minister-cyfryzacji--nominates--ministerstwo-cyfryzacji",
+   "type": "nominates",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-ministerstwo-cyfryzacji",
+   "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 37 ust. 3 (wniosek ministra o powołanie sekretarza/podsekretarza stanu) (Dz.U. 2025 poz. 780 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 4,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl",
+     "https://www.gov.pl/web/cyfryzacja/kierownictwo"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sztab-generalny-wp--dept_head--szef-sztabu-generalnego-wp": {
+   "id": "e-sztab-generalny-wp--dept_head--szef-sztabu-generalnego-wp",
+   "type": "dept_head",
+   "fromId": "pl-sztab-generalny-wp",
+   "toId": "pl-szef-sztabu-generalnego-wp",
+   "cite": "Ustawa z dnia 14 grudnia 1995 r. o urzędzie Ministra Obrony Narodowej, art. 1 ust. 2, art. 7a i 8 (Dz.U. 2025 poz. 445 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/56/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/56/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--szef-sztabu-generalnego-wp": {
+   "id": "e-prezydent-rp--appoints--szef-sztabu-generalnego-wp",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-szef-sztabu-generalnego-wp",
+   "cite": "Konstytucja RP art. 134 ust. 3; ustawa o obronie Ojczyzny art. 195 i art. 198 ust. 1 (Dz.U. 2025 poz. 825 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2022/655/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1104/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--sztab-generalny-wp": {
+   "id": "e-minister-obrony-narodowej--oversees--sztab-generalny-wp",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-sztab-generalny-wp",
+   "cite": "Ustawa o urzędzie Ministra Obrony Narodowej art. 3 ust. 1 pkt 3 i art. 5 ust. 1 pkt 1 (Szef SGWP podlega bezpośrednio Ministrowi ON) (Dz.U. 2025 poz. 445 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/56/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/56/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-dowodztwo-generalne-rsz--dept_head--dowodca-generalny-rsz": {
+   "id": "e-dowodztwo-generalne-rsz--dept_head--dowodca-generalny-rsz",
+   "type": "dept_head",
+   "fromId": "pl-dowodztwo-generalne-rsz",
+   "toId": "pl-dowodca-generalny-rsz",
+   "cite": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 20 (Dz.U. 2025 poz. 825 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--dowodztwo-generalne-rsz": {
+   "id": "e-minister-obrony-narodowej--oversees--dowodztwo-generalne-rsz",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-dowodztwo-generalne-rsz",
+   "cite": "Obwieszczenie MON z 21.07.2026 r. w sprawie wykazu jednostek organizacyjnych podległych MON (M.P. 2026 poz. 726), cz. I; ustawa o obronie Ojczyzny art. 20",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/726/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-dowodztwo-operacyjne-rsz--dept_head--dowodca-operacyjny-rsz": {
+   "id": "e-dowodztwo-operacyjne-rsz--dept_head--dowodca-operacyjny-rsz",
+   "type": "dept_head",
+   "fromId": "pl-dowodztwo-operacyjne-rsz",
+   "toId": "pl-dowodca-operacyjny-rsz",
+   "cite": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 21 (Dz.U. 2025 poz. 825 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--dowodztwo-operacyjne-rsz": {
+   "id": "e-minister-obrony-narodowej--oversees--dowodztwo-operacyjne-rsz",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-dowodztwo-operacyjne-rsz",
+   "cite": "Obwieszczenie MON z 21.07.2026 r. w sprawie wykazu jednostek organizacyjnych podległych MON (M.P. 2026 poz. 726), cz. I; ustawa o obronie Ojczyzny art. 21",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/726/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-dowodztwo-wot--dept_head--dowodca-wot": {
+   "id": "e-dowodztwo-wot--dept_head--dowodca-wot",
+   "type": "dept_head",
+   "fromId": "pl-dowodztwo-wot",
+   "toId": "pl-dowodca-wot",
+   "cite": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 22 (Dz.U. 2025 poz. 825 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--dowodztwo-wot": {
+   "id": "e-minister-obrony-narodowej--oversees--dowodztwo-wot",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-dowodztwo-wot",
+   "cite": "Obwieszczenie MON z 21.07.2026 r. w sprawie wykazu jednostek organizacyjnych podległych MON (M.P. 2026 poz. 726), cz. I; ustawa o obronie Ojczyzny art. 22",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/726/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--dowodca-generalny-rsz": {
+   "id": "e-prezydent-rp--appoints--dowodca-generalny-rsz",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-dowodca-generalny-rsz",
+   "cite": "Konstytucja RP art. 134 ust. 3 (Prezydent mianuje dowódców rodzajów Sił Zbrojnych); ustawa o obronie Ojczyzny art. 195 i art. 198 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--dowodca-operacyjny-rsz": {
+   "id": "e-prezydent-rp--appoints--dowodca-operacyjny-rsz",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-dowodca-operacyjny-rsz",
+   "cite": "Konstytucja RP art. 134 ust. 3 (Prezydent mianuje dowódców rodzajów Sił Zbrojnych); ustawa o obronie Ojczyzny art. 195 i art. 198 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--dowodca-wot": {
+   "id": "e-prezydent-rp--appoints--dowodca-wot",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-dowodca-wot",
+   "cite": "Konstytucja RP art. 134 ust. 3 (Prezydent mianuje dowódców rodzajów Sił Zbrojnych); ustawa o obronie Ojczyzny art. 195 i art. 198 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-dowodztwo-komponentu-woc--dept_head--dowodca-komponentu-woc": {
+   "id": "e-dowodztwo-komponentu-woc--dept_head--dowodca-komponentu-woc",
+   "type": "dept_head",
+   "fromId": "pl-dowodztwo-komponentu-woc",
+   "toId": "pl-dowodca-komponentu-woc",
+   "cite": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny, art. 23 (Dz.U. 2025 poz. 825 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--dowodztwo-komponentu-woc": {
+   "id": "e-minister-obrony-narodowej--oversees--dowodztwo-komponentu-woc",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-dowodztwo-komponentu-woc",
+   "cite": "Obwieszczenie MON z 21.07.2026 r. w sprawie wykazu jednostek organizacyjnych podległych MON (M.P. 2026 poz. 726), cz. I; ustawa o obronie Ojczyzny art. 23",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/726/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--appoints--dowodca-komponentu-woc": {
+   "id": "e-minister-obrony-narodowej--appoints--dowodca-komponentu-woc",
+   "type": "appoints",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-dowodca-komponentu-woc",
+   "cite": "Ustawa o obronie Ojczyzny art. 196 ust. 1 pkt 1 (MON wyznacza na stanowiska o stopniach etatowych generałów) i art. 198 ust. 1 (kadencja dowódców wojsk) — przepis ogólny",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2022/655/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2022/655/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-zandarmeria-wojskowa--dept_head--komendant-glowny-zw": {
+   "id": "e-zandarmeria-wojskowa--dept_head--komendant-glowny-zw",
+   "type": "dept_head",
+   "fromId": "pl-zandarmeria-wojskowa",
+   "toId": "pl-komendant-glowny-zw",
+   "cite": "Ustawa z dnia 24 sierpnia 2001 r. o Żandarmerii Wojskowej i wojskowych organach porządkowych, art. 6 (Dz.U. 2026 poz. 159 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2001/1353/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1353/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--appoints--komendant-glowny-zw": {
+   "id": "e-minister-obrony-narodowej--appoints--komendant-glowny-zw",
+   "type": "appoints",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-komendant-glowny-zw",
+   "cite": "Ustawa o Żandarmerii Wojskowej art. 6 ust. 3 (Komendanta Głównego ŻW wyznacza na stanowisko służbowe Minister ON) (Dz.U. 2026 poz. 159 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2001/1353/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1353/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--zandarmeria-wojskowa": {
+   "id": "e-minister-obrony-narodowej--oversees--zandarmeria-wojskowa",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-zandarmeria-wojskowa",
+   "cite": "Ustawa o Żandarmerii Wojskowej art. 6 ust. 2; obwieszczenie MON M.P. 2026 poz. 726, cz. I pkt 6",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2001/1353/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2001/1353/ogl",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-skw--dept_head--szef-skw": {
+   "id": "e-skw--dept_head--szef-skw",
+   "type": "dept_head",
+   "fromId": "pl-skw",
+   "toId": "pl-szef-skw",
+   "cite": "Ustawa z dnia 9 czerwca 2006 r. o Służbie Kontrwywiadu Wojskowego oraz Służbie Wywiadu Wojskowego, art. 3 i art. 13 (Dz.U. 2026 poz. 157 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--szef-skw": {
+   "id": "e-prezes-rady-ministrow--appoints--szef-skw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-skw",
+   "cite": "Ustawa o SKW oraz SWW art. 13 ust. 1 (Szefów SKW i SWW powołuje i odwołuje, na wniosek MON, Prezes RM po zasięgnięciu opinii Prezydenta RP, Kolegium ds. Służb Specjalnych i sejmowej Komisji ds. Służb Specjalnych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--nominates--szef-skw": {
+   "id": "e-minister-obrony-narodowej--nominates--szef-skw",
+   "type": "nominates",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-szef-skw",
+   "cite": "Ustawa o SKW oraz SWW art. 13 ust. 1 (wniosek Ministra Obrony Narodowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--skw": {
+   "id": "e-minister-obrony-narodowej--oversees--skw",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-skw",
+   "cite": "Ustawa o SKW oraz SWW art. 3 ust. 2 (Szef SKW/SWW podlega Ministrowi ON) i art. 7 ust. 1 (wytyczne MON)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sww--dept_head--szef-sww": {
+   "id": "e-sww--dept_head--szef-sww",
+   "type": "dept_head",
+   "fromId": "pl-sww",
+   "toId": "pl-szef-sww",
+   "cite": "Ustawa z dnia 9 czerwca 2006 r. o Służbie Kontrwywiadu Wojskowego oraz Służbie Wywiadu Wojskowego, art. 3 i art. 13 (Dz.U. 2026 poz. 157 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--szef-sww": {
+   "id": "e-prezes-rady-ministrow--appoints--szef-sww",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-szef-sww",
+   "cite": "Ustawa o SKW oraz SWW art. 13 ust. 1 (Szefów SKW i SWW powołuje i odwołuje, na wniosek MON, Prezes RM po zasięgnięciu opinii Prezydenta RP, Kolegium ds. Służb Specjalnych i sejmowej Komisji ds. Służb Specjalnych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--nominates--szef-sww": {
+   "id": "e-minister-obrony-narodowej--nominates--szef-sww",
+   "type": "nominates",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-szef-sww",
+   "cite": "Ustawa o SKW oraz SWW art. 13 ust. 1 (wniosek Ministra Obrony Narodowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--sww": {
+   "id": "e-minister-obrony-narodowej--oversees--sww",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-sww",
+   "cite": "Ustawa o SKW oraz SWW art. 3 ust. 2 (Szef SKW/SWW podlega Ministrowi ON) i art. 7 ust. 1 (wytyczne MON)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2006/709/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2006/709/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-agencja-mienia-wojskowego--dept_head--prezes-amw": {
+   "id": "e-agencja-mienia-wojskowego--dept_head--prezes-amw",
+   "type": "dept_head",
+   "fromId": "pl-agencja-mienia-wojskowego",
+   "toId": "pl-prezes-amw",
+   "cite": "Ustawa z dnia 10 lipca 2015 r. o Agencji Mienia Wojskowego, art. 1, 10 i 11 (Dz.U. 2025 poz. 817 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1322/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1322/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--prezes-amw": {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-amw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-amw",
+   "cite": "Ustawa o Agencji Mienia Wojskowego art. 11 ust. 1 (Prezesa Agencji powołuje i odwołuje Prezes RM na wniosek Ministra ON)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1322/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1322/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--nominates--prezes-amw": {
+   "id": "e-minister-obrony-narodowej--nominates--prezes-amw",
+   "type": "nominates",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-prezes-amw",
+   "cite": "Ustawa o Agencji Mienia Wojskowego art. 11 ust. 1 (wniosek Ministra ON)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2015/1322/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2015/1322/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--agencja-mienia-wojskowego": {
+   "id": "e-minister-obrony-narodowej--oversees--agencja-mienia-wojskowego",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-agencja-mienia-wojskowego",
+   "cite": "Obwieszczenie MON M.P. 2026 poz. 726, cz. II pkt 1 (jednostka nadzorowana); ustawa o AMW art. 8 i 14 ust. 1",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/726/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/DU/2015/1322/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--uczelnie-wojskowe": {
+   "id": "e-minister-obrony-narodowej--oversees--uczelnie-wojskowe",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-uczelnie-wojskowe",
+   "cite": "Obwieszczenie MON M.P. 2026 poz. 726, cz. II pkt 2–7 (jednostki nadzorowane); PSWiN art. 433 (przepis ogólny — numer artykułu niezweryfikowany w tekście)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/726/ogl",
+   "seatsAppointed": 6,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/726/ogl",
+     "https://eli.gov.pl/eli/DU/2018/1668/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-minister-spraw-zagranicznych--oversees--placowki-zagraniczne-rp": {
+   "id": "e-minister-spraw-zagranicznych--oversees--placowki-zagraniczne-rp",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-placowki-zagraniczne-rp",
+   "cite": "Obwieszczenie MSZ z 19.08.2026 r. (M.P. 2026 poz. 871), cz. I (jednostki podległe); ustawa o służbie zagranicznej art. 7 pkt 7 i art. 8",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/871/ogl",
+   "seatsAppointed": 138,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/871/ogl",
+     "https://eli.gov.pl/eli/DU/2021/464/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--placowki-zagraniczne-rp": {
+   "id": "e-prezydent-rp--appoints--placowki-zagraniczne-rp",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-placowki-zagraniczne-rp",
+   "cite": "Konstytucja RP art. 133 ust. 1 pkt 2 (Prezydent mianuje i odwołuje pełnomocnych przedstawicieli RP w innych państwach i przy organizacjach międzynarodowych — kierowników 95 ambasad i 7 stałych przedstawicielstw)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 102,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-minister-spraw-zagranicznych--oversees--instytuty-polskie": {
+   "id": "e-minister-spraw-zagranicznych--oversees--instytuty-polskie",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-instytuty-polskie",
+   "cite": "Obwieszczenie MSZ M.P. 2026 poz. 871, cz. I 'Instytuty polskie i ośrodki kultury polskiej' (26 jednostek podległych)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/871/ogl",
+   "seatsAppointed": 26,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/871/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-pism--dept_head--dyrektor-pism": {
+   "id": "e-pism--dept_head--dyrektor-pism",
+   "type": "dept_head",
+   "fromId": "pl-pism",
+   "toId": "pl-dyrektor-pism",
+   "cite": "Ustawa z dnia 20 grudnia 1996 r. o Polskim Instytucie Spraw Międzynarodowych, art. 1, 5 i 10 (Dz.U. 2020 poz. 720 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/777/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/777/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--dyrektor-pism": {
+   "id": "e-prezes-rady-ministrow--appoints--dyrektor-pism",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dyrektor-pism",
+   "cite": "Ustawa o PISM art. 5 ust. 2 (Dyrektora Instytutu powołuje i odwołuje Prezes RM po zasięgnięciu opinii ministra właściwego do spraw zagranicznych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/777/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/777/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-spraw-zagranicznych--oversees--pism": {
+   "id": "e-minister-spraw-zagranicznych--oversees--pism",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-zagranicznych",
+   "toId": "pl-pism",
+   "cite": "Ustawa o PISM art. 10 (nadzór ministra właściwego ds. zagranicznych); obwieszczenie MSZ M.P. 2026 poz. 871, cz. II pkt 1",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/777/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/777/ogl",
+     "https://eli.gov.pl/eli/MP/2026/871/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nask-pib--dept_head--dyrektor-nask": {
+   "id": "e-nask-pib--dept_head--dyrektor-nask",
+   "type": "dept_head",
+   "fromId": "pl-nask-pib",
+   "toId": "pl-dyrektor-nask",
+   "cite": "Rozporządzenie Rady Ministrów z dnia 7 czerwca 2017 r. w sprawie nadania Naukowej i Akademickiej Sieci Komputerowej statusu państwowego instytutu badawczego (Dz.U. 2017 poz. 1193); ustawa o instytutach badawczych (Dz.U. 2026 poz. 741 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2017/1193/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2017/1193/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--appoints--dyrektor-nask": {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-nask",
+   "type": "appoints",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-dyrektor-nask",
+   "cite": "Ustawa o instytutach badawczych art. 24 ust. 2 (minister nadzorujący powołuje i odwołuje dyrektora) (Dz.U. 2026 poz. 741 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--oversees--nask-pib": {
+   "id": "e-minister-cyfryzacji--oversees--nask-pib",
+   "type": "oversees",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-nask-pib",
+   "cite": "Obwieszczenie MC z 3.02.2026 r. (M.P. 2026 poz. 180), cz. II pkt 4 (jednostka nadzorowana); ustawa o instytutach badawczych art. 5 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/180/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/180/ogl",
+     "https://eli.gov.pl/eli/DU/2010/618/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-instytut-lacznosci-pib--dept_head--dyrektor-instytutu-lacznosci": {
+   "id": "e-instytut-lacznosci-pib--dept_head--dyrektor-instytutu-lacznosci",
+   "type": "dept_head",
+   "fromId": "pl-instytut-lacznosci-pib",
+   "toId": "pl-dyrektor-instytutu-lacznosci",
+   "cite": "Rozporządzenie Rady Ministrów z dnia 31 maja 2005 r. w sprawie nadania Instytutowi Łączności statusu państwowego instytutu badawczego (Dz.U. 2005 Nr 100 poz. 862); ustawa o instytutach badawczych (Dz.U. 2026 poz. 741 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2005/862/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2005/862/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--appoints--dyrektor-instytutu-lacznosci": {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-instytutu-lacznosci",
+   "type": "appoints",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-dyrektor-instytutu-lacznosci",
+   "cite": "Ustawa o instytutach badawczych art. 24 ust. 2 (minister nadzorujący powołuje i odwołuje dyrektora)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--oversees--instytut-lacznosci-pib": {
+   "id": "e-minister-cyfryzacji--oversees--instytut-lacznosci-pib",
+   "type": "oversees",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-instytut-lacznosci-pib",
+   "cite": "Obwieszczenie MC M.P. 2026 poz. 180, cz. II pkt 3 (jednostka nadzorowana); ustawa o instytutach badawczych art. 5 ust. 3",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/180/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/180/ogl",
+     "https://eli.gov.pl/eli/DU/2010/618/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-centralny-osrodek-informatyki--dept_head--dyrektor-coi": {
+   "id": "e-centralny-osrodek-informatyki--dept_head--dyrektor-coi",
+   "type": "dept_head",
+   "fromId": "pl-centralny-osrodek-informatyki",
+   "toId": "pl-dyrektor-coi",
+   "cite": "Ustawa z dnia 27 sierpnia 2009 r. o finansach publicznych, art. 23–27 (instytucja gospodarki budżetowej) (Dz.U. 2025 poz. 1483 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1240/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--appoints--dyrektor-coi": {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-coi",
+   "type": "appoints",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-dyrektor-coi",
+   "cite": "Ustawa o finansach publicznych art. 27 ust. 1 (dyrektora IGB powołuje organ wykonujący funkcje organu założycielskiego — Minister Cyfryzacji jako organ nadzorujący wg M.P. 2026 poz. 180)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-minister-cyfryzacji--oversees--centralny-osrodek-informatyki": {
+   "id": "e-minister-cyfryzacji--oversees--centralny-osrodek-informatyki",
+   "type": "oversees",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-centralny-osrodek-informatyki",
+   "cite": "Obwieszczenie MC M.P. 2026 poz. 180, cz. II pkt 1 (jednostka nadzorowana); ustawa o finansach publicznych art. 23 ust. 2",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/180/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/180/ogl",
+     "https://eli.gov.pl/eli/DU/2009/1240/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-cppc--dept_head--dyrektor-cppc": {
+   "id": "e-cppc--dept_head--dyrektor-cppc",
+   "type": "dept_head",
+   "fromId": "pl-cppc",
+   "toId": "pl-dyrektor-cppc",
+   "cite": "Ustawa z dnia 27 sierpnia 2009 r. o finansach publicznych, art. 11–12 (państwowa jednostka budżetowa tworzona przez ministra) (Dz.U. 2025 poz. 1483 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/1240/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/1240/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--appoints--dyrektor-cppc": {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-cppc",
+   "type": "appoints",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-dyrektor-cppc",
+   "cite": "Ustawa o Radzie Ministrów art. 34 ust. 1 (minister kieruje, nadzoruje i kontroluje podporządkowane jednostki) — przepis ogólny; statut CPPC nadany zarządzeniem MC",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1996/492/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1996/492/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-minister-cyfryzacji--oversees--cppc": {
+   "id": "e-minister-cyfryzacji--oversees--cppc",
+   "type": "oversees",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-cppc",
+   "cite": "Obwieszczenie MC M.P. 2026 poz. 180, cz. I pkt 1 (jednostka podległa)",
+   "citeUrl": "https://eli.gov.pl/eli/MP/2026/180/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-instytut-badawczy-ideas--dept_head--dyrektor-instytutu-ideas": {
+   "id": "e-instytut-badawczy-ideas--dept_head--dyrektor-instytutu-ideas",
+   "type": "dept_head",
+   "fromId": "pl-instytut-badawczy-ideas",
+   "toId": "pl-dyrektor-instytutu-ideas",
+   "cite": "Rozporządzenie Rady Ministrów z dnia 25 lutego 2025 r. w sprawie utworzenia Instytutu Badawczego IDEAS, § 1 i § 3 (Dz.U. 2025 poz. 238)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2025/238/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/238/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--appoints--dyrektor-instytutu-ideas": {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-instytutu-ideas",
+   "type": "appoints",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-dyrektor-instytutu-ideas",
+   "cite": "Ustawa o instytutach badawczych art. 24 ust. 2 w zw. z § 3 rozp. RM z 25.02.2025 r. (Dz.U. poz. 238) — nadzór dzielony z MON; organ powołujący wskazany na podstawie przepisu ogólnego",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2010/618/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2010/618/ogl",
+     "https://eli.gov.pl/eli/DU/2025/238/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-minister-cyfryzacji--oversees--instytut-badawczy-ideas": {
+   "id": "e-minister-cyfryzacji--oversees--instytut-badawczy-ideas",
+   "type": "oversees",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-instytut-badawczy-ideas",
+   "cite": "Rozporządzenie RM z 25.02.2025 r. § 3 ust. 1 i ust. 2 pkt 1 (Dz.U. 2025 poz. 238); obwieszczenie MC M.P. 2026 poz. 180, cz. II pkt 2",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2025/238/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/238/ogl",
+     "https://eli.gov.pl/eli/MP/2026/180/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-obrony-narodowej--oversees--instytut-badawczy-ideas": {
+   "id": "e-minister-obrony-narodowej--oversees--instytut-badawczy-ideas",
+   "type": "oversees",
+   "fromId": "pl-minister-obrony-narodowej",
+   "toId": "pl-instytut-badawczy-ideas",
+   "cite": "Rozporządzenie RM z 25.02.2025 r. § 3 ust. 1 i ust. 2 pkt 2 (Dz.U. 2025 poz. 238); obwieszczenie MON M.P. 2026 poz. 726, cz. II pkt 8",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2025/238/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2025/238/ogl",
+     "https://eli.gov.pl/eli/MP/2026/726/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--oversees--uke": {
+   "id": "e-minister-cyfryzacji--oversees--uke",
+   "type": "oversees",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-uke",
+   "cite": "Rozporządzenie PRM z 18.12.2023 r. w sprawie szczegółowego zakresu działania Ministra Cyfryzacji, § 1 ust. 5 (nadzór nad Prezesem UKE) (Dz.U. 2023 poz. 2720)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2023/2720/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2023/2720/ogl"
+    ],
+    "confidence": "high"
+   }
+  }
+ }
+}

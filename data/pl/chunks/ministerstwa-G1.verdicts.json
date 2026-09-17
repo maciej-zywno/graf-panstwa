@@ -1,0 +1,1041 @@
+{
+ "chunk": "ministerstwa-G1",
+ "verifiedAt": "2026-09-17",
+ "summary": "Weryfikacja adwersarialna: wszystkie 30 aktów z legalSource/citeUrl istnieją w ELI i tytuły pasują; przepisy cytowane w krawędziach odczytano z tekstów ujednoliconych (uRM, uMON, uOO, uŻW, uSKW/SWW, uAMW, uPISM, uIB, ufp, usz, PSWiN, rozp. atrybucyjne, M.P. 2023/1383, 2025/689-690, 2023/1104, 2024/583-584, 2026/577, wykazy M.P. 2026/726, 871, 180). Wszystkie 31 osób sprawdzono na stronach sourceUrl. Główne błędy: (1) Sikorski – startedAt 2023-12-13 jest nieaktualne: 24.07.2025 odwołany i tego samego dnia powołany na urzędy Wiceprezesa RM i MSZ (M.P. 2025 poz. 689/690) – bieżące obsadzenie od 2025-07-24; (2) cite krawędzi dept_head 'art. 39 ust. 1 i 3 uRM' – ust. 3 dotyczy komórek organizacyjnych ministerstwa; (3) oversees MON→AMW cytuje art. 8 i 14 ust. 1 uAMW, a nadzór wynika z art. 5 ust. 1; (4) MC→oversees→pl-uke: § 1 ust. 5 rozp. mówi o nadzorze nad Prezesem UKE (kanon pl-prezes-uke); (5) opis Dowódcy Generalnego cytuje art. 17 ust. 3 uOO zamiast art. 15 ust. 3; (6) CPPC to państwowa jednostka budżetowa, nie agencja wykonawcza; (7) Nielek – strona nask.pl/instytut wymienia go tylko w newsie, właściwe źródło to BIP NASK. Uzupełniono 3 z 5 brakujących szefów z oficjalnych stron gov.pl (Dowódca KWOC: gen. dyw. Mariusz Chmielewski; Szef SKW: gen. Jarosław Stróżyk; Szef SWW: płk Dorota Kawecka – komunikat KPRM z 5.03.2024). Komendant Główny ŻW i Dyrektor PISM pozostają niezweryfikowani (wojsko-polskie.pl, pism.pl, skw/sww.gov.pl za Cloudflare/Incapsula także przez WebFetch, r.jina.ai i Wayback).",
+ "stats": {
+  "nodes_checked": 39,
+  "people_checked": 31,
+  "edges_checked": 72
+ },
+ "nodes": [
+  {
+   "id": "pl-ministerstwo-obrony-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/1996/56 = ustawa o urzędzie MON; art. 1 ust. 2 odczytany (MON wykonuje zadania przy pomocy Ministerstwa, w skład którego wchodzi SGWP). Brak rozp. RM o utworzeniu – poprawnie. Część 29 zgodna z § 1 ust. 3 rozp. DU/2023/2707. Strona kierownictwo osiągalna."
+  },
+  {
+   "id": "pl-minister-obrony-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2023/2707 § 1 ust. 2: dział obrona narodowa – topics zgodne; ust. 3 część 29."
+  },
+  {
+   "id": "pl-ministerstwo-spraw-zagranicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/1999/1025 = rozp. RM z 3.11.1999 w sprawie utworzenia MSZ (status: akt jednorazowy, obowiązuje). Części 23 i 45 zgodne z § 1 ust. 3 rozp. DU/2025/993. Liczby placówek (95+7+33+3=138; 254 honorowe; 26 IP) policzone w załączniku M.P. 2026/871 – zgadzają się."
+  },
+  {
+   "id": "pl-minister-spraw-zagranicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2025/993 § 1 ust. 2 pkt 1–2: członkostwo RP w UE, sprawy zagraniczne – topics zgodne."
+  },
+  {
+   "id": "pl-ministerstwo-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2023/781 = rozp. RM z 20.04.2023 w sprawie utworzenia MC. Część 27 zgodna z § 1 ust. 3 rozp. DU/2023/2720."
+  },
+  {
+   "id": "pl-minister-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2023/2720 § 1 ust. 2 dział informatyzacja; § 1 ust. 5 nadzór nad Prezesem UKE – odczytane."
+  },
+  {
+   "id": "pl-sztab-generalny-wp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uMON art. 1 ust. 2 (SGWP wchodzi w skład Ministerstwa), art. 7a, 8 odczytane; art. 25 ust. 2 uOO (organ pomocniczy Prezydenta) potwierdzony. Uwaga: SGWP formalnie jest częścią MON, nie odrębną jednostką z wykazu M.P. 2026/726 – modelowanie jako satellite dopuszczalne, ale warto to zaznaczyć w opisie (już jest)."
+  },
+  {
+   "id": "pl-szef-sztabu-generalnego-wp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uMON art. 5 ust. 1 pkt 1 (podlega bezpośrednio MON), art. 7a; uOO art. 195, 198 ust. 1 (kadencja 3 lata) odczytane."
+  },
+  {
+   "id": "pl-dowodztwo-generalne-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 20 odczytany; M.P. 2026/726 cz. I pkt 1 potwierdzony."
+  },
+  {
+   "id": "pl-dowodca-generalny-rsz",
+   "status": "corrected",
+   "fixes": {
+    "description": "Dowódca rodzaju Sił Zbrojnych (art. 15 ust. 3 ustawy o obronie Ojczyzny) właściwy w zakresie dowodzenia jednostkami wojskowymi i związkami organizacyjnymi Sił Zbrojnych niepodporządkowanymi innym dowódcom (art. 20); mianowany przez Prezydenta RP na 3-letnią kadencję (art. 134 ust. 3 Konstytucji; art. 195 i 198 uOO)."
+   },
+   "note": "Opis cytuje \"art. 17 ust. 3 uOO\" – dowódców rodzajów SZ wymienia art. 15 ust. 3 uOO (sprawdzone w tekście ujednoliconym)."
+  },
+  {
+   "id": "pl-dowodztwo-operacyjne-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 21; M.P. 2026/726 cz. I pkt 2."
+  },
+  {
+   "id": "pl-dowodca-operacyjny-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 15 ust. 3, 21, 195, 198."
+  },
+  {
+   "id": "pl-dowodztwo-wot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 22; M.P. 2026/726 cz. I pkt 3 (Zegrze)."
+  },
+  {
+   "id": "pl-dowodca-wot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "WOT jest rodzajem SZ (art. 15 ust. 1 pkt 5 uOO), Dowódca WOT dowódcą rodzaju SZ (art. 15 ust. 3) – mianowanie przez Prezydenta potwierdza M.P. 2024/583."
+  },
+  {
+   "id": "pl-dowodztwo-komponentu-woc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 23 ust. 1 (podlega MON do czasu mianowania NDSZ); M.P. 2026/726 cz. I pkt 7 (Legionowo)."
+  },
+  {
+   "id": "pl-dowodca-komponentu-woc",
+   "status": "corrected",
+   "fixes": {
+    "status": "active",
+    "statusNote": null,
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-mariusz-chmielewski",
+       "name": "gen. dyw. Mariusz Chmielewski",
+       "positionId": "pl-dowodca-komponentu-woc",
+       "positionName": "Dowódca Komponentu Wojsk Obrony Cyberprzestrzeni",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/obrona-narodowa/wojska-obrony-cyberprzestrzeni",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony MON o WOC (strona bez daty publikacji); strona DKWOC na wojsko-polskie.pl nieosiągalna 17.09.2026 (Incapsula)."
+      }
+     ]
+    },
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2022/655/ogl",
+      "https://www.gov.pl/web/obrona-narodowa/wojska-obrony-cyberprzestrzeni"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "medium"
+    }
+   },
+   "note": "Strona wojsko-polskie.pl/woc nieosiągalna (Incapsula, także WebFetch/r.jina.ai), ALE oficjalna strona MON https://www.gov.pl/web/obrona-narodowa/wojska-obrony-cyberprzestrzeni podaje: \"Dowódcą Komponentu Wojsk Obrony Cyberprzestrzeni jest gen. dyw. Mariusz Chmielewski.\" – uzupełniono osobę; brak datowanego źródła powołania (startedAt null)."
+  },
+  {
+   "id": "pl-zandarmeria-wojskowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uŻW art. 6–7 odczytane (ELI DU/2001/1353); uOO art. 15 ust. 4 pkt 1; M.P. 2026/726 cz. I pkt 6 (KGŻW)."
+  },
+  {
+   "id": "pl-komendant-glowny-zw",
+   "status": "unverified",
+   "fixes": {},
+   "note": "uŻW art. 6 ust. 1–3 potwierdzony. Nazwisko: wojsko-polskie.pl/kgzw – Incapsula (curl, WebFetch, r.jina.ai, Wayback: brak treści); strony gov.pl/web/obrona-narodowa/zandarmeria-wojskowa nie ma (stub 404); infobox Wikipedii nie podaje komendanta. Pozostaje puste."
+  },
+  {
+   "id": "pl-skw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 3 ust. 1–2 odczytane (ELI DU/2006/709)."
+  },
+  {
+   "id": "pl-szef-skw",
+   "status": "corrected",
+   "fixes": {
+    "status": "active",
+    "statusNote": "Nazwisko z komunikatu KPRM z 5.03.2024; strona SKW (skw.gov.pl) nieosiągalna 17.09.2026 – brak potwierdzenia bieżącego stanu.",
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-jaroslaw-strozyk",
+       "name": "gen. Jarosław Stróżyk",
+       "positionId": "pl-szef-skw",
+       "positionName": "Szef Służby Kontrwywiadu Wojskowego",
+       "type": "appointed",
+       "startedAt": "2024-03-05",
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/premier/premier-powolal-nowych-szefow-sluzb-specjalnych4",
+       "startedAtSource": "https://www.gov.pl/web/premier/premier-powolal-nowych-szefow-sluzb-specjalnych4",
+       "note": "Powołany przez Prezesa RM 5.03.2024 (komunikat KPRM z tego dnia); od 19.12.2023 kierował SKW (komunikat KPRM https://www.gov.pl/web/premier/premier-powolal-nowych-szefow-sluzb-specjalnych). Aktualność w 2026 r. niepotwierdzona – strona SKW blokuje boty."
+      }
+     ]
+    },
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2006/709/ogl",
+      "https://www.gov.pl/web/premier/premier-powolal-nowych-szefow-sluzb-specjalnych4"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "medium"
+    }
+   },
+   "note": "skw.gov.pl nieosiągalna (Cloudflare/Incapsula). Oficjalny komunikat KPRM z 05.03.2024 https://www.gov.pl/web/premier/premier-powolal-nowych-szefow-sluzb-specjalnych4: \"Pracą Służby Kontrwywiadu Wojskowego pokieruje gen. Jarosław Stróżyk\" (wcześniej p.o. od 19.12.2023 – komunikat KPRM z 19.12.2023). Uzupełniono osobę; aktualność (2026) niepotwierdzona na stronie SKW – confidence medium."
+  },
+  {
+   "id": "pl-sww",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 3 ust. 1–2."
+  },
+  {
+   "id": "pl-szef-sww",
+   "status": "corrected",
+   "fixes": {
+    "status": "active",
+    "statusNote": "Nazwisko z komunikatu KPRM z 5.03.2024; strona SWW (sww.gov.pl) nieosiągalna 17.09.2026 – brak potwierdzenia bieżącego stanu.",
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-dorota-kawecka",
+       "name": "płk Dorota Kawecka",
+       "positionId": "pl-szef-sww",
+       "positionName": "Szef Służby Wywiadu Wojskowego",
+       "type": "appointed",
+       "startedAt": "2024-03-05",
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/premier/premier-powolal-nowych-szefow-sluzb-specjalnych4",
+       "startedAtSource": "https://www.gov.pl/web/premier/premier-powolal-nowych-szefow-sluzb-specjalnych4",
+       "note": "Powołana przez Prezesa RM 5.03.2024 (komunikat KPRM); od 19.12.2023 kierowała SWW. Aktualność w 2026 r. niepotwierdzona – strona SWW blokuje boty."
+      }
+     ]
+    },
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2006/709/ogl",
+      "https://www.gov.pl/web/premier/premier-powolal-nowych-szefow-sluzb-specjalnych4"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "medium"
+    }
+   },
+   "note": "sww.gov.pl nieosiągalna. Komunikat KPRM z 05.03.2024 (j.w.): \"Szefową Służby Wywiadu Wojskowego pozostaje płk Dorota Kawecka\" (od 19.12.2023 p.o. wg komunikatu KPRM z 19.12.2023). Uzupełniono; aktualność niepotwierdzona – confidence medium."
+  },
+  {
+   "id": "pl-agencja-mienia-wojskowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uAMW art. 5 ust. 1: agencja wykonawcza nadzorowana przez MON (ELI DU/2015/1322); M.P. 2026/726 cz. II pkt 1. Strona amw.com.pl osiągalna."
+  },
+  {
+   "id": "pl-prezes-amw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uAMW art. 11 ust. 1 odczytany."
+  },
+  {
+   "id": "pl-uczelnie-wojskowe",
+   "status": "corrected",
+   "fixes": {
+    "subtype": "other"
+   },
+   "note": "M.P. 2026/726 cz. II pkt 2–7 = 6 uczelni (ASzWoj, WAT, AMW Gdynia, AWL, LAW, WAM) – zgodne; PSWiN art. 433 ust. 1 pkt 1 potwierdzony. Subtype \"institute\" nieadekwatny – uczelnie publiczne, nie instytuty badawcze."
+  },
+  {
+   "id": "pl-placowki-zagraniczne-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "usz art. 7 pkt 7 (definicja placówki), art. 8 ust. 2 odczytane (ELI DU/2021/464); liczby z załącznika M.P. 2026/871 policzone: 95 ambasad, 7 stałych przedstawicielstw, 33 urzędy konsularne, 3 inne, 254 honorowe."
+  },
+  {
+   "id": "pl-instytuty-polskie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/871 sekcja \"Instytuty polskie i ośrodki kultury polskiej\" – 26 pozycji."
+  },
+  {
+   "id": "pl-pism",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uPISM art. 1 (osobowość prawna), art. 5, art. 10 odczytane (ELI DU/1996/777); M.P. 2026/871 cz. II pkt 1 – jedyna jednostka nadzorowana."
+  },
+  {
+   "id": "pl-dyrektor-pism",
+   "status": "unverified",
+   "fixes": {},
+   "note": "uPISM art. 5 ust. 2–5 potwierdzony. pism.pl (także /o-nas/wladze-pism) za Cloudflare – curl, WebFetch, r.jina.ai i Wayback (snapshot 2026-09-12 to stub Incapsula) bez treści. Cross-check Wikipedia (nieoficjalne): Jarosław Ćwiek-Karpowicz, kadencja od 29.11.2024 – NIE wpisano (brak oficjalnej strony)."
+  },
+  {
+   "id": "pl-nask-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2017/1193 potwierdzony; M.P. 2026/180 cz. II pkt 4."
+  },
+  {
+   "id": "pl-dyrektor-nask",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24 ust. 2 (\"Minister nadzorujący powołuje i odwołuje dyrektora\") odczytany."
+  },
+  {
+   "id": "pl-instytut-lacznosci-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ELI DU/2005/862 potwierdzony; M.P. 2026/180 cz. II pkt 3."
+  },
+  {
+   "id": "pl-dyrektor-instytutu-lacznosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24 ust. 2."
+  },
+  {
+   "id": "pl-centralny-osrodek-informatyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ufp art. 23–27; M.P. 2026/180 cz. II pkt 1."
+  },
+  {
+   "id": "pl-dyrektor-coi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ufp art. 27 ust. 1 odczytany."
+  },
+  {
+   "id": "pl-cppc",
+   "status": "corrected",
+   "fixes": {
+    "subtype": "other"
+   },
+   "note": "M.P. 2026/180 cz. I pkt 1 potwierdzony. Subtype \"executive_agency\" błędny – CPPC jest państwową jednostką budżetową (art. 11–12 ufp), nie agencją wykonawczą w rozumieniu art. 18 ufp (sam opis węzła to mówi)."
+  },
+  {
+   "id": "pl-dyrektor-cppc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 34 ust. 1 pkt 2 (minister powołuje i odwołuje kierowników jednostek organizacyjnych) – odczytany; opis węzła zgodny."
+  },
+  {
+   "id": "pl-instytut-badawczy-ideas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2025/238 § 3 ust. 1: nadzór MC i MON; ust. 2 podział zadań – odczytane; M.P. 2026/180 cz. II pkt 2 i M.P. 2026/726 cz. II pkt 8."
+  },
+  {
+   "id": "pl-dyrektor-instytutu-ideas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24 ust. 2; nadzór dzielony – organ powołujący nieprecyzyjny (medium uzasadnione)."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-minister-obrony-narodowej",
+   "personId": "pl-wladyslaw-kosiniak-kamysz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Skład RM: \"Władysław Kosiniak-Kamysz – Wiceprezes Rady Ministrów, Minister Obrony Narodowej\"; M.P. 2023/1383: powołany z dniem 13.12.2023 na urzędy Wiceprezesa RM i MON."
+  },
+  {
+   "nodeId": "pl-minister-spraw-zagranicznych",
+   "personId": "pl-radoslaw-sikorski",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2025-07-24",
+    "startedAtSource": "https://eli.gov.pl/eli/MP/2025/690/ogl",
+    "note": "Minister SZ od 13.12.2023 (M.P. 2023 poz. 1383); 24.07.2025 odwołany (M.P. 2025 poz. 689) i tego samego dnia powołany na urzędy Wiceprezesa RM i Ministra SZ (M.P. 2025 poz. 690) – startedAt = data bieżącego powołania. Nie jest posłem X kad. – party null."
+   },
+   "note": "Skład RM potwierdza funkcję, ale startedAt 2023-12-13 dotyczy poprzedniego powołania (tylko MSZ, M.P. 2023/1383). M.P. 2025/689: 24.07.2025 odwołany z urzędu MSZ; M.P. 2025/690: z dniem 24.07.2025 powołany na urzędy Wiceprezesa RM i MSZ. Bieżące obsadzenie stanowiska (z tytułem wicepremiera) trwa od 2025-07-24."
+  },
+  {
+   "nodeId": "pl-minister-cyfryzacji",
+   "personId": "pl-krzysztof-gawkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Skład RM: \"Wiceprezes Rady Ministrów, Minister Cyfryzacji\"; M.P. 2023/1383 z dniem 13.12.2023. Strona MC: \"Wicepremier, Minister cyfryzacji, Pełnomocnik Rządu ds. Cyberbezpieczeństwa\"."
+  },
+  {
+   "nodeId": "pl-ministerstwo-obrony-narodowej",
+   "personId": "pl-pawel-bejda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/obrona-narodowa/kierownictwo: nazwisko z etykietą \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-obrony-narodowej",
+   "personId": "pl-cezary-tomczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/obrona-narodowa/kierownictwo: nazwisko z etykietą \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-obrony-narodowej",
+   "personId": "pl-pawel-zalewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/obrona-narodowa/kierownictwo: nazwisko z etykietą \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-obrony-narodowej",
+   "personId": "pl-magdalena-sobkowiak-czarnecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/obrona-narodowa/kierownictwo: nazwisko z etykietą \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-obrony-narodowej",
+   "personId": "pl-stanislaw-wziatek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/obrona-narodowa/kierownictwo: nazwisko z etykietą \"Podsekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-obrony-narodowej",
+   "personId": "pl-michal-dziubak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "BIP MON kierownictwo1: \"Dyrektor Generalny Ministerstwa Obrony Narodowej – Michał DZIUBAK\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-zagranicznych",
+   "personId": "pl-wladyslaw-bartoszewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/dyplomacja/kierownictwo-ministerstwa: etykieta \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-zagranicznych",
+   "personId": "pl-marcin-bosacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/dyplomacja/kierownictwo-ministerstwa: etykieta \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-zagranicznych",
+   "personId": "pl-ignacy-niemczycki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/dyplomacja/kierownictwo-ministerstwa: etykieta \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-zagranicznych",
+   "personId": "pl-artur-harazim",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/dyplomacja/kierownictwo-ministerstwa: etykieta \"Podsekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-zagranicznych",
+   "personId": "pl-robert-kupiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/dyplomacja/kierownictwo-ministerstwa: etykieta \"Podsekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-zagranicznych",
+   "personId": "pl-wojciech-zajaczkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/dyplomacja/kierownictwo-ministerstwa: etykieta \"Podsekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-spraw-zagranicznych",
+   "personId": "pl-henryka-moscicka-dendys",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/dyplomacja/kierownictwo-ministerstwa: etykieta \"Szefowa Służby Zagranicznej i Dyrektor Generalna\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-cyfryzacji",
+   "personId": "pl-dariusz-standerski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/cyfryzacja/kierownictwo: etykieta \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-cyfryzacji",
+   "personId": "pl-pawel-olszewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/cyfryzacja/kierownictwo: etykieta \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-cyfryzacji",
+   "personId": "pl-michal-gramatyka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/cyfryzacja/kierownictwo: etykieta \"Sekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-cyfryzacji",
+   "personId": "pl-rafal-rosinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/cyfryzacja/kierownictwo: etykieta \"Podsekretarz Stanu\" – zgodne."
+  },
+  {
+   "nodeId": "pl-ministerstwo-cyfryzacji",
+   "personId": "pl-bartosz-dominiak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/cyfryzacja/kierownictwo: etykieta \"Dyrektor Generalny\" – zgodne."
+  },
+  {
+   "nodeId": "pl-szef-sztabu-generalnego-wp",
+   "personId": "pl-wieslaw-kukula",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona kierownictwo MON: \"gen. Wiesław Kukuła – Szef Sztabu Generalnego WP\"; M.P. 2023/1104: mianowany z dniem 10.10.2023."
+  },
+  {
+   "nodeId": "pl-dowodca-generalny-rsz",
+   "personId": "pl-marek-sokolowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024/584 (postanowienie z 30.04.2024): \"z dniem 3 maja 2024 r. mianuję Pana generała broni Marka Sokołowskiego na stanowisko Dowódcy Generalnego RSZ\" – data i nazwisko zgodne."
+  },
+  {
+   "nodeId": "pl-dowodca-operacyjny-rsz",
+   "personId": "pl-ireneusz-nowak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/577 (postanowienie z 1.06.2026): \"mianuję z dniem 2 czerwca 2026 r. Pana generała dywizji Ireneusza Nowaka na stanowisko Dowódcy Operacyjnego RSZ\" – zgodne."
+  },
+  {
+   "nodeId": "pl-dowodca-wot",
+   "personId": "pl-krzysztof-stanczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024/583: \"z dniem 3 maja 2024 r. mianuję generała brygady Krzysztofa Stańczyka na stanowisko Dowódcy WOT\" – zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-amw",
+   "personId": "pl-marcin-horyn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "amw.com.pl \"Kto jest kim\": \"Prezes Agencji Mienia Wojskowego – Marcin Horyń\"; tekst: \"10 stycznia 2024 roku decyzją prezesa Rady Ministrów … na wniosek … ministra obrony narodowej … został powołany Marcin Horyń\" na 3-letnią kadencję – data zgodna."
+  },
+  {
+   "nodeId": "pl-dyrektor-nask",
+   "personId": "pl-radoslaw-nielek",
+   "status": "corrected",
+   "fixes": {
+    "sourceUrl": "https://bip.nask.pl/bip/organy-i-osoby-sprawuja",
+    "note": "BIP NASK (organy i osoby sprawujące funkcje): Dyrektorem NASK jest dr inż. Radosław Nielek; zastępcy: Adam Marczyński, Małgorzata Olszewska, Magdalena Tarczewska-Szymańska."
+   },
+   "note": "nask.pl/instytut wymienia \"Radosław Nielek, dyrektor NASK\" tylko w treści newsa (Safer Internet), nie w sekcji kierownictwa. Właściwe źródło: BIP NASK \"Organy i osoby sprawujące funkcje\": \"Dyrektorem NASK jest dr inż. Radosław Nielek.\""
+  },
+  {
+   "nodeId": "pl-dyrektor-instytutu-lacznosci",
+   "personId": "pl-anna-strezynska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/instytut-lacznosci/kierownictwo: \"Anna Streżyńska – Dyrektor Instytutu Łączności - PIB\" – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-coi",
+   "personId": "pl-radoslaw-mackiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "coi.gov.pl/o-nas: \"Radosław Maćkiewicz – Dyrektor Centralnego Ośrodka Informatyki\" – zgodne."
+  },
+  {
+   "nodeId": "pl-dyrektor-cppc",
+   "personId": "pl-agnieszka-krauzowicz",
+   "status": "corrected",
+   "fixes": {
+    "note": "Strona 'Dyrekcja CPPC' wymienia ją jako pierwszą w sekcji Dyrekcja bez etykiety stanowiska (zastępca – Maciej Drabio – ma etykietę); funkcja Dyrektora wywnioskowana z układu strony i adresu sekretariat.akrauzowicz@cppc.gov.pl."
+   },
+   "note": "gov.pl/web/cppc/Dyrekcja: w sekcji \"DYREKCJA CENTRUM PROJEKTÓW POLSKA CYFROWA\" jako pierwsza, bez etykiety stanowiska; Maciej Drabio opisany jako \"Zastępca Dyrektora\" – funkcja Dyrektora wynika pośrednio. Brak innej osiągalnej strony z jawną etykietą (strona główna CPPC nie wymienia nazwiska). Zostawiono verified z notą; warto potwierdzić w BIP CPPC."
+  },
+  {
+   "nodeId": "pl-dyrektor-instytutu-ideas",
+   "personId": "pl-piotr-sankowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ideas.edu.pl/zespol: \"Kierownictwo Instytutu – prof. dr hab. Piotr Sankowski – Dyrektor Instytutu\" – zgodne."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-ministerstwo-obrony-narodowej--dept_head--minister-obrony-narodowej",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 39 ust. 1 i art. 37 ust. 1 (Dz.U. 2025 poz. 780 t.j.); rozporządzenie PRM w sprawie szczegółowego zakresu działania ministra § 1 ust. 4 (obsługę ministra zapewnia ministerstwo)"
+   },
+   "note": "uRM art. 39 ust. 3 dotyczy komórek tworzonych w ministerstwie (gabinet polityczny itd.), nie relacji minister–ministerstwo. Właściwe: art. 39 ust. 1 (RM tworzy ministerstwo) + art. 37 ust. 1 uRM / rozp. atrybucyjne § 1 ust. 4 (\"Obsługę ministra zapewnia Ministerstwo …\")."
+  },
+  {
+   "id": "e-ministerstwo-spraw-zagranicznych--dept_head--minister-spraw-zagranicznych",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 39 ust. 1 i art. 37 ust. 1 (Dz.U. 2025 poz. 780 t.j.); rozporządzenie PRM w sprawie szczegółowego zakresu działania ministra § 1 ust. 4 (obsługę ministra zapewnia ministerstwo)"
+   },
+   "note": "uRM art. 39 ust. 3 dotyczy komórek tworzonych w ministerstwie (gabinet polityczny itd.), nie relacji minister–ministerstwo. Właściwe: art. 39 ust. 1 (RM tworzy ministerstwo) + art. 37 ust. 1 uRM / rozp. atrybucyjne § 1 ust. 4 (\"Obsługę ministra zapewnia Ministerstwo …\")."
+  },
+  {
+   "id": "e-ministerstwo-cyfryzacji--dept_head--minister-cyfryzacji",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 39 ust. 1 i art. 37 ust. 1 (Dz.U. 2025 poz. 780 t.j.); rozporządzenie PRM w sprawie szczegółowego zakresu działania ministra § 1 ust. 4 (obsługę ministra zapewnia ministerstwo)"
+   },
+   "note": "uRM art. 39 ust. 3 dotyczy komórek tworzonych w ministerstwie (gabinet polityczny itd.), nie relacji minister–ministerstwo. Właściwe: art. 39 ust. 1 (RM tworzy ministerstwo) + art. 37 ust. 1 uRM / rozp. atrybucyjne § 1 ust. 4 (\"Obsługę ministra zapewnia Ministerstwo …\")."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-obrony-narodowej",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 3 w zw. z art. 147 (powołanie Rady Ministrów wybranej przez Sejm; postanowienie Prezydenta M.P. 2023 poz. 1383); ogólnie art. 154 ust. 1"
+   },
+   "note": "Kierunek i typ OK. M.P. 2023/1383 wskazuje podstawę: \"art. 154 ust. 3 w związku z art. 147 Konstytucji\" (RM wybrana przez Sejm – Prezydent powołuje tak wybraną RM); art. 154 ust. 1 nie był podstawą tego powołania."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-obrony-narodowej",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 3 (Sejm wybiera Prezesa RM oraz proponowanych przez niego członków RM; M.P. 2023 poz. 1383) oraz art. 154 ust. 1 (PRM proponuje skład RM)"
+   },
+   "note": "Art. 154 ust. 3: Sejm wybiera PRM oraz proponowanych przez niego członków RM – wskazanie kandydata przez PRM potwierdzone; cite powinien wskazywać ust. 3 jako podstawę z 13.12.2023."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1 odczytany: RM składa się z PRM i ministrów."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-cyfryzacji",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 3 w zw. z art. 147 (powołanie Rady Ministrów wybranej przez Sejm; postanowienie Prezydenta M.P. 2023 poz. 1383); ogólnie art. 154 ust. 1"
+   },
+   "note": "Kierunek i typ OK. M.P. 2023/1383 wskazuje podstawę: \"art. 154 ust. 3 w związku z art. 147 Konstytucji\" (RM wybrana przez Sejm – Prezydent powołuje tak wybraną RM); art. 154 ust. 1 nie był podstawą tego powołania."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-cyfryzacji",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 3 (Sejm wybiera Prezesa RM oraz proponowanych przez niego członków RM; M.P. 2023 poz. 1383) oraz art. 154 ust. 1 (PRM proponuje skład RM)"
+   },
+   "note": "Art. 154 ust. 3: Sejm wybiera PRM oraz proponowanych przez niego członków RM – wskazanie kandydata przez PRM potwierdzone; cite powinien wskazywać ust. 3 jako podstawę z 13.12.2023."
+  },
+  {
+   "id": "e-minister-cyfryzacji--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1 odczytany: RM składa się z PRM i ministrów."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-spraw-zagranicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/690: na podstawie art. 161 Konstytucji, na wniosek PRM, z dniem 24.07.2025 powołanie na urzędy Wiceprezesa RM i MSZ – cite zgodny."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-spraw-zagranicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 161: Prezydent na wniosek PRM dokonuje zmian w składzie RM – M.P. 2025/690 potwierdza wniosek PRM."
+  },
+  {
+   "id": "e-minister-spraw-zagranicznych--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 147 ust. 1."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--ministerstwo-obrony-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 37 ust. 3 odczytany (SS i PS powołuje PRM na wniosek ministra). seatsAppointed=5 zgodne z liczbą SS+PS na stronie kierownictwo."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--nominates--ministerstwo-obrony-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 37 ust. 3 – wniosek właściwego ministra."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--ministerstwo-spraw-zagranicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 37 ust. 3 odczytany (SS i PS powołuje PRM na wniosek ministra). seatsAppointed=6 zgodne z liczbą SS+PS na stronie kierownictwo."
+  },
+  {
+   "id": "e-minister-spraw-zagranicznych--nominates--ministerstwo-spraw-zagranicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 37 ust. 3 – wniosek właściwego ministra."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--ministerstwo-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 37 ust. 3 odczytany (SS i PS powołuje PRM na wniosek ministra). seatsAppointed=4 zgodne z liczbą SS+PS na stronie kierownictwo."
+  },
+  {
+   "id": "e-minister-cyfryzacji--nominates--ministerstwo-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 37 ust. 3 – wniosek właściwego ministra."
+  },
+  {
+   "id": "e-sztab-generalny-wp--dept_head--szef-sztabu-generalnego-wp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uMON art. 7a–8."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--szef-sztabu-generalnego-wp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 134 ust. 3 + uOO art. 195, 198 ust. 1 – identyczna podstawa w M.P. 2023/1104."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--sztab-generalny-wp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uMON art. 3 ust. 1 pkt 3 i art. 5 ust. 1 pkt 1 odczytane."
+  },
+  {
+   "id": "e-dowodztwo-generalne-rsz--dept_head--dowodca-generalny-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 20."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--dowodztwo-generalne-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/726 cz. I (pkt 1/2/3/7) – jednostki podległe MON; dla DKWOC dodatkowo uOO art. 23 ust. 1 pkt 1 (podlega MON)."
+  },
+  {
+   "id": "e-dowodztwo-operacyjne-rsz--dept_head--dowodca-operacyjny-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 21."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--dowodztwo-operacyjne-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/726 cz. I (pkt 1/2/3/7) – jednostki podległe MON; dla DKWOC dodatkowo uOO art. 23 ust. 1 pkt 1 (podlega MON)."
+  },
+  {
+   "id": "e-dowodztwo-wot--dept_head--dowodca-wot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 22."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--dowodztwo-wot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/726 cz. I (pkt 1/2/3/7) – jednostki podległe MON; dla DKWOC dodatkowo uOO art. 23 ust. 1 pkt 1 (podlega MON)."
+  },
+  {
+   "id": "e-dowodztwo-komponentu-woc--dept_head--dowodca-komponentu-woc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uOO art. 23."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--dowodztwo-komponentu-woc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/726 cz. I (pkt 1/2/3/7) – jednostki podległe MON; dla DKWOC dodatkowo uOO art. 23 ust. 1 pkt 1 (podlega MON)."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--dowodca-generalny-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 134 ust. 3; uOO art. 15 ust. 3, 195, 198 – potwierdzone postanowieniami M.P. 2024/584, 2026/577, 2024/583."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--dowodca-operacyjny-rsz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 134 ust. 3; uOO art. 15 ust. 3, 195, 198 – potwierdzone postanowieniami M.P. 2024/584, 2026/577, 2024/583."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--dowodca-wot",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 134 ust. 3; uOO art. 15 ust. 3, 195, 198 – potwierdzone postanowieniami M.P. 2024/584, 2026/577, 2024/583."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--appoints--dowodca-komponentu-woc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DKWOC nie jest dowódcą rodzaju SZ (art. 15 ust. 3 uOO) – nie mianuje go Prezydent; uOO art. 196 ust. 1 pkt 1 (MON wyznacza na stanowiska o stopniach etatowych generałów) – confidence medium uzasadnione."
+  },
+  {
+   "id": "e-zandarmeria-wojskowa--dept_head--komendant-glowny-zw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uŻW art. 6 ust. 1."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--appoints--komendant-glowny-zw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uŻW art. 6 ust. 3 odczytany: KGŻW wyznacza na stanowisko i zwalnia MON."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--zandarmeria-wojskowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uŻW art. 6 ust. 2 (KGŻW podlega bezpośrednio MON); M.P. 2026/726 cz. I pkt 6."
+  },
+  {
+   "id": "e-skw--dept_head--szef-skw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 3 ust. 1."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--szef-skw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 13 ust. 1 odczytany: powołuje PRM na wniosek MON po zasięgnięciu opinii Prezydenta, Kolegium i sejmowej Komisji."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--nominates--szef-skw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 13 ust. 1 – wniosek MON."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--skw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 3 ust. 2 i art. 7 ust. 1 odczytane."
+  },
+  {
+   "id": "e-sww--dept_head--szef-sww",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 3 ust. 1."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--szef-sww",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 13 ust. 1 odczytany: powołuje PRM na wniosek MON po zasięgnięciu opinii Prezydenta, Kolegium i sejmowej Komisji."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--nominates--szef-sww",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 13 ust. 1 – wniosek MON."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--sww",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uSKW/SWW art. 3 ust. 2 i art. 7 ust. 1 odczytane."
+  },
+  {
+   "id": "e-agencja-mienia-wojskowego--dept_head--prezes-amw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uAMW art. 10–11."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-amw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uAMW art. 11 ust. 1 odczytany; potwierdzone treścią strony AMW (powołanie 10.01.2024 przez PRM na wniosek MON)."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--nominates--prezes-amw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uAMW art. 11 ust. 1 – wniosek MON."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--agencja-mienia-wojskowego",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa z dnia 10 lipca 2015 r. o Agencji Mienia Wojskowego, art. 5 ust. 1 (agencja wykonawcza nadzorowana przez Ministra Obrony Narodowej) (Dz.U. 2025 poz. 817 t.j.); obwieszczenie MON M.P. 2026 poz. 726, cz. II pkt 1",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2015/1322/ogl"
+   },
+   "note": "Cytowany art. 8 uAMW dotyczy wykazu przedsiębiorców, art. 14 ust. 1 – powoływania zastępców Prezesa. Nadzór MON wynika wprost z art. 5 ust. 1 uAMW (\"agencja wykonawcza … nadzorowana przez Ministra Obrony Narodowej\")."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--uczelnie-wojskowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/726 cz. II pkt 2–7 (6 uczelni); PSWiN art. 433 ust. 1 pkt 1 odczytany."
+  },
+  {
+   "id": "e-minister-spraw-zagranicznych--oversees--placowki-zagraniczne-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/871 cz. I; usz art. 7 pkt 7 (\"placówka podległa ministrowi właściwemu ds. zagranicznych\") i art. 8 ust. 2."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--placowki-zagraniczne-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 133 ust. 1 pkt 2 odczytany; seatsAppointed=102 (95 ambasad + 7 stałych przedstawicielstw) spójne z załącznikiem M.P. 2026/871. Uwaga: kierowników urzędów konsularnych mianuje minister (nie Prezydent) – edge poprawnie ogranicza się do ambasadorów."
+  },
+  {
+   "id": "e-minister-spraw-zagranicznych--oversees--instytuty-polskie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/871 cz. I – 26 pozycji."
+  },
+  {
+   "id": "e-pism--dept_head--dyrektor-pism",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uPISM art. 5 ust. 1."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--dyrektor-pism",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uPISM art. 5 ust. 2 odczytany (PRM po zasięgnięciu opinii ministra ds. zagranicznych; konkurs prowadzi minister – ust. 5)."
+  },
+  {
+   "id": "e-minister-spraw-zagranicznych--oversees--pism",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uPISM art. 10; M.P. 2026/871 cz. II pkt 1."
+  },
+  {
+   "id": "e-nask-pib--dept_head--dyrektor-nask",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24."
+  },
+  {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-nask",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24 ust. 2 odczytany."
+  },
+  {
+   "id": "e-minister-cyfryzacji--oversees--nask-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/180 cz. II pkt 4."
+  },
+  {
+   "id": "e-instytut-lacznosci-pib--dept_head--dyrektor-instytutu-lacznosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24."
+  },
+  {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-instytutu-lacznosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24 ust. 2 odczytany."
+  },
+  {
+   "id": "e-minister-cyfryzacji--oversees--instytut-lacznosci-pib",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/180 cz. II pkt 3."
+  },
+  {
+   "id": "e-centralny-osrodek-informatyki--dept_head--dyrektor-coi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ufp art. 27."
+  },
+  {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-coi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ufp art. 27 ust. 1 odczytany; organ założycielski COI = MC (po przejęciu od MSWiA) – medium uzasadnione."
+  },
+  {
+   "id": "e-minister-cyfryzacji--oversees--centralny-osrodek-informatyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/180 cz. II pkt 1."
+  },
+  {
+   "id": "e-cppc--dept_head--dyrektor-cppc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ufp art. 11–12."
+  },
+  {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-cppc",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa z dnia 8 sierpnia 1996 r. o Radzie Ministrów, art. 34 ust. 1 pkt 2 (minister powołuje i odwołuje kierowników podporządkowanych jednostek organizacyjnych) (Dz.U. 2025 poz. 780 t.j.)"
+   },
+   "note": "uRM art. 34 ust. 1 pkt 2 wprost: minister \"powołuje i odwołuje kierowników jednostek organizacyjnych, chyba że przepisy odrębne stanowią inaczej\" – doprecyzować punkt."
+  },
+  {
+   "id": "e-minister-cyfryzacji--oversees--cppc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/180 cz. I pkt 1."
+  },
+  {
+   "id": "e-instytut-badawczy-ideas--dept_head--dyrektor-instytutu-ideas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24; rozp. DU/2025/238."
+  },
+  {
+   "id": "e-minister-cyfryzacji--appoints--dyrektor-instytutu-ideas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uIB art. 24 ust. 2 + § 3 rozp. (nadzór dzielony) – medium uzasadnione."
+  },
+  {
+   "id": "e-minister-cyfryzacji--oversees--instytut-badawczy-ideas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2025/238 § 3 ust. 1 i ust. 2 pkt 1 odczytane; M.P. 2026/180 cz. II pkt 2."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--instytut-badawczy-ideas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2025/238 § 3 ust. 1 i ust. 2 pkt 2; M.P. 2026/726 cz. II pkt 8."
+  },
+  {
+   "id": "e-minister-cyfryzacji--oversees--uke",
+   "status": "corrected",
+   "fixes": {
+    "toId": "pl-prezes-uke",
+    "cite": "Rozporządzenie PRM z 18.12.2023 r. w sprawie szczegółowego zakresu działania Ministra Cyfryzacji, § 1 ust. 5 (nadzór nad Prezesem UKE) (Dz.U. 2023 poz. 2720)"
+   },
+   "note": "Rozp. DU/2023/2720 § 1 ust. 5 brzmi: \"Minister sprawuje nadzór nad Prezesem Urzędu Komunikacji Elektronicznej\" – nadzorowanym organem jest Prezes UKE (kanon: pl-prezes-uke), nie urząd."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {}
+ },
+ "missing": [
+  "Komendant Główny Żandarmerii Wojskowej – nazwisko nieustalone (wojsko-polskie.pl/kgzw za Incapsula; brak strony MON o ŻW; Wikipedia bez aktualnego komendanta).",
+  "Dyrektor PISM – nazwisko nieustalone z oficjalnego źródła (pism.pl za Cloudflare/Incapsula także w Wayback); cross-check Wikipedia: Jarosław Ćwiek-Karpowicz, kadencja od 29.11.2024 – wymaga potwierdzenia na pism.pl lub w komunikacie KPRM/MSZ.",
+  "Aktualność (2026) Szefów SKW i SWW potwierdzona tylko komunikatem KPRM z 5.03.2024 – strony skw.gov.pl/sww.gov.pl nieosiągalne; sprawdzić przy następnej rundzie.",
+  "startedAt sekretarzy/podsekretarzy stanu i DG (18 osób) nadal null – brak datowanych źródeł w tej rundzie.",
+  "Stanowiska (dept_head) w satelitach mają parent=ministerstwo wbrew instrukcji ('stanowisko nie ma parent') – wymuszone przez walidator (ring=satellite bez parent = ERROR); do rozstrzygnięcia na poziomie schematu, nie chunku.",
+  "MON: pominięto ~90 jednostek z wykazu M.P. 2026/726 (Inspektorat Wsparcia SZ – cz. I pkt 4, Dowództwo Garnizonu Warszawa, Agencja Uzbrojenia, instytuty, szpitale) – zgodnie z coverageNote i limitem 45 organizacji."
+ ]
+}

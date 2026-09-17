@@ -1,0 +1,1173 @@
+{
+ "chunk": "ciala-doradcze",
+ "verifiedAt": "2026-09-17",
+ "summary": "Sprawdzono wszystkie 33 węzły (metadane 63 aktów w API ELI + teksty 40 aktów przez pdftotext), wszystkie 8 osób (strony otwarte) i wszystkie 100 krawędzi (przepisy przeczytane). Podstawy prawne i cytaty w zdecydowanej większości poprawne. Główne błędy: 4 martwe officialUrl (RDPP, Rada Służby Publicznej, Rada ds. Uchodźców, Rada Statystyki – przekierowania na strony główne/404), brak łatwo dostępnych przewodniczących 4 rad (dodano: Henryk Domański – Rada Statystyki, Maria M. Janyska – RSP, Grzegorz Karpiński – Rada ds. spółek SP, Aleksandra Ziuzia – Rada ds. Uchodźców), błędna nota o braku daty powołania Rady Gospodarczej (jest: 11.03.2026), domknięcie łańcucha prawnego dla przewodnictwa Okły-Drewnowicz (ustawa Dz.U. 2026/986 art. 3), 2 nieprecyzyjne cytaty (art. 161 zamiast 154 przy M.P. 2025/690; przedstawiciel Prezesa GUS w RDS). Dodano 9 brakujących krawędzi appoints/nominates/ex_officio wynikających wprost z przeczytanych przepisów.",
+ "stats": {
+  "nodes_checked": 33,
+  "people_checked": 8,
+  "edges_checked": 100
+ },
+ "nodes": [
+  {
+   "id": "pl-staly-komitet-rady-ministrow",
+   "status": "corrected",
+   "fixes": {
+    "legalSource": {
+     "title": "Zarządzenie nr 86 Prezesa Rady Ministrów z dnia 28 listopada 2013 r. w sprawie Stałego Komitetu Rady Ministrów (M.P. 2021 poz. 327 t.j., zm. M.P. 2021 poz. 838, 2024 poz. 972, 2025 poz. 710), § 1 i § 3",
+     "url": "https://eli.gov.pl/eli/MP/2013/986/ogl",
+     "act": "MP/2013/986",
+     "article": "§ 1, § 3"
+    }
+   },
+   "note": "Sprawdzono M.P. 2021/327 §1–3 i M.P. 2025/710 (PRM powołuje i odwołuje Przewodniczącego; funkcję może pełnić członek RM, sekretarz/podsekretarz stanu w KPRM albo Sekretarz RM) – zgodne. Wg API ELI zarządzenie zmieniano też M.P. 2021/838 i 2024/972 (rejestr KPRM wymienia 2021/838) – uzupełniono tytuł. Rejestr KPRM (organy-pomocnicze-rady-ministrow2, strona 'Porządki obrad SKRM') nie podaje nazwiska przewodniczącego; brak osoby pozostaje uzasadniony."
+  },
+  {
+   "id": "pl-komitet-ekonomiczny-rady-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Tekst M.P. 2025/606 §1–3, M.P. 2026/14 (nowy skład: przewodniczący MFiG, wiceprzewodniczący Szef KPRM, Minister ds. Nadzoru, MAP) i M.P. 2026/886 (uchylenie pkt 3, dodanie Prezesa RCL) – opis i podstawa zgodne."
+  },
+  {
+   "id": "pl-komitet-do-spraw-europejskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2024/562 art. 2 ust. 2 (przewodniczący – minister ds. członkostwa RP w UE; członkowie: ministrowie, Szef KPRM, Prezes Prokuratorii) i art. 3 – zgodne. Dz.U. 2025/993 §1 ust. 2 pkt 1 potwierdza, że MSZ kieruje działem 'członkostwo RP w UE'. Strona KPRM 'kierownictwo' pokazuje A. Szłapkę jako sekretarza stanu, rzecznika rządu (nie ministra ds. UE)."
+  },
+  {
+   "id": "pl-komitet-rady-ministrow-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/372 §1–3 – skład zgodny (przewodniczący Wiceprezes RM–MON; członkowie MC, MAP, MS, MSWiA, MSZ, Minister–Koordynator (lit. f), Szef KPRM (lit. g)). Brak zmian po t.j. wg API ELI."
+  },
+  {
+   "id": "pl-komitet-do-spraw-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2025/1703 art. 17a ust. 1 i art. 17e ust. 1 – zgodne. M.P. 2026/657 §1 znosi KRM ds. Cyfryzacji (zarządzenie nr 48/2016). Rejestr KPRM wymienia M.P. 2026/267 (regulamin)."
+  },
+  {
+   "id": "pl-komitet-rady-ministrow-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/869 §1–3 (przewodniczący – Minister ds. Nadzoru nad Wdrażaniem Polityki Rządu) i M.P. 2026/530 (dodany §2 pkt 1a) – zgodne. M.P. 2026/808: odwołanie M. Berka 14.08.2026 – status vacant uzasadniony."
+  },
+  {
+   "id": "pl-rzadowy-zespol-zarzadzania-kryzysowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/574 art. 8 ust. 1–3 – skład i charakter zgodne."
+  },
+  {
+   "id": "pl-kolegium-do-spraw-sluzb-specjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/937 art. 11 i art. 12 ust. 2–3 – zgodne (przewodniczący PRM; członkowie: minister ds. wewnętrznych, zagranicznych, MON, ds. finansów publicznych, Szef BBN; minister-koordynator pkt 4)."
+  },
+  {
+   "id": "pl-komitet-do-spraw-pozytku-publicznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2025/1338 art. 34a (skład), 34b (zadania), 34g (obsługa KPRM) – zgodne. Strona gov.pl/web/pozytek działa."
+  },
+  {
+   "id": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 34a ust. 2 ('Przewodniczący Komitetu wchodzi w skład Rady Ministrów') potwierdzony w tekście. Ring 'cabinet' przy organizacji 'satellite' odbiega od reguły 'ring jak organizacja', ale reguła ta jest niewykonalna dla dept_head bez parent – pozostawiono."
+  },
+  {
+   "id": "pl-rada-dzialalnosci-pozytku-publicznego",
+   "status": "corrected",
+   "fixes": {
+    "officialUrl": "https://www.gov.pl/web/pozytek/rada-dzialalnosci-pozytku-publicznego2",
+    "statusNote": "VIII kadencja Rady (inauguracja 18.11.2024, skład ustalony przez ówczesną Przewodniczącą Komitetu Adrianę Porowską; nabór uzupełniający 2025). Skład imienny nie był weryfikowany. Członków powołuje i odwołuje Przewodniczący Komitetu (art. 36 ust. 2)."
+   },
+   "note": "officialUrl https://www.gov.pl/web/pozytek/rada-dzialalnosci-pozytku-publicznego zwraca stronę główną gov.pl (brak podstrony); właściwy adres: /web/pozytek/rada-dzialalnosci-pozytku-publicznego2 (tytuł 'Rada Działalności Pożytku Publicznego – Komitet do Spraw Pożytku Publicznego'). Strona: inauguracyjne posiedzenie RDPP VIII kadencji 18.11.2024; skład ustaliła Przewodnicząca Komitetu A. Porowska; w 2025 nabór uzupełniający. Art. 36 ust. 2: członków powołuje Przewodniczący Komitetu (brakująca krawędź – w additions)."
+  },
+  {
+   "id": "pl-rada-legislacyjna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2025/780 art. 14 ust. 1–2b i Dz.U. 2024/1329 §2 – zgodne. Strona gov.pl/web/radalegislacyjna (17.09.2026) nadal: 'XIV kadencja od 2.09.2022, kadencja 4 lata', ostatnie opinie z 28.08.2026; brak informacji o XV kadencji – status unverified prawidłowy."
+  },
+  {
+   "id": "pl-rada-dialogu-spolecznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/836 art. 22 ust. 2 pkt 1 (głos doradczy: przedstawiciele Prezydenta, NBP, GUS, Rady Fiskalnej, PIP), art. 27 ust. 1 (powołuje Prezydent; strona rządowa na wniosek PRM), art. 32 ust. 4–5 (kadencja roczna, rotacja) – zgodne. rds.gov.pl/skład nadal wymienia M. Berka."
+  },
+  {
+   "id": "pl-komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2024/949 art. 2–4 (15 przedstawicieli PRM na wniosek ministra ds. administracji) i art. 11 ust. 1 – zgodne; strona MSWiA faktycznie podaje '11 przedstawicieli' (nieaktualne)."
+  },
+  {
+   "id": "pl-komisja-wspolna-przedstawicieli-rzadu-i-konferencji-episkopatu-polski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2023/1966 art. 4 ust. 1–2 – zgodne. Rejestr KPRM (komisje-wspolne) podaje wygasły t.j. 2019/1347 (ELI: NOT_IN_FORCE). Współprzewodniczący nieznani – rejestr ich nie podaje."
+  },
+  {
+   "id": "pl-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/75 art. 23 ust. 1 i art. 24 ust. 1–2 – zgodne. Art. 24 ust. 2: członków powołuje PRM na wniosek ministra ds. wyznań religijnych i mniejszości (MSWiA) – brakujące krawędzie w additions."
+  },
+  {
+   "id": "pl-rzadowa-komisja-konkordatowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rejestr KPRM 'inne organy doradcze' wymienia Komisję z podstawą 'Konkordat (Dz.U. 1998 nr 51 poz. 318)' – tak jak w węźle; ELI DU/1998/318 istnieje. Aktu powołującego nie znaleziono; confidence low zasadne."
+  },
+  {
+   "id": "pl-rada-statystyki",
+   "status": "corrected",
+   "fixes": {
+    "officialUrl": "https://bip.stat.gov.pl/organizacja-statystyki-publicznej/rada-statystyki/",
+    "bipUrl": "https://bip.stat.gov.pl/organizacja-statystyki-publicznej/rada-statystyki/sklad-rady-statystyki/",
+    "statusNote": "VII kadencja Rady: 3.07.2022 – 2.07.2027 (BIP GUS). Rejestr KPRM jako 'podstawę prawną' wymienia jedynie rozporządzenia RM w sprawie programu badań statystycznych. Obsługę Rady zapewnia GUS (art. 17 ust. 6).",
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-henryk-domanski",
+       "name": "Henryk Domański",
+       "positionId": "pl-rada-statystyki",
+       "positionName": "Przewodniczący Rady Statystyki",
+       "type": "elected",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://bip.stat.gov.pl/organizacja-statystyki-publicznej/rada-statystyki/sklad-rady-statystyki/",
+       "startedAtSource": null,
+       "note": "Prof. dr hab., Instytut Filozofii i Socjologii PAN; ekspert z zakresu nauk społecznych w Radzie VII kadencji (3.07.2022–2.07.2027); przewodniczącego wybiera Rada spośród członków (art. 17 ust. 4). BIP GUS nie podaje daty wyboru."
+      }
+     ]
+    }
+   },
+   "note": "Dz.U. 2026/851 art. 15–17 – zgodne (art. 17 ust. 4: przewodniczącego wybiera Rada; ust. 6: obsługa GUS). officialUrl https://stat.gov.pl/rada-statystyki/ zwraca 404 (przekierowanie na stronę główną); właściwa strona: BIP GUS. BIP GUS: 'Skład Rady Statystyki VII kadencji (03.07.2022 – 02.07.2027)', Przewodniczący – prof. dr hab. Henryk Domański (IFiS PAN, ekspert nauk społecznych), Wiceprzewodnicząca – Anna Sitarz (NSZZ Solidarność)."
+  },
+  {
+   "id": "pl-rada-sluzby-publicznej",
+   "status": "corrected",
+   "fixes": {
+    "officialUrl": "https://www.gov.pl/web/sluzbacywilna/rsp",
+    "statusNote": "Kadencja 2025–2029 (strona Służby Cywilnej). Rejestr KPRM podaje nieaktualny t.j. (Dz.U. 2022 poz. 1691).",
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-maria-janyska",
+       "name": "Maria Małgorzata Janyska",
+       "positionId": "pl-rada-sluzby-publicznej",
+       "positionName": "Przewodnicząca Rady Służby Publicznej",
+       "type": "appointed",
+       "startedAt": "2025-03",
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/sluzbacywilna/rsp",
+       "startedAtSource": "https://www.gov.pl/web/sluzbacywilna/rsp",
+       "note": "Posłanka na Sejm (KO); wg strony RSP 'w marcu [2025] powołana przez Prezesa Rady Ministrów Donalda Tuska na przewodniczącą Rady Służby Publicznej kadencji 2025-2029'; wcześniej przewodnicząca RSP III 2024 – II 2025."
+      }
+     ]
+    }
+   },
+   "note": "Dz.U. 2026/590 art. 19–20 – zgodne. officialUrl (…/rada-sluzby-publicznej) zwraca stronę główną gov.pl; właściwa: https://www.gov.pl/web/sluzbacywilna/rsp. Strona RSP: 'Skład Rady Służby Publicznej (kadencja 2025-2029)', Przewodnicząca – Maria Małgorzata Janyska (posłanka; 'w marcu powołana przez PRM Donalda Tuska na przewodniczącą RSP kadencji 2025-2029'), wiceprzewodnicząca prof. Jolanta Itrich-Drabarek; 9 osób."
+  },
+  {
+   "id": "pl-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "status": "corrected",
+   "fixes": {
+    "bipUrl": "https://www.gov.pl/web/premier/sklad-rady",
+    "statusNote": "Skład wg strony KPRM 'Skład Rady' (8 członków; przewodniczący Grzegorz Karpiński). Obsługę zapewnia Departament Prawny KPRM.",
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-grzegorz-karpinski",
+       "name": "Grzegorz Karpiński",
+       "positionId": "pl-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+       "positionName": "Przewodniczący Rady do spraw spółek z udziałem Skarbu Państwa i państwowych osób prawnych",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/premier/sklad-rady",
+       "startedAtSource": null,
+       "note": "Jednocześnie sekretarz stanu w KPRM (strona 'Kierownictwo KPRM'). Powołany przez PRM (art. 28 ust. 1 pkt 1 i art. 29 ust. 1); strona nie podaje daty."
+      }
+     ]
+    }
+   },
+   "note": "Dz.U. 2026/373 art. 24–29 – zgodne (art. 29 ust. 1: PRM powołuje przewodniczącego). officialUrl działa; podstrona 'Skład Rady' (https://www.gov.pl/web/premier/sklad-rady): Grzegorz Karpiński – Przewodniczący Rady; członkowie z powołania PRM: M. Aksamit-Zienkiewicz, M. Berek, M. Saracyn; z powołania MAP: M. Małdziński, E. Osmólska, E. Zeidler, P. Zieliński."
+  },
+  {
+   "id": "pl-rada-do-spraw-uchodzcow",
+   "status": "corrected",
+   "fixes": {
+    "officialUrl": "https://www.gov.pl/web/rada-ds-uchodzcow",
+    "bipUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+    "statusNote": "Organ orzeczniczy (nie doradczy). VI kadencja od 28.03.2024 (5 lat); 15.04.2025 powołano 3 dodatkowych członków (art. 89r ust. 4). Obsługę administracyjną zapewnia KPRM (art. 89zb).",
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-aleksandra-ziuzia",
+       "name": "Aleksandra Ziuzia",
+       "positionId": "pl-rada-do-spraw-uchodzcow",
+       "positionName": "Przewodnicząca Rady do Spraw Uchodźców",
+       "type": "appointed",
+       "startedAt": "2024-03-28",
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+       "startedAtSource": "https://www.gov.pl/web/rada-ds-uchodzcow/sklad-rady-do-spraw-uchodzcow-v-kadencji",
+       "note": "Członek Rady V kadencji; przewodnicząca Rady VI kadencji powołanej 28.03.2024 (data = powołanie Rady; strona nie podaje odrębnej daty objęcia funkcji przewodniczącej)."
+      }
+     ]
+    }
+   },
+   "note": "Dz.U. 2026/862 art. 89p–89r – zgodne; art. 89zb ust. 1: obsługę zapewnia KPRM. officialUrl (…/web/rada-do-spraw-uchodzcow) zwraca stronę główną gov.pl; właściwy serwis: https://www.gov.pl/web/rada-ds-uchodzcow. Podstrona 'Skład Rady do Spraw Uchodźców VI kadencji': Rada VI kadencji powołana 28.03.2024; 15.04.2025 PRM powołał 3 dodatkowych członków (art. 89r ust. 4); Przewodnicząca – Aleksandra Ziuzia, Wiceprzewodnicząca – Jolanta Zaborska."
+  },
+  {
+   "id": "pl-krajowa-rada-bezpieczenstwa-ruchu-drogowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2024/1251 art. 140b ust. 2 (organ pomocniczy RM przy ministrze ds. transportu) i art. 140d pkt 1 – zgodne."
+  },
+  {
+   "id": "pl-rada-do-spraw-innowacyjnosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/743 §1–3 – zgodne (przewodniczący minister ds. gospodarki; wiceprzewodniczący: minister ds. informatyzacji i ds. szkolnictwa wyższego – brakujące krawędzie w additions). Ostatnia zmiana M.P. 2025/1145."
+  },
+  {
+   "id": "pl-rada-przyszlosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/351 §1 ust. 2, §3 (przewodniczący Andrzej Domański, MFiG; 18 członków imiennie) – zgodne; wejście w życie 2.04.2026 (API ELI)."
+  },
+  {
+   "id": "pl-rada-do-spraw-polityki-senioralnej",
+   "status": "corrected",
+   "fixes": {
+    "seatsCount": 26,
+    "legalSource": {
+     "title": "Zarządzenie nr 37 Prezesa Rady Ministrów z dnia 9 czerwca 2026 r. w sprawie Rady do spraw Polityki Senioralnej (M.P. 2026 poz. 600), § 1 i § 3; ustawa z dnia 11 czerwca 2026 r. o osobach starszych i koordynacji opieki długoterminowej, art. 3 (Dz.U. 2026 poz. 986)",
+     "url": "https://eli.gov.pl/eli/MP/2026/600/ogl",
+     "act": "MP/2026/600",
+     "article": "§ 1, § 3"
+    },
+    "statusNote": "Przewodniczącym jest organ ds. polityki senioralnej – od 7.08.2026 zdefiniowany w art. 3 ustawy Dz.U. 2026 poz. 986 jako Pełnomocnik Rządu ds. Polityki Senioralnej (ustanowiony rozp. RM Dz.U. 2026 poz. 229), którym wg strony 'Kierownictwo KPRM' jest Marzena Okła-Drewnowicz. Zarządzenie nie wymienia nazwisk; skład 24 członków nie był weryfikowany."
+   },
+   "note": "M.P. 2026/600 §3 ust. 1 pkt 1: przewodniczący = 'osoba pełniąca funkcję organu do spraw polityki senioralnej'; zarządzenie nie definiuje tego organu. Definicję daje ustawa z 11.06.2026 o osobach starszych i koordynacji opieki długoterminowej (Dz.U. 2026 poz. 986, w życie 7.08.2026) art. 3: organem ds. polityki senioralnej jest minister ds. zabezpieczenia społecznego albo Pełnomocnik Rządu ds. Polityki Senioralnej, o ile ustanowiony; Pełnomocnika ustanowiono rozp. RM z 25.02.2026 (Dz.U. 2026 poz. 229; §1 ust. 2: sekretarz stanu w KPRM). Skład: przewodniczący + 24 członków + sekretarz = 26 (zastępcy wybierani spośród członków), nie 27."
+  },
+  {
+   "id": "pl-miedzynarodowa-rada-oswiecimska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rejestr KPRM (organy-pomocnicze-prezesa-rady-ministrow2): 'organ opiniodawczo-doradczy PRM'; 'Od 25 czerwca 2024 r. funkcję przewodniczącego Rady pełni prof. dr hab. Dariusz Stola'; zarządzenia w PDF rejestru (nie w M.P.)."
+  },
+  {
+   "id": "pl-rada-przemyslu-lotniczego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/680 §1 ust. 2, §3 ust. 1 pkt 1 (przewodniczący – minister ds. gospodarki) – zgodne; wejście w życie 28.07.2026."
+  },
+  {
+   "id": "pl-rada-do-spraw-promocji-marki-polski",
+   "status": "corrected",
+   "fixes": {
+    "statusNote": "Przewodniczący Rady – Pełnomocnik Rządu do spraw promocji marki Polski (rozp. RM z 28.07.2026, Dz.U. 2026 poz. 1011: sekretarz/podsekretarz stanu w KPRM); osoba nieustalona. Rada utworzona zarządzeniem w życie od 5.08.2026."
+   },
+   "note": "M.P. 2026/755 §1, §3 – zgodne. Przewodniczący = Pełnomocnik Rządu ds. promocji marki Polski ustanowiony rozp. RM z 28.07.2026 (Dz.U. 2026 poz. 1011; §1 ust. 2: sekretarz lub podsekretarz stanu w KPRM) – dodano do statusNote; nazwiska Pełnomocnika nie ustalono."
+  },
+  {
+   "id": "pl-rada-do-spraw-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2025/1703 art. 17 ust. 1, 7, 10 – zgodne (minister powołuje skład na 2 lata – brakująca krawędź appoints w additions). Strona MC: 'Członkowie Rady ds. Cyfryzacji VI kadencji' – 19 nazwisk, brak przewodniczącego; publikacja 16.02.2026; 'Dokumenty Rady kadencji 2026-2028'."
+  },
+  {
+   "id": "pl-rady-konsultacyjno-doradcze-przy-prezydencie-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "prezydent.pl/aktualnosci/rady-przy-prezydencie-rp: 17 rad (Młodzieży, Rodziny i Demografii, Zdrowia, Rolnictwa, Kombatantów, Nowych Technologii i Cyfryzacji, Energii, Parlamentarzystów, Samorządu, Osób z Niepełnosprawnościami, Gospodarcza, Bezpieczeństwa i Obronności, Biznesu, Nowych Mediów, Klimatu, Polonii, Nowej Konstytucji)."
+  },
+  {
+   "id": "pl-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Strona prezydent.pl: 'gremium konsultacyjno-doradcze', skład 30 nazwisk (Cenckiewicz – Przewodniczący; Dworczyk i Zdzikot – zastępcy); '12 marca 2026 r. – Powołanie Rady i inauguracyjne posiedzenie'."
+  },
+  {
+   "id": "pl-rada-gospodarcza-przy-prezydencie-rp",
+   "status": "corrected",
+   "fixes": {
+    "seatsCount": 45,
+    "statusNote": "Rada powołana 11.03.2026 (posiedzenie inauguracyjne 7.05.2026); 45 członków wg strony prezydent.pl."
+   },
+   "note": "Strona prezydent.pl: 'Marek Dietl – Przewodniczący Rady'; skład 45 nazwisk; '11 marca 2026 r. – Powołanie Rady', '7 maja 2026 r. – Posiedzenie inauguracyjne'. Węzeł twierdził, że strona nie podaje daty – nieprawda."
+  },
+  {
+   "id": "pl-rada-nowej-konstytucji-przy-prezydencie-rp",
+   "status": "corrected",
+   "fixes": {
+    "statusNote": "Pierwsze powołania 3.05.2026, posiedzenie inauguracyjne 10.07.2026 (prezydent.pl). Strona podaje skład, ale nie wskazuje przewodniczącego."
+   },
+   "note": "Strona prezydent.pl: skład bez przewodniczącego; '3 maja 2026 r. – Pierwsze powołania do Rady Nowej Konstytucji', '10 lipca 2026 r. – Inauguracyjne posiedzenie'."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "personId": "pl-jan-grabiec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "kierownictwo-kprm5: 'Jan Grabiec – Minister – Członek Rady Ministrów, Szef KPRM, Przewodniczący Komitetu do spraw Pożytku Publicznego'. M.P. 2025/690: 'z dniem 24 lipca 2025 r. powołuję … Pana Jana Grabca – na urzędy Ministra – Członka RM i Przewodniczącego Komitetu do spraw Pożytku Publicznego'."
+  },
+  {
+   "nodeId": "pl-rada-legislacyjna",
+   "personId": "pl-marek-szydlo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/radalegislacyjna/sklad-rady-legislacyjnej: 'Przewodniczący Rady Legislacyjnej XIV kadencji: Prof. dr hab. Marek Szydło'. Strona główna RL: kadencja XIV od 2.09.2022 (4 lata) – formalnie upłynęła; brak komunikatu o XV kadencji; status unverified właściwy."
+  },
+  {
+   "nodeId": "pl-rada-dialogu-spolecznego",
+   "personId": "pl-jan-klimek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "rds.gov.pl/skład: 'Jan Klimek – Przewodniczący Rady Dialogu Społecznego, Prezes Związku Rzemiosła Polskiego'; komunikat z 30.10.2025: 'Nowym Przewodniczącym RDS kadencji 2025/2026 został Jan Klimek'."
+  },
+  {
+   "nodeId": "pl-rada-przyszlosci",
+   "personId": "pl-andrzej-domanski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/351 §3 pkt 1: 'przewodniczący Rady – Andrzej Domański, Minister Finansów i Gospodarki'; wejście w życie 2.04.2026 (API ELI entryIntoForce)."
+  },
+  {
+   "nodeId": "pl-rada-do-spraw-polityki-senioralnej",
+   "personId": "pl-marzena-okla-drewnowicz",
+   "status": "corrected",
+   "fixes": {
+    "status": "verified",
+    "note": "Sekretarz stanu w KPRM, Pełnomocnik Rządu ds. Polityki Senioralnej (strona 'Kierownictwo KPRM'). Przewodniczy Radzie z mocy §3 ust. 1 pkt 1 zarządzenia nr 37 PRM w zw. z art. 3 ustawy z 11.06.2026 o osobach starszych (Dz.U. 2026 poz. 986; organ ds. polityki senioralnej = Pełnomocnik) i rozp. RM Dz.U. 2026 poz. 229. Brak strony nazywającej ją wprost przewodniczącą Rady; data objęcia funkcji nieznana."
+   },
+   "note": "kierownictwo-kprm5: 'Marzena Okła-Drewnowicz – Sekretarz Stanu, Pełnomocnik Rządu do spraw Polityki Senioralnej'. Łańcuch prawny domknięty: §3 ust. 1 pkt 1 zarządzenia (przewodniczący = organ ds. polityki senioralnej) + art. 3 ustawy Dz.U. 2026/986 (organ = Pełnomocnik, o ile ustanowiony) + Dz.U. 2026/229 (Pełnomocnik = sekretarz stanu w KPRM). Status podniesiony do verified z zastrzeżeniem, że żadna strona nie nazywa jej wprost przewodniczącą Rady."
+  },
+  {
+   "nodeId": "pl-miedzynarodowa-rada-oswiecimska",
+   "personId": "pl-dariusz-stola",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rejestr KPRM organy-pomocnicze-prezesa-rady-ministrow2: 'Od 25 czerwca 2024 r. funkcję przewodniczącego Rady pełni prof. dr hab. Dariusz Stola.'"
+  },
+  {
+   "nodeId": "pl-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp",
+   "personId": "pl-slawomir-cenckiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "prezydent.pl/…/rada-bezpieczenstwa-i-obronnosci: 'Sławomir Cenckiewicz – Przewodniczący Rady'; '12 marca 2026 r. – Powołanie Rady i inauguracyjne posiedzenie'."
+  },
+  {
+   "nodeId": "pl-rada-gospodarcza-przy-prezydencie-rp",
+   "personId": "pl-marek-dietl",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2026-03-11",
+    "startedAtSource": "https://www.prezydent.pl/aktualnosci/rady-przy-prezydencie-rp/rada-gospodarcza",
+    "note": "Strona prezydent.pl: '11 marca 2026 r. – Powołanie Rady', '7 maja 2026 r. – Posiedzenie inauguracyjne'; data = powołanie Rady."
+   },
+   "note": "prezydent.pl/…/rada-gospodarcza: 'Marek Dietl – Przewodniczący Rady'; kalendarium: '11 marca 2026 r. – Powołanie Rady'. Nota 'strona nie podaje daty powołania' była błędna."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-staly-komitet-rm--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2021/327 §1: organ pomocniczy RM i PRM."
+  },
+  {
+   "id": "e-staly-komitet-rm--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2021/327 §1."
+  },
+  {
+   "id": "e-prm--appoints--staly-komitet-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/710 §1 pkt 1 lit. b: 'Przewodniczącego SKRM powołuje i odwołuje Prezes Rady Ministrów'."
+  },
+  {
+   "id": "e-komitet-ekonomiczny-rm--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/606 §1."
+  },
+  {
+   "id": "e-komitet-ekonomiczny-rm--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/606 §1."
+  },
+  {
+   "id": "e-min-finansow-i-gospodarki--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/14 §3 ust. 1 pkt 1: przewodniczący – MFiG."
+  },
+  {
+   "id": "e-min-aktywow-panstwowych--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/14 §3 ust. 1 pkt 4: wiceprzewodniczący – MAP."
+  },
+  {
+   "id": "e-min-cyfryzacji--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/14 §3 ust. 1 pkt 5 lit. a."
+  },
+  {
+   "id": "e-min-energii--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/14 §3 ust. 1 pkt 5 lit. b."
+  },
+  {
+   "id": "e-min-funduszy-i-polityki-regionalnej--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. c."
+  },
+  {
+   "id": "e-min-infrastruktury--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. d."
+  },
+  {
+   "id": "e-min-klimatu-i-srodowiska--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. e."
+  },
+  {
+   "id": "e-min-nauki-i-szkolnictwa-wyzszego--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. f."
+  },
+  {
+   "id": "e-min-rodziny-pracy-i-polityki-spolecznej--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. g."
+  },
+  {
+   "id": "e-min-rolnictwa-i-rozwoju-wsi--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. h."
+  },
+  {
+   "id": "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-ekonomiczny-rm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/14 §3 ust. 1 pkt 2: wiceprzewodniczący – Szef KPRM."
+  },
+  {
+   "id": "e-komitet-do-spraw-europejskich--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2024/562 art. 3 ust. 1–2."
+  },
+  {
+   "id": "e-min-spraw-zagranicznych--ex_officio--komitet-do-spraw-europejskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 2 ust. 2 pkt 1 + Dz.U. 2025/993 §1 ust. 2 pkt 1 (MSZ kieruje działem członkostwo RP w UE) – confidence medium zasadne."
+  },
+  {
+   "id": "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-do-spraw-europejskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 2 ust. 2 pkt 2 lit. b."
+  },
+  {
+   "id": "e-komitet-rm-do-spraw-bezpieczenstwa-narodowego--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/372 §1."
+  },
+  {
+   "id": "e-komitet-rm-do-spraw-bezpieczenstwa-narodowego--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/372 §1."
+  },
+  {
+   "id": "e-min-obrony-narodowej--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§3 ust. 1 pkt 1: przewodniczący – Wiceprezes RM, MON."
+  },
+  {
+   "id": "e-min-cyfryzacji--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§3 ust. 1 pkt 2 lit. a."
+  },
+  {
+   "id": "e-min-aktywow-panstwowych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. b."
+  },
+  {
+   "id": "e-min-sprawiedliwosci--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. c."
+  },
+  {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. d."
+  },
+  {
+   "id": "e-min-spraw-zagranicznych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. e."
+  },
+  {
+   "id": "e-min-koordynator-sluzb-specjalnych--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. f ('w przypadku jego powołania'; powołany M.P. 2025/690)."
+  },
+  {
+   "id": "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-rm-do-spraw-bezpieczenstwa-narodowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. g."
+  },
+  {
+   "id": "e-komitet-do-spraw-cyfryzacji--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2025/1703 art. 17a ust. 1."
+  },
+  {
+   "id": "e-min-cyfryzacji--ex_officio--komitet-do-spraw-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 17e ust. 1 pkt 1."
+  },
+  {
+   "id": "e-min-czlonek-rm-szef-kprm--ex_officio--komitet-do-spraw-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 17e ust. 1 pkt 3 lit. a."
+  },
+  {
+   "id": "e-komitet-rm-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/869 §1."
+  },
+  {
+   "id": "e-komitet-rm-do-spraw-nadzoru-nad-wdrazaniem-polityki-rzadu--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025/869 §1."
+  },
+  {
+   "id": "e-rzadowy-zespol-zarzadzania-kryzysowego--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/574 art. 8 ust. 1."
+  },
+  {
+   "id": "e-prm--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 8 ust. 2 pkt 1."
+  },
+  {
+   "id": "e-min-obrony-narodowej--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 8 ust. 2 pkt 2."
+  },
+  {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 8 ust. 2 pkt 2 i 2a."
+  },
+  {
+   "id": "e-min-spraw-zagranicznych--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 8 ust. 2 pkt 3."
+  },
+  {
+   "id": "e-min-koordynator-sluzb-specjalnych--ex_officio--rzadowy-zespol-zarzadzania-kryzysowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 8 ust. 2 pkt 4."
+  },
+  {
+   "id": "e-kolegium-do-spraw-sluzb-specjalnych--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/937 art. 11."
+  },
+  {
+   "id": "e-prm--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 12 ust. 2 pkt 1."
+  },
+  {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 12 ust. 2 pkt 3 lit. a."
+  },
+  {
+   "id": "e-min-spraw-zagranicznych--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. b."
+  },
+  {
+   "id": "e-min-obrony-narodowej--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. c."
+  },
+  {
+   "id": "e-min-finansow-i-gospodarki--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "lit. d (minister ds. finansów publicznych)."
+  },
+  {
+   "id": "e-min-koordynator-sluzb-specjalnych--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 12 ust. 2 pkt 4."
+  },
+  {
+   "id": "e-bbn--ex_officio--kolegium-do-spraw-sluzb-specjalnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 12 ust. 2 pkt 3 lit. e wymienia Szefa BBN (stanowisko); w kanonie brak pl-szef-bbn, więc from=pl-bbn – medium zasadne."
+  },
+  {
+   "id": "e-komitet-do-spraw-pozytku-publicznego--dept_head--przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 34a ust. 1 pkt 1, art. 34c ust. 1 – spójne z head/headOf."
+  },
+  {
+   "id": "e-przewodniczacy-komitetu-do-spraw-pozytku-publicznego--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 34a ust. 2: 'Przewodniczący Komitetu wchodzi w skład Rady Ministrów'."
+  },
+  {
+   "id": "e-komitet-do-spraw-pozytku-publicznego--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 34b, 34f, 34h – Komitet przedkłada RM plan i sprawozdanie; medium ok."
+  },
+  {
+   "id": "e-rada-dzialalnosci-pozytku-publicznego--advises--przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 35 ust. 1."
+  },
+  {
+   "id": "e-rada-legislacyjna--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 14 ust. 1a uRM."
+  },
+  {
+   "id": "e-rada-legislacyjna--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 14 ust. 1–1a uRM."
+  },
+  {
+   "id": "e-prm--appoints--rada-legislacyjna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 14 ust. 2 uRM; rozp. §2 ust. 1–2 (max 15; PRM powołuje przewodniczącego)."
+  },
+  {
+   "id": "e-rada-dialogu-spolecznego--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/836 art. 1–2, 5."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--rada-dialogu-spolecznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 27 ust. 1: 'powołuje i odwołuje Prezydent RP'."
+  },
+  {
+   "id": "e-prm--nominates--rada-dialogu-spolecznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 27 ust. 1 pkt 2: strona rządowa na wniosek PRM."
+  },
+  {
+   "id": "e-min-rodziny-pracy-i-polityki-spolecznej--ex_officio--rada-dialogu-spolecznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 27 ust. 1 pkt 2 (członkowie RM + przedstawiciel ministra ds. pracy); rds.gov.pl: Dziemianowicz-Bąk – wiceprzewodnicząca RDS."
+  },
+  {
+   "id": "e-komisja-wspolna-rzadu-i-samorzadu-terytorialnego--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2024/949 art. 2–3."
+  },
+  {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--ex_officio--komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 4 ust. 2 pkt 1 i art. 11 ust. 1 pkt 1."
+  },
+  {
+   "id": "e-prm--appoints--komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 4 ust. 2 pkt 2: 15 przedstawicieli powołuje PRM."
+  },
+  {
+   "id": "e-min-spraw-wewnetrznych-i-administracji--nominates--komisja-wspolna-rzadu-i-samorzadu-terytorialnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 4 ust. 2 pkt 2: na wniosek ministra ds. administracji publicznej."
+  },
+  {
+   "id": "e-komisja-wspolna-przedstawicieli-rzadu-i-konferencji-episkopatu-polski--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2023/1966 art. 4 ust. 1 – forum, nie organ doradczy sensu stricto; medium ok."
+  },
+  {
+   "id": "e-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/75 art. 23 ust. 1."
+  },
+  {
+   "id": "e-rzadowa-komisja-konkordatowa--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Przepis ogólny art. 12 ust. 1 pkt 2 uRM; low ok."
+  },
+  {
+   "id": "e-rada-statystyki--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/851 art. 15 ust. 1–2."
+  },
+  {
+   "id": "e-rada-statystyki--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 15 ust. 3 pkt 2."
+  },
+  {
+   "id": "e-prm--appoints--rada-statystyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 16 ust. 1, art. 17 ust. 1."
+  },
+  {
+   "id": "e-prezes-gus--ex_officio--rada-statystyki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 16 ust. 2."
+  },
+  {
+   "id": "e-rada-sluzby-publicznej--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Dz.U. 2026/590 art. 19 ust. 1–2."
+  },
+  {
+   "id": "e-rada-sluzby-publicznej--advises--szef-sluzby-cywilnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 19 ust. 2 pkt 1, ust. 3 pkt 2–3."
+  },
+  {
+   "id": "e-prm--appoints--rada-sluzby-publicznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 20 ust. 1–3."
+  },
+  {
+   "id": "e-rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 24 pkt 5 (opinie na wniosek PRM) i art. 25 – medium ok."
+  },
+  {
+   "id": "e-prm--appoints--rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 28 ust. 1 pkt 1 (4 członków) + art. 29 ust. 1 (przewodniczący)."
+  },
+  {
+   "id": "e-min-aktywow-panstwowych--appoints--rada-do-spraw-spolek-z-udzialem-skarbu-panstwa-i-panstwowych-osob-prawnych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 28 ust. 1 pkt 2."
+  },
+  {
+   "id": "e-prm--appoints--rada-do-spraw-uchodzcow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 89r ust. 1 (12 członków, 5 lat)."
+  },
+  {
+   "id": "e-krajowa-rada-bezpieczenstwa-ruchu-drogowego--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 140b ust. 2."
+  },
+  {
+   "id": "e-min-infrastruktury--ex_officio--krajowa-rada-bezpieczenstwa-ruchu-drogowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 140d pkt 1 (minister ds. transportu)."
+  },
+  {
+   "id": "e-rada-do-spraw-innowacyjnosci--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/743 §1 ust. 2."
+  },
+  {
+   "id": "e-min-finansow-i-gospodarki--ex_officio--rada-do-spraw-innowacyjnosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§3 ust. 1 pkt 1 (minister ds. gospodarki)."
+  },
+  {
+   "id": "e-rada-przyszlosci--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/351 §1 ust. 2."
+  },
+  {
+   "id": "e-rada-do-spraw-polityki-senioralnej--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/600 §1 ust. 2."
+  },
+  {
+   "id": "e-prm--appoints--rada-do-spraw-polityki-senioralnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§3 ust. 2: 24 członków powołuje PRM na wniosek organu ds. polityki senioralnej."
+  },
+  {
+   "id": "e-miedzynarodowa-rada-oswiecimska--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rejestr KPRM; przepis ogólny; medium ok."
+  },
+  {
+   "id": "e-rada-przemyslu-lotniczego--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/680 §1 ust. 2."
+  },
+  {
+   "id": "e-min-finansow-i-gospodarki--ex_officio--rada-przemyslu-lotniczego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§3 ust. 1 pkt 1 (minister ds. gospodarki)."
+  },
+  {
+   "id": "e-rada-do-spraw-promocji-marki-polski--advises--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/755 §1."
+  },
+  {
+   "id": "e-rada-do-spraw-promocji-marki-polski--advises--prm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2026/755 §1."
+  },
+  {
+   "id": "e-prm--appoints--rada-do-spraw-promocji-marki-polski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§3 ust. 2 (do 20 osób, na wniosek Przewodniczącego)."
+  },
+  {
+   "id": "e-rada-do-spraw-cyfryzacji--advises--min-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 17 ust. 1."
+  },
+  {
+   "id": "e-rada-do-spraw-cyfryzacji--advises--komitet-do-spraw-cyfryzacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "art. 17 ust. 2 pkt 1a; medium ok."
+  },
+  {
+   "id": "e-rady-konsultacyjno-doradcze-przy-prezydencie-rp--advises--prezydent-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "prezydent.pl – brak przepisu; low ok."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--rady-konsultacyjno-doradcze-przy-prezydencie-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "prezydent.pl ('Powołanie Rady'); low ok."
+  },
+  {
+   "id": "e-rada-bezpieczenstwa-i-obronnosci-przy-prezydencie-rp--advises--prezydent-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "prezydent.pl: 'gremium konsultacyjno-doradcze Prezydenta RP'."
+  },
+  {
+   "id": "e-rada-gospodarcza-przy-prezydencie-rp--advises--prezydent-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "prezydent.pl."
+  },
+  {
+   "id": "e-rada-nowej-konstytucji-przy-prezydencie-rp--advises--prezydent-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "prezydent.pl."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 1 i art. 161 w zw. z art. 34a ust. 2 ustawy o działalności pożytku publicznego (postanowienie Prezydenta nr 1131.28.2025 z 24.07.2025 r., M.P. 2025 poz. 690, wydane na podstawie art. 161)"
+   },
+   "note": "M.P. 2025/690 (powołanie J. Grabca) wydano 'na podstawie art. 161 Konstytucji' (zmiana w składzie RM na wniosek PRM), nie art. 154 ust. 1 (powołanie RM in gremio). Uzupełniono cytat."
+  },
+  {
+   "id": "e-prm--nominates--przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 1 i art. 161 (Prezydent dokonuje zmian w składzie RM na wniosek Prezesa RM; M.P. 2025 poz. 690)"
+   },
+   "note": "Jw. – M.P. 2025/690: 'na wniosek Prezesa Rady Ministrów' na podstawie art. 161 Konstytucji."
+  },
+  {
+   "id": "e-prezes-gus--ex_officio--rada-dialogu-spolecznego",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o Radzie Dialogu Społecznego, art. 22 ust. 2 pkt 1 i art. 27 ust. 2 pkt 2 (przedstawiciel Prezesa GUS z głosem doradczym, powoływany przez Prezydenta RP na wniosek Prezesa GUS)"
+   },
+   "note": "Art. 22 ust. 2 pkt 1: w pracach Rady bierze udział z głosem doradczym PRZEDSTAWICIEL Prezesa GUS, powoływany przez Prezydenta RP na wniosek Prezesa GUS (art. 27 ust. 2 pkt 2) – nie sam Prezes GUS z urzędu. Zachowano typ ex_officio (miejsce przypisane organowi), doprecyzowano cytat."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {
+   "e-min-cyfryzacji--appoints--rada-do-spraw-cyfryzacji": {
+    "id": "e-min-cyfryzacji--appoints--rada-do-spraw-cyfryzacji",
+    "type": "appoints",
+    "fromId": "pl-minister-cyfryzacji",
+    "toId": "pl-rada-do-spraw-cyfryzacji",
+    "cite": "Ustawa o informatyzacji działalności podmiotów realizujących zadania publiczne, art. 17 ust. 10 (minister właściwy ds. informatyzacji powołuje skład Rady na dwuletnią kadencję spośród rekomendowanych kandydatów)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2005/565/ogl",
+    "seatsAppointed": 20,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/DU/2025/1703/text.pdf",
+      "https://www.gov.pl/web/cyfryzacja/rada-do-spraw-cyfryzacji"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-przewodniczacy-kdspp--appoints--rada-dzialalnosci-pozytku-publicznego": {
+    "id": "e-przewodniczacy-kdspp--appoints--rada-dzialalnosci-pozytku-publicznego",
+    "type": "appoints",
+    "fromId": "pl-przewodniczacy-komitetu-do-spraw-pozytku-publicznego",
+    "toId": "pl-rada-dzialalnosci-pozytku-publicznego",
+    "cite": "Ustawa o działalności pożytku publicznego i o wolontariacie, art. 36 ust. 2 (członków Rady powołuje i odwołuje Przewodniczący Komitetu)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/DU/2025/1338/text.pdf",
+      "https://www.gov.pl/web/pozytek/rada-dzialalnosci-pozytku-publicznego2"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-prm--appoints--komitet-do-spraw-pozytku-publicznego": {
+    "id": "e-prm--appoints--komitet-do-spraw-pozytku-publicznego",
+    "type": "appoints",
+    "fromId": "pl-prezes-rady-ministrow",
+    "toId": "pl-komitet-do-spraw-pozytku-publicznego",
+    "cite": "Ustawa o działalności pożytku publicznego i o wolontariacie, art. 34a ust. 1 pkt 2 (wiceprzewodniczącego Komitetu powołuje i odwołuje Prezes RM na wniosek Przewodniczącego Komitetu)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2003/873/ogl",
+    "seatsAppointed": 1,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/DU/2025/1338/text.pdf",
+      "https://www.gov.pl/web/premier/kierownictwo-kprm5"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-prm--appoints--komisja-wspolna-rzadu-i-mniejszosci": {
+    "id": "e-prm--appoints--komisja-wspolna-rzadu-i-mniejszosci",
+    "type": "appoints",
+    "fromId": "pl-prezes-rady-ministrow",
+    "toId": "pl-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych",
+    "cite": "Ustawa o mniejszościach narodowych i etnicznych oraz o języku regionalnym, art. 24 ust. 2 (Prezes RM powołuje i odwołuje członków Komisji Wspólnej na wniosek ministra właściwego ds. wyznań religijnych oraz mniejszości narodowych i etnicznych)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2005/141/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/DU/2026/75/text.pdf"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-min-spraw-wewnetrznych-i-administracji--nominates--komisja-wspolna-rzadu-i-mniejszosci": {
+    "id": "e-min-spraw-wewnetrznych-i-administracji--nominates--komisja-wspolna-rzadu-i-mniejszosci",
+    "type": "nominates",
+    "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+    "toId": "pl-komisja-wspolna-rzadu-i-mniejszosci-narodowych-i-etnicznych",
+    "cite": "Ustawa o mniejszościach narodowych i etnicznych, art. 24 ust. 2 i 7 (wniosek ministra właściwego ds. wyznań religijnych oraz mniejszości narodowych i etnicznych – dział kierowany przez MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2005/141/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/DU/2026/75/text.pdf",
+      "https://eli.gov.pl/eli/DU/2025/999/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "medium"
+    }
+   },
+   "e-min-spraw-zagranicznych--nominates--rada-do-spraw-uchodzcow": {
+    "id": "e-min-spraw-zagranicznych--nominates--rada-do-spraw-uchodzcow",
+    "type": "nominates",
+    "fromId": "pl-minister-spraw-zagranicznych",
+    "toId": "pl-rada-do-spraw-uchodzcow",
+    "cite": "Ustawa o udzielaniu cudzoziemcom ochrony na terytorium RP, art. 89r ust. 3 (PRM powołuje po 4 osoby spośród kandydatów przedstawianych przez ministra właściwego ds. zagranicznych i Ministra Sprawiedliwości; każdy przedstawia 8 kandydatów)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+    "seatsAppointed": 4,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-min-sprawiedliwosci--nominates--rada-do-spraw-uchodzcow": {
+    "id": "e-min-sprawiedliwosci--nominates--rada-do-spraw-uchodzcow",
+    "type": "nominates",
+    "fromId": "pl-minister-sprawiedliwosci",
+    "toId": "pl-rada-do-spraw-uchodzcow",
+    "cite": "Ustawa o udzielaniu cudzoziemcom ochrony na terytorium RP, art. 89r ust. 3 (Minister Sprawiedliwości przedstawia 8 kandydatów, PRM powołuje spośród nich 4 członków)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2003/1176/ogl",
+    "seatsAppointed": 4,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/DU/2026/862/text.pdf"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-min-cyfryzacji--ex_officio--rada-do-spraw-innowacyjnosci": {
+    "id": "e-min-cyfryzacji--ex_officio--rada-do-spraw-innowacyjnosci",
+    "type": "ex_officio",
+    "fromId": "pl-minister-cyfryzacji",
+    "toId": "pl-rada-do-spraw-innowacyjnosci",
+    "cite": "Zarządzenie nr 4 PRM ws. utworzenia Rady do spraw Innowacyjności, § 3 ust. 1 pkt 2 lit. a (wiceprzewodniczący – minister właściwy ds. informatyzacji) (M.P. 2026 poz. 743 t.j.)",
+    "citeUrl": "https://eli.gov.pl/eli/MP/2016/63/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/MP/2026/743/text.pdf"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-min-nauki-i-szkolnictwa-wyzszego--ex_officio--rada-do-spraw-innowacyjnosci": {
+    "id": "e-min-nauki-i-szkolnictwa-wyzszego--ex_officio--rada-do-spraw-innowacyjnosci",
+    "type": "ex_officio",
+    "fromId": "pl-minister-nauki-i-szkolnictwa-wyzszego",
+    "toId": "pl-rada-do-spraw-innowacyjnosci",
+    "cite": "Zarządzenie nr 4 PRM ws. utworzenia Rady do spraw Innowacyjności, § 3 ust. 1 pkt 2 lit. b (wiceprzewodniczący – minister właściwy ds. szkolnictwa wyższego i nauki) (M.P. 2026 poz. 743 t.j.)",
+    "citeUrl": "https://eli.gov.pl/eli/MP/2016/63/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://api.sejm.gov.pl/eli/acts/MP/2026/743/text.pdf"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   }
+  }
+ },
+ "missing": [
+  "Przewodniczący Stałego Komitetu RM – żadna strona KPRM (rejestr, 'Porządki obrad SKRM', 'Kierownictwo KPRM') nie podaje nazwiska; po odwołaniu M. Berka (14.08.2026) i uchyleniu w KERM funkcji 'Minister ds. Nadzoru' (M.P. 2026/886) osoba nieznana.",
+  "Rada Legislacyjna XV kadencji – kadencja XIV upłynęła 2.09.2026; strona RL nadal pokazuje skład XIV kadencji, brak komunikatu o nowym składzie.",
+  "Współprzewodniczący Komisji Wspólnej Rządu i Episkopatu oraz akt powołujący Rządową Komisję Konkordatową – rejestr KPRM ich nie podaje.",
+  "Pełnomocnik Rządu ds. promocji marki Polski (przewodniczący Rady ds. promocji marki Polski) – rozporządzenie Dz.U. 2026/1011 istnieje, nazwiska nie ustalono (brak na stronie 'Kierownictwo KPRM' w opisie funkcji).",
+  "Skład imienny RDPP VIII kadencji, Komisji Wspólnej Rządu i Mniejszości, KRBRD, Rady ds. Innowacyjności – nie weryfikowano (poza zakresem osób-przewodniczących).",
+  "Wyszukiwarki (WebSearch limit, DDG/Bing przez curl – CAPTCHA/śmieci) były niedostępne; weryfikacja oparta wyłącznie na bezpośrednich fetchach stron oficjalnych i ELI."
+ ]
+}

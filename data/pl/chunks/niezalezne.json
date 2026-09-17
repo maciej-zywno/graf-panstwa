@@ -1,0 +1,4351 @@
+{
+ "chunk": "niezalezne",
+ "generatedAt": "2026-09-17",
+ "coverageNote": "Zakres: organy niezależne/kontrolne szczebla centralnego: NIK (+Prezes, Kolegium), RPO (Biuro + Rzecznik), RPD (Biuro + Rzecznik), KRRiT (+Przewodniczący), NBP (+Prezes, RPP, Zarząd), PKW (+Przewodniczący, KBW, Szef KBW), UODO (+Prezes), IPN (+Prezes – wakat, Kolegium), PIP (+GIP, Rada Ochrony Pracy), UKE (+Prezes), Państwowa Komisja ds. przeciwdziałania wykorzystaniu seksualnemu małoletnich (+Przewodniczący) oraz Rada Mediów Narodowych (+Przewodniczący; ustawa z 2016 r. nadal obowiązuje wg ELI). Pominięto (owner urzedy-prm): Rzecznik Finansowy, Rzecznik MŚP, KNF, UOKiK, GUS, URE; pominięto Krajową Radę Prokuratorów i inne organy sądowe (owner sadownictwo). Nie modelowano: okręgowych inspektoratów pracy, delegatur NIK i KBW, oddziałów IPN, komisarzy wyborczych, Urzędu Państwowej Komisji (PKDP) jako osobnego węzła. Osoby: nazwiska ze stron oficjalnych instytucji lub z aktów w Monitorze Polskim (ELI); NBP (nbp.pl/bip.nbp.pl blokują boty) – Prezes z M.P. 2022 poz. 484 + cross-check Wikidata (confidence medium), RPP i Zarząd NBP wyłącznie z M.P. (Zarząd status unverified: kadencje Kightley/Pogonowskiego upłynęły w marcu 2026, brak aktów ponownego powołania). Prezes IPN: wakat (Senat 6.08.2026 odmówił zgody na M. Szpytmę, M.P. 2026 poz. 778). Zastępcy/wiceprezesi jako people na węzłach urzędów. Data wyboru Przewodniczącej KRRiT (28.07.2025) tylko ze źródła wtórnego. Krawędzie 'office' nie użyte – ciało→przewodniczący zamodelowane jako dept_head + elects. Części budżetowe z rozp. MF Dz.U. 2025 poz. 1185 (07, 08, 09, 10, 11, 12, 13, 14, 76, 89).",
+ "nodes": {
+  "pl-nik": {
+   "id": "pl-nik",
+   "type": "department",
+   "subtype": "oversight_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Najwyższa Izba Kontroli",
+   "shortName": "NIK",
+   "description": "Naczelny organ kontroli państwowej, podległy Sejmowi i działający na zasadach kolegialności (art. 202 Konstytucji RP, art. 1 ustawy o NIK). Kontroluje działalność organów administracji rządowej, NBP, państwowych osób prawnych i innych jednostek pod względem legalności, gospodarności, celowości i rzetelności; przedkłada Sejmowi analizę wykonania budżetu państwa.",
+   "aliases": [
+    "NIK",
+    "Najwyższa Izba Kontroli"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 202–207",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 202–207"
+   },
+   "officialUrl": "https://www.nik.gov.pl",
+   "bipUrl": "https://bip.nik.gov.pl",
+   "regon": "000000052",
+   "budgetPart": "07",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-prezes-nik",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jacek-kozlowski",
+      "name": "Jacek Kozłowski",
+      "positionId": "pl-wiceprezes-nik",
+      "positionName": "Wiceprezes NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kierownictwo-nik/",
+      "startedAtSource": null,
+      "note": "Wiceprezesów (3) powołuje Marszałek Sejmu na wniosek Prezesa NIK (art. 21 ust. 1); strona nie podaje daty powołania."
+     },
+     {
+      "id": "pl-katarzyna-budnikowska",
+      "name": "Katarzyna Budnikowska",
+      "positionId": "pl-wiceprezes-nik",
+      "positionName": "Wiceprezes NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kierownictwo-nik/",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     },
+     {
+      "id": "pl-sylweriusz-krolak",
+      "name": "Sylweriusz Królak",
+      "positionId": "pl-wiceprezes-nik",
+      "positionName": "Wiceprezes NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kierownictwo-nik/",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     },
+     {
+      "id": "pl-malgorzata-szczepanska",
+      "name": "Małgorzata Szczepańska",
+      "positionId": "pl-dyrektor-generalny-nik",
+      "positionName": "Dyrektor Generalna NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kierownictwo-nik/",
+      "startedAtSource": null,
+      "note": "Dyrektora generalnego powołuje Prezes NIK za zgodą Marszałka Sejmu (art. 21 ust. 2)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1995/59/ogl",
+     "https://www.nik.gov.pl/o-nik/kierownictwo-nik/",
+     "https://www.nik.gov.pl/o-nik/kolegium-nik/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-nik": {
+   "id": "pl-prezes-nik",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Prezes Najwyższej Izby Kontroli",
+   "shortName": "Prezes NIK",
+   "description": "Kieruje Najwyższą Izbą Kontroli i odpowiada przed Sejmem za jej działalność (art. 13 ustawy o NIK). Powoływany przez Sejm bezwzględną większością głosów za zgodą Senatu na 6-letnią kadencję, na wniosek Marszałka Sejmu lub grupy co najmniej 35 posłów (art. 205 ust. 1 Konstytucji RP, art. 14 ust. 1 ustawy).",
+   "aliases": [
+    "Prezes NIK"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 205 ust. 1",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 205 ust. 1"
+   },
+   "officialUrl": "https://www.nik.gov.pl/o-nik/kierownictwo-nik/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-nik",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-mariusz-haladyj",
+      "name": "Mariusz Haładyj",
+      "positionId": "pl-prezes-nik",
+      "positionName": "Prezes Najwyższej Izby Kontroli",
+      "type": "appointed",
+      "startedAt": "2025-09",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kierownictwo-nik/mariusz-haladyj.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/1001/ogl",
+      "note": "Powołany uchwałą Sejmu z 12.09.2025 (M.P. 2025 poz. 1001), zgoda Senatu 17.09.2025 (M.P. 2025 poz. 1002); wg biogramu NIK objął funkcję we wrześniu 2025 r."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1995/59/ogl",
+     "https://www.nik.gov.pl/o-nik/kierownictwo-nik/",
+     "https://eli.gov.pl/eli/MP/2025/1001/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1002/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-kolegium-nik": {
+   "id": "pl-kolegium-nik",
+   "type": "advisory",
+   "subtype": "council",
+   "sector": "independent",
+   "ring": "satellite",
+   "name": "Kolegium Najwyższej Izby Kontroli",
+   "shortName": "Kolegium NIK",
+   "description": "Organ kolegialny NIK: Prezes NIK (przewodniczący), wiceprezesi, dyrektor generalny oraz 14 członków powoływanych przez Marszałka Sejmu na wniosek Prezesa NIK na 3 lata (art. 22 ustawy o NIK). Zatwierdza analizę wykonania budżetu państwa i sprawozdanie z działalności NIK, uchwala opinię w sprawie absolutorium dla RM, projekt statutu, budżetu i plan pracy (art. 23).",
+   "aliases": [
+    "Kolegium NIK"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 22–23 (Dz.U. 2022 poz. 623 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+    "act": "DU/1995/59",
+    "article": "art. 22–23"
+   },
+   "officialUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/",
+   "bipUrl": "https://bip.nik.gov.pl",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nik",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 19,
+   "status": "active",
+   "statusNote": "Strona NIK (stan 11.03.2026) wymienia 6 z 7 przedstawicieli nauk oraz 7 przedstawicieli jednostek NIK; członkowie z urzędu (Prezes, wiceprezesi, DG) ujęci na węzłach NIK/Prezes NIK. Daty powołania członków nie są podane.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-patrycja-zawadzka",
+      "name": "Patrycja Zawadzka",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "przedstawiciel nauk prawnych lub ekonomicznych"
+     },
+     {
+      "id": "pl-adam-marianski",
+      "name": "Adam Mariański",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "przedstawiciel nauk prawnych lub ekonomicznych"
+     },
+     {
+      "id": "pl-mariusz-jablonski",
+      "name": "Mariusz Jabłoński",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "przedstawiciel nauk prawnych lub ekonomicznych"
+     },
+     {
+      "id": "pl-karol-bielski",
+      "name": "Karol Bielski",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "przedstawiciel nauk prawnych lub ekonomicznych"
+     },
+     {
+      "id": "pl-czeslaw-martysz",
+      "name": "Czesław Martysz",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "przedstawiciel nauk prawnych lub ekonomicznych"
+     },
+     {
+      "id": "pl-dawid-szescilo",
+      "name": "Dawid Sześciło",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "przedstawiciel nauk prawnych lub ekonomicznych"
+     },
+     {
+      "id": "pl-grzegorz-walendzik",
+      "name": "Grzegorz Walendzik",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "radca Prezesa NIK, p.o. dyrektor Delegatury w Kielcach"
+     },
+     {
+      "id": "pl-janusz-pawelczyk",
+      "name": "Janusz Pawelczyk",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "radca Prezesa NIK, p.o. dyrektor Delegatury w Białymstoku"
+     },
+     {
+      "id": "pl-tomasz-sobecki",
+      "name": "Tomasz Sobecki",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "radca Prezesa NIK, p.o. dyrektor Delegatury w Bydgoszczy"
+     },
+     {
+      "id": "pl-piotr-walczak",
+      "name": "Piotr Walczak",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "radca Prezesa NIK, p.o. dyrektor Delegatury w Łodzi"
+     },
+     {
+      "id": "pl-agnieszka-rejmer-kopania",
+      "name": "Agnieszka Rejmer-Kopania",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "radca Prezesa NIK"
+     },
+     {
+      "id": "pl-malgorzata-humel-maciewiczak",
+      "name": "Małgorzata Humel-Maciewiczak",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "radca Prezesa NIK"
+     },
+     {
+      "id": "pl-grzegorz-haber",
+      "name": "Grzegorz Haber",
+      "positionId": "pl-czlonek-kolegium-nik",
+      "positionName": "Członek Kolegium NIK",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+      "startedAtSource": null,
+      "note": "radca Prezesa NIK"
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/59/ogl",
+     "https://www.nik.gov.pl/o-nik/kolegium-nik/czlonkowie-kolegium-nik.html",
+     "https://www.nik.gov.pl/o-nik/kolegium-nik/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-biuro-rpo": {
+   "id": "pl-biuro-rpo",
+   "type": "department",
+   "subtype": "oversight_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Biuro Rzecznika Praw Obywatelskich",
+   "shortName": "Biuro RPO",
+   "description": "Urząd, przy pomocy którego Rzecznik Praw Obywatelskich wykonuje swoje zadania (art. 20 ust. 1 ustawy o RPO). Rzecznik stoi na straży wolności i praw człowieka i obywatela (art. 208 Konstytucji RP), pełni funkcję krajowego mechanizmu prewencji tortur i organu ds. równego traktowania. Statut Biura nadaje Rzecznik; może powołać do trzech zastępców.",
+   "aliases": [
+    "Biuro RPO",
+    "BRPO"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 15 lipca 1987 r. o Rzeczniku Praw Obywatelskich, art. 20 (Dz.U. 2024 poz. 1264 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1987/123/ogl",
+    "act": "DU/1987/123",
+    "article": "art. 20"
+   },
+   "officialUrl": "https://bip.brpo.gov.pl",
+   "bipUrl": "https://bip.brpo.gov.pl",
+   "regon": null,
+   "budgetPart": "08",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-rpo",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-stanislaw-trociuk",
+      "name": "Stanisław Trociuk",
+      "positionId": "pl-zastepca-rpo",
+      "positionName": "Zastępca Rzecznika Praw Obywatelskich",
+      "type": "appointed",
+      "startedAt": "2002-01-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://bip.brpo.gov.pl/pl/content/zastepcy-rpo",
+      "startedAtSource": "https://bip.brpo.gov.pl/pl/content/zastepcy-rpo",
+      "note": "Wg BIP RPO pełni funkcję Zastępcy RPO od 1 stycznia 2002 r."
+     },
+     {
+      "id": "pl-adam-krzywon",
+      "name": "Adam Krzywoń",
+      "positionId": "pl-zastepca-rpo",
+      "positionName": "Zastępca Rzecznika Praw Obywatelskich",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://bip.brpo.gov.pl/pl/content/zastepcy-rpo",
+      "startedAtSource": null,
+      "note": "BIP RPO nie podaje daty powołania."
+     },
+     {
+      "id": "pl-anna-blaszczak-banasiak",
+      "name": "Anna Błaszczak-Banasiak",
+      "positionId": "pl-zastepca-rpo",
+      "positionName": "Zastępczyni Rzecznika Praw Obywatelskich",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://bip.brpo.gov.pl/pl/content/zastepcy-rpo",
+      "startedAtSource": null,
+      "note": "BIP RPO nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1987/123/ogl",
+     "https://bip.brpo.gov.pl/pl/content/rzecznik-i-biuro",
+     "https://bip.brpo.gov.pl/pl/content/zastepcy-rpo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rpo": {
+   "id": "pl-rpo",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Rzecznik Praw Obywatelskich",
+   "shortName": "RPO",
+   "description": "Konstytucyjny organ stojący na straży wolności i praw człowieka i obywatela (art. 208 Konstytucji RP). Powoływany przez Sejm za zgodą Senatu na 5 lat, na wniosek Marszałka Sejmu albo grupy 35 posłów (art. 209 ust. 1 Konstytucji, art. 3 ustawy o RPO); niezawisły, niezależny od innych organów, odpowiada tylko przed Sejmem (art. 210).",
+   "aliases": [
+    "RPO",
+    "Ombudsman"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 208–212",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 208–212"
+   },
+   "officialUrl": "https://bip.brpo.gov.pl/pl/content/rzecznik-i-biuro",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-biuro-rpo",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-sylwia-gregorczyk-abram",
+      "name": "Sylwia Gregorczyk-Abram",
+      "positionId": "pl-rpo",
+      "positionName": "Rzecznik Praw Obywatelskich",
+      "type": "appointed",
+      "startedAt": "2026-07",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://bip.brpo.gov.pl/pl/content/rzecznik-i-biuro",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/736/ogl",
+      "note": "RPO IX kadencji. Powołana uchwałą Sejmu z 17.07.2026 (M.P. 2026 poz. 736), zgoda Senatu 22.07.2026 (M.P. 2026 poz. 737); data ślubowania nieustalona."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1987/123/ogl",
+     "https://bip.brpo.gov.pl/pl/content/rzecznik-i-biuro",
+     "https://eli.gov.pl/eli/MP/2026/736/ogl",
+     "https://eli.gov.pl/eli/MP/2026/737/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-biuro-rpd": {
+   "id": "pl-biuro-rpd",
+   "type": "department",
+   "subtype": "oversight_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Biuro Rzecznika Praw Dziecka",
+   "shortName": "Biuro RPD",
+   "description": "Urząd, przy pomocy którego Rzecznik Praw Dziecka wykonuje swoje zadania (art. 13 ust. 1 ustawy o RPD). Rzecznik stoi na straży praw dziecka określonych w Konstytucji RP, Konwencji o prawach dziecka i innych przepisach (art. 1 ust. 2 ustawy; art. 72 ust. 4 Konstytucji). Statut Biura nadaje Rzecznik; może powołać zastępcę Rzecznika.",
+   "aliases": [
+    "Biuro RPD",
+    "BRPD"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 stycznia 2000 r. o Rzeczniku Praw Dziecka, art. 13 (Dz.U. 2023 poz. 292 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2000/69/ogl",
+    "act": "DU/2000/69",
+    "article": "art. 13"
+   },
+   "officialUrl": "https://brpd.gov.pl",
+   "bipUrl": "https://bip.brpd.gov.pl",
+   "regon": null,
+   "budgetPart": "14",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-rpd",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": "Strona 'Struktura organizacyjna' BRPD (17.09.2026) nie wymienia ustawowego zastępcy Rzecznika (art. 13 ust. 3); wymienia 'Eksperta – Społecznego Zastępcę RPD' (Jan Gawroński) i Dyrektora Generalnego (Anna Figurniak) – funkcje pozaustawowe/urzędnicze, pominięte.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2000/69/ogl",
+     "https://brpd.gov.pl/struktura-organizacyjna/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rpd": {
+   "id": "pl-rpd",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Rzecznik Praw Dziecka",
+   "shortName": "RPD",
+   "description": "Organ stojący na straży praw dziecka, przewidziany w art. 72 ust. 4 Konstytucji RP i ustanowiony ustawą z 6 stycznia 2000 r. Powoływany przez Sejm za zgodą Senatu na 5-letnią kadencję, na wniosek Marszałka Sejmu, Marszałka Senatu, grupy co najmniej 35 posłów lub 15 senatorów (art. 4 ust. 1 ustawy o RPD); niezależny od innych organów państwowych.",
+   "aliases": [
+    "RPD",
+    "Rzeczniczka Praw Dziecka"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 6 stycznia 2000 r. o Rzeczniku Praw Dziecka, art. 4 ust. 1 (Dz.U. 2023 poz. 292 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2000/69/ogl",
+    "act": "DU/2000/69",
+    "article": "art. 4 ust. 1"
+   },
+   "officialUrl": "https://brpd.gov.pl/o-rzeczniczce/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-biuro-rpd",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-monika-horna-cieslak",
+      "name": "Monika Horna-Cieślak",
+      "positionId": "pl-rpd",
+      "positionName": "Rzecznik Praw Dziecka",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://brpd.gov.pl/o-rzeczniczce/",
+      "startedAtSource": "https://brpd.gov.pl/o-rzeczniczce/",
+      "note": "Powołana uchwałą Sejmu z 28.11.2023 (M.P. 2023 poz. 1357), zgoda Senatu 30.11.2023 (M.P. 2023 poz. 1358); wg brpd.gov.pl objęła urząd 20.12.2023."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/2000/69/ogl",
+     "https://brpd.gov.pl/o-rzeczniczce/",
+     "https://eli.gov.pl/eli/MP/2023/1357/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1358/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-krrit": {
+   "id": "pl-krrit",
+   "type": "commission",
+   "subtype": "regulatory_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Krajowa Rada Radiofonii i Telewizji",
+   "shortName": "KRRiT",
+   "description": "Konstytucyjny organ stojący na straży wolności słowa, prawa do informacji oraz interesu publicznego w radiofonii i telewizji (art. 213 Konstytucji RP, art. 5–6 ustawy o rtv). Pięciu członków powołują: Sejm (2), Senat (1) i Prezydent RP (2) na 6-letnią kadencję (art. 7 ust. 1). Udziela koncesji, prowadzi rejestr programów i kontroluje dostawców usług medialnych.",
+   "aliases": [
+    "KRRiT",
+    "Krajowa Rada"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 213–215",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 213–215"
+   },
+   "officialUrl": "https://www.gov.pl/web/krrit",
+   "bipUrl": "https://www.gov.pl/web/krrit/informacje-bip",
+   "regon": null,
+   "budgetPart": "09",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-przewodniczacy-krrit",
+   "headOf": null,
+   "seatsCount": 5,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-agnieszka-glapiak",
+      "name": "Agnieszka Glapiak",
+      "positionId": "pl-przewodniczacy-krrit",
+      "positionName": "Przewodnicząca KRRiT (członek powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2022-09-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/906/ogl",
+      "note": "Członek KRRiT od 15.09.2022 (uchwała Sejmu, M.P. 2022 poz. 906)."
+     },
+     {
+      "id": "pl-hanna-karp",
+      "name": "Hanna Karp",
+      "positionId": "pl-czlonek-krrit",
+      "positionName": "Zastępca Przewodniczącego KRRiT (członek powołany przez Prezydenta RP)",
+      "type": "appointed",
+      "startedAt": "2022-10-03",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/964/ogl",
+      "note": "Powołana przez Prezydenta RP 3.10.2022 (M.P. 2022 poz. 964)."
+     },
+     {
+      "id": "pl-tadeusz-kowalski",
+      "name": "Tadeusz Kowalski",
+      "positionId": "pl-czlonek-krrit",
+      "positionName": "Członek KRRiT (powołany przez Senat)",
+      "type": "appointed",
+      "startedAt": "2022-08-04",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/762/ogl",
+      "note": "Powołany uchwałą Senatu z 4.08.2022 (M.P. 2022 poz. 762)."
+     },
+     {
+      "id": "pl-marzena-paczuska",
+      "name": "Marzena Paczuska",
+      "positionId": "pl-czlonek-krrit",
+      "positionName": "Członek KRRiT (powołana przez Prezydenta RP)",
+      "type": "appointed",
+      "startedAt": "2022-10-03",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/964/ogl",
+      "note": "W M.P. 2022 poz. 964 jako Marzena Ewa Paczuska-Tętnik."
+     },
+     {
+      "id": "pl-maciej-swirski",
+      "name": "Maciej Świrski",
+      "positionId": "pl-czlonek-krrit",
+      "positionName": "Członek KRRiT (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2022-09-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/907/ogl",
+      "note": "Przewodniczący KRRiT 2022–2025; uchwała Sejmu z 25.07.2025 o pociągnięciu do odpowiedzialności przed Trybunałem Stanu (M.P. 2025 poz. 706)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1993/34/ogl",
+     "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+     "https://eli.gov.pl/eli/MP/2022/906/ogl",
+     "https://eli.gov.pl/eli/MP/2022/907/ogl",
+     "https://eli.gov.pl/eli/MP/2022/762/ogl",
+     "https://eli.gov.pl/eli/MP/2022/964/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-przewodniczacy-krrit": {
+   "id": "pl-przewodniczacy-krrit",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Przewodniczący Krajowej Rady Radiofonii i Telewizji",
+   "shortName": "Przewodniczący KRRiT",
+   "description": "Kieruje pracami Krajowej Rady, reprezentuje ją i wydaje decyzje na podstawie uchwał Rady (art. 10 ustawy o rtv). Wybierany ze swojego grona i odwoływany przez członków Krajowej Rady (art. 7 ust. 2b ustawy o radiofonii i telewizji).",
+   "aliases": [
+    "Przewodniczący KRRiT",
+    "Przewodnicząca KRRiT"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 29 grudnia 1992 r. o radiofonii i telewizji, art. 7 ust. 2b (Dz.U. 2022 poz. 1722 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1993/34/ogl",
+    "act": "DU/1993/34",
+    "article": "art. 7 ust. 2b"
+   },
+   "officialUrl": "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-krrit",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-agnieszka-glapiak",
+      "name": "Agnieszka Glapiak",
+      "positionId": "pl-przewodniczacy-krrit",
+      "positionName": "Przewodnicząca KRRiT",
+      "type": "appointed",
+      "startedAt": "2025-07-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+      "startedAtSource": "https://pl.wikipedia.org/wiki/Agnieszka_Glapiak",
+      "note": "Strona gov.pl/web/krrit potwierdza funkcję Przewodniczącej (bez daty). Data wyboru 28.07.2025 (po odwołaniu M. Świrskiego) tylko ze źródła wtórnego (Wikipedia, CC BY-SA) – do potwierdzenia w komunikacie KRRiT."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1993/34/ogl",
+     "https://www.gov.pl/web/krrit/czlonkowie-krrit",
+     "https://www.gov.pl/web/krrit/aktualnosci"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-nbp": {
+   "id": "pl-nbp",
+   "type": "department",
+   "subtype": "state_legal_person",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Narodowy Bank Polski",
+   "shortName": "NBP",
+   "description": "Bank centralny Rzeczypospolitej Polskiej z osobowością prawną; ma wyłączne prawo emisji pieniądza oraz ustalania i realizowania polityki pieniężnej, odpowiada za wartość polskiego pieniądza (art. 227 ust. 1 Konstytucji RP, art. 1–3 ustawy o NBP). Organami NBP są Prezes NBP, Rada Polityki Pieniężnej i Zarząd NBP (art. 6 ustawy).",
+   "aliases": [
+    "NBP",
+    "bank centralny"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 227",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 227"
+   },
+   "officialUrl": "https://nbp.pl",
+   "bipUrl": "https://bip.nbp.pl",
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-prezes-nbp",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": "Serwisy nbp.pl i bip.nbp.pl blokują automatyczny dostęp ('Pardon Our Interruption'); skład organów ustalono na podstawie aktów w Monitorze Polskim (ELI) i cross-checku w Wikidata.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1997/938/ogl",
+     "https://nbp.pl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-prezes-nbp": {
+   "id": "pl-prezes-nbp",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Prezes Narodowego Banku Polskiego",
+   "shortName": "Prezes NBP",
+   "description": "Organ NBP: przewodniczy Radzie Polityki Pieniężnej i Zarządowi NBP, reprezentuje bank na zewnątrz i jest przełożonym wszystkich pracowników NBP (art. 11 ustawy o NBP). Powoływany przez Sejm na wniosek Prezydenta RP na 6-letnią kadencję, najwyżej dwukrotnie (art. 227 ust. 3 Konstytucji RP, art. 9 ustawy).",
+   "aliases": [
+    "Prezes NBP"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 227 ust. 3",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 227 ust. 3"
+   },
+   "officialUrl": "https://nbp.pl",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-nbp",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-adam-glapinski",
+      "name": "Adam Glapiński",
+      "positionId": "pl-prezes-nbp",
+      "positionName": "Prezes Narodowego Banku Polskiego",
+      "type": "appointed",
+      "startedAt": "2022-05",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/484/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/484/ogl",
+      "note": "Druga kadencja: uchwała Sejmu z 12.05.2022 o powołaniu na stanowisko Prezesa NBP (M.P. 2022 poz. 484); pierwsza kadencja od 2016 r. (Wikidata Q9139594: P39 od 21.06.2016, cross-check). Strona nbp.pl niedostępna dla botów – bez potwierdzenia bieżącego stanu na stronie NBP."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1997/938/ogl",
+     "https://eli.gov.pl/eli/MP/2022/484/ogl",
+     "https://www.wikidata.org/wiki/Q9139594"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-rada-polityki-pienieznej": {
+   "id": "pl-rada-polityki-pienieznej",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "independent",
+   "ring": "satellite",
+   "name": "Rada Polityki Pieniężnej",
+   "shortName": "RPP",
+   "description": "Organ NBP ustalający corocznie założenia polityki pieniężnej i podejmujący decyzje o stopach procentowych (art. 227 ust. 6 Konstytucji RP, art. 12 ustawy o NBP). W jej skład wchodzą Prezes NBP jako przewodniczący oraz 9 członków powoływanych w równej liczbie przez Prezydenta RP, Sejm i Senat na jedną 6-letnią kadencję (art. 227 ust. 5 Konstytucji, art. 13 ustawy).",
+   "aliases": [
+    "RPP"
+   ],
+   "legalSource": {
+    "title": "Konstytucja RP, art. 227 ust. 5–6",
+    "url": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+    "act": "DU/1997/483",
+    "article": "art. 227 ust. 5–6"
+   },
+   "officialUrl": "https://nbp.pl",
+   "bipUrl": "https://bip.nbp.pl",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nbp",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 10,
+   "status": "active",
+   "statusNote": "Skład (9 członków + Prezes NBP) ustalony wyłącznie na podstawie uchwał Sejmu/Senatu i postanowień Prezydenta RP w M.P. (2022–2026); strona NBP niedostępna dla botów. Daty = data aktu powołania lub data objęcia wskazana w akcie.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-ireneusz-dabrowski",
+      "name": "Ireneusz Dąbrowski",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Prezydent RP)",
+      "type": "appointed",
+      "startedAt": "2022-02-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/282/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/282/ogl",
+      "note": "Powołany przez Prezydenta RP z dniem 21.02.2022 (M.P. 2022 poz. 282)."
+     },
+     {
+      "id": "pl-henryk-wnorowski",
+      "name": "Henryk Wnorowski",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Prezydent RP)",
+      "type": "appointed",
+      "startedAt": "2022-02-21",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/282/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/282/ogl",
+      "note": "Powołany przez Prezydenta RP z dniem 21.02.2022 (M.P. 2022 poz. 282)."
+     },
+     {
+      "id": "pl-marcin-zarzecki",
+      "name": "Marcin Zarzecki",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Prezydent RP)",
+      "type": "appointed",
+      "startedAt": "2025-12-22",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2026/59/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2026/59/ogl",
+      "note": "Powołany przez Prezydenta RP z dniem 22.12.2025 (M.P. 2026 poz. 59)."
+     },
+     {
+      "id": "pl-wieslaw-janczyk",
+      "name": "Wiesław Janczyk",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2022-02-09",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/212/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/212/ogl",
+      "note": "Uchwała Sejmu z 9.02.2022 (M.P. 2022 poz. 212)."
+     },
+     {
+      "id": "pl-iwona-duda",
+      "name": "Iwona Duda",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2022-10-06",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/971/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/971/ogl",
+      "note": "Uchwała Sejmu z 6.10.2022 (M.P. 2022 poz. 971)."
+     },
+     {
+      "id": "pl-gabriela-maslowska",
+      "name": "Gabriela Masłowska",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2022-10-06",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/972/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/972/ogl",
+      "note": "Uchwała Sejmu z 6.10.2022 (M.P. 2022 poz. 972)."
+     },
+     {
+      "id": "pl-ludwik-kotecki",
+      "name": "Ludwik Kotecki",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Senat)",
+      "type": "appointed",
+      "startedAt": "2022-01-12",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/39/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/39/ogl",
+      "note": "Uchwała Senatu z 12.01.2022 (M.P. 2022 poz. 39)."
+     },
+     {
+      "id": "pl-przemyslaw-litwiniuk",
+      "name": "Przemysław Litwiniuk",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Senat)",
+      "type": "appointed",
+      "startedAt": "2022-01-12",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/39/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/39/ogl",
+      "note": "Uchwała Senatu z 12.01.2022 (M.P. 2022 poz. 39)."
+     },
+     {
+      "id": "pl-joanna-tyrowicz",
+      "name": "Joanna Tyrowicz",
+      "positionId": "pl-czlonek-rpp",
+      "positionName": "Członek Rady Polityki Pieniężnej (powołany przez Senat)",
+      "type": "appointed",
+      "startedAt": "2022-09-07",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/874/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/874/ogl",
+      "note": "Uchwała Senatu z 7.09.2022 (M.P. 2022 poz. 874)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1997/938/ogl",
+     "https://eli.gov.pl/eli/MP/2022/282/ogl",
+     "https://eli.gov.pl/eli/MP/2026/59/ogl",
+     "https://eli.gov.pl/eli/MP/2022/212/ogl",
+     "https://eli.gov.pl/eli/MP/2022/971/ogl",
+     "https://eli.gov.pl/eli/MP/2022/972/ogl",
+     "https://eli.gov.pl/eli/MP/2022/39/ogl",
+     "https://eli.gov.pl/eli/MP/2022/874/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-zarzad-nbp": {
+   "id": "pl-zarzad-nbp",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "independent",
+   "ring": "satellite",
+   "name": "Zarząd Narodowego Banku Polskiego",
+   "shortName": "Zarząd NBP",
+   "description": "Organ NBP kierujący działalnością banku i realizujący uchwały Rady Polityki Pieniężnej (art. 17 ustawy o NBP). W skład Zarządu wchodzą Prezes NBP jako przewodniczący oraz 6–8 członków, w tym 2 wiceprezesów NBP; członków powołuje i odwołuje Prezydent RP na wniosek Prezesa NBP na 6 lat (art. 17 ust. 2–2b).",
+   "aliases": [
+    "Zarząd NBP"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 29 sierpnia 1997 r. o Narodowym Banku Polskim, art. 17 (Dz.U. 2022 poz. 2025 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1997/938/ogl",
+    "act": "DU/1997/938",
+    "article": "art. 17"
+   },
+   "officialUrl": "https://nbp.pl",
+   "bipUrl": "https://bip.nbp.pl",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-nbp",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 9,
+   "status": "unverified",
+   "statusNote": "Skład odtworzony z postanowień Prezydenta RP w M.P. (brak nowych powołań w M.P. w latach 2024–2026); kadencje M. Kightley (od 8.03.2020, I zastępca Prezesa) i P. Pogonowskiego (od 1.03.2020) upłynęły w marcu 2026 i nie znaleziono aktów ponownego powołania – pominięci. Ewentualne rezygnacje/odwołania nieweryfikowalne (nbp.pl blokuje boty).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-adam-lipinski",
+      "name": "Adam Lipiński",
+      "positionId": "pl-czlonek-zarzadu-nbp",
+      "positionName": "Wiceprezes NBP, członek Zarządu NBP",
+      "type": "appointed",
+      "startedAt": "2020-11-04",
+      "acting": false,
+      "status": "unverified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2020/907/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2020/907/ogl",
+      "note": "Powołany z dniem 4.11.2020 na członka Zarządu i Wiceprezesa NBP (M.P. 2020 poz. 907); kadencja 6 lat."
+     },
+     {
+      "id": "pl-marta-gajecka",
+      "name": "Marta Gajęcka",
+      "positionId": "pl-czlonek-zarzadu-nbp",
+      "positionName": "Członek Zarządu NBP",
+      "type": "appointed",
+      "startedAt": "2021-01-01",
+      "acting": false,
+      "status": "unverified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2020/906/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2020/906/ogl",
+      "note": "Powołana z dniem 1.01.2021 (M.P. 2020 poz. 906)."
+     },
+     {
+      "id": "pl-rafal-sura",
+      "name": "Rafał Sura",
+      "positionId": "pl-czlonek-zarzadu-nbp",
+      "positionName": "Członek Zarządu NBP",
+      "type": "appointed",
+      "startedAt": "2022-07",
+      "acting": false,
+      "status": "unverified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/787/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/787/ogl",
+      "note": "Postanowienie Prezydenta RP z 28.07.2022 (M.P. 2022 poz. 787)."
+     },
+     {
+      "id": "pl-pawel-mucha",
+      "name": "Paweł Mucha",
+      "positionId": "pl-czlonek-zarzadu-nbp",
+      "positionName": "Członek Zarządu NBP",
+      "type": "appointed",
+      "startedAt": "2022-09-01",
+      "acting": false,
+      "status": "unverified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/848/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/848/ogl",
+      "note": "Powołany z dniem 1.09.2022 (M.P. 2022 poz. 848)."
+     },
+     {
+      "id": "pl-pawel-szalamacha",
+      "name": "Paweł Szałamacha",
+      "positionId": "pl-czlonek-zarzadu-nbp",
+      "positionName": "Członek Zarządu NBP",
+      "type": "appointed",
+      "startedAt": "2022-10",
+      "acting": false,
+      "status": "unverified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2022/1190/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/1190/ogl",
+      "note": "Postanowienie Prezydenta RP z 12.10.2022 (M.P. 2022 poz. 1190)."
+     },
+     {
+      "id": "pl-artur-sobon",
+      "name": "Artur Soboń",
+      "positionId": "pl-czlonek-zarzadu-nbp",
+      "positionName": "Członek Zarządu NBP",
+      "type": "appointed",
+      "startedAt": "2023-12",
+      "acting": false,
+      "status": "unverified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://eli.gov.pl/eli/MP/2023/1408/ogl",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1408/ogl",
+      "note": "Postanowienie Prezydenta RP z 6.12.2023 (M.P. 2023 poz. 1408)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/938/ogl",
+     "https://eli.gov.pl/eli/MP/2020/907/ogl",
+     "https://eli.gov.pl/eli/MP/2020/906/ogl",
+     "https://eli.gov.pl/eli/MP/2022/787/ogl",
+     "https://eli.gov.pl/eli/MP/2022/848/ogl",
+     "https://eli.gov.pl/eli/MP/2022/1190/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1408/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-pkw": {
+   "id": "pl-pkw",
+   "type": "commission",
+   "subtype": "oversight_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Państwowa Komisja Wyborcza",
+   "shortName": "PKW",
+   "description": "Stały najwyższy organ wyborczy właściwy w sprawach przeprowadzania wyborów i referendów (art. 157 § 1 Kodeksu wyborczego). Dziewięciu członków powołuje Prezydent RP: po jednym sędzim TK i NSA wskazanym przez Prezesów tych sądów (kadencja 9 lat) oraz 7 osób wskazanych przez Sejm proporcjonalnie do klubów (kadencja Sejmu) – art. 157 § 2–3.",
+   "aliases": [
+    "PKW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 157 (Dz.U. 2025 poz. 365 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+    "act": "DU/2011/112",
+    "article": "art. 157"
+   },
+   "officialUrl": "https://pkw.gov.pl",
+   "bipUrl": "https://pkw.gov.pl/bip",
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-przewodniczacy-pkw",
+   "headOf": null,
+   "seatsCount": 9,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-sylwester-marciniak",
+      "name": "Sylwester Marciniak",
+      "positionId": "pl-przewodniczacy-pkw",
+      "positionName": "Przewodniczący PKW (sędzia NSA, wskazany przez Prezesa NSA)",
+      "type": "appointed",
+      "startedAt": "2020-01-17",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2020/100/ogl",
+      "note": "Powołany w skład PKW postanowieniem Prezydenta RP z 17.01.2020 (M.P. 2020 poz. 100); kadencja 9 lat."
+     },
+     {
+      "id": "pl-wojciech-sych",
+      "name": "Wojciech Sych",
+      "positionId": "pl-czlonek-pkw",
+      "positionName": "Zastępca Przewodniczącego PKW (sędzia TK, wskazany przez Prezesa TK)",
+      "type": "appointed",
+      "startedAt": "2019-07-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2019/894/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 15.07.2019 (M.P. 2019 poz. 894); kadencja 9 lat."
+     },
+     {
+      "id": "pl-konrad-skladowski",
+      "name": "Konrad Składowski",
+      "positionId": "pl-czlonek-pkw",
+      "positionName": "Zastępca Przewodniczącego PKW (wskazany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-03-14",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/203/ogl",
+      "note": "Powołany z dniem 14.03.2024 (M.P. 2024 poz. 203); wybrany Zastępcą Przewodniczącego 21.04.2024 (M.P. 2024 poz. 356)."
+     },
+     {
+      "id": "pl-ryszard-balicki",
+      "name": "Ryszard Balicki",
+      "positionId": "pl-czlonek-pkw",
+      "positionName": "Członek PKW (wskazany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-03-14",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/203/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 5.03.2024 z dniem 14.03.2024 (M.P. 2024 poz. 203); kadencja odpowiada kadencji Sejmu."
+     },
+     {
+      "id": "pl-pawel-gieras",
+      "name": "Paweł Gieras",
+      "positionId": "pl-czlonek-pkw",
+      "positionName": "Członek PKW (wskazany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-03-14",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/203/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 5.03.2024 z dniem 14.03.2024 (M.P. 2024 poz. 203); kadencja odpowiada kadencji Sejmu."
+     },
+     {
+      "id": "pl-ryszard-kalisz",
+      "name": "Ryszard Kalisz",
+      "positionId": "pl-czlonek-pkw",
+      "positionName": "Członek PKW (wskazany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-03-14",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/203/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 5.03.2024 z dniem 14.03.2024 (M.P. 2024 poz. 203); kadencja odpowiada kadencji Sejmu."
+     },
+     {
+      "id": "pl-maciej-klis",
+      "name": "Maciej Kliś",
+      "positionId": "pl-czlonek-pkw",
+      "positionName": "Członek PKW (wskazany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-03-14",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/203/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 5.03.2024 z dniem 14.03.2024 (M.P. 2024 poz. 203); kadencja odpowiada kadencji Sejmu."
+     },
+     {
+      "id": "pl-arkadiusz-pikulik",
+      "name": "Arkadiusz Pikulik",
+      "positionId": "pl-czlonek-pkw",
+      "positionName": "Członek PKW (wskazany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-03-14",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/203/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 5.03.2024 z dniem 14.03.2024 (M.P. 2024 poz. 203); kadencja odpowiada kadencji Sejmu."
+     },
+     {
+      "id": "pl-miroslaw-suski",
+      "name": "Mirosław Suski",
+      "positionId": "pl-czlonek-pkw",
+      "positionName": "Członek PKW (wskazany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-03-14",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/203/ogl",
+      "note": "Powołany postanowieniem Prezydenta RP z 5.03.2024 z dniem 14.03.2024 (M.P. 2024 poz. 203); kadencja odpowiada kadencji Sejmu."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl",
+     "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+     "https://eli.gov.pl/eli/MP/2024/203/ogl",
+     "https://eli.gov.pl/eli/MP/2020/100/ogl",
+     "https://eli.gov.pl/eli/MP/2019/894/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-przewodniczacy-pkw": {
+   "id": "pl-przewodniczacy-pkw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Przewodniczący Państwowej Komisji Wyborczej",
+   "shortName": "Przewodniczący PKW",
+   "description": "Wybierany przez PKW ze swojego składu; funkcję może pełnić wyłącznie sędzia TK lub NSA powołany w trybie art. 157 § 2 pkt 1–2 Kodeksu wyborczego (art. 157 § 5). Kieruje pracami Komisji i reprezentuje ją na zewnątrz.",
+   "aliases": [
+    "Przewodniczący PKW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 157 § 5 (Dz.U. 2025 poz. 365 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+    "act": "DU/2011/112",
+    "article": "art. 157 § 5"
+   },
+   "officialUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-pkw",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-sylwester-marciniak",
+      "name": "Sylwester Marciniak",
+      "positionId": "pl-przewodniczacy-pkw",
+      "positionName": "Przewodniczący Państwowej Komisji Wyborczej",
+      "type": "appointed",
+      "startedAt": "2020-02-11",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2020/200/ogl",
+      "note": "Wybrany Przewodniczącym PKW uchwałą nr 10/2020 PKW z 11.02.2020 (M.P. 2020 poz. 200)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl",
+     "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+     "https://eli.gov.pl/eli/MP/2020/200/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-kbw": {
+   "id": "pl-kbw",
+   "type": "department",
+   "subtype": "other",
+   "sector": "independent",
+   "ring": "satellite",
+   "name": "Krajowe Biuro Wyborcze",
+   "shortName": "KBW",
+   "description": "Urząd zapewniający obsługę Państwowej Komisji Wyborczej, komisarzy wyborczych, Korpusu Urzędników Wyborczych i innych organów wyborczych oraz warunki organizacyjno-administracyjne, finansowe i techniczne wyborów i referendów (art. 187 Kodeksu wyborczego). Kieruje nim Szef KBW, organ wykonawczy PKW; dysponent części 11 budżetu państwa.",
+   "aliases": [
+    "KBW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 187 (Dz.U. 2025 poz. 365 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+    "act": "DU/2011/112",
+    "article": "art. 187"
+   },
+   "officialUrl": "https://pkw.gov.pl/kbw/informacje-kbw",
+   "bipUrl": "https://pkw.gov.pl/bip",
+   "regon": null,
+   "budgetPart": "11",
+   "parent": "pl-pkw",
+   "level": 2,
+   "children": [],
+   "head": "pl-szef-kbw",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl",
+     "https://pkw.gov.pl/kbw/informacje-kbw"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-szef-kbw": {
+   "id": "pl-szef-kbw",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "satellite",
+   "name": "Szef Krajowego Biura Wyborczego",
+   "shortName": "Szef KBW",
+   "description": "Organ wykonawczy Państwowej Komisji Wyborczej, pełni z urzędu funkcję sekretarza PKW (art. 157 § 6, art. 190 § 1 Kodeksu wyborczego). Powoływany przez PKW na 7 lat spośród trzech kandydatów przedstawionych przez ministra właściwego do spraw wewnętrznych (art. 190 § 2–2b).",
+   "aliases": [
+    "Szef KBW"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 190 (Dz.U. 2025 poz. 365 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+    "act": "DU/2011/112",
+    "article": "art. 190"
+   },
+   "officialUrl": "https://pkw.gov.pl/kbw/informacje-kbw",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-pkw",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": "pl-kbw",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-rafal-tkacz",
+      "name": "Rafał Tkacz",
+      "positionId": "pl-szef-kbw",
+      "positionName": "Szef Krajowego Biura Wyborczego",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkw.gov.pl/organy-wyborcze/sklad-pkw",
+      "startedAtSource": null,
+      "note": "Na stronie 'Skład PKW' jako Sekretarz PKW – Szef KBW; data powołania nie podana."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl",
+     "https://pkw.gov.pl/organy-wyborcze/sklad-pkw"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-uodo": {
+   "id": "pl-uodo",
+   "type": "department",
+   "subtype": "oversight_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Urząd Ochrony Danych Osobowych",
+   "shortName": "UODO",
+   "description": "Urząd, przy pomocy którego Prezes UODO – organ właściwy w sprawie ochrony danych osobowych i organ nadzorczy w rozumieniu RODO – wykonuje swoje zadania (art. 34 i 45 ustawy o ochronie danych osobowych). Statut Urzędu nadaje Prezes w drodze zarządzenia, określając m.in. zakres zadań zastępców.",
+   "aliases": [
+    "UODO"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych, art. 45 (Dz.U. 2019 poz. 1781 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+    "act": "DU/2018/1000",
+    "article": "art. 45"
+   },
+   "officialUrl": "https://uodo.gov.pl",
+   "bipUrl": "https://bip.uodo.gov.pl",
+   "regon": null,
+   "budgetPart": "10",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-prezes-uodo",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-agnieszka-grzelak",
+      "name": "Agnieszka Grzelak",
+      "positionId": "pl-zastepca-prezesa-uodo",
+      "positionName": "Zastępczyni Prezesa Urzędu Ochrony Danych Osobowych",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://uodo.gov.pl/pl/544",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     },
+     {
+      "id": "pl-konrad-komornicki",
+      "name": "Konrad Komornicki",
+      "positionId": "pl-zastepca-prezesa-uodo",
+      "positionName": "Zastępca Prezesa Urzędu Ochrony Danych Osobowych",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://uodo.gov.pl/pl/544",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+     "https://uodo.gov.pl/pl/544"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-uodo": {
+   "id": "pl-prezes-uodo",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Prezes Urzędu Ochrony Danych Osobowych",
+   "shortName": "Prezes UODO",
+   "description": "Organ właściwy w sprawie ochrony danych osobowych oraz organ nadzorczy w rozumieniu RODO i dyrektywy 2016/680; w wykonywaniu zadań podlega tylko ustawie (art. 34 ust. 1–2 i 5 ustawy). Powoływany i odwoływany przez Sejm za zgodą Senatu na 4-letnią kadencję, najwyżej dwukrotnie (art. 34 ust. 3, 6–7).",
+   "aliases": [
+    "Prezes UODO",
+    "PUODO"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych, art. 34 ust. 3 (Dz.U. 2019 poz. 1781 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+    "act": "DU/2018/1000",
+    "article": "art. 34 ust. 3"
+   },
+   "officialUrl": "https://uodo.gov.pl/pl/544",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-uodo",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-miroslaw-wroblewski",
+      "name": "Mirosław Wróblewski",
+      "positionId": "pl-prezes-uodo",
+      "positionName": "Prezes Urzędu Ochrony Danych Osobowych",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://uodo.gov.pl/pl/544",
+      "startedAtSource": "https://uodo.gov.pl/pl/138",
+      "note": "Powołany uchwałą Sejmu z 16.01.2024 (M.P. 2024 poz. 43), zgoda Senatu 17.01.2024 (M.P. 2024 poz. 44); komunikat UODO o złożeniu ślubowania datowany 29.01.2024 (kadencja liczy się od ślubowania)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+     "https://uodo.gov.pl/pl/544",
+     "https://eli.gov.pl/eli/MP/2024/43/ogl",
+     "https://eli.gov.pl/eli/MP/2024/44/ogl",
+     "https://uodo.gov.pl/pl/138"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-ipn": {
+   "id": "pl-ipn",
+   "type": "department",
+   "subtype": "institute",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Instytut Pamięci Narodowej – Komisja Ścigania Zbrodni przeciwko Narodowi Polskiemu",
+   "shortName": "IPN",
+   "description": "Instytucja państwowa gromadząca i udostępniająca archiwa organów bezpieczeństwa PRL, ścigająca zbrodnie nazistowskie i komunistyczne, prowadząca lustrację, badania naukowe i edukację (art. 1 i 8 ustawy o IPN). Finansowany z odrębnej części budżetu państwa; organizację określa statut nadawany przez Prezesa IPN. Kieruje nim Prezes IPN przy pomocy zastępców.",
+   "aliases": [
+    "IPN",
+    "Instytut Pamięci Narodowej"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 8 (Dz.U. 2023 poz. 102 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+    "act": "DU/1998/1016",
+    "article": "art. 8"
+   },
+   "officialUrl": "https://ipn.gov.pl",
+   "bipUrl": "https://archiwum.ipn.gov.pl/pl/bip",
+   "regon": null,
+   "budgetPart": "13",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-prezes-ipn",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-karol-polejowski",
+      "name": "Karol Polejowski",
+      "positionId": "pl-zastepca-prezesa-ipn",
+      "positionName": "Zastępca Prezesa IPN",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/zastepcy-prezesa",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     },
+     {
+      "id": "pl-mateusz-szpytma",
+      "name": "Mateusz Szpytma",
+      "positionId": "pl-zastepca-prezesa-ipn",
+      "positionName": "Zastępca Prezesa IPN",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/zastepcy-prezesa",
+      "startedAtSource": null,
+      "note": "Kandydat Kolegium IPN na Prezesa IPN – Senat 6.08.2026 nie wyraził zgody (M.P. 2026 poz. 778)."
+     },
+     {
+      "id": "pl-krzysztof-szwagrzyk",
+      "name": "Krzysztof Szwagrzyk",
+      "positionId": "pl-zastepca-prezesa-ipn",
+      "positionName": "Zastępca Prezesa IPN",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/zastepcy-prezesa",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+     "https://ipn.gov.pl",
+     "https://ipn.gov.pl/pl/o-ipn/zastepcy-prezesa"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-ipn": {
+   "id": "pl-prezes-ipn",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Prezes Instytutu Pamięci Narodowej",
+   "shortName": "Prezes IPN",
+   "description": "Kieruje Instytutem Pamięci Narodowej i nadaje mu statut (art. 8 ust. 3 ustawy o IPN). Powoływany i odwoływany przez Sejm za zgodą Senatu na 5-letnią kadencję, na wniosek Kolegium IPN, które zgłasza kandydata wyłonionego w publicznym konkursie (art. 10 ust. 1–3); w sprawowaniu urzędu niezależny od organów władzy państwowej (art. 9).",
+   "aliases": [
+    "Prezes IPN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 10 ust. 1 (Dz.U. 2023 poz. 102 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+    "act": "DU/1998/1016",
+    "article": "art. 10 ust. 1"
+   },
+   "officialUrl": "https://ipn.gov.pl/pl/o-ipn/prezes",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-ipn",
+   "seatsCount": 1,
+   "status": "vacant",
+   "statusNote": "Stanowisko nieobsadzone: Karol Nawrocki był Prezesem IPN 2021–2025 (strona IPN), objął urząd Prezydenta RP 6.08.2025. Senat uchwałą z 6.08.2026 nie wyraził zgody na powołanie Mateusza Szpytmy (M.P. 2026 poz. 778). Strona IPN i komunikaty z września 2026 wymieniają tylko trzech zastępców Prezesa; brak informacji o formalnym p.o. Prezesa.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+     "https://ipn.gov.pl/pl/o-ipn/prezes",
+     "https://eli.gov.pl/eli/MP/2026/778/ogl",
+     "https://ipn.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-kolegium-ipn": {
+   "id": "pl-kolegium-ipn",
+   "type": "advisory",
+   "subtype": "council",
+   "sector": "independent",
+   "ring": "satellite",
+   "name": "Kolegium Instytutu Pamięci Narodowej",
+   "shortName": "Kolegium IPN",
+   "description": "Organ opiniodawczo-doradczy Prezesa IPN o 7-letniej kadencji; dziewięciu członków powołują Prezydent RP (2), Sejm (5) i Senat (2) – art. 15 ustawy o IPN. Ogłasza konkurs na Prezesa IPN i zgłasza Sejmowi kandydata na to stanowisko (art. 10 ust. 1 i 3); pierwsze posiedzenie zwołuje Marszałek Sejmu.",
+   "aliases": [
+    "Kolegium IPN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 15 (Dz.U. 2023 poz. 102 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+    "act": "DU/1998/1016",
+    "article": "art. 15"
+   },
+   "officialUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+   "bipUrl": "https://archiwum.ipn.gov.pl/pl/bip",
+   "regon": null,
+   "budgetPart": null,
+   "parent": "pl-ipn",
+   "level": 2,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 9,
+   "status": "active",
+   "statusNote": "Kadencja Kolegium powołanego w czerwcu 2023 r. (na kadencję następującą po kadencji 2016–2023). Funkcje przewodniczącego/zastępców wg strony IPN. Daty = daty aktów powołania w M.P.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-tadeusz-wolsza",
+      "name": "Tadeusz Wolsza",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Przewodniczący Kolegium IPN (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2023-06-16",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/601/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/601/ogl"
+     },
+     {
+      "id": "pl-wojciech-polak",
+      "name": "Wojciech Polak",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Zastępca Przewodniczącego Kolegium IPN (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2023-06-16",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/599/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/599/ogl"
+     },
+     {
+      "id": "pl-mieczyslaw-ryba",
+      "name": "Mieczysław Ryba",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Zastępca Przewodniczącego Kolegium IPN (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2023-06-16",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/600/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/600/ogl"
+     },
+     {
+      "id": "pl-jan-draus",
+      "name": "Jan Draus",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Członek Kolegium IPN (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2023-06-16",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/598/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/598/ogl"
+     },
+     {
+      "id": "pl-krzysztof-wyszkowski",
+      "name": "Krzysztof Wyszkowski",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Członek Kolegium IPN (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2023-06-16",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/602/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/602/ogl"
+     },
+     {
+      "id": "pl-bartosz-machalica",
+      "name": "Bartosz Machalica",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Członek Kolegium IPN (powołany przez Senat)",
+      "type": "appointed",
+      "startedAt": "2023-06-22",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/603/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/603/ogl"
+     },
+     {
+      "id": "pl-grzegorz-motyka",
+      "name": "Grzegorz Motyka",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Członek Kolegium IPN (powołany przez Senat)",
+      "type": "appointed",
+      "startedAt": "2023-06-22",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/603/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/603/ogl"
+     },
+     {
+      "id": "pl-andrzej-nowak",
+      "name": "Andrzej Nowak",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Członek Kolegium IPN (powołany przez Prezydenta RP)",
+      "type": "appointed",
+      "startedAt": "2023-06-27",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/812/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/812/ogl"
+     },
+     {
+      "id": "pl-bronislaw-wildstein",
+      "name": "Bronisław Wildstein",
+      "positionId": "pl-czlonek-kolegium-ipn",
+      "positionName": "Członek Kolegium IPN (powołany przez Prezydenta RP)",
+      "type": "appointed",
+      "startedAt": "2023-06-27",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/812/ogl",
+      "note": "Akt powołania: https://eli.gov.pl/eli/MP/2023/812/ogl"
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+     "https://ipn.gov.pl/pl/o-ipn/kolegium-ipn/sklad-kolegium-ipn",
+     "https://eli.gov.pl/eli/MP/2023/598/ogl",
+     "https://eli.gov.pl/eli/MP/2023/599/ogl",
+     "https://eli.gov.pl/eli/MP/2023/600/ogl",
+     "https://eli.gov.pl/eli/MP/2023/601/ogl",
+     "https://eli.gov.pl/eli/MP/2023/602/ogl",
+     "https://eli.gov.pl/eli/MP/2023/603/ogl",
+     "https://eli.gov.pl/eli/MP/2023/812/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-pip": {
+   "id": "pl-pip",
+   "type": "department",
+   "subtype": "inspection",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Państwowa Inspekcja Pracy",
+   "shortName": "PIP",
+   "description": "Organ nadzoru i kontroli przestrzegania prawa pracy, w szczególności przepisów BHP oraz legalności zatrudnienia (art. 1 ustawy o PIP). Podlega Sejmowi; nadzór nad nią sprawuje Rada Ochrony Pracy (art. 2). Jednostkami organizacyjnymi są Główny Inspektorat Pracy, 16 okręgowych inspektoratów pracy i Ośrodek Szkolenia PIP we Wrocławiu (art. 3).",
+   "aliases": [
+    "PIP",
+    "Państwowa Inspekcja Pracy",
+    "Główny Inspektorat Pracy"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 1–3 (Dz.U. 2024 poz. 1712 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+    "act": "DU/2007/589",
+    "article": "art. 1–3"
+   },
+   "officialUrl": "https://pip.gov.pl",
+   "bipUrl": "https://bip.pip.gov.pl",
+   "regon": null,
+   "budgetPart": "12",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-glowny-inspektor-pracy",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-aneta-gronowicz",
+      "name": "Aneta Gronowicz",
+      "positionId": "pl-zastepca-glownego-inspektora-pracy",
+      "positionName": "Zastępczyni Głównego Inspektora Pracy",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pip.gov.pl/o-nas/kierownictwo",
+      "startedAtSource": null,
+      "note": "Zastępców GIP powołuje Marszałek Sejmu na wniosek GIP (art. 4 ust. 3); strona nie podaje daty."
+     },
+     {
+      "id": "pl-urszula-langer",
+      "name": "Urszula Langer",
+      "positionId": "pl-zastepca-glownego-inspektora-pracy",
+      "positionName": "Zastępczyni Głównego Inspektora Pracy",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pip.gov.pl/o-nas/kierownictwo",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     },
+     {
+      "id": "pl-jaroslaw-lesniewski",
+      "name": "Jarosław Leśniewski",
+      "positionId": "pl-zastepca-glownego-inspektora-pracy",
+      "positionName": "Zastępca Głównego Inspektora Pracy",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pip.gov.pl/o-nas/kierownictwo",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl",
+     "https://pip.gov.pl/o-nas/kierownictwo"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-glowny-inspektor-pracy": {
+   "id": "pl-glowny-inspektor-pracy",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Główny Inspektor Pracy",
+   "shortName": "GIP",
+   "description": "Kieruje Państwową Inspekcją Pracy przy pomocy zastępców (art. 3 ust. 2 ustawy o PIP). Powoływany i odwoływany przez Marszałka Sejmu po zasięgnięciu opinii Rady Ochrony Pracy i właściwej komisji sejmowej (art. 4 ust. 1); pełni obowiązki do dnia powołania następcy.",
+   "aliases": [
+    "GIP",
+    "Główny Inspektor Pracy"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 4 ust. 1 (Dz.U. 2024 poz. 1712 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+    "act": "DU/2007/589",
+    "article": "art. 4 ust. 1"
+   },
+   "officialUrl": "https://pip.gov.pl/o-nas/kierownictwo/janusz-krason",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-pip",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-janusz-krason",
+      "name": "Janusz Krasoń",
+      "positionId": "pl-glowny-inspektor-pracy",
+      "positionName": "Główny Inspektor Pracy",
+      "type": "appointed",
+      "startedAt": "2026-07-03",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pip.gov.pl/o-nas/kierownictwo/janusz-krason",
+      "startedAtSource": "https://pip.gov.pl/o-nas/kierownictwo/janusz-krason",
+      "note": "Wg biogramu na pip.gov.pl z dniem 3.07.2026 powołany przez Marszałka Sejmu Włodzimierza Czarzastego na stanowisko Głównego Inspektora Pracy."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl",
+     "https://pip.gov.pl/o-nas/kierownictwo",
+     "https://pip.gov.pl/o-nas/kierownictwo/janusz-krason"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-ochrony-pracy": {
+   "id": "pl-rada-ochrony-pracy",
+   "type": "advisory",
+   "subtype": "council",
+   "sector": "legislative",
+   "ring": "oversight",
+   "name": "Rada Ochrony Pracy",
+   "shortName": "ROP",
+   "description": "Organ nadzoru działający przy Sejmie w sprawach przestrzegania prawa pracy, w tym BHP i legalności zatrudnienia, oraz działalności Państwowej Inspekcji Pracy (art. 7 ust. 1 ustawy o PIP). 30 członków powołuje i odwołuje Marszałek Sejmu na 4-letnią kadencję spośród posłów, senatorów, kandydatów rządu, partnerów społecznych i ekspertów (art. 7 ust. 2 i 4). Opiniuje kandydatów na GIP i jego zastępców.",
+   "aliases": [
+    "ROP",
+    "Rada Ochrony Pracy"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 7 (Dz.U. 2024 poz. 1712 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+    "act": "DU/2007/589",
+    "article": "art. 7"
+   },
+   "officialUrl": "https://rop.sejm.gov.pl/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": null,
+   "seatsCount": 30,
+   "status": "active",
+   "statusNote": "ROP XII kadencji (przy Sejmie X kadencji); akty powołania wręczone 27.03.2024 (rop.sejm.gov.pl). Przewodniczący wg strony 'Członkowie' (stan 17.09.2026): Krzysztof Gadowski; wcześniej (2024) Izabela Katarzyna Mrzygłocka. Pełny skład pominięto.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-krzysztof-gadowski",
+      "name": "Krzysztof Gadowski",
+      "positionId": "pl-przewodniczacy-rop",
+      "positionName": "Przewodniczący Rady Ochrony Pracy",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://rop.sejm.gov.pl/",
+      "startedAtSource": null,
+      "note": "Poseł; zgłoszony przez KP Koalicja Obywatelska (rop.sejm.gov.pl). Data objęcia funkcji przewodniczącego nie podana."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl",
+     "https://rop.sejm.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-uke": {
+   "id": "pl-uke",
+   "type": "department",
+   "subtype": "regulatory_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Urząd Komunikacji Elektronicznej",
+   "shortName": "UKE",
+   "description": "Urząd obsługujący Prezesa UKE – organ regulacyjny w dziedzinie rynku usług komunikacji elektronicznej i pocztowych oraz gospodarki częstotliwościami (art. 413 Prawa komunikacji elektronicznej). Zastępców Prezesa UKE (ds. telekomunikacyjnych i pocztowych) powołuje minister właściwy ds. informatyzacji na wniosek Prezesa UKE (art. 417).",
+   "aliases": [
+    "UKE"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 12 lipca 2024 r. – Prawo komunikacji elektronicznej, art. 413–417 (Dz.U. 2024 poz. 1221)",
+    "url": "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+    "act": "DU/2024/1221",
+    "article": "art. 413–417"
+   },
+   "officialUrl": "https://uke.gov.pl",
+   "bipUrl": "https://bip.uke.gov.pl",
+   "regon": null,
+   "budgetPart": "76",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-prezes-uke",
+   "headOf": null,
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-krzysztof-dyl",
+      "name": "Krzysztof Dyl",
+      "positionId": "pl-zastepca-prezesa-uke",
+      "positionName": "Zastępca Prezesa UKE",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://uke.gov.pl/o-nas/kierownictwo/",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     },
+     {
+      "id": "pl-karol-krzywicki",
+      "name": "Karol Krzywicki",
+      "positionId": "pl-zastepca-prezesa-uke",
+      "positionName": "Zastępca Prezesa UKE",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://uke.gov.pl/o-nas/kierownictwo/",
+      "startedAtSource": null,
+      "note": "Strona nie podaje daty powołania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+     "https://uke.gov.pl/o-nas/kierownictwo/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-prezes-uke": {
+   "id": "pl-prezes-uke",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Prezes Urzędu Komunikacji Elektronicznej",
+   "shortName": "Prezes UKE",
+   "description": "Organ regulacyjny rynku komunikacji elektronicznej i pocztowej, formalnie centralny organ administracji rządowej (art. 413 ust. 1–2 PKE). Powoływany i odwoływany przez Sejm na wniosek Prezesa Rady Ministrów na 5-letnią kadencję; kandydata wyłania otwarty i konkurencyjny nabór prowadzony przez KPRM (art. 415).",
+   "aliases": [
+    "Prezes UKE"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 12 lipca 2024 r. – Prawo komunikacji elektronicznej, art. 415 ust. 1 (Dz.U. 2024 poz. 1221)",
+    "url": "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+    "act": "DU/2024/1221",
+    "article": "art. 415 ust. 1"
+   },
+   "officialUrl": "https://uke.gov.pl/o-nas/kierownictwo/przemyslaw-kuna,5.html",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-uke",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-przemyslaw-kuna",
+      "name": "Przemysław Kuna",
+      "positionId": "pl-prezes-uke",
+      "positionName": "Prezes Urzędu Komunikacji Elektronicznej",
+      "type": "appointed",
+      "startedAt": "2025-09-26",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://uke.gov.pl/o-nas/kierownictwo/przemyslaw-kuna,5.html",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/1035/ogl",
+      "note": "Uchwała Sejmu z 26.09.2025 o powołaniu na Prezesa UKE (M.P. 2025 poz. 1035); biogram UKE: '26 września 2025 został wybrany przez Sejm'."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+     "https://uke.gov.pl/o-nas/kierownictwo/",
+     "https://uke.gov.pl/o-nas/kierownictwo/przemyslaw-kuna,5.html",
+     "https://eli.gov.pl/eli/MP/2025/1035/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-pkdp": {
+   "id": "pl-pkdp",
+   "type": "commission",
+   "subtype": "oversight_body",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Państwowa Komisja do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15",
+   "shortName": "PKDP",
+   "description": "Organ niezależny od innych organów władzy państwowej (art. 6 ust. 1 ustawy), wyjaśniający przypadki wykorzystania seksualnego małoletnich poniżej lat 15, badający reakcję instytucji i prowadzący działalność prewencyjną (art. 2–3). Siedmiu członków powołują: Sejm (3), Senat (1), Prezydent RP (1), Prezes RM (1) i Rzecznik Praw Dziecka (1) na 7-letnią kadencję Komisji (art. 6 ust. 2, art. 8).",
+   "aliases": [
+    "PKDP",
+    "Państwowa Komisja ds. Pedofilii"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 30 sierpnia 2019 r. o Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15, art. 6 (Dz.U. 2024 poz. 94 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+    "act": "DU/2019/1820",
+    "article": "art. 6"
+   },
+   "officialUrl": "https://pkdp.gov.pl",
+   "bipUrl": "https://bip.pkdp.gov.pl",
+   "regon": null,
+   "budgetPart": "89",
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-przewodniczacy-pkdp",
+   "headOf": null,
+   "seatsCount": 7,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-joanna-napierala",
+      "name": "Joanna Napierała",
+      "positionId": "pl-czlonek-pkdp",
+      "positionName": "Przewodnicząca Państwowej Komisji",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkdp.gov.pl/o-komisji/",
+      "startedAtSource": null,
+      "note": "Organ powołujący nieustalony na stronie; przewodnicząca od uchwały Sejmu z 12.09.2025 (M.P. 2025 poz. 1005)."
+     },
+     {
+      "id": "pl-konrad-ciesiolkiewicz",
+      "name": "Konrad Ciesiołkiewicz",
+      "positionId": "pl-czlonek-pkdp",
+      "positionName": "Wiceprzewodniczący Państwowej Komisji (powołany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-09-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkdp.gov.pl/o-komisji/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/821/ogl",
+      "note": "Uchwała Sejmu z 13.09.2024 (M.P. 2024 poz. 821)."
+     },
+     {
+      "id": "pl-katarzyna-komoniewska",
+      "name": "Katarzyna Komoniewska",
+      "positionId": "pl-czlonek-pkdp",
+      "positionName": "Wiceprzewodnicząca Państwowej Komisji (powołana przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-09-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkdp.gov.pl/o-komisji/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/822/ogl",
+      "note": "Uchwała Sejmu z 13.09.2024 (M.P. 2024 poz. 822)."
+     },
+     {
+      "id": "pl-marcin-bednarczyk",
+      "name": "Marcin Bednarczyk",
+      "positionId": "pl-czlonek-pkdp",
+      "positionName": "Członek Państwowej Komisji",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkdp.gov.pl/o-komisji/",
+      "startedAtSource": null,
+      "note": "Organ powołujący nieustalony na stronie."
+     },
+     {
+      "id": "pl-karolina-bucko",
+      "name": "Karolina Bućko",
+      "positionId": "pl-czlonek-pkdp",
+      "positionName": "Członkini Państwowej Komisji (powołana przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2023-11-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkdp.gov.pl/o-komisji/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1317/ogl",
+      "note": "Uchwała Sejmu z 28.11.2023 (M.P. 2023 poz. 1317); przewodnicząca Komisji od 7.12.2023 (M.P. 2023 poz. 1402) do 2025."
+     },
+     {
+      "id": "pl-justyna-kotowska",
+      "name": "Justyna Kotowska",
+      "positionId": "pl-czlonek-pkdp",
+      "positionName": "Członkini Państwowej Komisji",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkdp.gov.pl/o-komisji/",
+      "startedAtSource": null,
+      "note": "Organ powołujący nieustalony na stronie."
+     },
+     {
+      "id": "pl-agnieszka-rekas",
+      "name": "Agnieszka Rękas",
+      "positionId": "pl-czlonek-pkdp",
+      "positionName": "Członkini Państwowej Komisji",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkdp.gov.pl/o-komisji/",
+      "startedAtSource": null,
+      "note": "Organ powołujący nieustalony na stronie."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+     "https://pkdp.gov.pl/o-komisji/",
+     "https://eli.gov.pl/eli/MP/2024/821/ogl",
+     "https://eli.gov.pl/eli/MP/2024/822/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1317/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-przewodniczacy-pkdp": {
+   "id": "pl-przewodniczacy-pkdp",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Przewodniczący Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15",
+   "shortName": "Przewodniczący PKDP",
+   "description": "Kieruje pracami Państwowej Komisji i Urzędem Państwowej Komisji. Wybierany spośród członków Komisji przez Sejm zwykłą większością głosów (art. 7 ustawy o Państwowej Komisji).",
+   "aliases": [
+    "Przewodniczący PKDP",
+    "Przewodnicząca Państwowej Komisji"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 30 sierpnia 2019 r. o Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15, art. 7 (Dz.U. 2024 poz. 94 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+    "act": "DU/2019/1820",
+    "article": "art. 7"
+   },
+   "officialUrl": "https://pkdp.gov.pl/o-komisji/",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-pkdp",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-joanna-napierala",
+      "name": "Joanna Napierała",
+      "positionId": "pl-przewodniczacy-pkdp",
+      "positionName": "Przewodnicząca Państwowej Komisji",
+      "type": "appointed",
+      "startedAt": "2025-09-12",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://pkdp.gov.pl/o-komisji/",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2025/1005/ogl",
+      "note": "Wybrana na przewodniczącą uchwałą Sejmu z 12.09.2025 (M.P. 2025 poz. 1005)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+     "https://pkdp.gov.pl/o-komisji/",
+     "https://eli.gov.pl/eli/MP/2025/1005/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rada-mediow-narodowych": {
+   "id": "pl-rada-mediow-narodowych",
+   "type": "commission",
+   "subtype": "council",
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Rada Mediów Narodowych",
+   "shortName": "RMN",
+   "description": "Organ właściwy w sprawach powoływania i odwoływania składów osobowych organów jednostek publicznej radiofonii i telewizji oraz Polskiej Agencji Prasowej (art. 2 ustawy o RMN). Pięciu członków: trzech wybiera Sejm, dwóch powołuje Prezydent RP spośród kandydatów klubów opozycyjnych, na 6-letnią kadencję (art. 3–6). Ustawa z 2016 r. obowiązuje (stan ELI 17.09.2026).",
+   "aliases": [
+    "RMN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 22 czerwca 2016 r. o Radzie Mediów Narodowych, art. 2–3 (Dz.U. 2021 poz. 692 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/929/ogl",
+    "act": "DU/2016/929",
+    "article": "art. 2–3"
+   },
+   "officialUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": "pl-przewodniczacy-rmn",
+   "headOf": null,
+   "seatsCount": 5,
+   "status": "active",
+   "statusNote": "Ustawa o RMN (Dz.U. 2016 poz. 929) pozostaje w mocy wg ELI (status IN_FORCE, t.j. Dz.U. 2021 poz. 692); Senat 8.07.2026 przyjął uchwałę w sprawie informacji RMN (M.P. 2026 poz. 678). Strona RMN prowadzona w serwisie Sejmu.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wojciech-krol",
+      "name": "Wojciech Król",
+      "positionId": "pl-czlonek-rmn",
+      "positionName": "Przewodniczący RMN (wybrany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2024-12-05",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2024/1039/ogl",
+      "note": "Wybrany do RMN uchwałą Sejmu z 5.12.2024 (M.P. 2024 poz. 1039)."
+     },
+     {
+      "id": "pl-piotr-babinetz",
+      "name": "Piotr Babinetz",
+      "positionId": "pl-czlonek-rmn",
+      "positionName": "Członek RMN (wybrany przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2022-07-22",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/720/ogl",
+      "note": "Uchwała Sejmu z 22.07.2022 (M.P. 2022 poz. 720)."
+     },
+     {
+      "id": "pl-joanna-lichocka",
+      "name": "Joanna Lichocka",
+      "positionId": "pl-czlonek-rmn",
+      "positionName": "Członek RMN (wybrana przez Sejm)",
+      "type": "appointed",
+      "startedAt": "2022-07-22",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/721/ogl",
+      "note": "Uchwała Sejmu z 22.07.2022 (M.P. 2022 poz. 721)."
+     },
+     {
+      "id": "pl-robert-kwiatkowski",
+      "name": "Robert Kwiatkowski",
+      "positionId": "pl-czlonek-rmn",
+      "positionName": "Członek RMN (powołany przez Prezydenta RP)",
+      "type": "appointed",
+      "startedAt": "2020-12-10",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2020/1196/ogl",
+      "note": "Postanowienie Prezydenta RP z 10.12.2020 (M.P. 2020 poz. 1196); kadencja 6 lat."
+     },
+     {
+      "id": "pl-marek-rutka",
+      "name": "Marek Rutka",
+      "positionId": "pl-czlonek-rmn",
+      "positionName": "Członek RMN (powołany przez Prezydenta RP)",
+      "type": "appointed",
+      "startedAt": "2022-07-27",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+      "startedAtSource": "https://eli.gov.pl/eli/MP/2022/729/ogl",
+      "note": "Powołany z dniem 27.07.2022 (M.P. 2022 poz. 729)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/929/ogl",
+     "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+     "https://eli.gov.pl/eli/MP/2024/1039/ogl",
+     "https://eli.gov.pl/eli/MP/2022/720/ogl",
+     "https://eli.gov.pl/eli/MP/2022/721/ogl",
+     "https://eli.gov.pl/eli/MP/2020/1196/ogl",
+     "https://eli.gov.pl/eli/MP/2022/729/ogl",
+     "https://eli.gov.pl/eli/MP/2026/678/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-przewodniczacy-rmn": {
+   "id": "pl-przewodniczacy-rmn",
+   "type": "dept_head",
+   "subtype": null,
+   "sector": "independent",
+   "ring": "oversight",
+   "name": "Przewodniczący Rady Mediów Narodowych",
+   "shortName": "Przewodniczący RMN",
+   "description": "Kieruje pracami Rady Mediów Narodowych; wybierany ze swojego grona i odwoływany przez członków Rady (art. 10 ustawy o Radzie Mediów Narodowych).",
+   "aliases": [
+    "Przewodniczący RMN"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 22 czerwca 2016 r. o Radzie Mediów Narodowych, art. 10 (Dz.U. 2021 poz. 692 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2016/929/ogl",
+    "act": "DU/2016/929",
+    "article": "art. 10"
+   },
+   "officialUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "children": [],
+   "head": null,
+   "headOf": "pl-rada-mediow-narodowych",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wojciech-krol",
+      "name": "Wojciech Król",
+      "positionId": "pl-przewodniczacy-rmn",
+      "positionName": "Przewodniczący Rady Mediów Narodowych",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad",
+      "startedAtSource": null,
+      "note": "Strona Sejmu (skład RMN) wskazuje go jako przewodniczącego; data wyboru (wg źródeł wtórnych 12.12.2024) nie potwierdzona w źródle oficjalnym – startedAt null."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/929/ogl",
+     "https://www.sejm.gov.pl/Sejm10.nsf/page.xsp/rmn_sklad"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  }
+ },
+ "edges": {
+  "e-sejm--oversees--nik": {
+   "id": "e-sejm--oversees--nik",
+   "type": "oversees",
+   "fromId": "pl-sejm",
+   "toId": "pl-nik",
+   "cite": "Konstytucja RP art. 202 ust. 2 (NIK podlega Sejmowi; także art. 1 ust. 2 ustawy o NIK)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nik--dept_head--prezes-nik": {
+   "id": "e-nik--dept_head--prezes-nik",
+   "type": "dept_head",
+   "fromId": "pl-nik",
+   "toId": "pl-prezes-nik",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--prezes-nik": {
+   "id": "e-sejm--appoints--prezes-nik",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-prezes-nik",
+   "cite": "Konstytucja RP art. 205 ust. 1 (oraz art. 14 ust. 1 ustawy o NIK)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1995/59/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1001/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--confirms--prezes-nik": {
+   "id": "e-senat--confirms--prezes-nik",
+   "type": "confirms",
+   "fromId": "pl-senat",
+   "toId": "pl-prezes-nik",
+   "cite": "Konstytucja RP art. 205 ust. 1 (zgoda Senatu; art. 14 ust. 2 ustawy o NIK)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1995/59/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1002/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--nominates--prezes-nik": {
+   "id": "e-marszalek-sejmu--nominates--prezes-nik",
+   "type": "nominates",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-prezes-nik",
+   "cite": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 14 ust. 1 (wniosek Marszałka Sejmu lub grupy co najmniej 35 posłów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/59/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--appoints--nik": {
+   "id": "e-marszalek-sejmu--appoints--nik",
+   "type": "appoints",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-nik",
+   "cite": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 21 ust. 1 (wiceprezesi NIK, w liczbie 3, na wniosek Prezesa NIK)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/59/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--appoints--kolegium-nik": {
+   "id": "e-marszalek-sejmu--appoints--kolegium-nik",
+   "type": "appoints",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-kolegium-nik",
+   "cite": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 22 ust. 2 (14 członków Kolegium na wniosek Prezesa NIK)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+   "seatsAppointed": 14,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/59/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nik--nominates--kolegium-nik": {
+   "id": "e-prezes-nik--nominates--kolegium-nik",
+   "type": "nominates",
+   "fromId": "pl-prezes-nik",
+   "toId": "pl-kolegium-nik",
+   "cite": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 22 ust. 2 (na wniosek Prezesa NIK)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/59/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nik--ex_officio--kolegium-nik": {
+   "id": "e-prezes-nik--ex_officio--kolegium-nik",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-nik",
+   "toId": "pl-kolegium-nik",
+   "cite": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 22 ust. 1 (Prezes NIK jako przewodniczący Kolegium)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/59/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kolegium-nik--advises--nik": {
+   "id": "e-kolegium-nik--advises--nik",
+   "type": "advises",
+   "fromId": "pl-kolegium-nik",
+   "toId": "pl-nik",
+   "cite": "Ustawa z dnia 23 grudnia 1994 r. o Najwyższej Izbie Kontroli, art. 23 (zatwierdza, uchwala i opiniuje dokumenty NIK)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1995/59/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1995/59/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-biuro-rpo--dept_head--rpo": {
+   "id": "e-biuro-rpo--dept_head--rpo",
+   "type": "dept_head",
+   "fromId": "pl-biuro-rpo",
+   "toId": "pl-rpo",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--rpo": {
+   "id": "e-sejm--appoints--rpo",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-rpo",
+   "cite": "Konstytucja RP art. 209 ust. 1 (oraz art. 3 ust. 1 ustawy o RPO)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1987/123/ogl",
+     "https://eli.gov.pl/eli/MP/2026/736/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--confirms--rpo": {
+   "id": "e-senat--confirms--rpo",
+   "type": "confirms",
+   "fromId": "pl-senat",
+   "toId": "pl-rpo",
+   "cite": "Konstytucja RP art. 209 ust. 1 (zgoda Senatu; art. 3 ust. 4 ustawy o RPO)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1987/123/ogl",
+     "https://eli.gov.pl/eli/MP/2026/737/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--nominates--rpo": {
+   "id": "e-marszalek-sejmu--nominates--rpo",
+   "type": "nominates",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-rpo",
+   "cite": "Ustawa z dnia 15 lipca 1987 r. o Rzeczniku Praw Obywatelskich, art. 3 ust. 1 (wniosek Marszałka Sejmu albo grupy 35 posłów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1987/123/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1987/123/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rpo--appoints--biuro-rpo": {
+   "id": "e-rpo--appoints--biuro-rpo",
+   "type": "appoints",
+   "fromId": "pl-rpo",
+   "toId": "pl-biuro-rpo",
+   "cite": "Ustawa z dnia 15 lipca 1987 r. o Rzeczniku Praw Obywatelskich, art. 20 ust. 3 (Rzecznik może powołać nie więcej niż trzech zastępców)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1987/123/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1987/123/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-biuro-rpd--dept_head--rpd": {
+   "id": "e-biuro-rpd--dept_head--rpd",
+   "type": "dept_head",
+   "fromId": "pl-biuro-rpd",
+   "toId": "pl-rpd",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--rpd": {
+   "id": "e-sejm--appoints--rpd",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-rpd",
+   "cite": "Ustawa z dnia 6 stycznia 2000 r. o Rzeczniku Praw Dziecka, art. 4 ust. 1 (oraz art. 72 ust. 4 Konstytucji RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2000/69/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2000/69/ogl",
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1357/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--confirms--rpd": {
+   "id": "e-senat--confirms--rpd",
+   "type": "confirms",
+   "fromId": "pl-senat",
+   "toId": "pl-rpd",
+   "cite": "Ustawa z dnia 6 stycznia 2000 r. o Rzeczniku Praw Dziecka, art. 4 ust. 1 i 4 (zgoda Senatu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2000/69/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2000/69/ogl",
+     "https://eli.gov.pl/eli/MP/2023/1358/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--nominates--rpd": {
+   "id": "e-marszalek-sejmu--nominates--rpd",
+   "type": "nominates",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-rpd",
+   "cite": "Ustawa z dnia 6 stycznia 2000 r. o Rzeczniku Praw Dziecka, art. 4 ust. 1 (wniosek Marszałka Sejmu, Marszałka Senatu, 35 posłów lub 15 senatorów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2000/69/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2000/69/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-senatu--nominates--rpd": {
+   "id": "e-marszalek-senatu--nominates--rpd",
+   "type": "nominates",
+   "fromId": "pl-marszalek-senatu",
+   "toId": "pl-rpd",
+   "cite": "Ustawa z dnia 6 stycznia 2000 r. o Rzeczniku Praw Dziecka, art. 4 ust. 1 (wniosek Marszałka Sejmu, Marszałka Senatu, 35 posłów lub 15 senatorów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2000/69/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2000/69/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-krrit--dept_head--przewodniczacy-krrit": {
+   "id": "e-krrit--dept_head--przewodniczacy-krrit",
+   "type": "dept_head",
+   "fromId": "pl-krrit",
+   "toId": "pl-przewodniczacy-krrit",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-krrit--elects--przewodniczacy-krrit": {
+   "id": "e-krrit--elects--przewodniczacy-krrit",
+   "type": "elects",
+   "fromId": "pl-krrit",
+   "toId": "pl-przewodniczacy-krrit",
+   "cite": "Ustawa z dnia 29 grudnia 1992 r. o radiofonii i telewizji, art. 7 ust. 2b (Przewodniczącego wybierają ze swojego grona członkowie Krajowej Rady)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1993/34/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1993/34/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--krrit": {
+   "id": "e-sejm--appoints--krrit",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-krrit",
+   "cite": "Konstytucja RP art. 214 ust. 1 (oraz art. 7 ust. 1 ustawy o rtv: 2 członków powołuje Sejm)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1993/34/ogl",
+     "https://eli.gov.pl/eli/MP/2022/906/ogl",
+     "https://eli.gov.pl/eli/MP/2022/907/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--appoints--krrit": {
+   "id": "e-senat--appoints--krrit",
+   "type": "appoints",
+   "fromId": "pl-senat",
+   "toId": "pl-krrit",
+   "cite": "Konstytucja RP art. 214 ust. 1 (oraz art. 7 ust. 1 ustawy o rtv: 1 członka powołuje Senat)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1993/34/ogl",
+     "https://eli.gov.pl/eli/MP/2022/762/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--krrit": {
+   "id": "e-prezydent-rp--appoints--krrit",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-krrit",
+   "cite": "Konstytucja RP art. 214 ust. 1 (oraz art. 7 ust. 1 ustawy o rtv: 2 członków powołuje Prezydent RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1993/34/ogl",
+     "https://eli.gov.pl/eli/MP/2022/964/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-nbp--dept_head--prezes-nbp": {
+   "id": "e-nbp--dept_head--prezes-nbp",
+   "type": "dept_head",
+   "fromId": "pl-nbp",
+   "toId": "pl-prezes-nbp",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--prezes-nbp": {
+   "id": "e-sejm--appoints--prezes-nbp",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-prezes-nbp",
+   "cite": "Konstytucja RP art. 227 ust. 3 (oraz art. 9 ust. 1 ustawy o NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1997/938/ogl",
+     "https://eli.gov.pl/eli/MP/2022/484/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--nominates--prezes-nbp": {
+   "id": "e-prezydent-rp--nominates--prezes-nbp",
+   "type": "nominates",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-prezes-nbp",
+   "cite": "Konstytucja RP art. 227 ust. 3 (na wniosek Prezydenta RP; art. 9 ust. 1 ustawy o NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nbp--ex_officio--rada-polityki-pienieznej": {
+   "id": "e-prezes-nbp--ex_officio--rada-polityki-pienieznej",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-nbp",
+   "toId": "pl-rada-polityki-pienieznej",
+   "cite": "Konstytucja RP art. 227 ust. 5 (Prezes NBP jako przewodniczący RPP; art. 13 ust. 1 pkt 1 ustawy o NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--rada-polityki-pienieznej": {
+   "id": "e-prezydent-rp--appoints--rada-polityki-pienieznej",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-rada-polityki-pienieznej",
+   "cite": "Konstytucja RP art. 227 ust. 5 (3 członków; art. 13 ust. 1 pkt 2 ustawy o NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1997/938/ogl",
+     "https://eli.gov.pl/eli/MP/2022/282/ogl",
+     "https://eli.gov.pl/eli/MP/2026/59/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--rada-polityki-pienieznej": {
+   "id": "e-sejm--appoints--rada-polityki-pienieznej",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-rada-polityki-pienieznej",
+   "cite": "Konstytucja RP art. 227 ust. 5 (3 członków; art. 13 ust. 1 pkt 2 ustawy o NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1997/938/ogl",
+     "https://eli.gov.pl/eli/MP/2022/212/ogl",
+     "https://eli.gov.pl/eli/MP/2022/971/ogl",
+     "https://eli.gov.pl/eli/MP/2022/972/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--appoints--rada-polityki-pienieznej": {
+   "id": "e-senat--appoints--rada-polityki-pienieznej",
+   "type": "appoints",
+   "fromId": "pl-senat",
+   "toId": "pl-rada-polityki-pienieznej",
+   "cite": "Konstytucja RP art. 227 ust. 5 (3 członków; art. 13 ust. 1 pkt 2 ustawy o NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/483/ogl",
+     "https://eli.gov.pl/eli/DU/1997/938/ogl",
+     "https://eli.gov.pl/eli/MP/2022/39/ogl",
+     "https://eli.gov.pl/eli/MP/2022/874/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nbp--ex_officio--zarzad-nbp": {
+   "id": "e-prezes-nbp--ex_officio--zarzad-nbp",
+   "type": "ex_officio",
+   "fromId": "pl-prezes-nbp",
+   "toId": "pl-zarzad-nbp",
+   "cite": "Ustawa z dnia 29 sierpnia 1997 r. o Narodowym Banku Polskim, art. 17 ust. 2 (Prezes NBP jako przewodniczący Zarządu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/938/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/938/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--zarzad-nbp": {
+   "id": "e-prezydent-rp--appoints--zarzad-nbp",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-zarzad-nbp",
+   "cite": "Ustawa z dnia 29 sierpnia 1997 r. o Narodowym Banku Polskim, art. 17 ust. 2a (członków Zarządu NBP powołuje Prezydent RP na wniosek Prezesa NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/938/ogl",
+   "seatsAppointed": 8,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/938/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nbp--nominates--zarzad-nbp": {
+   "id": "e-prezes-nbp--nominates--zarzad-nbp",
+   "type": "nominates",
+   "fromId": "pl-prezes-nbp",
+   "toId": "pl-zarzad-nbp",
+   "cite": "Ustawa z dnia 29 sierpnia 1997 r. o Narodowym Banku Polskim, art. 17 ust. 2a (na wniosek Prezesa NBP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/938/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/938/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-zarzad-nbp--administers--nbp": {
+   "id": "e-zarzad-nbp--administers--nbp",
+   "type": "administers",
+   "fromId": "pl-zarzad-nbp",
+   "toId": "pl-nbp",
+   "cite": "Ustawa z dnia 29 sierpnia 1997 r. o Narodowym Banku Polskim, art. 17 ust. 1 (działalnością NBP kieruje Zarząd)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1997/938/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1997/938/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-pkw--dept_head--przewodniczacy-pkw": {
+   "id": "e-pkw--dept_head--przewodniczacy-pkw",
+   "type": "dept_head",
+   "fromId": "pl-pkw",
+   "toId": "pl-przewodniczacy-pkw",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-pkw--elects--przewodniczacy-pkw": {
+   "id": "e-pkw--elects--przewodniczacy-pkw",
+   "type": "elects",
+   "fromId": "pl-pkw",
+   "toId": "pl-przewodniczacy-pkw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 157 § 5 (PKW wybiera ze swojego składu przewodniczącego i dwóch zastępców)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl",
+     "https://eli.gov.pl/eli/MP/2020/200/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--pkw": {
+   "id": "e-prezydent-rp--appoints--pkw",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-pkw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 157 § 3 (członków PKW powołuje Prezydent RP w drodze postanowienia)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 9,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl",
+     "https://eli.gov.pl/eli/MP/2024/203/ogl",
+     "https://eli.gov.pl/eli/MP/2020/100/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--nominates--pkw": {
+   "id": "e-sejm--nominates--pkw",
+   "type": "nominates",
+   "fromId": "pl-sejm",
+   "toId": "pl-pkw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 157 § 2 pkt 3 i § 4a (7 osób wskazanych przez Sejm, kandydaci klubów proporcjonalnie)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 7,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-tk--nominates--pkw": {
+   "id": "e-prezes-tk--nominates--pkw",
+   "type": "nominates",
+   "fromId": "pl-prezes-tk",
+   "toId": "pl-pkw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 157 § 2 pkt 1 (jeden sędzia TK wskazany przez Prezesa TK)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-nsa--nominates--pkw": {
+   "id": "e-prezes-nsa--nominates--pkw",
+   "type": "nominates",
+   "fromId": "pl-prezes-nsa",
+   "toId": "pl-pkw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 157 § 2 pkt 2 (jeden sędzia NSA wskazany przez Prezesa NSA)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kbw--dept_head--szef-kbw": {
+   "id": "e-kbw--dept_head--szef-kbw",
+   "type": "dept_head",
+   "fromId": "pl-kbw",
+   "toId": "pl-szef-kbw",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-pkw--appoints--szef-kbw": {
+   "id": "e-pkw--appoints--szef-kbw",
+   "type": "appoints",
+   "fromId": "pl-pkw",
+   "toId": "pl-szef-kbw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 190 § 2 (Szefa KBW powołuje PKW na 7 lat)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-spraw-wewnetrznych-i-administracji--nominates--szef-kbw": {
+   "id": "e-minister-spraw-wewnetrznych-i-administracji--nominates--szef-kbw",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-szef-kbw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 190 § 2 (spośród trzech kandydatów przedstawionych przez ministra właściwego do spraw wewnętrznych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-szef-kbw--ex_officio--pkw": {
+   "id": "e-szef-kbw--ex_officio--pkw",
+   "type": "ex_officio",
+   "fromId": "pl-szef-kbw",
+   "toId": "pl-pkw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 157 § 6 (Szef KBW pełni funkcję sekretarza PKW z głosem doradczym)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kbw--administers--pkw": {
+   "id": "e-kbw--administers--pkw",
+   "type": "administers",
+   "fromId": "pl-kbw",
+   "toId": "pl-pkw",
+   "cite": "Ustawa z dnia 5 stycznia 2011 r. – Kodeks wyborczy, art. 187 § 1 (KBW zapewnia obsługę PKW)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2011/112/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2011/112/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-uodo--dept_head--prezes-uodo": {
+   "id": "e-uodo--dept_head--prezes-uodo",
+   "type": "dept_head",
+   "fromId": "pl-uodo",
+   "toId": "pl-prezes-uodo",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--prezes-uodo": {
+   "id": "e-sejm--appoints--prezes-uodo",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-prezes-uodo",
+   "cite": "Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych, art. 34 ust. 3 (Prezesa Urzędu powołuje i odwołuje Sejm za zgodą Senatu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+     "https://eli.gov.pl/eli/MP/2024/43/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--confirms--prezes-uodo": {
+   "id": "e-senat--confirms--prezes-uodo",
+   "type": "confirms",
+   "fromId": "pl-senat",
+   "toId": "pl-prezes-uodo",
+   "cite": "Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych, art. 34 ust. 3 (za zgodą Senatu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2018/1000/ogl",
+     "https://eli.gov.pl/eli/MP/2024/44/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-ipn--dept_head--prezes-ipn": {
+   "id": "e-ipn--dept_head--prezes-ipn",
+   "type": "dept_head",
+   "fromId": "pl-ipn",
+   "toId": "pl-prezes-ipn",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--prezes-ipn": {
+   "id": "e-sejm--appoints--prezes-ipn",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-prezes-ipn",
+   "cite": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 10 ust. 1 (Prezesa IPN powołuje i odwołuje Sejm za zgodą Senatu, na wniosek Kolegium IPN)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--confirms--prezes-ipn": {
+   "id": "e-senat--confirms--prezes-ipn",
+   "type": "confirms",
+   "fromId": "pl-senat",
+   "toId": "pl-prezes-ipn",
+   "cite": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 10 ust. 1 (za zgodą Senatu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+     "https://eli.gov.pl/eli/MP/2026/778/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kolegium-ipn--nominates--prezes-ipn": {
+   "id": "e-kolegium-ipn--nominates--prezes-ipn",
+   "type": "nominates",
+   "fromId": "pl-kolegium-ipn",
+   "toId": "pl-prezes-ipn",
+   "cite": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 10 ust. 1 i 3 (na wniosek Kolegium IPN, kandydat spoza jego grona wyłoniony w konkursie)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kolegium-ipn--advises--prezes-ipn": {
+   "id": "e-kolegium-ipn--advises--prezes-ipn",
+   "type": "advises",
+   "fromId": "pl-kolegium-ipn",
+   "toId": "pl-prezes-ipn",
+   "cite": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 15 ust. 2 (organ opiniodawczo-doradczy Prezesa IPN)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--kolegium-ipn": {
+   "id": "e-prezydent-rp--appoints--kolegium-ipn",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-kolegium-ipn",
+   "cite": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 15 ust. 3 pkt 1 (dwóch członków powołuje Prezydent RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+     "https://eli.gov.pl/eli/MP/2023/812/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--kolegium-ipn": {
+   "id": "e-sejm--appoints--kolegium-ipn",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-kolegium-ipn",
+   "cite": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 15 ust. 3 pkt 2 (pięciu członków powołuje Sejm)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+   "seatsAppointed": 5,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+     "https://eli.gov.pl/eli/MP/2023/598/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--appoints--kolegium-ipn": {
+   "id": "e-senat--appoints--kolegium-ipn",
+   "type": "appoints",
+   "fromId": "pl-senat",
+   "toId": "pl-kolegium-ipn",
+   "cite": "Ustawa z dnia 18 grudnia 1998 r. o Instytucie Pamięci Narodowej – Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu, art. 15 ust. 3 pkt 3 (dwóch członków powołuje Senat)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/1998/1016/ogl",
+     "https://eli.gov.pl/eli/MP/2023/603/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--oversees--pip": {
+   "id": "e-sejm--oversees--pip",
+   "type": "oversees",
+   "fromId": "pl-sejm",
+   "toId": "pl-pip",
+   "cite": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 2 (Państwowa Inspekcja Pracy podlega Sejmowi)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-ochrony-pracy--oversees--pip": {
+   "id": "e-rada-ochrony-pracy--oversees--pip",
+   "type": "oversees",
+   "fromId": "pl-rada-ochrony-pracy",
+   "toId": "pl-pip",
+   "cite": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 2 i art. 7 ust. 1 (nadzór nad PIP sprawuje Rada Ochrony Pracy)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-pip--dept_head--glowny-inspektor-pracy": {
+   "id": "e-pip--dept_head--glowny-inspektor-pracy",
+   "type": "dept_head",
+   "fromId": "pl-pip",
+   "toId": "pl-glowny-inspektor-pracy",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--appoints--glowny-inspektor-pracy": {
+   "id": "e-marszalek-sejmu--appoints--glowny-inspektor-pracy",
+   "type": "appoints",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-glowny-inspektor-pracy",
+   "cite": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 4 ust. 1 (GIP powołuje i odwołuje Marszałek Sejmu po zasięgnięciu opinii ROP i komisji sejmowej)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl",
+     "https://pip.gov.pl/o-nas/kierownictwo/janusz-krason"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--appoints--pip": {
+   "id": "e-marszalek-sejmu--appoints--pip",
+   "type": "appoints",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-pip",
+   "cite": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 4 ust. 3 (zastępców GIP powołuje Marszałek Sejmu na wniosek GIP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-ochrony-pracy--advises--marszalek-sejmu": {
+   "id": "e-rada-ochrony-pracy--advises--marszalek-sejmu",
+   "type": "advises",
+   "fromId": "pl-rada-ochrony-pracy",
+   "toId": "pl-marszalek-sejmu",
+   "cite": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 4 ust. 1 i art. 7 ust. 8 (opinia o kandydatach na GIP i zastępców)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-marszalek-sejmu--appoints--rada-ochrony-pracy": {
+   "id": "e-marszalek-sejmu--appoints--rada-ochrony-pracy",
+   "type": "appoints",
+   "fromId": "pl-marszalek-sejmu",
+   "toId": "pl-rada-ochrony-pracy",
+   "cite": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 7 ust. 2 (członków ROP powołuje i odwołuje Marszałek Sejmu)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+   "seatsAppointed": 30,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-ochrony-pracy--advises--sejm": {
+   "id": "e-rada-ochrony-pracy--advises--sejm",
+   "type": "advises",
+   "fromId": "pl-rada-ochrony-pracy",
+   "toId": "pl-sejm",
+   "cite": "Ustawa z dnia 13 kwietnia 2007 r. o Państwowej Inspekcji Pracy, art. 7 ust. 1 i 7 (organ przy Sejmie wyrażający stanowisko w sprawach ochrony pracy)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2007/589/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2007/589/ogl"
+    ],
+    "confidence": "medium"
+   }
+  },
+  "e-uke--dept_head--prezes-uke": {
+   "id": "e-uke--dept_head--prezes-uke",
+   "type": "dept_head",
+   "fromId": "pl-uke",
+   "toId": "pl-prezes-uke",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--prezes-uke": {
+   "id": "e-sejm--appoints--prezes-uke",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-prezes-uke",
+   "cite": "Ustawa z dnia 12 lipca 2024 r. – Prawo komunikacji elektronicznej, art. 415 ust. 1 (Prezesa UKE powołuje i odwołuje Sejm na wniosek Prezesa Rady Ministrów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1035/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--nominates--prezes-uke": {
+   "id": "e-prezes-rady-ministrow--nominates--prezes-uke",
+   "type": "nominates",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-prezes-uke",
+   "cite": "Ustawa z dnia 12 lipca 2024 r. – Prawo komunikacji elektronicznej, art. 415 ust. 1–2 (na wniosek Prezesa RM; kandydat z otwartego naboru)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/1221/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-minister-cyfryzacji--appoints--uke": {
+   "id": "e-minister-cyfryzacji--appoints--uke",
+   "type": "appoints",
+   "fromId": "pl-minister-cyfryzacji",
+   "toId": "pl-uke",
+   "cite": "Ustawa z dnia 12 lipca 2024 r. – Prawo komunikacji elektronicznej, art. 417 ust. 1 (zastępców Prezesa UKE powołuje minister właściwy ds. informatyzacji na wniosek Prezesa UKE)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2024/1221/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2024/1221/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-pkdp--dept_head--przewodniczacy-pkdp": {
+   "id": "e-pkdp--dept_head--przewodniczacy-pkdp",
+   "type": "dept_head",
+   "fromId": "pl-pkdp",
+   "toId": "pl-przewodniczacy-pkdp",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--elects--przewodniczacy-pkdp": {
+   "id": "e-sejm--elects--przewodniczacy-pkdp",
+   "type": "elects",
+   "fromId": "pl-sejm",
+   "toId": "pl-przewodniczacy-pkdp",
+   "cite": "Ustawa z dnia 30 sierpnia 2019 r. o Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15, art. 7 (Przewodniczącego Komisji wybiera spośród jej członków Sejm)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+     "https://eli.gov.pl/eli/MP/2025/1005/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--appoints--pkdp": {
+   "id": "e-sejm--appoints--pkdp",
+   "type": "appoints",
+   "fromId": "pl-sejm",
+   "toId": "pl-pkdp",
+   "cite": "Ustawa z dnia 30 sierpnia 2019 r. o Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15, art. 6 ust. 2 pkt 1 (trzech członków powołuje Sejm większością 3/5)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+     "https://eli.gov.pl/eli/MP/2024/821/ogl",
+     "https://eli.gov.pl/eli/MP/2024/822/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--appoints--pkdp": {
+   "id": "e-senat--appoints--pkdp",
+   "type": "appoints",
+   "fromId": "pl-senat",
+   "toId": "pl-pkdp",
+   "cite": "Ustawa z dnia 30 sierpnia 2019 r. o Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15, art. 6 ust. 2 pkt 2 (jeden członek powoływany przez Senat)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2019/1820/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--pkdp": {
+   "id": "e-prezydent-rp--appoints--pkdp",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-pkdp",
+   "cite": "Ustawa z dnia 30 sierpnia 2019 r. o Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15, art. 6 ust. 2 pkt 3 (jeden członek powoływany przez Prezydenta RP)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2019/1820/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezes-rady-ministrow--appoints--pkdp": {
+   "id": "e-prezes-rady-ministrow--appoints--pkdp",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-pkdp",
+   "cite": "Ustawa z dnia 30 sierpnia 2019 r. o Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15, art. 6 ust. 2 pkt 4 (jeden członek powoływany przez Prezesa Rady Ministrów)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2019/1820/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rpd--appoints--pkdp": {
+   "id": "e-rpd--appoints--pkdp",
+   "type": "appoints",
+   "fromId": "pl-rpd",
+   "toId": "pl-pkdp",
+   "cite": "Ustawa z dnia 30 sierpnia 2019 r. o Państwowej Komisji do spraw przeciwdziałania wykorzystaniu seksualnemu małoletnich poniżej lat 15, art. 6 ust. 2 pkt 5 (jeden członek powoływany przez Rzecznika Praw Dziecka)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2019/1820/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2019/1820/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-rada-mediow-narodowych--dept_head--przewodniczacy-rmn": {
+   "id": "e-rada-mediow-narodowych--dept_head--przewodniczacy-rmn",
+   "type": "dept_head",
+   "fromId": "pl-rada-mediow-narodowych",
+   "toId": "pl-przewodniczacy-rmn",
+   "cite": null,
+   "citeUrl": null,
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [],
+    "confidence": "high"
+   }
+  },
+  "e-rada-mediow-narodowych--elects--przewodniczacy-rmn": {
+   "id": "e-rada-mediow-narodowych--elects--przewodniczacy-rmn",
+   "type": "elects",
+   "fromId": "pl-rada-mediow-narodowych",
+   "toId": "pl-przewodniczacy-rmn",
+   "cite": "Ustawa z dnia 22 czerwca 2016 r. o Radzie Mediów Narodowych, art. 10 ust. 2 (Przewodniczącego wybierają ze swojego grona członkowie Rady)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/929/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/929/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-sejm--elects--rada-mediow-narodowych": {
+   "id": "e-sejm--elects--rada-mediow-narodowych",
+   "type": "elects",
+   "fromId": "pl-sejm",
+   "toId": "pl-rada-mediow-narodowych",
+   "cite": "Ustawa z dnia 22 czerwca 2016 r. o Radzie Mediów Narodowych, art. 3 (trzech członków wybiera Sejm)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/929/ogl",
+   "seatsAppointed": 3,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/929/ogl",
+     "https://eli.gov.pl/eli/MP/2024/1039/ogl",
+     "https://eli.gov.pl/eli/MP/2022/720/ogl",
+     "https://eli.gov.pl/eli/MP/2022/721/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prezydent-rp--appoints--rada-mediow-narodowych": {
+   "id": "e-prezydent-rp--appoints--rada-mediow-narodowych",
+   "type": "appoints",
+   "fromId": "pl-prezydent-rp",
+   "toId": "pl-rada-mediow-narodowych",
+   "cite": "Ustawa z dnia 22 czerwca 2016 r. o Radzie Mediów Narodowych, art. 3 i art. 6 ust. 1 (dwóch członków powołuje Prezydent RP spośród kandydatów klubów opozycyjnych)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2016/929/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2016/929/ogl",
+     "https://eli.gov.pl/eli/MP/2020/1196/ogl",
+     "https://eli.gov.pl/eli/MP/2022/729/ogl"
+    ],
+    "confidence": "high"
+   }
+  }
+ }
+}

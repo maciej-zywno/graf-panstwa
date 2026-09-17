@@ -1,0 +1,3424 @@
+{
+ "chunk": "parlament",
+ "verifiedAt": "2026-09-17",
+ "summary": "Weryfikacja skryptowa: drugie pobranie źródeł i kontrola nazwisk; przepisy sprawdzone w tekstach regulaminów z ELI.",
+ "stats": {
+  "nodes_checked": 81,
+  "people_checked": 346,
+  "edges_checked": 82
+ },
+ "nodes": [
+  {
+   "id": "pl-prezydium-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-asw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-cnt",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-der",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-dim",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-enm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-eps",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-esk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-fpb",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-gmz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-gor",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-inf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-kfs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-kop",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-ksp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-kss",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-lpg",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-mne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-nkk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-non",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-noz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-npc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-nsp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-nzc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-obn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-odk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-osz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-pet",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-psn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-psr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-rrw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-rsp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-skgk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-skpc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-skpg",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-spc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-str",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-sue",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-sza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-ust",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-komisja-zdr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-klub-centrum",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-kolo-demokracja",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-klub-ko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-klub-konfederacja",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-kolo-konfederacja-kp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-klub-lewica",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-klub-pis",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-klub-polska2050",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-klub-psl-td",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-kolo-razem",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-sejm-klub-rozwojplus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-prezydium-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-konwent-seniorow-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-budzetu-i-finansow-publicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-edukacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-gospodarki-narodowej-i-innowacyjnosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-infrastruktury",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-klimatu-i-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-kultury-i-srodkow-przekazu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-nauki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-obrony-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-petycji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-praw-czlowieka-i-praworzadnosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-regulaminowa-etyki-i-spraw-senatorskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-rodziny-polityki-senioralnej-i-spolecznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-rolnictwa-i-rozwoju-wsi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-samorzadu-terytorialnego-i-administracji-panstwowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-sportu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-spraw-unii-europejskiej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-spraw-zagranicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-ustawodawcza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-klub-koalicja-obywatelska-platforma-obywatelska-nowoczesna-inicja",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-klub-prawo-i-sprawiedliwosc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-klub-koalicyjny-klub-parlamentarny-lewicy-nowa-lewica-pps-unia-pr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-klub-trzecia-droga",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-kolo-e-nowa-polska-centrum",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-klub-rozwoj-plus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-prezydium-sejmu",
+   "personId": "pl-wlodzimierz-czarzasty",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://eli.gov.pl/eli/MP/2025/1189/ogl (treść aktu)"
+  },
+  {
+   "nodeId": "pl-prezydium-sejmu",
+   "personId": "pl-krzysztof-bosak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://sejm.gov.pl/wicemarszalkowie10.nsf/"
+  },
+  {
+   "nodeId": "pl-prezydium-sejmu",
+   "personId": "pl-szymon-holownia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://sejm.gov.pl/wicemarszalkowie10.nsf/"
+  },
+  {
+   "nodeId": "pl-prezydium-sejmu",
+   "personId": "pl-dorota-niedziela",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://sejm.gov.pl/wicemarszalkowie10.nsf/"
+  },
+  {
+   "nodeId": "pl-prezydium-sejmu",
+   "personId": "pl-monika-wielichowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://sejm.gov.pl/wicemarszalkowie10.nsf/"
+  },
+  {
+   "nodeId": "pl-prezydium-sejmu",
+   "personId": "pl-piotr-zgorzelski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://sejm.gov.pl/wicemarszalkowie10.nsf/"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-asw",
+   "personId": "pl-maria-janyska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ASW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-asw",
+   "personId": "pl-bartosz-romowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ASW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-asw",
+   "personId": "pl-konrad-frysztak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ASW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-asw",
+   "personId": "pl-malgorzata-pepek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ASW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-asw",
+   "personId": "pl-pawel-hreniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ASW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-asw",
+   "personId": "pl-zbigniew-sosnowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ASW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-cnt",
+   "personId": "pl-bartlomiej-pejo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/CNT"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-cnt",
+   "personId": "pl-artur-gierada",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/CNT"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-cnt",
+   "personId": "pl-dariusz-stefaniuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/CNT"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-cnt",
+   "personId": "pl-grzegorz-napieralski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/CNT"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-der",
+   "personId": "pl-ryszard-petru",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DER"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-der",
+   "personId": "pl-bartlomiej-wroblewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DER"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-der",
+   "personId": "pl-jacek-tomczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DER"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-der",
+   "personId": "pl-michal-poluboczek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DER"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-der",
+   "personId": "pl-waldemar-slugocki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DER"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-dim",
+   "personId": "pl-monika-rosa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DIM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-dim",
+   "personId": "pl-anna-gembicka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DIM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-dim",
+   "personId": "pl-barbara-okula",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DIM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-dim",
+   "personId": "pl-jolanta-zieba-gzik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DIM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-dim",
+   "personId": "pl-piotr-kowal",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/DIM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-enm",
+   "personId": "pl-krystyna-szumilas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ENM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-enm",
+   "personId": "pl-dariusz-wieczorek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ENM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-enm",
+   "personId": "pl-elzbieta-gapinska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ENM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-enm",
+   "personId": "pl-ewa-szymanowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ENM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-enm",
+   "personId": "pl-kinga-gajewska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ENM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-enm",
+   "personId": "pl-miroslawa-stachowiak-rozecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ENM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-enm",
+   "personId": "pl-wieslaw-rozynski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ENM"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-eps",
+   "personId": "pl-elzbieta-burkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/EPS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-eps",
+   "personId": "pl-katarzyna-ueberhan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/EPS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-esk",
+   "personId": "pl-marek-suski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ESK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-esk",
+   "personId": "pl-adam-dziedzic",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ESK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-esk",
+   "personId": "pl-janusz-kowalski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ESK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-esk",
+   "personId": "pl-krzysztof-gadowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ESK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-esk",
+   "personId": "pl-krzysztof-mulawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ESK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-esk",
+   "personId": "pl-rafal-komarewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ESK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-esk",
+   "personId": "pl-tomasz-nowak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ESK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-fpb",
+   "personId": "pl-janusz-cichon",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/FPB"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-fpb",
+   "personId": "pl-agnieszka-klopotek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/FPB"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-fpb",
+   "personId": "pl-henryk-kowalczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/FPB"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-fpb",
+   "personId": "pl-krystyna-skowronska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/FPB"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-fpb",
+   "personId": "pl-marek-sowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/FPB"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-fpb",
+   "personId": "pl-rafal-kasprzyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/FPB"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-fpb",
+   "personId": "pl-tomasz-trela",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/FPB"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-fpb",
+   "personId": "pl-zofia-czernow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/FPB"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gmz",
+   "personId": "pl-kacper-plazynski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GMZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gmz",
+   "personId": "pl-jaroslaw-walesa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GMZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gmz",
+   "personId": "pl-krzysztof-szymanski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GMZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gmz",
+   "personId": "pl-marek-hok",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GMZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gor",
+   "personId": "pl-rafal-komarewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GOR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gor",
+   "personId": "pl-arkadiusz-sikora",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GOR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gor",
+   "personId": "pl-magdalena-sroka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GOR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gor",
+   "personId": "pl-malgorzata-wassermann",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GOR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gor",
+   "personId": "pl-waldemar-slugocki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GOR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-gor",
+   "personId": "pl-lukasz-horbatowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/GOR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-inf",
+   "personId": "pl-miroslaw-suchon",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/INF"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-inf",
+   "personId": "pl-andrzej-adamczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/INF"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-inf",
+   "personId": "pl-krystyna-sibinska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/INF"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-inf",
+   "personId": "pl-marek-sawicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/INF"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-inf",
+   "personId": "pl-piotr-kowal",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/INF"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-inf",
+   "personId": "pl-stanislaw-lamczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/INF"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kfs",
+   "personId": "pl-tadeusz-tomaszewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KFS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kfs",
+   "personId": "pl-anna-krupka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KFS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kfs",
+   "personId": "pl-krzysztof-grabczuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KFS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kfs",
+   "personId": "pl-marek-matuszewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KFS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kfs",
+   "personId": "pl-malgorzata-niemczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KFS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kfs",
+   "personId": "pl-stanislaw-tomczyszyn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KFS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kop",
+   "personId": "pl-marek-sawicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KOP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kop",
+   "personId": "pl-mariusz-gosek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KOP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kop",
+   "personId": "pl-tomasz-kostus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KOP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kop",
+   "personId": "pl-wojciech-szarama",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KOP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ksp",
+   "personId": "pl-piotr-adamowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ksp",
+   "personId": "pl-aleksandra-leo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ksp",
+   "personId": "pl-daria-gosek-popiolek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ksp",
+   "personId": "pl-joanna-lichocka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ksp",
+   "personId": "pl-norbert-kaczmarczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ksp",
+   "personId": "pl-urszula-augustyn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ksp",
+   "personId": "pl-wojciech-krol",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kss",
+   "personId": "pl-dariusz-wieczorek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kss",
+   "personId": "pl-kazimierz-plocke",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kss",
+   "personId": "pl-krzysztof-tuduj",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-lpg",
+   "personId": "pl-zbigniew-konwinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/LPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-lpg",
+   "personId": "pl-andrzej-zapalowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/LPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-lpg",
+   "personId": "pl-jan-dziedziczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/LPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-lpg",
+   "personId": "pl-jaroslaw-rzepa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/LPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-lpg",
+   "personId": "pl-marek-rzasa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/LPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-lpg",
+   "personId": "pl-piotr-glinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/LPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-mne",
+   "personId": "pl-wanda-nowicka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/MNE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-mne",
+   "personId": "pl-jaroslaw-sellin",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/MNE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-mne",
+   "personId": "pl-monika-rosa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/MNE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-mne",
+   "personId": "pl-wojciech-zubowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/MNE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nkk",
+   "personId": "pl-barbara-dolniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NKK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nkk",
+   "personId": "pl-agnieszka-hanajczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NKK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nkk",
+   "personId": "pl-barbara-bartus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NKK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nkk",
+   "personId": "pl-jacek-tomczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NKK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nkk",
+   "personId": "pl-katarzyna-ueberhan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NKK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nkk",
+   "personId": "pl-marcin-warchol",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NKK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-non",
+   "personId": "pl-urszula-paslawska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NON"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-non",
+   "personId": "pl-jolanta-niezgodzka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NON"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-non",
+   "personId": "pl-katarzyna-ueberhan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NON"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-non",
+   "personId": "pl-michal-wawer",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NON"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-noz",
+   "personId": "pl-dorota-niedziela",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NOZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-noz",
+   "personId": "pl-ewa-szymanowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NOZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-noz",
+   "personId": "pl-jaroslaw-rzepa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NOZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-noz",
+   "personId": "pl-krzysztof-cieciora",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NOZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-npc",
+   "personId": "pl-dorota-loboda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-npc",
+   "personId": "pl-anna-zukowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-npc",
+   "personId": "pl-ewa-szymanowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-npc",
+   "personId": "pl-karina-bosak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-npc",
+   "personId": "pl-urszula-nowogorska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nsp",
+   "personId": "pl-miroslaw-suchon",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nsp",
+   "personId": "pl-kamil-bortniczuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nsp",
+   "personId": "pl-marek-chmielewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nsp",
+   "personId": "pl-marta-stozek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nsp",
+   "personId": "pl-michal-pyrzyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nzc",
+   "personId": "pl-marek-sowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NZC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nzc",
+   "personId": "pl-jaroslaw-zielinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NZC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nzc",
+   "personId": "pl-katarzyna-ueberhan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NZC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nzc",
+   "personId": "pl-krzysztof-mulawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NZC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nzc",
+   "personId": "pl-miroslaw-maliszewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NZC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-nzc",
+   "personId": "pl-norbert-pietrykowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/NZC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-obn",
+   "personId": "pl-andrzej-grzyb",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OBN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-obn",
+   "personId": "pl-andrzej-szejna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OBN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-obn",
+   "personId": "pl-andrzej-szewinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OBN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-obn",
+   "personId": "pl-bartosz-kownacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OBN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-obn",
+   "personId": "pl-joanna-kluzik-rostkowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OBN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-obn",
+   "personId": "pl-pawel-suski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OBN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-obn",
+   "personId": "pl-piotr-strach",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OBN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-obn",
+   "personId": "pl-waldemar-andzel",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OBN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-odk",
+   "personId": "pl-zdzislaw-gawlik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ODK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-odk",
+   "personId": "pl-iwona-arent",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ODK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-odk",
+   "personId": "pl-patryk-gabriel",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ODK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-odk",
+   "personId": "pl-piotr-krol",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ODK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-odk",
+   "personId": "pl-ryszard-petru",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ODK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-osz",
+   "personId": "pl-urszula-paslawska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-osz",
+   "personId": "pl-daria-gosek-popiolek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-osz",
+   "personId": "pl-elzbieta-burkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-osz",
+   "personId": "pl-gabriela-lenartowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-osz",
+   "personId": "pl-grzegorz-placzek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-osz",
+   "personId": "pl-magdalena-filiks",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-osz",
+   "personId": "pl-magdalena-losko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-osz",
+   "personId": "pl-pawel-salek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-pet",
+   "personId": "pl-rafal-bochenek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PET"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-pet",
+   "personId": "pl-stanislaw-gorczyca",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PET"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-pet",
+   "personId": "pl-urszula-augustyn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PET"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psn",
+   "personId": "pl-joanna-borowiak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psn",
+   "personId": "pl-alicja-chybicka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psn",
+   "personId": "pl-iwona-kozlowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psn",
+   "personId": "pl-konrad-berkowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psn",
+   "personId": "pl-krzysztof-piatkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSN"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-katarzyna-ueberhan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-agnieszka-buczynska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-barbara-oliwiecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-dorota-marek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-jan-mosinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-joanna-frydrych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-krzysztof-paszyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-maja-nowak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-psr",
+   "personId": "pl-urszula-rusecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rrw",
+   "personId": "pl-miroslaw-maliszewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RRW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rrw",
+   "personId": "pl-alicja-lepkowska-golas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RRW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rrw",
+   "personId": "pl-kazimierz-gwiazdowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RRW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rrw",
+   "personId": "pl-kazimierz-plocke",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RRW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rrw",
+   "personId": "pl-piotr-glowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RRW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rrw",
+   "personId": "pl-robert-telus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RRW"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rsp",
+   "personId": "pl-jaroslaw-urbaniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rsp",
+   "personId": "pl-kazimierz-smolinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rsp",
+   "personId": "pl-tomasz-glogowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-rsp",
+   "personId": "pl-lukasz-osmalak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skgk",
+   "personId": "pl-magdalena-filiks",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKGK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skgk",
+   "personId": "pl-bartosz-romowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKGK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skgk",
+   "personId": "pl-karolina-pawliczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKGK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skgk",
+   "personId": "pl-krzysztof-szczucki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKGK"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skpc",
+   "personId": "pl-marek-sowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skpc",
+   "personId": "pl-daniel-milewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skpc",
+   "personId": "pl-maria-janyska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skpg",
+   "personId": "pl-magdalena-sroka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skpg",
+   "personId": "pl-joanna-kluzik-rostkowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skpg",
+   "personId": "pl-przemyslaw-wipler",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-skpg",
+   "personId": "pl-tomasz-trela",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SKPG"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-spc",
+   "personId": "pl-pawel-sliz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-spc",
+   "personId": "pl-anna-zukowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-spc",
+   "personId": "pl-katarzyna-piekarska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-spc",
+   "personId": "pl-maciej-tomczykiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-spc",
+   "personId": "pl-michal-pyrzyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-spc",
+   "personId": "pl-michal-wos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-spc",
+   "personId": "pl-patryk-jaskulski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SPC"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-str",
+   "personId": "pl-michal-krawczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/STR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-str",
+   "personId": "pl-anna-pieczarka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/STR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-str",
+   "personId": "pl-artur-lacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/STR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-str",
+   "personId": "pl-marcin-skonieczka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/STR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-str",
+   "personId": "pl-marek-wesoly",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/STR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-str",
+   "personId": "pl-michal-pyrzyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/STR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sue",
+   "personId": "pl-agnieszka-pomaska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SUE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sue",
+   "personId": "pl-adam-gomola",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SUE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sue",
+   "personId": "pl-arkadiusz-sikora",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SUE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sue",
+   "personId": "pl-krzysztof-truskolaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SUE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sue",
+   "personId": "pl-marek-krzakala",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SUE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sue",
+   "personId": "pl-szymon-sek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SUE"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sza",
+   "personId": "pl-pawel-kowal",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SZA"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sza",
+   "personId": "pl-adam-dziedzic",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SZA"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sza",
+   "personId": "pl-anna-zukowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SZA"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sza",
+   "personId": "pl-anna-wojciechowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SZA"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sza",
+   "personId": "pl-ewa-schadler",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SZA"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-sza",
+   "personId": "pl-radoslaw-fogiel",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/SZA"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ust",
+   "personId": "pl-marek-ast",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/UST"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ust",
+   "personId": "pl-anita-kucharska-dziedzic",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/UST"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ust",
+   "personId": "pl-barbara-bartus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/UST"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ust",
+   "personId": "pl-katarzyna-osos",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/UST"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ust",
+   "personId": "pl-mateusz-bochenek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/UST"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ust",
+   "personId": "pl-urszula-nowogorska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/UST"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-zdr",
+   "personId": "pl-marta-golbik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-zdr",
+   "personId": "pl-elzbieta-gelert",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-zdr",
+   "personId": "pl-joanna-wicha",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-zdr",
+   "personId": "pl-katarzyna-sojka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-zdr",
+   "personId": "pl-marek-hok",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-zdr",
+   "personId": "pl-wioleta-tomczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
+  },
+  {
+   "nodeId": "pl-sejm-klub-centrum",
+   "personId": "pl-miroslaw-suchon",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Centrum/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-centrum",
+   "personId": "pl-aleksandra-leo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Centrum/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-centrum",
+   "personId": "pl-ryszard-petru",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Centrum/members"
+  },
+  {
+   "nodeId": "pl-sejm-kolo-demokracja",
+   "personId": "pl-jaroslaw-sachajko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Demokracja/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-ko",
+   "personId": "pl-zbigniew-konwinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-ko",
+   "personId": "pl-joanna-frydrych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-ko",
+   "personId": "pl-katarzyna-piekarska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-ko",
+   "personId": "pl-konrad-frysztak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-ko",
+   "personId": "pl-krystyna-sibinska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-ko",
+   "personId": "pl-marek-sowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-ko",
+   "personId": "pl-marta-golbik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-ko",
+   "personId": "pl-michal-jaros",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-konfederacja",
+   "personId": "pl-grzegorz-placzek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-konfederacja",
+   "personId": "pl-michal-wawer",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-konfederacja",
+   "personId": "pl-witold-tumanowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja/members"
+  },
+  {
+   "nodeId": "pl-sejm-kolo-konfederacja-kp",
+   "personId": "pl-wlodzimierz-skalik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja_KP/members"
+  },
+  {
+   "nodeId": "pl-sejm-kolo-konfederacja-kp",
+   "personId": "pl-roman-fritz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja_KP/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-lewica",
+   "personId": "pl-anna-zukowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-lewica",
+   "personId": "pl-anita-kucharska-dziedzic",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-lewica",
+   "personId": "pl-daria-gosek-popiolek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-lewica",
+   "personId": "pl-dorota-olko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-lewica",
+   "personId": "pl-katarzyna-ueberhan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-lewica",
+   "personId": "pl-tomasz-trela",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-pis",
+   "personId": "pl-mariusz-blaszczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/PiS/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-pis",
+   "personId": "pl-marcin-ociepa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/PiS/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-pis",
+   "personId": "pl-marek-suski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/PiS/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-polska2050",
+   "personId": "pl-pawel-sliz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-polska2050",
+   "personId": "pl-bartosz-romowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-polska2050",
+   "personId": "pl-kamil-wnuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-psl-td",
+   "personId": "pl-krzysztof-paszyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/PSL-TD/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-psl-td",
+   "personId": "pl-bozena-zelazowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/PSL-TD/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-psl-td",
+   "personId": "pl-jacek-tomczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/PSL-TD/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-psl-td",
+   "personId": "pl-magdalena-sroka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/PSL-TD/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-psl-td",
+   "personId": "pl-marek-sawicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/PSL-TD/members"
+  },
+  {
+   "nodeId": "pl-sejm-kolo-razem",
+   "personId": "pl-marcelina-zawisza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Razem/members"
+  },
+  {
+   "nodeId": "pl-sejm-kolo-razem",
+   "personId": "pl-maciej-konieczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Razem/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-rozwojplus",
+   "personId": "pl-mateusz-morawiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-rozwojplus",
+   "personId": "pl-lukasz-schreiber",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
+  },
+  {
+   "nodeId": "pl-prezydium-senatu",
+   "personId": "pl-malgorzata-kidawa-blonska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/senatorowie/prezydium.html"
+  },
+  {
+   "nodeId": "pl-prezydium-senatu",
+   "personId": "pl-magdalena-biejat",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/senatorowie/prezydium.html"
+  },
+  {
+   "nodeId": "pl-prezydium-senatu",
+   "personId": "pl-rafal-grupinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/senatorowie/prezydium.html"
+  },
+  {
+   "nodeId": "pl-prezydium-senatu",
+   "personId": "pl-michal-kaminski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/senatorowie/prezydium.html"
+  },
+  {
+   "nodeId": "pl-prezydium-senatu",
+   "personId": "pl-maciej-zywno",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/senatorowie/prezydium.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-budzetu-i-finansow-publicznych",
+   "personId": "pl-kazimierz-kleina",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,218,komisja-budzetu-i-finansow-publicznych.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-budzetu-i-finansow-publicznych",
+   "personId": "pl-janusz-pecherz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,218,komisja-budzetu-i-finansow-publicznych.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-budzetu-i-finansow-publicznych",
+   "personId": "pl-krzysztof-bienkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,218,komisja-budzetu-i-finansow-publicznych.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-budzetu-i-finansow-publicznych",
+   "personId": "pl-leszek-czarnobaj",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,218,komisja-budzetu-i-finansow-publicznych.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-edukacji",
+   "personId": "pl-waldemar-witkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,238,komisja-edukacji.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-edukacji",
+   "personId": "pl-agnieszka-kolacz-leszczynska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,238,komisja-edukacji.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-edukacji",
+   "personId": "pl-stanislaw-pawlak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,238,komisja-edukacji.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-edukacji",
+   "personId": "pl-wlodzimierz-bernacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,238,komisja-edukacji.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-gospodarki-narodowej-i-innowacyjnosci",
+   "personId": "pl-waldemar-pawlak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,219,komisja-gospodarki-narodowej-i-innowacyjnosci.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-gospodarki-narodowej-i-innowacyjnosci",
+   "personId": "pl-adam-szejnfeld",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,219,komisja-gospodarki-narodowej-i-innowacyjnosci.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-gospodarki-narodowej-i-innowacyjnosci",
+   "personId": "pl-jaroslaw-rusiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,219,komisja-gospodarki-narodowej-i-innowacyjnosci.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-gospodarki-narodowej-i-innowacyjnosci",
+   "personId": "pl-jolanta-hibner",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,219,komisja-gospodarki-narodowej-i-innowacyjnosci.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-infrastruktury",
+   "personId": "pl-jan-hamerski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,220,komisja-infrastruktury.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-infrastruktury",
+   "personId": "pl-anna-gorska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,220,komisja-infrastruktury.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-infrastruktury",
+   "personId": "pl-ryszard-swilski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,220,komisja-infrastruktury.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-klimatu-i-srodowiska",
+   "personId": "pl-stanislaw-gawlowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,226,komisja-klimatu-i-srodowiska.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-klimatu-i-srodowiska",
+   "personId": "pl-magdalena-kochan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,226,komisja-klimatu-i-srodowiska.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-klimatu-i-srodowiska",
+   "personId": "pl-wladyslaw-komarnicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,226,komisja-klimatu-i-srodowiska.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-klimatu-i-srodowiska",
+   "personId": "pl-zdzislaw-pupa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,226,komisja-klimatu-i-srodowiska.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-kultury-i-srodkow-przekazu",
+   "personId": "pl-jerzy-fedorowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,222,komisja-kultury-i-srodkow-przekazu.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-kultury-i-srodkow-przekazu",
+   "personId": "pl-barbara-zdrojewska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,222,komisja-kultury-i-srodkow-przekazu.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-kultury-i-srodkow-przekazu",
+   "personId": "pl-grzegorz-czelej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,222,komisja-kultury-i-srodkow-przekazu.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-kultury-i-srodkow-przekazu",
+   "personId": "pl-halina-bieda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,222,komisja-kultury-i-srodkow-przekazu.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-nauki",
+   "personId": "pl-kazimierz-wiatr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,225,komisja-nauki.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-nauki",
+   "personId": "pl-jozef-zajac",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,225,komisja-nauki.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-nauki",
+   "personId": "pl-piotr-wozniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,225,komisja-nauki.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-obrony-narodowej",
+   "personId": "pl-jerzy-wcisla",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,232,komisja-obrony-narodowej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-obrony-narodowej",
+   "personId": "pl-wojciech-skurkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,232,komisja-obrony-narodowej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-petycji",
+   "personId": "pl-robert-mamatow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,227,komisja-petycji.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-petycji",
+   "personId": "pl-ewa-matecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,227,komisja-petycji.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-praw-czlowieka-i-praworzadnosci",
+   "personId": "pl-marcin-karpinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,228,komisja-praw-czlowieka-i-praworzadnosci.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-praw-czlowieka-i-praworzadnosci",
+   "personId": "pl-grzegorz-fedorowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,228,komisja-praw-czlowieka-i-praworzadnosci.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-praw-czlowieka-i-praworzadnosci",
+   "personId": "pl-joanna-sekula",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,228,komisja-praw-czlowieka-i-praworzadnosci.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-praw-czlowieka-i-praworzadnosci",
+   "personId": "pl-marek-komorowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,228,komisja-praw-czlowieka-i-praworzadnosci.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-regulaminowa-etyki-i-spraw-senatorskich",
+   "personId": "pl-slawomir-rybicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,223,komisja-regulaminowa-etyki-i-spraw-senatorskich.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-regulaminowa-etyki-i-spraw-senatorskich",
+   "personId": "pl-krzysztof-slon",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,223,komisja-regulaminowa-etyki-i-spraw-senatorskich.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-rodziny-polityki-senioralnej-i-spolecznej",
+   "personId": "pl-janina-sagatowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,233,komisja-rodziny-polityki-senioralnej-i-spolecznej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-rodziny-polityki-senioralnej-i-spolecznej",
+   "personId": "pl-jan-libicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,233,komisja-rodziny-polityki-senioralnej-i-spolecznej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-rodziny-polityki-senioralnej-i-spolecznej",
+   "personId": "pl-jolanta-piotrowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,233,komisja-rodziny-polityki-senioralnej-i-spolecznej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-rolnictwa-i-rozwoju-wsi",
+   "personId": "pl-ryszard-bober",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,234,komisja-rolnictwa-i-rozwoju-wsi.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-rolnictwa-i-rozwoju-wsi",
+   "personId": "pl-beniamin-godyla",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,234,komisja-rolnictwa-i-rozwoju-wsi.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-rolnictwa-i-rozwoju-wsi",
+   "personId": "pl-jerzy-chroscikowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,234,komisja-rolnictwa-i-rozwoju-wsi.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-samorzadu-terytorialnego-i-administracji-panstwowej",
+   "personId": "pl-zygmunt-frankiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,235,komisja-samorzadu-terytorialnego-i-administracji-panstwowej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-samorzadu-terytorialnego-i-administracji-panstwowej",
+   "personId": "pl-anna-bogucka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,235,komisja-samorzadu-terytorialnego-i-administracji-panstwowej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-samorzadu-terytorialnego-i-administracji-panstwowej",
+   "personId": "pl-gustaw-brzezin",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,235,komisja-samorzadu-terytorialnego-i-administracji-panstwowej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-samorzadu-terytorialnego-i-administracji-panstwowej",
+   "personId": "pl-wadim-tyszkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,235,komisja-samorzadu-terytorialnego-i-administracji-panstwowej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-samorzadu-terytorialnego-i-administracji-panstwowej",
+   "personId": "pl-waldy-dzikowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,235,komisja-samorzadu-terytorialnego-i-administracji-panstwowej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-sportu",
+   "personId": "pl-wiktor-durlak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,229,komisja-sportu.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-sportu",
+   "personId": "pl-artur-dunin",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,229,komisja-sportu.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-sportu",
+   "personId": "pl-janusz-gromek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,229,komisja-sportu.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica",
+   "personId": "pl-bogdan-borusewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica",
+   "personId": "pl-alicja-zajac",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica",
+   "personId": "pl-kazimierz-ujazdowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica",
+   "personId": "pl-malgorzata-sekula-szmajdzinska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica",
+   "personId": "pl-wojciech-ziemniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
+   "personId": "pl-tomasz-grodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
+   "personId": "pl-gabriela-morawska-stanecka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
+   "personId": "pl-henryk-siedlaczek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
+   "personId": "pl-jacek-wlosowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-zagranicznych",
+   "personId": "pl-grzegorz-schetyna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-zagranicznych",
+   "personId": "pl-andrzej-kalata",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-spraw-zagranicznych",
+   "personId": "pl-maciej-kopiec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-ustawodawcza",
+   "personId": "pl-krzysztof-kwiatkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,236,komisja-ustawodawcza.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-ustawodawcza",
+   "personId": "pl-jacek-trela",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,236,komisja-ustawodawcza.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-ustawodawcza",
+   "personId": "pl-marek-borowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,236,komisja-ustawodawcza.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-ustawodawcza",
+   "personId": "pl-stanislaw-gogacz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,236,komisja-ustawodawcza.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-zdrowia",
+   "personId": "pl-beata-malecka-libera",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,221,komisja-zdrowia.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-zdrowia",
+   "personId": "pl-agnieszka-gorgon-komor",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,221,komisja-zdrowia.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-zdrowia",
+   "personId": "pl-waldemar-kraska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,221,komisja-zdrowia.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-zdrowia",
+   "personId": "pl-wojciech-konieczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,221,komisja-zdrowia.html"
+  },
+  {
+   "nodeId": "pl-senat-klub-koalicja-obywatelska-platforma-obywatelska-nowoczesna-inicja",
+   "personId": "pl-tomasz-grodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-klub-koalicja-obywatelska-platforma-obywatelska-nowoczesna-inicja",
+   "personId": "pl-agnieszka-kolacz-leszczynska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-klub-koalicja-obywatelska-platforma-obywatelska-nowoczesna-inicja",
+   "personId": "pl-magdalena-kochan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-klub-koalicja-obywatelska-platforma-obywatelska-nowoczesna-inicja",
+   "personId": "pl-marek-borowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-klub-prawo-i-sprawiedliwosc",
+   "personId": "pl-stanislaw-karczewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-klub-koalicyjny-klub-parlamentarny-lewicy-nowa-lewica-pps-unia-pr",
+   "personId": "pl-waldemar-witkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-klub-koalicyjny-klub-parlamentarny-lewicy-nowa-lewica-pps-unia-pr",
+   "personId": "pl-maciej-kopiec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-klub-trzecia-droga",
+   "personId": "pl-waldemar-pawlak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-klub-trzecia-droga",
+   "personId": "pl-ryszard-bober",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-kolo-e-nowa-polska-centrum",
+   "personId": "pl-grzegorz-fedorowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  },
+  {
+   "nodeId": "pl-senat-kolo-e-nowa-polska-centrum",
+   "personId": "pl-andrzej-dziuba",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/sklad/kluby-i-kola/"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-sejm--elects--prezydium-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-marszalek-sejmu--ex_officio--prezydium-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-marszalek-sejmu--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-prezydium-sejmu--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-konwent-seniorow-sejmu--advises--marszalek-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-asw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-cnt",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-der",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-dim",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-enm",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-eps",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-esk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-fpb",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-gmz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-gor",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-inf",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-kfs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-kop",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-ksp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-kss",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-lpg",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-mne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-nkk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-non",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-noz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-npc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-nsp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-nzc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-obn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-odk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-osz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-pet",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-psn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-psr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-rrw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-rsp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-skgk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-skpc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-skpg",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-spc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-str",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-sue",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-sza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-ust",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm--appoints--sejm-komisja-zdr",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm-klub-centrum--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm-klub-ko--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm-klub-konfederacja--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm-klub-lewica--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm-klub-pis--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm-klub-polska2050--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm-klub-psl-td--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-sejm-klub-rozwojplus--ex_officio--konwent-seniorow-sejmu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--elects--prezydium-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-marszalek-senatu--ex_officio--prezydium-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-marszalek-senatu--ex_officio--konwent-seniorow-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-prezydium-senatu--ex_officio--konwent-seniorow-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-konwent-seniorow-senatu--advises--marszalek-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-budzetu-i-finansow-publicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-edukacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-gospodarki-narodowej-i-innowacyjnosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-infrastruktury",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-klimatu-i-srodowiska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-kultury-i-srodkow-przekazu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-nauki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-obrony-narodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-petycji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-praw-czlowieka-i-praworzadnosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-regulaminowa-etyki-i-spraw-senatorskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-rodziny-polityki-senioralnej-i-spolecznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-rolnictwa-i-rozwoju-wsi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-samorzadu-terytorialnego-i-administracji-panstwowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-sportu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-spraw-unii-europejskiej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-spraw-zagranicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-ustawodawcza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-zdrowia",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat-klub-koalicja-obywatelska-platforma-obywatelska-nowoczesna-inicja--ex_officio--konwent-seniorow-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat-klub-prawo-i-sprawiedliwosc--ex_officio--konwent-seniorow-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat-klub-koalicyjny-klub-parlamentarny-lewicy-nowa-lewica-pps-unia-pr--ex_officio--konwent-seniorow-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat-klub-trzecia-droga--ex_officio--konwent-seniorow-senatu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {}
+ },
+ "missing": [
+  "Imienne składy konwentów seniorów nie są publikowane.",
+  "API Sejmu nie podaje daty objęcia funkcji w komisji."
+ ]
+}

@@ -1,0 +1,21 @@
+{
+  "_comment": "Pary scenariuszy US ↔ PL. us = adres lub opis węzła na graph.civlab.org/us, pl = id węzła w data/pl/graph.json.",
+  "pairs": [
+    {"key": "head-of-state", "why": "urząd wybieralny, hub powołań", "us": "/us/elected/us-president-of-the-united-states", "pl": "pl-prezydent-rp"},
+    {"key": "legislature-capsule", "why": "kapsuła dwóch izb", "us": "/us/elected/us-congress", "pl": "pl-sejm"},
+    {"key": "upper-chamber-confirms", "why": "izba zatwierdzająca nominacje", "us": "/us/elected/us-the-senate", "pl": "pl-senat"},
+    {"key": "cabinet-department", "why": "organ gabinetu z podjednostkami i szefem", "us": "/us/departments/us-department-of-justice", "pl": "pl-ministerstwo-spraw-wewnetrznych-i-administracji"},
+    {"key": "department-head", "why": "stanowisko szefa (kółko przy glifie)", "us": "/us/dept-heads/us-attorney-general", "pl": "pl-minister-spraw-wewnetrznych-i-administracji"},
+    {"key": "biggest-hub", "why": "najwięcej relacji naraz", "us": "/us/elected/us-president-of-the-united-states", "pl": "pl-prezes-rady-ministrow"},
+    {"key": "independent-regulator", "why": "komisja/regulator w sektorze niezależnym", "us": "/us/commissions/us-federal-communications-commission", "pl": "pl-krrit"},
+    {"key": "audit-office", "why": "organ kontroli powoływany przez parlament", "us": "Government Accountability Office", "pl": "pl-nik"},
+    {"key": "top-court", "why": "najwyższy sąd i jego prezes", "us": "Supreme Court of the United States", "pl": "pl-sad-najwyzszy"},
+    {"key": "sub-agency-dot", "why": "kropka jednostki podległej", "us": "dowolna kropka przy Department of Justice (np. FBI)", "pl": "pl-komenda-glowna-policji"},
+    {"key": "advisory-body", "why": "ciało doradcze i relacja doradza", "us": "/us/advisories/ (dowolne, np. Council of Economic Advisers)", "pl": "pl-rada-dialogu-spolecznego"},
+    {"key": "vacant-seat", "why": "stanowisko nieobsadzone", "us": "dowolne stanowisko z listy Seats vacant", "pl": "pl-prezes-ipn"},
+    {"key": "acting-official", "why": "pełniący obowiązki", "us": "dowolne stanowisko z listy Acting officials", "pl": "pl-komendant-sop"},
+    {"key": "sovereign", "why": "pieczęć suwerena w środku", "us": "People of the United States", "pl": "pl-narod"},
+    {"key": "government-corporation", "why": "spółka/osoba prawna państwa", "us": "dowolna Corporation z legendy (np. Amtrak / USPS)", "pl": "pl-zus"}
+  ],
+  "global": ["legenda", "wyszukiwarka", "zoom-i-przeciaganie", "link-do-wezla-i-wstecz", "motyw", "klik-w-pusta-scene", "waski-ekran-390px", "konsola-bez-bledow"]
+}

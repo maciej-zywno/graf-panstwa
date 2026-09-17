@@ -1,0 +1,4775 @@
+{
+ "chunk": "wojewodowie",
+ "generatedAt": "2026-09-17",
+ "coverageNote": "Zakres: 16 urzędów wojewódzkich (department/other, ring administration, budgetPart 85/xx wg rozp. MF Dz.U. 2025 poz. 1185 – zweryfikowane w PDF; REGON ze stopek serwisów UW dla 15 urzędów, brak dla Małopolskiego UW) i 16 stanowisk wojewodów (dept_head/voivode) z osobami; wicewojewodowie i dyrektorzy generalni jako people na węzłach urzędów (bez własnych węzłów). Wszystkie 16 nazwisk wojewodów potwierdzono 17.09.2026 na stronach kierownictwa poszczególnych UW – zgodne z wykazem MSWiA (wersja 28.05.2025), rozbieżności brak. Daty powołań wojewodów: 11 z komunikatu MSWiA z 20.12.2023, pozostałe z komunikatów UW; dla Wojewody Małopolskiego (K. Klęczar) brak komunikatu MUW – data z komunikatu Gminy Kęty z 14.12.2023 (źródło wtórne, confidence medium). Daty wicewojewodów tylko z datowanych komunikatów UW (część z dokładnością do miesiąca – komunikat podaje datę prezentacji). Jeden węzeł-klasa „Rządowa administracja zespolona w województwie” (bez rozpisywania komend/inspektoratów/kuratoriów). Pominięto: bipUrl dla 6 UW, których BIP jest zintegrowany z serwisem gov.pl/własnym (Łódzki, Opolski, Podkarpacki, Warmińsko-Mazurski, Wielkopolski, Zachodniopomorski); przynależność partyjną osób (brak w źródłach oficjalnych); delegatury UW; administrację niezespoloną (art. 56); zdjęcia spoza gov.pl. Krawędzie: urząd→dept_head→wojewoda; PRM→appoints→wojewoda i MSWiA→nominates→wojewoda (art. 6 ust. 1); PRM→oversees→wojewoda (art. 8 ust. 1–2) oraz MSWiA→oversees→wojewoda (art. 8 ust. 3); PRM→appoints→urząd z seatsAppointed = liczba obsadzonych stanowisk wicewojewodów (art. 7 ust. 2) i wojewoda→nominates→urząd (wniosek wojewody); wojewoda→oversees→administracja zespolona (art. 51). Nie modelowano krawędzi Rada Ministrów→wojewoda (art. 3 ust. 1 pkt 1 to reprezentacja, nie nadzór).",
+ "nodes": {
+  "pl-dolnoslaski-urzad-wojewodzki": {
+   "id": "pl-dolnoslaski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Dolnośląski Urząd Wojewódzki we Wrocławiu",
+   "shortName": "DUW",
+   "description": "Aparat pomocniczy Wojewody Dolnośląskiego – przedstawiciela Rady Ministrów w województwie dolnośląskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Wrocław. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/02.",
+   "aliases": [
+    "DUW",
+    "Dolnośląski Urząd Wojewódzki",
+    "UW Wrocław"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/dolnoslaski-uw",
+   "bipUrl": "https://bip.duw.pl/",
+   "regon": "000514377",
+   "budgetPart": "85/02",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-dolnoslaski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Serwis urzędu działa pod adresem gov.pl/web/dolnoslaski-uw (adres uw-dolnoslaski przekierowuje na stronę główną gov.pl); MSWiA podaje www.duw.pl.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-agnieszka-miza",
+      "name": "Agnieszka Miza",
+      "positionId": "pl-i-wicewojewoda-dolnoslaski",
+      "positionName": "I Wicewojewoda Dolnośląski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/2e00bb02-f860-4c8e-b96a-a066ae00829b/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dolnoslaski-uw/kierownictwo",
+      "startedAtSource": null,
+      "note": "Komunikat DUW o powołaniu (bez daty na stronie): https://www.gov.pl/web/dolnoslaski-uw/agnieszka-miza-nowa-i-wicewojewoda-dolnoslaska"
+     },
+     {
+      "id": "pl-artur-jurkowski",
+      "name": "Artur Jurkowski",
+      "positionId": "pl-ii-wicewojewoda-dolnoslaski",
+      "positionName": "II Wicewojewoda Dolnośląski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/162d2bdc-c7cf-407d-9692-d4d2b0b8db63/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dolnoslaski-uw/kierownictwo",
+      "startedAtSource": null,
+      "note": "Komunikat DUW: https://www.gov.pl/web/dolnoslaski-uw/artur-jurkowski-nowym-wicewojewoda-dolnoslaskim (bez daty w treści)."
+     },
+     {
+      "id": "pl-aneta-fafara",
+      "name": "Aneta Fąfara",
+      "positionId": "pl-dyrektor-generalny-dolnoslaski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Dolnośląski Urząd Wojewódzki we Wrocławiu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/4ef2b5c0-4687-405f-9df1-c029f59e63b9/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dolnoslaski-uw/kierownictwo",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/dolnoslaski-uw",
+     "https://www.gov.pl/web/dolnoslaski-uw/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://bip.duw.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-dolnoslaski": {
+   "id": "pl-wojewoda-dolnoslaski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Dolnośląski",
+   "shortName": "Wojewoda Dolnośląski",
+   "description": "Przedstawiciel Rady Ministrów w województwie dolnośląskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Dolnośląski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/dolnoslaski-uw/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-dolnoslaski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-anna-zabska",
+      "name": "Anna Żabska",
+      "positionId": "pl-wojewoda-dolnoslaski",
+      "positionName": "Wojewoda Dolnośląski",
+      "type": "appointed",
+      "startedAt": "2024-11-26",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/1090fea8-78e2-46c7-b269-f646602d6e4c/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/dolnoslaski-uw/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/mswia/powolanie-nowego-wojewody-dolnoslaskiego",
+      "note": "Powołana przez PRM na wniosek MSWiA; akt wręczony 25.11.2024, objęcie stanowiska 26.11.2024 (komunikat MSWiA; potwierdzone na stronie DUW). Zastąpiła Macieja Awiżenia."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/dolnoslaski-uw/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/mswia/powolanie-nowego-wojewody-dolnoslaskiego"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-kujawsko-pomorski-urzad-wojewodzki": {
+   "id": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Kujawsko-Pomorski Urząd Wojewódzki w Bydgoszczy",
+   "shortName": "KPUW",
+   "description": "Aparat pomocniczy Wojewody Kujawsko-Pomorskiego – przedstawiciela Rady Ministrów w województwie kujawsko-pomorskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Bydgoszcz. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/04.",
+   "aliases": [
+    "KPUW",
+    "Kujawsko-Pomorski Urząd Wojewódzki",
+    "UW Bydgoszcz"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-kujawsko-pomorski",
+   "bipUrl": "https://www.bip.bydgoszcz.uw.gov.pl/",
+   "regon": "000514236",
+   "budgetPart": "85/04",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-kujawsko-pomorski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-piotr-hemmerling",
+      "name": "Piotr Hemmerling",
+      "positionId": "pl-i-wicewojewoda-kujawsko-pomorski",
+      "positionName": "I Wicewojewoda Kujawsko-Pomorski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/9a12b387-23d6-4c97-9a1e-f0093261f69a/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-kujawsko-pomorski/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-kujawsko-pomorski/poznalismy-nowych-wicewojewodow-kujawsko-pomorskiego",
+      "note": "Przedstawiony 17.01.2024 jako powołany wicewojewoda (komunikat UW); dokładna data aktu powołania nieznana."
+     },
+     {
+      "id": "pl-michal-koniuch",
+      "name": "Michał Koniuch",
+      "positionId": "pl-ii-wicewojewoda-kujawsko-pomorski",
+      "positionName": "II Wicewojewoda Kujawsko-Pomorski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/ca8265b9-f3ff-496d-9845-908d1fb957fe/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-kujawsko-pomorski/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-kujawsko-pomorski/poznalismy-nowych-wicewojewodow-kujawsko-pomorskiego",
+      "note": "Przedstawiony 17.01.2024 jako powołany wicewojewoda (komunikat UW)."
+     },
+     {
+      "id": "pl-katarzyna-wesolowska",
+      "name": "Katarzyna Wesołowska",
+      "positionId": "pl-dyrektor-generalny-kujawsko-pomorski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Kujawsko-Pomorski Urząd Wojewódzki w Bydgoszczy",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/a9ffcc8f-baf8-4810-a9f4-2469a346adc0/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-kujawsko-pomorski/kierownictwo",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-kujawsko-pomorski",
+     "https://www.gov.pl/web/uw-kujawsko-pomorski/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.bip.bydgoszcz.uw.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-kujawsko-pomorski": {
+   "id": "pl-wojewoda-kujawsko-pomorski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Kujawsko-Pomorski",
+   "shortName": "Wojewoda Kujawsko-Pomorski",
+   "description": "Przedstawiciel Rady Ministrów w województwie kujawsko-pomorskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Kujawsko-Pomorski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-kujawsko-pomorski/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-michal-sztybel",
+      "name": "Michał Sztybel",
+      "positionId": "pl-wojewoda-kujawsko-pomorski",
+      "positionName": "Wojewoda Kujawsko-Pomorski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/dc979d75-e952-4c88-b06e-425e70348706/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-kujawsko-pomorski/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom",
+      "note": "Powołanie wręczone 20.12.2023 przez wiceministra SWiA (komunikat MSWiA z 20.12.2023)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-kujawsko-pomorski/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-lubelski-urzad-wojewodzki": {
+   "id": "pl-lubelski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Lubelski Urząd Wojewódzki w Lublinie",
+   "shortName": "LUW",
+   "description": "Aparat pomocniczy Wojewody Lubelskiego – przedstawiciela Rady Ministrów w województwie lubelskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Lublin. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/06.",
+   "aliases": [
+    "LUW",
+    "Lubelski Urząd Wojewódzki",
+    "UW Lublin"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-lubelski",
+   "bipUrl": "https://luwwlublinie.bip.gov.pl/",
+   "regon": "000514294",
+   "budgetPart": "85/06",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-lubelski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wojciech-woloch",
+      "name": "Wojciech Wołoch",
+      "positionId": "pl-i-wicewojewoda-lubelski",
+      "positionName": "I Wicewojewoda Lubelski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/bfeb8e54-744f-4559-8018-61639ce5ac7a/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lubelski/kierownictwo2",
+      "startedAtSource": "https://www.gov.pl/web/uw-lubelski/premier-powolal-wicewojewodow-lubelskich",
+      "note": "Komunikat UW z 16.01.2024 o powołaniu przez PRM; dokładna data aktu nieznana."
+     },
+     {
+      "id": "pl-andrzej-maj",
+      "name": "Andrzej Maj",
+      "positionId": "pl-ii-wicewojewoda-lubelski",
+      "positionName": "II Wicewojewoda Lubelski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/a6aa2f02-d33b-4c56-993f-ece7e456c581/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lubelski/kierownictwo2",
+      "startedAtSource": "https://www.gov.pl/web/uw-lubelski/premier-powolal-wicewojewodow-lubelskich",
+      "note": "Komunikat UW z 16.01.2024 o powołaniu przez PRM."
+     },
+     {
+      "id": "pl-jaroslaw-szymczyk",
+      "name": "Jarosław Szymczyk",
+      "positionId": "pl-dyrektor-generalny-lubelski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Lubelski Urząd Wojewódzki w Lublinie",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/5e1f7946-f7ea-4bdc-813e-ca0e72f4edd1/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lubelski/kierownictwo2",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-lubelski",
+     "https://www.gov.pl/web/uw-lubelski/kierownictwo2",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://luwwlublinie.bip.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-lubelski": {
+   "id": "pl-wojewoda-lubelski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Lubelski",
+   "shortName": "Wojewoda Lubelski",
+   "description": "Przedstawiciel Rady Ministrów w województwie lubelskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Lubelski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-lubelski/kierownictwo2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-lubelski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-krzysztof-komorski",
+      "name": "Krzysztof Komorski",
+      "positionId": "pl-wojewoda-lubelski",
+      "positionName": "Wojewoda Lubelski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/1e7e6d85-dc98-424d-8339-3b6bf1a754f0/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lubelski/kierownictwo2",
+      "startedAtSource": "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom",
+      "note": "Powołanie wręczone 20.12.2023 (komunikat MSWiA); 13.01.2026 UW podsumował dwa lata urzędowania."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-lubelski/kierownictwo2",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-lubuski-urzad-wojewodzki": {
+   "id": "pl-lubuski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Lubuski Urząd Wojewódzki w Gorzowie Wielkopolskim",
+   "shortName": "LUW",
+   "description": "Aparat pomocniczy Wojewody Lubuskiego – przedstawiciela Rady Ministrów w województwie lubuskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Gorzów Wielkopolski. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/08.",
+   "aliases": [
+    "LUW",
+    "Lubuski Urząd Wojewódzki",
+    "UW Gorzów Wielkopolski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-lubuski",
+   "bipUrl": "https://bip.lubuskie.uw.gov.pl/",
+   "regon": "210467089",
+   "budgetPart": "85/08",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-lubuski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-maciej-siwicki",
+      "name": "Maciej Siwicki",
+      "positionId": "pl-i-wicewojewoda-lubuski",
+      "positionName": "I Wicewojewoda Lubuski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/ef71d40b-3c02-4f46-8d23-1a8e4548d834/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lubuski/kierownictwo-urzedu",
+      "startedAtSource": null,
+      "note": "Strona kierownictwa LUW nie podaje daty powołania."
+     },
+     {
+      "id": "pl-tomasz-nesterowicz",
+      "name": "Tomasz Nesterowicz",
+      "positionId": "pl-ii-wicewojewoda-lubuski",
+      "positionName": "II Wicewojewoda Lubuski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/d5c45965-a2b5-4367-bb44-0b01aa58e94f/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lubuski/kierownictwo-urzedu",
+      "startedAtSource": null,
+      "note": "Strona kierownictwa LUW nie podaje daty powołania."
+     },
+     {
+      "id": "pl-radoslaw-wroblewski",
+      "name": "Radosław Wróblewski",
+      "positionId": "pl-dyrektor-generalny-lubuski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Lubuski Urząd Wojewódzki w Gorzowie Wielkopolskim",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/75d81dbb-823a-4bc6-8f2d-f7f4a6151764/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lubuski/kierownictwo-urzedu",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-lubuski",
+     "https://www.gov.pl/web/uw-lubuski/kierownictwo-urzedu",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://bip.lubuskie.uw.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-lubuski": {
+   "id": "pl-wojewoda-lubuski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Lubuski",
+   "shortName": "Wojewoda Lubuski",
+   "description": "Przedstawiciel Rady Ministrów w województwie lubuskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Lubuski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-lubuski/kierownictwo-urzedu",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-lubuski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-cebula",
+      "name": "Marek Cebula",
+      "positionId": "pl-wojewoda-lubuski",
+      "positionName": "Wojewoda Lubuski",
+      "type": "appointed",
+      "startedAt": "2023-12-22",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/866aa371-0c6b-405a-86d7-6403691b06f2/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lubuski/kierownictwo-urzedu",
+      "startedAtSource": "https://www.gov.pl/web/uw-lubuski/marek-cebula-nowym-wojewoda-lubuskim",
+      "note": "Powołany przez PRM 22.12.2023 (komunikat LUW z 22.12.2023); zastąpił Władysława Dajczaka."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-lubuski/kierownictwo-urzedu",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/uw-lubuski/marek-cebula-nowym-wojewoda-lubuskim"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-lodzki-urzad-wojewodzki": {
+   "id": "pl-lodzki-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Łódzki Urząd Wojewódzki w Łodzi",
+   "shortName": "ŁUW",
+   "description": "Aparat pomocniczy Wojewody Łódzkiego – przedstawiciela Rady Ministrów w województwie łódzkim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Łódź. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/10.",
+   "aliases": [
+    "ŁUW",
+    "Łódzki Urząd Wojewódzki",
+    "UW Łódź"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-lodzki",
+   "bipUrl": null,
+   "regon": "004308002",
+   "budgetPart": "85/10",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-lodzki",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-mazur",
+      "name": "Marek Mazur",
+      "positionId": "pl-i-wicewojewoda-odzki",
+      "positionName": "I Wicewojewoda Łódzki",
+      "type": "appointed",
+      "startedAt": "2024-01-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/0eaf25cc-e5ad-4548-9327-b5db0db4994d/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lodzki/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-lodzki/nowi-wicewojewodowie",
+      "note": "Powołany przez PRM 15.01.2024 (komunikat ŁUW)."
+     },
+     {
+      "id": "pl-grzegorz-majewski",
+      "name": "Grzegorz Majewski",
+      "positionId": "pl-ii-wicewojewoda-odzki",
+      "positionName": "II Wicewojewoda Łódzki",
+      "type": "appointed",
+      "startedAt": "2024-01-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/d3bf5c26-30ea-48b3-8e75-1bdce40d83ef/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lodzki/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-lodzki/nowi-wicewojewodowie",
+      "note": "Powołany przez PRM 15.01.2024 (komunikat ŁUW)."
+     },
+     {
+      "id": "pl-marcin-szmaja",
+      "name": "Marcin Szmaja",
+      "positionId": "pl-dyrektor-generalny-lodzki-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Łódzki Urząd Wojewódzki w Łodzi",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/66e3d691-286f-470c-9317-aa7c057981e1/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lodzki/kierownictwo",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-lodzki",
+     "https://www.gov.pl/web/uw-lodzki/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-lodzki": {
+   "id": "pl-wojewoda-lodzki",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Łódzki",
+   "shortName": "Wojewoda Łódzki",
+   "description": "Przedstawiciel Rady Ministrów w województwie łódzkim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Łódzki"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-lodzki/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-lodzki-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-dorota-ryl",
+      "name": "Dorota Ryl",
+      "positionId": "pl-wojewoda-lodzki",
+      "positionName": "Wojewoda Łódzki",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/eb567dfb-803e-4811-8fbf-f62d80038915/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-lodzki/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom",
+      "note": "Powołanie wręczone 20.12.2023 (komunikat MSWiA; komunikat ŁUW z 21.12.2023). Zastąpiła Karola Młynarczyka."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-lodzki/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-malopolski-urzad-wojewodzki": {
+   "id": "pl-malopolski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Małopolski Urząd Wojewódzki w Krakowie",
+   "shortName": "MUW",
+   "description": "Aparat pomocniczy Wojewody Małopolskiego – przedstawiciela Rady Ministrów w województwie małopolskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Kraków. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/12.",
+   "aliases": [
+    "MUW",
+    "Małopolski Urząd Wojewódzki",
+    "UW Kraków"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.malopolska.uw.gov.pl",
+   "bipUrl": "https://bip.malopolska.pl/muw",
+   "regon": null,
+   "budgetPart": "85/12",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-malopolski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Urząd nie korzysta z portalu gov.pl (adres gov.pl/web/uw-malopolski przekierowuje na stronę główną gov.pl); serwis własny malopolska.uw.gov.pl. Dyrektora generalnego nie zweryfikowano (strona niedostępna w strukturze serwisu).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-elzbieta-achinger",
+      "name": "Elżbieta Achinger",
+      "positionId": "pl-i-wicewojewoda-maopolska",
+      "positionName": "I Wicewojewoda Małopolska",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.malopolska.uw.gov.pl/index.aspx?page=wojewoda",
+      "startedAtSource": null,
+      "note": "Strona MUW nie podaje daty powołania."
+     },
+     {
+      "id": "pl-ryszard-smialek",
+      "name": "Ryszard Śmiałek",
+      "positionId": "pl-ii-wicewojewoda-maopolski",
+      "positionName": "II Wicewojewoda Małopolski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.malopolska.uw.gov.pl/index.aspx?page=wojewoda",
+      "startedAtSource": null,
+      "note": "Strona MUW nie podaje daty powołania."
+     },
+     {
+      "id": "pl-lucyna-gajda",
+      "name": "Lucyna Gajda",
+      "positionId": "pl-dyrektor-generalny-malopolski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Małopolskiego Urzędu Wojewódzkiego w Krakowie",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.malopolska.uw.gov.pl/index.aspx?page=dyrektor_generalny",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 i 53a ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.malopolska.uw.gov.pl",
+     "https://www.malopolska.uw.gov.pl/index.aspx?page=wojewoda",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://bip.malopolska.pl/muw",
+     "https://www.malopolska.uw.gov.pl/index.aspx?page=dyrektor_generalny"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-malopolski": {
+   "id": "pl-wojewoda-malopolski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Małopolski",
+   "shortName": "Wojewoda Małopolski",
+   "description": "Przedstawiciel Rady Ministrów w województwie małopolskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Małopolski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.malopolska.uw.gov.pl/index.aspx?page=wojewoda",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-malopolski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-krzysztof-kleczar",
+      "name": "Krzysztof Jan Klęczar",
+      "positionId": "pl-wojewoda-malopolski",
+      "positionName": "Wojewoda Małopolski",
+      "type": "appointed",
+      "startedAt": "2023-12-14",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.malopolska.uw.gov.pl/index.aspx?page=wojewoda",
+      "startedAtSource": "https://kety.pl/aktualnosci/krzysztof-jan-kleczar-wojewoda-malopolski.html",
+      "note": "Nazwisko potwierdzone na stronie MUW w Krakowie (17.09.2026). Data: komunikat Gminy Kęty z 14.12.2023 (Klęczar był burmistrzem Kęt) – powołanie przez PRM z dniem 14.12.2023; MUW nie publikuje datowanego komunikatu; Wikipedia podaje akt z 13.12.2023 ze skutkiem od 14.12.2023. Źródło daty wtórne – confidence medium."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.malopolska.uw.gov.pl/index.aspx?page=wojewoda",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://kety.pl/aktualnosci/krzysztof-jan-kleczar-wojewoda-malopolski.html"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  },
+  "pl-mazowiecki-urzad-wojewodzki": {
+   "id": "pl-mazowiecki-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Mazowiecki Urząd Wojewódzki w Warszawie",
+   "shortName": "MUW",
+   "description": "Aparat pomocniczy Wojewody Mazowieckiego – przedstawiciela Rady Ministrów w województwie mazowieckim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Warszawa. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/14.",
+   "aliases": [
+    "MUW",
+    "Mazowiecki Urząd Wojewódzki",
+    "UW Warszawa"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-mazowiecki",
+   "bipUrl": "https://bip.mazowieckie.pl/",
+   "regon": "013272620",
+   "budgetPart": "85/14",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-mazowiecki",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-robert-sitnik",
+      "name": "Robert Sitnik",
+      "positionId": "pl-i-wicewojewoda-mazowiecki",
+      "positionName": "I Wicewojewoda Mazowiecki",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/542f1b27-77a1-4314-849f-6cf4aa9e3e84/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-mazowiecki/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-mazowiecki/wicewojewodowie-mazowieccy-powolani",
+      "note": "Komunikat MUW z 17.01.2024 o powołaniu przez PRM."
+     },
+     {
+      "id": "pl-patryk-fajdek",
+      "name": "Patryk Fajdek",
+      "positionId": "pl-ii-wicewojewoda-mazowiecki",
+      "positionName": "II Wicewojewoda Mazowiecki",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/e270c906-957c-4c27-86ff-4a5ea44f460a/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-mazowiecki/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-mazowiecki/wicewojewodowie-mazowieccy-powolani",
+      "note": "Komunikat MUW z 17.01.2024 o powołaniu przez PRM."
+     },
+     {
+      "id": "pl-pawel-cukrowski",
+      "name": "Paweł Cukrowski",
+      "positionId": "pl-dyrektor-generalny-mazowiecki-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Mazowiecki Urząd Wojewódzki w Warszawie",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/160204ed-190d-49cc-a591-60e81930786f/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-mazowiecki/kierownictwo",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-mazowiecki",
+     "https://www.gov.pl/web/uw-mazowiecki/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://bip.mazowieckie.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-mazowiecki": {
+   "id": "pl-wojewoda-mazowiecki",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Mazowiecki",
+   "shortName": "Wojewoda Mazowiecki",
+   "description": "Przedstawiciel Rady Ministrów w województwie mazowieckim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Mazowiecki"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-mazowiecki/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-mazowiecki-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-mariusz-frankowski",
+      "name": "Mariusz Frankowski",
+      "positionId": "pl-wojewoda-mazowiecki",
+      "positionName": "Wojewoda Mazowiecki",
+      "type": "appointed",
+      "startedAt": "2023-12-13",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/d759c492-9427-4e9c-949e-b2bfb4d2c2a2/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-mazowiecki/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-mazowiecki/mariusz-frankowski-nowym-wojewoda-mazowieckim",
+      "note": "Powołany przez PRM 13.12.2023 (komunikat MUW z 14.12.2023); zastąpił Tobiasza Bocheńskiego."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-mazowiecki/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/uw-mazowiecki/mariusz-frankowski-nowym-wojewoda-mazowieckim"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-opolski-urzad-wojewodzki": {
+   "id": "pl-opolski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Opolski Urząd Wojewódzki w Opolu",
+   "shortName": "OUW",
+   "description": "Aparat pomocniczy Wojewody Opolskiego – przedstawiciela Rady Ministrów w województwie opolskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Opole. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/16.",
+   "aliases": [
+    "OUW",
+    "Opolski Urząd Wojewódzki",
+    "UW Opole"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-opolski",
+   "bipUrl": null,
+   "regon": "000514325",
+   "budgetPart": "85/16",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-opolski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-piotr-pospiech",
+      "name": "Piotr Pośpiech",
+      "positionId": "pl-wicewojewoda-opolski",
+      "positionName": "Wicewojewoda Opolski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/950ac55c-3bb6-4d72-8208-005d17cfd3b8/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-opolski/kierownictwo-urzedu",
+      "startedAtSource": null,
+      "note": "OUW nie numeruje wicewojewodów (dwóch „Wicewojewodów Opolskich”); brak daty powołania na stronie."
+     },
+     {
+      "id": "pl-slawomir-gradzik",
+      "name": "Sławomir Gradzik",
+      "positionId": "pl-wicewojewoda-opolski",
+      "positionName": "Wicewojewoda Opolski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/c4633e1c-121a-4e12-8861-a4b84aec1667/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-opolski/kierownictwo-urzedu",
+      "startedAtSource": null,
+      "note": "Brak daty powołania na stronie OUW."
+     },
+     {
+      "id": "pl-agnieszka-krolikowska",
+      "name": "Agnieszka Królikowska",
+      "positionId": "pl-dyrektor-generalny-opolski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Opolski Urząd Wojewódzki w Opolu",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/0414ef62-a647-4697-a7b9-82902f1ec3f9/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-opolski/kierownictwo-urzedu",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-opolski",
+     "https://www.gov.pl/web/uw-opolski/kierownictwo-urzedu",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-opolski": {
+   "id": "pl-wojewoda-opolski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Opolski",
+   "shortName": "Wojewoda Opolski",
+   "description": "Przedstawiciel Rady Ministrów w województwie opolskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Opolski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-opolski/kierownictwo-urzedu",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-opolski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-monika-jurek",
+      "name": "Monika Jurek",
+      "positionId": "pl-wojewoda-opolski",
+      "positionName": "Wojewoda Opolski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/b8296f5b-cbe9-4801-8d8b-fb3d1cedd236/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-opolski/kierownictwo-urzedu",
+      "startedAtSource": "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom",
+      "note": "Powołanie wręczone 20.12.2023 (komunikat MSWiA); rozpoczęcie pracy 21.12.2023 (komunikat OUW). Zastąpiła Sławomira Kłosowskiego."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-opolski/kierownictwo-urzedu",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-podkarpacki-urzad-wojewodzki": {
+   "id": "pl-podkarpacki-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Podkarpacki Urząd Wojewódzki w Rzeszowie",
+   "shortName": "PUW",
+   "description": "Aparat pomocniczy Wojewody Podkarpackiego – przedstawiciela Rady Ministrów w województwie podkarpackim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Rzeszów. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/18.",
+   "aliases": [
+    "PUW",
+    "Podkarpacki Urząd Wojewódzki",
+    "UW Rzeszów"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-podkarpacki",
+   "bipUrl": null,
+   "regon": "000514348",
+   "budgetPart": "85/18",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-podkarpacki",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Strona 'Kierownictwo' PUW podaje tylko tytuły; nazwiska na podstronach /wojewoda, /wicewojewoda, /ii-wicewojewoda-podkarpacki, /dyrektor-generalny.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-wieslaw-buz",
+      "name": "Wiesław Buż",
+      "positionId": "pl-i-wicewojewoda-podkarpacki",
+      "positionName": "I Wicewojewoda Podkarpacki",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-podkarpacki/wicewojewoda",
+      "startedAtSource": null,
+      "note": "Nazwisko ze strony https://www.gov.pl/web/uw-podkarpacki/wicewojewoda; brak daty powołania."
+     },
+     {
+      "id": "pl-tomasz-lorenc",
+      "name": "Tomasz Lorenc",
+      "positionId": "pl-ii-wicewojewoda-podkarpacki",
+      "positionName": "II Wicewojewoda Podkarpacki",
+      "type": "appointed",
+      "startedAt": "2024-06-05",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-podkarpacki/ii-wicewojewoda-podkarpacki",
+      "startedAtSource": "https://www.gov.pl/web/uw-podkarpacki/nowy-ii-wicewojewoda-podkarpacki",
+      "note": "Powołanie wręczone 05.06.2024 w imieniu PRM (komunikat PUW); zastąpił Pawła Bartoszka (I–V 2024)."
+     },
+     {
+      "id": "pl-monika-barszcz-chodkowska",
+      "name": "Monika Barszcz-Chodkowska",
+      "positionId": "pl-dyrektor-generalny-podkarpacki-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Podkarpacki Urząd Wojewódzki w Rzeszowie",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-podkarpacki/dyrektor-generalny",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-podkarpacki",
+     "https://www.gov.pl/web/uw-podkarpacki/wojewoda",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-podkarpacki": {
+   "id": "pl-wojewoda-podkarpacki",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Podkarpacki",
+   "shortName": "Wojewoda Podkarpacki",
+   "description": "Przedstawiciel Rady Ministrów w województwie podkarpackim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Podkarpacki"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-podkarpacki/wojewoda",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-podkarpacki-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-teresa-kubas-hul",
+      "name": "Teresa Kubas-Hul",
+      "positionId": "pl-wojewoda-podkarpacki",
+      "positionName": "Wojewoda Podkarpacki",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-podkarpacki/wojewoda",
+      "startedAtSource": "https://www.gov.pl/web/uw-podkarpacki/zyciorys10",
+      "note": "Życiorys na stronie PUW: „20 grudnia 2023 r. premier Donald Tusk powołał Teresę Kubas-Hul na stanowisko Wojewody Podkarpackiego”; potwierdza komunikat MSWiA z 20.12.2023."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-podkarpacki/wojewoda",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/uw-podkarpacki/zyciorys10"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-podlaski-urzad-wojewodzki": {
+   "id": "pl-podlaski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Podlaski Urząd Wojewódzki w Białymstoku",
+   "shortName": "PUW",
+   "description": "Aparat pomocniczy Wojewody Podlaskiego – przedstawiciela Rady Ministrów w województwie podlaskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Białystok. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/20.",
+   "aliases": [
+    "PUW",
+    "Podlaski Urząd Wojewódzki",
+    "UW Białystok"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-podlaski",
+   "bipUrl": "https://puw.bip.gov.pl/",
+   "regon": "000514213",
+   "budgetPart": "85/20",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-podlaski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Strona główna PUW nie ma linku 'Kierownictwo'; podstrony osób znalezione przez mapę strony.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-pawel-krutul",
+      "name": "Paweł Krutul",
+      "positionId": "pl-i-wicewojewoda-podlaski",
+      "positionName": "I Wicewojewoda Podlaski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-podlaski/i-wicewojewoda-podlaski-pawel-krutul",
+      "startedAtSource": "https://www.gov.pl/web/uw-podlaski/podlaskie-ma-wicewojewodow",
+      "note": "Powołanie wręczone 10.01.2024 (komunikat PUW); data aktu PRM nieznana. Strona: https://www.gov.pl/web/uw-podlaski/i-wicewojewoda-podlaski-pawel-krutul"
+     },
+     {
+      "id": "pl-michal-gasowski",
+      "name": "Michał Gąsowski",
+      "positionId": "pl-ii-wicewojewoda-podlaski",
+      "positionName": "II Wicewojewoda Podlaski",
+      "type": "appointed",
+      "startedAt": "2025-02",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-podlaski/ii-wicewojewoda-podlaski-michal-gasowski",
+      "startedAtSource": "https://www.gov.pl/web/uw-podlaski/michal-gasowski-powolany-na-drugiego-wicewojewode-podlaskiego",
+      "note": "Powołany przez PRM (komunikat PUW z 03.02.2025); zastąpił Ewę Kulikowską. Strona: https://www.gov.pl/web/uw-podlaski/ii-wicewojewoda-podlaski-michal-gasowski"
+     },
+     {
+      "id": "pl-adam-czaplinski",
+      "name": "Adam Czapliński",
+      "positionId": "pl-dyrektor-generalny-podlaski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Podlaski Urząd Wojewódzki w Białymstoku",
+      "type": "appointed",
+      "startedAt": "2024-01-02",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-podlaski/dyrektor-generalny",
+      "startedAtSource": "https://www.gov.pl/web/uw-podlaski/dyrektor-generalny",
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-podlaski",
+     "https://www.gov.pl/web/uw-podlaski/wojewoda-podlaski-jacek-brzozowski2",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://puw.bip.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-podlaski": {
+   "id": "pl-wojewoda-podlaski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Podlaski",
+   "shortName": "Wojewoda Podlaski",
+   "description": "Przedstawiciel Rady Ministrów w województwie podlaskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Podlaski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-podlaski/wojewoda-podlaski-jacek-brzozowski2",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-podlaski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jacek-brzozowski",
+      "name": "Jacek Brzozowski",
+      "positionId": "pl-wojewoda-podlaski",
+      "positionName": "Wojewoda Podlaski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-podlaski/wojewoda-podlaski-jacek-brzozowski2",
+      "startedAtSource": "https://www.gov.pl/web/uw-podlaski/jacek-brzozowski-nowym-wojewoda-podlaskim",
+      "note": "Powołany przez PRM 20.12.2023 (komunikat PUW z 21.12.2023; komunikat MSWiA z 20.12.2023)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-podlaski/wojewoda-podlaski-jacek-brzozowski2",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/uw-podlaski/jacek-brzozowski-nowym-wojewoda-podlaskim"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-pomorski-urzad-wojewodzki": {
+   "id": "pl-pomorski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Pomorski Urząd Wojewódzki w Gdańsku",
+   "shortName": "PUW",
+   "description": "Aparat pomocniczy Wojewody Pomorskiego – przedstawiciela Rady Ministrów w województwie pomorskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Gdańsk. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/22.",
+   "aliases": [
+    "PUW",
+    "Pomorski Urząd Wojewódzki",
+    "UW Gdańsk"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-pomorski",
+   "bipUrl": "https://www.gov.pl/web/uw-pomorski/strona-glowna-bip",
+   "regon": "000514242",
+   "budgetPart": "85/22",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-pomorski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-emil-rojek",
+      "name": "Emil Rojek",
+      "positionId": "pl-i-wicewojewoda-pomorski",
+      "positionName": "I Wicewojewoda Pomorski",
+      "type": "appointed",
+      "startedAt": "2024-03-12",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/335a8fd5-9c43-476d-b825-97553a147de4/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-pomorski/kierownictwo0",
+      "startedAtSource": "https://www.gov.pl/web/uw-pomorski/anna-olkowska-jacyno-i-emil-rojek-wicewojewodami-pomorskimi",
+      "note": "Powołanie wręczone 12.03.2024 (komunikat PUW)."
+     },
+     {
+      "id": "pl-anna-olkowska-jacyno",
+      "name": "Anna Olkowska-Jacyno",
+      "positionId": "pl-ii-wicewojewoda-pomorski",
+      "positionName": "II Wicewojewoda Pomorski",
+      "type": "appointed",
+      "startedAt": "2024-03-12",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/b12ca399-f9fb-4cb5-8934-148fba542eb0/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-pomorski/kierownictwo0",
+      "startedAtSource": "https://www.gov.pl/web/uw-pomorski/anna-olkowska-jacyno-i-emil-rojek-wicewojewodami-pomorskimi",
+      "note": "Powołanie wręczone 12.03.2024 (komunikat PUW)."
+     },
+     {
+      "id": "pl-anita-swietlikowska",
+      "name": "Anita Świetlikowska",
+      "positionId": "pl-dyrektor-generalny-pomorski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Pomorski Urząd Wojewódzki w Gdańsku",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/a08cac13-4d35-46a4-abd5-5e928d5670f1/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-pomorski/kierownictwo0",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-pomorski",
+     "https://www.gov.pl/web/uw-pomorski/kierownictwo0",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/uw-pomorski/strona-glowna-bip"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-pomorski": {
+   "id": "pl-wojewoda-pomorski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Pomorski",
+   "shortName": "Wojewoda Pomorski",
+   "description": "Przedstawiciel Rady Ministrów w województwie pomorskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Pomorski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-pomorski/kierownictwo0",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-pomorski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-beata-rutkiewicz",
+      "name": "Beata Rutkiewicz",
+      "positionId": "pl-wojewoda-pomorski",
+      "positionName": "Wojewoda Pomorski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/3bf452c6-79ef-427e-a585-0711ed4c7d9a/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-pomorski/kierownictwo0",
+      "startedAtSource": "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom",
+      "note": "Powołanie wręczone 20.12.2023 (komunikat MSWiA; komunikat PUW z 20.12.2023)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-pomorski/kierownictwo0",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-slaski-urzad-wojewodzki": {
+   "id": "pl-slaski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Śląski Urząd Wojewódzki w Katowicach",
+   "shortName": "ŚUW",
+   "description": "Aparat pomocniczy Wojewody Śląskiego – przedstawiciela Rady Ministrów w województwie śląskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Katowice. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/24.",
+   "aliases": [
+    "ŚUW",
+    "Śląski Urząd Wojewódzki",
+    "UW Katowice"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.katowice.uw.gov.pl",
+   "bipUrl": "https://suw.bip.gov.pl",
+   "regon": "000514259",
+   "budgetPart": "85/24",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-slaski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Urząd nie korzysta z portalu gov.pl (adres gov.pl/web/uw-slaski przekierowuje na stronę główną gov.pl); serwis własny katowice.uw.gov.pl.",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-adam-zaczkowski",
+      "name": "Adam Zaczkowski",
+      "positionId": "pl-i-wicewojewoda-slaski",
+      "positionName": "I Wicewojewoda Śląski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.katowice.uw.gov.pl/strony/wojewoda/kierownictwo",
+      "startedAtSource": null,
+      "note": "Strona ŚUW nie podaje daty powołania."
+     },
+     {
+      "id": "pl-michal-kopanski",
+      "name": "Michał Kopański",
+      "positionId": "pl-ii-wicewojewoda-slaski",
+      "positionName": "II Wicewojewoda Śląski",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.katowice.uw.gov.pl/strony/wojewoda/kierownictwo",
+      "startedAtSource": null,
+      "note": "Strona ŚUW nie podaje daty powołania."
+     },
+     {
+      "id": "pl-katarzyna-blaszczyk-domanska",
+      "name": "Katarzyna Błaszczyk-Domańska",
+      "positionId": "pl-dyrektor-generalny-slaski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Śląski Urząd Wojewódzki w Katowicach",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.katowice.uw.gov.pl/strony/wojewoda/kierownictwo",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.katowice.uw.gov.pl",
+     "https://www.katowice.uw.gov.pl/strony/wojewoda/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://suw.bip.gov.pl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-slaski": {
+   "id": "pl-wojewoda-slaski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Śląski",
+   "shortName": "Wojewoda Śląski",
+   "description": "Przedstawiciel Rady Ministrów w województwie śląskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Śląski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.katowice.uw.gov.pl/strony/wojewoda/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-slaski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-marek-wojcik",
+      "name": "Marek Wójcik",
+      "positionId": "pl-wojewoda-slaski",
+      "positionName": "Wojewoda Śląski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.katowice.uw.gov.pl/strony/wojewoda/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom",
+      "note": "Powołanie wręczone 20.12.2023 (komunikat MSWiA); nazwisko potwierdzone na stronie ŚUW."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.katowice.uw.gov.pl/strony/wojewoda/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/mswia/wiceminister-tomasz-szymanski-wreczyl-powolania-nowym-wojewodom"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-swietokrzyski-urzad-wojewodzki": {
+   "id": "pl-swietokrzyski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Świętokrzyski Urząd Wojewódzki w Kielcach",
+   "shortName": "ŚUW",
+   "description": "Aparat pomocniczy Wojewody Świętokrzyskiego – przedstawiciela Rady Ministrów w województwie świętokrzyskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Kielce. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/26.",
+   "aliases": [
+    "ŚUW",
+    "Świętokrzyski Urząd Wojewódzki",
+    "UW Kielce"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-swietokrzyski",
+   "bipUrl": "https://bip.kielce.uw.gov.pl/",
+   "regon": "000514265",
+   "budgetPart": "85/26",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-swietokrzyski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-michal-skotnicki",
+      "name": "Michał Skotnicki",
+      "positionId": "pl-wicewojewoda-swietokrzyski",
+      "positionName": "Wicewojewoda Świętokrzyski",
+      "type": "appointed",
+      "startedAt": "2024-01-16",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-swietokrzyski/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-swietokrzyski/wcewojewoda",
+      "note": "Biogram ŚUW: „16 stycznia 2024 roku objął stanowisko wicewojewody świętokrzyskiego”. W ŚUW jest jeden wicewojewoda."
+     },
+     {
+      "id": "pl-michal-cichocki",
+      "name": "Michał Cichocki",
+      "positionId": "pl-dyrektor-generalny-swietokrzyski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Świętokrzyski Urząd Wojewódzki w Kielcach",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/9dfdb39f-4652-44f2-b336-ff62fe8ce6cc/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-swietokrzyski/dyrektor-generalny",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-swietokrzyski",
+     "https://www.gov.pl/web/uw-swietokrzyski/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://bip.kielce.uw.gov.pl/"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-swietokrzyski": {
+   "id": "pl-wojewoda-swietokrzyski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Świętokrzyski",
+   "shortName": "Wojewoda Świętokrzyski",
+   "description": "Przedstawiciel Rady Ministrów w województwie świętokrzyskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Świętokrzyski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-swietokrzyski/kierownictwo",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-swietokrzyski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-jozef-bryk",
+      "name": "Józef Bryk",
+      "positionId": "pl-wojewoda-swietokrzyski",
+      "positionName": "Wojewoda Świętokrzyski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/aabbbd97-4379-4898-a800-afe9255e6b3e/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-swietokrzyski/kierownictwo",
+      "startedAtSource": "https://www.gov.pl/web/uw-swietokrzyski/wojewodaSUW",
+      "note": "Biogram na stronie ŚUW: „20 grudnia 2023 roku powołany na stanowisko wojewody świętokrzyskiego”; potwierdza komunikat MSWiA."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-swietokrzyski/kierownictwo",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/uw-swietokrzyski/wojewodaSUW"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-warminsko-mazurski-urzad-wojewodzki": {
+   "id": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Warmińsko-Mazurski Urząd Wojewódzki w Olsztynie",
+   "shortName": "WMUW",
+   "description": "Aparat pomocniczy Wojewody Warmińsko-Mazurskiego – przedstawiciela Rady Ministrów w województwie warmińsko-mazurskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Olsztyn. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/28.",
+   "aliases": [
+    "WMUW",
+    "Warmińsko-Mazurski Urząd Wojewódzki",
+    "UW Olsztyn"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-warminsko-mazurski",
+   "bipUrl": null,
+   "regon": "000514319",
+   "budgetPart": "85/28",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-warminsko-mazurski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-mateusz-szauer",
+      "name": "Mateusz Szauer",
+      "positionId": "pl-i-wicewojewoda-warminsko-mazurski",
+      "positionName": "I Wicewojewoda Warmińsko-Mazurski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-warminsko-mazurski/kierownictwo-urzedu",
+      "startedAtSource": "https://www.gov.pl/web/uw-warminsko-mazurski/powolanie-wicewojewodow-warminsko-mazurskich",
+      "note": "Komunikat W-MUW z 10.01.2024 o powołaniu przez PRM."
+     },
+     {
+      "id": "pl-zbigniew-szczypinski",
+      "name": "Zbigniew Szczypiński",
+      "positionId": "pl-ii-wicewojewoda-warminsko-mazurski",
+      "positionName": "II Wicewojewoda Warmińsko-Mazurski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.gov.pl/web/uw-warminsko-mazurski/kierownictwo-urzedu",
+      "startedAtSource": "https://www.gov.pl/web/uw-warminsko-mazurski/powolanie-wicewojewodow-warminsko-mazurskich",
+      "note": "Komunikat W-MUW z 10.01.2024 o powołaniu przez PRM."
+     },
+     {
+      "id": "pl-monika-choroszewska-plenkowska",
+      "name": "Monika Choroszewska-Pleńkowska",
+      "positionId": "pl-dyrektor-generalny-warminsko-mazurski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Warmińsko-Mazurski Urząd Wojewódzki w Olsztynie",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/159ca480-8c3e-4e7a-b7b2-6a13e6905477/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-warminsko-mazurski/kierownictwo-urzedu",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-warminsko-mazurski",
+     "https://www.gov.pl/web/uw-warminsko-mazurski/kierownictwo-urzedu",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-warminsko-mazurski": {
+   "id": "pl-wojewoda-warminsko-mazurski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Warmińsko-Mazurski",
+   "shortName": "Wojewoda Warmińsko-Mazurski",
+   "description": "Przedstawiciel Rady Ministrów w województwie warmińsko-mazurskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Warmińsko-Mazurski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-warminsko-mazurski/kierownictwo-urzedu",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-radoslaw-krol",
+      "name": "Radosław Król",
+      "positionId": "pl-wojewoda-warminsko-mazurski",
+      "positionName": "Wojewoda Warmińsko-Mazurski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/db9e674d-a2ad-4117-ae67-cf175f38f4a8/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-warminsko-mazurski/kierownictwo-urzedu",
+      "startedAtSource": "https://www.gov.pl/web/uw-warminsko-mazurski/radoslaw-krol-nowym-wojewoda-warminsko-mazurskim2",
+      "note": "Mianowany przez PRM 20.12.2023 (komunikat W-MUW z 21.12.2023; komunikat MSWiA z 20.12.2023)."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-warminsko-mazurski/kierownictwo-urzedu",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/uw-warminsko-mazurski/radoslaw-krol-nowym-wojewoda-warminsko-mazurskim2"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wielkopolski-urzad-wojewodzki": {
+   "id": "pl-wielkopolski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wielkopolski Urząd Wojewódzki w Poznaniu",
+   "shortName": "WUW",
+   "description": "Aparat pomocniczy Wojewody Wielkopolskiego – przedstawiciela Rady Ministrów w województwie wielkopolskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Poznań. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/30.",
+   "aliases": [
+    "WUW",
+    "Wielkopolski Urząd Wojewódzki",
+    "UW Poznań"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.poznan.uw.gov.pl",
+   "bipUrl": null,
+   "regon": "000514331",
+   "budgetPart": "85/30",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-wielkopolski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Urząd nie korzysta z portalu gov.pl (adres gov.pl/web/uw-wielkopolski przekierowuje na stronę główną gov.pl); serwis własny poznan.uw.gov.pl (BIP).",
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-karolina-fabis-szulc",
+      "name": "Karolina Fabiś-Szulc",
+      "positionId": "pl-i-wicewojewoda-wielkopolski",
+      "positionName": "I Wicewojewoda Wielkopolski",
+      "type": "appointed",
+      "startedAt": "2024-01-15",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.poznan.uw.gov.pl/i-wicewojewoda",
+      "startedAtSource": "https://www.poznan.uw.gov.pl/i-wicewojewoda",
+      "note": "Strona WUW: powołana przez PRM z dniem 15.01.2024 (art. 7 ust. 2)."
+     },
+     {
+      "id": "pl-jaroslaw-maciejewski",
+      "name": "Jarosław Maciejewski",
+      "positionId": "pl-ii-wicewojewoda-wielkopolski",
+      "positionName": "II Wicewojewoda Wielkopolski",
+      "type": "appointed",
+      "startedAt": "2024-01-31",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.poznan.uw.gov.pl/ii-wicewojewoda",
+      "startedAtSource": "https://www.poznan.uw.gov.pl/ii-wicewojewoda",
+      "note": "Strona WUW: powołany przez PRM z dniem 31.01.2024 (art. 7 ust. 2)."
+     },
+     {
+      "id": "pl-jacek-wisniewski",
+      "name": "Jacek Wiśniewski",
+      "positionId": "pl-dyrektor-generalny-wielkopolski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Wielkopolski Urząd Wojewódzki w Poznaniu",
+      "type": "appointed",
+      "startedAt": "2024-01-22",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.poznan.uw.gov.pl/dyrektor-generalny",
+      "startedAtSource": "https://www.poznan.uw.gov.pl/dyrektor-generalny",
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.poznan.uw.gov.pl",
+     "https://www.poznan.uw.gov.pl/wojewoda",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.poznan.uw.gov.pl/i-wicewojewoda",
+     "https://www.poznan.uw.gov.pl/ii-wicewojewoda"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-wielkopolski": {
+   "id": "pl-wojewoda-wielkopolski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Wielkopolski",
+   "shortName": "Wojewoda Wielkopolski",
+   "description": "Przedstawiciel Rady Ministrów w województwie wielkopolskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Wielkopolski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.poznan.uw.gov.pl/wojewoda",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-wielkopolski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-agata-sobczyk",
+      "name": "Agata Sobczyk",
+      "positionId": "pl-wojewoda-wielkopolski",
+      "positionName": "Wojewoda Wielkopolski",
+      "type": "appointed",
+      "startedAt": "2023-12-28",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.poznan.uw.gov.pl/wojewoda",
+      "startedAtSource": "https://www.poznan.uw.gov.pl/wojewoda",
+      "note": "Strona WUW: PRM na wniosek MSWiA powołał ją z dniem 28.12.2023 na stanowisko Wojewody Wielkopolskiej."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.poznan.uw.gov.pl/wojewoda",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.poznan.uw.gov.pl/wojewoda"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-zachodniopomorski-urzad-wojewodzki": {
+   "id": "pl-zachodniopomorski-urzad-wojewodzki",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Zachodniopomorski Urząd Wojewódzki w Szczecinie",
+   "shortName": "ZUW",
+   "description": "Aparat pomocniczy Wojewody Zachodniopomorskiego – przedstawiciela Rady Ministrów w województwie zachodniopomorskim; wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego (art. 13 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Siedziba: Szczecin. Prawidłowe funkcjonowanie urzędu zapewnia dyrektor generalny (art. 13 ust. 2). Dysponent części budżetowej 85/32.",
+   "aliases": [
+    "ZUW",
+    "Zachodniopomorski Urząd Wojewódzki",
+    "UW Szczecin"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 13 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-zachodniopomorski",
+   "bipUrl": null,
+   "regon": "000514354",
+   "budgetPart": "85/32",
+   "parent": null,
+   "level": 1,
+   "head": "pl-wojewoda-zachodniopomorski",
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-bartosz-brozynski",
+      "name": "Bartosz Brożyński",
+      "positionId": "pl-i-wicewojewoda-zachodniopomorski",
+      "positionName": "I Wicewojewoda Zachodniopomorski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/85ab7413-faff-41f6-968c-8c80e16b3ae3/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-zachodniopomorski/wojewoda-wicewojewoda-dyrektor-generalny",
+      "startedAtSource": "https://www.gov.pl/web/uw-zachodniopomorski/nowi-wicewojewodowie",
+      "note": "Przedstawiony 17.01.2024 jako powołany wicewojewoda (komunikat ZUW)."
+     },
+     {
+      "id": "pl-dawid-krystek",
+      "name": "Dawid Krystek",
+      "positionId": "pl-ii-wicewojewoda-zachodniopomorski",
+      "positionName": "II Wicewojewoda Zachodniopomorski",
+      "type": "appointed",
+      "startedAt": "2024-01",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/c1060ef8-ae8b-404d-a4b8-e7e5b2956056/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-zachodniopomorski/wojewoda-wicewojewoda-dyrektor-generalny",
+      "startedAtSource": "https://www.gov.pl/web/uw-zachodniopomorski/nowi-wicewojewodowie",
+      "note": "Przedstawiony 17.01.2024 jako powołany wicewojewoda (komunikat ZUW)."
+     },
+     {
+      "id": "pl-anna-kolek",
+      "name": "Anna Kołek",
+      "positionId": "pl-dyrektor-generalny-zachodniopomorski-urzad-wojewodzki",
+      "positionName": "Dyrektor Generalny Zachodniopomorski Urząd Wojewódzki w Szczecinie",
+      "type": "appointed",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/49c39c03-7fc5-49b5-a81b-a73d85b324c0/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-zachodniopomorski/wojewoda-wicewojewoda-dyrektor-generalny",
+      "startedAtSource": null,
+      "note": "Dyrektor generalny urzędu (art. 13 ust. 2 ustawy o wojewodzie; art. 25 ustawy o służbie cywilnej) – powoływany przez wojewodę, nie przez PRM."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/1185/ogl",
+     "https://eli.gov.pl/eli/DU/1998/603/ogl",
+     "https://www.gov.pl/web/uw-zachodniopomorski",
+     "https://www.gov.pl/web/uw-zachodniopomorski/wojewoda-wicewojewoda-dyrektor-generalny",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-wojewoda-zachodniopomorski": {
+   "id": "pl-wojewoda-zachodniopomorski",
+   "type": "dept_head",
+   "subtype": "voivode",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Wojewoda Zachodniopomorski",
+   "shortName": "Wojewoda Zachodniopomorski",
+   "description": "Przedstawiciel Rady Ministrów w województwie zachodniopomorskim, zwierzchnik rządowej administracji zespolonej i organ nadzoru nad legalnością działania JST (art. 3 ust. 1 ustawy z 23.01.2009 r. o wojewodzie i administracji rządowej w województwie). Powołuje i odwołuje go Prezes Rady Ministrów na wniosek ministra ds. administracji publicznej (art. 6 ust. 1); działa przy pomocy wicewojewodów (art. 7) i urzędu wojewódzkiego (art. 13).",
+   "aliases": [
+    "Wojewoda Zachodniopomorski"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 i art. 6 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 i art. 6 ust. 1"
+   },
+   "officialUrl": "https://www.gov.pl/web/uw-zachodniopomorski/wojewoda-wicewojewoda-dyrektor-generalny",
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 1,
+   "head": null,
+   "headOf": "pl-zachodniopomorski-urzad-wojewodzki",
+   "seatsCount": 1,
+   "status": "active",
+   "statusNote": null,
+   "topics": [],
+   "people": {
+    "type": "people",
+    "people": [
+     {
+      "id": "pl-adam-rudawski",
+      "name": "Adam Rudawski",
+      "positionId": "pl-wojewoda-zachodniopomorski",
+      "positionName": "Wojewoda Zachodniopomorski",
+      "type": "appointed",
+      "startedAt": "2023-12-20",
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": "https://www.gov.pl/photo/format/5ef9a5b0-0907-4685-a233-c020e7601477/resolution/501x501",
+      "sourceUrl": "https://www.gov.pl/web/uw-zachodniopomorski/wojewoda-wicewojewoda-dyrektor-generalny",
+      "startedAtSource": "https://www.gov.pl/web/uw-zachodniopomorski/nowy-wojewoda-zachodniopomorski",
+      "note": "Komunikat ZUW: „Powołanie z dniem 20 grudnia 2023 r. wręczył wiceminister SWiA Tomasz Szymański”; potwierdza komunikat MSWiA."
+     }
+    ]
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://www.gov.pl/web/uw-zachodniopomorski/wojewoda-wicewojewoda-dyrektor-generalny",
+     "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+     "https://www.gov.pl/web/uw-zachodniopomorski/nowy-wojewoda-zachodniopomorski"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "high"
+   }
+  },
+  "pl-rzadowa-administracja-zespolona-w-wojewodztwie": {
+   "id": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "type": "department",
+   "subtype": "other",
+   "sector": "executive",
+   "ring": "administration",
+   "name": "Rządowa administracja zespolona w województwie (klasa organów)",
+   "shortName": "Administracja zespolona",
+   "description": "Węzeł zbiorczy dla terenowych organów administracji rządowej pod zwierzchnictwem wojewody w województwie: komendanci wojewódzcy Policji i PSP, kurator oświaty, wojewódzcy inspektorzy (nadzoru budowlanego, farmaceutyczny, handlowy, transportu drogowego, ochrony środowiska), inspektor sanitarny, lekarz weterynarii, konserwator zabytków. Wojewoda kieruje nią i ją kontroluje (art. 51 ustawy o wojewodzie); tryb powoływania – odrębne ustawy (art. 52).",
+   "aliases": [
+    "administracja zespolona",
+    "zespolone służby, inspekcje i straże wojewódzkie"
+   ],
+   "legalSource": {
+    "title": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2–3 oraz art. 51–55 (Dz.U. 2025 poz. 428 t.j.)",
+    "url": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+    "act": "DU/2009/206",
+    "article": "art. 3 ust. 1 pkt 2–3 oraz art. 51–55"
+   },
+   "officialUrl": null,
+   "bipUrl": null,
+   "regon": null,
+   "budgetPart": null,
+   "parent": null,
+   "level": 2,
+   "head": null,
+   "headOf": null,
+   "seatsCount": 0,
+   "status": "active",
+   "statusNote": "Węzeł-klasa (nie rozpisano ok. 14 rodzajów organów × 16 województw); poszczególne komendy wojewódzkie/inspektoraty/kuratoria wymagają osobnego chunku z cytatami z ustaw odrębnych (np. ustawa o Policji art. 6b, ustawa o PSP art. 12, Prawo oświatowe art. 50).",
+   "topics": [],
+   "people": {
+    "type": "count",
+    "count": 0
+   },
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "verifiedAt": "2026-09-17",
+    "confidence": "medium"
+   }
+  }
+ },
+ "edges": {
+  "e-dolnoslaski-uw--dept-head--wojewoda-dolnoslaski": {
+   "id": "e-dolnoslaski-uw--dept-head--wojewoda-dolnoslaski",
+   "type": "dept_head",
+   "fromId": "pl-dolnoslaski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-dolnoslaski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-dolnoslaski": {
+   "id": "e-prm--appoints--wojewoda-dolnoslaski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-dolnoslaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-dolnoslaski": {
+   "id": "e-mswia--nominates--wojewoda-dolnoslaski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-dolnoslaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-dolnoslaski": {
+   "id": "e-prm--oversees--wojewoda-dolnoslaski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-dolnoslaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-dolnoslaski": {
+   "id": "e-mswia--oversees--wojewoda-dolnoslaski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-dolnoslaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--dolnoslaski-uw": {
+   "id": "e-prm--appoints--dolnoslaski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-dolnoslaski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-dolnoslaski--nominates--dolnoslaski-uw": {
+   "id": "e-wojewoda-dolnoslaski--nominates--dolnoslaski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-dolnoslaski",
+   "toId": "pl-dolnoslaski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-dolnoslaski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-dolnoslaski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-dolnoslaski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-kujawsko-pomorski-uw--dept-head--wojewoda-kujawsko-pomorski": {
+   "id": "e-kujawsko-pomorski-uw--dept-head--wojewoda-kujawsko-pomorski",
+   "type": "dept_head",
+   "fromId": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-kujawsko-pomorski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-kujawsko-pomorski": {
+   "id": "e-prm--appoints--wojewoda-kujawsko-pomorski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-kujawsko-pomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-kujawsko-pomorski": {
+   "id": "e-mswia--nominates--wojewoda-kujawsko-pomorski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-kujawsko-pomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-kujawsko-pomorski": {
+   "id": "e-prm--oversees--wojewoda-kujawsko-pomorski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-kujawsko-pomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-kujawsko-pomorski": {
+   "id": "e-mswia--oversees--wojewoda-kujawsko-pomorski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-kujawsko-pomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--kujawsko-pomorski-uw": {
+   "id": "e-prm--appoints--kujawsko-pomorski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-kujawsko-pomorski--nominates--kujawsko-pomorski-uw": {
+   "id": "e-wojewoda-kujawsko-pomorski--nominates--kujawsko-pomorski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-kujawsko-pomorski",
+   "toId": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-kujawsko-pomorski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-kujawsko-pomorski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-kujawsko-pomorski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-lubelski-uw--dept-head--wojewoda-lubelski": {
+   "id": "e-lubelski-uw--dept-head--wojewoda-lubelski",
+   "type": "dept_head",
+   "fromId": "pl-lubelski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-lubelski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-lubelski": {
+   "id": "e-prm--appoints--wojewoda-lubelski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-lubelski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-lubelski": {
+   "id": "e-mswia--nominates--wojewoda-lubelski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-lubelski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-lubelski": {
+   "id": "e-prm--oversees--wojewoda-lubelski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-lubelski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-lubelski": {
+   "id": "e-mswia--oversees--wojewoda-lubelski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-lubelski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--lubelski-uw": {
+   "id": "e-prm--appoints--lubelski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-lubelski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-lubelski--nominates--lubelski-uw": {
+   "id": "e-wojewoda-lubelski--nominates--lubelski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-lubelski",
+   "toId": "pl-lubelski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-lubelski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-lubelski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-lubelski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-lubuski-uw--dept-head--wojewoda-lubuski": {
+   "id": "e-lubuski-uw--dept-head--wojewoda-lubuski",
+   "type": "dept_head",
+   "fromId": "pl-lubuski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-lubuski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-lubuski": {
+   "id": "e-prm--appoints--wojewoda-lubuski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-lubuski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-lubuski": {
+   "id": "e-mswia--nominates--wojewoda-lubuski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-lubuski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-lubuski": {
+   "id": "e-prm--oversees--wojewoda-lubuski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-lubuski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-lubuski": {
+   "id": "e-mswia--oversees--wojewoda-lubuski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-lubuski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--lubuski-uw": {
+   "id": "e-prm--appoints--lubuski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-lubuski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-lubuski--nominates--lubuski-uw": {
+   "id": "e-wojewoda-lubuski--nominates--lubuski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-lubuski",
+   "toId": "pl-lubuski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-lubuski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-lubuski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-lubuski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-lodzki-uw--dept-head--wojewoda-lodzki": {
+   "id": "e-lodzki-uw--dept-head--wojewoda-lodzki",
+   "type": "dept_head",
+   "fromId": "pl-lodzki-urzad-wojewodzki",
+   "toId": "pl-wojewoda-lodzki",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-lodzki": {
+   "id": "e-prm--appoints--wojewoda-lodzki",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-lodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-lodzki": {
+   "id": "e-mswia--nominates--wojewoda-lodzki",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-lodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-lodzki": {
+   "id": "e-prm--oversees--wojewoda-lodzki",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-lodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-lodzki": {
+   "id": "e-mswia--oversees--wojewoda-lodzki",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-lodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--lodzki-uw": {
+   "id": "e-prm--appoints--lodzki-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-lodzki-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-lodzki--nominates--lodzki-uw": {
+   "id": "e-wojewoda-lodzki--nominates--lodzki-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-lodzki",
+   "toId": "pl-lodzki-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-lodzki--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-lodzki--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-lodzki",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-malopolski-uw--dept-head--wojewoda-malopolski": {
+   "id": "e-malopolski-uw--dept-head--wojewoda-malopolski",
+   "type": "dept_head",
+   "fromId": "pl-malopolski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-malopolski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-malopolski": {
+   "id": "e-prm--appoints--wojewoda-malopolski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-malopolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-malopolski": {
+   "id": "e-mswia--nominates--wojewoda-malopolski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-malopolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-malopolski": {
+   "id": "e-prm--oversees--wojewoda-malopolski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-malopolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-malopolski": {
+   "id": "e-mswia--oversees--wojewoda-malopolski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-malopolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--malopolski-uw": {
+   "id": "e-prm--appoints--malopolski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-malopolski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-malopolski--nominates--malopolski-uw": {
+   "id": "e-wojewoda-malopolski--nominates--malopolski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-malopolski",
+   "toId": "pl-malopolski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-malopolski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-malopolski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-malopolski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mazowiecki-uw--dept-head--wojewoda-mazowiecki": {
+   "id": "e-mazowiecki-uw--dept-head--wojewoda-mazowiecki",
+   "type": "dept_head",
+   "fromId": "pl-mazowiecki-urzad-wojewodzki",
+   "toId": "pl-wojewoda-mazowiecki",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-mazowiecki": {
+   "id": "e-prm--appoints--wojewoda-mazowiecki",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-mazowiecki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-mazowiecki": {
+   "id": "e-mswia--nominates--wojewoda-mazowiecki",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-mazowiecki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-mazowiecki": {
+   "id": "e-prm--oversees--wojewoda-mazowiecki",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-mazowiecki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-mazowiecki": {
+   "id": "e-mswia--oversees--wojewoda-mazowiecki",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-mazowiecki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--mazowiecki-uw": {
+   "id": "e-prm--appoints--mazowiecki-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-mazowiecki-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-mazowiecki--nominates--mazowiecki-uw": {
+   "id": "e-wojewoda-mazowiecki--nominates--mazowiecki-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-mazowiecki",
+   "toId": "pl-mazowiecki-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-mazowiecki--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-mazowiecki--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-mazowiecki",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-opolski-uw--dept-head--wojewoda-opolski": {
+   "id": "e-opolski-uw--dept-head--wojewoda-opolski",
+   "type": "dept_head",
+   "fromId": "pl-opolski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-opolski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-opolski": {
+   "id": "e-prm--appoints--wojewoda-opolski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-opolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-opolski": {
+   "id": "e-mswia--nominates--wojewoda-opolski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-opolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-opolski": {
+   "id": "e-prm--oversees--wojewoda-opolski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-opolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-opolski": {
+   "id": "e-mswia--oversees--wojewoda-opolski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-opolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--opolski-uw": {
+   "id": "e-prm--appoints--opolski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-opolski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-opolski--nominates--opolski-uw": {
+   "id": "e-wojewoda-opolski--nominates--opolski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-opolski",
+   "toId": "pl-opolski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-opolski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-opolski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-opolski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-podkarpacki-uw--dept-head--wojewoda-podkarpacki": {
+   "id": "e-podkarpacki-uw--dept-head--wojewoda-podkarpacki",
+   "type": "dept_head",
+   "fromId": "pl-podkarpacki-urzad-wojewodzki",
+   "toId": "pl-wojewoda-podkarpacki",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-podkarpacki": {
+   "id": "e-prm--appoints--wojewoda-podkarpacki",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-podkarpacki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-podkarpacki": {
+   "id": "e-mswia--nominates--wojewoda-podkarpacki",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-podkarpacki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-podkarpacki": {
+   "id": "e-prm--oversees--wojewoda-podkarpacki",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-podkarpacki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-podkarpacki": {
+   "id": "e-mswia--oversees--wojewoda-podkarpacki",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-podkarpacki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--podkarpacki-uw": {
+   "id": "e-prm--appoints--podkarpacki-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-podkarpacki-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-podkarpacki--nominates--podkarpacki-uw": {
+   "id": "e-wojewoda-podkarpacki--nominates--podkarpacki-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-podkarpacki",
+   "toId": "pl-podkarpacki-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-podkarpacki--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-podkarpacki--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-podkarpacki",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-podlaski-uw--dept-head--wojewoda-podlaski": {
+   "id": "e-podlaski-uw--dept-head--wojewoda-podlaski",
+   "type": "dept_head",
+   "fromId": "pl-podlaski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-podlaski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-podlaski": {
+   "id": "e-prm--appoints--wojewoda-podlaski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-podlaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-podlaski": {
+   "id": "e-mswia--nominates--wojewoda-podlaski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-podlaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-podlaski": {
+   "id": "e-prm--oversees--wojewoda-podlaski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-podlaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-podlaski": {
+   "id": "e-mswia--oversees--wojewoda-podlaski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-podlaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--podlaski-uw": {
+   "id": "e-prm--appoints--podlaski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-podlaski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-podlaski--nominates--podlaski-uw": {
+   "id": "e-wojewoda-podlaski--nominates--podlaski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-podlaski",
+   "toId": "pl-podlaski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-podlaski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-podlaski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-podlaski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-pomorski-uw--dept-head--wojewoda-pomorski": {
+   "id": "e-pomorski-uw--dept-head--wojewoda-pomorski",
+   "type": "dept_head",
+   "fromId": "pl-pomorski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-pomorski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-pomorski": {
+   "id": "e-prm--appoints--wojewoda-pomorski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-pomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-pomorski": {
+   "id": "e-mswia--nominates--wojewoda-pomorski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-pomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-pomorski": {
+   "id": "e-prm--oversees--wojewoda-pomorski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-pomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-pomorski": {
+   "id": "e-mswia--oversees--wojewoda-pomorski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-pomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--pomorski-uw": {
+   "id": "e-prm--appoints--pomorski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-pomorski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-pomorski--nominates--pomorski-uw": {
+   "id": "e-wojewoda-pomorski--nominates--pomorski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-pomorski",
+   "toId": "pl-pomorski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-pomorski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-pomorski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-pomorski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-slaski-uw--dept-head--wojewoda-slaski": {
+   "id": "e-slaski-uw--dept-head--wojewoda-slaski",
+   "type": "dept_head",
+   "fromId": "pl-slaski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-slaski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-slaski": {
+   "id": "e-prm--appoints--wojewoda-slaski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-slaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-slaski": {
+   "id": "e-mswia--nominates--wojewoda-slaski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-slaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-slaski": {
+   "id": "e-prm--oversees--wojewoda-slaski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-slaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-slaski": {
+   "id": "e-mswia--oversees--wojewoda-slaski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-slaski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--slaski-uw": {
+   "id": "e-prm--appoints--slaski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-slaski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-slaski--nominates--slaski-uw": {
+   "id": "e-wojewoda-slaski--nominates--slaski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-slaski",
+   "toId": "pl-slaski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-slaski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-slaski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-slaski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-swietokrzyski-uw--dept-head--wojewoda-swietokrzyski": {
+   "id": "e-swietokrzyski-uw--dept-head--wojewoda-swietokrzyski",
+   "type": "dept_head",
+   "fromId": "pl-swietokrzyski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-swietokrzyski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-swietokrzyski": {
+   "id": "e-prm--appoints--wojewoda-swietokrzyski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-swietokrzyski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-swietokrzyski": {
+   "id": "e-mswia--nominates--wojewoda-swietokrzyski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-swietokrzyski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-swietokrzyski": {
+   "id": "e-prm--oversees--wojewoda-swietokrzyski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-swietokrzyski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-swietokrzyski": {
+   "id": "e-mswia--oversees--wojewoda-swietokrzyski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-swietokrzyski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--swietokrzyski-uw": {
+   "id": "e-prm--appoints--swietokrzyski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-swietokrzyski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 1)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-swietokrzyski--nominates--swietokrzyski-uw": {
+   "id": "e-wojewoda-swietokrzyski--nominates--swietokrzyski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-swietokrzyski",
+   "toId": "pl-swietokrzyski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-swietokrzyski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-swietokrzyski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-swietokrzyski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-warminsko-mazurski-uw--dept-head--wojewoda-warminsko-mazurski": {
+   "id": "e-warminsko-mazurski-uw--dept-head--wojewoda-warminsko-mazurski",
+   "type": "dept_head",
+   "fromId": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-warminsko-mazurski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-warminsko-mazurski": {
+   "id": "e-prm--appoints--wojewoda-warminsko-mazurski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-warminsko-mazurski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-warminsko-mazurski": {
+   "id": "e-mswia--nominates--wojewoda-warminsko-mazurski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-warminsko-mazurski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-warminsko-mazurski": {
+   "id": "e-prm--oversees--wojewoda-warminsko-mazurski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-warminsko-mazurski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-warminsko-mazurski": {
+   "id": "e-mswia--oversees--wojewoda-warminsko-mazurski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-warminsko-mazurski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--warminsko-mazurski-uw": {
+   "id": "e-prm--appoints--warminsko-mazurski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-warminsko-mazurski--nominates--warminsko-mazurski-uw": {
+   "id": "e-wojewoda-warminsko-mazurski--nominates--warminsko-mazurski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-warminsko-mazurski",
+   "toId": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-warminsko-mazurski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-warminsko-mazurski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-warminsko-mazurski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wielkopolski-uw--dept-head--wojewoda-wielkopolski": {
+   "id": "e-wielkopolski-uw--dept-head--wojewoda-wielkopolski",
+   "type": "dept_head",
+   "fromId": "pl-wielkopolski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-wielkopolski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-wielkopolski": {
+   "id": "e-prm--appoints--wojewoda-wielkopolski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-wielkopolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-wielkopolski": {
+   "id": "e-mswia--nominates--wojewoda-wielkopolski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-wielkopolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-wielkopolski": {
+   "id": "e-prm--oversees--wojewoda-wielkopolski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-wielkopolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-wielkopolski": {
+   "id": "e-mswia--oversees--wojewoda-wielkopolski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-wielkopolski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wielkopolski-uw": {
+   "id": "e-prm--appoints--wielkopolski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wielkopolski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-wielkopolski--nominates--wielkopolski-uw": {
+   "id": "e-wojewoda-wielkopolski--nominates--wielkopolski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-wielkopolski",
+   "toId": "pl-wielkopolski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-wielkopolski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-wielkopolski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-wielkopolski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-zachodniopomorski-uw--dept-head--wojewoda-zachodniopomorski": {
+   "id": "e-zachodniopomorski-uw--dept-head--wojewoda-zachodniopomorski",
+   "type": "dept_head",
+   "fromId": "pl-zachodniopomorski-urzad-wojewodzki",
+   "toId": "pl-wojewoda-zachodniopomorski",
+   "cite": "Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie, art. 13 ust. 1 (Dz.U. 2025 poz. 428 t.j.)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--wojewoda-zachodniopomorski": {
+   "id": "e-prm--appoints--wojewoda-zachodniopomorski",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-zachodniopomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (PRM powołuje i odwołuje wojewodę)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 1,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--nominates--wojewoda-zachodniopomorski": {
+   "id": "e-mswia--nominates--wojewoda-zachodniopomorski",
+   "type": "nominates",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-zachodniopomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 6 ust. 1 (na wniosek ministra właściwego ds. administracji publicznej – dział administracja publiczna: MSWiA, rozp. PRM Dz.U. 2025 poz. 999)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl",
+     "https://eli.gov.pl/eli/DU/2025/999/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--oversees--wojewoda-zachodniopomorski": {
+   "id": "e-prm--oversees--wojewoda-zachodniopomorski",
+   "type": "oversees",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-wojewoda-zachodniopomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 1–2 (PRM kieruje działalnością wojewody i sprawuje nadzór wg kryterium zgodności z polityką RM)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-mswia--oversees--wojewoda-zachodniopomorski": {
+   "id": "e-mswia--oversees--wojewoda-zachodniopomorski",
+   "type": "oversees",
+   "fromId": "pl-minister-spraw-wewnetrznych-i-administracji",
+   "toId": "pl-wojewoda-zachodniopomorski",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg kryterium legalności, rzetelności i gospodarności)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-prm--appoints--zachodniopomorski-uw": {
+   "id": "e-prm--appoints--zachodniopomorski-uw",
+   "type": "appoints",
+   "fromId": "pl-prezes-rady-ministrow",
+   "toId": "pl-zachodniopomorski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (PRM powołuje i odwołuje wicewojewodów na wniosek wojewody; obsadzonych 2)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 2,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-zachodniopomorski--nominates--zachodniopomorski-uw": {
+   "id": "e-wojewoda-zachodniopomorski--nominates--zachodniopomorski-uw",
+   "type": "nominates",
+   "fromId": "pl-wojewoda-zachodniopomorski",
+   "toId": "pl-zachodniopomorski-urzad-wojewodzki",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 7 ust. 2 (wniosek wojewody o powołanie wicewojewody)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-wojewoda-zachodniopomorski--oversees--administracja-zespolona": {
+   "id": "e-wojewoda-zachodniopomorski--oversees--administracja-zespolona",
+   "type": "oversees",
+   "fromId": "pl-wojewoda-zachodniopomorski",
+   "toId": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "cite": "Ustawa o wojewodzie i administracji rządowej w województwie, art. 3 ust. 1 pkt 2 i art. 51 (wojewoda jako zwierzchnik rządowej administracji zespolonej kieruje nią, koordynuje i kontroluje)",
+   "citeUrl": "https://eli.gov.pl/eli/DU/2009/206/ogl",
+   "seatsAppointed": 0,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://eli.gov.pl/eli/DU/2009/206/ogl"
+    ],
+    "confidence": "high"
+   }
+  }
+ }
+}

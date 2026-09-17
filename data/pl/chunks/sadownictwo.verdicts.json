@@ -1,0 +1,1849 @@
+{
+ "chunk": "sadownictwo",
+ "verifiedAt": "2026-09-17",
+ "summary": "Weryfikacja adwersarialna chunku sadownictwo (2026-09-17). Węzły: {'corrected': 16, 'confirmed': 27}; osoby: {'confirmed': 55, 'corrected': 31}; krawędzie: {'confirmed': 81}. Wszystkie 81 krawędzi sprawdzono na tekstach ustaw z ELI (Konstytucja, ustawa o SN, p.u.s.a., p.u.s.p., p.u.s.w., Prawo o prokuraturze, ustawy o TK i KRS) – żadna nie została obalona; kierunki i seatsAppointed zgodne. Wszystkie 86 osób sprawdzono na stronach oficjalnych i w PDF-ach M.P. – żadnego nazwiska nie obalono. Główne korekty: (1) 15 błędnych id osób ze zgubioną literą 'ł' (pl-pawe-mierzejewski, pl-bartomiej-sochanski, pl-sawomir-patyra, pl-rafa-wojciechowski, pl-jarosaw-wyrembak, pl-marek-maecki, pl-marek-mikoajczyk, pl-maciej-miosz, pl-przemysaw-rosati, pl-jarosaw-uczaj, pl-ukasz-piebiak, pl-bartomiej-starosta, pl-ukasz-zawadzki, pl-jarosaw-urbaniak, pl-micha-ostrowski) – niezgodne z regułą kanonu ł→l; (2) 12 WSA miało status unverified, choć BIP-y podają prezesów (w tym Wrocław, gdzie statusNote fałszywie twierdził, że BIP nie podaje nazwiska – Ireneusz Dukiel) – uzupełniono 12 osób; (3) uzupełniono datowane źródła startedAt dla 15 osób (posłowie/senatorowie w KRS z M.P. 2023/1248–1251, 1323, 2024/596; Korneluk 14.03.2024; Misztal-Konecka 30.09.2021; Wiak 28.02.2025; sędziowie TK wg dat ślubowania z biogramów) i skorygowano startedAt sędziów TK z daty wyboru na datę ślubowania (Bentkowska 1.04.2026, Patyra 28.07.2026), a dla 6 wybranych bez ślubowania ustawiono null; (4) dodano 4 krawędzie: Prezydent→IOZ (art. 22a ustawy o SN, 11 miejsc), PRM→zastępcy PG (art. 14 § 1, do 7), Prezes NSA→nominates→wiceprezesi NSA (art. 45 § 1), MS→appoints→sądy wojskowe (art. 11 § 3 p.u.s.w.); (5) drobne: bipUrl SN, opisy izb NSA (art. 39 § 5), adresy http→https WSA.",
+ "stats": {
+  "nodes_checked": 43,
+  "people_checked": 86,
+  "edges_checked": 81
+ },
+ "nodes": [
+  {
+   "id": "pl-sad-najwyzszy",
+   "status": "corrected",
+   "fixes": {
+    "bipUrl": "https://www.sn.pl/pl/informacje/redakcja-bip"
+   },
+   "note": "ELI DU/1997/483 (art. 183) i DU/2018/5 (ustawa o SN, t.j. 2024/622) istnieją; art. 3 potwierdza 5 izb. Strona sn.pl pełni rolę BIP (link 'Redakcja BIP': /pl/informacje/redakcja-bip); www.sn.pl/bip nie istnieje (404). Liczba sędziów ~103 zgodna z sumą list izb (mój zlicznik: 31+31+12+19+8, różnica ±2 wynika z parsowania). Konstytucja art. 183 ust. 1 potwierdza nadzór nad sądami powszechnymi i wojskowymi."
+  },
+  {
+   "id": "pl-pierwszy-prezes-sn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 183 ust. 3 i ustawa o SN art. 12 § 1 (6-letnia kadencja, spośród 5 kandydatów ZO SN) – zgodne z tekstem ELI. Strona sn.pl potwierdza Zbigniewa Kapińskiego."
+  },
+  {
+   "id": "pl-sn-izba-cywilna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 3 (wykaz izb) i art. 15 § 1–2 (Prezes SN kieruje izbą; powołuje Prezydent RP na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby, po opinii I Prezesa SN) – zgodne z t.j. Dz.U. 2024 poz. 622. Strona izby na sn.pl (2026-09-17) potwierdza obsadę/wakat."
+  },
+  {
+   "id": "pl-sn-izba-karna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 3 (wykaz izb) i art. 15 § 1–2 (Prezes SN kieruje izbą; powołuje Prezydent RP na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby, po opinii I Prezesa SN) – zgodne z t.j. Dz.U. 2024 poz. 622. Strona izby na sn.pl (2026-09-17) potwierdza obsadę/wakat. Izba Karna: 'Pierwszy Prezes SN zarządzeniem z 12 czerwca 2026 r. upoważnił SSN Igora Zgolińskiego do tymczasowego wykonywania czynności ... do czasu powołania przez Prezydenta RP Prezesa' – status vacant potwierdzony."
+  },
+  {
+   "id": "pl-sn-izba-pracy-i-ubezpieczen-spolecznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 3 (wykaz izb) i art. 15 § 1–2 (Prezes SN kieruje izbą; powołuje Prezydent RP na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby, po opinii I Prezesa SN) – zgodne z t.j. Dz.U. 2024 poz. 622. Strona izby na sn.pl (2026-09-17) potwierdza obsadę/wakat. Izba Pracy: zarządzenie I Prezesa SN z 29 maja 2026 r. upoważniające SSN Ewę Stryczyńską – status vacant potwierdzony."
+  },
+  {
+   "id": "pl-sn-izba-kontroli-nadzwyczajnej-i-spraw-publicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 3 (wykaz izb) i art. 15 § 1–2 (Prezes SN kieruje izbą; powołuje Prezydent RP na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby, po opinii I Prezesa SN) – zgodne z t.j. Dz.U. 2024 poz. 622. Strona izby na sn.pl (2026-09-17) potwierdza obsadę/wakat."
+  },
+  {
+   "id": "pl-sn-izba-odpowiedzialnosci-zawodowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 3 (wykaz izb) i art. 15 § 1–2 (Prezes SN kieruje izbą; powołuje Prezydent RP na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby, po opinii I Prezesa SN) – zgodne z t.j. Dz.U. 2024 poz. 622. Strona izby na sn.pl (2026-09-17) potwierdza obsadę/wakat. Art. 22a § 1 ustawy o SN: w IOZ orzeka 11 sędziów wyznaczonych przez Prezydenta RP; sn.pl wymienia 8 wyznaczonych na kadencję 18.09.2022–18.09.2027 (seatsCount 8 = stan faktyczny, ustawowo 11)."
+  },
+  {
+   "id": "pl-nsa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 184; p.u.s.a. (DU/2002/1269, t.j. 2024/1267) art. 3 § 2 (nadzór judykacyjny nad WSA), art. 39 § 1 (3 izby) – zgodne. nsa.gov.pl/bip → 200. Strona 'Sędziowie NSA' potwierdza 2 wiceprezesów (Rudowski – Izba Finansowa, Siegień – Izba Ogólnoadministracyjna); brak wskazanego prezesa Izby Gospodarczej."
+  },
+  {
+   "id": "pl-prezes-nsa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 185; p.u.s.a. art. 34 § 1 (stoi na czele NSA), art. 44 § 1 (6 lat, spośród 2 kandydatów ZO) – zgodne z tekstem. nsa.gov.pl: 'Prezes Naczelnego Sądu Administracyjnego – Jacek Chlebny'."
+  },
+  {
+   "id": "pl-nsa-izba-finansowa",
+   "status": "corrected",
+   "fixes": {
+    "description": "Izba NSA (art. 39 § 1–2 p.u.s.a.): nadzór nad orzecznictwem WSA w sprawach zobowiązań podatkowych i innych świadczeń pieniężnych oraz egzekucji. Pracami izby kieruje wiceprezes NSA wyznaczony do tej funkcji przez Prezesa NSA (art. 39 § 5); wiceprezesów NSA powołuje Prezydent RP na 5-letnią kadencję na wniosek Prezesa NSA za zgodą Zgromadzenia Ogólnego (art. 45 § 1)."
+   },
+   "note": "p.u.s.a. art. 39 § 1–4 potwierdza istnienie izby i jej właściwość. Opis pomijał art. 39 § 5 (pracami izby kieruje wiceprezes WYZNACZONY przez Prezesa NSA) – uzupełniono; powołanie wiceprezesa przez Prezydenta RP (art. 45 § 1) potwierdzone (M.P. 2022 poz. 488–489 cytują art. 45 § 1)."
+  },
+  {
+   "id": "pl-nsa-izba-gospodarcza",
+   "status": "corrected",
+   "fixes": {
+    "description": "Izba NSA (art. 39 § 1 i 3 p.u.s.a.): nadzór nad orzecznictwem WSA w sprawach działalności gospodarczej, własności przemysłowej, budżetu, dewizowych, papierów wartościowych, bankowości, ubezpieczeń, ceł, cen i opłat. Pracami izby kieruje wiceprezes NSA wyznaczony do tej funkcji przez Prezesa NSA (art. 39 § 5); wiceprezesów NSA powołuje Prezydent RP na wniosek Prezesa NSA (art. 45 § 1)."
+   },
+   "note": "p.u.s.a. art. 39 § 1–4 potwierdza istnienie izby i jej właściwość. Opis pomijał art. 39 § 5 (pracami izby kieruje wiceprezes WYZNACZONY przez Prezesa NSA) – uzupełniono; powołanie wiceprezesa przez Prezydenta RP (art. 45 § 1) potwierdzone (M.P. 2022 poz. 488–489 cytują art. 45 § 1). nsa.gov.pl (2026-09-17) nie wskazuje prezesa Izby Gospodarczej – status unverified zasadny."
+  },
+  {
+   "id": "pl-nsa-izba-ogolnoadministracyjna",
+   "status": "corrected",
+   "fixes": {
+    "description": "Izba NSA (art. 39 § 1 i 4 p.u.s.a.): nadzór nad orzecznictwem WSA w pozostałych sprawach administracyjnych (m.in. budownictwo, zagospodarowanie przestrzenne, ochrona środowiska, gospodarka nieruchomościami, ustrój samorządu terytorialnego). Pracami izby kieruje wiceprezes NSA wyznaczony do tej funkcji przez Prezesa NSA (art. 39 § 5); wiceprezesów NSA powołuje Prezydent RP na wniosek Prezesa NSA (art. 45 § 1)."
+   },
+   "note": "p.u.s.a. art. 39 § 1–4 potwierdza istnienie izby i jej właściwość. Opis pomijał art. 39 § 5 (pracami izby kieruje wiceprezes WYZNACZONY przez Prezesa NSA) – uzupełniono; powołanie wiceprezesa przez Prezydenta RP (art. 45 § 1) potwierdzone (M.P. 2022 poz. 488–489 cytują art. 45 § 1)."
+  },
+  {
+   "id": "pl-wsa-bialystok",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-andrzej-melezini",
+       "name": "Andrzej Melezini",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Białymstoku",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://bip.bialystok.wsa.gov.pl/136/struktura-organizacyjna.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://bip.bialystok.wsa.gov.pl/",
+    "bipUrl": "https://bip.bialystok.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://bip.bialystok.wsa.gov.pl/136/struktura-organizacyjna.html) wskazuje prezesa: Andrzej Melezini. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-bydgoszcz",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-anna-klotz",
+       "name": "Anna Klotz",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Bydgoszczy",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.bydgoszcz.wsa.gov.pl/26,organizacja-dane-adresowe",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://www.bydgoszcz.wsa.gov.pl/",
+    "bipUrl": "https://www.bydgoszcz.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://www.bydgoszcz.wsa.gov.pl/26,organizacja-dane-adresowe) wskazuje prezesa: Anna Klotz. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-gdansk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Nazwisko prezesa potwierdzone na wskazanym sourceUrl."
+  },
+  {
+   "id": "pl-wsa-gliwice",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-krzysztof-kandut",
+       "name": "Krzysztof Kandut",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Gliwicach",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.gliwice.wsa.gov.pl/10/organy-i-struktura-organizacyjna.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://www.gliwice.wsa.gov.pl/",
+    "bipUrl": "https://www.gliwice.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://www.gliwice.wsa.gov.pl/10/organy-i-struktura-organizacyjna.html) wskazuje prezesa: Krzysztof Kandut. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-gorzow-wielkopolski",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-krzysztof-dziedzic",
+       "name": "Krzysztof Dziedzic",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Gorzowie Wielkopolskim",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "http://gorzow.wsa.gov.pl/74/struktura-organizacyjna-sadu.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "http://gorzow.wsa.gov.pl/",
+    "bipUrl": "http://gorzow.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (http://gorzow.wsa.gov.pl/74/struktura-organizacyjna-sadu.html) wskazuje prezesa: Krzysztof Dziedzic. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-kielce",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-miroslaw-surma",
+       "name": "Mirosław Surma",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Kielcach",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://kielce.wsa.gov.pl/183/struktura-organizacyjna.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://kielce.wsa.gov.pl/",
+    "bipUrl": "https://kielce.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://kielce.wsa.gov.pl/183/struktura-organizacyjna.html) wskazuje prezesa: Mirosław Surma. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-krakow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Anna Dumas jako Prezes WSA w Krakowie potwierdzona na nsa.gov.pl (lista sędziów NSA: 'Anna Dumas – Prezes Wojewódzkiego Sądu Administracyjnego w Krakowie'); BIP WSA Kraków (strony 193/194) nie podaje nazwiska."
+  },
+  {
+   "id": "pl-wsa-lublin",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-marta-laskowska-pietrzak",
+       "name": "Marta Laskowska-Pietrzak",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Lublinie",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.lublin.wsa.gov.pl/c/struktura-organizacyjna-sadu-89",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://www.lublin.wsa.gov.pl/",
+    "bipUrl": "https://www.lublin.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://www.lublin.wsa.gov.pl/c/struktura-organizacyjna-sadu-89) wskazuje prezesa: Marta Laskowska-Pietrzak. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-lodz",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-cezary-kozinski",
+       "name": "Cezary Koziński",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Łodzi",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://lodz.wsa.gov.pl/24/struktura-organizacyjna-sadu.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://lodz.wsa.gov.pl/",
+    "bipUrl": "https://lodz.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://lodz.wsa.gov.pl/24/struktura-organizacyjna-sadu.html) wskazuje prezesa: Cezary Koziński. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-olsztyn",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-renata-kantecka",
+       "name": "Renata Kantecka",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Olsztynie",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://bip.olsztyn.wsa.gov.pl/31/organizacja-jednostki-numery-telefonow.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://bip.olsztyn.wsa.gov.pl/",
+    "bipUrl": "https://bip.olsztyn.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://bip.olsztyn.wsa.gov.pl/31/organizacja-jednostki-numery-telefonow.html) wskazuje prezesa: Renata Kantecka. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-opole",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-marzena-lozowska",
+       "name": "Marzena Łozowska",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Opolu",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://bip.opole.wsa.gov.pl/45/organizacja-jednostki-dane-adresowe.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://bip.opole.wsa.gov.pl/",
+    "bipUrl": "https://bip.opole.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://bip.opole.wsa.gov.pl/45/organizacja-jednostki-dane-adresowe.html) wskazuje prezesa: Marzena Łozowska. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-poznan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Nazwisko prezesa potwierdzone na wskazanym sourceUrl."
+  },
+  {
+   "id": "pl-wsa-rzeszow",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-jacek-surmacz",
+       "name": "Jacek Surmacz",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Rzeszowie",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.bip.rzeszow.wsa.gov.pl/35,organizacja-jednostki-dane-teleadresowe",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://www.bip.rzeszow.wsa.gov.pl/",
+    "bipUrl": "https://www.bip.rzeszow.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://www.bip.rzeszow.wsa.gov.pl/35,organizacja-jednostki-dane-teleadresowe) wskazuje prezesa: Jacek Surmacz. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-szczecin",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-arkadiusz-windak",
+       "name": "Arkadiusz Windak",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego w Szczecinie",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://bip.szczecin.wsa.gov.pl/111/organizacja-wsa-w-szczecinie.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://bip.szczecin.wsa.gov.pl/",
+    "bipUrl": "https://bip.szczecin.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Chunk podawał status unverified ('nie przeszukano BIP'); BIP sądu (https://bip.szczecin.wsa.gov.pl/111/organizacja-wsa-w-szczecinie.html) wskazuje prezesa: Arkadiusz Windak. Uzupełniono osobę i poprawiono adresy (http→https / właściwy host)."
+  },
+  {
+   "id": "pl-wsa-warszawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. Nazwisko prezesa potwierdzone na wskazanym sourceUrl."
+  },
+  {
+   "id": "pl-wsa-wroclaw",
+   "status": "corrected",
+   "fixes": {
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-ireneusz-dukiel",
+       "name": "Ireneusz Dukiel",
+       "positionId": null,
+       "positionName": "Prezes Wojewódzkiego Sądu Administracyjnego we Wrocławiu",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://bip.wroclaw.wsa.gov.pl/43/organizacja-jednostki.html",
+       "startedAtSource": null,
+       "note": "Nazwisko ze strony BIP/struktura organizacyjna sądu (stan 2026-09-17); data powołania nieustalona."
+      }
+     ]
+    },
+    "status": "active",
+    "statusNote": null,
+    "officialUrl": "https://bip.wroclaw.wsa.gov.pl/",
+    "bipUrl": "https://bip.wroclaw.wsa.gov.pl/"
+   },
+   "note": "p.u.s.a. art. 2 (WSA są sądami administracyjnymi), art. 16 § 2 (tworzy Prezydent RP rozporządzeniem na wniosek Prezesa NSA), art. 21 § 1 i 1a (prezesa powołuje Prezes NSA na 5 lat po opinii zgromadzenia ogólnego), art. 3 § 2 (nadzór judykacyjny NSA) – zgodne z t.j. 2024/1267. Parent=NSA z notą o charakterze nadzoru – zgodnie z instrukcją. statusNote chunku ('BIP nie podaje nazwiska') jest NIEPRAWDZIWA: strona 'Organizacja jednostki' (bip.wroclaw.wsa.gov.pl/43) podaje 'Prezes WSA – Sędzia WSA Ireneusz Dukiel', a lista sędziów (…/45) 'SWSA Ireneusz Dukiel – Prezes Sądu'. Uzupełniono."
+  },
+  {
+   "id": "pl-trybunal-konstytucyjny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 188–197 (art. 194 ust. 1: 15 sędziów, 9 lat, wybór Sejmu) oraz ustawa o statusie sędziów TK art. 2 (DU/2016/2073) i ustawa o organizacji i trybie postępowania przed TK (DU/2016/2072) – w ELI. trybunal.gov.pl (2026-09-17) wymienia 9 sędziów: Święczkowski (Prezes), Sochański (Wiceprezes), Bentkowska, Patyra, Piskorski, Stelina, Sych, Wojciechowski, Wyrembak. Nazwiska 8 wybranych w 2026 r. zweryfikowane w PDF uchwał M.P. 2026 poz. 300 (Bentkowska), 301 (Dziurda), 302 (Korwin-Piotrowska), 303 (Markiewicz), 304 (Szostek), 305 (Taborowski), 603 (Patyra), 900 (Berek). Status disputed zasadny. trybunal.gov.pl/bip przekierowuje na stronę główną."
+  },
+  {
+   "id": "pl-prezes-tk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 194 ust. 2; ustawa o organizacji i trybie postępowania przed TK art. 11 (kandydaci ZO) i art. 12 ust. 1 (kieruje pracami, reprezentuje) – zgodne. Biogram na trybunal.gov.pl: '9 grudnia 2024 r. został powołany przez Prezydenta RP na Prezesa TK'. URL /o-trybunale/prezes-trybunalu-konstytucyjnego/ przekierowuje na biogram (…/art/98674-bogdan-swieczkowski)."
+  },
+  {
+   "id": "pl-trybunal-stanu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 198–201 (art. 199 ust. 1: przewodniczący + 2 zastępców + 16 członków wybieranych przez Sejm; ust. 2: przewodniczącym I Prezes SN) – zgodne; ustawa o TS = Dz.U. 1982 nr 11 poz. 84 (ELI DU/1982/84, 'akt posiada tekst jednolity'). Skład: 18 nazwisk zgodnych z PDF M.P. 2023 poz. 1296. Wyszukiwanie ELI (publisher=MP, tytuł 'Trybunału Stanu') dla lat 2024–2026 nie zwraca żadnych aktów (brak wyborów uzupełniających i postanowień o utracie stanowiska) – skład aktualny. TS nie ma własnej strony; officialUrl=sn.pl akceptowalny."
+  },
+  {
+   "id": "pl-krajowa-rada-sadownictwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 186–187; ustawa o KRS DU/2011/714 (t.j. 2024/1186) art. 9a (Sejm wybiera 15 sędziów, kadencja od dnia po wyborze), art. 8 (osoba Prezydenta), art. 16 (Prezydium) – zgodne z tekstem. krs.pl 'Skład i organizacja' (2026-09-17) wymienia dokładnie 25 osób zgodnych z chunkiem; 15 sędziów zgodnych z PDF M.P. 2026 poz. 513 (pisownia 'Kobylinska-Bortkiewicz' w M.P. i na krs.pl bez 'ń' – zachować). bip.krs.pl → 200. Akty M.P. 2026 poz. 259 i 503 istnieją w ELI."
+  },
+  {
+   "id": "pl-przewodniczacy-krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 2; ustawa o KRS art. 16 ust. 1–2 (Rada wybiera Przewodniczącego; kadencja członka Prezydium 4 lata) – zgodne. krs.pl: 'Dariusz Rudolf Zawistowski – Przewodniczący Krajowej Rady Sądownictwa'."
+  },
+  {
+   "id": "pl-sady-powszechne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.p. DU/2001/1070 (t.j. 2024/334) art. 1 § 1 (SR, SO, SA), art. 23–25 § 1 (prezesów powołuje MS), art. 9/9a § 2 (nadzór administracyjny MS) – zgodne z tekstem. Plik 'Lista sądów powszechnych (luty 2026)' z dane.gov.pl zbiór 985 (zasób 1400113): 11 SA + 47 SO + 319 SR = 377 – liczby potwierdzone."
+  },
+  {
+   "id": "pl-sady-apelacyjne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.p. DU/2001/1070 (t.j. 2024/334) art. 1 § 1 (SR, SO, SA), art. 23–25 § 1 (prezesów powołuje MS), art. 9/9a § 2 (nadzór administracyjny MS) – zgodne z tekstem. Plik 'Lista sądów powszechnych (luty 2026)' z dane.gov.pl zbiór 985 (zasób 1400113): 11 SA + 47 SO + 319 SR = 377 – liczby potwierdzone."
+  },
+  {
+   "id": "pl-sady-okregowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.p. DU/2001/1070 (t.j. 2024/334) art. 1 § 1 (SR, SO, SA), art. 23–25 § 1 (prezesów powołuje MS), art. 9/9a § 2 (nadzór administracyjny MS) – zgodne z tekstem. Plik 'Lista sądów powszechnych (luty 2026)' z dane.gov.pl zbiór 985 (zasób 1400113): 11 SA + 47 SO + 319 SR = 377 – liczby potwierdzone."
+  },
+  {
+   "id": "pl-sady-rejonowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.p. DU/2001/1070 (t.j. 2024/334) art. 1 § 1 (SR, SO, SA), art. 23–25 § 1 (prezesów powołuje MS), art. 9/9a § 2 (nadzór administracyjny MS) – zgodne z tekstem. Plik 'Lista sądów powszechnych (luty 2026)' z dane.gov.pl zbiór 985 (zasób 1400113): 11 SA + 47 SO + 319 SR = 377 – liczby potwierdzone."
+  },
+  {
+   "id": "pl-sady-wojskowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.w. DU/1997/753 (t.j. 2025/1614) art. 3 § 1 (WSO i WSG), § 3 (MON w porozumieniu z MS tworzy sądy), art. 5 § 1–3 (nadzór SN / MS / MON) – zgodne. Rozporządzenie MON Dz.U. 2014 poz. 662 (ELI) wymienia 2 WSO (Poznań, Warszawa) i 7 WSG (Gdynia, Lublin, Olsztyn, Poznań, Szczecin, Warszawa, Wrocław) = 9. Brak w chunku krawędzi MS→appoints→sądy wojskowe (art. 11 § 3: prezesów sądów wojskowych powołuje MS w porozumieniu z MON) – dodano w additions."
+  },
+  {
+   "id": "pl-prokuratura",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo o prokuraturze DU/2016/177 (t.j. 2026/810) art. 1 § 1–2, art. 2 – treść opisu zgodna z tekstem. Sector executive / ring administration zgodnie z instrukcją."
+  },
+  {
+   "id": "pl-prokurator-generalny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 1 § 2 ('Urząd Prokuratora Generalnego sprawuje Minister Sprawiedliwości') i art. 13 § 1 – zgodne. gov.pl/web/prokuratura-krajowa/kierownictwo2: 'Prokurator Generalny – Waldemar Żurek'."
+  },
+  {
+   "id": "pl-prokuratura-krajowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 16 (PK jako powszechna jednostka), art. 17 § 1–2 (obsługa PG/PK, nadzór nad prokuraturami regionalnymi) – zgodne. Kierownictwo (8 zastępców) zgodne ze stroną gov.pl."
+  },
+  {
+   "id": "pl-prokurator-krajowy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14 § 1 (PRM powołuje PK na wniosek PG po opinii Prezydenta RP), art. 15 § 1 (PK powołuje prokuratorów regionalnych/okręgowych/rejonowych) – zgodne z t.j. 2026/810. Strona gov.pl: 'I Zastępca Prokuratora Generalnego Prokurator Krajowy – Dariusz Korneluk'."
+  },
+  {
+   "id": "pl-prokuratury-regionalne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 22 § 1–4 zgodne. Strona gov.pl 'Lista – prokuratury regionalne' wymienia 11 jednostek (Białystok, Gdańsk, Katowice, Kraków, Lublin, Łódź, Poznań, Rzeszów, Szczecin, Warszawa, Wrocław)."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-pierwszy-prezes-sn",
+   "personId": "pl-zbigniew-kapinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sn.pl (I Prezes SN): biogram Zbigniewa Kapińskiego; komunikat sn.pl z 25.05.2026: 'Prezydent RP ... postanowieniem z dnia 25 maja 2026 r. powołał z dniem 27 maja 2026 r. Zbigniewa Kapińskiego na stanowisko Pierwszego Prezesa SN'. W ELI brak postanowienia w M.P. 2026 (wyszukiwanie 'Pierwszego Prezesa Sądu Najwyższego' – 0 wyników). "
+  },
+  {
+   "nodeId": "pl-sn-izba-cywilna",
+   "personId": "pl-joanna-misztal-konecka",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2021-09-30",
+    "startedAtSource": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-cywilna/nota-biograficzna-joanna-misztal-konecka",
+    "note": "Powołana przez Prezydenta RP z dniem 30.09.2021 r. na Prezesa SN kierującego Izbą Cywilną, z dniem 1.10.2024 r. na drugą kadencję (nota biograficzna sn.pl)."
+   },
+   "note": "Strona izby: 'Prezes Sądu Najwyższego – prof. dr hab. Joanna Misztal-Konecka'. Nota biograficzna podaje daty powołania (30.09.2021; II kadencja od 1.10.2024) – uzupełniono."
+  },
+  {
+   "nodeId": "pl-sn-izba-karna",
+   "personId": "pl-igor-zgolinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sn.pl (Izba Karna): 'Pierwszy Prezes SN zarządzeniem z dnia 12 czerwca 2026 r. upoważnił SSN dr. hab. Igora Zgolińskiego do tymczasowego wykonywania czynności związanych z organizacją i kierowaniem pracą Izby Karnej ... do czasu powołania przez Prezydenta RP Prezesa'. Status acting zasadny."
+  },
+  {
+   "nodeId": "pl-sn-izba-pracy-i-ubezpieczen-spolecznych",
+   "personId": "pl-ewa-stryczynska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sn.pl (Izba Pracy i US): zarządzenie I Prezesa SN z 29 maja 2026 r. upoważniające SSN Ewę Stryczyńską do tymczasowego kierowania izbą 'do czasu wyznaczenia przez Prezydenta RP' – zgodne z art. 15 § 4 ustawy o SN. Status acting zasadny."
+  },
+  {
+   "nodeId": "pl-sn-izba-kontroli-nadzwyczajnej-i-spraw-publicznych",
+   "personId": "pl-krzysztof-wiak",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2025-02-28",
+    "startedAtSource": "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-kontroli-nadzwyczajnej-i-spraw-publicznych/nota-biograficzna-krzysztof-wiak",
+    "note": "Powołany z dniem 28.02.2025 r. na Prezesa SN kierującego pracą IKNiSP (nota biograficzna sn.pl)."
+   },
+   "note": "Strona izby: 'Prezes Sądu Najwyższego – dr hab. Krzysztof Wiak'. Nota biograficzna: 'powołany z dniem 28 lutego 2025 r.' – uzupełniono datę."
+  },
+  {
+   "nodeId": "pl-sn-izba-odpowiedzialnosci-zawodowej",
+   "personId": "pl-maria-szczepaniec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sn.pl (IOZ): 'Prezes Sądu Najwyższego – dr hab. Maria Szczepaniec'; komunikat z 9.07.2026: powołana postanowieniem Prezydenta RP z 9.07.2026 z dniem 9.07.2026. Potwierdzone."
+  },
+  {
+   "nodeId": "pl-nsa",
+   "personId": "pl-jan-rudowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nsa.gov.pl 'Sędziowie NSA': 'Jan Rudowski – Prezes Izby Finansowej, Wiceprezes NSA'. PDF M.P. 2022 poz. 488 (postanowienie z 25.04.2022 na podstawie art. 45 § 1 p.u.s.a.) potwierdza nazwisko."
+  },
+  {
+   "nodeId": "pl-nsa",
+   "personId": "pl-jerzy-siegien",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nsa.gov.pl 'Sędziowie NSA': 'Jerzy Siegień – Prezes Izby Ogólnoadministracyjnej, Wiceprezes NSA'. PDF M.P. 2022 poz. 489 (postanowienie z 25.04.2022 na podstawie art. 45 § 1 p.u.s.a.) potwierdza nazwisko."
+  },
+  {
+   "nodeId": "pl-prezes-nsa",
+   "personId": "pl-jacek-chlebny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nsa.gov.pl: 'Prezes NSA – Jacek Chlebny'. PDF M.P. 2022 poz. 227: 'z dniem 18 lutego 2022 r. powołuję Pana Jacka Chlebnego na stanowisko Prezesa NSA, na sześcioletnią kadencję'."
+  },
+  {
+   "nodeId": "pl-nsa-izba-finansowa",
+   "personId": "pl-jan-rudowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nsa.gov.pl 'Sędziowie NSA': 'Jan Rudowski – Prezes Izby Finansowej, Wiceprezes NSA'. PDF M.P. 2022 poz. 488 (postanowienie z 25.04.2022 na podstawie art. 45 § 1 p.u.s.a.) potwierdza nazwisko."
+  },
+  {
+   "nodeId": "pl-nsa-izba-ogolnoadministracyjna",
+   "personId": "pl-jerzy-siegien",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nsa.gov.pl 'Sędziowie NSA': 'Jerzy Siegień – Prezes Izby Ogólnoadministracyjnej, Wiceprezes NSA'. PDF M.P. 2022 poz. 489 (postanowienie z 25.04.2022 na podstawie art. 45 § 1 p.u.s.a.) potwierdza nazwisko."
+  },
+  {
+   "nodeId": "pl-wsa-gdansk",
+   "personId": "pl-pawe-mierzejewski",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-pawel-mierzejewski"
+   },
+   "note": "BIP WSA Gdańsk (194): 'sędzia WSA Paweł Mierzejewski (Prezes WSA w Gdańsku)'. Błędne id (zgubione 'ł'; reguła kanonu ł→l)."
+  },
+  {
+   "nodeId": "pl-wsa-krakow",
+   "personId": "pl-anna-dumas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nsa.gov.pl (lista sędziów NSA, Izba Finansowa): 'Anna Dumas – Prezes Wojewódzkiego Sądu Administracyjnego w Krakowie'. BIP WSA Kraków nie podaje nazwiska – sourceUrl na nsa.gov.pl zasadny."
+  },
+  {
+   "nodeId": "pl-wsa-poznan",
+   "personId": "pl-jakub-zielinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "BIP WSA Poznań (256): 'Prezesem Wojewódzkiego Sądu Administracyjnego w Poznaniu jest sędzia WSA Jakub Zieliński'."
+  },
+  {
+   "nodeId": "pl-wsa-warszawa",
+   "personId": "pl-alojzy-skrodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "BIP WSA Warszawa (682): 'Prezes – Sędzia WSA w Warszawie Alojzy Skrodzki'."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-bogdan-swieczkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "trybunal.gov.pl lista sędziów: 'Bogdan Święczkowski – Prezes'. Biogram: wybrany 8.02.2022, ślubowanie 16.02.2022, 'a 9 grudnia 2024 r. został powołany przez Prezydenta RP na Prezesa TK'. Daty zgodne. W M.P. 2024–2025 brak postanowienia (ELI search 'Prezesa Trybunału Konstytucyjnego' – 0 wyników)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-bartomiej-sochanski",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-bartlomiej-sochanski",
+    "startedAt": "2020-04-09",
+    "startedAtSource": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/art/12432-bartlomiej-sochanski",
+    "note": "Wybrany przez Sejm 6.04.2020, ślubowanie 9.04.2020; od 21.02.2025 Wiceprezes TK (biogram trybunal.gov.pl)."
+   },
+   "note": "Lista sędziów TK: 'Bartłomiej Sochański – Wiceprezes'. Biogram: ślubowanie 9.04.2020, powołany na Wiceprezesa 21.02.2025. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-magdalena-bentkowska",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2026-04-01",
+    "startedAtSource": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/art/magdalena-bentkowska",
+    "note": "Wybrana przez Sejm 13.03.2026 (M.P. 2026 poz. 300); ślubowanie wobec Prezydenta RP i objęcie urzędu 1.04.2026 (biogram trybunal.gov.pl)."
+   },
+   "note": "Biogram: 'W dniu 13 marca 2026 r. została wybrana przez Sejm ..., a 1 kwietnia 2026 r. złożyła ślubowanie'. Urząd sędziego TK obejmuje się z chwilą ślubowania – startedAt = 2026-04-01, nie data wyboru."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-sawomir-patyra",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-slawomir-patyra",
+    "startedAt": "2026-07-28",
+    "startedAtSource": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/art/slawomir-patyra",
+    "note": "Wybrany przez Sejm 11.06.2026 (M.P. 2026 poz. 603); ślubowanie wobec Prezydenta RP 28.07.2026 (biogram trybunal.gov.pl)."
+   },
+   "note": "Biogram: wybrany 11.06.2026, ślubowanie 28.07.2026 – startedAt poprawiono na datę ślubowania. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-justyn-piskorski",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2017-09-18",
+    "startedAtSource": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/art/9844-justyn-piskorski"
+   },
+   "note": "Biogram: wybrany 15.09.2017, ślubowanie 18.09.2017 – uzupełniono datę."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-jakub-stelina",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście sędziów trybunal.gov.pl (2026-09-17). Biogram nie podaje daty ślubowania w postaci umożliwiającej wpis (Sych: 'W kwietniu 2019 r. został wybrany przez Sejm'; Stelina – brak) – startedAt null zasadny."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-wojciech-sych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście sędziów trybunal.gov.pl (2026-09-17). Biogram nie podaje daty ślubowania w postaci umożliwiającej wpis (Sych: 'W kwietniu 2019 r. został wybrany przez Sejm'; Stelina – brak) – startedAt null zasadny."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-rafa-wojciechowski",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-rafal-wojciechowski",
+    "startedAt": "2020-01-07",
+    "startedAtSource": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/art/11315-rafal-wojciechowski"
+   },
+   "note": "Biogram: wybrany 20.12.2019, ślubowanie 7.01.2020. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-jarosaw-wyrembak",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-jaroslaw-wyrembak",
+    "startedAt": "2018-01-30",
+    "startedAtSource": "https://trybunal.gov.pl/o-trybunale/sedziowie-trybunalu-konstytucyjnego/art/10023-jaroslaw-wyrembak"
+   },
+   "note": "Biogram: wybrany 26.01.2018, ślubowanie 30.01.2018. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-marcin-dziurda",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": null
+   },
+   "note": "Nazwisko potwierdzone w PDF uchwały Sejmu M.P. 2026 poz. 301 (ELI). Na liście sędziów trybunal.gov.pl (2026-09-17) NIE figuruje – brak ślubowania. Status disputed zasadny; startedAt ustawiono na null, bo osoba nie objęła urzędu (data wyboru pozostaje w note)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-anna-korwin-piotrowska",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": null
+   },
+   "note": "Nazwisko potwierdzone w PDF uchwały Sejmu M.P. 2026 poz. 302 (ELI). Na liście sędziów trybunal.gov.pl (2026-09-17) NIE figuruje – brak ślubowania. Status disputed zasadny; startedAt ustawiono na null, bo osoba nie objęła urzędu (data wyboru pozostaje w note)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-krystian-markiewicz",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": null
+   },
+   "note": "Nazwisko potwierdzone w PDF uchwały Sejmu M.P. 2026 poz. 303 (ELI). Na liście sędziów trybunal.gov.pl (2026-09-17) NIE figuruje – brak ślubowania. Status disputed zasadny; startedAt ustawiono na null, bo osoba nie objęła urzędu (data wyboru pozostaje w note)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-dariusz-szostek",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": null
+   },
+   "note": "Nazwisko potwierdzone w PDF uchwały Sejmu M.P. 2026 poz. 304 (ELI). Na liście sędziów trybunal.gov.pl (2026-09-17) NIE figuruje – brak ślubowania. Status disputed zasadny; startedAt ustawiono na null, bo osoba nie objęła urzędu (data wyboru pozostaje w note)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-maciej-taborowski",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": null
+   },
+   "note": "Nazwisko potwierdzone w PDF uchwały Sejmu M.P. 2026 poz. 305 (ELI). Na liście sędziów trybunal.gov.pl (2026-09-17) NIE figuruje – brak ślubowania. Status disputed zasadny; startedAt ustawiono na null, bo osoba nie objęła urzędu (data wyboru pozostaje w note)."
+  },
+  {
+   "nodeId": "pl-trybunal-konstytucyjny",
+   "personId": "pl-maciej-berek",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": null
+   },
+   "note": "Nazwisko potwierdzone w PDF uchwały Sejmu M.P. 2026 poz. 900 (ELI). Na liście sędziów trybunal.gov.pl (2026-09-17) NIE figuruje – brak ślubowania. Status disputed zasadny; startedAt ustawiono na null, bo osoba nie objęła urzędu (data wyboru pozostaje w note)."
+  },
+  {
+   "nodeId": "pl-prezes-tk",
+   "personId": "pl-bogdan-swieczkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "trybunal.gov.pl lista sędziów: 'Bogdan Święczkowski – Prezes'. Biogram: wybrany 8.02.2022, ślubowanie 16.02.2022, 'a 9 grudnia 2024 r. został powołany przez Prezydenta RP na Prezesa TK'. Daty zgodne. W M.P. 2024–2025 brak postanowienia (ELI search 'Prezesa Trybunału Konstytucyjnego' – 0 wyników)."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-zbigniew-kapinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sn.pl (I Prezes SN): biogram Zbigniewa Kapińskiego; komunikat sn.pl z 25.05.2026: 'Prezydent RP ... postanowieniem z dnia 25 maja 2026 r. powołał z dniem 27 maja 2026 r. Zbigniewa Kapińskiego na stanowisko Pierwszego Prezesa SN'. W ELI brak postanowienia w M.P. 2026 (wyszukiwanie 'Pierwszego Prezesa Sądu Najwyższego' – 0 wyników). Przewodniczący TS z urzędu – art. 199 ust. 2 Konstytucji potwierdzony."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-piotr-andrzejewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (zastępca przewodniczącego) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-jacek-dubois",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (zastępca przewodniczącego) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-marek-czeszkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-kamila-ferenc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-sabina-grabowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-adam-koczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-jan-majchrowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-marek-maecki",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-marek-malecki"
+   },
+   "note": "Nazwisko w PDF M.P. 2023 poz. 1296. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-marek-mikoajczyk",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-marek-mikolajczyk"
+   },
+   "note": "Nazwisko w PDF M.P. 2023 poz. 1296. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-maciej-miosz",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-maciej-milosz"
+   },
+   "note": "Nazwisko w PDF M.P. 2023 poz. 1296. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-marcin-radwan-rohrenschef",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-przemysaw-rosati",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-przemyslaw-rosati"
+   },
+   "note": "Nazwisko w PDF M.P. 2023 poz. 1296. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-piotr-sak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-adrian-salus",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-marcin-wawrzyniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-maciej-zaborowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-piotr-zientarski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-trybunal-stanu",
+   "personId": "pl-jozef-zych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja (członek) zgodne z PDF uchwały Sejmu M.P. 2023 poz. 1296 (ELI). ELI nie wykazuje żadnych aktów M.P. dot. TS w latach 2024–2026 – skład bez zmian."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-dariusz-zawistowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-wojciech-buchajczuk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-aleksandra-wrzesinska-nowacka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-karolina-bak-lasota",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-monika-frackowiak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-edyta-jefimko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-magdalena-kierszka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-agnieszka-kobylinska-bortkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-jarosaw-uczaj",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-jaroslaw-luczaj"
+   },
+   "note": "krs.pl: 'Jarosław Adam Łuczaj – sędzia WSA w Warszawie'; M.P. 2026 poz. 513 poz. 7. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-ewa-mierzejewska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-ukasz-piebiak",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-lukasz-piebiak"
+   },
+   "note": "krs.pl: 'dr Łukasz Konrad Piebiak'; M.P. 2026 poz. 513 poz. 9. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-bartomiej-starosta",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-bartlomiej-starosta"
+   },
+   "note": "krs.pl: 'Bartłomiej Starosta – członek Prezydium'; M.P. 2026 poz. 513 poz. 10. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-ukasz-zawadzki",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-lukasz-zawadzki"
+   },
+   "note": "krs.pl: 'Łukasz Zawadzki – sędzia SO w Opolu'; M.P. 2026 poz. 513 poz. 12. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-katarzyna-zawislak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-ewa-zonierczuk-dec",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko na liście M.P. 2026 poz. 513 (PDF, ELI) i na krs.pl 'Skład i organizacja' (2026-09-17) z tą samą funkcją/przynależnością sądową. Kadencja od dnia po wyborze (art. 9a ust. 3 ustawy o KRS) – startedAt 2026-05-16 poprawny. Status disputed zgodny z instrukcją."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-robert-kropiwnicki",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2023-11-14",
+    "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1249/ogl",
+    "note": "Poseł na Sejm RP wybrany do KRS uchwałą Sejmu z 14.11.2023 r. (M.P. 2023 poz. 1249; art. 187 ust. 1 pkt 3 Konstytucji RP)."
+   },
+   "note": "krs.pl: 'dr hab. Robert Kropiwnicki – Poseł na Sejm RP'. PDF M.P. 2023 poz. 1249: 'wybiera posła Roberta Kropiwnickiego do KRS' – uzupełniono datę."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-jarosaw-urbaniak",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-jaroslaw-urbaniak",
+    "startedAt": "2024-06-28",
+    "startedAtSource": "https://eli.gov.pl/eli/MP/2024/596/ogl",
+    "note": "Poseł na Sejm RP wybrany do KRS w wyborze uzupełniającym uchwałą Sejmu z 28.06.2024 r. (M.P. 2024 poz. 596) – w miejsce Kamili Gasiuk-Pihowicz (M.P. 2023 poz. 1250)."
+   },
+   "note": "PDF M.P. 2024 poz. 596: 'wybiera posła Jarosława Urbaniaka'. Błędne id (ł→l); uzupełniono datę."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-tomasz-zimoch",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2023-11-14",
+    "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1251/ogl",
+    "note": "Poseł na Sejm RP wybrany do KRS uchwałą Sejmu z 14.11.2023 r. (M.P. 2023 poz. 1251)."
+   },
+   "note": "PDF M.P. 2023 poz. 1251: 'wybiera posła Tomasza Zimocha do KRS' – uzupełniono datę."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-anna-zukowska",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2023-11-14",
+    "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1248/ogl",
+    "note": "Poseł na Sejm RP wybrana do KRS uchwałą Sejmu z 14.11.2023 r. (M.P. 2023 poz. 1248)."
+   },
+   "note": "PDF M.P. 2023 poz. 1248: 'wybiera poseł Annę Marię Żukowską do KRS' – uzupełniono datę."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-krzysztof-kwiatkowski",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2023-11-29",
+    "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1323/ogl",
+    "note": "Senator RP wybrany do KRS uchwałą Senatu z 29.11.2023 r. (M.P. 2023 poz. 1323)."
+   },
+   "note": "PDF M.P. 2023 poz. 1323 (uchwała Senatu): 'wybiera senatorów: Krzysztofa Kwiatkowskiego, Kazimierza Michała Ujazdowskiego' – uzupełniono datę."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-kazimierz-ujazdowski",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2023-11-29",
+    "startedAtSource": "https://eli.gov.pl/eli/MP/2023/1323/ogl",
+    "note": "Senator RP wybrany do KRS uchwałą Senatu z 29.11.2023 r. (M.P. 2023 poz. 1323)."
+   },
+   "note": "PDF M.P. 2023 poz. 1323 – uzupełniono datę."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-grzegorz-ksepko",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "krs.pl: 'Grzegorz Ksepko – Przedstawiciel Prezydenta RP'. PDF M.P. 2026 poz. 503 (postanowienie z 6.11.2025 nr 1131.57.2025): 'powołuję Pana Grzegorza Piotra Ksepkę, z dniem 7 listopada 2025 r., w skład KRS' – zgodne."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-zbigniew-kapinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "sn.pl (I Prezes SN): biogram Zbigniewa Kapińskiego; komunikat sn.pl z 25.05.2026: 'Prezydent RP ... postanowieniem z dnia 25 maja 2026 r. powołał z dniem 27 maja 2026 r. Zbigniewa Kapińskiego na stanowisko Pierwszego Prezesa SN'. W ELI brak postanowienia w M.P. 2026 (wyszukiwanie 'Pierwszego Prezesa Sądu Najwyższego' – 0 wyników). krs.pl wymienia 'Zbigniew Kapiński – Pierwszy Prezes Sądu Najwyższego'."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-jacek-chlebny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nsa.gov.pl: 'Prezes NSA – Jacek Chlebny'. PDF M.P. 2022 poz. 227: 'z dniem 18 lutego 2022 r. powołuję Pana Jacka Chlebnego na stanowisko Prezesa NSA, na sześcioletnią kadencję'. krs.pl: 'prof. dr hab. Jacek Chlebny – Prezes NSA'."
+  },
+  {
+   "nodeId": "pl-krajowa-rada-sadownictwa",
+   "personId": "pl-waldemar-zurek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "krs.pl: 'Waldemar Żurek – Minister Sprawiedliwości'. PDF M.P. 2025 poz. 690 (postanowienie z 24.07.2025): 'Pana Waldemara Jana Żurka – na urząd Ministra Sprawiedliwości' z dniem 24.07.2025 – zgodne."
+  },
+  {
+   "nodeId": "pl-przewodniczacy-krs",
+   "personId": "pl-dariusz-zawistowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "krs.pl: 'Dariusz Rudolf Zawistowski – sędzia SN Izba Cywilna – Przewodniczący Krajowej Rady Sądownictwa'; M.P. 2026 poz. 513 poz. 13. Data wyboru na Przewodniczącego nie jest podana na krs.pl."
+  },
+  {
+   "nodeId": "pl-prokurator-generalny",
+   "personId": "pl-waldemar-zurek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/prokuratura-krajowa/kierownictwo2: 'Prokurator Generalny – Waldemar Żurek'. PDF M.P. 2025 poz. 690 (postanowienie z 24.07.2025): 'Pana Waldemara Jana Żurka – na urząd Ministra Sprawiedliwości' z dniem 24.07.2025 – zgodne."
+  },
+  {
+   "nodeId": "pl-prokuratura-krajowa",
+   "personId": "pl-jacek-bilewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/prokuratura-krajowa/kierownictwo2 (2026-09-17): 'Zastępca Prokuratora Generalnego – Jacek Bilewicz' – zgodne."
+  },
+  {
+   "nodeId": "pl-prokuratura-krajowa",
+   "personId": "pl-beata-marczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/prokuratura-krajowa/kierownictwo2 (2026-09-17): 'Zastępca Prokuratora Generalnego do Spraw Przestępczości Zorganizowanej i Korupcji – Beata Marczak' – zgodne."
+  },
+  {
+   "nodeId": "pl-prokuratura-krajowa",
+   "personId": "pl-robert-hernand",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/prokuratura-krajowa/kierownictwo2 (2026-09-17): 'Zastępca Prokuratora Generalnego – Robert Hernand' – zgodne."
+  },
+  {
+   "nodeId": "pl-prokuratura-krajowa",
+   "personId": "pl-krzysztof-sierak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/prokuratura-krajowa/kierownictwo2 (2026-09-17): 'Zastępca Prokuratora Generalnego – Krzysztof Sierak' – zgodne."
+  },
+  {
+   "nodeId": "pl-prokuratura-krajowa",
+   "personId": "pl-micha-ostrowski",
+   "status": "corrected",
+   "fixes": {
+    "id": "pl-michal-ostrowski"
+   },
+   "note": "gov.pl kierownictwo2: 'Zastępca Prokuratora Generalnego – Michał Ostrowski'. Błędne id (ł→l)."
+  },
+  {
+   "nodeId": "pl-prokuratura-krajowa",
+   "personId": "pl-tomasz-janeczek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/prokuratura-krajowa/kierownictwo2 (2026-09-17): 'Zastępca Prokuratora Generalnego do Spraw Wojskowych – Tomasz Janeczek' – zgodne."
+  },
+  {
+   "nodeId": "pl-prokuratura-krajowa",
+   "personId": "pl-andrzej-pozorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/prokuratura-krajowa/kierownictwo2 (2026-09-17): 'Zastępca Prokuratora Generalnego – Andrzej Pozorski' – zgodne."
+  },
+  {
+   "nodeId": "pl-prokuratura-krajowa",
+   "personId": "pl-marek-jamrogowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/prokuratura-krajowa/kierownictwo2 (2026-09-17): 'Zastępca Prokuratora Krajowego – Marek Jamrogowicz' – zgodne."
+  },
+  {
+   "nodeId": "pl-prokurator-krajowy",
+   "personId": "pl-dariusz-korneluk",
+   "status": "corrected",
+   "fixes": {
+    "startedAt": "2024-03-14",
+    "startedAtSource": "https://www.gov.pl/web/prokuratura-krajowa/i-zastepca-prokuratora-generalnego-prokurator-krajowy-DK",
+    "note": "Powołany przez Prezesa Rady Ministrów 14.03.2024 r. na stanowisko Prokuratora Krajowego (biogram na gov.pl/web/prokuratura-krajowa)."
+   },
+   "note": "Strona kierownictwa: 'I Zastępca Prokuratora Generalnego Prokurator Krajowy – Dariusz Korneluk'. Biogram: '14 marca 2024 r. został powołany przez Premiera Donalda Tuska na stanowisko Prokuratora Krajowego' – uzupełniono datę."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-prezydent-rp--appoints--sn-izba-cywilna-prezes",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 15 § 2 (t.j. 2024/622): Prezes SN powoływany przez Prezydenta RP po opinii I Prezesa SN na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--sn-izba-karna-prezes",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 15 § 2 (t.j. 2024/622): Prezes SN powoływany przez Prezydenta RP po opinii I Prezesa SN na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--sn-izba-pracy-i-ubezpieczen-spolecznych-prezes",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 15 § 2 (t.j. 2024/622): Prezes SN powoływany przez Prezydenta RP po opinii I Prezesa SN na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--sn-izba-kontroli-nadzwyczajnej-i-spraw-publicznych-prezes",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 15 § 2 (t.j. 2024/622): Prezes SN powoływany przez Prezydenta RP po opinii I Prezesa SN na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--sn-izba-odpowiedzialnosci-zawodowej-prezes",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o SN art. 15 § 2 (t.j. 2024/622): Prezes SN powoływany przez Prezydenta RP po opinii I Prezesa SN na 3 lata spośród 3 kandydatów zgromadzenia sędziów izby – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-bialystok",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-bialystok",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-bydgoszcz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-bydgoszcz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-gdansk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-gdansk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-gliwice",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-gliwice",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-gorzow-wielkopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-gorzow-wielkopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-kielce",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-kielce",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-krakow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-krakow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-lublin",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-lublin",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-lodz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-lodz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-olsztyn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-olsztyn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-opole",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-opole",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-poznan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-poznan",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-rzeszow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-rzeszow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-szczecin",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-szczecin",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-warszawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-warszawa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-prezes-nsa--appoints--wsa-wroclaw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 21 § 1 (prezesa WSA powołuje Prezes NSA po opinii zgromadzenia ogólnego), § 1a (5 lat) – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-nsa--oversees--wsa-wroclaw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 3 § 2: NSA sprawuje nadzór nad działalnością WSA w zakresie orzekania – zgodne (nadzór judykacyjny, nie organizacyjny)."
+  },
+  {
+   "id": "e-minister-sprawiedliwosci--appoints--sady-apelacyjne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.p. art. 23 § 1: prezesa sądu powołuje Minister Sprawiedliwości – zgodne z t.j. 2024/334; seatsAppointed = liczba sądów wg dane.gov.pl."
+  },
+  {
+   "id": "e-minister-sprawiedliwosci--appoints--sady-okregowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.p. art. 24 § 1: prezesa sądu powołuje Minister Sprawiedliwości – zgodne z t.j. 2024/334; seatsAppointed = liczba sądów wg dane.gov.pl."
+  },
+  {
+   "id": "e-minister-sprawiedliwosci--appoints--sady-rejonowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.p. art. 25 § 1: prezesa sądu powołuje Minister Sprawiedliwości – zgodne z t.j. 2024/334; seatsAppointed = liczba sądów wg dane.gov.pl."
+  },
+  {
+   "id": "e-sad-najwyzszy--dept-head--pierwszy-prezes-sn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; cytowane przepisy (art. 183 ust. 3 / 185 / 194 ust. 2 / 187 ust. 2 Konstytucji; art. 1 § 2, 13 § 1, 14 § 1, 17 Prawa o prokuraturze) potwierdzone w tekstach ELI."
+  },
+  {
+   "id": "e-nsa--dept-head--prezes-nsa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; cytowane przepisy (art. 183 ust. 3 / 185 / 194 ust. 2 / 187 ust. 2 Konstytucji; art. 1 § 2, 13 § 1, 14 § 1, 17 Prawa o prokuraturze) potwierdzone w tekstach ELI."
+  },
+  {
+   "id": "e-tk--dept-head--prezes-tk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; cytowane przepisy (art. 183 ust. 3 / 185 / 194 ust. 2 / 187 ust. 2 Konstytucji; art. 1 § 2, 13 § 1, 14 § 1, 17 Prawa o prokuraturze) potwierdzone w tekstach ELI."
+  },
+  {
+   "id": "e-krs--dept-head--przewodniczacy-krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; cytowane przepisy (art. 183 ust. 3 / 185 / 194 ust. 2 / 187 ust. 2 Konstytucji; art. 1 § 2, 13 § 1, 14 § 1, 17 Prawa o prokuraturze) potwierdzone w tekstach ELI."
+  },
+  {
+   "id": "e-prokuratura--dept-head--prokurator-generalny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; cytowane przepisy (art. 183 ust. 3 / 185 / 194 ust. 2 / 187 ust. 2 Konstytucji; art. 1 § 2, 13 § 1, 14 § 1, 17 Prawa o prokuraturze) potwierdzone w tekstach ELI."
+  },
+  {
+   "id": "e-prokuratura-krajowa--dept-head--prokurator-krajowy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; cytowane przepisy (art. 183 ust. 3 / 185 / 194 ust. 2 / 187 ust. 2 Konstytucji; art. 1 § 2, 13 § 1, 14 § 1, 17 Prawa o prokuraturze) potwierdzone w tekstach ELI."
+  },
+  {
+   "id": "e-krs--office--przewodniczacy-krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 2 ('KRS wybiera spośród swoich członków przewodniczącego i dwóch wiceprzewodniczących'); ustawa o KRS art. 16 ust. 1 – zgodne. Krawędzie office i elects są celowo równoległe (semantyka schematu)."
+  },
+  {
+   "id": "e-krs--elects--przewodniczacy-krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 2 ('KRS wybiera spośród swoich członków przewodniczącego i dwóch wiceprzewodniczących'); ustawa o KRS art. 16 ust. 1 – zgodne. Krawędzie office i elects są celowo równoległe (semantyka schematu)."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--pierwszy-prezes-sn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 183 ust. 3 + ustawa o SN art. 12 § 1 (6 lat, spośród 5 kandydatów ZO SN) – dokładnie zgodne z tekstem."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--prezes-nsa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 185 + p.u.s.a. art. 44 § 1 (6 lat, spośród 2 kandydatów ZO NSA) – zgodne; M.P. 2022 poz. 227 cytuje art. 185."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--prezes-tk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 194 ust. 2 + ustawa o organizacji i trybie postępowania przed TK art. 11 ust. 1 (ZO przedstawia kandydatów) – zgodne."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--nsa-wiceprezesi",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.a. art. 45 § 1: wiceprezesa NSA powołuje na 5-letnią kadencję Prezydent RP na wniosek Prezesa NSA za zgodą ZO – zgodne; M.P. 2022 poz. 488–489 wydane na tej podstawie. seatsAppointed=2 odpowiada aktualnej obsadzie (2 wiceprezesów na nsa.gov.pl), choć ustawa nie limituje liczby."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--sad-najwyzszy-sedziowie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 179: 'Sędziowie są powoływani przez Prezydenta RP, na wniosek KRS, na czas nieoznaczony' – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-krs--nominates--sad-najwyzszy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 179 (wniosek KRS) – zgodne; semantyka nominates (wnioskuje) poprawna."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--nsa-sedziowie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 179: 'Sędziowie są powoływani przez Prezydenta RP, na wniosek KRS, na czas nieoznaczony' – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-krs--nominates--nsa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 179 (wniosek KRS) – zgodne; semantyka nominates (wnioskuje) poprawna."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--sady-powszechne-sedziowie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 179: 'Sędziowie są powoływani przez Prezydenta RP, na wniosek KRS, na czas nieoznaczony' – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-krs--nominates--sady-powszechne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 179 (wniosek KRS) – zgodne; semantyka nominates (wnioskuje) poprawna."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--sady-wojskowe-sedziowie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 179: 'Sędziowie są powoływani przez Prezydenta RP, na wniosek KRS, na czas nieoznaczony' – zgodne; kierunek OK."
+  },
+  {
+   "id": "e-krs--nominates--sady-wojskowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 179 (wniosek KRS) – zgodne; semantyka nominates (wnioskuje) poprawna."
+  },
+  {
+   "id": "e-sad-najwyzszy--oversees--sady-powszechne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 183 ust. 1 (nadzór SN nad sądami powszechnymi i wojskowymi w zakresie orzekania) – zgodne."
+  },
+  {
+   "id": "e-sad-najwyzszy--oversees--sady-wojskowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 183 ust. 1 (nadzór SN nad sądami powszechnymi i wojskowymi w zakresie orzekania); p.u.s.w. art. 5 § 1 – zgodne."
+  },
+  {
+   "id": "e-minister-sprawiedliwosci--oversees--sady-powszechne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.p. art. 9 (nadzór administracyjny MS nad działalnością z art. 8 pkt 1) i art. 9a § 2 (zewnętrzny nadzór administracyjny MS) – zgodne z tekstem."
+  },
+  {
+   "id": "e-minister-sprawiedliwosci--oversees--sady-wojskowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.w. art. 5 § 2: 'Zwierzchni nadzór nad sądami wojskowymi w zakresie organizacji i działalności administracyjnej sprawuje Minister Sprawiedliwości' – zgodne."
+  },
+  {
+   "id": "e-minister-obrony-narodowej--oversees--sady-wojskowe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "p.u.s.w. art. 3 § 3 (MON w porozumieniu z MS tworzy i znosi sądy wojskowe) i art. 5 § 3 (nadzór MON w zakresie czynnej służby wojskowej) – zgodne; confidence high zasadne, choć to nadzór częściowy."
+  },
+  {
+   "id": "e-sejm--elects--trybunal-konstytucyjny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 194 ust. 1; ustawa o statusie sędziów TK art. 2 ust. 1–2 – zgodne. disputed:true zasadne (6 wybranych w 2026 bez ślubowania)."
+  },
+  {
+   "id": "e-sejm--elects--trybunal-stanu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 199 ust. 1 (2 zastępców + 16 członków wybieranych przez Sejm) = 18 – zgodne; M.P. 2023 poz. 1296 wydana na tej podstawie."
+  },
+  {
+   "id": "e-pierwszy-prezes-sn--ex-officio--trybunal-stanu",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 199 ust. 2 – dosłownie zgodne."
+  },
+  {
+   "id": "e-sejm--elects--krs-sedziowie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 1 pkt 2 + ustawa o KRS art. 9a ust. 1 (Sejm wybiera 15 członków spośród sędziów) – zgodne z t.j. 2024/1186; M.P. 2026 poz. 513 wydana na tej podstawie. disputed:true zasadne."
+  },
+  {
+   "id": "e-sejm--elects--krs-poslowie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 1 pkt 3 (4 członków spośród posłów) – zgodne; potwierdzone uchwałami M.P. 2023 poz. 1248–1251 i 2024 poz. 596."
+  },
+  {
+   "id": "e-senat--elects--krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 1 pkt 3 (2 członków spośród senatorów) – zgodne; uchwała Senatu M.P. 2023 poz. 1323."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 1 pkt 1 + ustawa o KRS art. 8 – zgodne; M.P. 2026 poz. 503 wydane na tej podstawie."
+  },
+  {
+   "id": "e-pierwszy-prezes-sn--ex-officio--krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 1 pkt 1 (I Prezes SN, Minister Sprawiedliwości, Prezes NSA) – zgodne; osoby potwierdzone na krs.pl."
+  },
+  {
+   "id": "e-prezes-nsa--ex-officio--krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 1 pkt 1 (I Prezes SN, Minister Sprawiedliwości, Prezes NSA) – zgodne; osoby potwierdzone na krs.pl."
+  },
+  {
+   "id": "e-minister-sprawiedliwosci--ex-officio--krs",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 187 ust. 1 pkt 1 (I Prezes SN, Minister Sprawiedliwości, Prezes NSA) – zgodne; osoby potwierdzone na krs.pl."
+  },
+  {
+   "id": "e-min-sprawiedliwosci--ex-officio--prokurator-generalny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo o prokuraturze art. 1 § 2 ('Urząd Prokuratora Generalnego sprawuje Minister Sprawiedliwości') – zgodne. Id celowo wspólne z chunkiem ministerstwa-G2 (deduplikacja)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prokurator-krajowy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo o prokuraturze art. 14 § 1 (t.j. 2026/810): PK powołuje PRM na wniosek PG, po uzyskaniu opinii Prezydenta RP – zgodne; biogram Korneluka potwierdza powołanie przez Premiera 14.03.2024."
+  },
+  {
+   "id": "e-prokurator-generalny--nominates--prokurator-krajowy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 14 § 1 – wniosek PG – zgodne."
+  },
+  {
+   "id": "e-prokurator-generalny--oversees--prokuratura-krajowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 13 § 1–2 (PG kieruje prokuraturą, jest przełożonym prokuratorów) – zgodne."
+  },
+  {
+   "id": "e-prokurator-krajowy--appoints--prokuratury-regionalne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 § 1: 'Prokuratora regionalnego, okręgowego i rejonowego powołuje ... i odwołuje Prokurator Krajowy' – zgodne (sprawdzono w t.j. 2026/810); seatsAppointed 11 = liczba prokuratur regionalnych."
+  },
+  {
+   "id": "e-prokuratura-krajowa--oversees--prokuratury-regionalne",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 17 § 2 (nadzór instancyjny i służbowy nad postępowaniami w prokuraturach regionalnych) – zgodne."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {
+   "e-prezydent-rp--appoints--sn-ioz-sedziowie": {
+    "id": "e-prezydent-rp--appoints--sn-ioz-sedziowie",
+    "type": "appoints",
+    "fromId": "pl-prezydent-rp",
+    "toId": "pl-sn-izba-odpowiedzialnosci-zawodowej",
+    "cite": "Ustawa o SN art. 22a § 1 (Prezydent RP wyznacza do orzekania w Izbie Odpowiedzialności Zawodowej 11 sędziów SN na kadencję, spośród wylosowanych przez Kolegium SN)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2018/5/ogl",
+    "seatsAppointed": 11,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2018/5/ogl",
+      "https://www.sn.pl/pl/o-sadzie-najwyzszym/organizacja/izba-odpowiedzialnosci-zawodowej"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-prezes-rady-ministrow--appoints--prokuratura-krajowa-zastepcy-pg": {
+    "id": "e-prezes-rady-ministrow--appoints--prokuratura-krajowa-zastepcy-pg",
+    "type": "appoints",
+    "fromId": "pl-prezes-rady-ministrow",
+    "toId": "pl-prokuratura-krajowa",
+    "cite": "Prawo o prokuraturze art. 14 § 1 (pozostałych zastępców Prokuratora Generalnego, w liczbie nie większej niż 7, powołuje spośród prokuratorów PK Prezes Rady Ministrów na wniosek PG, po uzyskaniu opinii Prezydenta RP)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2016/177/ogl",
+    "seatsAppointed": 7,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2016/177/ogl",
+      "https://www.gov.pl/web/prokuratura-krajowa/kierownictwo2"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-prezes-nsa--nominates--nsa-wiceprezesi": {
+    "id": "e-prezes-nsa--nominates--nsa-wiceprezesi",
+    "type": "nominates",
+    "fromId": "pl-prezes-nsa",
+    "toId": "pl-nsa",
+    "cite": "Prawo o ustroju sądów administracyjnych art. 45 § 1 (wiceprezesa NSA powołuje Prezydent RP na wniosek Prezesa NSA złożony za zgodą Zgromadzenia Ogólnego)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2002/1269/ogl",
+    "seatsAppointed": 0,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2002/1269/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "e-minister-sprawiedliwosci--appoints--sady-wojskowe": {
+    "id": "e-minister-sprawiedliwosci--appoints--sady-wojskowe",
+    "type": "appoints",
+    "fromId": "pl-minister-sprawiedliwosci",
+    "toId": "pl-sady-wojskowe",
+    "cite": "Prawo o ustroju sądów wojskowych art. 11 § 3 (prezesa sądu wojskowego i jego zastępcę powołuje Minister Sprawiedliwości w porozumieniu z Ministrem Obrony Narodowej)",
+    "citeUrl": "https://eli.gov.pl/eli/DU/1997/753/ogl",
+    "seatsAppointed": 9,
+    "disputed": false,
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/1997/753/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   }
+  }
+ },
+ "missing": [
+  "Zgromadzenia Ogólne Sędziów SN / NSA / TK i Kolegium SN nie są węzłami (tylko w cite) – wybór kandydatów na I Prezesa SN, Prezesa NSA, Prezesa TK oraz losowanie do IOZ pozostają niewidoczne w grafie.",
+  "Wiceprezes Trybunału Konstytucyjnego (Bartłomiej Sochański, powołany 21.02.2025) nie ma osobnego węzła stanowiska ani krawędzi Prezydent→appoints (art. 194 ust. 2).",
+  "Sądy wojskowe: brak węzłów poszczególnych 9 sądów i ich prezesów; dodano tylko krawędź MS→appoints (art. 11 § 3 p.u.s.w.).",
+  "Prokuratura: brak prokuratur okręgowych (klasa) i rejonowych, Krajowej Rady Prokuratorów, Rzecznika Dyscyplinarnego PG; nazwiska prokuratorów regionalnych (11) nie zebrane.",
+  "Daty powołania prezesów 16 WSA (poza nazwiskami) nie ustalone – BIP-y nie podają dat; wymagałoby przeszukania zarządzeń Prezesa NSA.",
+  "Data wyboru Dariusza Zawistowskiego na Przewodniczącego KRS (posiedzenie 11.06.2026) nie została potwierdzona źródłem datowanym (krs.pl nie podaje).",
+  "Daty ślubowania sędziów TK Jakuba Steliny i Wojciecha Sycha nie ustalone (biogramy bez pełnej daty).",
+  "Postanowienia Prezydenta RP o powołaniu I Prezesa SN (Kapiński, 2026), Prezesa TK (Święczkowski, 2024) i Prezesa SN kierującego IOZ (Szczepaniec, 2026) nie zostały odnalezione w M.P. przez ELI – oparto się na komunikatach oficjalnych."
+ ]
+}

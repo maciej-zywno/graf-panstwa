@@ -1,0 +1,1902 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Graf Państwa Polskiego</title>
+<meta name="description" content="Interaktywna mapa organów państwa polskiego: kto kogo powołuje, zatwierdza, kontroluje i nadzoruje.">
+<script>(function(){var t=null;try{t=localStorage.getItem('gp-theme')}catch(e){}document.documentElement.dataset.theme=(t==='dark'||t==='light')?t:'light';})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+/* ---------- tokeny: motyw jasny (domyślny) ---------- */
+:root {
+  color-scheme: light;
+  --bg: #ebeae5;
+  --card: #ffffff;
+  --card-2: #f5f4f0;
+  --ink: #1b1a17;
+  --ink-2: #55524b;
+  --muted: #8a877f;
+  --hair: rgba(27,26,23,.09);
+  --hair-2: rgba(27,26,23,.17);
+  --sec-legislative: #e8573c;
+  --sec-judicial: #b8922e;
+  --sec-executive: #8b84e0;
+  --sec-independent: #3f9c8b;
+  --plate-legislative: #fdf3f1;
+  --plate-judicial: #faf6ef;
+  --plate-executive: #f4f5fb;
+  --plate-independent: #f0f7f4;
+  --gf-legislative: #ffffff; --gf-judicial: #ffffff; --gf-executive: #ffffff; --gf-independent: #ffffff;
+  --band: #e8e8f6; --band2: #deebf6; --band2-ink: #6c8cc9;
+  --ring: #b9b6ae;
+  --ring-label: #98958d;
+  --seal-fill: #ffffff;
+  --seal-stroke: #f26a2e;
+  --seal-text: #f26a2e;
+  --gap-w: 8px;
+  --pill-ink: #1b1a17;
+  --st-good: #2f8f4e; --st-warn: #c08a12; --st-serious: #d2552f;
+  --shadow: 0 10px 34px rgba(60,55,40,.13);
+  --font-ui: "Onest", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --peek: 74px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #15130f; --card: #211f1a; --card-2: #181612;
+    --ink: #efece4; --ink-2: #b9b5aa; --muted: #88847a;
+    --hair: rgba(239,236,228,.08); --hair-2: rgba(239,236,228,.16);
+    --sec-legislative: #e2573a; --sec-judicial: #d4a82a; --sec-executive: #8d86e8; --sec-independent: #4db6a4;
+    --plate-legislative: #3a2620; --plate-judicial: #3a3220; --plate-executive: #2e2c33; --plate-independent: #1f3130;
+    --gf-legislative: #522d24; --gf-judicial: #504321; --gf-executive: #3b394c; --gf-independent: #264440;
+    --band: #3a3844; --band2: #2b3947; --band2-ink: #8fb2e8; --ring: #57534a; --ring-label: #9d998e;
+    --seal-fill: #5a3a26; --seal-stroke: #f0763a; --seal-text: #f58a52;
+    --gap-w: 10px; --pill-ink: #15130f;
+    --st-good: #4fb36c; --st-warn: #e0a92e; --st-serious: #ec835a;
+    --shadow: 0 14px 40px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #15130f; --card: #211f1a; --card-2: #181612;
+  --ink: #efece4; --ink-2: #b9b5aa; --muted: #88847a;
+  --hair: rgba(239,236,228,.08); --hair-2: rgba(239,236,228,.16);
+  --sec-legislative: #e2573a; --sec-judicial: #d4a82a; --sec-executive: #8d86e8; --sec-independent: #4db6a4;
+  --plate-legislative: #3a2620; --plate-judicial: #3a3220; --plate-executive: #2e2c33; --plate-independent: #1f3130;
+  --gf-legislative: #522d24; --gf-judicial: #504321; --gf-executive: #3b394c; --gf-independent: #264440;
+  --band: #3a3844; --band2: #2b3947; --band2-ink: #8fb2e8; --ring: #57534a; --ring-label: #9d998e;
+  --seal-fill: #5a3a26; --seal-stroke: #f0763a; --seal-text: #f58a52;
+  --gap-w: 10px; --pill-ink: #15130f;
+  --st-good: #4fb36c; --st-warn: #e0a92e; --st-serious: #ec835a;
+  --shadow: 0 14px 40px rgba(0,0,0,.5);
+}
+
+/* ---------- baza ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 14.5px/1.5 var(--font-ui); -webkit-font-smoothing: antialiased; overflow: hidden; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+.mono { font-family: var(--font-mono); }
+.app { display: grid; grid-template-columns: minmax(400px, 40%) minmax(0, 1fr); height: 100dvh; }
+
+/* ---------- panel: karty na tle sceny ---------- */
+.panel { overflow-y: auto; overscroll-behavior: contain; padding: 16px 0 20px 16px; display: flex; flex-direction: column; gap: 12px; scrollbar-width: thin; scrollbar-color: var(--hair-2) transparent; }
+.card { background: var(--card); border-radius: 12px; padding: 24px 24px 28px; }
+.card.slim { padding: 13px 24px; }
+.sheet-handle { display: none; width: 40px; height: 4px; border-radius: 2px; background: var(--hair-2); margin: 0 auto 8px; }
+.sheet-toggle { display: none; }
+.brandbar { display: flex; align-items: center; gap: 10px; min-height: 24px; min-width: 0; }
+.brand-mark { width: 22px; height: 22px; flex: none; color: var(--seal-stroke); }
+.brand-title { font-weight: 700; font-size: 16px; letter-spacing: -.01em; white-space: nowrap; border: 0; background: none; padding: 0; cursor: pointer; }
+.crumb { color: var(--muted); font-weight: 500; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.crumb b { color: var(--ink); font-weight: 500; }
+#views, #view-home, #view-node { display: flex; flex-direction: column; gap: 12px; }
+#view-home[hidden], #view-node[hidden] { display: none; }
+.anim .card { animation: rise .5s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i, 0) * 60ms); }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+h1 { font: 600 30px/1.1 var(--font-ui); letter-spacing: -.012em; margin: 0 0 20px; text-wrap: balance; }
+h2.node-name { font: 600 30px/1.1 var(--font-ui); letter-spacing: -.012em; margin: 0 0 20px; text-wrap: balance; overflow-wrap: anywhere; }
+h2.node-name.long { font-size: 22px; line-height: 1.18; }
+h2.node-name.xlong { font-size: 17px; line-height: 1.25; font-weight: 600; }
+h3 { font: 600 17px/1.2 var(--font-ui); letter-spacing: -.01em; margin: 0 0 12px; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+h3 .n { font: 500 13px var(--font-ui); color: var(--muted); }
+h4 { font: 600 13.5px/1.2 var(--font-ui); color: var(--ink); margin: 18px 0 8px; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+h4:first-child { margin-top: 0; }
+h4 .n { font: 500 12.5px var(--font-ui); color: var(--muted); }
+.lede { color: var(--ink-2); margin: 0 0 12px; font-size: 16px; line-height: 1.4; letter-spacing: -.01em; }
+.meta-line { font-size: 11px; color: var(--muted); margin: 0; }
+.credit { font-size: 12px; line-height: 1.45; color: var(--muted); margin: 12px 0 0; }
+.credit a { color: var(--ink-2); text-underline-offset: 3px; }
+p.desc { margin: 0 0 12px; color: var(--ink-2); font-size: 16px; line-height: 1.4; letter-spacing: -.01em; text-wrap: pretty; }
+.node-sub { font-size: 11.5px; color: var(--muted); margin: 0; word-break: break-word; }
+.node-meta { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+
+.search { position: relative; }
+.search input { width: 100%; padding: 8px 10px 8px 32px; border: 0; border-radius: 9px; background: transparent; color: var(--ink); font: 14.5px var(--font-ui); outline: none; }
+.search input::placeholder { color: var(--muted); }
+.search input:focus { background: var(--card-2); }
+.search .glass { position: absolute; left: 24px; top: 21px; width: 16px; height: 16px; color: var(--ink-2); pointer-events: none; }
+.results { display: flex; flex-direction: column; gap: 2px; }
+.results:not(:empty) { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--hair); }
+.result, .row { display: flex; gap: 10px; align-items: center; width: 100%; text-align: left; padding: 8px 10px; border: 0; background: none; border-radius: 9px; color: var(--ink); cursor: pointer; transition: background .12s, border-color .12s; }
+.result:hover, .result.active { background: var(--card-2); }
+.result.active { outline: 2px solid var(--ink-2); outline-offset: -2px; }
+.result:focus-visible, .row:focus-visible { background: var(--card-2); outline: 2px solid var(--ink-2); outline-offset: -2px; }
+.row { border: 1px solid var(--hair-2); border-radius: 10px; padding: 10px 12px; margin-bottom: 6px; align-items: flex-start; }
+.row:hover, .row:focus-visible { border-color: var(--c, var(--ink-2)); outline: none; }
+.rows2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.rows2 .row { margin: 0; }
+.sw { width: 16px; height: 16px; flex: none; display: grid; place-items: center; margin-top: 2px; }
+.sw svg { width: 16px; height: 16px; display: block; overflow: visible; }
+.r-name { flex: 1; min-width: 0; font-size: 14px; line-height: 1.3; font-weight: 500; }
+.r-name small { display: block; font-size: 11.5px; color: var(--muted); font-weight: 400; margin-top: 1px; }
+.r-cite { display: block; margin: 3px 0 0; font: 10.5px/1.4 var(--font-mono); color: var(--muted); font-weight: 400; }
+.r-cite a { color: var(--muted); text-decoration: underline dotted; }
+.empty { color: var(--muted); font-size: 13px; padding: 4px 0; }
+
+/* kafle „Ostatnie zmiany" */
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.tiles.two { grid-template-columns: repeat(2, 1fr); }
+.tile { background: var(--card-2); border: 1px solid transparent; border-radius: 10px; padding: 10px 12px 11px; text-align: left; min-width: 0; }
+button.tile { cursor: pointer; transition: border-color .15s; }
+button.tile:hover { border-color: var(--hair-2); }
+button.tile[aria-pressed="true"] { border-color: var(--ink-2); }
+.tile .k { display: block; font: 500 9.5px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.tile b { display: block; font: 600 20px/1.25 var(--font-ui); letter-spacing: -.01em; margin: 3px 0 1px; white-space: nowrap; }
+.tile .s { display: block; font: 400 10px/1.3 var(--font-mono); color: var(--muted); white-space: normal; }
+.chg-head { display: flex; justify-content: space-between; font: 500 10px var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 16px 0 8px; }
+.chg-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.chg-list li button { display: block; width: 100%; text-align: left; border: 1px solid var(--hair-2); background: none; border-radius: 10px; padding: 9px 12px; cursor: pointer; transition: border-color .12s; }
+.chg-list li button:hover { border-color: var(--ink-2); }
+.chg-list .top { display: flex; justify-content: space-between; gap: 8px; align-items: center; margin-bottom: 3px; }
+.tag { font: 500 9.5px/1.5 var(--font-mono); letter-spacing: .09em; text-transform: uppercase; padding: 0 6px; border-radius: 4px; color: var(--st-serious); background: color-mix(in srgb, var(--st-serious) 13%, transparent); }
+.tag.appointment { color: var(--st-good); background: color-mix(in srgb, var(--st-good) 13%, transparent); }
+.tag.acting { color: var(--st-warn); background: color-mix(in srgb, var(--st-warn) 15%, transparent); }
+.chg-list .date { font: 10.5px var(--font-mono); color: var(--muted); }
+.chg-list .what { font-weight: 600; font-size: 13.5px; line-height: 1.3; }
+.chg-list .who { font-size: 12.5px; color: var(--ink-2); }
+.typelist { list-style: none; margin: 12px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 3px 16px; font-size: 13px; }
+.typelist li { display: flex; justify-content: space-between; gap: 8px; border-bottom: 1px solid var(--hair); padding: 4px 0; color: var(--ink-2); }
+.typelist li b { font-family: var(--font-mono); font-weight: 500; color: var(--ink); }
+.how p { font-size: 13.5px; color: var(--ink-2); margin: 0 0 8px; }
+.how p:last-child { margin: 0; }
+.how kbd { font: 11px var(--font-mono); border: 1px solid var(--hair-2); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; color: var(--ink); }
+
+/* karta węzła */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px; border: 1px solid var(--hair-2); border-radius: 999px; font-size: 11.5px; color: var(--ink-2); white-space: nowrap; }
+.chip .dot { width: 8px; height: 8px; border-radius: 3px; background: var(--c, var(--muted)); }
+.chip.warn { border-color: var(--st-serious); color: var(--st-serious); }
+.linkrow { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 2px 0 0; font-size: 14px; }
+.linkrow a { color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--hair-2); }
+.linkrow a:hover { color: var(--ink); text-decoration-color: currentColor; }
+.linkrow span.nolink { color: var(--muted); }
+.legal-title { font-size: 12px; color: var(--muted); margin: 8px 0 0; line-height: 1.45; }
+.sect-label { font-size: 16px; line-height: 1.4; letter-spacing: -.01em; color: var(--ink-2); margin: 24px 0 12px; }
+.sect-label.minor { font-size: 14px; margin: 18px 0 8px; }
+.head-card { position: relative; display: flex; gap: 10px; align-items: center; min-height: 56px; min-width: 0; border: 1px solid var(--hair-2); border-radius: 12px; padding: 4px 26px 4px 5px; }
+.head-card .src { position: absolute; top: 5px; right: 8px; font-size: 12px; line-height: 1; color: var(--muted); text-decoration: none; padding: 2px; border-radius: 4px; }
+.head-card .src:hover, .head-card .src:focus-visible { color: var(--ink); outline: none; background: var(--card-2); }
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(212px, 1fr)); gap: 8px; }
+.pgrid.clip > .head-card:nth-child(n+5) { display: none; }
+.head-card.lead .avatar { box-shadow: 0 0 0 2px var(--ink); }
+.seeall { display: inline-block; margin: 14px 0 0; padding: 0; border: 0; background: none; font: 500 12px/1.3 var(--font-ui); color: var(--muted); cursor: pointer; }
+.seeall:hover, .seeall:focus-visible { color: var(--ink); text-decoration: underline; outline: none; }
+.avatar { width: 46px; height: 46px; flex: none; border-radius: 9px; overflow: hidden; display: grid; place-items: center; background: color-mix(in srgb, var(--c, var(--muted)) 16%, var(--card)); color: var(--c, var(--ink)); font: 600 15px var(--font-ui); box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--c, var(--muted)) 55%, transparent); margin: 2px; }
+.avatar { position: relative; }
+.avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.head-card .who { flex: 1; min-width: 0; padding: 3px 0; }
+.head-card .name { font-weight: 500; font-size: 14px; line-height: 1.3; }
+.head-card .name.ph { font-style: italic; color: var(--muted); }
+.head-card .pos { font-size: 12px; color: var(--ink-2); line-height: 1.3; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.head-card .when { font-size: 12px; letter-spacing: .01em; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 6px; align-items: center; }
+.head-card .when a { color: var(--muted); }
+.badge { font: 500 10px/1.5 var(--font-mono); letter-spacing: .06em; padding: 0 6px; border-radius: 4px; color: var(--st-warn); background: color-mix(in srgb, var(--st-warn) 15%, transparent); }
+.badge.soft { color: var(--ink-2); background: var(--card-2); }
+.vacant .avatar { background: transparent; box-shadow: none; border: 1.5px dashed var(--hair-2); color: var(--muted); }
+.morelink { background: none; border: 0; padding: 0; color: var(--ink-2); cursor: pointer; font-size: 12px; line-height: 1.3; text-align: left; }
+.morelink:hover { text-decoration: underline; }
+.tabs { display: grid; grid-template-columns: 1fr 1fr; margin: -24px -24px 22px; border-radius: 12px 12px 0 0; overflow: hidden; }
+.tabs button { border: 0; padding: 12px 10px; background: var(--hair-2); color: var(--muted); font-weight: 600; font-size: 14px; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--card); color: var(--ink); cursor: default; }
+.tabpane[hidden] { display: none; }
+.prov { font-size: 12.5px; color: var(--ink-2); }
+.prov .srcs { display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0 12px; }
+.prov .srcs a { font: 11px var(--font-mono); color: var(--ink-2); text-decoration: none; padding: 2px 7px; border: 1px solid var(--hair-2); border-radius: 6px; }
+.prov .srcs a:hover { border-color: var(--ink-2); }
+.conf { display: inline-flex; align-items: center; gap: 6px; }
+.conf i { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.conf.high i { background: var(--st-good); } .conf.medium i { background: var(--st-warn); } .conf.low i { background: var(--st-serious); }
+.prov .idrow { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-family: var(--font-mono); font-size: 10.5px; word-break: break-all; color: var(--muted); }
+.prov .idrow button { font: 11.5px var(--font-ui); border: 1px solid var(--hair-2); background: none; color: var(--ink-2); border-radius: 6px; padding: 3px 9px; cursor: pointer; white-space: nowrap; }
+.prov .idrow button:hover { border-color: var(--ink-2); color: var(--ink); }
+
+/* ---------- scena ---------- */
+.stage { position: relative; overflow: hidden; min-width: 0; background: var(--bg); }
+#graph { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+#graph:active { cursor: grabbing; }
+#graph:focus { outline: none; }
+.anim .scene { animation: scene-in .9s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes scene-in { from { opacity: 0; transform: scale(.9); } to { opacity: 1; transform: scale(1); } }
+.plate { stroke: none; }
+.sep { stroke: var(--bg); stroke-width: var(--gap-w); stroke-linecap: butt; fill: none; }
+.disc { fill: var(--bg); }
+.band { fill: none; stroke: var(--band); stroke-linecap: round; }
+.ring-guide { fill: none; stroke: var(--ring); stroke-width: 1; stroke-dasharray: 6 5; vector-effect: non-scaling-stroke; }
+/* proporcje napisów z pomiaru oryginału: sektory 1,506% średnicy koła, napisy wewnętrzne 1,369%, pieczęć 1,643% (koło ≈ 1277 j. sceny) */
+.ring-label { font: 600 17.5px var(--font-ui); letter-spacing: .163em; fill: var(--ring-label); }
+.band-label { font: 700 17.5px var(--font-ui); letter-spacing: .327em; fill: var(--sec-executive); }
+.sector-label { font: 600 19.2px var(--font-ui); letter-spacing: .3em; fill: var(--c); }
+.parl-label { font: 600 17.5px var(--font-ui); letter-spacing: .218em; fill: var(--sec-legislative); }
+.seal { fill: var(--seal-fill); stroke: var(--seal-stroke); stroke-width: 2; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.seal-text { font: 600 21px/1 var(--font-ui); fill: var(--seal-text); text-anchor: middle; letter-spacing: -.01em; pointer-events: none; }
+
+.node { cursor: pointer; outline: none; }
+.anim .node { transition: opacity .25s; }
+.anim .node .glyph { transition: fill .15s; }
+.s-legislative { --c: var(--sec-legislative); --gf: var(--gf-legislative); }
+.s-executive { --c: var(--sec-executive); --gf: var(--gf-executive); }
+.s-judicial { --c: var(--sec-judicial); --gf: var(--gf-judicial); }
+.s-independent { --c: var(--sec-independent); --gf: var(--gf-independent); }
+.s-none { --c: var(--seal-stroke); --gf: var(--seal-fill); }
+.node .hit { fill: transparent; stroke: none; }
+.node .glyph, .k-parl .glyph { fill: var(--gf); stroke: var(--c); stroke-width: 2; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.node .glyph.inner, .k-parl .glyph.inner { fill: none; stroke-width: 1.5; }
+.node .glyph.thin, .k-parl .glyph.thin { stroke-width: 1.4; }
+.node.k-head .glyph { stroke-width: 2; }
+.node.vacant .glyph { stroke-dasharray: 2.6 2.4; }
+.node .half { fill: var(--c); stroke: none; pointer-events: none; }
+.node.k-sat .glyph { fill: var(--c); stroke: none; }
+.node.k-sat.st-vacant .glyph, .node.k-sat.st-acting .glyph { fill: var(--gf); stroke: var(--c); stroke-width: 1.1; }
+.node.k-sat.st-vacant .glyph { stroke-dasharray: 1.6 1.3; }
+.node.k-row .glyph { fill: var(--gf); stroke-width: 1.3; }
+.node.hov .glyph, .node:focus-visible .glyph { fill: var(--c); }
+.node.hov .glyph.inner, .node:focus-visible .glyph.inner { stroke: var(--gf); }
+.node.hov .half { fill: var(--gf); }
+.node.hov-mate .glyph { fill: color-mix(in srgb, var(--c) 45%, var(--gf)); }
+.node.k-sat.hov .glyph, .node.k-sat:focus-visible .glyph { fill: var(--c); stroke: var(--c); stroke-width: 3; }
+.nodes.has-sel .node:not(.sel):not(.nb) { opacity: .27; }
+.nodes.has-sel .k-parl:not(.sel):not(.nb) { opacity: .27; }
+.k-parl.sel > .glyph:not(.inner) { fill: color-mix(in srgb, var(--c) 30%, var(--gf)); }
+.node.nb .glyph { fill: color-mix(in srgb, var(--c) 30%, var(--gf)); }
+.node.nb.k-sat:not(.st-vacant):not(.st-acting) .glyph { fill: var(--c); }
+/* jak w oryginale: wybrany glif organu rośnie płynnie o 30% (tam 14 → 18,2 j. w ok. 0,75 s, easeInOutCubic) */
+.node.k-primary .glyph { transition: transform .75s cubic-bezier(.65,0,.35,1); }
+.node.k-primary.sel:not(.k-head) .glyph { transform: scale(1.3); }
+.node.sel .glyph { fill: var(--c); }
+.node.sel .glyph.inner { stroke: var(--gf); }
+.node.sel .half { fill: var(--gf); }
+.node.k-sat.sel .glyph { stroke: var(--c); stroke-width: 4; stroke-opacity: .35; }
+.node.k-root.sel .seal, .node.k-root.hov .seal { fill: color-mix(in srgb, var(--seal-stroke) 22%, var(--seal-fill)); }
+.node.k-root.nb .seal { fill: color-mix(in srgb, var(--seal-stroke) 26%, var(--seal-fill)); } /* B4: pieczęć jako początek łańcucha władzy */
+.node.lg-hidden, .k-parl.lg-hidden { display: none; } /* B3: typ ukryty w legendzie */
+/* B2: wachlarz podjednostek */
+.nodes.has-sel .node.in-fan:not(.sel):not(.nb) { opacity: 1; }
+.node.sh-political_group .glyph { stroke-dasharray: 2.6 2.2; }
+.node.k-mini .glyph { stroke-width: 1.6; }
+.node.k-mini .glyph.back { fill: var(--gf); opacity: .75; }
+.node.k-mini.sel .glyph.back { fill: var(--gf); }
+.node.k-mini.big .glyph { stroke-width: 1.05; }
+.node.k-mini.big .glyph.inner { stroke-width: .75; }
+.node.k-mini .glyph.inner { stroke-width: 1.1; }
+.node.k-minihead .glyph { stroke-width: 1.4; }
+.nodes .node.fan-dim { opacity: .08; }
+.node.leaving { pointer-events: none; }
+.fan-lines.dense .fanline { stroke-opacity: .55; }
+.fan-lines .fanline.lg-hidden { display: none; }
+.fan-lines .fanline { fill: none; stroke: var(--ring); stroke-width: 1; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
+.anim .arc-labels .ring-label { transition: opacity .2s; }
+.arc-labels.fan-inner .ring-label { opacity: 0; }
+.halo { fill: none; stroke: var(--c); stroke-width: 1.4; vector-effect: non-scaling-stroke; transform-box: fill-box; transform-origin: center; animation: halo 1.9s ease-out infinite; pointer-events: none; }
+@keyframes halo { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(2.2); opacity: 0; } }
+
+.edge { fill: none; stroke: var(--c); vector-effect: non-scaling-stroke; stroke-linecap: round; }
+.edge.struct { stroke: var(--ring); stroke-width: 1; stroke-dasharray: 3 3; }
+.mk path, .mk circle { stroke: var(--c); fill: var(--c); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.mk .open { fill: var(--mk-hollow, var(--card)); }
+.mk .line { fill: none; }
+.pill-label { pointer-events: none; }
+.pill-label rect { fill: color-mix(in srgb, var(--c) 60%, #15123c); }
+.pill-label text { font: 600 15px var(--font-ui); fill: #fff; }
+
+.band.vband { stroke: var(--band2); }
+.vband-label { font: 700 17.5px var(--font-ui); letter-spacing: .327em; fill: var(--band2-ink); }
+.anim .rel { transition: opacity .15s; }
+.ehit { fill: none; stroke: transparent; stroke-width: 10px; vector-effect: non-scaling-stroke; pointer-events: stroke; cursor: pointer; }
+.edges.hub .rel { opacity: .66; }
+.edges.hub .rel.hubline .edge { stroke-width: 1.15px; }
+.edges.hub .rel.chain { opacity: .9; }
+.edges.has-hot .rel { opacity: .4; }
+.edges.hub.has-hot .rel { opacity: .13; }
+.edges.has-hot .rel.hot { opacity: 1; }
+.rel.hot .edge { stroke-width: 3.2px; }
+.node.end-hot .glyph { stroke-width: 3.6; }
+.node.end-hot.k-sat .glyph { stroke: var(--c); stroke-width: 4; }
+.rel-bar { position: absolute; left: 176px; right: 176px; bottom: 42px; z-index: 3; display: flex; flex-wrap: nowrap; overflow: hidden; justify-content: center; gap: 4px; pointer-events: none; }
+.rel-bar .fchip { pointer-events: auto; }
+.rel-bar[hidden] { display: none; }
+.fchips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+.fchip { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px 0 6px; border: 1px solid var(--hair-2); border-radius: 999px; background: var(--card); color: var(--ink-2); font-size: 12.5px; font-weight: 500; cursor: pointer; white-space: nowrap; transition: border-color .12s, background .12s; }
+.fchip svg { width: 26px; height: 16px; flex: none; overflow: visible; color: var(--c, var(--ink-2)); }
+.fchip .lg { fill: var(--card); stroke: currentColor; stroke-width: 1.4; stroke-linejoin: round; } .fchip .lgf { fill: currentColor; stroke: none; } .fchip .ll { fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+.fchip b { font: 500 11px var(--font-mono); color: var(--muted); }
+.fchip:hover { border-color: var(--c, var(--ink-2)); color: var(--ink); }
+.fchip[aria-pressed="true"] { border-color: var(--c, var(--ink)); background: color-mix(in srgb, var(--c, var(--ink)) 16%, var(--card)); color: var(--ink); }
+.rel-bar .fchip { height: 23px; font-size: 11.5px; padding: 0 8px 0 4px; gap: 4px; border-color: transparent; }
+.rel-bar .fchip svg { width: 22px; height: 14px; }
+.rel-bar .fchip[aria-pressed="true"] { border-color: var(--c, var(--ink)); }
+.fchip.all { padding-left: 10px; }
+.fhint { font-size: 11.5px; color: var(--muted); margin: 0 0 14px; }
+#conn-groups.filtered .grp:not(.on) { display: none; }
+.grp + .grp { margin-top: 18px; }
+.row.hot { border-color: var(--c, var(--ink-2)); background: color-mix(in srgb, var(--c, var(--ink-2)) 9%, transparent); }
+.row.flash { animation: flash 1.6s ease-out; }
+@keyframes flash { 0%, 35% { background: color-mix(in srgb, var(--c, var(--ink-2)) 38%, transparent); border-color: var(--c, var(--ink-2)); } 100% { background: transparent; } }
+.legend-body ul.rels { gap: 7px; }
+.legend-body ul.rels li { align-items: flex-start; white-space: normal; max-width: 300px; }
+.legend-body ul.rels svg { margin-top: 1px; }
+.legend-body ul.rels b { font-weight: 500; display: block; line-height: 1.25; }
+.legend-body ul.rels small { display: block; font-size: 11.5px; line-height: 1.3; color: var(--muted); }
+.legend-body .lhint { display: none; font-size: 11.5px; color: var(--muted); margin: 8px 0 0; }
+.legend-body.explain .lhint { display: block; }
+
+/* HUD */
+.theme-btn { position: absolute; top: 14px; right: calc(14px + var(--embed-right, 0px)); z-index: 5; width: 40px; height: 40px; display: grid; place-items: center; border: 0; border-radius: 12px; background: var(--card); color: var(--ink); cursor: pointer; transition: transform .15s; }
+.theme-btn:hover { transform: scale(1.05); }
+.theme-btn svg { width: 18px; height: 18px; display: block; }
+.theme-btn .sun { display: none; }
+:root[data-theme="dark"] .theme-btn .sun { display: block; } :root[data-theme="dark"] .theme-btn .moon { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme-btn .sun { display: block; } :root:not([data-theme="light"]) .theme-btn .moon { display: none; } }
+.zoomer { position: absolute; right: 14px; bottom: 14px; z-index: 3; display: flex; background: var(--card); border-radius: 10px; overflow: hidden; }
+.zoomer button { border: 0; background: none; height: 36px; min-width: 38px; padding: 0 10px; display: inline-flex; gap: 6px; align-items: center; justify-content: center; cursor: pointer; color: var(--ink-2); font-size: 13.5px; font-weight: 500; }
+.zoomer button + button { border-left: 1px solid var(--hair); }
+.zoomer button:hover { color: var(--ink); background: var(--card-2); }
+.zoomer svg { width: 15px; height: 15px; display: block; }
+.sel-pill { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); z-index: 3; max-width: min(calc(100% - 372px), 760px); padding: 3px 10px; border-radius: 6px; font-weight: 700; font-size: 14.5px; line-height: 1.25; text-align: center; white-space: normal; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: color-mix(in srgb, var(--c) 62%, var(--ink)); background: var(--card); pointer-events: none; }
+.sel-pill[hidden] { display: none; }
+.sel-pill.long { font-size: 12.5px; -webkit-line-clamp: 3; }
+.sel-pill.xlong { font-size: 11px; line-height: 1.2; font-weight: 600; -webkit-line-clamp: 6; } /* nazwy komisji śledczych mają po 200–400 znaków */
+.status { position: absolute; inset: 0; z-index: 6; display: grid; place-items: center; background: var(--bg); }
+.status[hidden] { display: none; }
+.status .box { max-width: 420px; padding: 20px 24px; text-align: center; color: var(--ink-2); }
+.status .box b { display: block; font: 600 19px var(--font-ui); color: var(--ink); margin-bottom: 6px; }
+.status .box code { font: 11.5px var(--font-mono); color: var(--muted); display: block; margin-top: 8px; word-break: break-all; }
+.status .spin { width: 28px; height: 28px; margin: 0 auto 14px; border-radius: 50%; border: 2px solid var(--hair-2); border-top-color: var(--seal-stroke); animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.status.error .spin { display: none; }
+.tooltip { position: fixed; z-index: 30; pointer-events: none; padding: 2px 8px; border-radius: 6px; background: #fff; box-shadow: 0 1px 7px rgba(20,18,40,.18); font: 700 13px/1.45 var(--font-ui); color: color-mix(in srgb, var(--c) 90%, #15123c); white-space: nowrap; opacity: 0; transition: opacity .1s; }
+.tooltip.on { opacity: 1; }
+
+/* legenda */
+.legend { position: absolute; left: 14px; bottom: 14px; z-index: 4; max-width: calc(100% - 28px); }
+.legend-toggle { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px; border: 0; border-radius: 10px; background: var(--card); color: var(--ink); cursor: pointer; font-size: 14.5px; font-weight: 500; }
+.legend-toggle svg { width: 13px; height: 13px; transition: transform .2s; }
+.legend.open .legend-toggle svg { transform: rotate(180deg); }
+.legend-body { display: none; margin-bottom: 8px; padding: 14px 16px; border-radius: 14px; background: var(--card); box-shadow: var(--shadow); max-height: min(calc(100vh - 150px), 58vh, 640px); overflow-y: scroll; overscroll-behavior: contain; font-size: 13.5px; scrollbar-width: thin; scrollbar-color: var(--muted) transparent; }
+.legend-body::-webkit-scrollbar { width: 8px; } .legend-body::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 4px; border: 2px solid var(--card); }
+.legend.open ~ .rel-bar { visibility: hidden; }
+.legend.open .legend-body { display: flex; flex-direction: column; gap: 14px; width: 252px; max-width: calc(100vw - 48px); }
+.legend-body ul.rels small { display: none; }
+.legend-body.explain ul.rels small { display: block; }
+.legend-body.explain { width: 300px !important; }
+.legend-body .lmore { align-self: flex-start; margin-top: 8px; padding: 0; border: 0; background: none; color: var(--ink-2); font: 500 12px var(--font-ui); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.lgi { display: flex; align-items: center; gap: 10px; width: calc(100% + 8px); margin: -2px -4px; padding: 2px 4px; border: 0; border-radius: 7px; background: none; color: inherit; font: inherit; line-height: 1.25; text-align: left; cursor: pointer; }
+.lgi:hover { background: var(--card-2); }
+.lgi:focus-visible { outline: 2px solid var(--ink-2); outline-offset: 1px; }
+.lgi[aria-pressed="false"] { opacity: .36; }
+.lgi[aria-pressed="false"] > span { text-decoration: line-through; }
+.legend-body ul.rels .lgi { align-items: flex-start; }
+.legend-body .lshow { align-self: flex-start; padding: 5px 10px; border: 1px solid var(--hair-2); border-radius: 8px; background: none; color: var(--ink); font: 500 10.5px var(--font-mono); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+.legend-body .lshow:hover { border-color: var(--ink-2); }
+.legend-body .lshow[hidden] { display: none; }
+.legend-toggle .lcount { color: var(--muted); font-weight: 400; }
+.legend-toggle .lcount:empty { display: none; }
+.legend-body .lmore:focus-visible { outline: 2px solid var(--focus, currentColor); outline-offset: 2px; }
+.legend-body h5 { margin: 0 0 8px; font: 500 10px var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.legend-body ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+.legend-body li { display: flex; align-items: center; gap: 10px; color: var(--ink); white-space: normal; line-height: 1.25; }
+.legend-body svg { width: 30px; height: 18px; flex: none; overflow: visible; color: var(--ink-2); }
+.legend-body .lg { fill: var(--card); stroke: currentColor; stroke-width: 1.4; stroke-linejoin: round; }
+.legend-body .lgf { fill: currentColor; stroke: none; }
+.legend-body .ll { fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- telefon ---------- */
+@media (min-width: 761px) {
+  .card.slim.search { position: fixed; z-index: 6; top: 14px; left: calc(max(400px, 40vw) + 14px); width: 40px; height: 40px; padding: 0; border-radius: 12px; transition: width .22s cubic-bezier(.2,.7,.2,1), box-shadow .2s; }
+  .card.slim.search .glass { left: 11px; top: 11px; width: 18px; height: 18px; color: var(--ink); }
+  .card.slim.search input { position: absolute; inset: 0; width: 100%; height: 40px; padding: 0 12px 0 40px; border-radius: 12px; cursor: pointer; opacity: 0; }
+  .card.slim.search:focus-within, .card.slim.search.has-q { width: min(360px, calc(60vw - 96px)); box-shadow: var(--shadow); }
+  .card.slim.search:focus-within input, .card.slim.search.has-q input { opacity: 1; cursor: text; }
+  .card.slim.search input:focus { background: transparent; }
+  .card.slim.search:hover:not(:focus-within) { transform: scale(1.05); }
+  .card.slim.search .results { position: absolute; top: 46px; left: 0; width: 100%; max-height: min(62vh, 440px); overflow-y: auto; margin: 0; padding: 6px; border: 0; border-radius: 12px; background: var(--card); box-shadow: var(--shadow); }
+  .card.slim.search .results:empty { display: none; }
+}
+@media (max-width: 760px) {
+  .app { display: block; }
+  .stage { height: 100dvh; }
+  .panel { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; max-height: 66dvh; padding: 8px 10px 16px; background: var(--bg); border-radius: 18px 18px 0 0; transform: translateY(calc(100% - var(--peek))); transition: transform .38s cubic-bezier(.2,.8,.2,1); box-shadow: var(--shadow); padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+  .panel.open { transform: none; }
+  .panel.dragging { transition: none; }
+  .panel { padding-top: 0; }
+  /* nagłówek arkusza jest przyklejony: uchwyt i przycisk zwijania są pod palcem także po przewinięciu treści */
+  #panel-top { position: sticky; top: 0; z-index: 4; cursor: pointer; margin: 0 -10px; padding: 0 16px 10px; border-radius: 18px 18px 0 0; box-shadow: 0 1px 0 var(--hair); touch-action: none; -webkit-user-select: none; user-select: none; animation: none; }
+  .sheet-handle { display: block; box-sizing: content-box; padding: 10px 40px 10px; margin: 0 auto; background-clip: content-box; }
+  .brandbar { min-height: 34px; }
+  .brandbar .crumb { flex: 1; }
+  .sheet-toggle { display: grid; place-items: center; flex: none; width: 36px; height: 36px; margin: -1px -6px -1px 0; border: 0; border-radius: 10px; background: var(--card-2); color: var(--ink); cursor: pointer; }
+  .sheet-toggle svg { width: 16px; height: 16px; transition: transform .25s; transform: rotate(180deg); }
+  .panel.open .sheet-toggle svg { transform: none; }
+  .app { grid-template-columns: minmax(0, 1fr); }
+  .card { padding: 18px 16px 20px; }
+  .card.slim { padding: 11px 16px; }
+  .tabs { margin: -18px -16px 16px; }
+  h1, h2.node-name { font-size: 24px; margin-bottom: 14px; }
+  h2.node-name.long { font-size: 19px; } h2.node-name.xlong { font-size: 15.5px; }
+  p.desc, .lede, .sect-label { font-size: 15px; }
+  .legend { left: 10px; bottom: calc(var(--peek) + 10px); }
+  .legend-body { max-height: 46vh; }
+  .legend.open .legend-body { grid-template-columns: 1fr; gap: 14px; }
+  .zoomer { right: 10px; bottom: calc(var(--peek) + 10px); }
+  .zoomer .txt { display: none; }
+  .sel-pill { bottom: calc(var(--peek) + 56px); max-width: 80%; }
+  .rel-bar { bottom: calc(var(--peek) + 90px); left: 8px; right: 8px; flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; pointer-events: auto; }
+  .theme-btn { top: 10px; right: calc(10px + var(--embed-right, 0px)); }
+  .rows2 { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="panel" id="panel" aria-label="Panel informacyjny">
+    <div class="card slim" id="panel-top" style="--i:0">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="brandbar">
+        <svg class="brand-mark" viewBox="-12 -12 24 24" aria-hidden="true"><path id="brand-seal" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle r="2.6" fill="currentColor"/></svg>
+        <button class="brand-title" id="brand-title" type="button" title="Wróć do przeglądu">Graf Państwa Polskiego</button>
+        <span class="crumb" id="crumb">/ PL</span>
+        <button class="sheet-toggle" id="sheet-toggle" type="button" aria-expanded="false" aria-controls="views" aria-label="Rozwiń panel"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></button>
+      </div>
+    </div>
+    <div class="card slim search" style="--i:1" title="Szukaj ( / )">
+      <svg class="glass" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" aria-label="Szukaj organu, urzędu lub stanowiska" placeholder="Szukaj: NIK, Sejm, minister finansów…">
+      <div class="results" id="results" role="listbox"></div>
+    </div>
+    <div id="views">
+      <div id="view-home">
+        <section class="card" style="--i:2">
+          <h1 id="title">Graf Państwa Polskiego</h1>
+          <p class="lede" id="lede">Kto kogo powołuje, zatwierdza, kontroluje i nadzoruje. Mapa organów państwa: od Narodu jako suwerena po urzędy centralne i ich jednostki.</p>
+          <p class="meta-line mono" id="meta-line"></p>
+          <p class="credit">Układ i język wizualny są wzorowane na <a href="https://graph.civlab.org/us" target="_blank" rel="noopener">US Gov Graph</a> zespołu <a href="https://www.civlab.org/" target="_blank" rel="noopener">CivLab</a>. Dane i kod są własne, z polskich źródeł urzędowych.</p>
+        </section>
+        <section class="card" style="--i:3">
+          <h3>Ostatnie zmiany</h3>
+          <p class="lede" style="font-size:14px;margin-bottom:14px">Obsada stanowisk kierowniczych według danych grafu: wakaty, osoby pełniące obowiązki i najnowsze objęcia urzędów.</p>
+          <div class="tiles" id="chg-tiles"></div>
+          <div class="chg-head"><span id="chg-title"></span><span id="chg-count"></span></div>
+          <ol class="chg-list" id="chg-list"></ol>
+        </section>
+        <section class="card" style="--i:4">
+          <h3>W liczbach</h3>
+          <div class="tiles two" id="tiles"></div>
+          <ul class="typelist" id="typelist"></ul>
+        </section>
+        <section class="card how" style="--i:5">
+          <h3>Jak czytać graf</h3>
+          <p><b>Płyty</b> to władze: ustawodawcza, wykonawcza, sądownicza oraz organy niezależne i kontrolne. W środku Naród jako suweren. <b>Pierścienie</b> porządkują organy: najwyższa władza, kontrola i nadzór, administracja, a na zewnętrznym pierścieniu pasmo Rady Ministrów, z którego wyrastają jednostki podległe. Urzędy wojewódzkie stoją na osobnym łuku „Wojewodowie” za pasmem.</p>
+          <p><b>Kształt</b> mówi, czym jest organ (patrz legenda). Kółko doklejone od strony środka to stanowisko szefa: przerywane oznacza wakat, w połowie wypełnione pełniącego obowiązki. Kropki to jednostki podległe, rzędy kwadracików to klasy zbiorcze (np. sądy rejonowe).</p>
+          <p>Kliknij glif, aby zobaczyć relacje. Najedź na linię, aby przeczytać, co oznacza; kliknij ją, a lista „Powiązania” przewinie się do tej relacji z przepisem. Grot na końcu linii wskazuje kierunek, a żetony typów zostawiają na scenie tylko jeden rodzaj relacji. <kbd>Esc</kbd> odznacza, <kbd>/</kbd> otwiera wyszukiwarkę.</p>
+        </section>
+      </div>
+      <div id="view-node" hidden></div>
+    </div>
+  </aside>
+
+  <main class="stage" id="stage">
+    <svg id="graph" role="img" aria-label="Graf radialny organów państwa"></svg>
+    <button class="theme-btn" id="btn-theme" title="Przełącz motyw jasny/ciemny" aria-label="Przełącz motyw">
+      <svg class="moon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M15 10.6A6.6 6.6 0 0 1 7.4 3a6.6 6.6 0 1 0 7.6 7.6z"/></svg>
+      <svg class="sun" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="9" r="3.2"/><path d="M9 1.8v1.7M9 14.5v1.7M1.8 9h1.7M14.5 9h1.7M3.9 3.9l1.2 1.2M12.9 12.9l1.2 1.2M3.9 14.1l1.2-1.2M12.9 5.1l1.2-1.2"/></svg>
+    </button>
+    <div class="legend" id="legend">
+      <div class="legend-body" id="legend-body"></div>
+      <button class="legend-toggle" id="legend-toggle" type="button" aria-expanded="false" aria-controls="legend-body">Legenda<span class="lcount" id="legend-count"></span> <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l4 4 4-4"/></svg></button>
+    </div>
+    <div class="rel-bar" id="rel-bar" hidden></div>
+    <div class="sel-pill" id="sel-pill" hidden></div>
+    <div class="zoomer" role="group" aria-label="Powiększenie">
+      <button id="btn-zout" title="Oddal" aria-label="Oddal"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8h10"/></svg></button>
+      <button id="btn-zin" title="Przybliż" aria-label="Przybliż"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg></button>
+      <button id="btn-fit" title="Dopasuj do okna" aria-label="Dopasuj do okna"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg><span class="txt">Dopasuj</span></button>
+    </div>
+    <div class="tooltip" id="tooltip" role="tooltip"></div>
+    <div class="status" id="status"><div class="box"><div class="spin"></div><b>Ładowanie grafu…</b><span id="status-msg"></span></div></div>
+  </main>
+</div>
+<script>
+(() => {
+'use strict';
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const F = v => (Math.round(v * 100) / 100).toString();
+
+/* ---------- słowniki ---------- */
+const TYPE_LABEL = { constituency:'Suweren', elected:'Organ wybieralny', department:'Urząd / organ', commission:'Komisja / organ kontroli', advisory:'Ciało doradcze', dept_head:'Stanowisko', political_group:'Klub / koło (struktura polityczna)' };
+const TYPE_PLURAL = { constituency:'Suweren', elected:'Organy wybieralne', department:'Urzędy i organy', commission:'Komisje i kontrola', advisory:'Ciała doradcze', dept_head:'Stanowiska', political_group:'Kluby i koła' };
+const SUBTYPE_LABEL = { committee:'Komisja parlamentarna', parliamentary_club:'Klub', parliamentary_circle:'Koło', legislature:'Parlament', chamber:'Izba parlamentu', ministry:'Ministerstwo', chancellery:'Kancelaria', central_office:'Urząd centralny', executive_agency:'Agencja wykonawcza', state_fund:'Fundusz państwowy', state_legal_person:'Państwowa osoba prawna', court:'Sąd', tribunal:'Trybunał', regulatory_body:'Organ regulacyjny', oversight_body:'Organ kontroli', council:'Rada', government_corporation:'Spółka państwowa', voivode:'Urząd wojewódzki', advisory_body:'Ciało doradcze', adjudicative_body:'Organ orzekający', military:'Siły zbrojne', service:'Służba', inspection:'Inspekcja', institute:'Instytut', other:'Inny' };
+const STATUS_LABEL = { vacant:'Wakat', disputed:'Stan sporu', pending_abolition:'Likwidacja w toku', unverified:'Niezweryfikowane' };
+const PSTATUS_LABEL = { disputed:'spór', unverified:'niezweryf.' };
+const SECTOR_LABEL = { legislative:'Ustawodawcza', executive:'Wykonawcza', judicial:'Sądownicza', independent:'Niezależne i kontrola' };
+const SECTOR_TITLE = { legislative:'USTAWODAWCZA', executive:'WYKONAWCZA', judicial:'SĄDOWNICZA', independent:'NIEZALEŻNE I KONTROLA' };
+const RING_LABEL = { sovereign:'Suweren', highest:'Najwyższa władza', oversight:'Kontrola i nadzór', cabinet:'Rada Ministrów', administration:'Administracja', satellite:'Jednostka podległa' };
+const RINGS = ['highest','oversight','cabinet','administration'];
+const RING_DRAW = ['highest','oversight','administration','cabinet']; // kolejność promieni: pasmo gabinetu na zewnątrz, jak we wzorcu
+const SECTORS = ['legislative','executive','independent','judicial'];   // zgodnie z ruchem wskazówek zegara, ustawodawcza u góry
+const REL = {
+  elects:      { label:'Wybiera',                    mark:'dbl',  dash:null,    width:1.6, dir:['Wybiera','Wybierany przez'] },
+  appoints:    { label:'Powołuje',                   mark:'tri',  dash:null,    width:1.4, dir:['Powołuje','Powoływany przez'] },
+  confirms:    { label:'Zatwierdza',                 mark:'open', dash:null,    width:1.4, dir:['Zatwierdza','Zatwierdzany przez'] },
+  nominates:   { label:'Wnioskuje',                  mark:'chev', dash:null,    width:1.3, dir:['Wnioskuje o powołanie','Powoływany na wniosek'] },
+  oversees:    { label:'Nadzoruje',                  mark:'bars', dash:null,    width:1.3, dir:['Nadzoruje','Nadzorowany przez'] },
+  administers: { label:'Administruje',               mark:'wave', dash:null,    width:1.3, dir:['Obsługuje / administruje','Obsługiwany przez'] },
+  advises:     { label:'Doradza',                    mark:'dot',  dash:null,    width:1.2, dir:['Doradza','Korzysta z doradztwa'] },
+  dept_head:   { label:'Kieruje (stanowisko szefa)', mark:null,   dash:'5 4',   width:1.3, dir:['Stanowisko kierownicze','Kieruje'] },
+  office:      { label:'Przewodniczy',               mark:null,   dash:'1.5 4', width:1.5, dir:['Przewodniczący','Przewodniczy'] },
+  ex_officio:  { label:'Zasiada z urzędu',           mark:null,   dash:'1.5 4', width:1.5, dir:['Zasiada z urzędu w','Zasiadają z urzędu'] },
+};
+const REL_SHORT = { nominates:'Wnioskuje', dept_head:'Kieruje' };
+const REL_DESC = { elects:'wyłania w wyborach lub w głosowaniu', appoints:'obsadza stanowisko albo skład organu', confirms:'wyraża zgodę lub udziela wotum zaufania', nominates:'wskazuje kandydata, ale nie powołuje', oversees:'sprawuje nadzór albo jest organem nadrzędnym', administers:'zarządza jednostką albo zapewnia jej obsługę', advises:'opiniuje i doradza, bez mocy wiążącej', dept_head:'stanowisko szefa organu', office:'kieruje pracami ciała kolegialnego', ex_officio:'wchodzi w skład z racji pełnionej funkcji' };
+const REL_DEFAULT = { label:'Relacja', mark:null, dash:'5 5', width:1.2, dir:['Relacja z','Relacja z'] };
+const rel = e => REL[e.type] || REL_DEFAULT;
+const CONN_ORDER = ['dept_head:in','elects:in','appoints:in','nominates:in','confirms:in','dept_head:out','office:out','office:in','elects:out','appoints:out','nominates:out','confirms:out','oversees:in','oversees:out','administers:in','administers:out','advises:in','advises:out','ex_officio:out','ex_officio:in'];
+const CONF_LABEL = { high:'wysoka', medium:'średnia', low:'niska' };
+const CHANGE_KIND = { departure:'odejście', appointment:'powołanie', structural:'zmiana struktury', acting:'p.o.', vacant:'wakat' };
+const PLURAL_RE = /^(sądy|izby|urzędy|uczelnie|instytuty|spółki|parki|kuratorzy|placówki|prokuratury|rady|regionalne|wojewódzkie|okręgowe|komendy|inspektoraty|delegatury|oddziały|agencje|fundusze|instytucje|szkoły|jednostki|ośrodki|centra|zakłady|archiwa|muzea)\s/i;
+
+/* ---------- geometria (jednostki sceny; proporcje liczone względem R = RAD[3]) ---------- */
+const RAD = [232, 322, 408, 510];      // promienie pierścieni wg RING_DRAW
+const R_DISC = 148, R_SEAL = 82;
+const DOT = 7.4, DOT_R = 2.7;          // siatka kropek-satelitów (promień ≈ 0,53% R)
+const SQ = 8.8, SQ_S = 6.1, ROW_GAP = 10; // rzędy kwadracików klas zbiorczych (bok ≈ 1,2% R)
+const OUT_OFF = 86;                    // start grona satelitów za pierścieniem zewnętrznym
+const VALLEY = 72, TOOTH_M = 34;       // promień bazowy płyty i margines „zęba"
+const BAND_HALF = 45;
+const PAD_RING = [14, 14, 14, 16];
+const ELECTED_F = 1.25;
+const WF = { department:2, corp:2, elected:2 * ELECTED_F, court:2.3, commission:2.5, advisory:2.3, head:2 };
+const BASE_S = { highest:14.5, oversight:11.6, cabinet:15.2, administration:11.5 }; // pół boku: gabinet 6,9–8,9% R, zwykły organ 4,5% R
+const STEP_F = [1, 1.15, 1.32, 1.5];
+const headR = s => clamp(s * 0.4, 7.2, 8.2); // kółko szefa: 1,4–1,6% R
+const V_S = 11.5, V_PAD = 14, V_LABEL = 236, V_IN = 31, V_OUT = 24; // łuk wojewodów: glif, odstęp, miejsce na podpis, półszerokości pasma
+const TERR_LABEL = 'WOJEWODOWIE';
+
+const S = { D:null, L:null, selected:null, relFilter:null, rot:0, rotTarget:0, fan:null, hidden:new Set(), reveal:new Set(), transform:d3.zoomIdentity, userZoomed:false, W:0, H:0, mobile:false, applyingHistory:false, chgTab:'recent', tab:'conn' };
+
+/* ---------- normalizacja danych (kontrakt jak w viewerze bazowym) ---------- */
+function normalize(G) {
+  if (!G || typeof G !== 'object') throw new Error('Plik nie zawiera obiektu grafu.');
+  const nodesIn = Array.isArray(G.nodes) ? Object.fromEntries(G.nodes.map(n => [n.id, n])) : (G.nodes || {});
+  const edgesIn = Array.isArray(G.edges) ? Object.fromEntries(G.edges.map((e, i) => [e.id || ('e' + i), e])) : (G.edges || {});
+  const byId = {};
+  for (const [id, raw] of Object.entries(nodesIn)) {
+    if (!raw || typeof raw !== 'object') continue;
+    const n = Object.assign({}, raw);
+    n.id = String(n.id || id); n.name = n.name || n.id;
+    n.aliases = Array.isArray(n.aliases) ? n.aliases.filter(Boolean) : [];
+    n.children = Array.isArray(n.children) ? n.children.slice() : [];
+    if (!TYPE_LABEL[n.type]) n.type = 'department';
+    if (!SECTOR_LABEL[n.sector]) n.sector = n.type === 'constituency' ? null : 'independent';
+    if (!n.people || typeof n.people !== 'object') n.people = { type:'people', people:[] };
+    if (n.people.type === 'count') n.people.count = Number(n.people.count) || 0;
+    else { n.people.type = 'people'; n.people.people = Array.isArray(n.people.people) ? n.people.people.filter(p => p && typeof p === 'object') : []; }
+    n.provenance = (n.provenance && typeof n.provenance === 'object') ? n.provenance : {};
+    n.in = []; n.out = [];
+    byId[n.id] = n;
+  }
+  const nodes = Object.values(byId);
+  for (const n of nodes) {
+    if (n.parent && (!byId[n.parent] || n.parent === n.id)) n.parent = null;
+    if (n.head && !byId[n.head]) n.head = null;
+    if (n.headOf && !byId[n.headOf]) n.headOf = null;
+    n.children = n.children.filter(c => byId[c] && c !== n.id);
+  }
+  for (const n of nodes) {
+    if (n.parent) { const p = byId[n.parent]; if (!p.children.includes(n.id)) p.children.push(n.id); }
+    if (n.headOf && !byId[n.headOf].head) byId[n.headOf].head = n.id;
+    if (n.head && !byId[n.head].headOf) byId[n.head].headOf = n.id;
+  }
+  const edges = [];
+  for (const [id, raw] of Object.entries(edgesIn)) {
+    if (!raw || typeof raw !== 'object') continue;
+    const e = Object.assign({}, raw); e.id = String(e.id || id);
+    if (!byId[e.fromId] || !byId[e.toId] || e.fromId === e.toId) continue;
+    e.type = e.type || 'other';
+    byId[e.fromId].out.push(e); byId[e.toId].in.push(e); edges.push(e);
+  }
+  for (const e of edges) if (e.type === 'dept_head') { const o = byId[e.fromId], h = byId[e.toId]; if (!o.head) o.head = h.id; if (!h.headOf) h.headOf = o.id; }
+  const meta = (G.meta && typeof G.meta === 'object') ? G.meta : {};
+  return { meta, byId, nodes, edges };
+}
+
+/* ---------- słownik kształtów (własna geometria) ---------- */
+function glyphKind(n) {
+  if (n.type === 'constituency') return 'root';
+  if (n.type === 'dept_head') return 'head';
+  if (n.type === 'political_group') return 'political_group'; // klub albo koło: struktura polityczna, nie organ państwa
+  if (n.type === 'advisory' || n.subtype === 'advisory_body') return 'advisory';
+  if (n.type === 'elected' || n.subtype === 'legislature' || n.subtype === 'chamber') return 'elected';
+  if (['court','tribunal','adjudicative_body'].includes(n.subtype)) return 'court';
+  if (['government_corporation','state_fund','state_legal_person'].includes(n.subtype)) return 'corp';
+  if (n.type === 'commission' || ['regulatory_body','oversight_body','council'].includes(n.subtype)) return 'commission';
+  return 'department';
+}
+function regPoly(n, r, rot) { const pts = []; for (let i = 0; i < n; i++) { const a = rot + i * 2 * Math.PI / n; pts.push([r * Math.cos(a), r * Math.sin(a)]); } return pts; }
+function roundedPoly(pts, rad) {
+  const n = pts.length; let d = '';
+  for (let i = 0; i < n; i++) {
+    const p0 = pts[(i - 1 + n) % n], p1 = pts[i], p2 = pts[(i + 1) % n];
+    const v1 = [p0[0] - p1[0], p0[1] - p1[1]], v2 = [p2[0] - p1[0], p2[1] - p1[1]];
+    const l1 = Math.hypot(v1[0], v1[1]), l2 = Math.hypot(v2[0], v2[1]); const c = Math.min(rad, l1 / 2, l2 / 2);
+    const a = [p1[0] + v1[0] / l1 * c, p1[1] + v1[1] / l1 * c], b = [p1[0] + v2[0] / l2 * c, p1[1] + v2[1] / l2 * c];
+    d += (i ? 'L' : 'M') + F(a[0]) + ',' + F(a[1]) + 'Q' + F(p1[0]) + ',' + F(p1[1]) + ' ' + F(b[0]) + ',' + F(b[1]);
+  }
+  return d + 'Z';
+}
+function circlePath(r) { return `M${F(-r)},0a${F(r)},${F(r)} 0 1,0 ${F(2 * r)},0a${F(r)},${F(r)} 0 1,0 ${F(-2 * r)},0Z`; }
+// lokalny układ glifu: oś -y na zewnątrz koła, +y do środka (tam dokleja się kółko szefa)
+function shapePath(shape, s) {
+  switch (shape) {
+    case 'elected': return circlePath(s * ELECTED_F);
+    case 'court': return roundedPoly(regPoly(5, s * 1.24, -Math.PI / 2), s * 0.3);
+    case 'commission': return roundedPoly(regPoly(4, s * 1.34, 0), s * 0.3);
+    case 'advisory': return roundedPoly(regPoly(6, s * 1.16, 0), s * 0.24);
+    case 'head': return circlePath(s);
+    case 'political_group': return roundedPoly(regPoly(3, s * 1.42, -Math.PI / 2), s * 0.5); // zaokrągłony trójkąt, obrys przerywany (CSS)
+    default: return roundedPoly(regPoly(4, s * Math.SQRT2, Math.PI / 4), s * 0.54);
+  }
+}
+const innerEdge = (shape, s) => shape === 'commission' ? s * 1.16 : shape === 'elected' ? s * ELECTED_F : s;
+function wavyPath(R, N, amp, samples = 360) { let d = ''; for (let i = 0; i < samples; i++) { const t = i / samples * 2 * Math.PI; const r = R * (1 + amp * Math.cos(N * t)); d += (i ? 'L' : 'M') + F(r * Math.sin(t)) + ',' + F(-r * Math.cos(t)); } return d + 'Z'; }
+// superelipsa z lekkim wcięciem i wygięciem wzdłuż pierścienia (kapsuła parlamentu i „bloby" izb)
+function blobPath(cx, a, b, n, waist, bendR, wobble = 0) {
+  const pts = []; const K = 56;
+  for (let i = 0; i < K; i++) {
+    const t = i / K * 2 * Math.PI; const c = Math.cos(t), s = Math.sin(t);
+    let x = a * Math.sign(c) * Math.pow(Math.abs(c), 2 / n); let y = b * Math.sign(s) * Math.pow(Math.abs(s), 2 / n);
+    y *= 1 - waist * Math.exp(-Math.pow(x / (0.3 * a), 2)); y *= 1 + wobble * (x / a);
+    const X = cx + x; pts.push([X, y + X * X / (2 * bendR)]);
+  }
+  return d3.line().curve(d3.curveCatmullRomClosed.alpha(0.5))(pts);
+}
+
+/* ---------- układ ---------- */
+function computeLayout(D) {
+  const { byId, nodes } = D;
+  const root = (D.meta.constituency && byId[D.meta.constituency]) || nodes.find(n => n.type === 'constituency') || null;
+  const ringOf = new Map();
+  const effRing = (n, depth = 0) => {
+    if (ringOf.has(n.id)) return ringOf.get(n.id);
+    let r;
+    if (n === root) r = 'sovereign';
+    else if (RINGS.includes(n.ring)) r = n.ring;
+    else if (n.parent) r = 'satellite';
+    else if (n.type === 'elected' || n.type === 'constituency') r = 'highest';
+    else if (n.type === 'dept_head' && n.headOf && depth < 8) r = effRing(byId[n.headOf], depth + 1);
+    else if (n.type === 'commission' || n.type === 'advisory') r = 'oversight';
+    else r = 'administration';
+    if (r === 'sovereign' && n !== root) r = 'highest';
+    ringOf.set(n.id, r); return r;
+  };
+  nodes.forEach(n => effRing(n));
+
+  // role: root / primary (glif na pierścieniu) / head (kółko szefa) / sat (kropka lub rząd) / ghost (szef satelity, bez własnego glifu)
+  const kind = {}, anchor = {};
+  for (const n of nodes) {
+    if (n === root) { kind[n.id] = 'root'; continue; }
+    if (n.type === 'dept_head' && n.headOf && byId[n.headOf] !== root) { kind[n.id] = 'head'; anchor[n.id] = n.headOf; continue; }
+    if (ringOf.get(n.id) === 'satellite' && n.parent) { kind[n.id] = 'sat'; continue; }
+    kind[n.id] = 'primary';
+    if (ringOf.get(n.id) === 'satellite') ringOf.set(n.id, 'administration');
+  }
+  for (const n of nodes) if (kind[n.id] === 'sat') {
+    let cur = n, top = null; const seen = new Set([n.id]);
+    while (cur.parent && byId[cur.parent] && !seen.has(cur.parent)) {
+      cur = byId[cur.parent]; seen.add(cur.id);
+      if (kind[cur.id] === 'primary') { top = cur; break; }
+      if (kind[cur.id] === 'root' || kind[cur.id] === 'head') break;
+    }
+    if (!top) { kind[n.id] = 'primary'; ringOf.set(n.id, 'administration'); } else anchor[n.id] = top.id;
+  }
+  for (const n of nodes) if (kind[n.id] === 'head') {
+    const ak = kind[anchor[n.id]];
+    if (ak === 'sat') kind[n.id] = 'ghost';
+    else if (ak !== 'primary') { kind[n.id] = 'primary'; delete anchor[n.id]; if (!RINGS.includes(ringOf.get(n.id))) ringOf.set(n.id, 'administration'); }
+  }
+  const headsOf = {};
+  for (const n of nodes) if (kind[n.id] === 'head') (headsOf[anchor[n.id]] = headsOf[anchor[n.id]] || []).push(n.id);
+  for (const [org, list] of Object.entries(headsOf)) list.sort((a, b) => (byId[org].head === b) - (byId[org].head === a));
+
+  const isCollective = n => n.people.type === 'count' || PLURAL_RE.test(n.name);
+  const rowK = n => { const c = n.people.type === 'count' ? (n.people.count || n.seatsCount || 0) : 0; return c <= 8 ? 3 : c <= 30 ? 4 : c <= 120 ? 5 : 6; };
+  const clusterOf = n => {
+    const list = [], seen = new Set();
+    (function dfs(x) { for (const c of x.children) { const ch = byId[c]; if (!ch || seen.has(c)) continue; seen.add(c); if (kind[c] === 'sat' && anchor[c] === n.id) { list.push(ch); dfs(ch); } } })(n);
+    for (const m of nodes) if (kind[m.id] === 'sat' && anchor[m.id] === n.id && !seen.has(m.id)) list.push(m);
+    return list;
+  };
+  const mkItem = n => {
+    const heads = headsOf[n.id] || [];
+    const w = n.children.length + n.in.length + n.out.length + heads.reduce((a, h) => a + 0.35 * (byId[h].in.length + byId[h].out.length), 0);
+    const t = Math.sqrt(w); const step = t < 2.6 ? 0 : t < 3.8 ? 1 : t < 4.8 ? 2 : 3;
+    const shape = glyphKind(n); const ring = ringOf.get(n.id);
+    const s = shape === 'head' ? 7.4 : (BASE_S[ring] || BASE_S.administration) * STEP_F[step];
+    const cl = clusterOf(n);
+    return { id:n.id, n, shape, s, step, weight:w, heads, ring, sector: SECTOR_LABEL[n.sector] ? n.sector : 'independent',
+      dots: cl.filter(c => !isCollective(c)), rows: cl.filter(isCollective).map(c => ({ n:c, k:rowK(c) })),
+      terr: /wojew[oó]dz/i.test(n.name) || heads.some(h => byId[h].subtype === 'voivode') || n.subtype === 'voivode' };
+  };
+
+  // grupy: sektor × pierścień (w kolejności rysowania)
+  const TYPE_ORDER = { elected:0, department:1, commission:2, advisory:3, political_group:3.5, dept_head:4, constituency:5 };
+  const coll = new Intl.Collator('pl');
+  const groups = {}; for (const s of SECTORS) groups[s] = [[], [], [], []];
+  for (const n of nodes) if (kind[n.id] === 'primary') { const it = mkItem(n); groups[it.sector][Math.max(0, RING_DRAW.indexOf(it.ring))].push(it); }
+  for (const s of SECTORS) for (const g of groups[s]) g.sort((a, b) => (TYPE_ORDER[a.n.type] - TYPE_ORDER[b.n.type]) || coll.compare(a.n.name, b.n.name));
+  // parlament: izby (+ ciało łączne) jako jedna kapsuła
+  const parl = {};
+  for (const s of SECTORS) {
+    const g = groups[s][0]; const chambers = g.filter(it => it.n.subtype === 'chamber');
+    if (chambers.length < 2) continue;
+    const leg = g.find(it => it.n.subtype === 'legislature') || null;
+    chambers.sort((a, b) => (b.n.people.count || 0) - (a.n.people.count || 0));
+    const members = chambers.slice(0, 2); const gone = new Set([...members, leg].filter(Boolean).map(it => it.id));
+    const comp = { id:'__parl_' + s, parl:true, members, leg, sector:s, ring:'highest', s:35, W:148, weight:1e6, heads:[], shape:'parl',
+      dots:[...members, leg].filter(Boolean).flatMap(it => it.dots), rows:[...members, leg].filter(Boolean).flatMap(it => it.rows) };
+    groups[s][0] = [comp, ...g.filter(it => !gone.has(it.id))]; parl[s] = comp;
+  }
+  // administracja terenowa (urzędy wojewódzkie) schodzi z pierścieni na własny łuk za pasmem gabinetu
+  const terrOf = {};
+  for (const s of SECTORS) if (groups[s][3].length) { const terr = groups[s][2].filter(it => it.terr); if (terr.length) { groups[s][2] = groups[s][2].filter(it => !it.terr); terr.sort((a, b) => (b.heads.length > 0) - (a.heads.length > 0) || coll.compare(a.n.name, b.n.name)); terrOf[s] = terr; } }
+
+  // miary glifów i gron
+  const glyphOuter = it => it.parl ? it.s : it.shape === 'court' ? it.s * 1.24 : it.shape === 'commission' ? it.s * 1.34 : it.shape === 'elected' ? it.s * ELECTED_F : it.s * 1.04;
+  const perRow = nd => nd > 40 ? 14 : nd > 20 ? 10 : nd > 8 ? 5 : 4; // duże grona (komisje i kluby izb) szerzej, żeby ząb płyty nie rósł w antenę
+  const blockLen = it => { const dl = it.dots.length ? Math.ceil(it.dots.length / 3) * DOT : 0; const rl = it.rows.length ? Math.max(...it.rows.map(r => r.k * SQ)) : 0; return dl + rl + (dl && rl ? 5 : 0); };
+  const clusterW = it => Math.max(it.dots.length ? Math.min(perRow(it.dots.length), it.dots.length) * DOT : 0, it.rows.length ? Math.max(...it.rows.map(r => r.k * SQ)) : 0);
+  const clusterDepth = it => { const nd = it.dots.length; return (nd ? Math.ceil(nd / perRow(nd)) * DOT : 0) + (nd && it.rows.length ? 3 : 0) + it.rows.length * ROW_GAP; };
+  const need = (it, idx) => {
+    if (it.parl) return it.W + 26;
+    const gw = it.s * (WF[it.shape] || 2) + (it.heads.length > 1 ? 6 : 0);
+    if (idx === 3 || (idx === 0 && it.radial)) return Math.max(gw, clusterW(it)) + PAD_RING[idx];
+    const bl = blockLen(it); return gw + (bl ? bl + 9 : 0) + PAD_RING[idx];
+  };
+  const sumNeed = (list, idx) => list.reduce((a, it) => a + need(it, idx), 0);
+
+  // kąty płyt: liczba węzłów^0.6, minimum 10,5% koła; płyta dostaje też tyle, ile trzeba, żeby zmieścić pierścień najwyższej władzy
+  // jednostki podległe liczą się do wagi płyty najwyżej po 14 na organ: izba z 55 komisjami i klubami nie zabiera kąta całej reszcie
+  const count = {}, perAnchor = {}; for (const n of nodes) if (n !== root) { const s = SECTOR_LABEL[n.sector] ? n.sector : 'independent'; const k = kind[n.id]; const a = k === 'sat' ? anchor[n.id] : k === 'ghost' ? anchor[anchor[n.id]] : null;
+    if (a) { const key = s + '|' + a; perAnchor[key] = (perAnchor[key] || 0) + 1; if (perAnchor[key] > 14) continue; } count[s] = (count[s] || 0) + 1; }
+  const active = SECTORS.filter(s => groups[s].some(g => g.length) || (terrOf[s] || []).length);
+  const raw = active.map(s => Math.pow(count[s] || 1, 0.6)); const tot = raw.reduce((a, b) => a + b, 0) || 1;
+  let share = raw.map(v => v / tot); const MIN = Math.min(0.105, 1 / active.length);
+  for (let it = 0; it < 5; it++) { let fixed = 0, flex = 0; share.forEach(v => { if (v <= MIN) fixed += MIN; else flex += v; }); const sc = flex > 0 ? (1 - fixed) / flex : 1; share = share.map(v => v <= MIN ? MIN : v * sc); }
+  const big = share.indexOf(Math.max(...share));
+  // poza największą płytą grona najwyższego pierścienia idą promieniście na zewnątrz (jeśli mieszczą się przed następnym pierścieniem)
+  active.forEach((s, i) => { if (i === big) return; for (const it of groups[s][0]) if (!it.parl && (it.dots.length || it.rows.length) && clusterDepth(it) <= RAD[1] - RAD[0] - glyphOuter(it) - 9 - 16) it.radial = true; });
+  active.forEach((s, i) => { if (i === big || !groups[s][0].length) return; const want = Math.min(0.19, (sumNeed(groups[s][0], 0) + 38) / (2 * Math.PI * RAD[0])); if (share[i] < want) { share[big] -= want - share[i]; share[i] = want; } });
+  const sectorArc = {}; let a0 = active[0] === 'legislative' ? -share[0] * Math.PI : 0;
+  active.forEach((s, i) => { const w = share[i] * 2 * Math.PI; sectorArc[s] = { start:a0, end:a0 + w, mid:a0 + w / 2 }; a0 += w; });
+  const containsPi = s => { const { start, end } = sectorArc[s]; return start < Math.PI && end > Math.PI; };
+
+  // kaskada: gdy grupa nie mieści się na swoim pierścieniu w płycie, nadmiar (najlżejsze organy) przechodzi na kolejny
+  const placed = {}; const SQUEEZE = 1.13;
+  for (const s of active) {
+    const span = sectorArc[s].end - sectorArc[s].start; const arcLen = idx => Math.max(10, span * RAD[idx] - 2 * 16);
+    placed[s] = [[], [], [], []]; let carry = [];
+    for (let idx = 0; idx < 4; idx++) {
+      let items = [...groups[s][idx], ...carry]; carry = [];
+      if (idx === 3) { placed[s][3] = items; break; }
+      const nh = sumNeed(items, idx);
+      if (nh > arcLen(idx) * SQUEEZE && items.length > 1) {
+        let futureNeed = 0, futureCap = 0; for (let j = idx + 1; j < 4; j++) { futureNeed += sumNeed(groups[s][j], j); futureCap += arcLen(j); }
+        const phi = clamp((nh + futureNeed) / (arcLen(idx) + futureCap), 0.55, 1); const target = phi * arcLen(idx) * 1.04;
+        const order = items.slice().sort((a, b) => b.weight - a.weight); const keep = new Set(); let used = 0;
+        for (const it of order) { const w = need(it, idx); if (keep.size && used + w > target) continue; keep.add(it.id); used += w; }
+        carry = items.filter(it => !keep.has(it.id)); items = items.filter(it => keep.has(it.id));
+      }
+      placed[s][idx] = items;
+    }
+  }
+
+  // rozmieszczenie na pierścieniach
+  const pos = {}; const clusters = []; const bands = []; const vbands = []; const draw = [];
+  const put = (id, r, a, extra) => { pos[id] = Object.assign({ x: r * Math.sin(a), y: -r * Math.cos(a), a, r, rot: a * 180 / Math.PI }, extra); return pos[id]; };
+  const local = (p, dx, dy) => ({ x: p.x + dx * Math.cos(p.a) - dy * Math.sin(p.a), y: p.y + dx * Math.sin(p.a) + dy * Math.cos(p.a) });
+  const placeSat = (n, r, a, parentId, sector) => { put(n.id, r, a, { kind:'sat', s:DOT_R, sector, anchor:parentId }); draw.push(n.id); };
+  const placeRow = (row, r, aMid, dir, parentId, sector, fromStart) => {
+    const sq = []; for (let q = 0; q < row.k; q++) { const a = fromStart ? aMid + dir * (q + 0.5) * SQ / r : aMid + (q - (row.k - 1) / 2) * SQ / r; sq.push({ x: r * Math.sin(a), y: -r * Math.cos(a), rot: a * 180 / Math.PI }); }
+    const ac = fromStart ? aMid + dir * row.k * SQ / (2 * r) : aMid;
+    put(row.n.id, r, ac, { kind:'row', s:SQ_S / 2, sq, sector, anchor:parentId, span: row.k * SQ }); draw.push(row.n.id);
+  };
+  // grono promieniste: rzędy kropek, potem rzędy kwadracików; r0 = promień pierwszego rzędu
+  const outwardCluster = (it, a, sector, parentId, r0, tooth) => {
+    if (!it.dots.length && !it.rows.length) return 0;
+    let r = r0; let idx = 0; const nd = it.dots.length; let halfW = 0;
+    while (idx < nd) { const c = Math.min(perRow(nd), nd - idx); for (let j = 0; j < c; j++) { const dn = it.dots[idx++]; placeSat(dn, r, a + (j - (c - 1) / 2) * DOT / r, parentId(dn), sector); } halfW = Math.max(halfW, c * DOT / 2); r += DOT; }
+    if (nd) r += 3;
+    for (const row of it.rows) { placeRow(row, r, a, 1, parentId(row.n), sector, false); halfW = Math.max(halfW, row.k * SQ / 2); r += ROW_GAP; }
+    const rmax = r - (it.rows.length ? ROW_GAP : DOT + 3) + 3;
+    if (tooth) clusters.push({ sector, t0: a - halfW / rmax, t1: a + halfW / rmax, rmax });
+    return rmax;
+  };
+  const tangentialBlock = (it, R, aStart, dir, sector) => {
+    const nd = it.dots.length; const cols = Math.ceil(nd / 3); let i = 0;
+    for (let c = 0; c < cols; c++) { const cnt = Math.min(3, nd - i); for (let j = 0; j < cnt; j++) placeSat(it.dots[i++], R + (j - (cnt - 1) / 2) * DOT, aStart + dir * (c + 0.5) * DOT / R, it.id, sector); }
+    const rowsStart = aStart + dir * (cols * DOT + (cols ? 5 : 0)) / R; const m = it.rows.length;
+    it.rows.forEach((row, j) => placeRow(row, R + (j - (m - 1) / 2) * ROW_GAP, rowsStart, dir, it.id, sector, true));
+  };
+  const placeGlyph = (it, R, a, sector, idx, s) => {
+    const p = put(it.id, R, a, { kind:'primary', s, shape:it.shape, sector, ring:it.ring, idx, step:it.step }); draw.push(it.id);
+    const edge = innerEdge(it.shape, s); const hr = headR(s);
+    it.heads.forEach((h, k) => { const hx = (k - (it.heads.length - 1) / 2) * (2 * hr + 1.5); const q = local(p, hx, edge + hr * 0.18); pos[h] = { x:q.x, y:q.y, a, r:R - edge, rot:p.rot, kind:'head', s:hr, sector, org:it.id }; draw.push(h); });
+    return p;
+  };
+  const placeItem = (it, idx, a0s, a1s, blockBefore, sector) => {
+    const R = RAD[idx]; const c = (a0s + a1s) / 2;
+    if (it.parl) {
+      const P = { a:c, x: R * Math.sin(c), y: -R * Math.cos(c) }; const H = it.s * 2; const xs = [-(it.W / 2 - 9.5 - 32.5), it.W / 2 - 9.5 - 26];
+      it.members.forEach((m, i) => { const x = xs[i]; const q = local(P, x, x * x / (2 * R)); pos[m.id] = { x:q.x, y:q.y, a:c, r:R, rot: c * 180 / Math.PI, kind:'blob', s:22, bx:x, bi:i, sector, comp:it.id }; draw.push(m.id);
+        m.heads.forEach((h, k) => { const hx = x + (k - (m.heads.length - 1) / 2) * 17; const hq = local(P, hx, H / 2 + hx * hx / (2 * R) + 1); pos[h] = { x:hq.x, y:hq.y, a:c, r:R, rot: c * 180 / Math.PI, kind:'head', s:7.6, sector, org:m.id }; draw.push(h); }); });
+      pos[it.id] = { x:P.x, y:P.y, a:c, r:R, rot: c * 180 / Math.PI, kind:'parl', s:it.s, W:it.W, sector, legId: it.leg ? it.leg.id : null, members: it.members.map(m => m.id) };
+      if (it.leg) { pos[it.leg.id] = Object.assign({}, pos[it.id], { kind:'parlring' }); draw.push(it.leg.id); }
+      const owner = n => { let cur = n; while (cur.parent && byId[cur.parent]) { cur = byId[cur.parent]; if (kind[cur.id] === 'primary') return cur.id; } return it.members[0].id; };
+      // każda izba ma własne grono kropek, obok siebie
+      const parts = [...it.members, it.leg].filter(m => m && (m.dots.length || m.rows.length)); const r0c = RAD[3] + OUT_OFF; const ws = parts.map(clusterW); const tot = ws.reduce((a, b) => a + b, 0) + 18 * Math.max(0, parts.length - 1); let cur = c - tot / 2 / r0c;
+      parts.forEach((m, i) => { outwardCluster(m, cur + ws[i] / 2 / r0c, sector, owner, r0c, true); cur += (ws[i] + 18) / r0c; });
+      return;
+    }
+    const gw = it.s * (WF[it.shape] || 2); const radial = idx === 3 || (idx === 0 && it.radial);
+    const bl = radial ? 0 : blockLen(it); const u = gw + (bl ? bl + 9 : 0); const dir = blockBefore ? -1 : 1;
+    const ga = bl ? c - dir * (u / 2 - gw / 2) / R : c;
+    placeGlyph(it, R, ga, sector, idx, it.s);
+    if (idx === 3) it.rmax = outwardCluster(it, ga, sector, () => it.id, RAD[3] + OUT_OFF, true);
+    else if (radial) outwardCluster(it, ga, sector, () => it.id, R + glyphOuter(it) + 9, false);
+    else if (bl) tangentialBlock(it, R, ga + dir * (gw / 2 + 9) / R, dir, sector);
+  };
+  const slotsFor = (items, idx, A0, A1, opt = {}) => {
+    if (!items.length) return []; const R = RAD[idx]; const total = sumNeed(items, idx); let f = (A1 - A0) * R / total; if (opt.maxF) f = Math.min(f, opt.maxF);
+    const used = total * f / R; let cur = clamp((opt.center != null ? opt.center : (A0 + A1) / 2) - used / 2, A0, Math.max(A0, A1 - used));
+    return items.map(it => { const w = need(it, idx) * f / R; const sl = { it, a0:cur, a1:cur + w }; cur += w; return sl; });
+  };
+  const placeRun = (items, idx, A0, A1, sector, opt = {}) => {
+    const slots = slotsFor(items, idx, A0, A1, opt);
+    slots.forEach((sl, i) => placeItem(sl.it, idx, sl.a0, sl.a1, opt.pair ? i === 0 : i < items.length / 2 - 0.01 && items.length > 1, sector)); return slots;
+  };
+  for (const s of active) {
+    const { start, end } = sectorArc[s];
+    for (const idx of [1, 2, 3, 0]) {
+      const R = RAD[idx]; const A0 = start + 16 / R, A1 = end - 16 / R; const items = placed[s][idx];
+      if (idx === 0) {
+        if (containsPi(s) && items.length && sumNeed(items, 0) * 1.25 < (A1 - A0) * R) { placeRun(items.slice().reverse(), 0, A0, A1, s, { center:Math.PI, maxF:1.12, pair:true }); continue; }
+        // grono promieniste nie może wejść w glif następnego pierścienia: wtedy wraca na pierścień
+        const next = placed[s][1].map(q => pos[q.id]).filter(Boolean);
+        for (const sl of slotsFor(items, 0, A0, A1)) { const it = sl.it; if (!it.radial) continue; const a = (sl.a0 + sl.a1) / 2; const outer = R + glyphOuter(it) + 9 + clusterDepth(it);
+          if (next.some(q => outer + 8 > RAD[1] - q.s * 1.34 - 2 * headR(q.s) && Math.abs(a - q.a) * RAD[1] < clusterW(it) / 2 + q.s * 1.4 + 10)) it.radial = false; }
+        placeRun(items, 0, A0, A1, s); continue;
+      }
+      if (idx === 3) {
+        const cab = items.filter(it => it.ring === 'cabinet'); let rest = items.filter(it => it.ring !== 'cabinet'); const terr = terrOf[s] || [];
+        if (!cab.length) { placeRun([...terr, ...rest], 3, A0, A1, s); continue; }
+        let order = cab, low = null;
+        if (terr.length) {
+          // pod łukiem wojewodów stają organy o najpłytszych gronach satelitów (samodzielne stanowiska, małe resorty)
+          const f0 = Math.min(1.7, (A1 - A0) * R / (sumNeed(cab, 3) + sumNeed(rest, 3)));
+          const byDepth = cab.slice().sort((a, b) => clusterDepth(a) - clusterDepth(b) || (a.dots.length + a.rows.length) - (b.dots.length + b.rows.length));
+          const vNeed = terr.length * (2 * V_S + V_PAD) + V_LABEL;
+          for (let k = 1; k <= byDepth.length && !low; k++) { const cand = byDepth.slice(0, k); const md = Math.max(...cand.map(clusterDepth)); const r5 = R + Math.max(BAND_HALF + 14, md ? OUT_OFF + md + 12 : 0) + V_IN; if (sumNeed(cand, 3) * f0 / R >= (vNeed + 64) / r5) low = cand; }
+          if (low) {
+            const lowSet = new Set(low.map(it => it.id)); const others = cab.filter(it => !lowSet.has(it.id)); const lowA = sumNeed(low, 3) * f0 / R;
+            const centre = clamp(Math.PI / 2, A0 + lowA / 2, A1 - lowA / 2); const targetBefore = (centre - lowA / 2 - A0) * R / f0; let acc = 0; const before = [], after = [];
+            for (const it of others) { const w = need(it, 3); if (!after.length && acc + w / 2 <= targetBefore) { before.push(it); acc += w; } else after.push(it); }
+            order = [...before, ...cab.filter(it => lowSet.has(it.id)), ...after];
+          } else rest = [...terr, ...rest]; // awaryjnie: wojewodowie zostają na zewnętrznym pierścieniu
+        }
+        const needCab = sumNeed(order, 3), needRest = sumNeed(rest, 3); const arc = (A1 - A0) * R;
+        const f = Math.min(1.7, arc / (needCab + needRest)); const bandAng = needCab * f / R, restAng = needRest * Math.min(f, 1) / R;
+        const centre = containsPi(s) ? Math.PI : sectorArc[s].mid; const b0 = clamp(centre - bandAng / 2, A0 + restAng, Math.max(A0 + restAng, A1 - bandAng)); const b1 = b0 + bandAng;
+        const beforeA = b0 - A0, afterA = A1 - b1; const nBefore = rest.length ? Math.round(rest.length * beforeA / Math.max(1e-6, beforeA + afterA)) : 0;
+        placeRun(rest.slice(0, nBefore), 3, A0, b0 - 6 / R, s); placeRun(rest.slice(nBefore), 3, b1 + 6 / R, A1, s);
+        const slots = placeRun(order, 3, b0, b1, s);
+        const tabR = R - 62; const t0 = b0 + 10 / R; bands.push({ sector:s, a0:b0, a1:b1, l0:t0, l1:Math.min(b1, t0 + 262 / tabR), tabR, R });
+        if (low) {
+          const lowSlots = slots.filter(sl => low.includes(sl.it)); const la0 = Math.min(...lowSlots.map(sl => sl.a0)), la1 = Math.max(...lowSlots.map(sl => sl.a1));
+          const rTop = Math.max(R + BAND_HALF + 14, ...low.map(it => (it.rmax || 0) + 13)); const R5 = rTop + V_IN;
+          const vA = (terr.length * (2 * V_S + V_PAD) + V_LABEL) / R5; const v0 = clamp((la0 + la1) / 2 - vA / 2, start + 40 / R5, Math.max(start + 40 / R5, end - 40 / R5 - vA)); const l1 = v0 + V_LABEL / R5; const stepA = (2 * V_S + V_PAD) / R5;
+          terr.forEach((it, i) => { it.shape = 'department'; placeGlyph(it, R5, l1 + (i + 0.5) * stepA, s, 4, V_S); if (it.dots.length || it.rows.length) outwardCluster(it, l1 + (i + 0.5) * stepA, s, () => it.id, R5 + V_OUT + 14, true); });
+          vbands.push({ sector:s, a0:v0, a1:v0 + vA, l0:v0, l1, R:R5, count:terr.length });
+          clusters.push({ sector:s, t0:v0 - 4 / R5, t1:v0 + vA + 4 / R5, rmax:R5 + V_OUT, margin:20, fall:96 });
+        }
+        continue;
+      }
+      placeRun(items, idx, A0, A1, s);
+    }
+  }
+  if (root) { put(root.id, 0, 0, { kind:'root', s:R_SEAL, sector:null }); draw.push(root.id); }
+  // węzły bez glifu: szefowie satelitów i wszystko, czego nie udało się umieścić -> pozycja kotwicy
+  for (const n of nodes) if (!pos[n.id]) {
+    let t = anchor[n.id] || n.headOf || n.parent; const seen = new Set();
+    while (t && !pos[t] && !seen.has(t)) { seen.add(t); const tn = byId[t]; t = tn ? (anchor[t] || tn.headOf || tn.parent) : null; }
+    if (t && pos[t]) pos[n.id] = Object.assign({}, pos[t], { kind:'ghost', via:pos[t].kind === 'ghost' ? pos[t].via : t });
+  }
+
+  // organiczny kontur zewnętrzny płyt
+  const base = RAD[3] + VALLEY; const contour = {}; let maxRho = base;
+  for (const s of active) {
+    const { start, end } = sectorArc[s]; const K = Math.max(12, Math.round((end - start) / (Math.PI / 360))); const th = i => start + (end - start) * i / K;
+    let rho = new Float64Array(K + 1).fill(base);
+    for (const c of clusters) { if (c.sector !== s) continue; const top = c.rmax + (c.margin != null ? c.margin : TOOTH_M); if (top <= base + 2) continue; const padA = 12 / c.rmax, fall = (c.fall || 34) / c.rmax;
+      for (let i = 0; i <= K; i++) { const t = th(i); const d = t < c.t0 - padA ? c.t0 - padA - t : t > c.t1 + padA ? t - c.t1 - padA : 0; if (d >= fall) continue; const w = d <= 0 ? 1 : 0.5 + 0.5 * Math.cos(Math.PI * d / fall); rho[i] = Math.max(rho[i], base + (top - base) * w); } }
+    for (let pass = 0; pass < 2; pass++) { const o = rho.slice(); for (let i = 0; i <= K; i++) { let a = 0, c = 0; for (let j = -2; j <= 2; j++) { const q = i + j; if (q < 0 || q > K) continue; a += o[q]; c++; } rho[i] = a / c; } }
+    const corner = 12; for (let i = 0; i <= K; i++) { const dpx = Math.min(th(i) - start, end - th(i)) * rho[i]; if (dpx < corner) { const u = 1 - dpx / corner; rho[i] -= corner * (1 - Math.sqrt(Math.max(0, 1 - u * u))); } }
+    contour[s] = { th: Array.from({ length: K + 1 }, (_, i) => th(i)), rho }; for (const v of rho) maxRho = Math.max(maxRho, v);
+  }
+  // podpisy sektorów: tam, gdzie kontur jest najniższy
+  const sectorLabel = {};
+  for (const s of active) {
+    const { th, rho } = contour[s]; const K = th.length - 1; const L = SECTOR_TITLE[s].length * 17.6; const { start, end, mid } = sectorArc[s];
+    const wA = Math.min(end - start - 0.04, L / (base + 16)); let best = null;
+    for (let i = 0; i <= K; i++) { const c = th[i]; if (c - wA / 2 < start + 0.02 || c + wA / 2 > end - 0.02) continue; let mx = 0; for (let j = 0; j <= K; j++) if (th[j] >= c - wA / 2 - 0.02 && th[j] <= c + wA / 2 + 0.02) mx = Math.max(mx, rho[j]); const cost = mx + Math.abs(c - mid) * 14; if (!best || cost < best.cost) best = { cost, c, mx }; }
+    if (!best) best = { c:mid, mx:Math.max(...rho) };
+    sectorLabel[s] = { a0: best.c - wA / 2 - 0.05, a1: best.c + wA / 2 + 0.05, r: best.mx + 17, mid: best.c };
+  }
+  // ramka całości (kontur + podpisy sektorów) do dopasowania widoku
+  const bb = { x0:Infinity, x1:-Infinity, y0:Infinity, y1:-Infinity }; let rFit = 0; const grow = (r, a) => { rFit = Math.max(rFit, r); const x = r * Math.sin(a), y = -r * Math.cos(a); bb.x0 = Math.min(bb.x0, x); bb.x1 = Math.max(bb.x1, x); bb.y0 = Math.min(bb.y0, y); bb.y1 = Math.max(bb.y1, y); };
+  for (const s of active) { contour[s].th.forEach((t, i) => grow(contour[s].rho[i] + 6, t)); const sl = sectorLabel[s]; for (const a of [sl.a0, sl.mid, sl.a1]) grow(sl.r + 24, a); }
+  const onOuter = draw.filter(id => pos[id].kind === 'primary' && pos[id].idx === 3);
+  const stats = { glyphs: draw.length, primaries: draw.filter(id => pos[id].kind === 'primary' || pos[id].kind === 'blob').length, heads: draw.filter(id => pos[id].kind === 'head').length, dots: draw.filter(id => pos[id].kind === 'sat').length, rows: draw.filter(id => pos[id].kind === 'row').length, ghosts: nodes.filter(n => pos[n.id] && pos[n.id].kind === 'ghost').length, unplaced: nodes.filter(n => !pos[n.id]).length,
+    outerRing: onOuter.length, outerRingBySector: onOuter.reduce((m, id) => { m[pos[id].sector] = (m[pos[id].sector] || 0) + 1; return m; }, {}), voivodeArc: draw.filter(id => pos[id].kind === 'primary' && pos[id].idx === 4).length, vbandR: vbands.map(v => Math.round(v.R)), share: Object.fromEntries(active.map((s, i) => [s, +(share[i] * 100).toFixed(1)])) };
+  return { root, pos, draw, active, sectorArc, contour, sectorLabel, bands, vbands, parl, base, maxRho, bbox:bb, rFit, Rbound: maxRho + 40, kind, ringOf, stats, placed };
+}
+
+/* ---------- render ---------- */
+let svg, vp, scene, rotG, gT, gF, gE, gN, gO, zoom, nodeSel, sealTxt; const elById = {}; let LABELS = [];
+const polar = (r, a) => [r * Math.sin(a), -r * Math.cos(a)];
+function arcPath(r, a1, a2, reverse) {
+  const [x1, y1] = polar(r, a1), [x2, y2] = polar(r, a2); const large = (a2 - a1) > Math.PI ? 1 : 0;
+  return reverse ? `M${F(x2)},${F(y2)}A${F(r)},${F(r)} 0 ${large} 0 ${F(x1)},${F(y1)}` : `M${F(x1)},${F(y1)}A${F(r)},${F(r)} 0 ${large} 1 ${F(x2)},${F(y2)}`;
+}
+// r może być funkcją (bottom) => promień: napis po obrocie grafu odwraca kierunek ścieżki, żeby nie stanąć do góry nogami
+function arcLabel(g, id, cls, text, r, a0, a1, style) {
+  const mid = (a0 + a1) / 2; const bottom = Math.cos(mid) < 0; const rOf = typeof r === 'function' ? r : () => r;
+  const p = g.append('path').attr('id', id).attr('fill', 'none').attr('d', arcPath(rOf(bottom), a0, a1, bottom));
+  const t = g.append('text').attr('class', cls).attr('dy', bottom ? '0.72em' : '0');
+  if (style) t.attr('style', style);
+  t.append('textPath').attr('href', '#' + id).attr('startOffset', '50%').attr('text-anchor', 'middle').text(text);
+  LABELS.push({ id, p, t, rOf, a0, a1, bottom });
+}
+function orientLabels() {
+  const phi = S.rot * Math.PI / 180;
+  for (const l of LABELS) { const c = Math.cos((l.a0 + l.a1) / 2 + phi); if (Math.abs(c) < 0.035) continue; const nb = c < 0; if (nb === l.bottom) continue; l.bottom = nb; l.p.attr('d', arcPath(l.rOf(nb), l.a0, l.a1, nb)); l.t.attr('dy', nb ? '0.72em' : '0'); }
+}
+function sealLines(root, meta) {
+  const s = (root.shortName || root.name || '').trim(); const w = s.split(/\s+/);
+  if (w.length === 1) return String(meta.gov || '').toLowerCase() === 'pl' ? [s, 'Polski'] : [s];
+  const h = Math.ceil(w.length / 2); return [w.slice(0, h).join(' '), w.slice(h).join(' ')];
+}
+function headState(n) {
+  if (n.type !== 'dept_head' || n.people.type !== 'people') return '';
+  if (!n.people.people.length || n.status === 'vacant') return 'vacant';
+  return n.people.people.some(p => p.acting) ? 'acting' : '';
+}
+function orgState(n) {
+  if (n.type === 'dept_head') return headState(n);
+  const hs = (S.headMap && S.headMap[n.id]) || []; if (hs.some(h => headState(h) === 'vacant')) return 'vacant'; if (hs.some(h => headState(h) === 'acting')) return 'acting'; return '';
+}
+function mkNode(n, p, cls, withTransform = true) {
+  const g = gN.append('g').attr('class', `node ${cls} s-${p.sector || 'none'} t-${n.type}`).attr('data-id', n.id).attr('role', 'button').attr('aria-label', n.name).datum(n);
+  if (withTransform) g.attr('transform', `translate(${F(p.x)},${F(p.y)}) rotate(${F(p.rot)})`);
+  elById[n.id] = g.node(); return g;
+}
+function drawRow(n, p) { const g = mkNode(n, p, 'k-row', false); const h = SQ_S / 2;
+  for (const q of p.sq) { const c = g.append('g').attr('transform', `translate(${F(q.x)},${F(q.y)}) rotate(${F(q.rot)})`); c.append('rect').attr('class', 'hit').attr('x', -SQ / 2).attr('y', -ROW_GAP / 2).attr('width', SQ).attr('height', ROW_GAP); c.append('rect').attr('class', 'glyph').attr('x', -h).attr('y', -h).attr('width', SQ_S).attr('height', SQ_S).attr('rx', 1.9); }
+  return g; }
+function drawSat(n, p) {
+  const st = orgState(n); const g = mkNode(n, p, `k-sat ${st ? 'st-' + st : ''}`, false); g.append('circle').attr('class', 'hit').attr('cx', F(p.x)).attr('cy', F(p.y)).attr('r', DOT / 2); g.append('circle').attr('class', 'glyph').attr('cx', F(p.x)).attr('cy', F(p.y)).attr('r', st ? DOT_R - 0.45 : DOT_R);
+  if (st === 'acting') g.append('path').attr('class', 'half').attr('transform', `translate(${F(p.x)},${F(p.y)}) rotate(${F(p.rot)})`).attr('d', `M0,${F(-DOT_R)}A${F(DOT_R)},${F(DOT_R)} 0 0 1 0,${F(DOT_R)}Z`);
+  return g;
+}
+function render() {
+  const D = S.D, L = S.L;
+  S.headMap = {}; for (const m of D.nodes) if (m.type === 'dept_head' && m.headOf) (S.headMap[m.headOf] = S.headMap[m.headOf] || []).push(m);
+  svg = d3.select('#graph'); svg.selectAll('*').remove();
+  vp = svg.append('g').attr('class', 'vp'); scene = vp.append('g').attr('class', 'scene'); rotG = scene.append('g').attr('class', 'rot'); LABELS = []; S.rot = 0; S.rotTarget = 0; S.fan = null; // B1: obraca się grupa wewnętrzna (na .scene siedzi animacja wejścia w CSS)
+  const far = L.maxRho + 60;
+
+  // płyty sektorów o organicznym konturze
+  const gP = rotG.append('g').attr('class', 'plates'); const line = d3.line().curve(d3.curveBasis);
+  for (const s of L.active) {
+    const { th, rho } = L.contour[s]; const pts = th.map((t, i) => polar(rho[i], t));
+    const d = 'M0,0L' + line(pts).slice(1) + 'Z';
+    gP.append('path').attr('class', 'plate').attr('fill', `var(--plate-${s})`).attr('d', d);
+  }
+  // pierścienie, pasmo gabinetu, szczeliny, dysk środka
+  const gR = rotG.append('g').attr('class', 'rings');
+  RAD.forEach(r => gR.append('circle').attr('class', 'ring-guide').attr('r', r));
+  for (const b of L.bands) { const trim = (BAND_HALF - 16) / b.R; gR.append('path').attr('class', 'band').attr('stroke-width', BAND_HALF * 2).attr('d', arcPath(b.R, b.a0 + trim, b.a1 - trim, false));
+    gR.append('path').attr('class', 'band').attr('stroke-width', BAND_HALF * 2).attr('d', arcPath(b.R - 30, b.l0 + trim, b.l1 - trim * 0.4, false)); }
+  for (const v of L.vbands) { const w = V_IN + V_OUT, rc = v.R + (V_OUT - V_IN) / 2, trim = (w / 2 - 8) / v.R; gR.append('path').attr('class', 'band vband').attr('stroke-width', w).attr('d', arcPath(rc, v.a0 + trim, v.a1 - trim, false)); }
+  if (L.active.length > 1) for (const s of L.active) { const [x, y] = polar(far, L.sectorArc[s].start); gR.append('line').attr('class', 'sep').attr('x1', 0).attr('y1', 0).attr('x2', x).attr('y2', y); }
+  gR.append('circle').attr('class', 'disc').attr('r', R_DISC);
+
+  // podpisy po łuku: pierścienie, pasmo, sektory, parlament
+  gT = rotG.append('g').attr('class', 'arc-labels').style('pointer-events', 'none');
+  const bottomSector = L.active.find(s => L.sectorArc[s].start < Math.PI && L.sectorArc[s].end > Math.PI);
+  const hasCab = L.bands.length > 0;
+  const ringText = [[RING_LABEL.highest, R_DISC + 19], [RING_LABEL.oversight, RAD[1] - 41], [RING_LABEL.administration, RAD[2] - 44]];
+  if (!hasCab) ringText.push([RING_LABEL.cabinet, RAD[3] - 42]);
+  if (bottomSector) ringText.forEach(([t, r], i) => arcLabel(gT, 'rl-' + i, 'ring-label', t.toUpperCase(), r, Math.PI - 1.1, Math.PI + 1.1));
+  L.bands.forEach((b, i) => arcLabel(gT, 'bl-' + i, 'band-label', RING_LABEL.cabinet.toUpperCase(), bottom => b.tabR - (bottom ? 5 : -5), b.l0 - 0.05, b.l1 + 0.05));
+  L.vbands.forEach((v, i) => arcLabel(gT, 'vl-' + i, 'vband-label', TERR_LABEL, v.R + (V_OUT - V_IN) / 2 - 5, v.l0 + 0.012, v.l1 + 0.012));
+  for (const s of L.active) { const sl = L.sectorLabel[s]; arcLabel(gT, 'sl-' + s, 'sector-label', SECTOR_TITLE[s], sl.r, sl.a0 - 0.2, sl.a1 + 0.2, `--c:var(--sec-${s})`); }
+  for (const s of Object.keys(L.parl)) { const p = L.pos[L.parl[s].id]; if (p) arcLabel(gT, 'pl-' + s, 'parl-label', 'PARLAMENT', p.r + p.s + 15, p.a - 0.5, p.a + 0.5); }
+
+  gF = rotG.append('g').attr('class', 'fan-lines').style('pointer-events', 'none');
+  gE = rotG.append('g').attr('class', 'edges');
+  gN = rotG.append('g').attr('class', 'nodes');
+  for (const k of Object.keys(elById)) delete elById[k];
+  const mk = mkNode;
+  const order = { parl:0, parlring:0, sat:1, row:1, primary:2, blob:3, head:4, root:5 };
+  const ids = L.draw.slice().sort((a, b) => order[L.pos[a].kind] - order[L.pos[b].kind]);
+  // kapsuła parlamentu: podwójny obrys = ciało łączne izb
+  for (const s of Object.keys(L.parl)) {
+    const comp = L.parl[s]; const p = L.pos[comp.id]; if (!p) continue; const leg = comp.leg ? comp.leg.n : null;
+    const g = gN.append('g').attr('class', `k-parl s-${p.sector}`).attr('data-parl', leg ? leg.id : '').attr('aria-hidden', 'true').style('pointer-events', 'none').attr('transform', `translate(${F(p.x)},${F(p.y)}) rotate(${F(p.rot)})`);
+    g.append('path').attr('class', 'glyph').attr('d', blobPath(0, p.W / 2, p.s, 3.4, 0.07, p.r));
+    g.append('path').attr('class', 'glyph inner thin').attr('d', blobPath(0, p.W / 2 - 5.8, p.s - 5.8, 3.2, 0.09, p.r)).style('pointer-events', 'none');
+  }
+  for (const id of ids) {
+    const n = D.byId[id], p = L.pos[id]; if (!n || !p) continue;
+    if (p.kind === 'sat') drawSat(n, p);
+    else if (p.kind === 'row') drawRow(n, p);
+    else if (p.kind === 'primary') { const g = mk(n, p, `k-primary sh-${p.shape}${p.shape === 'head' ? ' k-head ' + headState(n) : ''}`).attr('tabindex', 0);
+      g.append('circle').attr('class', 'hit').attr('r', p.s * 1.3 + 4); g.append('path').attr('class', 'glyph').attr('d', shapePath(p.shape, p.s));
+      if (p.shape === 'corp') g.append('path').attr('class', 'glyph inner').attr('d', roundedPoly(regPoly(4, p.s * 0.5 * Math.SQRT2, Math.PI / 4), p.s * 0.3)).style('pointer-events', 'none');
+      if (p.shape === 'head' && headState(n) === 'acting') g.append('path').attr('class', 'half').attr('d', `M0,${F(-p.s)}A${F(p.s)},${F(p.s)} 0 0 1 0,${F(p.s)}Z`); }
+    else if (p.kind === 'blob') { const g = mk(n, p, 'k-blob').attr('tabindex', 0); const big = p.bi === 0; g.append('path').attr('class', 'glyph').attr('d', blobPath(0, big ? 32.5 : 26, 22, 3, 0, 1e6, big ? 0.07 : -0.05)); }
+    else if (p.kind === 'head') { const st = headState(n); const g = mk(n, p, `k-head ${st}`); g.append('circle').attr('class', 'hit').attr('r', p.s + 2.5); g.append('circle').attr('class', 'glyph').attr('r', p.s);
+      if (st === 'acting') g.append('path').attr('class', 'half').attr('d', `M0,${F(-p.s)}A${F(p.s)},${F(p.s)} 0 0 1 0,${F(p.s)}Z`); }
+    else if (p.kind === 'root') { const g = mk(n, p, 'k-root', false).attr('tabindex', 0); g.append('path').attr('class', 'seal').attr('d', wavyPath(R_SEAL, 18, 0.052));
+      sealTxt = g.append('g').attr('class', 'seal-txt'); const lines = sealLines(n, D.meta); lines.forEach((t, i) => sealTxt.append('text').attr('class', 'seal-text').attr('y', (i - (lines.length - 1) / 2) * 24 + 7.4).text(t)); }
+  }
+  nodeSel = gN.selectAll('g.node');
+  S.satsOf = {}; for (const id of L.draw) { const q = L.pos[id]; if (q && (q.kind === 'sat' || q.kind === 'row') && q.anchor) (S.satsOf[q.anchor] = S.satsOf[q.anchor] || []).push(id); }
+  applyLegendFilter(true);
+  gO = svg.append('g').attr('class', 'overlay');
+
+  zoom = d3.zoom().scaleExtent([0.2, 12]).clickDistance(7).translateExtent([[S.L.bbox.x0 - 900, S.L.bbox.y0 - 700], [S.L.bbox.x1 + 900, S.L.bbox.y1 + 700]]).on('start', ev => { if (ev.sourceEvent) { S.userZoomed = true; setLegend(false); } }).on('zoom', ev => { S.transform = ev.transform; vp.attr('transform', ev.transform); onZoom(); });
+  svg.call(zoom).on('dblclick.zoom', null);
+  const nodeOf = ev => ev.target.closest && ev.target.closest('g.node');
+  const relOf = ev => ev.target.closest && ev.target.closest('g.rel');
+  const nodeAtPoint = ev => { const [x, y] = d3.pointer(ev, rotG.node()); const tol = 5 / S.transform.k; let best = null, bd = Infinity;
+    for (const id of S.L.draw) { const q = S.L.pos[id]; if (!q || q.kind === 'ghost' || q.kind === 'root' || q.kind === 'parl' || q.kind === 'parlring' || !elById[id] || elById[id].classList.contains('lg-hidden')) continue; const r = q.kind === 'sat' ? DOT_R : q.kind === 'row' ? SQ_S : glyphReach(q) * 0.9; const d = Math.hypot(x - q.x, y - q.y); if (d <= Math.max(r, tol) && d < bd) { bd = d; best = id; nodeAtPoint.inside = d <= r; } }
+    if (!best) nodeAtPoint.inside = false; return best; };
+  // kto wygrywa pod kursorem: wnętrze glifu, potem linia dokładnie pod kursorem, potem glif w tolerancji (drobne kropki), potem linia w tolerancji
+  const pick = ev => { const near = nodeAtPoint(ev), inside = nodeAtPoint.inside; if (near && inside) return { node: near }; const r = S.selected ? nearestRel(ev) : null; if (r && nearestRel.d <= 3.5 / S.transform.k) return { rel: r }; if (near) return { node: near }; return r ? { rel: r } : {}; };
+  // U21: w pęku prawie równoległych linii wygrywa linia NAJBLIŻSZA kursorowi, a nie ta narysowana na wierzchu
+  const nearestRel = ev => { if (!gE || !S.selected) return null; const els = gE.selectAll('g.rel').nodes(); if (!els.length) return null; const [x, y] = d3.pointer(ev, rotG.node()); const lim = 7 / S.transform.k; let best = null, bd = lim;
+    for (const el of els) { const P = el.__pts; if (!P) continue; for (let i = 1; i < P.length; i++) { const a = P[i - 1], b = P[i], dx = b.x - a.x, dy = b.y - a.y, L2 = dx * dx + dy * dy || 1; const t = clamp(((x - a.x) * dx + (y - a.y) * dy) / L2, 0, 1); const d = Math.hypot(x - a.x - t * dx, y - a.y - t * dy) + (el.classList.contains('chain') ? 0.6 / S.transform.k : 0); if (d < bd) { bd = d; best = el; } } }
+    nearestRel.d = best ? bd : Infinity; return best; };
+  svg.on('click', ev => { if (ev.defaultPrevented) return; const g = nodeOf(ev); if (g) { select(g.getAttribute('data-id'), { from:'graph' }); return; } const pk = pick(ev); if (pk.node) { select(pk.node, { from:'graph' }); return; } const r = pk.rel || relOf(ev); if (r) { clickEdge(r); return; }
+    if (performance.now() - (S.legendClosedAt || 0) < 700) return; // U11: klik w pustą scenę, który zamknął legendę, nie kasuje wyboru
+    select(null); });
+  svg.on('keydown', ev => { const g = nodeOf(ev); if ((ev.key === 'Enter' || ev.key === ' ') && g) { ev.preventDefault(); select(g.getAttribute('data-id'), { from:'graph' }); } });
+  svg.on('pointerover', ev => { const g = nodeOf(ev); if (g) { hotEdge(null); showTip(g.getAttribute('data-id'), ev, g); return; } const r = nearestRel(ev) || relOf(ev); if (r) showEdgeTip(r, ev); });
+  svg.on('pointermove', ev => { const pk = nodeOf(ev) ? {} : pick(ev); if (pk.node) { if (!hovG || hovG.getAttribute('data-id') !== pk.node) { hotEdge(null); showTip(pk.node, ev, elById[pk.node]); } moveTip(ev); return; } else if (!nodeOf(ev) && hovG && !relOf(ev) && ev.target === svg.node()) hideTip();
+    if (!nodeOf(ev) && S.selected) { const r = pk.rel; if (r) { if (hovG) hideTip(); if (hotEid !== r.__edge.id) showEdgeTip(r, ev); } else if (hotEid && !relOf(ev)) { hotEdge(null); hideTip(); } } moveTip(ev); });
+  svg.on('pointerout', ev => { const to = ev.relatedTarget && ev.relatedTarget.closest ? ev.relatedTarget : null; const g = nodeOf(ev); if (g && !(to && to.closest('g.node') === g)) hideTip(); const r = relOf(ev); if (r && !(to && to.closest('g.rel') === r)) { hotEdge(null); hideTip(); } });
+  svg.on('focusin', ev => { const g = nodeOf(ev); if (g && g.matches(':focus-visible')) showTip(g.getAttribute('data-id'), ev, g); });
+  svg.on('focusout', ev => { if (nodeOf(ev)) hideTip(); });
+  measure(); fit(false);
+}
+function onZoom() {
+  const k = S.transform.k; const ms = clamp(0.8 / k, 0.42, 1.5) * (gE && gE.classed('hub') ? 0.7 : 1);
+  if (gE) gE.selectAll('g.mk').attr('transform', function () { const d = this.__mk; return `translate(${F(d.x)},${F(d.y)}) rotate(${F(d.ang)}) scale(${F(ms * (d.k || 1))})`; });
+  placeSelLabel();
+}
+function measure() { const r = $('#stage').getBoundingClientRect(); S.W = r.width; S.H = r.height; S.mobile = window.matchMedia('(max-width: 760px)').matches; syncSheet(); }
+const OVERLAY_PAD = 70; // pas u dołu sceny na żetony relacji i podpis wybranego węzła
+function centerY() { if (!S.mobile) return (S.H - OVERLAY_PAD) / 2; const panel = $('#panel'); const sheetH = panel.classList.contains('open') ? Math.min(panel.offsetHeight, S.H * 0.66) : 74; return Math.max(60, (S.H - sheetH) / 2); }
+// pozycja ekranowa punktu sceny z uwzględnieniem obrotu grafu (B1)
+function scr(p, deg = S.rot) { const r = deg * Math.PI / 180, c = Math.cos(r), sn = Math.sin(r); return [S.transform.applyX(p.x * c - p.y * sn), S.transform.applyY(p.x * sn + p.y * c)]; }
+// ramka całości (kontur + podpisy sektorów) po obrocie grafu o deg stopni
+function bboxAt(deg) { const L = S.L, phi = deg * Math.PI / 180; const bb = { x0:Infinity, x1:-Infinity, y0:Infinity, y1:-Infinity }; const grow = (r, a) => { const x = r * Math.sin(a + phi), y = -r * Math.cos(a + phi); bb.x0 = Math.min(bb.x0, x); bb.x1 = Math.max(bb.x1, x); bb.y0 = Math.min(bb.y0, y); bb.y1 = Math.max(bb.y1, y); };
+  for (const s of L.active) { const c = L.contour[s]; for (let i = 0; i < c.th.length; i++) grow(c.rho[i] + 6, c.th[i]); const sl = L.sectorLabel[s]; for (const a of [sl.a0, sl.mid, sl.a1]) grow(sl.r + 24, a); } return bb; }
+function fit(animate) {
+  // skala zawsze z ramki w położeniu wyjściowym (wybór węzła nie zmienia powiększenia); po obrocie zmienia się tylko wyśrodkowanie
+  measure(); const L = S.L; if (!L) return; const b0 = L.bbox; const availH = S.mobile ? S.H - 74 : S.H - OVERLAY_PAD;
+  const k = clamp(Math.min(S.W / (b0.x1 - b0.x0), availH / (b0.y1 - b0.y0)) * 0.994, 0.2, 2.4); const bb = Math.abs(normDeg(S.rotTarget)) < 0.5 ? b0 : bboxAt(S.rotTarget);
+  const t = d3.zoomIdentity.translate(S.W / 2 - k * (bb.x0 + bb.x1) / 2, centerY() - k * (bb.y0 + bb.y1) / 2).scale(k); S.userZoomed = false;
+  if (animate && !still()) svg.transition().duration(650).ease(d3.easeCubicOut).call(zoom.transform, t); else svg.call(zoom.transform, t);
+}
+function revealInView(id) { // desktop: jeśli wybrany węzeł jest poza sceną albo pod nakładkami, przesuń widok
+  const q = drawnPos(id); if (!q || S.mobile || !S.userZoomed) return; const t = S.transform; const [sx, sy] = scr(q, S.rotTarget); const m = 24;
+  if (sx >= m && sx <= S.W - m && sy >= m && sy <= S.H - OVERLAY_PAD + 6) return;
+  const tx = clamp(sx, m + 60, S.W - m - 60), ty = clamp(sy, m + 40, S.H - OVERLAY_PAD - 80); const nt = d3.zoomIdentity.translate(t.x + (tx - sx), t.y + (ty - sy)).scale(t.k);
+  if (still()) svg.call(zoom.transform, nt); else svg.transition().duration(380).call(zoom.transform, nt);
+}
+function revealAboveSheet(id) {
+  const q = drawnPos(id); if (!q || !S.mobile) return; const panel = $('#panel'); const sheetTop = S.H - (panel.classList.contains('open') ? Math.min(panel.offsetHeight, S.H * 0.66) : 74); const t = S.transform;
+  const [sx, sy] = scr(q, S.rotTarget); const ty = clamp(sy, 64, Math.max(80, sheetTop - 64)), tx = clamp(sx, 36, S.W - 36); if (Math.abs(ty - sy) < 2 && Math.abs(tx - sx) < 2) return;
+  const nt = d3.zoomIdentity.translate(t.x + (tx - sx), t.y + (ty - sy)).scale(t.k); if (still()) svg.call(zoom.transform, nt); else svg.transition().duration(320).call(zoom.transform, nt);
+}
+// telefon: arkusz z treścią. Zwinięty zostawia sam graf (widać tylko nagłówek o wysokości --peek).
+function setSheet(open, opts = {}) { const panel = $('#panel'); if (!S.mobile) return; const was = panel.classList.contains('open'); panel.classList.toggle('open', !!open); panel.classList.remove('dragging'); panel.style.transform = ''; syncSheet();
+  if (was !== !!open && !opts.silent) setTimeout(() => { if (!S.userZoomed) fit(true); else if (S.selected) revealAboveSheet(S.selected); }, still() ? 40 : 380); }
+// przeciąganie: w dół za nagłówek albo za treść przewiniętą do góry zwija arkusz, w górę za nagłówek rozwija; arkusz idzie za palcem
+function initSheetDrag() { const panel = $('#panel'); let st = null; const PEEK = 74;
+  panel.addEventListener('touchstart', ev => { st = null; if (!S.mobile || ev.touches.length !== 1) return; const t = ev.touches[0]; st = { y0: t.clientY, x0: t.clientX, t0: performance.now(), open: panel.classList.contains('open'), onHead: !!(ev.target.closest && ev.target.closest('#panel-top')), atTop: panel.scrollTop <= 0, drag: false, dy: 0, h: panel.getBoundingClientRect().height }; }, { passive: true });
+  panel.addEventListener('touchmove', ev => { if (!st) return; const t = ev.touches[0]; const dy = t.clientY - st.y0, dx = t.clientX - st.x0;
+    if (!st.drag) { if (Math.abs(dy) < 7) return; if (Math.abs(dx) > Math.abs(dy)) { st = null; return; } const down = dy > 0; const ok = st.open ? (down && (st.onHead || st.atTop)) : (!down); if (!ok) { st = null; return; } st.drag = true; panel.classList.add('dragging'); }
+    if (ev.cancelable) ev.preventDefault(); st.dy = dy; const off = Math.max(0, st.h - PEEK); panel.style.transform = `translateY(${clamp((st.open ? 0 : off) + dy, 0, off)}px)`; }, { passive: false });
+  const end = () => { const s = st; st = null; if (!s || !s.drag) { panel.classList.remove('dragging'); return; } const v = s.dy / Math.max(1, performance.now() - s.t0); S.sheetDragAt = performance.now(); setSheet(s.open ? !(s.dy > 56 || v > 0.45) : (s.dy < -40 || v < -0.45)); };
+  panel.addEventListener('touchend', end); panel.addEventListener('touchcancel', end); }
+function syncSheet() { const open = $('#panel').classList.contains('open'); const tb = $('#sheet-toggle'); if (tb) { tb.setAttribute('aria-expanded', String(open)); tb.setAttribute('aria-label', open ? 'Zwiń panel i pokaż sam graf' : 'Rozwiń panel'); } for (const id of ['#view-home', '#view-node']) { const el = $(id); if (el) el.inert = !!S.mobile && !open; } }
+function still() { return document.visibilityState === 'hidden' || window.matchMedia('(prefers-reduced-motion: reduce)').matches; }
+
+/* ---------- B1: obrót wybranego węzła na godzinę szóstą ---------- */
+const normDeg = d => ((d + 180) % 360 + 360) % 360 - 180;
+const homePos = id => { const p = S.L.pos[id]; return p && p.home ? p.home : p; };
+// organ, do którego „należy" węzeł: kółko szefa i podjednostki obracają graf tak samo jak ich organ (wybór podjednostki nie obraca ponownie)
+function anchorOf(id) {
+  let p = S.L.pos[id]; if (!p || p.kind === 'root') return null; let qid = id;
+  if (p.kind === 'ghost') { qid = p.via; p = S.L.pos[qid]; if (!p) return null; }
+  if (p.fanOf) return p.fanOf;
+  if (p.kind === 'head') { const o = S.L.pos[p.org]; if (o && (o.fanOf || o.kind === 'sat')) return o.fanOf || o.anchor || p.org; return p.org || qid; }
+  if (p.kind === 'sat' || p.kind === 'row') return p.anchor || qid;
+  return qid;
+}
+function rotationFor(id) { const a = id ? anchorOf(id) : null; const p = a ? homePos(a) : null; if (!p || (Math.abs(p.x) < 1 && Math.abs(p.y) < 1)) return 0; return 180 - Math.atan2(p.x, -p.y) * 180 / Math.PI; }
+function applyRot(deg) { S.rot = deg; if (rotG) rotG.attr('transform', `rotate(${F(deg)})`); orientLabels(); if (sealTxt) sealTxt.attr('transform', `rotate(${F(-deg)})`); placePills(); }
+let rotTimer = null;
+function setRotation(target, instant) {
+  const from = S.rot, to = from + normDeg(target - from); S.rotTarget = to; if (rotTimer) { rotTimer.stop(); rotTimer = null; }
+  if (instant || still() || Math.abs(to - from) < 0.4) { applyRot(normDeg(to)); S.rotTarget = S.rot; return; }
+  const dur = clamp(620 + Math.abs(to - from) * 3.1, 900, 1180);
+  rotTimer = d3.timer(el => { const t = Math.min(1, el / dur); applyRot(from + (to - from) * d3.easeCubicInOut(t)); if (t >= 1) { rotTimer.stop(); rotTimer = null; applyRot(normDeg(to)); S.rotTarget = S.rot; } });
+}
+
+/* ---------- B2: wachlarz podjednostek wybranego organu ---------- */
+const MINI_S = 6.5, MINI_HEAD = 3.5, MINI_PITCH = 25; // mini-glif ≈ 55% zwykłego organu
+const SEL_K = 1.6, FOCUS_EXTRA = 2 * MINI_S * (SEL_K - 1), FAN_MS = 720, REFLOW_MS = 420; // jak w oryginale: wybrany mini-glif jest 1,6× większy (17,6 wobec 11 j.), odstęp między krawędziami stały, rząd rozsuwa się ok. 0,72 s (easeInOutCubic)
+let fanTimer = null;
+function fanFocus(pid) { const ids = (S.satsOf && S.satsOf[pid]) || []; const n = S.selected ? S.D.byId[S.selected] : null; if (!n) return null; if (ids.includes(n.id)) return n.id; if (n.headOf && ids.includes(n.headOf)) return n.headOf; return null; }
+function fanParentFor(n) {
+  if (!n) return null; const has = id => !!(id && S.satsOf && S.satsOf[id] && S.satsOf[id].length); const p = S.L.pos[n.id]; if (!p) return null;
+  if (p.fanOf) return p.fanOf;
+  if (p.kind === 'ghost') { const v = S.L.pos[p.via]; const a = v ? (v.fanOf || v.anchor) : null; return has(a) ? a : null; }
+  if (p.kind === 'head') { const o = S.L.pos[p.org]; if (o && (o.fanOf || o.kind === 'sat')) { const a = o.fanOf || o.anchor; return has(a) ? a : null; } return has(p.org) ? p.org : null; }
+  if (p.kind === 'sat' || p.kind === 'row') return has(p.anchor) ? p.anchor : null;
+  return has(n.id) ? n.id : null;
+}
+function miniShape(n) { const k = glyphKind(n); return k === 'head' || k === 'root' ? 'department' : k; }
+// gdzie stają mini-glify: jeden łuk przy organie albo, dla dużych gron (izby parlamentu), kilka łuków ułożonych grupami wg rodzaju
+function fanSlots(P, ids, focus) {
+  const wOf = id => MINI_PITCH + (id && id === focus ? FOCUS_EXTRA : 0); const spread = (cells, r, centreFn) => { const tot = cells.reduce((a, id) => a + wOf(id), 0); const ac = centreFn(tot / r, r); let cur = -tot / 2; const out = []; for (const id of cells) { const w = wOf(id); if (id) out.push({ id, r, a: ac + (cur + w / 2) / r }); cur += w; } return out; };
+  const L = S.L, D = S.D, n = ids.length; const pa = Math.atan2(P.x, -P.y); const satR = Math.max(...ids.map(id => Math.hypot(L.pos[id].x, L.pos[id].y))); const arc = L.sectorArc[P.sector];
+  const inArc = a => { if (!arc) return a; while (a < arc.start) a += 2 * Math.PI; while (a > arc.end) a -= 2 * Math.PI; return a; };
+  const centre = (w, r) => { if (!arc || w + 24 / r >= arc.end - arc.start) return arc ? arc.mid : pa; const a = inArc(pa); return a >= arc.start && a <= arc.end ? clamp(a, arc.start + w / 2 + 12 / r, arc.end - w / 2 - 12 / r) : pa; };
+  const outer = RAD[3] + BAND_HALF + 23;
+  if (n <= 20) { // wolny pas tuż za pasmem zewnętrznego pierścienia albo między pierścieniami, gdy organ stoi głębiej i wachlarz się tam mieści
+    let rf = outer; if (P.idx === 4) rf = satR - 14;
+    else if (!S.hub && P.kind === 'primary' && P.idx < 3 && satR < RAD[3]) { const mid = (RAD[P.idx] + RAD[P.idx + 1]) / 2 + 3; if (n <= Math.floor(1.12 * mid / MINI_PITCH)) rf = mid; }
+    return spread(ids, rf, centre); }
+  const groupOf = nd => nd.type === 'political_group' ? 2 : (nd.type === 'commission' && nd.subtype === 'committee') ? ({ EXTRAORDINARY: 4, INVESTIGATIVE: 5 }[nd.committeeKind] || 3) : nd.type === 'department' ? 1 : 0; // ciała kolegialne, kancelaria, kluby i koła, komisje stałe, nadzwyczajne, śledcze
+  const coll = new Intl.Collator('pl'); const byG = new Map(); for (const id of ids) { const g = groupOf(D.byId[id]); if (!byG.has(g)) byG.set(g, []); byG.get(g).push(id); }
+  const groups = [...byG.keys()].sort((a, b) => a - b).map(g => byG.get(g).sort((x, y) => coll.compare(D.byId[x].name, D.byId[y].name)));
+  // promienie łuków: od organu na zewnątrz, z pominięciem pierścieni zajętych w tej płycie, linii pierścieni i pasa gron kropek; dalej już poza płytą
+  const pr = Math.hypot(P.x, P.y); const placed = (L.placed && L.placed[P.sector]) || []; const busy = [0, 1, 2, 3].filter(j => (placed[j] || []).length).map(j => j === 3 ? [RAD[3] - BAND_HALF - 10, RAD[3] + BAND_HALF + 10] : [RAD[j] - 36, RAD[j] + 30]);
+  const c = L.contour[P.sector]; const edge = c ? Math.max(...c.rho) : RAD[3] + VALLEY + 40; const dotsFrom = RAD[3] + OUT_OFF - 20;
+  const radii = []; let r = pr + 58; const span = arc ? arc.end - arc.start : 1.4; let guard = 0;
+  const capOf = rr => Math.max(3, Math.floor((span - 30 / rr) * rr / MINI_PITCH));
+  while (radii.reduce((a, rr) => a + capOf(rr), 0) < n + groups.length * 2 + 6 && guard++ < 400) {
+    if (busy.some(b => r > b[0] - 11 && r < b[1] + 11) || RAD.some(R => Math.abs(r - R) < 12)) { r += 4; continue; }
+    if (r > dotsFrom && r < edge + 14) { r = edge + 16; continue; }
+    radii.push(r); r += 26; }
+  // pakowanie: grupa zaczyna nowy łuk, gdy nie mieści się w reszcie bieżącego; między grupami na jednym łuku odstęp jednego miejsca
+  const rows = radii.map(rr => ({ r: rr, cap: capOf(rr), cells: [] })); let ri = 0;
+  for (const g of groups) { let row = rows[ri]; const gap = row && row.cells.length ? 1 : 0;
+    if (row && row.cells.length && row.cells.length + gap + g.length > row.cap) { ri++; row = rows[ri]; } else if (gap) row.cells.push(null);
+    for (const id of g) { while (rows[ri] && rows[ri].cells.length >= rows[ri].cap) ri++; if (!rows[ri]) rows.push({ r: rows[rows.length - 1].r + 26, cap: capOf(rows[rows.length - 1].r + 26), cells: [] }); rows[ri].cells.push(id); } }
+  const out = []; for (const row of rows) { if (row.cells.length) out.push(...spread(row.cells, row.r, centre)); }
+  return out;
+}
+// geometria elementów wachlarza dla chwilowego kąta, promienia i skali mini-glifu (ta sama dla stanu końcowego i każdej klatki animacji)
+function fanMiniT(a, r, k) { return `translate(${F(r * Math.sin(a))},${F(-r * Math.cos(a))}) rotate(${F(a * 180 / Math.PI)})${Math.abs(k - 1) > 0.001 ? ` scale(${F(k)})` : ''}`; }
+function fanHeadXY(a, r, k, hx, shape) { const x = r * Math.sin(a), y = -r * Math.cos(a), dy = (innerEdge(shape, MINI_S) + MINI_HEAD * 0.25) * k, h = hx * k; return { x: x + h * Math.cos(a) - dy * Math.sin(a), y: y + h * Math.sin(a) + dy * Math.cos(a), dy }; }
+function fanLineD(P, a, r, k) { const x = r * Math.sin(a), y = -r * Math.cos(a); const ux = x - P.x, uy = y - P.y, ul = Math.hypot(ux, uy) || 1; const d0 = boundaryDist(P, ux / ul, uy / ul) + 1, d1 = MINI_S * 1.25 * k; if (ul <= d0 + d1) return ''; return `M${F(P.x + ux / ul * d0)},${F(P.y + uy / ul * d0)}L${F(x - ux / ul * d1)},${F(y - uy / ul * d1)}`; }
+function fanPaint(e, a, r, k) { e.cur = { a, r, k }; if (e.el) e.el.setAttribute('transform', fanMiniT(a, r, k)); for (const h of e.heads) { const q = fanHeadXY(a, r, k, h.hx, e.shape); if (h.el) h.el.setAttribute('transform', `translate(${F(q.x)},${F(q.y)}) rotate(${F(a * 180 / Math.PI)})${Math.abs(k - 1) > 0.001 ? ` scale(${F(k)})` : ''}`); } if (e.line) e.line.setAttribute('d', fanLineD(e.P, a, r, k)); }
+// stan docelowy trafia do L.pos od razu (linie relacji, uchwyty testowe i trafianie kursorem liczą się z położenia końcowego), animuje się tylko rysunek
+function fanTarget(e, slot, k) { const L = S.L; const a = slot.a, r = slot.r; e.to = { a, r, k }; const p = L.pos[e.id]; Object.assign(p, { x: r * Math.sin(a), y: -r * Math.cos(a), a, r, rot: a * 180 / Math.PI, k, s: MINI_S * k }); for (const h of e.heads) { const q = fanHeadXY(a, r, k, h.hx, e.shape); Object.assign(L.pos[h.id], { x: q.x, y: q.y, a, r: r - q.dy, rot: a * 180 / Math.PI, s: MINI_HEAD * k }); } if (e.el) e.el.classList.toggle('big', k > 1.01); }
+function fanAnimate(ms, opening) {
+  if (fanTimer) { fanTimer.stop(); fanTimer = null; } const els = S.fanEls || []; const done = () => { for (const e of els) fanPaint(e, e.to.a, e.to.r, e.to.k); if (gE) gE.interrupt().transition().duration(still() ? 0 : 180).style('opacity', 1); placePills(); };
+  if (!ms || still()) { done(); if (gE) gE.interrupt().style('opacity', 1); return; }
+  for (const e of els) e.from = Object.assign({}, e.cur); if (gE) gE.interrupt().style('opacity', 0); // jak w oryginale: linie relacji wracają, gdy ruch się skończy
+  const eo = d3.easeCubicOut, eio = d3.easeCubicInOut;
+  fanTimer = d3.timer(el => { const t = Math.min(1, el / ms); const ta = eio(t), tr = opening ? eo(Math.min(1, el / 320)) : ta, tk = opening ? eo(Math.min(1, el / 220)) : ta;
+    for (const e of els) fanPaint(e, e.from.a + (e.to.a - e.from.a) * ta, e.from.r + (e.to.r - e.from.r) * tr, e.from.k + (e.to.k - e.from.k) * tk);
+    if (t >= 1) { fanTimer.stop(); fanTimer = null; done(); } });
+}
+function openFan(pid, instant) {
+  const L = S.L, D = S.D, P = L.pos[pid], ids = S.satsOf[pid]; if (!P || !ids || !ids.length) return; S.fan = pid;
+  const focus = fanFocus(pid); S.fanFocus = focus; const slots = fanSlots(P, ids, focus); const n = ids.length; const rfMin = Math.min(...slots.map(q => q.r));
+  gF.selectAll('*').remove(); gF.classed('dense', n > 20); gT.classed('fan-inner', rfMin < RAD[3] && P.kind !== 'blob'); S.fanEls = [];
+  slots.forEach(slot => { const id = slot.id;
+    const nd = D.byId[id], home = L.pos[id]; if (elById[id]) { elById[id].remove(); delete elById[id]; }
+    const p = L.pos[id] = { x: 0, y: 0, a: slot.a, r: slot.r, rot: 0, kind:'mini', s:MINI_S, shape:miniShape(nd), sector:home.sector, anchor:home.anchor, fanOf:pid, home };
+    const st = orgState(nd); const g = mkNode(nd, p, `k-mini in-fan sh-${p.shape}${st ? ' st-' + st : ''}`, false).attr('tabindex', 0);
+    g.append('circle').attr('class', 'hit').attr('r', MINI_S * 1.35 + 2.5);
+    if (home.kind === 'row') { g.classed('k-multi', true); g.append('path').attr('class', 'glyph back').attr('d', shapePath(p.shape, MINI_S)).attr('transform', 'translate(2.6,-2.6)').style('pointer-events', 'none'); }
+    g.append('path').attr('class', 'glyph').attr('d', shapePath(p.shape, MINI_S));
+    if (p.shape === 'corp') g.append('path').attr('class', 'glyph inner').attr('d', roundedPoly(regPoly(4, MINI_S * 0.5 * Math.SQRT2, Math.PI / 4), MINI_S * 0.3)).style('pointer-events', 'none');
+    const e = { id, el: g.node(), P, shape: p.shape, heads: [], line: null, cur: null, to: null };
+    // kółka szefów podjednostek (w spoczynku nie mają własnego glifu)
+    const heads = (S.headMap[id] || []).filter(h => L.pos[h.id] && (L.pos[h.id].kind === 'ghost' || L.pos[h.id].fanOf));
+    heads.forEach((h, k) => { const hx = (k - (heads.length - 1) / 2) * (2 * MINI_HEAD + 1);
+      const hp = L.pos[h.id] = { x: 0, y: 0, a: slot.a, r: slot.r, rot: 0, kind:'head', s:MINI_HEAD, sector:home.sector, org:id, fanOf:pid, home:L.pos[h.id].home || L.pos[h.id] }; if (!L.draw.includes(h.id)) L.draw.push(h.id);
+      const hs = headState(h); const hg = mkNode(h, hp, `k-head k-minihead in-fan ${hs}`, false); hg.append('circle').attr('class', 'hit').attr('r', MINI_HEAD + 2); hg.append('circle').attr('class', 'glyph').attr('r', MINI_HEAD);
+      if (hs === 'acting') hg.append('path').attr('class', 'half').attr('d', `M0,${F(-MINI_HEAD)}A${F(MINI_HEAD)},${F(MINI_HEAD)} 0 0 1 0,${F(MINI_HEAD)}Z`); e.heads.push({ id: h.id, el: hg.node(), hx }); });
+    e.line = gF.append('path').attr('class', 'fanline').attr('data-for', id).node();
+    fanTarget(e, slot, id === focus ? SEL_K : 1);
+    // start jak w oryginale: mini-glif wyrasta z własnej kropki (jej kąt i promień), potem rząd rozsuwa się po łuku do miejsc docelowych
+    let a0 = Math.atan2(home.x, -home.y); while (a0 - slot.a > Math.PI) a0 -= 2 * Math.PI; while (a0 - slot.a < -Math.PI) a0 += 2 * Math.PI;
+    e.cur = { a: a0, r: Math.hypot(home.x, home.y), k: ((home.kind === 'row' ? SQ_S / 2 : DOT_R) / MINI_S) * 1.15 }; S.fanEls.push(e);
+  });
+  fanDim(ids);
+  if (!instant && !still()) { for (const e of S.fanEls) fanPaint(e, e.cur.a, e.cur.r, e.cur.k); fanAnimate(FAN_MS, true); } else fanAnimate(0);
+  gF.style('opacity', 1); nodeSel = gN.selectAll('g.node');
+}
+// sąsiednie grona kropek przygasają tylko tam, gdzie mini-glif naprawdę na nie nachodzi (rząd stoi we własnym pasie, więc zwykle nie ma czego odsuwać)
+function fanDim(ids) { const L = S.L; gN.selectAll('.fan-dim').classed('fan-dim', false); const minis = ids.map(id => L.pos[id]).filter(Boolean);
+  for (const id of L.draw) { const q = L.pos[id]; if (!q || q.fanOf || !['sat', 'row'].includes(q.kind) || !elById[id]) continue; const pts = q.kind === 'row' ? q.sq : [q]; const reach = q.kind === 'row' ? SQ_S / 2 + 1 : DOT_R + 1; if (pts.some(c => minis.some(m => Math.hypot(c.x - m.x, c.y - m.y) < m.s * 1.2 + reach))) elById[id].classList.add('fan-dim'); } }
+// zmiana wyboru wewnątrz otwartego wachlarza: nowy wybrany rośnie, sąsiedzi robią mu miejsce, poprzedni maleje
+function reflowFan(instant) { const pid = S.fan; if (!pid) return; const focus = fanFocus(pid); if (focus === S.fanFocus) return; S.fanFocus = focus; const L = S.L, P = L.pos[pid], ids = S.satsOf[pid]; const slots = fanSlots(P, ids, focus); const by = new Map(slots.map(q => [q.id, q]));
+  for (const e of S.fanEls || []) { const q = by.get(e.id); if (q) fanTarget(e, q, e.id === focus ? SEL_K : 1); } fanDim(ids); fanAnimate(instant ? 0 : REFLOW_MS, false); }
+function closeFan(instant) {
+  const L = S.L, D = S.D, pid = S.fan; if (!pid) return; S.fan = null; S.fanFocus = null; S.fanEls = []; if (fanTimer) { fanTimer.stop(); fanTimer = null; if (gE) gE.interrupt().style('opacity', 1); } gT.classed('fan-inner', false); gN.selectAll('.fan-dim').classed('fan-dim', false);
+  const quick = instant || still();
+  for (const id of Object.keys(L.pos)) { const p = L.pos[id]; if (!p || p.fanOf !== pid) continue; const el = elById[id]; const home = p.home; L.pos[id] = home; delete elById[id];
+    if (p.kind === 'head') { const i = L.draw.indexOf(id); if (i >= 0) L.draw.splice(i, 1); }
+    if (el) { const sel = d3.select(el).classed('node', false).classed('leaving', true).attr('data-id', null).attr('tabindex', null); if (quick) sel.remove(); else sel.interrupt().transition().duration(240).ease(d3.easeCubicIn).attr('transform', `translate(${F(home.x)},${F(home.y)}) rotate(${F(p.rot)}) scale(0.3)`).style('opacity', 0).remove(); }
+    if (home.kind === 'sat' || home.kind === 'row') { const g = home.kind === 'row' ? drawRow(D.byId[id], home) : drawSat(D.byId[id], home); if (!quick) g.style('opacity', 0).transition().delay(120).duration(200).style('opacity', null); } }
+  if (quick) gF.selectAll('*').remove(); else gF.selectAll('path').transition().duration(200).style('opacity', 0).remove();
+  nodeSel = gN.selectAll('g.node');
+}
+function syncFan(n, instant) { const want = fanParentFor(n); if (want === S.fan) { reflowFan(instant); return; } if (S.fan) closeFan(instant); if (want) openFan(want, instant); applyLegendFilter(true); }
+
+/* ---------- B3: legenda jako filtr typów encji i relacji ---------- */
+const LEGEND_LABEL = {};
+function entityKeys(id, seen) {
+  const n = S.D.byId[id], p = S.L.pos[id]; if (!n || !p) return []; seen = seen || new Set(); if (seen.has(id)) return []; seen.add(id);
+  if (p.kind === 'root') return ['entity:root'];
+  if (p.kind === 'ghost') return entityKeys(p.via, seen);
+  if (n.type === 'dept_head') { const st = headState(n); const keys = ['entity:head']; if (st) keys.push('entity:' + st); const org = p.org || n.headOf; return org ? keys.concat(entityKeys(org, seen)) : keys; }
+  if (p.kind === 'blob' || p.kind === 'parl' || p.kind === 'parlring') return ['entity:parl'];
+  const own = 'entity:' + glyphKind(n);
+  if (p.kind === 'sat' || p.kind === 'mini' || p.kind === 'row') return [p.kind === 'row' || (p.home && p.home.kind === 'row') ? 'entity:row' : 'entity:sat', own].concat(p.anchor ? entityKeys(p.anchor, seen) : []);
+  return [own];
+}
+const hiddenBy = id => S.hidden.size ? entityKeys(id).find(k => S.hidden.has(k)) || null : null;
+const isHiddenNode = id => !!hiddenBy(id) && !S.reveal.has(id);
+function saveHidden() { try { sessionStorage.setItem('gp-legend-hidden', JSON.stringify([...S.hidden])); } catch {} }
+function loadHidden() { try { const a = JSON.parse(sessionStorage.getItem('gp-legend-hidden') || '[]'); if (Array.isArray(a)) S.hidden = new Set(a.filter(k => typeof k === 'string')); } catch {} }
+function applyLegendFilter(quiet) {
+  for (const id of Object.keys(elById)) elById[id].classList.toggle('lg-hidden', isHiddenNode(id));
+  if (gF) gF.selectAll('path.fanline').each(function () { this.classList.toggle('lg-hidden', isHiddenNode(this.getAttribute('data-for'))); });
+  if (gN) gN.selectAll('g.k-parl').classed('lg-hidden', S.hidden.has('entity:parl') && !['parl', 'parlring', 'blob'].some(k => [...S.reveal].some(r => S.L.pos[r] && S.L.pos[r].kind === k)));
+  document.querySelectorAll('[data-lkey]').forEach(b => b.setAttribute('aria-pressed', String(!S.hidden.has(b.getAttribute('data-lkey')))));
+  const nHid = S.hidden.size; const c = $('#legend-count'); if (c) c.textContent = nHid ? ` · ${nHid} ukryte` : ''; const sh = $('#legend-show'); if (sh) sh.hidden = !nHid;
+  if (!quiet) { hotEdge(null); hideTip(); refreshSelection(); }
+}
+function toggleLegendKey(key) { if (S.hidden.has(key)) S.hidden.delete(key); else S.hidden.add(key); saveHidden(); S.reveal = revealFor(S.selected ? S.D.byId[S.selected] : null); applyLegendFilter(false); }
+// wybrany węzeł ukrytego typu (np. z wyszukiwarki) pokazujemy tymczasowo razem z organem, przy którym stoi
+function revealFor(n) { const out = new Set(); if (!n || !S.hidden.size || !hiddenBy(n.id)) return out; let id = n.id; const seen = new Set(); while (id && !seen.has(id) && S.L.pos[id]) { seen.add(id); out.add(id); const p = S.L.pos[id]; id = p.kind === 'ghost' ? p.via : (p.org || p.fanOf || p.anchor || null); } return out; }
+
+/* ---------- relacje wybranego węzła ---------- */
+const MARK = {
+  dbl:  '<path d="M-9,-4.4L0,0L-9,4.4Z"/><path d="M0,-4.4L9,0L0,4.4Z"/>',
+  tri:  '<path d="M-5,-4.6L5.5,0L-5,4.6Z"/>',
+  open: '<path class="open" d="M-5,-4.6L5.5,0L-5,4.6Z"/>',
+  chev: '<path class="line" d="M-3.4,-4.8L3.6,0L-3.4,4.8"/>',
+  bars: '<path class="line" d="M-2.3,-5.2V5.2M2.3,-5.2V5.2"/>',
+  wave: '<path class="line" d="M0,-6.4C3.8,-4.3 -3.8,-2.1 0,0C3.8,2.1 -3.8,4.3 0,6.4"/>',
+  dot:  '<circle r="3"/>',
+};
+const ARROW = '<path d="M-8.5,-3.9L0,0L-8.5,3.9Z"/>';
+const HUB_MIN = 60; // od tylu relacji węzeł jest „hubem": proste promienie, jedna linia na organ, domyślnie tylko dominujący typ
+const STRENGTH = ['appoints','elects','confirms','nominates','oversees','administers','ex_officio','advises','office','dept_head'];
+const VERB = { elects:'wybiera', appoints:'powołuje', confirms:'zatwierdza', nominates:'wnioskuje', oversees:'nadzoruje', administers:'administruje', advises:'doradza', dept_head:'kieruje', office:'przewodniczy', ex_officio:'zasiada z urzędu' };
+const drawnPos = id => { const p = S.L.pos[id]; return p && p.kind === 'ghost' ? S.L.pos[p.via] : p; };
+// odległość od środka glifu do jego krawędzi w kierunku (ux, uy)
+function boundaryDist(p, ux, uy) {
+  if (!p) return 0;
+  switch (p.kind) {
+    case 'root': return R_SEAL * 1.03;
+    case 'sat': return DOT_R + 1.4;
+    case 'row': return SQ_S * 0.75;
+    case 'head': return p.s + 0.6;
+    case 'blob': return 21;
+    case 'parl': case 'parlring': { const a = p.rot * Math.PI / 180; const lx = Math.abs(ux * Math.cos(a) + uy * Math.sin(a)), ly = Math.abs(-ux * Math.sin(a) + uy * Math.cos(a)); return 1 / Math.hypot(lx / (p.W / 2), ly / p.s) * 1.04; }
+  }
+  if (p.shape === 'elected') return p.s * ELECTED_F + 0.6; if (p.shape === 'head') return p.s + 0.6;
+  const a = p.rot * Math.PI / 180; const lx = Math.abs(ux * Math.cos(a) + uy * Math.sin(a)), ly = Math.abs(-ux * Math.sin(a) + uy * Math.cos(a));
+  if (p.shape === 'commission') return Math.min(p.s * 1.34 / (lx + ly), p.s * 1.22);
+  if (p.shape === 'court' || p.shape === 'advisory') return p.s * 1.08;
+  return Math.min(p.s / Math.max(lx, ly), p.s * 1.2);
+}
+const glyphReach = p => !p ? 0 : p.kind === 'head' ? p.s : p.kind === 'blob' ? 22 : (p.kind === 'parl' || p.kind === 'parlring') ? p.W / 2 : p.shape === 'commission' ? p.s * 1.3 : p.shape === 'elected' ? p.s * ELECTED_F : p.s * 1.22;
+function bridgeEdge(a, b) { // krótki łuk wygięty na zewnątrz koła; przy tym samym położeniu mała pętla nad glifem
+  const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2, ml = Math.hypot(mx, my) || 1, ox = mx / ml, oy = my / ml; const len = Math.hypot(b.x - a.x, b.y - a.y);
+  if (len < 1.5) { const r = 11, cx = a.x + ox * (glyphReach(a) + r), cy = a.y + oy * (glyphReach(a) + r); return { d:`M${F(cx - r)},${F(cy)}a${r},${r} 0 1,0 ${2 * r},0a${r},${r} 0 1,0 ${-2 * r},0`, mid:{ x:cx + ox * r, y:cy + oy * r, ang:0 }, tip:{ x:cx - r, y:cy, ang:90, k:0.7 }, len:70, bridge:true }; }
+  const bow = 40 + Math.max(glyphReach(a), glyphReach(b)) * 2.2; const cx = mx + ox * bow, cy = my + oy * bow;
+  return { d:`M${F(a.x)},${F(a.y)}Q${F(cx)},${F(cy)} ${F(b.x)},${F(b.y)}`, mid:{ x:(a.x + 2 * cx + b.x) / 4, y:(a.y + 2 * cy + b.y) / 4, ang:Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI }, tip:{ x:b.x, y:b.y, ang:Math.atan2(b.y - cy, b.x - cx) * 180 / Math.PI, k:0.7 }, len:Math.max(40, len + bow), bridge:true };
+}
+function routeEdge(e, obstacles) {
+  const a = drawnPos(e.fromId), b = drawnPos(e.toId); if (!a || !b) return null;
+  const dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy); if (len < 20) return bridgeEdge(a, b);
+  const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2; const nx = -dy / len, ny = dx / len;
+  const rootish = a.kind === 'root' || b.kind === 'root';
+  const skip = new Set([e.fromId, e.toId, a.org, b.org, a.comp, b.comp].filter(Boolean));
+  const obs = obstacles.filter(o => !skip.has(o.id) && o.org !== e.fromId && o.org !== e.toId && (o.x - a.x) * (o.x - a.x) + (o.y - a.y) * (o.y - a.y) > 1 && (o.x - b.x) * (o.x - b.x) + (o.y - b.y) * (o.y - b.y) > 1);
+  const disc = rootish ? null : { x:0, y:0, r2:(R_SEAL + 16) * (R_SEAL + 16) }; // linia może przeciąć dysk środka, ale nie pieczęć suwerena
+  const NS = clamp(Math.round(len / 9), 16, 64);
+  // liczba próbek krzywej wpadających w podświetlony glif albo w dysk środka (0 = czysto); przerywa, gdy gorzej niż dotychczasowe najlepsze
+  const score = (cx, cy, limit) => {
+    const x0 = Math.min(a.x, b.x, cx) - 48, x1 = Math.max(a.x, b.x, cx) + 48, y0 = Math.min(a.y, b.y, cy) - 48, y1 = Math.max(a.y, b.y, cy) + 48;
+    const near = obs.filter(o => o.x > x0 && o.x < x1 && o.y > y0 && o.y < y1); if (disc) near.push(disc); if (!near.length) return 0; let bad = 0;
+    for (let i = 1; i <= NS; i++) { const t = 0.03 + i * 0.94 / (NS + 1), u = 1 - t; const x = u * u * a.x + 2 * u * t * cx + t * t * b.x, y = u * u * a.y + 2 * u * t * cy + t * t * b.y;
+      for (const o of near) { const ex = x - o.x, ey = y - o.y; if (ex * ex + ey * ey < o.r2) { bad++; break; } } if (bad > limit) return bad; }
+    return bad;
+  };
+  let cx = mx, cy = my;
+  if (!rootish) { const ml = Math.hypot(mx, my) || 1; const bow = Math.min(46, len * 0.11); cx = mx - mx / ml * bow; cy = my - my / ml * bow; }
+  let best = { cx, cy, c: score(cx, cy, NS) };
+  if (best.c > 0) {
+    // wygięcie na jedną albo drugą stronę, coraz mocniejsze; punkt kontrolny także bliżej źródła lub celu, żeby linia mogła odbić w bok od razu przy glifie stojącym tuż obok
+    const away = (mx * nx + my * ny) >= 0 ? 1 : -1; const hub = obstacles.length > 400;
+    search: for (const d of hub ? [30, 64, 110, 170, 240] : [26, 52, 84, 124, 172, 230, 300, 380]) for (const al of hub ? [0.5, 0.28, 0.72] : [0.5, 0.3, 0.7, 0.18, 0.82]) for (const sgn of [away, -away]) { const x = a.x + dx * al + nx * sgn * d, y = a.y + dy * al + ny * sgn * d; const c = score(x, y, best.c - 1); if (c < best.c) best = { cx:x, cy:y, c }; if (c === 0) break search; }
+  }
+  cx = best.cx; cy = best.cy;
+  // końce na krawędziach glifów
+  const ua = Math.hypot(cx - a.x, cy - a.y) || 1, ub = Math.hypot(b.x - cx, b.y - cy) || 1;
+  const da = boundaryDist(a, (cx - a.x) / ua, (cy - a.y) / ua), db = boundaryDist(b, (cx - b.x) / ub, (cy - b.y) / ub);
+  const A = { x: a.x + (cx - a.x) / ua * da, y: a.y + (cy - a.y) / ua * da }, B = { x: b.x - (b.x - cx) / ub * db, y: b.y - (b.y - cy) / ub * db };
+  return { d:`M${F(A.x)},${F(A.y)}Q${F(cx)},${F(cy)} ${F(B.x)},${F(B.y)}`, mid:{ x:(A.x + 4 * cx + 4 * B.x) / 9, y:(A.y + 4 * cy + 4 * B.y) / 9, ang:Math.atan2((cy - A.y) * 2 + (B.y - cy) * 4, (cx - A.x) * 2 + (B.x - cx) * 4) * 180 / Math.PI }, tip:{ x:B.x, y:B.y, ang:Math.atan2(b.y - cy, b.x - cx) * 180 / Math.PI, k:0.82 }, len, blocked: best.c > 0 };
+}
+function straightEdge(e, obstacles) {
+  const a = drawnPos(e.fromId), b = drawnPos(e.toId); if (!a || !b) return null;
+  const dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy); if (len < 20) return bridgeEdge(a, b); const ux = dx / len, uy = dy / len;
+  // tylko przeszkody blisko źródła lub celu (do 95 px): tam prosta linia wyglądałaby, jakby wychodziła z cudzego glifu
+  const skip = new Set([e.fromId, e.toId, a.org, b.org, a.comp, b.comp].filter(Boolean));
+  const near = (obstacles || []).filter(o => !skip.has(o.id) && o.org !== e.fromId && o.org !== e.toId && (Math.hypot(o.x - a.x, o.y - a.y) < 95 || Math.hypot(o.x - b.x, o.y - b.y) < 60));
+  for (const o of near) { const t = clamp(((o.x - a.x) * ux + (o.y - a.y) * uy), 0, len); const px = a.x + ux * t, py = a.y + uy * t; if ((px - o.x) * (px - o.x) + (py - o.y) * (py - o.y) < o.r2) return routeEdge(e, near); }
+  const da = boundaryDist(a, ux, uy), db = boundaryDist(b, -ux, -uy); const A = { x: a.x + ux * da, y: a.y + uy * da }, B = { x: b.x - ux * db, y: b.y - uy * db }; const L = Math.hypot(B.x - A.x, B.y - A.y);
+  const ang = Math.atan2(dy, dx) * 180 / Math.PI;
+  return { d:`M${F(A.x)},${F(A.y)}L${F(B.x)},${F(B.y)}`, mid:{ x: A.x + (B.x - A.x) * 0.64, y: A.y + (B.y - A.y) * 0.64, ang }, tip:{ x:B.x, y:B.y, ang, k:0.82 }, len:L, straight:true };
+}
+// hub: relacje do tego samego organu (glif + kółko szefa) łączą się w jedną linię, styl według najmocniejszej
+function mergeForHub(own, n) {
+  const groups = new Map();
+  for (const e of own) { const out = e.fromId === n.id; const other = out ? e.toId : e.fromId; const op = S.L.pos[other]; const on = S.D.byId[other];
+    const org = (op && op.org) || (on && on.headOf) || other; const k = (out ? 'o:' : 'i:') + org; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); }
+  return [...groups.values()].map(list => list.sort((x, y) => STRENGTH.indexOf(x.type) - STRENGTH.indexOf(y.type)));
+}
+function dominantKey(n) { let best = null, bc = -1; for (const [k, c] of relGroups(n)) { const score = c + (k.endsWith(':out') ? 0.5 : 0); if (score > bc) { bc = score; best = k; } } return best; }
+function headsOfNode(n) { return n.type === 'dept_head' ? [] : ((S.headMap && S.headMap[n.id]) || []); }
+function edgesFor(n) {
+  const D = S.D; const own = [...n.in, ...n.out]; const seen = new Set(own.map(e => e.id)); const extra = [];
+  const POWER = new Set(['elects','appoints','nominates','confirms']);
+  const heads = headsOfNode(n);
+  for (const h of heads) for (const e of h.in) if (POWER.has(e.type) && !seen.has(e.id)) { seen.add(e.id); extra.push(e); }
+  // łańcuch umocowania w górę aż do suwerena (wybiera / powołuje), tylko gdy jest jednoznaczny
+  let frontier = [n.id, ...heads.map(h => h.id)]; const visited = new Set();
+  for (let depth = 0; depth < 4 && frontier.length; depth++) { const next = [];
+    for (const id of frontier) { if (visited.has(id)) continue; visited.add(id); const ins = D.byId[id].in.filter(e => e.type === 'elects' || e.type === 'appoints'); if (ins.length > 3) continue;
+      for (const e of ins) { if (!seen.has(e.id)) { seen.add(e.id); extra.push(e); } next.push(e.fromId); } }
+    frontier = next; }
+  return { own, extra };
+}
+const relKey = (e, n) => `${e.type}:${e.fromId === n.id ? 'out' : 'in'}`;
+const edgeColor = id => { const p = S.L.pos[id]; return p && p.kind === 'root' ? 'var(--seal-stroke)' : `var(--sec-${S.D.byId[id].sector || 'independent'})`; };
+function drawEdges(n, own, extra, obstacles) {
+  gE.selectAll('*').remove(); gE.classed('hub', false).classed('has-hot', false); S.edgeEl = {}; if (!n) return;
+  const L = S.L; const hubMode = !!S.hub; gE.classed('hub', hubMode);
+  // linie struktury: jednostka nadrzędna i podległe (bez filtra typu)
+  if (!S.relFilter) { const struct = []; if (n.parent && L.pos[n.parent] && !(L.pos[n.id] && L.pos[n.id].fanOf) && !isHiddenNode(visId(n.parent))) struct.push([n.parent, n.id]); for (const c of n.children) if (L.pos[c] && L.pos[c].kind !== 'ghost' && L.pos[c].kind !== 'head' && !L.pos[c].fanOf && !isHiddenNode(c)) struct.push([n.id, c]);
+    for (const [f, t] of struct) { const a = L.pos[f], b = L.pos[t]; if (Math.hypot(a.x - b.x, a.y - b.y) < 12) continue; gE.append('path').attr('class', 'edge struct').style('--c', edgeColor(f)).attr('d', `M${F(a.x)},${F(a.y)}L${F(b.x)},${F(b.y)}`); } }
+  let blocked = 0;
+  const drawOne = (list, chain) => {
+    const e = list[0]; const g = routeEdge(e, obstacles); if (!g) return; if (g.blocked) blocked++; const r = rel(e); const c = edgeColor(e.fromId);
+    const G = gE.append('g').attr('class', `rel e-${e.type}${chain ? ' chain' : ''}`).attr('data-eid', e.id).style('--c', c); G.node().__edge = e; G.node().__edges = list; for (const x of list) S.edgeEl[x.id] = G.node();
+    G.append('path').attr('class', 'edge').attr('d', g.d).attr('stroke-width', r.width).attr('stroke-dasharray', r.dash);
+    if (r.mark && g.len > 60) { const m = G.append('g').attr('class', 'mk').html(MARK[r.mark]); m.node().__mk = g.mid; }
+    if (g.len > 34) { const t = G.append('g').attr('class', 'mk tip').html(ARROW); t.node().__mk = g.tip; }
+    G.append('path').attr('class', 'ehit').attr('d', g.d);
+  };
+  const drawGroup = list => {
+    const e = list[0]; const g = straightEdge(e, obstacles); if (!g) return; if (g.blocked) blocked++; const r = rel(e); const c = edgeColor(e.fromId);
+    const G = gE.append('g').attr('class', `rel hubline e-${e.type}`).attr('data-eid', e.id).style('--c', c); const el = G.node(); el.__edge = e; el.__edges = list; for (const x of list) S.edgeEl[x.id] = el;
+    G.append('path').attr('class', 'edge').attr('d', g.d).attr('stroke-width', 1.15).attr('stroke-dasharray', r.dash);
+    if (r.mark && g.len > 60) { const m = G.append('g').attr('class', 'mk').html(MARK[r.mark]); m.node().__mk = Object.assign({ k: 0.8 }, g.mid); }
+    G.append('path').attr('class', 'ehit').attr('d', g.d);
+  };
+  extra.forEach(e => drawOne([e], true)); // łańcuch umocowania pod spodem, żeby własne relacje dało się najechać
+  if (hubMode) mergeForHub(own, n).forEach(drawGroup); else mergeForHub(own, n).forEach(list => drawOne(list, false));
+  gE.selectAll('g.rel').each(function () { const path = this.querySelector('path.edge'); const Lp = path.getTotalLength(); const n = /L/.test(path.getAttribute('d')) ? 1 : 18; const pts = []; for (let i = 0; i <= n; i++) { const q = path.getPointAtLength(Lp * i / n); pts.push({ x: q.x, y: q.y }); } this.__pts = pts; });
+  S.blockedEdges = blocked; onZoom();
+}
+
+/* ---------- wybór ---------- */
+const visId = id => { const p = S.L.pos[id]; return p && p.kind === 'ghost' ? p.via : id; };
+const SEL_GROW = 1.3;
+function refreshSelection() {
+  const D = S.D; const n = S.selected ? D.byId[S.selected] : null;
+  if (S.grown) { const q = S.L.pos[S.grown.id]; if (q && q === S.grown.p) q.s = S.grown.s; S.grown = null; } // poprzednio wybrany glif wraca do zwykłego rozmiaru
+  gN.selectAll('.halo').remove(); nodeSel.classed('sel', false).classed('nb', false).classed('end-hot', false); gN.classed('has-sel', !!n);
+  if (!n) { gN.selectAll('g.k-parl').classed('sel', false).classed('nb', false); drawEdges(null); return; }
+  let { own, extra } = edgesFor(n);
+  if (S.relFilter) { own = own.filter(e => relKey(e, n) === S.relFilter); extra = []; }
+  if (S.hidden.size) { const ok = e => !S.hidden.has('rel:' + e.type) && !isHiddenNode(visId(e.fromId)) && !isHiddenNode(visId(e.toId)); own = own.filter(ok); extra = extra.filter(ok); } // B3: ukryte typy relacji i linie do ukrytych węzłów
+  const nb = new Set(); for (const e of [...own, ...extra]) { nb.add(e.fromId); nb.add(e.toId); }
+  if (!S.relFilter) { if (n.parent) nb.add(n.parent); n.children.forEach(c => nb.add(c)); }
+  if (n.head) nb.add(n.head); if (n.headOf) nb.add(n.headOf); headsOfNode(n).forEach(h => nb.add(h.id));
+  const p = S.L.pos[n.id]; if (p && (p.kind === 'parlring' || p.kind === 'parl')) (p.members || []).forEach(m => nb.add(m));
+  const vis = new Set([...nb].map(visId)); const me = visId(n.id); vis.delete(me);
+  nodeSel.classed('nb', d => vis.has(d.id)).classed('sel', d => d.id === me);
+  // kapsuła jest etykietą grupy: podświetla się, gdy wybrano ciało łączne (np. z wyszukiwarki) albo gdy w grze jest któraś izba
+  gN.selectAll('g.k-parl').each(function () { const pid = this.getAttribute('data-parl'); const mem = (S.L.pos[pid] && S.L.pos[pid].members) || []; this.classList.toggle('sel', !!pid && pid === me); this.classList.toggle('nb', !!pid && (vis.has(pid) || mem.some(m => m === me || vis.has(m)))); });
+  const el = elById[me]; const pp = S.L.pos[me];
+  if (pp && pp.kind === 'primary' && pp.shape !== 'head') { S.grown = { id: me, p: pp, s: pp.s }; pp.s = pp.s * SEL_GROW; } // linie kończą się na krawędzi powiększonego glifu
+  if (el && pp && (pp.kind === 'sat' || pp.kind === 'head')) d3.select(el).insert('circle', ':first-child').attr('class', 'halo').attr('cx', pp.kind === 'sat' ? pp.x : 0).attr('cy', pp.kind === 'sat' ? pp.y : 0).attr('r', pp.s + 2.5);
+  // przeszkody dla linii: podświetlone glify (wybrany + sąsiedzi), bez kropek-satelitów
+  const obstacles = []; for (const id of [me, ...vis]) { const q = S.L.pos[id]; if (!q || q.fanOf || q.kind === 'sat' || q.kind === 'row' || q.kind === 'root' || q.kind === 'ghost' || q.kind === 'parl' || q.kind === 'parlring') continue; const rr = glyphReach(q) + 6; /* mini-glify wachlarza stoją gęsto i nie są przeszkodami: linia do jednego z nich przechodzi pod sąsiednimi */ obstacles.push({ id, org:q.org || null, x:q.x, y:q.y, r:rr, r2:rr * rr }); }
+  drawEdges(n, own, extra, obstacles);
+}
+function select(id, opts = {}) {
+  const D = S.D; const n = id ? D.byId[id] : null;
+  if (id && !n) { select(null); return; }
+  const hovEl = hovG, hovId = hovEl ? hovEl.getAttribute('data-id') : null; // kursor zostaje nad klikniętym glifem: pigułka najazdu ma przetrwać wybór, jak w oryginale
+  S.selected = n ? n.id : null; S.relFilter = null; hotEdge(null); hideTip();
+  S.hub = !!n && (n.in.length + n.out.length) > HUB_MIN; if (S.hub && relGroups(n).size > 1) S.relFilter = dominantKey(n);
+  const instant = opts.from === 'url' || opts.instant === true; // z adresu (link, wstecz/dalej) od razu w stanie docelowym; z kliknięcia płynnie
+  syncFan(n, instant); S.reveal = revealFor(n); applyLegendFilter(true);
+  refreshSelection(); renderSelLabel(n); renderPanel(n); renderRelBar(n); syncFilterUI();
+  if (n && S.reveal.size) { const k = hiddenBy(n.id); toast(`Typ „${LEGEND_LABEL[k] || 'ten'}” jest ukryty w legendzie`); }
+  const rotTo = rotationFor(n ? n.id : null); const turns = Math.abs(normDeg(rotTo - S.rot)) > 1.5; const wasFit = !S.userZoomed; setRotation(rotTo, instant); if (turns && wasFit && !S.mobile) fit(!instant); // widok dopasowany zostaje dopasowany także po obrocie (ta sama skala, nowe wyśrodkowanie)
+  if (hovId && !turns && S.D.byId[hovId] && elById[hovId]) showTip(hovId, null, elById[hovId]); // po obrocie glif odjeżdża spod kursora, więc pigułka najazdu zostaje tylko bez obrotu
+  if (!S.applyingHistory) { const hash = n ? '#node=' + encodeURIComponent(n.id) : ''; if (location.hash !== hash) history.pushState({ node: n ? n.id : null }, '', hash || location.pathname + location.search); }
+  if (S.mobile) { setSheet(!!n || opts.keepOpen === true, { silent: true }); if (n) { setTimeout(() => revealAboveSheet(n.id), still() ? 60 : 340); setTimeout(() => revealAboveSheet(n.id), 700); } else setTimeout(() => fit(true), still() ? 60 : 340); }
+  else if (n) revealInView(n.id);
+  document.title = n ? `${n.name} · Graf Państwa Polskiego` : 'Graf Państwa Polskiego'; // U8: karty i historia rozróżnialne
+}
+function setRelFilter(key) {
+  S.relFilter = key === '*' ? null : (S.relFilter === key ? null : key); hotEdge(null); hideTip(); refreshSelection();
+  const n = S.selected ? S.D.byId[S.selected] : null; renderRelBar(n); syncFilterUI();
+}
+function syncFilterUI() {
+  document.querySelectorAll('[data-relkey]').forEach(b => { const k = b.getAttribute('data-relkey'); b.setAttribute('aria-pressed', String(k === '*' ? !S.relFilter : k === S.relFilter)); });
+  const box = $('#conn-groups'); if (box) { box.classList.toggle('filtered', !!S.relFilter); box.querySelectorAll('.grp').forEach(g => g.classList.toggle('on', g.getAttribute('data-key') === S.relFilter)); }
+}
+function applyHash(opts = {}) {
+  const m = location.hash.match(/node=([^&]+)/); let id = null; if (m) { try { id = decodeURIComponent(m[1]); } catch { id = m[1]; } }
+  if (id && !S.D.byId[id]) { toast(`Nie ma węzła o adresie „${id}”`); try { history.replaceState(null, '', location.pathname + location.search); } catch {} id = null; }
+  S.applyingHistory = true; try { select(id, Object.assign({ from:'url' }, opts)); } finally { S.applyingHistory = false; }
+}
+// pigułki z nazwą nad glifem (przestrzeń ekranu): stała nad wybranym węzłem i chwilowa nad najechanym
+function pillFor(cls, n) {
+  gO.selectAll('g.' + cls).remove(); if (!n) return;
+  const c = S.L.pos[n.id] && S.L.pos[n.id].kind === 'root' ? 'var(--seal-stroke)' : `var(--sec-${n.sector || 'independent'})`;
+  const g = gO.append('g').attr('class', 'pill-label ' + cls).style('--c', c); const name = n.name.length > 64 ? n.name.slice(0, 63) + '…' : n.name;
+  const rect = g.append('rect').attr('rx', 5).attr('height', 24).attr('y', -12); const text = g.append('text').attr('text-anchor', 'middle').attr('dy', '0.35em').text(name);
+  let w = name.length * 8.4; try { w = text.node().getComputedTextLength() || w; } catch {}
+  rect.attr('x', -w / 2 - 10).attr('width', w + 20); const el = g.node(); el.__w = w + 20; el.__id = n.id; placePills();
+}
+function placePills() {
+  if (!gO) return; const t = S.transform;
+  gO.selectAll('g.pill-label').each(function () { const p = drawnPos(this.__id); if (!p) return; const w = this.__w || 100;
+    const reach = p.kind === 'root' ? R_SEAL * 0.72 : p.kind === 'sat' ? DOT_R : p.kind === 'row' ? SQ_S : (p.kind === 'parl' || p.kind === 'parlring') ? p.s : glyphReach(p);
+    const off = reach * t.k + 8 + 12; const [sx, sy] = scr(p); const y = sy - off - 12 < 4 ? sy + off : sy - off; const x = clamp(sx, w / 2 + 6, Math.max(w / 2 + 6, S.W - w / 2 - 6));
+    this.setAttribute('transform', `translate(${F(x)},${F(y)})`); });
+}
+let toastTimer = null;
+function toast(msg) { const el = $('#sel-pill'); el.hidden = false; el.textContent = msg; el.style.setProperty('--c', 'var(--ink)'); el.dataset.toast = '1'; clearTimeout(toastTimer); toastTimer = setTimeout(() => { if (el.dataset.toast) { delete el.dataset.toast; if (!S.selected) el.hidden = true; else renderSelLabel(S.D.byId[S.selected]); } }, 4200); }
+function srcLabel(u, all) { const h = host(u); if (all.filter(x => host(x) === h).length < 2) return h; const m = u.match(/\/(DU|MP)\/(\d{4})\/(\d+)/i); if (m) return `${h} · ${m[1].toUpperCase()} ${m[2]} poz. ${m[3]}`; try { const pth = new URL(u).pathname.replace(/\/$/, '').split('/').slice(-2).join('/'); return pth ? `${h} · ${pth.slice(0, 28)}` : h; } catch { return h; } }
+function renderSelLabel(n) {
+  const pill = $('#sel-pill'); pillFor('sel-label', null); // jak w oryginale: wybrany węzeł ma tylko podpis na dole sceny, pigułka pojawia się wyłącznie przy najechaniu
+  if (!n) { if (!pill.dataset.toast) pill.hidden = true; return; }
+  delete pill.dataset.toast; pill.hidden = false; pill.textContent = n.name; pill.classList.toggle('long', n.name.length > 110 && n.name.length <= 200); pill.classList.toggle('xlong', n.name.length > 200);
+  if (!pill.classList.contains('xlong') && pill.scrollHeight > pill.clientHeight + 2) { if (!pill.classList.contains('long')) pill.classList.add('long'); if (pill.scrollHeight > pill.clientHeight + 2) { pill.classList.remove('long'); pill.classList.add('xlong'); } } // węższa scena: podpis, który nie mieści się w limicie linii, przechodzi na mniejszy krój zamiast się ucinać
+  const bar = $('#rel-bar'); if (bar) bar.style.bottom = S.mobile ? '' : Math.max(42, 12 + pill.offsetHeight + 6) + 'px'; // wyższy podpis (długa nazwa) podnosi pasek żetonów, zamiast na niego wchodzić
+  pill.style.setProperty('--c', S.L.pos[n.id] && S.L.pos[n.id].kind === 'root' ? 'var(--seal-stroke)' : `var(--sec-${n.sector || 'independent'})`);
+}
+const placeSelLabel = placePills;
+// żetony typów relacji wybranego węzła (panel i pasek nad pigułką na scenie)
+function relGroups(n) { const m = new Map(); if (!n) return m; for (const e of [...n.out, ...n.in]) { const k = relKey(e, n); m.set(k, (m.get(k) || 0) + 1); } return m; }
+function miniRel(type) { const r = REL[type] || REL_DEFAULT; const m = r.mark ? `<g transform="scale(.8)">${MARK[r.mark].replace(/class="open"/g, 'class="lg"').replace(/class="line"/g, 'class="ll"').replace(/<path d=/g, '<path class="lgf" d=').replace(/<circle r=/g, '<circle class="lgf" r=')}</g>` : ''; return `<svg viewBox="-13 -8 26 16" aria-hidden="true"><path class="ll" d="M-12,0H12" ${r.dash ? `stroke-dasharray="${r.dash}"` : ''}/>${m}</svg>`; }
+function relChips(n, max) {
+  const m = relGroups(n); let keys = [...CONN_ORDER.filter(k => m.has(k)), ...[...m.keys()].filter(k => !CONN_ORDER.includes(k))];
+  keys = keys.filter(k => !k.startsWith('dept_head')); // relację „kieruje” pokazuje kółko szefa doklejone do glifu, osobnej linii nie ma
+  if (max && keys.length > max) keys = keys.slice().sort((a, b) => m.get(b) - m.get(a)).slice(0, max);
+  const total = [...m.values()].reduce((a, b) => a + b, 0);
+  const all = m.size > 1 ? `<button class="fchip all" type="button" data-relkey="*" aria-pressed="${!S.relFilter}" title="Pokaż na scenie wszystkie relacje"><span>Wszystkie</span><b>${total}</b></button>` : '';
+  return all + keys.map(k => { const [type, dir] = k.split(':'); const r = REL[type] || Object.assign({}, REL_DEFAULT, { dir:[type, type] }); return `<button class="fchip" type="button" data-relkey="${esc(k)}" aria-pressed="${S.relFilter === k}" title="Pokaż na scenie tylko ten typ relacji">${miniRel(type)}<span>${esc(r.dir[dir === 'out' ? 0 : 1])}</span><b>${m.get(k)}</b></button>`; }).join('');
+}
+function renderRelBar(n) { const bar = $('#rel-bar'); const room = Math.max(0, Math.floor((S.W - 352 - 110) / 150)); const html = n && room >= 1 ? relChips(n, Math.min(5, room)) : ''; bar.innerHTML = html; bar.hidden = !html; if (n) bar.style.setProperty('--c', `var(--sec-${n.sector || 'independent'})`); }
+
+/* ---------- najazd: pigułka nad węzłem, słowo na linii ---------- */
+const tip = $('#tooltip'); let hovG = null; let hotEid = null; let hovMates = [];
+function showTip(id, ev, g) {
+  const n = S.D.byId[id]; if (!n) return; hideTip();
+  hovG = g; g.classList.add('hov');
+  // kółka szefów najechanego organu dostają jaśniejszy tint, jak w oryginale
+  hovMates = headsOfNode(n).map(h => elById[h.id]).filter(Boolean); hovMates.forEach(el => el.classList.add('hov-mate'));
+  pillFor('hov-label', n);
+}
+function moveTip(ev) { if (!tip.classList.contains('on')) return; const w = tip.offsetWidth, h = tip.offsetHeight; const x = clamp(ev.clientX - w / 2, 6, innerWidth - w - 6); let y = ev.clientY - h - 12; if (y < 6) y = ev.clientY + 16; tip.style.left = x + 'px'; tip.style.top = y + 'px'; }
+function hideTip() { tip.classList.remove('on'); if (hovG) { hovG.classList.remove('hov'); hovG = null; } hovMates.forEach(el => el.classList.remove('hov-mate')); hovMates = []; if (gO) gO.selectAll('g.hov-label').remove(); }
+function hotEdge(eid) {
+  if (hotEid === eid) return; hotEid = eid;
+  if (gE) { gE.selectAll('g.rel').classed('hot', false); gE.classed('has-hot', !!eid); } if (nodeSel) nodeSel.classed('end-hot', false);
+  document.querySelectorAll('.row.hot').forEach(r => r.classList.remove('hot'));
+  if (!eid) return; const el = S.edgeEl && S.edgeEl[eid]; if (!el) { gE.classed('has-hot', false); return; }
+  el.classList.add('hot'); const e = el.__edge; const ends = new Set([visId(e.fromId), visId(e.toId)]); nodeSel.classed('end-hot', d => ends.has(d.id));
+  for (const x of (el.__edges || [e])) { const row = document.querySelector(`.row[data-eid="${CSS.escape(x.id)}"]`); if (row) row.classList.add('hot'); if (x !== e) { const q = new Set([visId(x.fromId), visId(x.toId)]); nodeSel.filter(d => q.has(d.id)).classed('end-hot', true); } }
+}
+// najazd na linię: mała biała pigułka z jednym słowem w kolorze linii
+function showEdgeTip(el, ev) { const e = el.__edge; hideTip(); hotEdge(e.id); tip.style.setProperty('--c', edgeColor(e.fromId)); const list = el.__edges || [e]; tip.textContent = [...new Set(list.map(x => VERB[x.type] || rel(x).label.toLowerCase()))].join(' · '); tip.classList.add('on'); moveTip(ev); }
+// klik w linię: panel przewija się do tej relacji na liście „Powiązania" i pozycja mignie (tam jest przepis)
+function clickEdge(el) {
+  const e = el.__edge; hotEdge(null); hotEdge(e.id);
+  if (S.tab !== 'conn') { const tb = document.querySelector('[data-tab="conn"]'); if (tb) tb.click(); }
+  let row = document.querySelector(`.row[data-eid="${CSS.escape(e.id)}"]`);
+  if (!row) { // linia nie jest relacją wybranego węzła: przejdź do jej adresata (np. stanowiska szefa) i tam ją wskaż
+    const owner = e.toId !== S.selected ? e.toId : e.fromId; select(owner, { from:'edge' }); hotEdge(e.id);
+    row = document.querySelector(`.row[data-eid="${CSS.escape(e.id)}"]`); }
+  if (row) { if (S.mobile) setSheet(true); row.scrollIntoView({ block:'center', behavior: still() ? 'auto' : 'smooth' }); row.classList.remove('flash'); void row.offsetWidth; row.classList.add('flash'); }
+}
+
+/* ---------- panel: przegląd ---------- */
+function plural(n, one, few, many) { const m10 = n % 10, m100 = n % 100; if (n === 1) return one; if (m10 >= 2 && m10 <= 4 && !(m100 >= 12 && m100 <= 14)) return few; return many; }
+function fmtDate(s) { if (!s) return null; const m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})/); return m ? `${m[3]}.${m[2]}.${m[1]}` : String(s); }
+function host(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } }
+function ago(s) { const m = String(s || '').match(/^(\d{4})-(\d{2})-(\d{2})/); if (!m) return null; const d = Math.round((Date.now() - new Date(+m[1], +m[2] - 1, +m[3]).getTime()) / 864e5); if (d < 0) return fmtDate(s); if (d === 0) return 'dziś'; if (d < 60) return `${d} ${plural(d, 'dzień', 'dni', 'dni')}`; const mo = Math.round(d / 30.4); if (mo < 24) return `${mo} mies.`; return `${Math.round(d / 365)} ${plural(Math.round(d / 365), 'rok', 'lata', 'lat')}`; }
+function buildChanges() {
+  const D = S.D, m = D.meta; const vacant = [], acting = [], recent = [];
+  for (const n of D.nodes) {
+    if (n.type === 'dept_head' && n.people.type === 'people' && !n.people.people.length) vacant.push({ nodeId:n.id, kind:'vacant', what:n.name, who: n.headOf && D.byId[n.headOf] ? D.byId[n.headOf].name : '' });
+    if (n.people.type === 'people') for (const p of n.people.people) {
+      if (p.acting) acting.push({ nodeId:n.id, kind:'acting', what:cap(p.positionName || n.name), who:p.name || '', date:p.startedAt || null });
+      if (p.startedAt && /^\d{4}-\d{2}-\d{2}/.test(p.startedAt)) recent.push({ nodeId:n.id, kind: p.acting ? 'acting' : 'appointment', what:cap(p.positionName || n.name), who:p.name || '', date:p.startedAt });
+    }
+  }
+  recent.sort((a, b) => a.date < b.date ? 1 : -1); acting.sort((a, b) => (a.date || '') < (b.date || '') ? 1 : -1);
+  let log = recent.slice(0, 8); let fromLog = false;
+  if (Array.isArray(m.changes) && m.changes.length) { fromLog = true; log = m.changes.slice(0, 10).map(c => ({ nodeId:c.nodeId, kind:c.kind || 'structural', what:c.label || c.title || '', who:'', date:c.date, acting:c.acting })); }
+  let nv = vacant.length, na = acting.length;
+  if (m.stats && typeof m.stats === 'object') { if (Number.isFinite(m.stats.vacantSeats)) nv = m.stats.vacantSeats; if (Number.isFinite(m.stats.actingOfficials)) na = m.stats.actingOfficials; }
+  S.changes = { vacant, acting, recent:log, nv, na, fromLog };
+}
+function renderChanges() {
+  const C = S.changes; const last = C.recent[0];
+  const tiles = [['vacant', 'Wakaty', C.nv, 'stanowisk bez obsady'], ['acting', 'Pełniący obowiązki', C.na, 'osób jako p.o.'], ['recent', 'Ostatnia zmiana', last ? (ago(last.date) || '—') : '—', last ? (String(ago(last.date)).match(/\d{4}$/) ? '' : 'temu, ') + fmtDate(last.date) : 'brak danych']];
+  $('#chg-tiles').innerHTML = tiles.map(([k, l, v, s]) => `<button class="tile" type="button" data-chg="${k}" aria-pressed="${S.chgTab === k}"><span class="k">${l}</span><b>${esc(v)}</b><span class="s">${esc(s)}</span></button>`).join('');
+  const list = C[S.chgTab] || []; const title = { vacant:'Nieobsadzone stanowiska', acting:'Pełniący obowiązki', recent: C.fromLog ? 'Dziennik zmian' : 'Najnowsze objęcia stanowisk' }[S.chgTab];
+  $('#chg-title').textContent = title; $('#chg-count').textContent = list.length;
+  $('#chg-list').innerHTML = list.length ? list.slice(0, 12).map(c => `<li><button type="button" ${c.nodeId && S.D.byId[c.nodeId] ? `data-goto="${esc(c.nodeId)}"` : 'disabled'}><span class="top"><span class="tag ${esc(c.kind)}">${esc(CHANGE_KIND[c.kind] || c.kind)}</span><span class="date">${esc(fmtDate(c.date) || '')}</span></span><span class="what">${esc(c.what)}</span>${c.who ? `<div class="who">${esc(c.who)}</div>` : ''}</button></li>`).join('') : '<li class="empty">Brak pozycji.</li>';
+}
+function renderHome() {
+  const D = S.D, m = D.meta; const name = m.name || 'Graf Państwa Polskiego';
+  $('#title').textContent = name; $('#brand-title').textContent = name; document.title = name;
+  if (m.description) $('#lede').textContent = m.description;
+  const gen = m.generatedAt ? fmtDate(m.generatedAt) : null;
+  $('#meta-line').textContent = [m.version ? 'wersja ' + m.version : null, gen ? 'stan na ' + gen : null, `${D.nodes.length} ${plural(D.nodes.length, 'węzeł', 'węzły', 'węzłów')}`, `${D.edges.length} ${plural(D.edges.length, 'relacja', 'relacje', 'relacji')}`].filter(Boolean).join(' · ');
+  const counts = {}; for (const n of D.nodes) counts[n.type] = (counts[n.type] || 0) + 1;
+  $('#tiles').innerHTML = [[D.nodes.length, 'Węzły', 'organy, stanowiska, jednostki'], [D.edges.length, 'Relacje', 'z podstawą prawną']].map(([v, l, s]) => `<div class="tile"><span class="k">${l}</span><b>${v}</b><span class="s">${s}</span></div>`).join('');
+  $('#typelist').innerHTML = ['elected','department','commission','advisory','political_group','dept_head','constituency'].filter(t => counts[t]).map(t => `<li><span>${esc(TYPE_PLURAL[t])}</span><b>${counts[t]}</b></li>`).join('');
+  buildChanges(); renderChanges();
+}
+// etykieta podtypu tylko wtedy, gdy mówi coś więcej niż etykieta typu
+function subLabel(n) { const l = n && n.subtype && n.subtype !== 'other' ? (SUBTYPE_LABEL[n.subtype] || null) : null; return l && l !== TYPE_LABEL[n.type] && !TYPE_LABEL[n.type].includes(l) ? l : null; }
+function setCrumb(n) { const gov = String(S.D.meta.gov || 'pl').toUpperCase(); $('#crumb').innerHTML = n ? `/ ${esc(gov)} / <b>${esc(n.sector && n.type !== 'constituency' ? (n.sector === 'independent' ? 'Niezależne' : SECTOR_LABEL[n.sector]) : 'Suweren')}</b>` : `/ ${esc(gov)}`; }
+
+/* ---------- wyszukiwarka ---------- */
+const norm = s => String(s || '').toLowerCase().replace(/ł/g, 'l').normalize('NFD').replace(/[̀-ͯ]/g, '');
+function subseq(q, s) { let i = 0; for (const ch of s) { if (ch === q[i]) i++; if (i === q.length) return true; } return false; }
+function search(qRaw) {
+  const q = norm(qRaw).trim(); if (q.length < 2) return [];
+  const words = q.split(/\s+/); const out = [];
+  for (const n of S.D.nodes) {
+    const fields = [[n.name, 1], [n.shortName, 1.05], ...n.aliases.map(a => [a, 0.9])].filter(f => f[0]); let best = 0;
+    for (const [f, w] of fields) { const s = norm(f); let sc = 0;
+      if (s === q) sc = 100; else if (s.startsWith(q)) sc = 80; else if (s.includes(' ' + q) || s.includes('(' + q)) sc = 65; else if (s.includes(q)) sc = 45;
+      else if (words.length > 1 && words.every(w2 => s.includes(w2))) sc = 40; else if (q.length >= 3 && q.length <= 12 && subseq(q, s.replace(/\s/g, ''))) sc = 12;
+      sc *= w; if (sc > best) best = sc; }
+    if (best > 0) { const p = S.L.pos[n.id]; const bonus = p ? ({ root:6, primary:4, blob:5, parlring:4, head:2, sat:0, row:0, ghost:-1 }[p.kind] ?? 0) : 0; out.push({ n, sc: best + bonus - n.name.length / 200 }); }
+  }
+  return out.sort((a, b) => b.sc - a.sc).slice(0, 10).map(o => o.n);
+}
+function renderResults(list, q) {
+  const box = $('#results'); const sc = box.closest('.search'); if (sc) sc.classList.toggle('has-q', !!q.trim());
+  if (!q.trim()) { box.innerHTML = ''; return; }
+  if (!list.length) { box.innerHTML = `<div class="empty">Brak wyników dla „${esc(q)}”.</div>`; return; }
+  box.innerHTML = list.map((n, i) => `<button class="result" role="option" aria-selected="false" id="res-${i}" tabindex="-1" data-goto="${esc(n.id)}"><span class="sw">${swatchSvg(n)}</span><span class="r-name">${esc(n.name)}<small>${esc(TYPE_LABEL[n.type])}${subLabel(n) ? ' · ' + esc(subLabel(n)) : ''}${n.sector && n.type !== 'constituency' ? ' · ' + esc(SECTOR_LABEL[n.sector]) : ''}</small></span></button>`).join('');
+}
+function swatchSvg(n) {
+  const k = glyphKind(n); const c = n.type === 'constituency' ? 'var(--seal-stroke)' : `var(--sec-${n.sector || 'independent'})`; const st = `fill="var(--card)" stroke="${c}" stroke-width="1.5" stroke-linejoin="round"`;
+  if (k === 'root') return `<svg viewBox="-8 -8 16 16"><path d="${wavyPath(6.2, 9, 0.09, 90)}" ${st}/></svg>`;
+  if (k === 'head') return `<svg viewBox="-8 -8 16 16"><path d="${shapePath('department', 4.6)}" transform="translate(0,-1.6)" ${st}/><circle cy="3.4" r="2.9" ${st}/></svg>`;
+  if (n.parent && S.L && S.L.pos[n.id] && S.L.pos[n.id].kind === 'sat') return `<svg viewBox="-8 -8 16 16"><circle r="3.2" fill="${c}"/></svg>`;
+  if (n.parent && S.L && S.L.pos[n.id] && (S.L.pos[n.id].kind === 'row' || (S.L.pos[n.id].home && S.L.pos[n.id].home.kind === 'row'))) return `<svg viewBox="-8 -8 16 16">${[-5, 0, 5].map(x => `<rect x="${x - 1.9}" y="-1.9" width="3.8" height="3.8" rx="1.1" fill="var(--card)" stroke="${c}" stroke-width="1.1"/>`).join('')}</svg>`;
+  return `<svg viewBox="-8 -8 16 16"><path d="${shapePath(k, 5.2)}" ${st}${k === 'political_group' ? ' stroke-dasharray="2.2 1.8"' : ''}/>${k === 'corp' ? `<path d="${shapePath('department', 2.3)}" fill="none" stroke="${c}" stroke-width="1.2"/>` : ''}</svg>`;
+}
+
+/* ---------- panel: węzeł ---------- */
+function firstPeople(n) { return n && n.people && n.people.type === 'people' ? n.people.people : []; }
+function initials(name) { const parts = String(name || '').replace(/[()]/g, '').split(/\s+/).filter(Boolean); if (!parts.length || /uzupe/.test(name)) return '?'; return (parts[0][0] + (parts.length > 1 ? parts[parts.length - 1][0] : '')).toUpperCase(); }
+const cap = t => { t = String(t || ''); return t ? t.charAt(0).toUpperCase() + t.slice(1) : t; };
+function personCard(p, position, sector, orgMode, lead) {
+  const ph = !p.name || /do uzupełnienia/i.test(p.name); const year = p.startedAt ? String(p.startedAt).slice(0, 4) : null;
+  const verb = p.acting ? 'P.o. od' : p.type === 'elected' ? 'Wybrany' : 'Powołany';
+  const img = `<span>${esc(initials(p.name))}</span>` + (p.imageUrl ? `<img src="${esc(p.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '');
+  const pos = cap(p.positionName || (position && position.name) || '');
+  const when = `${year ? `${verb} ${esc(year)}` : ''}${p.acting ? ' <span class="badge">p.o.</span>' : ''}${p.status && PSTATUS_LABEL[p.status] ? ` <span class="badge soft" title="${esc(p.note || '')}">${esc(PSTATUS_LABEL[p.status])}</span>` : ''}${p.party ? ` <span class="badge soft">${esc(p.party)}</span>` : ''}`.trim();
+  const src = p.sourceUrl ? `<a class="src" href="${esc(p.sourceUrl)}" target="_blank" rel="noopener" title="Źródło informacji o obsadzie" aria-label="Źródło informacji o obsadzie: ${esc(p.name || '')}">↗</a>` : '';
+  return `<div class="head-card${lead ? ' lead' : ''}" style="--c:var(--sec-${esc(sector || 'independent')})"><div class="avatar">${img}</div><div class="who">
+      <div class="name${ph ? ' ph' : ''}">${esc(ph ? '(do uzupełnienia)' : p.name)}</div>
+      ${pos ? `<div class="pos" title="${esc(pos)}">${orgMode && position ? `<button class="morelink" data-goto="${esc(position.id)}">${esc(pos)}</button>` : esc(pos)}</div>` : ''}
+      ${when ? `<div class="when">${when}</div>` : ''}
+    </div>${src}</div>`;
+}
+function renderHeadSection(n) {
+  const D = S.D; let html = '';
+  if (n.people.type === 'count') {
+    const c = n.people.count || n.seatsCount || 0;
+    html += `<div class="sect-label">Skład</div><div class="tiles two"><div class="tile"><span class="k">Miejsca</span><b>${c}</b><span class="s">${plural(c, 'miejsce', 'miejsca', 'miejsc')} w składzie</span></div>${n.head && D.byId[n.head] ? `<div class="tile"><span class="k">Kieruje</span><b style="font-size:13.5px;white-space:normal;line-height:1.25">${esc(D.byId[n.head].name)}</b></div>` : ''}</div>`;
+    if (n.head && D.byId[n.head]) { const h = D.byId[n.head]; const ppl = firstPeople(h); if (ppl.length) html += '<div style="height:8px"></div>' + peopleGrid(ppl.map((p, i) => personCard(p, h, n.sector, true, i === 0))); }
+    return html;
+  }
+  const isPos = n.type === 'dept_head'; const position = isPos ? n : (n.head ? D.byId[n.head] : null);
+  let people = isPos ? firstPeople(n) : (position ? firstPeople(position) : []);
+  let own = false; if (!people.length && firstPeople(n).length) { people = firstPeople(n); own = true; }
+  const title = isPos ? 'Obsada stanowiska' : (position ? position.name : (people.length ? 'Osoby' : null));
+  if (!title) return '';
+  const staff = (!isPos && !own) ? firstPeople(n) : []; const leadNames = new Set(people.map(p => p.name)); const rest = staff.filter(p => !leadNames.has(p.name));
+  const seats = n.seatsCount > 1 ? n.seatsCount : 0; const total = people.length + rest.length; const merged = rest.length > 0 || (own && people.length > 1);
+  const label = merged ? (seats ? `${seats} ${plural(seats, 'miejsce', 'miejsca', 'miejsc')}${total < seats ? ` <span class="n">· w danych ${total}</span>` : ''}` : (own ? `Osoby · ${total}` : `Kierownictwo · ${total}`)) : esc(cap(title));
+  html += `<div class="sect-label">${label}</div>`;
+  const cards = [];
+  if (!people.length) cards.push(`<div class="head-card vacant"><div class="avatar">—</div><div class="who"><div class="name">Wakat</div><div class="when">${position ? 'stanowisko nieobsadzone lub brak danych' : 'brak danych o obsadzie'}</div></div></div>`);
+  else people.forEach((p, i) => cards.push(personCard(p, own ? null : position, n.sector, !isPos && !own, !own && i === 0))); // jak w oryginale: obwódka tylko u pierwszej osoby (szefa)
+  for (const p of rest) cards.push(personCard(p, null, n.sector, false, false));
+  html += peopleGrid(cards);
+  if (!merged && seats) html += `<div class="empty">Liczba miejsc: ${seats}</div>`;
+  const others = headsOfNode(n).filter(h => !position || h.id !== position.id);
+  for (const h of others) { html += `<div class="sect-label minor">${esc(cap(h.name))}</div>` + (firstPeople(h).length ? peopleGrid(firstPeople(h).map(p => personCard(p, h, n.sector, true, false))) : '<div class="empty">Wakat lub brak danych.</div>'); }
+  return html;
+}
+// siatka kart osób jak w oryginale: dwie kolumny, pierwsze cztery karty, reszta pod „Zobacz wszystkich (N)”
+function peopleGrid(cards, cap = 80) { const shown = cards.slice(0, cap); const more = cards.length - shown.length; const clip = shown.length > 4; const lbl = `Zobacz wszystkich (${cards.length})`;
+  return `<div class="pgrid${clip ? ' clip' : ''}">${shown.join('')}</div>` + (clip ? `<button type="button" class="seeall" data-seeall aria-expanded="false" data-label="${lbl}">${lbl}</button>` : '') + (more > 0 ? `<div class="empty">… i ${more} ${plural(more, 'osoba', 'osoby', 'osób')} więcej</div>` : ''); }
+function connItem(other, e) {
+  const seats = e && e.seatsAppointed > 1 ? `${e.seatsAppointed} ${plural(e.seatsAppointed, 'miejsce', 'miejsca', 'miejsc')}` : '';
+  const cite = e && e.cite ? `<span class="r-cite">${e.citeUrl ? `<a href="${esc(e.citeUrl)}" target="_blank" rel="noopener">${esc(e.cite)}</a>` : esc(e.cite)}${seats ? ' · ' + seats : ''}</span>` : (seats ? `<span class="r-cite">${seats}</span>` : '');
+  return `<button class="row" data-goto="${esc(other.id)}"${e ? ` data-eid="${esc(e.id)}"` : ''} style="--c:var(--sec-${esc(other.sector || 'independent')})"><span class="sw">${swatchSvg(other)}</span><span class="r-name">${esc(other.name)}<small>${esc(TYPE_LABEL[other.type])}${subLabel(other) ? ' · ' + esc(subLabel(other)) : ''}</small>${cite}</span></button>`;
+}
+function renderConnections(n) {
+  const D = S.D; const groups = new Map();
+  const add = (key, other, e) => { if (!groups.has(key)) groups.set(key, []); groups.get(key).push([other, e]); };
+  for (const e of n.out) add(`${e.type}:out`, D.byId[e.toId], e);
+  for (const e of n.in) add(`${e.type}:in`, D.byId[e.fromId], e);
+  const keys = [...CONN_ORDER.filter(k => groups.has(k)), ...[...groups.keys()].filter(k => !CONN_ORDER.includes(k))]; let html = '';
+  for (const k of keys) { const [type, dir] = k.split(':'); const r = REL[type] || Object.assign({}, REL_DEFAULT, { dir:[type, type] }); const items = groups.get(k); html += `<div class="grp${S.relFilter === k ? ' on' : ''}" data-key="${esc(k)}"><h4>${esc(r.dir[dir === 'out' ? 0 : 1])} <span class="n">${items.length}</span></h4>` + items.slice(0, 260).map(([o, e]) => connItem(o, e)).join('') + (items.length > 260 ? `<div class="empty">… i ${items.length - 260} więcej.</div>` : '') + '</div>'; }
+  if (n.parent && D.byId[n.parent]) html += `<div class="grp struct"><h4>Jednostka nadrzędna</h4>` + connItem(D.byId[n.parent], null) + '</div>';
+  const kids = n.children.map(c => D.byId[c]).filter(Boolean);
+  if (kids.length) { html += `<div class="grp struct"><h4>Jednostki podległe <span class="n">${kids.length}</span></h4><div class="rows2">` + kids.slice(0, 40).map(c => connItem(c, null)).join('') + '</div>' + (kids.length > 40 ? `<div class="empty">… i ${kids.length - 40} więcej — użyj wyszukiwarki.</div>` : '') + '</div>'; }
+  if (!html) return '<div class="empty">Brak zarejestrowanych relacji dla tego węzła.</div>';
+  const chips = relChips(n);
+  return (chips ? `<div class="fchips" style="--c:var(--sec-${esc(n.sector || 'independent')})">${chips}</div><p class="fhint">Żeton zostawia na scenie tylko ten typ relacji (ponowny klik przywraca wszystkie). Najedź na pozycję, aby podświetlić jej linię; kliknięcie linii na scenie przewija listę do tej relacji.</p>` : '') + `<div id="conn-groups" class="${S.relFilter ? 'filtered' : ''}">${html}</div>`;
+}
+function renderNode(n) {
+  const p = S.L.pos[n.id] || {}; const chips = [];
+  if (n.sector && n.type !== 'constituency') chips.push(`<span class="chip" style="--c:var(--sec-${esc(n.sector)})"><i class="dot"></i>${esc(SECTOR_LABEL[n.sector])}</span>`);
+  chips.push(`<span class="chip">${esc(TYPE_LABEL[n.type])}</span>`);
+  if (subLabel(n)) chips.push(`<span class="chip">${esc(subLabel(n))}</span>`);
+  const ring = S.L.ringOf.get(n.id); if (ring && RING_LABEL[ring] && RING_LABEL[ring] !== TYPE_LABEL[n.type]) chips.push(`<span class="chip" title="Pierścień">${esc(RING_LABEL[ring])}</span>`);
+  if (n.budgetPart) chips.push(`<span class="chip mono" title="Część budżetowa">cz. ${esc(n.budgetPart)}</span>`);
+  if (n.status && STATUS_LABEL[n.status]) chips.push(`<span class="chip warn" title="${esc(n.statusNote || '')}">${esc(STATUS_LABEL[n.status])}</span>`);
+  const links = [];
+  if (n.legalSource && n.legalSource.url) links.push(`<a href="${esc(n.legalSource.url)}" target="_blank" rel="noopener">Podstawa prawna</a>`); else if (n.legalSource && n.legalSource.title) links.push(`<span class="nolink">Podstawa prawna (bez linku)</span>`);
+  if (n.officialUrl) links.push(`<a href="${esc(n.officialUrl)}" target="_blank" rel="noopener">Strona urzędu</a>`);
+  if (n.bipUrl) links.push(`<a href="${esc(n.bipUrl)}" target="_blank" rel="noopener">BIP</a>`);
+  const sub = [n.shortName && n.shortName !== n.name ? n.shortName : null, ...n.aliases.filter(a => a !== n.name && a !== n.shortName)].filter(Boolean);
+  const ec = n.employeeCount || {};
+  const ecHtml = (ec.actual != null || ec.budget != null) ? `<div class="tiles two" style="margin-top:14px">${ec.actual != null ? `<div class="tile"><span class="k">Etaty · wykonanie</span><b>${esc(ec.actual)}</b></div>` : ''}${ec.budget != null ? `<div class="tile"><span class="k">Etaty · plan</span><b>${esc(ec.budget)}</b></div>` : ''}</div>` : '';
+  const pv = n.provenance || {}; const srcs = Array.isArray(pv.sources) ? pv.sources.filter(s => typeof s === 'string' && /^https?:/.test(s)) : [];
+  const conf = pv.confidence && CONF_LABEL[pv.confidence] ? pv.confidence : null;
+  const nConn = n.in.length + n.out.length + n.children.length + (n.parent ? 1 : 0);
+  const nameCls = n.name.length > 200 ? ' xlong' : n.name.length > 90 ? ' long' : '';
+  return `<section class="card node-card" style="--i:0">
+    <h2 class="node-name${nameCls}">${esc(n.name)}</h2>
+    ${n.description ? `<p class="desc">${esc(n.description)}</p>` : '<p class="desc" style="color:var(--muted)">Brak opisu.</p>'}
+    ${n.statusNote ? `<p class="desc" style="border-left:2px solid var(--st-serious);padding-left:10px;font-size:13px">${esc(n.statusNote)}</p>` : ''}
+    ${links.length ? `<div class="linkrow">${links.join('')}</div>` : ''}
+    ${n.legalSource && n.legalSource.title ? `<p class="legal-title">${esc(n.legalSource.title)}</p>` : ''}
+    <div class="node-meta">${sub.length ? `<p class="node-sub mono">${esc(sub.join(' · '))}</p>` : ''}<div class="chips">${chips.join('')}</div></div>${ecHtml}
+    ${renderHeadSection(n)}</section>
+    <section class="card" style="--i:1">
+      <div class="tabs" role="tablist"><button role="tab" data-tab="conn" aria-selected="${S.tab === 'conn'}">Powiązania · ${nConn}</button><button role="tab" data-tab="prov" aria-selected="${S.tab === 'prov'}">Źródła i metryka</button></div>
+      <div class="tabpane" data-pane="conn" ${S.tab === 'conn' ? '' : 'hidden'}>${renderConnections(n)}</div>
+      <div class="tabpane prov" data-pane="prov" ${S.tab === 'prov' ? '' : 'hidden'}>
+        <div>Źródła${srcs.length ? '' : ': brak w rekordzie'}</div>
+        ${srcs.length ? `<div class="srcs">${(() => { const seen = new Map(); return srcs.map(s => { let l = srcLabel(s, srcs); const k = (seen.get(l) || 0) + 1; seen.set(l, k); if (k > 1) l += ` (${k})`; return `<a href="${esc(s)}" target="_blank" rel="noopener" title="${esc(s)}">${esc(l)}</a>`; }).join(''); })()}</div>` : ''}
+        <div>Zweryfikowano: ${pv.verifiedAt ? esc(fmtDate(pv.verifiedAt)) : 'brak daty'} · ${conf ? `<span class="conf ${conf}"><i></i>pewność: ${CONF_LABEL[conf]}</span>` : '<span class="conf"><i></i>pewność: nieokreślona</span>'}${n.regon ? ` · REGON ${esc(n.regon)}` : ''}</div>
+        <div class="idrow"><span>${esc(n.id)}</span><button id="btn-copy" type="button">Kopiuj link</button></div>
+      </div>
+    </section>`;
+}
+function renderPanel(n) {
+  const home = $('#view-home'), view = $('#view-node'); setCrumb(n);
+  if (!n) { view.hidden = true; view.innerHTML = ''; home.hidden = false; return; }
+  view.innerHTML = renderNode(n); home.hidden = true; view.hidden = false;
+  $('#panel').scrollTo({ top:0, behavior: still() ? 'auto' : 'smooth' });
+}
+
+/* ---------- legenda ---------- */
+function renderLegend() {
+  const box = (inner) => `<svg viewBox="-15 -9 30 18">${inner}</svg>`;
+  const sh = (k, s = 5.6) => `<path class="lg" d="${shapePath(k, s)}"/>`;
+  const ent = [
+    ['entity:root', 'Naród (suweren)', box(`<path class="lg" d="${wavyPath(7, 10, 0.08, 120)}"/>`)],
+    ['entity:elected', 'Organy wybieralne', box(sh('elected', 5.4))],
+    ['entity:department', 'Urzędy i organy', box(sh('department'))],
+    ['entity:head', 'Stanowisko szefa organu', box(`<g transform="translate(0,-1.6)">${sh('department', 5)}</g><circle class="lg" cy="3.6" r="3"/>`)],
+    ['entity:commission', 'Komisje, regulatorzy, kontrola', box(sh('commission', 5.2))],
+    ['entity:advisory', 'Ciała doradcze', box(sh('advisory', 5.6))],
+    ['entity:court', 'Sądy i trybunały', box(sh('court', 5.6))],
+    ['entity:political_group', 'Kluby i koła (struktura polityczna)', box(`<path class="lg" stroke-dasharray="2.4 2" d="${shapePath('political_group', 5.2)}"/>`)],
+    ['entity:corp', 'Spółki, fundusze, osoby prawne', box(sh('department') + `<path class="lg" style="fill:none" d="${shapePath('department', 2.5)}"/>`)],
+    ['entity:parl', 'Parlament (Sejm i Senat)', box(`<path class="lg" d="${blobPath(0, 13, 6.6, 3.4, 0.06, 1e6)}"/><path class="lg" style="stroke-width:1.1" d="${blobPath(-5.4, 5.4, 4, 3, 0, 1e6)}"/><path class="lg" style="stroke-width:1.1" d="${blobPath(6, 4.4, 4, 3, 0, 1e6)}"/>`)],
+    ['entity:sat', 'Jednostki podległe', box([[-4, -3.5], [3, -3.5], [-4, 3.5], [3, 3.5]].map(([x, y]) => `<circle class="lgf" cx="${x}" cy="${y}" r="2.3"/>`).join(''))],
+    ['entity:row', 'Klasy zbiorcze, np. sądy rejonowe', box([-9, -3, 3, 9].map(x => `<rect class="lg" style="stroke-width:1.1" x="${x - 2.2}" y="-2.2" width="4.4" height="4.4" rx="1.3"/>`).join(''))],
+    ['entity:vacant', 'Wakat na stanowisku', box(`<circle class="lg" r="4.6" stroke-dasharray="2.4 2.2"/>`)],
+    ['entity:acting', 'Pełniący obowiązki (p.o.)', box(`<circle class="lg" r="4.6"/><path class="lgf" d="M0,-4.6A4.6,4.6 0 0 1 0,4.6Z"/>`)],
+  ];
+  const line = t => { const r = REL[t]; const m = r.mark ? `<g transform="translate(0,0) scale(.82)" class="lmk">${MARK[r.mark].replace(/class="open"/g, 'class="lg"').replace(/class="line"/g, 'class="ll"').replace(/<path d=/g, '<path class="lgf" d=').replace(/<circle r=/g, '<circle class="lgf" r=')}</g>` : ''; return box(`<path class="ll" d="M-14,0H14" ${r.dash ? `stroke-dasharray="${r.dash}"` : ''}/>${m}`); };
+  // B3: każda pozycja jest przełącznikiem (wciśnięty = typ widoczny na scenie)
+  const item = (key, label, icon, desc) => { LEGEND_LABEL[key] = label; return `<li><button class="lgi" type="button" data-lkey="${esc(key)}" aria-pressed="${!S.hidden.has(key)}" title="${esc(desc ? desc + ' · ' : '')}kliknij, aby ukryć albo pokazać na scenie">${icon}<span>${desc != null ? `<b>${esc(label)}</b><small>${esc(desc)}</small>` : esc(label)}</span></button></li>`; };
+  $('#legend-body').innerHTML = `<div><h5>Encje</h5><ul>${ent.map(([k, l, i]) => item(k, l, i)).join('')}</ul></div><div><h5>Relacje</h5><button class="lmore" id="legend-more" type="button" aria-expanded="false" style="margin:0 0 8px">Co znaczą relacje?</button><ul class="rels">${Object.keys(REL).map(t => item('rel:' + t, REL_SHORT[t] || REL[t].label, line(t), REL_DESC[t] || '')).join('')}</ul><p class="lhint">Grot na końcu linii wskazuje kierunek, znacznik typu stoi bliżej celu. Linie można najechać i kliknąć. Kliknięcie pozycji legendy ukrywa ten typ na scenie.</p></div><button class="lshow" id="legend-show" type="button" hidden>Pokaż wszystko</button>`;
+  $('#legend-more').addEventListener('click', ev => { const b = $('#legend-body'); const on = !b.classList.contains('explain'); b.classList.toggle('explain', on); ev.currentTarget.setAttribute('aria-expanded', String(on)); ev.currentTarget.textContent = on ? 'Ukryj opisy relacji' : 'Co znaczą relacje?'; });
+  $('#legend-body').addEventListener('click', ev => { const b = ev.target.closest && ev.target.closest('[data-lkey]'); if (b) { toggleLegendKey(b.getAttribute('data-lkey')); return; } if (ev.target.closest && ev.target.closest('#legend-show')) { S.hidden.clear(); saveHidden(); S.reveal = new Set(); applyLegendFilter(false); } });
+}
+
+function setLegend(on, refocus) {
+  const l = $('#legend'), b = $('#legend-toggle'); const was = l.classList.contains('open'); l.classList.toggle('open', on); const now = l.classList.contains('open');
+  b.setAttribute('aria-expanded', String(now));
+  if (was && !now && (refocus || l.contains(document.activeElement)) && (document.activeElement === document.body || l.contains(document.activeElement))) b.focus({ preventScroll:true });
+}
+
+/* ---------- motyw ---------- */
+function initEmbed() { const set = w => document.documentElement.style.setProperty('--embed-right', (Math.max(0, +w || 0)) + 'px'); if (window.GP_EMBED && window.GP_EMBED.topRight) set(window.GP_EMBED.topRight); window.addEventListener('message', ev => { const m = ev.data; if (m && m.gp === 'embed' && ev.source === window.parent) set(m.topRight); }); }
+function initTheme() {
+  initEmbed();
+  $('#btn-theme').addEventListener('click', () => {
+    const cur = document.documentElement.dataset.theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = cur === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = next; try { localStorage.setItem('gp-theme', next); } catch {}
+  });
+}
+
+/* ---------- zdarzenia ---------- */
+function bind() {
+  document.addEventListener('click', ev => {
+    const t = ev.target; if (!t.closest) return;
+    const b = t.closest('[data-goto]'); if (b) { ev.preventDefault(); select(b.getAttribute('data-goto'), { from:'panel' }); return; }
+    const sa = t.closest('[data-seeall]'); if (sa) { const g = sa.previousElementSibling; if (g && g.classList.contains('pgrid')) { const open = !g.classList.toggle('clip'); sa.setAttribute('aria-expanded', String(open)); sa.textContent = open ? 'Zwiń listę' : sa.dataset.label; } return; }
+    const rk = t.closest('[data-relkey]'); if (rk) { setRelFilter(rk.getAttribute('data-relkey')); return; }
+    const c = t.closest('[data-chg]'); if (c) { S.chgTab = c.getAttribute('data-chg'); renderChanges(); return; }
+    const tb = t.closest('[data-tab]'); if (tb) { S.tab = tb.getAttribute('data-tab'); document.querySelectorAll('[data-tab]').forEach(x => x.setAttribute('aria-selected', x === tb)); document.querySelectorAll('[data-pane]').forEach(x => x.hidden = x.getAttribute('data-pane') !== S.tab); return; }
+    if (t.closest('#brand-title')) { select(null, { keepOpen:true }); return; }
+    if (t.closest('#btn-copy')) { const btn = t.closest('#btn-copy'); navigator.clipboard?.writeText(location.href).then(() => { btn.textContent = 'Skopiowano'; setTimeout(() => btn.textContent = 'Kopiuj link', 1500); }).catch(() => {}); }
+  });
+  const q = $('#q'); let timer = null;
+  q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => renderResults(search(q.value), q.value), 70); });
+  q.addEventListener('keydown', ev => { if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') { const items = [...document.querySelectorAll('#results .result')]; if (!items.length) return; ev.preventDefault(); let i = items.findIndex(x => x.classList.contains('active')); i = ev.key === 'ArrowDown' ? (i + 1) % items.length : (i <= 0 ? items.length - 1 : i - 1); items.forEach((x, j) => { x.classList.toggle('active', j === i); x.setAttribute('aria-selected', String(j === i)); }); items[i].scrollIntoView({ block:'nearest' }); q.setAttribute('aria-activedescendant', items[i].id || ''); return; }
+    if (ev.key === 'Enter') { const first = $('#results .result.active') || $('#results .result'); if (first) { select(first.getAttribute('data-goto'), { from:'panel' }); q.value = ''; renderResults([], ''); q.blur(); } } if (ev.key === 'Escape') { ev.stopPropagation(); q.value = ''; renderResults([], ''); q.blur(); } }); // Esc w polu zamyka tylko wyszukiwarkę, nie odznacza węzła
+  $('#results').addEventListener('click', () => { q.value = ''; setTimeout(() => renderResults([], ''), 0); });
+  document.addEventListener('keydown', ev => {
+    const inField = /^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName || '');
+    if (ev.key === 'Escape' && !inField) { if ($('#legend').classList.contains('open')) setLegend(false, true); else if (S.mobile && $('#panel').classList.contains('open')) setSheet(false); else if (S.selected) select(null); }
+    if (ev.key === '/' && !inField) { ev.preventDefault(); if (S.mobile) setSheet(true); q.focus(); }
+  });
+  const zoomBy = f => { S.userZoomed = true; (still() ? svg : svg.transition().duration(280)).call(zoom.scaleBy, f); };
+  $('#btn-zin').addEventListener('click', () => zoomBy(1.5));
+  $('#btn-zout').addEventListener('click', () => zoomBy(1 / 1.5));
+  $('#btn-fit').addEventListener('click', () => fit(true));
+  $('#legend-toggle').addEventListener('click', () => setLegend());
+  document.addEventListener('pointerdown', ev => { if (!$('#legend').classList.contains('open')) return; const t = ev.target; if (t && t.closest && (t.closest('#legend-body') || t.closest('#legend-toggle'))) return; setLegend(false); S.legendClosedAt = performance.now(); }, true);
+  $('#panel-top').addEventListener('click', ev => { if (!S.mobile) return; if (performance.now() - (S.sheetDragAt || 0) < 350) return; if (ev.target.closest('#brand-title') && !ev.target.closest('#sheet-toggle')) return; setSheet(!$('#panel').classList.contains('open')); });
+  initSheetDrag();
+  const vn = $('#view-node');
+  vn.addEventListener('pointerover', ev => { const r = ev.target.closest && ev.target.closest('.row[data-eid]'); if (r) hotEdge(r.getAttribute('data-eid')); });
+  vn.addEventListener('pointerout', ev => { const r = ev.target.closest && ev.target.closest('.row[data-eid]'); if (r && !r.contains(ev.relatedTarget)) hotEdge(null); });
+  vn.addEventListener('focusin', ev => { const r = ev.target.closest && ev.target.closest('.row[data-eid]'); if (r) hotEdge(r.getAttribute('data-eid')); });
+  window.addEventListener('popstate', () => applyHash());
+  window.addEventListener('hashchange', () => { const m = location.hash.match(/node=([^&]+)/); const id = m ? decodeURIComponent(m[1]) : null; if (id !== S.selected) applyHash(); });
+  let rt = null; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { const was = S.userZoomed; measure(); if (!was) fit(false); else placeSelLabel(); }, 120); });
+}
+
+/* ---------- start ---------- */
+async function loadData() {
+  if (window.GRAPH_DATA) return { data: window.GRAPH_DATA, source: 'inline (window.GRAPH_DATA)' };
+  const params = new URLSearchParams(location.search); const url = params.get('data') || './graph.json';
+  const res = await fetch(url, { cache: 'no-cache' });
+  if (!res.ok) throw new Error(`HTTP ${res.status} — nie udało się pobrać ${url}`);
+  return { data: await res.json(), source: url };
+}
+function fail(msg, detail) {
+  const st = $('#status'); st.classList.add('error'); st.hidden = false;
+  st.querySelector('b').textContent = 'Nie udało się załadować grafu';
+  $('#status-msg').innerHTML = `${esc(msg)}<code>${esc(detail || '')}</code><div style="margin-top:10px;font-size:12px">Uruchom stronę przez serwer HTTP (np. <span class="mono">python3 -m http.server</span>) z plikiem <span class="mono">graph.json</span> obok <span class="mono">index.html</span>, albo podaj ścieżkę parametrem <span class="mono">?data=…</span>.</div>`;
+}
+async function main() {
+  initTheme(); measure(); if (!still()) document.documentElement.classList.add('anim'); $('#brand-seal').setAttribute('d', wavyPath(9.6, 10, 0.1, 120));
+  let payload;
+  try { payload = await loadData(); } catch (err) { fail(String(err && err.message || err), location.href); return; }
+  try {
+    S.D = normalize(payload.data); if (!S.D.nodes.length) throw new Error('Graf nie zawiera żadnych węzłów.');
+    S.L = computeLayout(S.D); loadHidden();
+    renderHome(); renderLegend(); render(); bind(); setCrumb(null);
+    new MutationObserver(syncSheet).observe($('#panel'), { attributes:true, attributeFilter:['class'] }); syncSheet();
+    $('#status').hidden = true; window.__GP = { stats: S.L.stats, layout: S.L, state: S };
+    // ---- uchwyty testowe (kontrakt: tests/parity/README.md §Uchwyty) — tylko odczyt stanu, bez wpływu na działanie ----
+    window.__GP_TEST = (() => {
+      const toClient = (x, y) => { const m = gN.node().getScreenCTM(); return { x: m.a * x + m.c * y + m.e, y: m.b * x + m.d * y + m.f }; };
+      const txt = sel => { const el = document.querySelector(sel); return el ? el.textContent : null; };
+      return {
+        version: 1, skin: 'D',
+        ids: () => S.D.nodes.map(n => n.id),
+        node: id => { const n = S.D.byId[id]; return n ? { id: n.id, name: n.name, type: n.type, sector: n.sector, inCount: n.in.length, outCount: n.out.length, children: n.children.length, head: n.head || null, headOf: n.headOf || null, people: n.people.type === 'people' ? n.people.people.length : null } : null; },
+        state: () => ({ selected: S.selected, relFilter: S.relFilter, legendOpen: $('#legend-toggle').getAttribute('aria-expanded') === 'true',
+          edgesDrawn: gE ? gE.selectAll('g.rel').size() : 0, ownEdgesDrawn: gE ? gE.selectAll('g.rel:not(.chain)').size() : 0, blockedEdges: S.blockedEdges || 0, hub: !!S.hub, fan: S.fan || null, hidden: [...S.hidden], rot: S.rot, rotTarget: S.rotTarget, rotating: !!rotTimer, fanFocus: S.fanFocus || null, fanMoving: !!fanTimer,
+          hoverPill: txt('g.hov-label text'), selPill: txt('g.sel-label text'), bottomPill: $('#sel-pill').hidden ? null : $('#sel-pill').textContent,
+          edgeTip: tip.classList.contains('on') ? tip.textContent : null, hotEdge: hotEid || null, theme: document.documentElement.dataset.theme || null, k: S.transform.k,
+          panelTitle: txt('#view-node .node-name') || txt('.node-name'), relRows: document.querySelectorAll('.row[data-eid]').length }),
+        screenPos: id => { const q = drawnPos(id); if (!q) return null; const c = toClient(q.x, q.y); return { x: c.x, y: c.y, kind: q.kind, ring: q.ring || null }; },
+        glyphs: () => { const k = S.transform.k, out = []; for (const id of S.L.draw) { const q = S.L.pos[id]; if (!q || q.kind === 'ghost' || (elById[id] && elById[id].classList.contains('lg-hidden'))) continue; const c = toClient(q.x, q.y);
+            const r = (q.kind === 'sat' ? DOT_R : q.kind === 'row' ? SQ_S : q.kind === 'root' ? R_SEAL * 0.72 : glyphReach(q)) * k; out.push({ id, kind: q.kind, x: c.x, y: c.y, r, headOf: S.D.byId[id].headOf || null, parent: S.D.byId[id].parent || null }); } return out; },
+        edges: () => gE ? gE.selectAll('g.rel').nodes().map(el => ({ id: el.__edge.id, type: el.__edge.type, from: el.__edge.fromId, to: el.__edge.toId, chain: el.classList.contains('chain'), merged: (el.__edges || [el.__edge]).length, types: [...new Set((el.__edges || [el.__edge]).map(x => x.type))], straight: /L/.test(el.querySelector('path.edge').getAttribute('d')) })) : [],
+        edgePoints: (eid, n = 24) => { const el = S.edgeEl && S.edgeEl[eid]; if (!el) return null; const path = el.querySelector('path.edge'); const L = path.getTotalLength(); const m = path.getScreenCTM(); const pts = [];
+            for (let i = 0; i <= n; i++) { const q = path.getPointAtLength(L * i / n); pts.push({ x: m.a * q.x + m.c * q.y + m.e, y: m.b * q.x + m.d * q.y + m.f }); } return pts; },
+        stageRect: () => { const r = $('#stage').getBoundingClientRect(); return { x: r.x, y: r.y, w: r.width, h: r.height }; },
+      };
+    })();
+    console.info('[graf-panstwa D] załadowano', S.D.nodes.length, 'węzłów,', S.D.edges.length, 'krawędzi z', payload.source, '| glify w spoczynku:', JSON.stringify(S.L.stats));
+    if (location.hash) applyHash({ from:'url' }); // bez rAF: w karcie w tle klatki animacji nie biegną
+  } catch (err) { console.error(err); fail('Błąd przetwarzania danych: ' + (err && err.message || err), payload.source); }
+}
+main();
+})();
+</script>
+</body>
+</html>

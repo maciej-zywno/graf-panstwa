@@ -1,0 +1,1491 @@
+{
+ "chunk": "wojewodowie",
+ "verifiedAt": "2026-09-17",
+ "summary": "Weryfikacja adwersarialna chunku wojewodowie: 33 węzły, 63 osoby, 128 krawędzi. Wszystkie 63 nazwiska potwierdzone dziś curl-em na podanych sourceUrl (Lucyna Gajda w formie „Lucyna GAJDA”); 16/16 wojewodów zgodnych z wykazem MSWiA i (cross-check) z listą Wikipedii – brak odwołań. Przepisy art. 3, 6, 7, 8, 13, 51–56 ustawy o wojewodzie odczytane z tekstu t.j. Dz.U. 2025 poz. 428 – każdy cite trafny; kody 85/02–85/32 potwierdzone w rozp. MF Dz.U. 2025 poz. 1185; dział „administracja publiczna” w MSWiA potwierdzony w Dz.U. 2025 poz. 999. REGON 15 UW widoczny w stopkach. Korekty: (1) Klęczar – istnieje oficjalny datowany komunikat MUW z 14.12.2023 (PressArticlePage.aspx?id=15635), zastępuje źródło wtórne kety.pl, confidence węzła medium→high; (2) 15 dyrektorów generalnych ma niegramatyczną nazwę stanowiska (mianownik zamiast dopełniacza). Nieosiągalny: bip.mazowieckie.pl (TLS). Nic nie zostało odrzucone (refuted).",
+ "stats": {
+  "nodes_checked": 33,
+  "people_checked": 63,
+  "edges_checked": 128,
+  "nodes_by_status": {
+   "confirmed": 32,
+   "corrected": 1
+  },
+  "people_by_status": {
+   "confirmed": 47,
+   "corrected": 16
+  },
+  "edges_by_status": {
+   "confirmed": 128
+  }
+ },
+ "nodes": [
+  {
+   "id": "pl-dolnoslaski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/02 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514377 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-dolnoslaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/04 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514236 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-kujawsko-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-lubelski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/06 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514294 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-lubelski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-lubuski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/08 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 210467089 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-lubuski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-lodzki-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/10 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 004308002 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-lodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-malopolski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/12 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. Brak REGON – nie ma go na malopolska.uw.gov.pl ani na bip.malopolska.pl/muw (sprawdzone)."
+  },
+  {
+   "id": "pl-wojewoda-malopolski",
+   "status": "corrected",
+   "fixes": {
+    "provenance": {
+     "sources": [
+      "https://www.malopolska.uw.gov.pl/index.aspx?page=wojewoda",
+      "https://www.malopolska.uw.gov.pl/PressArticlePage.aspx?id=15635",
+      "https://www.gov.pl/web/mswia/urzedy-wojewodzkie",
+      "https://eli.gov.pl/eli/DU/2009/206/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody. KOREKTA: confidence medium→high – istnieje oficjalny, datowany komunikat MUW „Krzysztof Jan Klęczar nowym wojewodą małopolskim” (2023-12-14, PressArticlePage.aspx?id=15635, HTTP 200 dziś; kopia w Wayback z 14.12.2023), więc data nie musi opierać się na źródle wtórnym (kety.pl). Na stronie kierownictwa nazwisko poprzednika (Łukasz Kmita) występuje tylko w komentarzu HTML – aktualny wojewoda to Klęczar (aktualizacja strony 15.09.2025)."
+  },
+  {
+   "id": "pl-mazowiecki-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/14 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 013272620 widoczny w stopce serwisu urzędu. UWAGA: bipUrl https://bip.mazowieckie.pl/ nieosiągalny z tego środowiska (3 próby curl, http/https, błąd TLS przed odpowiedzią HTTP) – adres jest znanym BIP MUW, pozostawiam, ale nie potwierdzony dziś."
+  },
+  {
+   "id": "pl-wojewoda-mazowiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-opolski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/16 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514325 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-opolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-podkarpacki-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/18 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514348 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-podkarpacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-podlaski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/20 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514213 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-podlaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-pomorski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/22 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514242 widoczny w stopce serwisu urzędu. bipUrl wskazuje na stronę BIP w serwisie gov.pl (HTTP 200)."
+  },
+  {
+   "id": "pl-wojewoda-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-slaski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/24 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514259 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-slaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-swietokrzyski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/26 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514265 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-swietokrzyski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/28 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514319 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-warminsko-mazurski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-wielkopolski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/30 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514331 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-wielkopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-zachodniopomorski-urzad-wojewodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 13 ust. 1 = „Wojewoda wykonuje zadania przy pomocy urzędu wojewódzkiego oraz organów rządowej administracji zespolonej” – cytat trafny. ELI DU/2009/206 → 200, tytuł „Ustawa z dnia 23 stycznia 2009 r. o wojewodzie i administracji rządowej w województwie”. budgetPart 85/32 potwierdzony w rozp. MF Dz.U. 2025 poz. 1185 (część 85/00, kod województwa). officialUrl → HTTP 200. REGON 000514354 widoczny w stopce serwisu urzędu."
+  },
+  {
+   "id": "pl-wojewoda-zachodniopomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 (przedstawiciel RM, zwierzchnik administracji zespolonej, organ nadzoru nad JST – opis zgodny), art. 6 ust. 1 (powołuje i odwołuje PRM na wniosek ministra właściwego ds. administracji publicznej) – cytaty trafne. ring=administration bez parent zgodnie z regułami (wojewoda bez rodzica), headOf spójny z nodes[urząd].head. officialUrl → 200 i zawiera nazwisko wojewody."
+  },
+  {
+   "id": "pl-rzadowa-administracja-zespolona-w-wojewodztwie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2–3 (wojewoda zwierzchnikiem i organem administracji zespolonej), art. 51 (kieruje, koordynuje, kontroluje), art. 52 (tryb powoływania – odrębne ustawy), art. 53–55 – cytaty trafne. Węzeł-klasa bez osób (count 0) i bez parent – dopuszczalny wg zakresu (opisać, nie rozpisywać). Uwaga modelowa: w rzeczywistości to 16 zestawów organów; węzeł jest abstrakcją."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-dolnoslaski-urzad-wojewodzki",
+   "personId": "pl-agnieszka-miza",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Komunikaty DUW o powołaniu (agnieszka-miza-nowa-i-wicewojewoda-dolnoslaska / artur-jurkowski-nowym-wicewojewoda-dolnoslaskim) nie mają elementu event-date ani daty w treści – startedAt=null uzasadnione."
+  },
+  {
+   "nodeId": "pl-dolnoslaski-urzad-wojewodzki",
+   "personId": "pl-artur-jurkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Komunikaty DUW o powołaniu (agnieszka-miza-nowa-i-wicewojewoda-dolnoslaska / artur-jurkowski-nowym-wicewojewoda-dolnoslaskim) nie mają elementu event-date ani daty w treści – startedAt=null uzasadnione."
+  },
+  {
+   "nodeId": "pl-dolnoslaski-urzad-wojewodzki",
+   "personId": "pl-aneta-fafara",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Dolnośląskiego Urzędu Wojewódzkiego we Wrocławiu"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Dolnośląskiego Urzędu Wojewódzkiego we Wrocławiu”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-dolnoslaski",
+   "personId": "pl-anna-zabska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. MSWiA: akt wręczony 25.11.2024, „obejmie stanowisko od 26 listopada” – 2024-11-26 poprawne. Wykaz MSWiA (urzedy-wojewodzkie) podaje Żabską – lista jest już zaktualizowana po zmianie z XI 2024."
+  },
+  {
+   "nodeId": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "personId": "pl-piotr-hemmerling",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "personId": "pl-michal-koniuch",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-kujawsko-pomorski-urzad-wojewodzki",
+   "personId": "pl-katarzyna-wesolowska",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Kujawsko-Pomorskiego Urzędu Wojewódzkiego w Bydgoszczy"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Kujawsko-Pomorskiego Urzędu Wojewódzkiego w Bydgoszczy”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-kujawsko-pomorski",
+   "personId": "pl-michal-sztybel",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat MSWiA z 20.12.2023 wymienia 11 wojewodów, w tym tę osobę. Wikipedia (cross-check, lista wojewodów od 1999) nie odnotowuje odwołania."
+  },
+  {
+   "nodeId": "pl-lubelski-urzad-wojewodzki",
+   "personId": "pl-wojciech-woloch",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat LUW ma event-date 16.01.2024 i mówi o powołaniu przez PRM – precyzja miesięczna 2024-01 ostrożna, dopuszczalna."
+  },
+  {
+   "nodeId": "pl-lubelski-urzad-wojewodzki",
+   "personId": "pl-andrzej-maj",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat LUW ma event-date 16.01.2024 i mówi o powołaniu przez PRM – precyzja miesięczna 2024-01 ostrożna, dopuszczalna."
+  },
+  {
+   "nodeId": "pl-lubelski-urzad-wojewodzki",
+   "personId": "pl-jaroslaw-szymczyk",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Lubelskiego Urzędu Wojewódzkiego w Lublinie"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Lubelskiego Urzędu Wojewódzkiego w Lublinie”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-lubelski",
+   "personId": "pl-krzysztof-komorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat MSWiA z 20.12.2023 wymienia 11 wojewodów, w tym tę osobę. Wikipedia (cross-check, lista wojewodów od 1999) nie odnotowuje odwołania."
+  },
+  {
+   "nodeId": "pl-lubuski-urzad-wojewodzki",
+   "personId": "pl-maciej-siwicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Podstrony LUW (i-wicewojewoda-lubuski-maciej-siwicki2, ii-wicewojewoda-tomasz-nesterowicz) nie zawierają daty – null uzasadnione."
+  },
+  {
+   "nodeId": "pl-lubuski-urzad-wojewodzki",
+   "personId": "pl-tomasz-nesterowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Podstrony LUW (i-wicewojewoda-lubuski-maciej-siwicki2, ii-wicewojewoda-tomasz-nesterowicz) nie zawierają daty – null uzasadnione."
+  },
+  {
+   "nodeId": "pl-lubuski-urzad-wojewodzki",
+   "personId": "pl-radoslaw-wroblewski",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Lubuskiego Urzędu Wojewódzkiego w Gorzowie Wielkopolskim"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Lubuskiego Urzędu Wojewódzkiego w Gorzowie Wielkopolskim”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-lubuski",
+   "personId": "pl-marek-cebula",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat UW podaje datę powołania wprost."
+  },
+  {
+   "nodeId": "pl-lodzki-urzad-wojewodzki",
+   "personId": "pl-marek-mazur",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-lodzki-urzad-wojewodzki",
+   "personId": "pl-grzegorz-majewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-lodzki-urzad-wojewodzki",
+   "personId": "pl-marcin-szmaja",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Łódzkiego Urzędu Wojewódzkiego w Łodzi"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Łódzkiego Urzędu Wojewódzkiego w Łodzi”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-lodzki",
+   "personId": "pl-dorota-ryl",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat MSWiA z 20.12.2023 wymienia 11 wojewodów, w tym tę osobę. Wikipedia (cross-check, lista wojewodów od 1999) nie odnotowuje odwołania."
+  },
+  {
+   "nodeId": "pl-malopolski-urzad-wojewodzki",
+   "personId": "pl-elzbieta-achinger",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Na stronie MUW poprzednicy (Pagacz, Małodziński) występują tylko w komentarzach HTML; aktualni: Achinger (I), Śmiałek (II)."
+  },
+  {
+   "nodeId": "pl-malopolski-urzad-wojewodzki",
+   "personId": "pl-ryszard-smialek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Na stronie MUW poprzednicy (Pagacz, Małodziński) występują tylko w komentarzach HTML; aktualni: Achinger (I), Śmiałek (II)."
+  },
+  {
+   "nodeId": "pl-malopolski-urzad-wojewodzki",
+   "personId": "pl-lucyna-gajda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko widoczne na sourceUrl (strona MUW podaje „Lucyna GAJDA” wielkimi literami przy „Dyrektor Generalny Małopolskiego Urzędu Wojewódzkiego w Krakowie”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-malopolski",
+   "personId": "pl-krzysztof-kleczar",
+   "status": "corrected",
+   "fixes": {
+    "startedAtSource": "https://www.malopolska.uw.gov.pl/PressArticlePage.aspx?id=15635",
+    "note": "Nazwisko potwierdzone na stronie MUW (index.aspx?page=wojewoda, aktualizacja 15.09.2025; poprzednik Ł. Kmita tylko w komentarzu HTML). Data 2023-12-14 z oficjalnego komunikatu MUW „Krzysztof Jan Klęczar nowym wojewodą małopolskim” (2023-12-14): „Premier Donald Tusk, na wniosek ministra SWiA Marcina Kierwińskiego, powołał nowego wojewodę małopolskiego. Od dziś funkcję tę pełni dr inż. Krzysztof Jan Klęczar”. Zbieżne z komunikatem Gminy Kęty z 14.12.2023 i wykazem MSWiA."
+   },
+   "note": "Nazwisko na sourceUrl: TAK (poza komentarzem HTML). Data 2023-12-14 zgodna z kety.pl, ALE istnieje pierwotne, oficjalne i datowane źródło MUW (PressArticlePage.aspx?id=15635, HTTP 200 dziś, kopia Wayback 20231214201327) – zamieniam startedAtSource na nie; twierdzenie budowniczego „MUW nie publikuje datowanego komunikatu” jest nieprawdziwe."
+  },
+  {
+   "nodeId": "pl-mazowiecki-urzad-wojewodzki",
+   "personId": "pl-robert-sitnik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-mazowiecki-urzad-wojewodzki",
+   "personId": "pl-patryk-fajdek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-mazowiecki-urzad-wojewodzki",
+   "personId": "pl-pawel-cukrowski",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Mazowieckiego Urzędu Wojewódzkiego w Warszawie"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Mazowieckiego Urzędu Wojewódzkiego w Warszawie”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-mazowiecki",
+   "personId": "pl-mariusz-frankowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat UW podaje datę powołania wprost."
+  },
+  {
+   "nodeId": "pl-opolski-urzad-wojewodzki",
+   "personId": "pl-piotr-pospiech",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). OUW nie numeruje wicewojewodów (obie podstrony: „Wicewojewoda Opolski”); podstrona Gradzika opublikowana 21.02.2025 (metadane), brak daty powołania – null uzasadnione."
+  },
+  {
+   "nodeId": "pl-opolski-urzad-wojewodzki",
+   "personId": "pl-slawomir-gradzik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). OUW nie numeruje wicewojewodów (obie podstrony: „Wicewojewoda Opolski”); podstrona Gradzika opublikowana 21.02.2025 (metadane), brak daty powołania – null uzasadnione."
+  },
+  {
+   "nodeId": "pl-opolski-urzad-wojewodzki",
+   "personId": "pl-agnieszka-krolikowska",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Opolskiego Urzędu Wojewódzkiego w Opolu"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Opolskiego Urzędu Wojewódzkiego w Opolu”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-opolski",
+   "personId": "pl-monika-jurek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat MSWiA z 20.12.2023 wymienia 11 wojewodów, w tym tę osobę. Wikipedia (cross-check, lista wojewodów od 1999) nie odnotowuje odwołania."
+  },
+  {
+   "nodeId": "pl-podkarpacki-urzad-wojewodzki",
+   "personId": "pl-wieslaw-buz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Życiorys (zyciorys02) bez daty powołania."
+  },
+  {
+   "nodeId": "pl-podkarpacki-urzad-wojewodzki",
+   "personId": "pl-tomasz-lorenc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat PUW 05.06.2024: „wręczyła mu dzisiaj powołanie” – data trafna."
+  },
+  {
+   "nodeId": "pl-podkarpacki-urzad-wojewodzki",
+   "personId": "pl-monika-barszcz-chodkowska",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Podkarpackiego Urzędu Wojewódzkiego w Rzeszowie"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Podkarpackiego Urzędu Wojewódzkiego w Rzeszowie”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-podkarpacki",
+   "personId": "pl-teresa-kubas-hul",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Data z biogramu na stronie UW (jawnie: „20 grudnia 2023 r.”); zbieżna z komunikatem MSWiA."
+  },
+  {
+   "nodeId": "pl-podlaski-urzad-wojewodzki",
+   "personId": "pl-pawel-krutul",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-podlaski-urzad-wojewodzki",
+   "personId": "pl-michal-gasowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat PUW 03.02.2025 – precyzja miesięczna uzasadniona."
+  },
+  {
+   "nodeId": "pl-podlaski-urzad-wojewodzki",
+   "personId": "pl-adam-czaplinski",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Podlaskiego Urzędu Wojewódzkiego w Białymstoku"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Podlaskiego Urzędu Wojewódzkiego w Białymstoku”). Data 2024-01-02 potwierdzona w biogramie: „z dniem 2 stycznia 2024 r. wojewoda podlaski Jacek Brzozowski powołał Pana Adama Czaplińskiego na stanowisko Dyrektora Generalnego”."
+  },
+  {
+   "nodeId": "pl-wojewoda-podlaski",
+   "personId": "pl-jacek-brzozowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat UW podaje datę powołania wprost."
+  },
+  {
+   "nodeId": "pl-pomorski-urzad-wojewodzki",
+   "personId": "pl-emil-rojek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Strona komunikatu PUW ma datę 12.03.2024 w metadanych; tytuł zgodny."
+  },
+  {
+   "nodeId": "pl-pomorski-urzad-wojewodzki",
+   "personId": "pl-anna-olkowska-jacyno",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Strona komunikatu PUW ma datę 12.03.2024 w metadanych; tytuł zgodny."
+  },
+  {
+   "nodeId": "pl-pomorski-urzad-wojewodzki",
+   "personId": "pl-anita-swietlikowska",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Pomorskiego Urzędu Wojewódzkiego w Gdańsku"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Pomorskiego Urzędu Wojewódzkiego w Gdańsku”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-pomorski",
+   "personId": "pl-beata-rutkiewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat MSWiA z 20.12.2023 wymienia 11 wojewodów, w tym tę osobę. Wikipedia (cross-check, lista wojewodów od 1999) nie odnotowuje odwołania."
+  },
+  {
+   "nodeId": "pl-slaski-urzad-wojewodzki",
+   "personId": "pl-adam-zaczkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Podstrony ŚUW (i-/ii-wicewojewoda-slaski) bez dat."
+  },
+  {
+   "nodeId": "pl-slaski-urzad-wojewodzki",
+   "personId": "pl-michal-kopanski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). Podstrony ŚUW (i-/ii-wicewojewoda-slaski) bez dat."
+  },
+  {
+   "nodeId": "pl-slaski-urzad-wojewodzki",
+   "personId": "pl-katarzyna-blaszczyk-domanska",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Śląskiego Urzędu Wojewódzkiego w Katowicach"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Śląskiego Urzędu Wojewódzkiego w Katowicach”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-slaski",
+   "personId": "pl-marek-wojcik",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat MSWiA z 20.12.2023 wymienia 11 wojewodów, w tym tę osobę. Wikipedia (cross-check, lista wojewodów od 1999) nie odnotowuje odwołania."
+  },
+  {
+   "nodeId": "pl-swietokrzyski-urzad-wojewodzki",
+   "personId": "pl-michal-skotnicki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-swietokrzyski-urzad-wojewodzki",
+   "personId": "pl-michal-cichocki",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Świętokrzyskiego Urzędu Wojewódzkiego w Kielcach"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Świętokrzyskiego Urzędu Wojewódzkiego w Kielcach”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-swietokrzyski",
+   "personId": "pl-jozef-bryk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Data z biogramu na stronie UW (jawnie: „20 grudnia 2023 r.”); zbieżna z komunikatem MSWiA."
+  },
+  {
+   "nodeId": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "personId": "pl-mateusz-szauer",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "personId": "pl-zbigniew-szczypinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-warminsko-mazurski-urzad-wojewodzki",
+   "personId": "pl-monika-choroszewska-plenkowska",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Warmińsko-Mazurskiego Urzędu Wojewódzkiego w Olsztynie"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Warmińsko-Mazurskiego Urzędu Wojewódzkiego w Olsztynie”)."
+  },
+  {
+   "nodeId": "pl-wojewoda-warminsko-mazurski",
+   "personId": "pl-radoslaw-krol",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat UW podaje datę powołania wprost."
+  },
+  {
+   "nodeId": "pl-wielkopolski-urzad-wojewodzki",
+   "personId": "pl-karolina-fabis-szulc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-wielkopolski-urzad-wojewodzki",
+   "personId": "pl-jaroslaw-maciejewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-wielkopolski-urzad-wojewodzki",
+   "personId": "pl-jacek-wisniewski",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Wielkopolskiego Urzędu Wojewódzkiego w Poznaniu"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Wielkopolskiego Urzędu Wojewódzkiego w Poznaniu”). Data 2024-01-22 potwierdzona: „22 stycznia 2024 r., Wojewoda Wielkopolska Agata Sobczyk powołała Jacka Wiśniewskiego”."
+  },
+  {
+   "nodeId": "pl-wojewoda-wielkopolski",
+   "personId": "pl-agata-sobczyk",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat UW podaje datę powołania wprost."
+  },
+  {
+   "nodeId": "pl-zachodniopomorski-urzad-wojewodzki",
+   "personId": "pl-bartosz-brozynski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-zachodniopomorski-urzad-wojewodzki",
+   "personId": "pl-dawid-krystek",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt."
+  },
+  {
+   "nodeId": "pl-zachodniopomorski-urzad-wojewodzki",
+   "personId": "pl-anna-kolek",
+   "status": "corrected",
+   "fixes": {
+    "positionName": "Dyrektor Generalny Zachodniopomorskiego Urzędu Wojewódzkiego w Szczecinie"
+   },
+   "note": "Nazwisko widoczne na sourceUrl przy funkcji „Dyrektor Generalny” (curl 17.09.2026). KOREKTA formy nazwy stanowiska: mianownik „Dyrektor Generalny Dolnośląski Urząd Wojewódzki…” jest niegramatyczny – poprawnie dopełniacz („Dyrektor Generalny Zachodniopomorskiego Urzędu Wojewódzkiego w Szczecinie”). Strona ZUW używa formy „Dyrektor Generalna” – forma żeńska dopuszczalna, nie wymuszam."
+  },
+  {
+   "nodeId": "pl-wojewoda-zachodniopomorski",
+   "personId": "pl-adam-rudawski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Nazwisko i funkcja widoczne na sourceUrl (curl 17.09.2026). startedAtSource zawiera nazwisko i datę zgodną ze startedAt. Komunikat UW podaje datę powołania wprost."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-dolnoslaski-uw--dept-head--wojewoda-dolnoslaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-dolnoslaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-dolnoslaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-dolnoslaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-dolnoslaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--dolnoslaski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-dolnoslaski--nominates--dolnoslaski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-dolnoslaski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-kujawsko-pomorski-uw--dept-head--wojewoda-kujawsko-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-kujawsko-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-kujawsko-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-kujawsko-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-kujawsko-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--kujawsko-pomorski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-kujawsko-pomorski--nominates--kujawsko-pomorski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-kujawsko-pomorski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-lubelski-uw--dept-head--wojewoda-lubelski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-lubelski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-lubelski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-lubelski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-lubelski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--lubelski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-lubelski--nominates--lubelski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-lubelski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-lubuski-uw--dept-head--wojewoda-lubuski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-lubuski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-lubuski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-lubuski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-lubuski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--lubuski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-lubuski--nominates--lubuski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-lubuski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-lodzki-uw--dept-head--wojewoda-lodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-lodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-lodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-lodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-lodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--lodzki-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-lodzki--nominates--lodzki-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-lodzki--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-malopolski-uw--dept-head--wojewoda-malopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-malopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-malopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-malopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-malopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--malopolski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-malopolski--nominates--malopolski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-malopolski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-mazowiecki-uw--dept-head--wojewoda-mazowiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-mazowiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-mazowiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-mazowiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-mazowiecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--mazowiecki-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-mazowiecki--nominates--mazowiecki-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-mazowiecki--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-opolski-uw--dept-head--wojewoda-opolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-opolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-opolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-opolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-opolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--opolski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-opolski--nominates--opolski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-opolski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-podkarpacki-uw--dept-head--wojewoda-podkarpacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-podkarpacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-podkarpacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-podkarpacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-podkarpacki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--podkarpacki-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-podkarpacki--nominates--podkarpacki-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-podkarpacki--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-podlaski-uw--dept-head--wojewoda-podlaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-podlaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-podlaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-podlaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-podlaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--podlaski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-podlaski--nominates--podlaski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-podlaski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-pomorski-uw--dept-head--wojewoda-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-pomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--pomorski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-pomorski--nominates--pomorski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-pomorski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-slaski-uw--dept-head--wojewoda-slaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-slaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-slaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-slaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-slaski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--slaski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-slaski--nominates--slaski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-slaski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-swietokrzyski-uw--dept-head--wojewoda-swietokrzyski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-swietokrzyski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-swietokrzyski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-swietokrzyski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-swietokrzyski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--swietokrzyski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=1 zgodne z liczbą wicewojewodów na stronie UW (1). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-swietokrzyski--nominates--swietokrzyski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-swietokrzyski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-warminsko-mazurski-uw--dept-head--wojewoda-warminsko-mazurski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-warminsko-mazurski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-warminsko-mazurski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-warminsko-mazurski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-warminsko-mazurski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--warminsko-mazurski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-warminsko-mazurski--nominates--warminsko-mazurski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-warminsko-mazurski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-wielkopolski-uw--dept-head--wojewoda-wielkopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-wielkopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-wielkopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-wielkopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-wielkopolski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--wielkopolski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-wielkopolski--nominates--wielkopolski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-wielkopolski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  },
+  {
+   "id": "e-zachodniopomorski-uw--dept-head--wojewoda-zachodniopomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spójne z nodes[urząd].head i nodes[wojewoda].headOf; kierunek organizacja→stanowisko poprawny."
+  },
+  {
+   "id": "e-prm--appoints--wojewoda-zachodniopomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1: „Wojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek ministra właściwego do spraw administracji publicznej” – cytat trafny, kierunek PRM→wojewoda poprawny, seatsAppointed=1 OK. Węzeł kanonu pl-prezes-rady-ministrow."
+  },
+  {
+   "id": "e-mswia--nominates--wojewoda-zachodniopomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 6 ust. 1 (wniosek ministra właściwego ds. administracji publicznej). Dział „administracja publiczna” kieruje MSWiA – potwierdzone w rozp. PRM Dz.U. 2025 poz. 999 § 1 pkt 1 (ELI → 200, tytuł zgodny). Kierunek poprawny. Węzeł kanonu."
+  },
+  {
+   "id": "e-prm--oversees--wojewoda-zachodniopomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 1 (PRM kieruje działalnością wojewody: wytyczne, polecenia, sprawozdania, ocena) i ust. 2 (nadzór wg kryterium zgodności z polityką RM) – cytat trafny."
+  },
+  {
+   "id": "e-mswia--oversees--wojewoda-zachodniopomorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 8 ust. 3 (nadzór ministra właściwego ds. administracji publicznej wg zgodności z prawem, rzetelności i gospodarności) – cytat trafny."
+  },
+  {
+   "id": "e-prm--appoints--zachodniopomorski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2: „Wicewojewodę powołuje i odwołuje Prezes Rady Ministrów na wniosek wojewody” – trafne. seatsAppointed=2 zgodne z liczbą wicewojewodów na stronie UW (2). Uwaga modelowa: toId to urząd (brak węzła stanowiska wicewojewody) – zgodne z instrukcją zakresu; art. 7 ust. 1 dopuszcza 1 albo I i II wicewojewodę."
+  },
+  {
+   "id": "e-wojewoda-zachodniopomorski--nominates--zachodniopomorski-uw",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 7 ust. 2 (na wniosek wojewody) – trafne. Kierunek wojewoda→urząd to konwencja zastępcza (brak węzła wicewojewody); semantycznie wniosek dotyczy obsady stanowiska wicewojewody, nie urzędu."
+  },
+  {
+   "id": "e-wojewoda-zachodniopomorski--oversees--administracja-zespolona",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Numer artykułu sprawdzony w tekście t.j. Dz.U. 2025 poz. 428 (api.sejm.gov.pl/eli/acts/DU/2025/428/text.pdf, pdftotext): art. 3 ust. 1 pkt 2 i art. 51 pkt 1–2 (kieruje, koordynuje, kontroluje) – trafne; kierunek wojewoda→administracja zespolona poprawny."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {}
+ },
+ "missing": [
+  "bipUrl dla 6 UW (Łódzki, Opolski, Podkarpacki, Warmińsko-Mazurski, Wielkopolski, Zachodniopomorski) – BIP zintegrowany z gov.pl; oraz bip.mazowieckie.pl nieosiągalny z tego środowiska (błąd TLS), więc bipUrl MUW niepotwierdzony.",
+  "REGON Małopolskiego UW – brak w stopce malopolska.uw.gov.pl i na bip.malopolska.pl/muw.",
+  "startedAt (null) dla 11 wicewojewodów: Miza, Jurkowski (DUW – komunikaty bez daty), Siwicki, Nesterowicz (LUW), Achinger, Śmiałek (MUW), Pośpiech, Gradzik (OUW), Buż (PUW Rzeszów), Zaczkowski, Kopański (ŚUW) – strony UW nie podają dat; wyszukiwarka gov.pl nie zwraca wyników przez curl.",
+  "startedAt dla 14 dyrektorów generalnych (poza Czaplińskim i Wiśniewskim) – strony UW nie podają dat.",
+  "Przynależność partyjna (party=null) – Wikipedia podaje rekomendacje (PO/PSL/Polska 2050), ale to źródło wtórne; nie wprowadzam.",
+  "Administracja niezespolona (art. 56) i delegatury UW (art. 14) – poza zakresem chunku; 16 zestawów organów administracji zespolonej zamodelowane jednym węzłem-klasą.",
+  "Krawędź PRM→appoints→urząd i wojewoda→nominates→urząd to konwencja zastępcza (brak węzłów stanowisk wicewojewodów) – jeśli w przyszłości powstaną węzły pl-i-wicewojewoda-<woj>, należy je przepiąć."
+ ]
+}

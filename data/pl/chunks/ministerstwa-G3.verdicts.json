@@ -1,0 +1,1576 @@
+{
+ "chunk": "ministerstwa-G3",
+ "verifiedAt": "2026-09-17",
+ "summary": "Sprawdzono wszystkie 72 węzły (legalSource w ELI: 100% aktów istnieje, tytuły zgodne; officialUrl/bipUrl/imageUrl: wszystkie HTTP 200), wszystkie 28 osób (każdy sourceUrl otwarty curl-em – nazwisko przy funkcji widoczne w 28/28), wszystkie 122 krawędzie (przepisy przeczytane w tekstach ELI: Konstytucja, ustawy o KAS, AML, Prawo o miarach, Pzp, Pwp, Prawo budowlane, Pgik, dozór techniczny, SOZ, PAK, PARP, KZN, IB, drogi publiczne, Prawo lotnicze, transport drogowy, Prawo wodne, obszary morskie, PAŻP, CPK, Pgg, uRM, mienie państwowe, PKP; rozporządzenia DU/2025/997, 994, 1001/1206, 2023/2711, 2725, 2026/801, 987; obwieszczenia M.P. 2025/961, 1126, 77, 2024/140, 2025/1004; postanowienia M.P. 2023/1383, 2025/690; wykaz MAP xlsx 30.06.2026 = 108 spółek). Zero zmyślonych nazwisk i przepisów. Błędy: (1) 4 krawędzie appoints/nominates dla ministrów z 13.12.2023 cytują art. 154 ust. 1 zamiast art. 154 ust. 3 w zw. z art. 147 (tak stanowi M.P. 2023 poz. 1383); (2) legalSource MAP nosi błędny tytuł aktu (DU/2015/2075 to rozp. 'o utworzeniu Ministerstwa Energii', przemianowane DU/2019/2290); (3) Prezes POLSA był do ustalenia, a jest na polsa.gov.pl/o-polsa/struktura-organizacyjna/ (dr Marta Ewa Wachowicz) i w BIP; (4) prezesi zarządów KGHM, PZU, Enea, Tauron, Poczty Polskiej są dostępni na stronach spółek – dodano; (5) doprecyzowano cytaty 4 krawędzi oversees (ULC art. 16 ust. 4; Szef KAS art. 14 ust. 1 pkt 1 ×2; Pełnomocnik SIE § 1 i § 6 rozp.). Nieosiągalne (Incapsula): ULC, PARP, CPE – unverified zasadne.",
+ "stats": {
+  "nodes_checked": 72,
+  "people_checked": 28,
+  "edges_checked": 122
+ },
+ "nodes": [
+  {
+   "id": "pl-ministerstwo-finansow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/997 § 1 ust. 4 pkt 2 (MF obsługuje działy budżet, finanse publiczne, instytucje finansowe); część 19 = 'Budżet, finanse publiczne i instytucje finansowe' w DU/2025/1185. Strona gov.pl/web/finanse HTTP 200."
+  },
+  {
+   "id": "pl-ministerstwo-rozwoju-i-technologii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Rozp. DU/2025/997 § 1 ust. 4 pkt 1 potwierdza: MRiT obsługuje ministra w działach gospodarka oraz budownictwo…; części 18 i 20 zgodne z DU/2025/1185 (poz. 18 budownictwo…, 20 gospodarka). head=null to kompromis wymuszony przez walidator (jeden headOf na stanowisko) – zaakceptowany; zob. 'missing'."
+  },
+  {
+   "id": "pl-minister-finansow-i-gospodarki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "§ 1 ust. 2–4 rozp. DU/2025/997 (5 działów, części 18, 19, 20, dwa urzędy obsługujące) – zgodne z opisem i topics. Powołanie 24.07.2025 M.P. 2025 poz. 690 ('Pana Andrzeja Domańskiego – na urząd Ministra Finansów i Gospodarki')."
+  },
+  {
+   "id": "pl-ministerstwo-aktywow-panstwowych",
+   "status": "corrected",
+   "fixes": {
+    "legalSource": {
+     "title": "Rozporządzenie Rady Ministrów z dnia 7 grudnia 2015 r. w sprawie utworzenia Ministerstwa Energii (Dz.U. 2015 poz. 2075), § 1 – nazwa zmieniona na „Ministerstwo Aktywów Państwowych” rozporządzeniem RM z dnia 19 listopada 2019 r. (Dz.U. 2019 poz. 2290)",
+     "url": "https://eli.gov.pl/eli/DU/2015/2075/ogl",
+     "act": "DU/2015/2075",
+     "article": "§ 1"
+    }
+   },
+   "note": "ELI DU/2015/2075 to rozporządzenie 'w sprawie utworzenia Ministerstwa Energii' (akt jednorazowy, IN_FORCE); DU/2019/2290 § 1 zmienia nazwę na Ministerstwo Aktywów Państwowych. Tytuł w legalSource był mylący (sugerował, że akt z 2015 r. nosi tytuł 'utworzenia MAP')."
+  },
+  {
+   "id": "pl-minister-aktywow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/994 § 1: działy aktywa państwowe i łączność, części 55 i 26 – zgodne. M.P. 2025 poz. 690: Balczun na urząd MAP z dniem 24.07.2025."
+  },
+  {
+   "id": "pl-ministerstwo-funduszy-i-polityki-regionalnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2019/2293 § 1 (przekształcenie Ministerstwa Inwestycji i Rozwoju) potwierdzone; część 34 = 'Rozwój regionalny' w DU/2025/1185; M.P. 2025 poz. 77 wylicza CPE, PARP (podległe) oraz IRMiR, KZN (nadzorowane) – zgodne z opisem."
+  },
+  {
+   "id": "pl-minister-funduszy-i-polityki-regionalnej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2023/2711 § 1: dział rozwój regionalny, część 34 – zgodne. M.P. 2023 poz. 1383: Pełczyńska-Nałęcz z dniem 13.12.2023 (podstawa art. 154 ust. 3 w zw. z art. 147 Konstytucji)."
+  },
+  {
+   "id": "pl-ministerstwo-infrastruktury",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2018/192 § 1 potwierdzone; części 21, 22, 39, 69 w DU/2025/1185; M.P. 2024 poz. 140 (22 jednostki) – opis zgodny."
+  },
+  {
+   "id": "pl-minister-infrastruktury",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2023/2725 § 1 i załącznik (GDDKiA, GITD, Prezes ULC), części 21, 22, 39, 69 – zgodne. M.P. 2023 poz. 1383: Klimczak z dniem 13.12.2023."
+  },
+  {
+   "id": "pl-ministerstwo-energii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/1141 § 1 (przekształcenie Ministerstwa Przemysłu, włączenie komórek MKiŚ działu energia), wejście w życie dzień po ogłoszeniu 20.08.2025 → 21.08.2025 – zgodne."
+  },
+  {
+   "id": "pl-minister-energii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/1001 (t.j. DU/2025/1206) § 1: działy energia i gospodarka surowcami energetycznymi, części 47 i 48, ust. 5 nadzór nad Prezesem WUG – zgodne. M.P. 2025 poz. 690: Motyka z dniem 24.07.2025."
+  },
+  {
+   "id": "pl-krajowa-administracja-skarbowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o KAS art. 1, art. 11 ust. 1 (t.j. DU/2025/1131) – organy KAS wyliczone zgodnie z opisem; DU/2025/997 zał. pkt 6."
+  },
+  {
+   "id": "pl-szef-kas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 13 ust. 1–2 ustawy o KAS potwierdzone (sekretarz stanu w MF, powołuje PRM na wniosek ministra). gov.pl/web/kas/kierownictwo: Marcin Łoboda – Sekretarz Stanu, Szef KAS."
+  },
+  {
+   "id": "pl-generalny-inspektor-informacji-finansowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa AML art. 10 ust. 1 pkt 2 i ust. 2 (t.j. DU/2025/644) potwierdzone; DU/2025/997 zał. pkt 7. Strona MF: 'Generalny Inspektor Informacji Finansowej: Jarosław Żółtowski'. Uwaga modelowa: GIIF to organ jednoosobowy zamodelowany jako organizacja z people – spójne z modelem pełnomocników."
+  },
+  {
+   "id": "pl-krajowa-informacja-skarbowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21–22 i art. 36 ust. 1 pkt 2 ustawy o KAS potwierdzone; M.P. 2025 poz. 1126 pkt 5. gov.pl/web/kis/kierownictwo: Dyrektor KIS Ewa Łuczak."
+  },
+  {
+   "id": "pl-dyrektor-krajowej-informacji-skarbowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21 ust. 1 ustawy o KAS: dyrektora KIS powołuje minister ds. finansów publicznych na wniosek Szefa KAS – zgodne."
+  },
+  {
+   "id": "pl-izby-administracji-skarbowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 1, art. 36 ust. 1 pkt 3 ustawy o KAS potwierdzone; M.P. 2025 poz. 1126 pkt 4; DU/2025/997 zał. pkt 9."
+  },
+  {
+   "id": "pl-glowny-urzad-miar",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo o miarach art. 10, 10a, 11 (t.j. DU/2022/2063) potwierdzone dosłownie; DU/2025/997 zał. pkt 3."
+  },
+  {
+   "id": "pl-prezes-gum",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 12 ust. 1 Prawa o miarach (PRM powołuje na wniosek ministra ds. gospodarki, nabór) potwierdzony. gum.gov.pl/pl/o-nas/kierownictwo: Prezes GUM Rafał Kępka; komunikat z 28.07.2026: powołanie wręczone 27.07.2026."
+  },
+  {
+   "id": "pl-urzad-zamowien-publicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pzp art. 466 ust. 1–2, art. 467 (t.j. DU/2026/793) potwierdzone; DU/2025/997 zał. pkt 4."
+  },
+  {
+   "id": "pl-prezes-uzp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pzp art. 468 ust. 1: powołuje minister ds. gospodarki spośród osób z naboru – zgodne. gov.pl/web/uzp/kierownictwo-uzp: Agnieszka Olszewska Prezes UZP."
+  },
+  {
+   "id": "pl-urzad-patentowy-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pwp art. 259, art. 260 ust. 1 (t.j. DU/2023/1170) potwierdzone (podlega RM, nadzór z jej ramienia minister ds. gospodarki); DU/2025/997 zał. pkt 5."
+  },
+  {
+   "id": "pl-prezes-urzedu-patentowego-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pwp art. 263 ust. 2: PRM powołuje na wniosek ministra ds. gospodarki, kadencja 5 lat – zgodne. uprp.gov.pl/pl/o-urzedzie/kierownictwo: 'Prezes dr hab. Ewa Skrzydło-Tefelska. Od 7 maja 2025 roku pełni funkcję Prezesa'."
+  },
+  {
+   "id": "pl-glowny-urzad-nadzoru-budowlanego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo budowlane art. 88 ust. 1–3 (t.j. DU/2026/524) potwierdzone; DU/2025/997 zał. pkt 2."
+  },
+  {
+   "id": "pl-glowny-inspektor-nadzoru-budowlanego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 88 ust. 3 Prawa budowlanego: PRM powołuje na wniosek ministra ds. budownictwa – zgodne. gov.pl/web/gunb/kierownictwo: Robert Wiktorski GINB."
+  },
+  {
+   "id": "pl-glowny-urzad-geodezji-i-kartografii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pgik art. 6 ust. 1–3 (t.j. DU/2024/1151) potwierdzone; DU/2025/997 zał. pkt 1."
+  },
+  {
+   "id": "pl-glowny-geodeta-kraju",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pgik art. 6b ust. 1 potwierdzony. gov.pl/web/gugik/kierownictwo: Andrzej Żylis Główny Geodeta Kraju."
+  },
+  {
+   "id": "pl-urzad-dozoru-technicznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o dozorze technicznym art. 35–36 (t.j. DU/2024/1194) potwierdzone (państwowa osoba prawna, podlega ministrowi ds. gospodarki); M.P. 2025 poz. 961 cz. I pkt 2."
+  },
+  {
+   "id": "pl-prezes-udt",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 38 ust. 1 ustawy o dozorze technicznym potwierdzony. udt.gov.pl/kim-jestesmy/wladze-i-kierownictwo-udt: 'Paweł Smoliński, Prezes Urzędu Dozoru Technicznego'."
+  },
+  {
+   "id": "pl-polskie-centrum-akredytacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o systemach oceny zgodności art. 38 ust. 1–3 (t.j. DU/2025/568) potwierdzone; M.P. 2025 poz. 961 cz. II pkt 3."
+  },
+  {
+   "id": "pl-dyrektor-pca",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 40, 41 ust. 1, 43 ust. 1 (kadencja 4 lata) potwierdzone. pca.gov.pl/o-pca/kierownictwo/: Lucyna Olborska Dyrektor PCA."
+  },
+  {
+   "id": "pl-polska-agencja-kosmiczna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PAK art. 1 ust. 1–2 (agencja wykonawcza), art. 2 (podlega ministrowi ds. gospodarki) – t.j. DU/2020/1957 potwierdzone; M.P. 2025 poz. 961 cz. I pkt 1."
+  },
+  {
+   "id": "pl-prezes-polsa",
+   "status": "corrected",
+   "fixes": {
+    "status": "active",
+    "statusNote": null,
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-marta-wachowicz",
+       "name": "Marta Ewa Wachowicz",
+       "positionId": "pl-prezes-polsa",
+       "positionName": "Prezes Polskiej Agencji Kosmicznej",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://polsa.gov.pl/o-polsa/struktura-organizacyjna/",
+       "startedAtSource": null,
+       "note": "Strona 'Struktura organizacyjna' (sekcja KIEROWNICTWO) podaje: Prezes – dr Marta Ewa Wachowicz, Wiceprezes – płk Marcin Mazur; potwierdzone w BIP: https://pak.bip.gov.pl/kierownictwo/kierownictwo-polskiej-agencji-kosmicznej.html. Daty powołania strony nie podają."
+      }
+     ]
+    },
+    "provenance": {
+     "sources": [
+      "https://polsa.gov.pl/o-polsa/struktura-organizacyjna/",
+      "https://pak.bip.gov.pl/kierownictwo/kierownictwo-polskiej-agencji-kosmicznej.html",
+      "https://eli.gov.pl/eli/DU/2014/1533/ogl"
+     ],
+     "verifiedAt": "2026-09-17",
+     "confidence": "high"
+    }
+   },
+   "note": "Obsada BYŁA do ustalenia: polsa.gov.pl ma podstronę /o-polsa/struktura-organizacyjna/ z sekcją KIEROWNICTWO (Prezes dr Marta Ewa Wachowicz, Wiceprezes płk Marcin Mazur) oraz BIP pak.bip.gov.pl/kierownictwo/. Status unverified → active, dodano osobę."
+  },
+  {
+   "id": "pl-spolki-skarbu-panstwa-nadzorowane-przez-map",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pobrano załącznik 'Wykaz_spolek_SP_stan_na_2026-06-30.xlsx' ze strony MAP: 108 pozycji numerowanych – zgodne z count=108. Art. 7 ust. 2 pkt 1 ustawy o zasadach zarządzania mieniem państwowym (t.j. DU/2026/373) potwierdzony w tekście."
+  },
+  {
+   "id": "pl-orlen-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Wykaz MAP 30.06.2026 lp. 48: ORLEN S.A., KRS 0000028860, 49,9% – zgodne; DU/2026/801 zał. lp. 11. Strona orlen.pl: podstrony zarządu zwracają 404 (curl i WebFetch) – prezesa nie ustalono, statusNote zasadna."
+  },
+  {
+   "id": "pl-pge-polska-grupa-energetyczna-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Wykaz MAP 30.06.2026 lp. 50: PGE, KRS 0000059307, 60,86% – zgodne; DU/2026/801 lp. 12. gkpge.pl blokuje boty ('To działanie zostało odrzucone') – prezesa nie ustalono."
+  },
+  {
+   "id": "pl-kghm-polska-miedz-sa",
+   "status": "corrected",
+   "fixes": {
+    "statusNote": null,
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-remigiusz-paszkiewicz",
+       "name": "Remigiusz Paszkiewicz",
+       "positionId": null,
+       "positionName": "Prezes Zarządu KGHM Polska Miedź S.A.",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://kghm.com/pl/o-nas/wladze",
+       "startedAtSource": null,
+       "note": "Strona 'Władze spółki' KGHM: Zarząd – Remigiusz Paszkiewicz, Prezes Zarządu."
+      }
+     ]
+    }
+   },
+   "note": "Wykaz MAP 30.06.2026 lp. 37: KGHM, KRS 0000023302, 31,79% – zgodne; DU/2026/801 lp. 8. Oficjalna strona kghm.com/pl/o-nas/wladze jest dostępna i podaje Prezesa Zarządu (Remigiusz Paszkiewicz) – dodano osobę; statusNote 'nieparsowalne' nieaktualna."
+  },
+  {
+   "id": "pl-pko-bank-polski-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Wykaz MAP 30.06.2026 lp. 66: PKO BP, KRS 0000026438, 29,43% – zgodne; DU/2026/801 lp. 28. pkobp.pl: podstrony 'o-nas'/'zarzad' → 404 (curl, WebFetch) – prezesa nie ustalono."
+  },
+  {
+   "id": "pl-pzu-sa",
+   "status": "corrected",
+   "fixes": {
+    "statusNote": null,
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-bogdan-benczak",
+       "name": "Bogdan Benczak",
+       "positionId": null,
+       "positionName": "Prezes Zarządu PZU SA",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.pzu.pl/grupa-pzu/spolki/pzu-sa/zarzad",
+       "startedAtSource": null,
+       "note": "Strona 'Zarząd' PZU SA: 'Bogdan Benczak – Prezes Zarządu PZU SA'."
+      }
+     ]
+    }
+   },
+   "note": "Wykaz MAP 30.06.2026 lp. 67: PZU, KRS 0000009831, 34,19% – zgodne; DU/2026/801 lp. 29. Strona pzu.pl/grupa-pzu/spolki/pzu-sa/zarzad dostępna (HTTP 200) – dodano Prezesa Zarządu."
+  },
+  {
+   "id": "pl-enea-sa",
+   "status": "corrected",
+   "fixes": {
+    "statusNote": null,
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-grzegorz-kinelski",
+       "name": "Grzegorz Kinelski",
+       "positionId": null,
+       "positionName": "Prezes Zarządu ENEA S.A.",
+       "type": "appointed",
+       "startedAt": "2024-03",
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.enea.pl/pl/grupaenea/o-grupie/wladze",
+       "startedAtSource": "https://www.enea.pl/pl/grupaenea/o-grupie/wladze",
+       "note": "Biogram na stronie 'Władze': 'Od marca 2024 obejmuje stanowisko Prezesa Zarządu Enea S.A.'"
+      }
+     ]
+    }
+   },
+   "note": "Wykaz MAP 30.06.2026 lp. 18: ENEA, KRS 0000012483, 52,29% – zgodne; DU/2026/801 lp. 3. Strona enea.pl/pl/grupaenea/o-grupie/wladze dostępna – Prezes Grzegorz Kinelski (od marca 2024) – dodano."
+  },
+  {
+   "id": "pl-tauron-polska-energia-sa",
+   "status": "corrected",
+   "fixes": {
+    "statusNote": null,
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-grzegorz-lot",
+       "name": "Grzegorz Lot",
+       "positionId": null,
+       "positionName": "Prezes Zarządu TAURON Polska Energia S.A.",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.tauron.pl/tauron/o-tauronie/wladze-spolki",
+       "startedAtSource": null,
+       "note": "Strona 'Władze Spółki' TAURON: Zarząd – Grzegorz Lot, Prezes Zarządu."
+      }
+     ]
+    }
+   },
+   "note": "Wykaz MAP 30.06.2026 lp. 85: TAURON, KRS 0000271562, 30,06% – zgodne; DU/2026/801 lp. 30. Strona tauron.pl/tauron/o-tauronie/wladze-spolki dostępna – dodano Prezesa Zarządu."
+  },
+  {
+   "id": "pl-poczta-polska-sa",
+   "status": "corrected",
+   "fixes": {
+    "statusNote": null,
+    "people": {
+     "type": "people",
+     "people": [
+      {
+       "id": "pl-magdalena-gaj",
+       "name": "Magdalena Gaj",
+       "positionId": null,
+       "positionName": "Prezes Zarządu Poczty Polskiej S.A.",
+       "type": "appointed",
+       "startedAt": null,
+       "acting": false,
+       "status": "verified",
+       "party": null,
+       "imageUrl": null,
+       "sourceUrl": "https://www.poczta-polska.pl/grupa-pp/poczta-polska/wladze-spolki/zarzad/",
+       "startedAtSource": null,
+       "note": "Strona 'Zarząd' Poczty Polskiej: 'Prezes Zarządu Magdalena Gaj' (biogram: do maja 2026 r. Prezes Zarządu EXATEL S.A. – objęcie funkcji w PP prawdopodobnie w połowie 2026 r., daty strona nie podaje)."
+      }
+     ]
+    }
+   },
+   "note": "Wykaz MAP 30.06.2026 lp. 53: Poczta Polska, KRS 0000334972, 100% – zgodne; DU/2026/801 lp. 14. Strona poczta-polska.pl/grupa-pp/poczta-polska/wladze-spolki/zarzad/ dostępna – dodano Prezesa Zarządu."
+  },
+  {
+   "id": "pl-polska-agencja-rozwoju-przedsiebiorczosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PARP art. 1 (państwowa osoba prawna), art. 2 (podlega ministrowi ds. rozwoju regionalnego) – t.j. DU/2025/98 potwierdzone; M.P. 2025 poz. 77 cz. I pkt 2. Uwaga: art. 1 ust. 2 mówi 'państwowa osoba prawna' (agencją wykonawczą jest na mocy ustawy o finansach publicznych) – subtype executive_agency dopuszczalny."
+  },
+  {
+   "id": "pl-prezes-parp",
+   "status": "unverified",
+   "fixes": {},
+   "note": "parp.gov.pl (component/site/site/kierownictwo, /kierownictwo, bip.parp.gov.pl): curl → Incapsula (pusta treść), WebFetch → BLOCKED. Status unverified zasadny."
+  },
+  {
+   "id": "pl-centrum-projektow-europejskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025 poz. 77 cz. I pkt 1: 'Centrum Projektów Europejskich w Warszawie' – jednostka podległa; uRM art. 34 ust. 1 potwierdzony. Strony cpe.gov.pl/bip.cpe.gov.pl za Incapsulą (bipUrl zwraca 200, ale bez treści dla botów)."
+  },
+  {
+   "id": "pl-dyrektor-cpe",
+   "status": "unverified",
+   "fixes": {},
+   "note": "cpe.gov.pl (dyrektor-centrum-projektow-europejskich, /o-nas/kierownictwo, bip.cpe.gov.pl): curl → Incapsula, WebFetch → BLOCKED. Status unverified zasadny."
+  },
+  {
+   "id": "pl-krajowy-zasob-nieruchomosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o KZN art. 4 ust. 1, art. 31 ust. 1 i 3 (t.j. DU/2025/834) potwierdzone; M.P. 2025 poz. 77 cz. II pkt 2."
+  },
+  {
+   "id": "pl-prezes-kzn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 36 ust. 1 ustawy o KZN potwierdzony. gov.pl/web/kzn/kierownictwo: Łukasz Bałajewicz Prezes KZN."
+  },
+  {
+   "id": "pl-instytut-rozwoju-miast-i-regionow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o instytutach badawczych art. 1, 23 (t.j. DU/2026/741) potwierdzone; M.P. 2025 poz. 77 cz. II pkt 1."
+  },
+  {
+   "id": "pl-dyrektor-irmir",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 ustawy o IB: minister nadzorujący powołuje i odwołuje dyrektora – zgodne. irmir.pl/o-irmir/dyrekcja/: dr Wojciech Jarczewski Dyrektor."
+  },
+  {
+   "id": "pl-generalna-dyrekcja-drog-krajowych-i-autostrad",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o drogach publicznych art. 18 ust. 1, art. 18a ust. 1 (t.j. DU/2025/889) potwierdzone; DU/2023/2725 zał. pkt 1."
+  },
+  {
+   "id": "pl-generalny-dyrektor-drog-krajowych-i-autostrad",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 18 ust. 3 ustawy o drogach publicznych: PRM powołuje na wniosek ministra ds. transportu – potwierdzony. gov.pl/web/gddkia/kierownictwo-gddkia: 'Paweł Woźniak p.o. Generalnego Dyrektora' – status acting zgodny."
+  },
+  {
+   "id": "pl-urzad-lotnictwa-cywilnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo lotnicze art. 20 ust. 1, art. 22 ust. 1 (państwowa jednostka budżetowa) – t.j. DU/2025/1431 potwierdzone; DU/2023/2725 zał. pkt 3. Strona ulc.gov.pl HTTP 200, ale treść za Incapsulą."
+  },
+  {
+   "id": "pl-prezes-ulc",
+   "status": "unverified",
+   "fixes": {},
+   "note": "ulc.gov.pl/pl/o-ulc/kierownictwo oraz /kierownictwo-urzedu: curl (UA Chrome) zwraca stronę Incapsula (pusta treść), WebFetch: BLOCKED; bip.ulc.gov.pl nie odpowiada. Obsady nie da się potwierdzić – status unverified zasadny."
+  },
+  {
+   "id": "pl-glowny-inspektorat-transportu-drogowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o transporcie drogowym art. 52 ust. 1, art. 53 ust. 1 (t.j. DU/2025/1490) potwierdzone; DU/2023/2725 zał. pkt 2."
+  },
+  {
+   "id": "pl-glowny-inspektor-transportu-drogowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 53 ust. 2: PRM powołuje na wniosek ministra ds. transportu – potwierdzony. gov.pl/web/gitd/kierownictwo-urzedu: 'Robert Koźlak p.o. Główny Inspektor Transportu Drogowego' – acting zgodny."
+  },
+  {
+   "id": "pl-panstwowe-gospodarstwo-wodne-wody-polskie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo wodne art. 239 ust. 1 i 3, art. 241 (t.j. DU/2025/960) potwierdzone; M.P. 2024 poz. 140 pkt 11. Dział gospodarka wodna należy do MI (DU/2023/2725 § 1 ust. 2 pkt 2)."
+  },
+  {
+   "id": "pl-prezes-wod-polskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 242 ust. 1–2 Prawa wodnego (powołuje/odwołuje minister ds. gospodarki wodnej) potwierdzone. gov.pl/web/wody-polskie/kierownictwo: Mateusz Balcerowicz Prezes PGW WP; biogram: 'powołany … z dniem 8 lipca 2025 roku'."
+  },
+  {
+   "id": "pl-urzedy-morskie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o obszarach morskich art. 38 ust. 1 pkt 2 i ust. 2, art. 39 ust. 1–2 i 4, art. 40 (t.j. DU/2024/1125) potwierdzone; M.P. 2024 poz. 140 pkt 16–17 (UM Gdynia, UM Szczecin) – count=2 zgodny."
+  },
+  {
+   "id": "pl-transportowy-dozor-techniczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o dozorze technicznym art. 42–43 potwierdzone (państwowa osoba prawna, podlega ministrowi ds. transportu); M.P. 2024 poz. 140 pkt 14."
+  },
+  {
+   "id": "pl-dyrektor-tdt",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 45 ust. 1 ustawy o dozorze technicznym potwierdzony. tdt.gov.pl/o-tdt/kierownictwo-2/: 'Agnieszka Zawadzka p. o. Dyrektor TDT' – acting zgodny."
+  },
+  {
+   "id": "pl-polska-agencja-zeglugi-powietrznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PAŻP art. 1 ust. 1–2, art. 2 ust. 1, art. 3 (t.j. DU/2025/1267) potwierdzone; M.P. 2024 poz. 140 pkt 12."
+  },
+  {
+   "id": "pl-prezes-pazp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 1 i 3 ustawy o PAŻP (PRM powołuje na wniosek ministra ds. transportu) potwierdzone. pansa.pl/kierownictwo/: 'Prezes Polskiej Agencji Żeglugi Powietrznej Magdalena Jaworska – Maćkowiak'."
+  },
+  {
+   "id": "pl-pelnomocnik-rzadu-ds-centralnego-portu-komunikacyjnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o CPK art. 4 ust. 1–3 (t.j. DU/2024/1747) potwierdzone dosłownie. gov.pl/web/infrastruktura/kierownictwo-ministerstwa: Malepszak – Podsekretarz stanu, Pełnomocnik Rządu ds. CPK; biogram: nominowany 19.06.2026."
+  },
+  {
+   "id": "pl-centralny-port-komunikacyjny-sp-z-oo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o CPK art. 11–12 (t.j. DU/2024/1747) potwierdzone; DU/2026/987 zał. lp. 148: CPK sp. z o.o. → Pełnomocnik Rządu ds. CPK, art. 8 ust. 1 pkt 1–2. portpolska.pl/pl/o-spolce/zarzad: 'Marcin Michalski Pełniący obowiązki Prezesa Zarządu' – zgodne."
+  },
+  {
+   "id": "pl-pkp-polskie-linie-kolejowe-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 15 ust. 1 ustawy o komercjalizacji PKP (t.j. DU/2026/967) potwierdzony; DU/2026/987 lp. 173 → minister właściwy ds. transportu. plk-sa.pl/kontakt/zarzad-spolki: Piotr Wyborski Prezes Zarządu."
+  },
+  {
+   "id": "pl-wyzszy-urzad-gorniczy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pgg art. 164 ust. 1, art. 165 ust. 1, art. 167 (t.j. DU/2026/69) potwierdzone; DU/2025/1206 § 1 ust. 5."
+  },
+  {
+   "id": "pl-prezes-wug",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 165 ust. 1–2 Pgg (nadzór ministra ds. gospodarki surowcami energetycznymi; PRM powołuje na jego wniosek) potwierdzone. gov.pl/web/wug/kierownictwo-wyzszego-urzedu-gorniczego2: 'Prezes dr inż. Piotr Litwa'."
+  },
+  {
+   "id": "pl-pelnomocnik-rzadu-ds-strategicznej-infrastruktury-energetycznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "T.j. DU/2025/1136: § 1 – Pełnomocnikiem jest sekretarz albo podsekretarz stanu w urzędzie obsługującym ministra ds. gospodarki surowcami energetycznymi; § 2 ust. 1 – wykonuje uprawnienia z akcji SP (art. 12a Prawa energetycznego); § 6 – obsługa przez ten urząd. gov.pl/web/energia/kierownictwo: Wrochna – Sekretarz Stanu, Pełnomocnik Rządu ds. SIE; biogram: powołany 26.08.2025."
+  },
+  {
+   "id": "pl-spolki-strategicznej-infrastruktury-energetycznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2026/987 zał. lp. 177–181: PEJ, Naftoport (art. 8 ust. 1 pkt 1–2), GAZ-SYSTEM, PERN, PSE (art. 8 ust. 1 pkt 2) → Pełnomocnik Rządu ds. SIE – zgodne z count=5 i aliasami."
+  },
+  {
+   "id": "pl-narodowe-centrum-badan-jadrowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o IB art. 1, 23 potwierdzone; M.P. 2025 poz. 1004 pkt 9 (NCBJ). ncbj.gov.pl/dyrekcja-ncbj: Dyrektor NCBJ prof. Jakub Kupecki."
+  },
+  {
+   "id": "pl-dyrektor-ncbj",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 2 ustawy o IB potwierdzony; ncbj.gov.pl/dyrekcja-ncbj: Jakub Kupecki."
+  }
+ ],
+ "people": [
+  {
+   "nodeId": "pl-minister-finansow-i-gospodarki",
+   "personId": "pl-andrzej-domanski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/finanse/kierownictwo: 'Andrzej Domański Minister Finansów i Gospodarki'. M.P. 2025 poz. 690 (24.07.2025) powołuje na urząd MFiG; M.P. 2023 poz. 1383 – wcześniej Minister Finansów od 13.12.2023. Zdjęcie HTTP 200."
+  },
+  {
+   "nodeId": "pl-minister-aktywow-panstwowych",
+   "personId": "pl-wojciech-balczun",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/aktywa-panstwowe/kierownictwo-ministerstwa: 'Wojciech Balczun Minister Aktywów Państwowych'; M.P. 2025 poz. 690 z dniem 24.07.2025."
+  },
+  {
+   "nodeId": "pl-minister-funduszy-i-polityki-regionalnej",
+   "personId": "pl-katarzyna-pelczynska-nalecz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/fundusze-regiony/kierownictwo-ministerstwa: 'Katarzyna Pełczyńska-Nałęcz Minister'; M.P. 2023 poz. 1383 z dniem 13.12.2023."
+  },
+  {
+   "nodeId": "pl-minister-infrastruktury",
+   "personId": "pl-dariusz-klimczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/infrastruktura/kierownictwo-ministerstwa: 'Dariusz Klimczak Minister infrastruktury'; M.P. 2023 poz. 1383 z dniem 13.12.2023."
+  },
+  {
+   "nodeId": "pl-minister-energii",
+   "personId": "pl-milosz-motyka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/energia/kierownictwo: 'Miłosz Motyka Minister Energii'; M.P. 2025 poz. 690 z dniem 24.07.2025."
+  },
+  {
+   "nodeId": "pl-szef-kas",
+   "personId": "pl-marcin-loboda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/kas/kierownictwo: 'Marcin Łoboda Sekretarz Stanu, Szef Krajowej Administracji Skarbowej' (także na /web/finanse/kierownictwo). Data powołania nieustalona – null zasadne."
+  },
+  {
+   "nodeId": "pl-generalny-inspektor-informacji-finansowej",
+   "personId": "pl-jaroslaw-zoltowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/finanse/generalny-inspektor-informacji-finansowej: 'Generalny Inspektor Informacji Finansowej: Jarosław Żółtowski'."
+  },
+  {
+   "nodeId": "pl-dyrektor-krajowej-informacji-skarbowej",
+   "personId": "pl-ewa-luczak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/kis/kierownictwo: 'Dyrektor Krajowej Informacji Skarbowej Ewa Łuczak'."
+  },
+  {
+   "nodeId": "pl-prezes-gum",
+   "personId": "pl-rafal-kepka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gum.gov.pl/pl/o-nas/kierownictwo: 'Prezes Głównego Urzędu Miar Rafał Kępka'; komunikat GUM 28.07.2026: 27 lipca 2026 r. MFiG w imieniu PRM wręczył powołanie – startedAt 2026-07-27 potwierdzone."
+  },
+  {
+   "nodeId": "pl-prezes-uzp",
+   "personId": "pl-agnieszka-olszewska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/uzp/kierownictwo-uzp: 'Agnieszka Olszewska Prezes Urzędu Zamówień Publicznych'."
+  },
+  {
+   "nodeId": "pl-prezes-urzedu-patentowego-rp",
+   "personId": "pl-ewa-skrzydlo-tefelska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uprp.gov.pl/pl/o-urzedzie/kierownictwo: 'Prezes dr hab. Ewa Skrzydło-Tefelska. Od 7 maja 2025 roku pełni funkcję Prezesa' – startedAt 2025-05-07 potwierdzone."
+  },
+  {
+   "nodeId": "pl-glowny-inspektor-nadzoru-budowlanego",
+   "personId": "pl-robert-wiktorski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/gunb/kierownictwo: 'Robert Wiktorski Główny Inspektor Nadzoru Budowlanego'."
+  },
+  {
+   "nodeId": "pl-glowny-geodeta-kraju",
+   "personId": "pl-andrzej-zylis",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/gugik/kierownictwo: 'Andrzej Żylis Główny Geodeta Kraju'."
+  },
+  {
+   "nodeId": "pl-prezes-udt",
+   "personId": "pl-pawel-smolinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "udt.gov.pl/kim-jestesmy/wladze-i-kierownictwo-udt: 'Paweł Smoliński, Prezes Urzędu Dozoru Technicznego'."
+  },
+  {
+   "nodeId": "pl-dyrektor-pca",
+   "personId": "pl-lucyna-olborska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pca.gov.pl/o-pca/kierownictwo/: 'Lucyna Olborska Dyrektor Polskiego Centrum Akredytacji'."
+  },
+  {
+   "nodeId": "pl-prezes-kzn",
+   "personId": "pl-lukasz-balajewicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/kzn/kierownictwo: 'Łukasz Bałajewicz Prezes Krajowego Zasobu Nieruchomości'."
+  },
+  {
+   "nodeId": "pl-dyrektor-irmir",
+   "personId": "pl-wojciech-jarczewski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "irmir.pl/o-irmir/dyrekcja/: 'dr Wojciech Jarczewski Dyrektor'."
+  },
+  {
+   "nodeId": "pl-generalny-dyrektor-drog-krajowych-i-autostrad",
+   "personId": "pl-pawel-wozniak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/gddkia/kierownictwo-gddkia: 'Paweł Woźniak p.o. Generalnego Dyrektora Dróg Krajowych i Autostrad' – acting=true zgodne."
+  },
+  {
+   "nodeId": "pl-glowny-inspektor-transportu-drogowego",
+   "personId": "pl-robert-kozlak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/gitd/kierownictwo-urzedu: 'Robert Koźlak p.o. Główny Inspektor Transportu Drogowego' – acting zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-wod-polskich",
+   "personId": "pl-mateusz-balcerowicz",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/wody-polskie/kierownictwo: 'Mateusz Balcerowicz Prezes PGW Wody Polskie'; biogram (startedAtSource): 'powołany przez Ministra Infrastruktury … z dniem 8 lipca 2025 roku'."
+  },
+  {
+   "nodeId": "pl-dyrektor-tdt",
+   "personId": "pl-agnieszka-zawadzka",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "tdt.gov.pl/o-tdt/kierownictwo-2/: 'Agnieszka Zawadzka p. o. Dyrektor Transportowego Dozoru Technicznego' – acting zgodne."
+  },
+  {
+   "nodeId": "pl-prezes-pazp",
+   "personId": "pl-magdalena-jaworska-mackowiak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "pansa.pl/kierownictwo/: 'Prezes Polskiej Agencji Żeglugi Powietrznej Magdalena Jaworska – Maćkowiak' (na stronie spacje wokół myślnika)."
+  },
+  {
+   "nodeId": "pl-pelnomocnik-rzadu-ds-centralnego-portu-komunikacyjnego",
+   "personId": "pl-piotr-malepszak",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/infrastruktura/kierownictwo-ministerstwa: 'Piotr Malepszak Podsekretarz stanu, Pełnomocnik Rządu do spraw Centralnego Portu Komunikacyjnego'; biogram: 'nominowany 19 czerwca 2026 roku' – startedAt potwierdzone."
+  },
+  {
+   "nodeId": "pl-centralny-port-komunikacyjny-sp-z-oo",
+   "personId": "pl-marcin-michalski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "portpolska.pl/pl/o-spolce/zarzad: 'Marcin Michalski Pełniący obowiązki Prezesa Zarządu' – acting zgodne (uwaga: sourceUrl to domena portpolska.pl, nie cpk.pl z officialUrl)."
+  },
+  {
+   "nodeId": "pl-pkp-polskie-linie-kolejowe-sa",
+   "personId": "pl-piotr-wyborski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "plk-sa.pl/kontakt/zarzad-spolki: 'Piotr Wyborski Prezes Zarządu PKP Polskich Linii Kolejowych S.A.'."
+  },
+  {
+   "nodeId": "pl-prezes-wug",
+   "personId": "pl-piotr-litwa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/wug/kierownictwo-wyzszego-urzedu-gorniczego2: 'Prezes dr inż. Piotr Litwa'."
+  },
+  {
+   "nodeId": "pl-pelnomocnik-rzadu-ds-strategicznej-infrastruktury-energetycznej",
+   "personId": "pl-wojciech-wrochna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "gov.pl/web/energia/kierownictwo: 'Wojciech Wrochna Sekretarz Stanu, Pełnomocnik Rządu ds. Strategicznej Infrastruktury Energetycznej'; biogram: 'powołany 26 sierpnia 2025 roku' – potwierdzone."
+  },
+  {
+   "nodeId": "pl-dyrektor-ncbj",
+   "personId": "pl-jakub-kupecki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "ncbj.gov.pl/dyrekcja-ncbj: 'Dyrektor Narodowego Centrum Badań Jądrowych Prof. dr hab. inż. Jakub Kupecki'."
+  }
+ ],
+ "edges": [
+  {
+   "id": "e-ministerstwo-finansow--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/997 § 1 ust. 4 pkt 2 + Konstytucja art. 149 ust. 1 potwierdzone."
+  },
+  {
+   "id": "e-ministerstwo-rozwoju-i-technologii--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Kompromis: typ oversees zamiast dept_head, bo walidator dopuszcza jeden headOf na stanowisko. § 1 ust. 4 pkt 1 rozp. DU/2025/997 potwierdza, że MRiT obsługuje MFiG. Semantycznie 'kieruje', nie 'nadzoruje' – zob. 'missing' (propozycja rozszerzenia walidatora). Id krawędzi ('--head') mylący przy typie oversees."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-finansow-i-gospodarki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 161 ('Prezydent, na wniosek Prezesa RM, dokonuje zmian w składzie RM') + M.P. 2025 poz. 690 (24.07.2025, Domański) – zgodne; kierunek Prezydent→minister."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-finansow-i-gospodarki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 161 – 'na wniosek Prezesa Rady Ministrów'; M.P. 2025 poz. 690 kontrasygnowane przez D. Tuska – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Konstytucja art. 147 ust. 1: RM składa się z PRM i ministrów – zgodne."
+  },
+  {
+   "id": "e-ministerstwo-aktywow-panstwowych--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/994 § 1 ust. 4 potwierdzone."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-aktywow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 161 + M.P. 2025 poz. 690 (Balczun) – zgodne."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-aktywow-panstwowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 161 – na wniosek PRM; M.P. 2025 poz. 690."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 147 ust. 1 – zgodne."
+  },
+  {
+   "id": "e-ministerstwo-funduszy-i-polityki-regionalnej--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2023/2711 § 1 ust. 4 potwierdzone."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-funduszy-i-polityki-regionalnej",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 3 w zw. z art. 147 (postanowienie Prezydenta RP z 13.12.2023 nr 1131.45.2023, M.P. 2023 poz. 1383)"
+   },
+   "note": "Postanowienie M.P. 2023 poz. 1383 wydano 'na podstawie art. 154 ust. 3 w związku z art. 147 Konstytucji' (Rada Ministrów wybrana przez Sejm), nie art. 154 ust. 1. Kierunek Prezydent→minister (powołuje) poprawny."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-funduszy-i-polityki-regionalnej",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 3 (Sejm wybiera Prezesa RM oraz proponowanych przez niego członków RM; postanowienie M.P. 2023 poz. 1383)"
+   },
+   "note": "W trybie art. 154 ust. 3 PRM 'proponuje' członków RM Sejmowi – semantyka nominates zachowana, ale przepis to ust. 3, nie ust. 1."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 147 ust. 1 – zgodne."
+  },
+  {
+   "id": "e-ministerstwo-infrastruktury--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2023/2725 § 1 ust. 4 potwierdzone."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-infrastruktury",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 3 w zw. z art. 147 (postanowienie Prezydenta RP z 13.12.2023 nr 1131.45.2023, M.P. 2023 poz. 1383)"
+   },
+   "note": "Jak wyżej – M.P. 2023 poz. 1383 powołuje Klimczaka na podstawie art. 154 ust. 3 w zw. z art. 147."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-infrastruktury",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Konstytucja RP art. 154 ust. 3 (Sejm wybiera Prezesa RM oraz proponowanych przez niego członków RM; postanowienie M.P. 2023 poz. 1383)"
+   },
+   "note": "Jak wyżej – art. 154 ust. 3, nie ust. 1."
+  },
+  {
+   "id": "e-minister-infrastruktury--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 147 ust. 1 – zgodne."
+  },
+  {
+   "id": "e-ministerstwo-energii--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2025/1206 § 1 ust. 4 (w brzmieniu od 21.08.2025: 'Obsługę ministra zapewnia Ministerstwo Energii') potwierdzone."
+  },
+  {
+   "id": "e-prezydent-rp--appoints--minister-energii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 161 + M.P. 2025 poz. 690 (Motyka) – zgodne."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--nominates--minister-energii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 161 – na wniosek PRM; M.P. 2025 poz. 690."
+  },
+  {
+   "id": "e-minister-energii--ex_officio--rada-ministrow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 147 ust. 1 – zgodne."
+  },
+  {
+   "id": "e-krajowa-administracja-skarbowa--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 11 ust. 1 pkt 2, art. 14 ustawy o KAS potwierdzone."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--szef-kas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 13 ust. 2 ustawy o KAS: Szefa KAS powołuje PRM na wniosek ministra ds. finansów publicznych – zgodne, kierunek OK."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--nominates--szef-kas",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 13 ust. 2 – 'na wniosek ministra' – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--krajowa-administracja-skarbowa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 13 ust. 1 (Szef KAS podlega ministrowi) + DU/2025/997 zał. pkt 6 – zgodne."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--generalny-inspektor-informacji-finansowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa AML art. 10 ust. 2: GIIF powołuje i odwołuje PRM na wniosek ministra ds. finansów publicznych – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--nominates--generalny-inspektor-informacji-finansowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 2 – na wniosek ministra – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--generalny-inspektor-informacji-finansowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10 ust. 1 pkt 1 (minister jako naczelny organ informacji finansowej) + DU/2025/997 zał. pkt 7 – zgodne."
+  },
+  {
+   "id": "e-krajowa-informacja-skarbowa--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21–22 ustawy o KAS potwierdzone."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--appoints--dyrektor-krajowej-informacji-skarbowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21 ust. 1: dyrektora KIS powołuje minister ds. finansów publicznych na wniosek Szefa KAS – zgodne."
+  },
+  {
+   "id": "e-szef-kas--nominates--dyrektor-krajowej-informacji-skarbowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 21 ust. 1 – na wniosek Szefa KAS – zgodne."
+  },
+  {
+   "id": "e-szef-kas--oversees--krajowa-informacja-skarbowa",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o KAS art. 14 ust. 1 pkt 1 (nadzór Szefa KAS nad działalnością dyrektora Krajowej Informacji Skarbowej) i art. 36 ust. 1 pkt 2; rozp. PRM Dz.U. 2025 poz. 997 załącznik pkt 8",
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2016/1947/ogl",
+      "https://eli.gov.pl/eli/DU/2025/997/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "note": "Art. 14 ust. 1 pkt 1 ustawy o KAS (t.j. DU/2025/1131) wprost: 'nadzór nad działalnością dyrektora Krajowej Informacji Skarbowej' – przepis szczególny, confidence high zamiast medium."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--appoints--izby-administracji-skarbowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 1: dyrektora IAS powołuje minister na wniosek Szefa KAS; seatsAppointed=16 (16 izb) – zgodne."
+  },
+  {
+   "id": "e-szef-kas--nominates--izby-administracji-skarbowej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 24 ust. 1 – na wniosek Szefa KAS – zgodne."
+  },
+  {
+   "id": "e-szef-kas--oversees--izby-administracji-skarbowej",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Ustawa o KAS art. 14 ust. 1 pkt 1 (nadzór Szefa KAS nad działalnością dyrektorów izb administracji skarbowej) i art. 36 ust. 1 pkt 3; rozp. PRM Dz.U. 2025 poz. 997 załącznik pkt 9",
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2016/1947/ogl",
+      "https://eli.gov.pl/eli/DU/2025/997/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "note": "Art. 14 ust. 1 pkt 1 wprost obejmuje dyrektorów izb administracji skarbowej – confidence high."
+  },
+  {
+   "id": "e-glowny-urzad-miar--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-gum",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo o miarach art. 12 ust. 1: Prezes powoływany przez PRM (nabór) na wniosek ministra ds. gospodarki – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--nominates--prezes-gum",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 12 ust. 1 – na wniosek ministra ds. gospodarki (MFiG kieruje działem gospodarka) – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--glowny-urzad-miar",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 10a: nadzór nad Prezesem sprawuje minister ds. gospodarki + DU/2025/997 zał. pkt 3 – zgodne."
+  },
+  {
+   "id": "e-urzad-zamowien-publicznych--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--appoints--prezes-uzp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pzp art. 468 ust. 1: Prezes UZP powoływany przez ministra ds. gospodarki (nabór) – zgodne; brak udziału PRM – słusznie bez nominates."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--urzad-zamowien-publicznych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pzp art. 466 ust. 2 + DU/2025/997 zał. pkt 4 – zgodne."
+  },
+  {
+   "id": "e-urzad-patentowy-rp--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-urzedu-patentowego-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pwp art. 263 ust. 2: PRM powołuje na wniosek ministra ds. gospodarki – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--nominates--prezes-urzedu-patentowego-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 263 ust. 2 – na wniosek ministra – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--urzad-patentowy-rp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pwp art. 260 ust. 1 (nadzór z ramienia RM sprawuje minister ds. gospodarki) + DU/2025/997 zał. pkt 5 – zgodne."
+  },
+  {
+   "id": "e-glowny-urzad-nadzoru-budowlanego--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-inspektor-nadzoru-budowlanego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo budowlane art. 88 ust. 3: PRM powołuje na wniosek ministra ds. budownictwa – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--nominates--glowny-inspektor-nadzoru-budowlanego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 88 ust. 3 – na wniosek ministra ds. budownictwa (MFiG kieruje tym działem) – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--glowny-urzad-nadzoru-budowlanego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo budowlane art. 88 nie zawiera wprost przepisu o nadzorze ministra nad GINB (poza wnioskiem o powołanie w ust. 3); DU/2025/997 zał. pkt 2 + uRM art. 35 – confidence medium zasadne."
+  },
+  {
+   "id": "e-glowny-urzad-geodezji-i-kartografii--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-geodeta-kraju",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pgik art. 6b ust. 1: PRM powołuje na wniosek ministra ds. budownictwa – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--nominates--glowny-geodeta-kraju",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6b ust. 1 – na wniosek ministra – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--glowny-urzad-geodezji-i-kartografii",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pgik art. 6 ust. 2 (nadzór ministra ds. budownictwa nad GGK) + DU/2025/997 zał. pkt 1 – zgodne."
+  },
+  {
+   "id": "e-urzad-dozoru-technicznego--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--appoints--prezes-udt",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o dozorze technicznym art. 38 ust. 1: Prezesa UDT powołuje minister ds. gospodarki – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--urzad-dozoru-technicznego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 36: UDT podlega ministrowi ds. gospodarki; M.P. 2025 poz. 961 cz. I pkt 2 – zgodne."
+  },
+  {
+   "id": "e-polskie-centrum-akredytacji--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--appoints--dyrektor-pca",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 41 ust. 1: Dyrektor powoływany przez Ministra (konkurs) – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--polskie-centrum-akredytacji",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 38 ust. 3: nadzór nad Centrum sprawuje minister ds. gospodarki; M.P. 2025 poz. 961 cz. II pkt 3 – zgodne."
+  },
+  {
+   "id": "e-polska-agencja-kosmiczna--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--appoints--prezes-polsa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PAK art. 8 ust. 1: Prezes powoływany przez ministra ds. gospodarki na 5-letnią kadencję (nabór, opinie Rady Agencji, MON, MNiSW) – zgodne."
+  },
+  {
+   "id": "e-minister-finansow-i-gospodarki--oversees--polska-agencja-kosmiczna",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2: Agencja podlega ministrowi ds. gospodarki; M.P. 2025 poz. 961 cz. I pkt 1 – zgodne."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--spolki-skarbu-panstwa-nadzorowane-przez-map",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--orlen-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--pge-polska-grupa-energetyczna-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--kghm-polska-miedz-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--pko-bank-polski-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--pzu-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--enea-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--tauron-polska-energia-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-minister-aktywow-panstwowych--administers--poczta-polska-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Spółka figuruje w wykazie MAP (xlsx, stan na 30.06.2026) i w DU/2026/801; art. 7 ust. 2 pkt 1 potwierdzony; nie występuje w DU/2026/987 (brak przekazania innym podmiotom) – MAP wykonuje prawa z akcji."
+  },
+  {
+   "id": "e-polska-agencja-rozwoju-przedsiebiorczosci--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--appoints--prezes-parp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PARP art. 10 ust. 1: Prezesa powołuje minister ds. rozwoju regionalnego (nabór) – zgodne."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--oversees--polska-agencja-rozwoju-przedsiebiorczosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2: Agencja podlega ministrowi ds. rozwoju regionalnego; M.P. 2025 poz. 77 cz. I pkt 2 – zgodne."
+  },
+  {
+   "id": "e-centrum-projektow-europejskich--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 34 ust. 1 pkt 2 (minister powołuje kierowników jednostek) – przepis ogólny, medium zasadne."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--appoints--dyrektor-cpe",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 34 ust. 1 pkt 2 – przepis ogólny, oznaczone medium – zgodne."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--oversees--centrum-projektow-europejskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025 poz. 77 cz. I pkt 1 (jednostka podległa) + uRM art. 34 ust. 1 – zgodne."
+  },
+  {
+   "id": "e-krajowy-zasob-nieruchomosci--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--appoints--prezes-kzn",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o KZN art. 36 ust. 1 – zgodne."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--oversees--krajowy-zasob-nieruchomosci",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 31 ust. 3: nadzór sprawuje minister ds. rozwoju regionalnego; M.P. 2025 poz. 77 cz. II pkt 2 – zgodne."
+  },
+  {
+   "id": "e-instytut-rozwoju-miast-i-regionow--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--appoints--dyrektor-irmir",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o IB art. 24 ust. 2: minister nadzorujący powołuje dyrektora – zgodne."
+  },
+  {
+   "id": "e-minister-funduszy-i-polityki-regionalnej--oversees--instytut-rozwoju-miast-i-regionow",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025 poz. 77 cz. II pkt 1 – zgodne."
+  },
+  {
+   "id": "e-generalna-dyrekcja-drog-krajowych-i-autostrad--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--generalny-dyrektor-drog-krajowych-i-autostrad",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o drogach publicznych art. 18 ust. 3: PRM powołuje na wniosek ministra ds. transportu – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--nominates--generalny-dyrektor-drog-krajowych-i-autostrad",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 18 ust. 3 – na wniosek ministra – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--oversees--generalna-dyrekcja-drog-krajowych-i-autostrad",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o drogach publicznych art. 18–18a nie zawiera wprost 'nadzoru' (minister nadaje statut – art. 18a ust. 6, wnioskuje o powołanie – art. 18 ust. 3); DU/2023/2725 zał. pkt 1 + uRM art. 35 – medium zasadne."
+  },
+  {
+   "id": "e-urzad-lotnictwa-cywilnego--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-ulc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo lotnicze art. 20 ust. 2: PRM powołuje na wniosek ministra ds. transportu – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--nominates--prezes-ulc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 20 ust. 2 – na wniosek ministra – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--oversees--urzad-lotnictwa-cywilnego",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Prawo lotnicze art. 16 ust. 4 (minister właściwy do spraw transportu sprawuje nadzór nad działalnością Prezesa Urzędu); rozp. PRM Dz.U. 2023 poz. 2725 załącznik pkt 3",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2002/1112/ogl",
+    "provenance": {
+     "sources": [
+      "https://eli.gov.pl/eli/DU/2002/1112/ogl",
+      "https://eli.gov.pl/eli/DU/2023/2725/ogl"
+     ],
+     "confidence": "high"
+    }
+   },
+   "note": "Art. 16 ust. 4 Prawa lotniczego (t.j. DU/2025/1431) wprost ustanawia nadzór ministra ds. transportu nad Prezesem ULC – cytowany ust. 1 mówi tylko o naczelnym organie; przepis szczególny istnieje, więc confidence high."
+  },
+  {
+   "id": "e-glowny-inspektorat-transportu-drogowego--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--glowny-inspektor-transportu-drogowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o transporcie drogowym art. 53 ust. 2 – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--nominates--glowny-inspektor-transportu-drogowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 53 ust. 2 – na wniosek ministra – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--oversees--glowny-inspektorat-transportu-drogowego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 53 ust. 1: Główny Inspektor jest centralnym organem podległym ministrowi ds. transportu + DU/2023/2725 zał. pkt 2 – zgodne."
+  },
+  {
+   "id": "e-panstwowe-gospodarstwo-wodne-wody-polskie--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-infrastruktury--appoints--prezes-wod-polskich",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Prawo wodne art. 242 ust. 1: Prezesa WP powołuje minister ds. gospodarki wodnej (MI) – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--oversees--panstwowe-gospodarstwo-wodne-wody-polskie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2024 poz. 140 pkt 11 – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--appoints--urzedy-morskie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o obszarach morskich art. 39 ust. 2: dyrektora UM powołuje i odwołuje minister ds. gospodarki morskiej; seats=2 – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--oversees--urzedy-morskie",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 38 ust. 2 i art. 39 ust. 1 potwierdzone; M.P. 2024 poz. 140 pkt 16–17."
+  },
+  {
+   "id": "e-transportowy-dozor-techniczny--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-infrastruktury--appoints--dyrektor-tdt",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 45 ust. 1: Dyrektor TDT powoływany i odwoływany przez ministra ds. transportu – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--oversees--transportowy-dozor-techniczny",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 43: TDT podlega ministrowi ds. transportu; M.P. 2024 poz. 140 pkt 14 – zgodne."
+  },
+  {
+   "id": "e-polska-agencja-zeglugi-powietrznej--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-pazp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o PAŻP art. 6 ust. 3: Prezesa powołuje PRM na wniosek ministra ds. transportu – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--nominates--prezes-pazp",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 6 ust. 3 – na wniosek ministra – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--oversees--polska-agencja-zeglugi-powietrznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 2 ust. 1: Agencja podlega ministrowi ds. transportu; M.P. 2024 poz. 140 pkt 12 – zgodne."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--pelnomocnik-rzadu-ds-centralnego-portu-komunikacyjnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o CPK art. 4 ust. 3: Pełnomocnika powołuje i odwołuje PRM – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--oversees--pelnomocnik-rzadu-ds-centralnego-portu-komunikacyjnego",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 4 ust. 2: Pełnomocnikiem jest sekretarz/podsekretarz stanu w ministerstwie obsługującym ministra ds. transportu; uRM art. 37 ust. 1 – medium zasadne."
+  },
+  {
+   "id": "e-pelnomocnik-rzadu-ds-centralnego-portu-komunikacyjnego--administers--centralny-port-komunikacyjny-sp-z-oo",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2026/987 zał. lp. 148 (Pełnomocnik Rządu ds. CPK, art. 8 ust. 1 pkt 1–2) – zgodne."
+  },
+  {
+   "id": "e-minister-infrastruktury--administers--pkp-polskie-linie-kolejowe-sa",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2026/987 zał. lp. 173 (minister właściwy ds. transportu, art. 8 ust. 1 pkt 1–2) – zgodne."
+  },
+  {
+   "id": "e-wyzszy-urzad-gorniczy--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--prezes-wug",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pgg art. 165 ust. 2: PRM powołuje na wniosek ministra ds. gospodarki surowcami energetycznymi – zgodne."
+  },
+  {
+   "id": "e-minister-energii--nominates--prezes-wug",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Art. 165 ust. 2 – na wniosek ministra (ME kieruje działem gospodarka surowcami energetycznymi) – zgodne."
+  },
+  {
+   "id": "e-minister-energii--oversees--wyzszy-urzad-gorniczy",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Pgg art. 165 ust. 1 + DU/2025/1206 § 1 ust. 5 – zgodne."
+  },
+  {
+   "id": "e-prezes-rady-ministrow--appoints--pelnomocnik-rzadu-ds-strategicznej-infrastruktury-energetycznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "uRM art. 10 ust. 3: Pełnomocnika Rządu powołuje i odwołuje PRM – zgodne."
+  },
+  {
+   "id": "e-minister-energii--oversees--pelnomocnik-rzadu-ds-strategicznej-infrastruktury-energetycznej",
+   "status": "corrected",
+   "fixes": {
+    "cite": "Rozp. RM z 3.12.2015 r. w sprawie Pełnomocnika Rządu ds. SIE § 1 (Pełnomocnikiem jest sekretarz albo podsekretarz stanu w urzędzie obsługującym ministra właściwego do spraw gospodarki surowcami energetycznymi) i § 6 ust. 1 (obsługę zapewnia ten urząd) – Dz.U. 2015 poz. 2116, t.j. Dz.U. 2025 poz. 1136; ustawa o Radzie Ministrów art. 37 ust. 1",
+    "citeUrl": "https://eli.gov.pl/eli/DU/2015/2116/ogl"
+   },
+   "note": "Tekst t.j. DU/2025/1136 § 1 i § 6 daje konkretną podstawę powiązania Pełnomocnika z ministrem ds. gospodarki surowcami energetycznymi (ME) – cytat doprecyzowany; confidence medium pozostaje (nadzór nad pełnomocnikiem Rządu sprawuje formalnie PRM/RM, § 4)."
+  },
+  {
+   "id": "e-pelnomocnik-rzadu-ds-strategicznej-infrastruktury-energetycznej--administers--spolki-strategicznej-infrastruktury-energetycznej",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "DU/2026/987 zał. lp. 177–181 + § 2 ust. 1 rozp. o Pełnomocniku – zgodne."
+  },
+  {
+   "id": "e-narodowe-centrum-badan-jadrowych--head",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Krawędź dept_head spójna z nodes[org].head i nodes[pos].headOf; przepis o stanowisku potwierdzony w tekście ustawy (ELI)."
+  },
+  {
+   "id": "e-minister-energii--appoints--dyrektor-ncbj",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "Ustawa o IB art. 24 ust. 2 – zgodne."
+  },
+  {
+   "id": "e-minister-energii--oversees--narodowe-centrum-badan-jadrowych",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "M.P. 2025 poz. 1004 pkt 9 – zgodne."
+  }
+ ],
+ "additions": {
+  "nodes": {},
+  "edges": {}
+ },
+ "missing": [
+  "MRiT bez head/dept_head: walidator (validate-chunk.py) wymaga nodes[pos].headOf == org, a jedno stanowisko ma jeden headOf. Rekomendacja dla koordynatora: rozszerzyć walidator o headOf jako listę (lub o wyjątek dla pl-minister-finansow-i-gospodarki), a następnie przywrócić MRiT.head = pl-minister-finansow-i-gospodarki i krawędź dept_head; do tego czasu krawędź oversees (id '…--head') jest kompromisem.",
+  "Obsada nieustalona (strony za Incapsulą, curl + WebFetch bez treści): Prezes ULC, Prezes PARP, Dyrektor CPE. Do domknięcia ręcznie w przeglądarce lub z M.P./BIP KPRM (ogłoszenia o naborze/powołaniu).",
+  "Prezesi zarządów ORLEN S.A., PGE S.A. i PKO BP S.A.: strony korporacyjne (orlen.pl, gkpge.pl, pkobp.pl) zwracają 404/blokadę dla podstron zarządu – nieustaleni; dla KGHM, PZU, Enea, Tauron i Poczty Polskiej dodano prezesów z oficjalnych stron (fixes.people).",
+  "Ministrowie powołani 13.12.2023 (Pełczyńska-Nałęcz, Klimczak) zostali WYBRANI przez Sejm w trybie art. 154 ust. 3 Konstytucji (uchwała Sejmu z 11–12.12.2023) – model nie ma krawędzi pl-sejm --elects--> minister; decyzja o dodaniu takich krawędzi powinna zapaść globalnie (spójnie dla G1–G5), dlatego nie dodano ich tu jako additions.",
+  "Stanowiska dept_head w ringu satellite mają parent (wymuszone przez walidator: satellite bez parent = ERROR) wbrew regule 'stanowisko NIE ma parent' – konwencja spójna z chunkami G1, G2, G4; do rozstrzygnięcia globalnie.",
+  "Daty powołania (startedAt) dla 18 osób pozostają null – strony 'kierownictwo' ich nie podają; można je uzupełnić z komunikatów resortów/BIP KPRM (poza zakresem weryfikacji)."
+ ]
+}
