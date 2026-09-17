@@ -15,13 +15,14 @@ Projekt jest obywatelski i nie jest nastawiony na zysk. Dane i kod są otwarte.
 2. [Skąd są dane](#skąd-są-dane)
 3. [Jak dane powstały i jak były sprawdzane](#jak-dane-powstały-i-jak-były-sprawdzane)
 4. [Struktura danych](#struktura-danych)
-5. [Jak użyć danych](#jak-użyć-danych)
-6. [Uruchomienie i testy](#uruchomienie-i-testy)
-7. [Struktura repozytorium](#struktura-repozytorium)
-8. [Ograniczenia i znane braki](#ograniczenia-i-znane-braki)
-9. [Zgłaszanie błędów](#zgłaszanie-błędów)
-10. [Licencje](#licencje)
-11. [Inspiracja](#inspiracja)
+5. [Jak dane są aktualizowane](#jak-dane-są-aktualizowane)
+6. [Jak użyć danych](#jak-użyć-danych)
+7. [Uruchomienie i testy](#uruchomienie-i-testy)
+8. [Struktura repozytorium](#struktura-repozytorium)
+9. [Ograniczenia i znane braki](#ograniczenia-i-znane-braki)
+10. [Zgłaszanie błędów](#zgłaszanie-błędów)
+11. [Licencje](#licencje)
+12. [Inspiracja](#inspiracja)
 
 ## Co jest w grafie
 
@@ -204,6 +205,19 @@ Osoby siedzą w polu `people.people` węzła, zwykle przy stanowisku.
 
 Dane o osobach obejmują wyłącznie informacje o pełnieniu funkcji publicznych, jawne z mocy ustawy o dostępie do informacji publicznej.
 
+## Jak dane są aktualizowane
+
+W każdy poniedziałek rano GitHub Actions uruchamia `scripts/weekly-update.py` (przebieg: [`.github/workflows/weekly-update.yml`](.github/workflows/weekly-update.yml)). Każdy przebieg zostawia jawny ślad: commit z opisem zmian, zgłoszenie z listą do przejrzenia albo zgłoszenie o niepowodzeniu.
+
+| Warstwa | Co robi automat | Czy zmienia dane sam |
+|---|---|---|
+| Sejm i Senat: komisje, prezydia komisji, kluby i koła | buduje część `parlament` od nowa z API Sejmu i stron Senatu, potem drugim, niezależnym pobraniem sprawdza każde nazwisko | **tak**, ale tylko gdy drugi odczyt potwierdzi 100% osób i przejdzie komplet testów |
+| Akty personalne w Monitorze Polskim i Dzienniku Ustaw | wyłapuje nowe powołania, odwołania, wybory i zmiany w składzie Rady Ministrów przez API ELI i podpowiada, których węzłów mogą dotyczyć | nie, otwiera zgłoszenie z listą do przejrzenia przez człowieka |
+| Podstawy prawne węzłów | sprawdza status każdego aktu przywołanego w `legalSource` i sygnalizuje uchylenie albo zmianę statusu | nie, trafia na tę samą listę |
+| Pozostałe osoby i struktura | jeszcze ręcznie; planowany jest monitor stron „kierownictwo” urzędów | nie |
+
+Zasady bezpieczeństwa: gdy źródło jest chwilowo niedostępne albo drugi odczyt nie potwierdzi kogokolwiek, dane zostają nietknięte. Data sprawdzenia (`provenance.verifiedAt`) zmienia się tylko przy rekordach, które automat faktycznie przeczytał. Zmiany merytoryczne są dopisywane do dziennika `data/pl/changes.jsonl` (jedno zdarzenie w wierszu: nowa osoba, odejście, zmiana funkcji, nowy albo usunięty węzeł i relacja), a stan strażnika aktów leży w `data/pl/state/eli.json`.
+
 ## Jak użyć danych
 
 Aktualny plik jest pod stałym adresem strony i w repozytorium:
@@ -261,7 +275,8 @@ Testy sprawdzają między innymi: brak nakładających się glifów, trafianie k
 |---|---|
 | `data/pl/` | dane: scalony graf, części tematyczne, werdykty weryfikatorów |
 | `viewer/variants/D-styl-civlab/` | widok: jeden plik HTML z D3 |
-| `scripts/` | walidator schematu, scalanie części, budowa części `parlament` z API, budowa strony i prototypu, wdrożenie |
+| `scripts/` | walidator schematu, scalanie części, budowa części `parlament` z API, cotygodniowa aktualizacja (`weekly-update.py`, `watch-eli.py`, `diff-graph.py`), budowa strony i prototypu, wdrożenie |
+| `.github/workflows/` | cotygodniowa aktualizacja danych w GitHub Actions |
 | `tests/e2e/` | testy Playwright |
 | `tests/parity/` | porównanie z pierwowzorem: scenariusze, zaobserwowane zachowania, różnice zamierzone, raporty |
 | `docs/00-cele-i-opis-projektu.md` | cele, mierniki, czego projekt nie robi, etapy |
@@ -274,7 +289,7 @@ Testy sprawdzają między innymi: brak nakładających się glifów, trafianie k
 
 ## Ograniczenia i znane braki
 
-- **To zrzut z jednego dnia.** Dane opisują stan na 17 września 2026 i nie odświeżają się same. Planowane jest śledzenie zmian personalnych na podstawie Monitora Polskiego.
+- **Aktualność jest różna dla różnych części.** Parlament odświeża się co tydzień automatycznie. Pozostałe części opisują stan na 17 września 2026 i są poprawiane ręcznie na podstawie cotygodniowej listy aktów z Monitora Polskiego. Datę sprawdzenia każdego rekordu podaje `provenance.verifiedAt`.
 - **Daty objęcia urzędu** ma 324 z 889 osób. Reszta źródeł ich nie podaje.
 - **Zdjęcia** ma 420 osób. To odnośniki do stron urzędów, więc mogą przestać działać.
 - **10 węzłów ma status `unverified`**, a 11 niską pewność. Widać to w polu `provenance` i w panelu strony.

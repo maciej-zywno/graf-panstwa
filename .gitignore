@@ -3,6 +3,9 @@ test-results/
 tests/e2e/report/
 dist/
 
+# pobrane pliki źródłowe budżetu (duże; w repo zostają adresy i sumy kontrolne)
+data/pl/budget-src/
+
 # tylko lokalnie: materiały analityczne z oryginału CivLab (nie nasze, nie do rozpowszechniania)
 reference/
 data/us-test/

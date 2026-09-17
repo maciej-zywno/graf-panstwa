@@ -58,7 +58,7 @@ for f in chunk_files:
             if st == 'refuted': report['node_refuted'] += 1; print(f'REFUTED node {nid} ({key}): {vv.get("note","")[:160]}'); continue
             if st == 'corrected' and vv.get('fixes'): deep_merge(n, vv['fixes']); report['node_corrected'] += 1
             n.setdefault('provenance', {})
-            n['provenance']['verifiedAt'] = today
+            n['provenance'].setdefault('verifiedAt', today)  # data faktycznego sprawdzenia zostaje; przebieg tygodniowy nie może „odświeżać” węzłów, których nie czytał
             n['provenance']['verdict'] = st
             if st == 'unverified': n['provenance']['confidence'] = 'low'
         else:

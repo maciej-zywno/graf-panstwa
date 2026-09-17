@@ -2,7 +2,7 @@
 """Wysyła projekt na GitHuba przez API (gh), bez lokalnego gita. Jedno uruchomienie = jeden commit z pełnym stanem katalogu.
 Pomija wszystko, co pasuje do .gitignore (prosta obsługa: katalogi „nazwa/”, ścieżki dokładne i wzorce z „*”).
 Wysyła tylko pliki, których treść różni się od tej w repozytorium (porównanie po skrócie SHA-1 obiektu git).
-Użycie: python3 scripts/publish-github.py <właściciel/repo> "opis zmiany" [--dry-run]
+Użycie: python3 scripts/publish-github.py <właściciel/repo> "opis zmiany" [--dry-run] [--exclude wzorzec]…
 """
 import base64, fnmatch, hashlib, json, os, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -14,6 +14,7 @@ def gh(method, path, body=None):
     if r.returncode != 0: raise SystemExit(f'gh api {method} {path}: {r.stderr.decode()[:400]}')
     return json.loads(r.stdout) if r.stdout.strip() else {}
 rules = [l.strip() for l in open(os.path.join(ROOT, '.gitignore'), encoding='utf-8') if l.strip() and not l.startswith('#')]
+rules += [sys.argv[i + 1] for i, x in enumerate(sys.argv) if x == '--exclude']  # doraźne pominięcie plików w toku pracy: --exclude 'scripts/build-budget.py'
 def ignored(rel):
     parts = rel.split('/')
     for rule in rules:
@@ -39,7 +40,10 @@ total = sum(len(v[2]) for v in local.values()); print(f'plików do repozytorium:
 if dry:
     for rel in files: print(' ', rel)
     big = sorted(local.items(), key=lambda kv: -len(kv[1][2]))[:6]; print('największe:', [(k, f'{len(v[2]) / 1e6:.2f} MB') for k, v in big]); raise SystemExit(0)
-ref = gh('GET', f'repos/{repo}/git/ref/heads/{BRANCH}'); parent = ref['object']['sha']; base_tree = gh('GET', f'repos/{repo}/git/commits/{parent}')['tree']['sha']
+ref = gh('GET', f'repos/{repo}/git/ref/heads/{BRANCH}'); parent = ref['object']['sha']
+force = '--replace-last' in sys.argv  # cofnięcie ostatniego commita: nowy commit staje na jego rodzicu, a gałąź jest przestawiana siłowo (np. gdy do repo trafiły pliki, których miało nie być)
+if force: parent = gh('GET', f'repos/{repo}/git/commits/{parent}')['parents'][0]['sha']
+base_tree = gh('GET', f'repos/{repo}/git/commits/{parent}')['tree']['sha']
 remote = {t['path']: t['sha'] for t in gh('GET', f'repos/{repo}/git/trees/{base_tree}?recursive=1').get('tree', []) if t['type'] == 'blob'}
 tree = []; sent = 0
 for rel, (sha, mode, data) in local.items():
@@ -50,5 +54,5 @@ removed = [p for p in remote if p not in local]
 if not sent and not removed: print('bez zmian'); raise SystemExit(0)
 new_tree = gh('POST', f'repos/{repo}/git/trees', {'tree': tree})['sha']   # pełne drzewo: pliki usunięte lokalnie znikają też z repozytorium
 commit = gh('POST', f'repos/{repo}/git/commits', {'message': message, 'tree': new_tree, 'parents': [parent]})['sha']
-gh('PATCH', f'repos/{repo}/git/refs/heads/{BRANCH}', {'sha': commit})
+gh('PATCH', f'repos/{repo}/git/refs/heads/{BRANCH}', {'sha': commit, 'force': force})
 print(f'wysłano plików: {sent}, usunięto: {len(removed)}, commit {commit[:10]}')
