@@ -1,5 +1,6 @@
 // Widok „Budżet” wzorowany na graph.civlab.org/sf: przełącznik Graf | Budżet, dwa pierścienie (grupy i części budżetowe), suma w środku,
-// najechanie pokazuje nazwę i kwotę, klik wybiera organ dysponenta i obraca segment na godz. 6, w panelu jest zakładka „Budżet”.
+// najechanie pokazuje nazwę i kwotę, klik wybiera organ dysponenta, w panelu jest zakładka „Budżet”.
+// Różnica zamierzona wobec oryginału: koło budżetu NIE obraca się po wyborze (decyzja właściciela z 18.09.2026); podpisy stają przy segmencie.
 // Dane: data/pl/budget.json (obok graph.json). GP_BUDGET_URL pozwala podstawić inny plik przy pracy nad widokiem.
 const { test, expect } = require('@playwright/test');
 const { D_URL, openD, T } = require('./helpers');
@@ -24,18 +25,19 @@ test('przełącznik pokazuje pierścień zamiast grafu i z powrotem; suma jest w
   const v = await page.evaluate(() => ({ vp: getComputedStyle(document.querySelector('svg .vp')).display, segs: document.querySelectorAll('svg .budget path.bpart').length, groups: document.querySelectorAll('svg .budget path.bgroup').length, center: [...document.querySelectorAll('svg .bcenter text')].map(t => t.textContent), legend: getComputedStyle(document.querySelector('#legend')).display, zoomer: getComputedStyle(document.querySelector('.zoomer')).display, hash: location.hash }));
   const b = await B(page); expect(v.vp).toBe('none'); expect(v.segs).toBe(b.count); expect(v.groups).toBe(b.groups.length); expect(v.center[0]).toBe('Budżet państwa'); expect(v.center[1]).toMatch(/mld zł$/); expect(v.legend).toBe('none'); expect(v.zoomer).toBe('none'); expect(v.hash).toBe('#view=budget');
   const box = await page.evaluate(() => { const r = document.querySelector('svg .budget .brot').getBoundingClientRect(); const st = window.__GP_TEST.stageRect(); return { top: r.top - st.y, bottom: st.y + st.h - r.bottom, left: r.left - st.x, right: st.x + st.w - r.right, share: r.height / st.h }; });
-  expect(box.top).toBeGreaterThanOrEqual(0); expect(box.left).toBeGreaterThanOrEqual(0); expect(box.right).toBeGreaterThanOrEqual(0); expect(box.bottom).toBeGreaterThanOrEqual(40); expect(box.share, 'pierścień wypełnia scenę podobnie jak koło grafu').toBeGreaterThan(0.8);
+  expect(box.top).toBeGreaterThanOrEqual(0); expect(box.left).toBeGreaterThanOrEqual(0); expect(box.right).toBeGreaterThanOrEqual(0); expect(box.bottom).toBeGreaterThanOrEqual(40); expect(box.share, 'pierścień wypełnia scenę; jest trochę mniejszy od koła grafu, bo podpisy po łuku potrzebują miejsca dookoła (koło się nie obraca)').toBeGreaterThan(0.75);
   await page.click('#mode-toggle [data-mode=graph]'); await page.waitForTimeout(500); expect(await page.evaluate(() => getComputedStyle(document.querySelector('svg .vp')).display)).not.toBe('none'); expect(await page.evaluate(() => location.hash)).toBe(''); expect(errors).toEqual([]);
 });
 
-test('najechanie na segment pokazuje nazwę, kwotę i udział; klik w część z organem wybiera ten organ, obraca segment na godz. 6 i otwiera zakładkę „Budżet”', async ({ page }) => {
+test('najechanie na segment pokazuje nazwę, kwotę i udział; klik w część z organem wybiera ten organ i otwiera zakładkę „Budżet”, a koło się nie rusza', async ({ page }) => {
   await open(page, '#view=budget'); const t = T(page); let b = await B(page); expect(b.mode).toBe('budget');
   const seg = b.segments.filter(s => s.nodeId && s.span > 0.05).sort((x, y) => y.value - x.value)[0]; expect(seg, 'jest duża część z przypisanym węzłem').toBeTruthy();
   await page.mouse.move(seg.x, seg.y); await page.waitForTimeout(250); const tip = await page.evaluate(() => { const e = document.querySelector('#btip'); return { hidden: e.hidden, text: e.textContent }; }); expect(tip.hidden).toBe(false); expect(tip.text).toMatch(/zł/); expect(tip.text).toMatch(/%/);
   await page.mouse.click(seg.x, seg.y); await settleB(page); b = await B(page); const s = await t.state(); expect(s.selected).toBe(seg.nodeId); expect(b.selectedPart).toBe(seg.code);
-  const now = b.segments.find(x => x.code === seg.code); const geo = await page.evaluate(() => { const r = document.querySelector('svg .budget .bcenter').getBoundingClientRect(); return { cx: r.left + r.width / 2, cy: r.top + r.height / 2 }; }); expect(Math.abs(now.x - geo.cx), 'segment stoi na godz. 6').toBeLessThan(12); expect(now.y).toBeGreaterThan(geo.cy);
+  const now = b.segments.find(x => x.code === seg.code); expect(Math.hypot(now.x - seg.x, now.y - seg.y), 'segment zostaje na swoim miejscu').toBeLessThan(1); expect(b.rot).toBe(0);
+  const upside = await page.evaluate(() => [...document.querySelectorAll('svg .budget .blabel')].map(t => { const tp = t.querySelector('textPath'); const n = tp.getNumberOfChars(); if (n < 2) return false; const a = tp.getStartPositionOfChar(0), z = tp.getStartPositionOfChar(n - 1); return z.x < a.x - 1; }).filter(Boolean).length); expect(upside, 'podpisy czytane od prawej do lewej (do góry nogami)').toBe(0);
   const ui = await page.evaluate(() => ({ tab: document.querySelector('[role=tab][aria-selected=true]').textContent.trim(), pane: !document.querySelector('[data-pane=budget]').hidden, big: document.querySelector('[data-pane=budget] .bp-big').textContent, labels: [...document.querySelectorAll('svg .budget .blabel')].map(x => x.textContent).length, hash: location.hash }));
-  expect(ui.tab).toBe('Budżet'); expect(ui.pane).toBe(true); expect(ui.big).toMatch(/zł$/); expect(ui.labels).toBe(4); expect(ui.hash).toBe(`#node=${seg.nodeId}&view=budget`);
+  expect(ui.tab).toBe('Budżet'); expect(ui.pane).toBe(true); expect(ui.big).toMatch(/zł$/); expect(ui.labels).toBeGreaterThanOrEqual(2); expect(ui.labels).toBeLessThanOrEqual(4); expect(ui.hash).toBe(`#node=${seg.nodeId}&view=budget`);
   await page.click('#mode-toggle [data-mode=graph]'); await page.waitForTimeout(600); expect((await t.state()).selected, 'wybór przechodzi do widoku grafu').toBe(seg.nodeId);
 });
 

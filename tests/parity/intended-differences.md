@@ -32,3 +32,7 @@
 30. **Wyszukiwarka to ikona w lewym górnym rogu sceny**, jak w oryginale, ale na telefonie zostaje polem w arkuszu panelu.
 31. **Box informacyjny ma pod podstawą prawną wiersz etykiet** (skrót, sektor, typ, pierścień, status) i tytuł aktu; oryginał ich nie ma. Reszta boxu (tytuł 30 px / 600, opis 16 px, linki 14 px, siatka kart osób po dwie, „Zobacz wszystkich (N)”) jest przeniesiona z pomiaru strony organu w oryginale.
 32. **Bez newsów i bez power map**: decyzja właściciela z 17.09.2026. W oryginale druga karta panelu to „News”, u nas „Powiązania”.
+33. **Widok „Budżet” pokazuje budżet państwa według części budżetowych**, a nie budżet miasta według departamentów jak w wersji SF. Wewnętrzny pierścień to grupy funkcjonalne wyznaczone z działu klasyfikacji budżetowej o największym wykonaniu; części techniczne (dług, rezerwy, subwencje, składka do UE, ubezpieczenia społeczne) mają własne grupy. Źródła i metoda: `docs/06-budzet-zrodla-i-metoda.md`.
+34. **Koło budżetu nie obraca się po wyborze** (decyzja właściciela z 18.09.2026). W oryginale wybrany segment staje na godz. 6; u nas zostaje na miejscu, a podpisy po łuku stają przy nim i w dolnej połowie biegną odwrotnie, żeby nie stać do góry nogami. Skutek: pierścień jest o kilka procent mniejszy, bo podpisy potrzebują miejsca dookoła.
+35. **Część budżetowa bez własnego organu w grafie** (np. samorządowe kolegia odwoławcze) ma kartę części zamiast strony węzła; oryginał ma węzeł dla każdego departamentu.
+
