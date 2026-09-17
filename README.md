@@ -302,6 +302,7 @@ Testy sprawdzają między innymi: brak nakładających się glifów, trafianie k
 | `docs/04-zrodla-danych.md` | rejestr źródeł dla każdej części danych |
 | `docs/05-wdrozenie-grafpanstwa-pl.md` | jak zbudowana i wdrożona jest strona |
 | `docs/06-budzet-zrodla-i-metoda.md` | budżet państwa według części: źródła, metoda, kontrola sum, ograniczenia |
+| `docs/07-projekt-samorzad.md` | projekt rozszerzenia o województwa, powiaty i gminy: model, źródła, zadania aktualizujące, etapy (jeszcze niezbudowane) |
 | `seeds/employee-count/` | zalążek danych o zatrudnieniu, jeszcze niewłączony do grafu |
 | `deploy/` | przykładowa konfiguracja serwera |
 

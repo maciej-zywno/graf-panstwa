@@ -50,6 +50,8 @@ projektowych.** Przy każdym wyborze pytamy najpierw „jak robi to CivLab?”. 
 | Power map: kto jest w newsach (90 dni) | świadomie pominięte: w oryginale liczy wzmianki w mediach, a mediów nie używamy |
 | Animacje sceny: obrót do godz. 6, rozsuwanie rzędu podjednostek, wzrost wybranego glifu | jest (zmierzone na oryginale klatka po klatce, testy `10-fan-animation`) |
 | Rozmiar koła i układ boxu informacyjnego jak na stronie organu w oryginale | jest (testy `09-circle-size-and-panel`) |
+| Widok „Budżet” jak w wersji SF: pierścień wydatków, zakładka w panelu | jest: budżet państwa według części, wykonanie 2025 i plan 2026 (testy `12-budget`); koło celowo się nie obraca |
+| Cotygodniowa aktualizacja danych bez udziału człowieka | jest dla parlamentu; akty z Monitora Polskiego jako lista do przejrzenia (`.github/workflows/weekly-update.yml`) |
 | Topics | częściowo: działy administracji przy ministrach |
 | Budget, employee counts (SF) | brak, są seedy |
 | Request access / API | brak; u nas ma być otwarte |
@@ -59,7 +61,7 @@ Dziennikarze i organizacje strażnicze. Urzędnicy i legislatorzy, którzy musz�
 Studenci i nauczyciele prawa oraz WOS. Obywatel, który chce sprawdzić, „kto to powołuje i kto tym kieruje”.
 
 ## Czego nie robimy (na teraz)
-- Samorząd terytorialny (to osobny, zaparkowany projekt kontrola-obywatelska).
+- Samorząd terytorialny: na razie poza zakresem. Projekt rozszerzenia jest w `07-projekt-samorzad.md` i czeka na decyzję właściciela; oświadczenia majątkowe zostają w osobnym, zaparkowanym projekcie.
 - Oświadczenia majątkowe, powiązania biznesowe, dane prywatne.
 - Oceny i werdykty. Pokazujemy dane z cytatem, także w sporach ustrojowych.
 - **Newsy i media w jakiejkolwiek postaci** (decyzja właściciela z 17.09.2026): żadnej zakładki z aktualnościami, żadnego poboru RSS mediów ani Google News, żadnych streszczeń artykułów. Powód: projekt ma pokazywać ustrój z dokumentów urzędowych, a nie powielać przekaz mediów, zwłaszcza sensacyjnych i niskiej jakości.
