@@ -354,6 +354,37 @@ button.tile[aria-pressed="true"] { border-color: var(--ink-2); }
 .theme-btn .sun { display: none; }
 :root[data-theme="dark"] .theme-btn .sun { display: block; } :root[data-theme="dark"] .theme-btn .moon { display: none; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme-btn .sun { display: block; } :root:not([data-theme="light"]) .theme-btn .moon { display: none; } }
+/* widok „Budżet”: przełącznik w prawym dolnym rogu jak w oryginale; przyciski powiększenia stają nad nim */
+.mode-toggle { position: absolute; right: 14px; bottom: 14px; z-index: 4; display: flex; padding: 0; border-radius: 12px; overflow: hidden; background: var(--card-2); }
+.mode-toggle[hidden] { display: none; }
+.mode-toggle button { border: 0; background: transparent; color: var(--muted); font: 500 14px var(--font-ui); padding: 10px 16px; cursor: pointer; }
+.mode-toggle button[aria-pressed="true"] { background: var(--card); color: var(--ink); }
+.mode-toggle button:focus-visible { outline: 2px solid var(--ink-2); outline-offset: -2px; }
+.mode-toggle:not([hidden]) ~ .zoomer { bottom: 64px; }
+.stage.mode-budget svg .vp, .stage.mode-budget .legend, .stage.mode-budget .zoomer, .stage.mode-budget .rel-bar, .stage.mode-budget .sel-pill { display: none !important; }
+.budget .bseg { fill: color-mix(in srgb, var(--g) 46%, var(--bg)); stroke: var(--g); stroke-width: 1.2; stroke-linejoin: round; cursor: pointer; transition: fill .15s, opacity .25s; outline: none; }
+.budget .bseg:hover, .budget .bseg:focus-visible { fill: color-mix(in srgb, var(--g) 72%, var(--bg)); }
+.budget .bseg.sel { fill: var(--g); }
+.budget .bgroup.sel { fill: color-mix(in srgb, var(--g) 80%, var(--bg)); }
+.budget .bseg.dim { opacity: .55; }
+.budget .bcenter text { text-anchor: middle; fill: var(--ink); pointer-events: none; }
+.budget .bc-k { font: 500 15px var(--font-ui); } .budget .bc-v { font-weight: 600; font-family: var(--font-ui); letter-spacing: -.02em; } .budget .bc-s { font: 400 12.5px var(--font-ui); fill: var(--muted) !important; }
+.budget .blabel { font-family: var(--font-ui); font-weight: 600; fill: color-mix(in srgb, var(--g) 62%, var(--ink)); pointer-events: none; }
+.budget .blabel.amt { font-weight: 500; } .budget .blabel.in { fill: color-mix(in srgb, var(--g) 35%, var(--ink)); }
+.btip { position: absolute; left: 0; top: 0; z-index: 6; pointer-events: none; display: flex; flex-direction: column; gap: 1px; max-width: 300px; padding: 7px 11px; border-radius: 8px; background: var(--card); box-shadow: var(--shadow); border-left: 3px solid var(--g, var(--muted)); font-size: 13px; line-height: 1.3; }
+.btip[hidden] { display: none; } .btip b { font-weight: 600; color: var(--ink); } .btip span { color: var(--ink-2); } .btip small { color: var(--muted); font-size: 11.5px; }
+.bpart-block { border-top: 1px solid var(--hair); padding-top: 16px; margin-top: 16px; } .bpart-block:first-child, .node-card .bpart-block { border-top: 0; padding-top: 0; }
+.node-card .bpart-block { margin-top: 18px; }
+.bp-head { display: flex; gap: 8px; align-items: baseline; font-size: 14px; } .bp-code { font: 500 10.5px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); white-space: nowrap; padding-left: 9px; border-left: 3px solid var(--g); }
+.bp-big { font: 600 28px/1.15 var(--font-ui); letter-spacing: -.02em; margin: 8px 0 2px; } .bp-sub { font-size: 12.5px; color: var(--muted); }
+.btable { width: 100%; border-collapse: collapse; margin: 12px 0 4px; font-size: 13.5px; } .btable th { text-align: left; font-weight: 400; color: var(--ink-2); padding: 5px 8px 5px 0; } .btable td { text-align: right; font-variant-numeric: tabular-nums; padding: 5px 0; white-space: nowrap; } .btable tr + tr th, .btable tr + tr td { border-top: 1px solid var(--hair); } .btable small { display: block; color: var(--muted); font-size: 11.5px; }
+.bp-dys, .bp-note, .bp-src { font-size: 12.5px; color: var(--muted); margin: 8px 0 0; line-height: 1.45; } .bp-src a { color: var(--ink-2); }
+.bh-t { font: 600 12.5px var(--font-ui); color: var(--ink); margin: 16px 0 8px; }
+.bhist { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 8px; height: 84px; align-items: end; } .bh-col { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; gap: 4px; } .bh-col i { display: block; flex: none; width: 100%; max-width: 46px; border-radius: 4px 4px 0 0; background: color-mix(in srgb, var(--g) 60%, var(--card)); } .bh-col span { font: 500 10.5px var(--font-mono); color: var(--muted); }
+.bbreak { display: flex; flex-direction: column; gap: 7px; } .bb-row { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; font-size: 12.5px; } .bb-n { color: var(--ink-2); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .bb-v { font-variant-numeric: tabular-nums; } .bb-row i { grid-column: 1 / -1; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--g) 60%, var(--card)); } .bb-row.rest { color: var(--muted); }
+.bkids { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; } .bkid { display: flex; justify-content: space-between; gap: 8px; text-align: left; border: 1px solid var(--hair-2); border-radius: 9px; background: none; padding: 7px 10px; font-size: 12.5px; cursor: pointer; } .bkid:hover { border-color: var(--g); } .bkid b { font-weight: 500; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.bopen { border: 1px solid var(--hair-2); border-radius: 10px; background: none; padding: 8px 14px; font: 500 13.5px var(--font-ui); cursor: pointer; margin-top: 6px; } .bopen:hover { border-color: var(--ink-2); }
+.tabs.three { grid-template-columns: 1fr 1fr 1fr; }
 .zoomer { position: absolute; right: 14px; bottom: 14px; z-index: 3; display: flex; background: var(--card); border-radius: 10px; overflow: hidden; }
 .zoomer button { border: 0; background: none; height: 36px; min-width: 38px; padding: 0 10px; display: inline-flex; gap: 6px; align-items: center; justify-content: center; cursor: pointer; color: var(--ink-2); font-size: 13.5px; font-weight: 500; }
 .zoomer button + button { border-left: 1px solid var(--hair); }
@@ -449,6 +480,8 @@ button.tile[aria-pressed="true"] { border-color: var(--ink-2); }
   .sel-pill { bottom: calc(var(--peek) + 56px); max-width: 80%; }
   .rel-bar { bottom: calc(var(--peek) + 90px); left: 8px; right: 8px; flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; pointer-events: auto; }
   .theme-btn { top: 10px; right: calc(10px + var(--embed-right, 0px)); }
+  .mode-toggle { right: auto; left: 10px; top: 10px; bottom: auto; } .mode-toggle button { padding: 9px 13px; }
+  .mode-toggle:not([hidden]) ~ .zoomer { bottom: calc(var(--peek) + 10px); }
   .rows2 { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -516,6 +549,8 @@ button.tile[aria-pressed="true"] { border-color: var(--ink-2); }
     </div>
     <div class="rel-bar" id="rel-bar" hidden></div>
     <div class="sel-pill" id="sel-pill" hidden></div>
+    <div class="mode-toggle" id="mode-toggle" role="group" aria-label="Widok" hidden><button type="button" data-mode="graph" aria-pressed="true">Graf</button><button type="button" data-mode="budget" aria-pressed="false">Budżet</button></div>
+    <div class="btip" id="btip" hidden></div>
     <div class="zoomer" role="group" aria-label="Powiększenie">
       <button id="btn-zout" title="Oddal" aria-label="Oddal"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8h10"/></svg></button>
       <button id="btn-zin" title="Przybliż" aria-label="Przybliż"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg></button>
@@ -1086,7 +1121,7 @@ function render() {
   applyLegendFilter(true);
   gO = svg.append('g').attr('class', 'overlay');
 
-  zoom = d3.zoom().scaleExtent([0.2, 12]).clickDistance(7).translateExtent([[S.L.bbox.x0 - 900, S.L.bbox.y0 - 700], [S.L.bbox.x1 + 900, S.L.bbox.y1 + 700]]).on('start', ev => { if (ev.sourceEvent) { S.userZoomed = true; setLegend(false); } }).on('zoom', ev => { S.transform = ev.transform; vp.attr('transform', ev.transform); onZoom(); });
+  zoom = d3.zoom().filter(ev => S.mode !== 'budget' && (!ev.ctrlKey || ev.type === 'wheel') && !ev.button).scaleExtent([0.2, 12]).clickDistance(7).translateExtent([[S.L.bbox.x0 - 900, S.L.bbox.y0 - 700], [S.L.bbox.x1 + 900, S.L.bbox.y1 + 700]]).on('start', ev => { if (ev.sourceEvent) { S.userZoomed = true; setLegend(false); } }).on('zoom', ev => { S.transform = ev.transform; vp.attr('transform', ev.transform); onZoom(); });
   svg.call(zoom).on('dblclick.zoom', null);
   const nodeOf = ev => ev.target.closest && ev.target.closest('g.node');
   const relOf = ev => ev.target.closest && ev.target.closest('g.rel');
@@ -1099,12 +1134,12 @@ function render() {
   const nearestRel = ev => { if (!gE || !S.selected) return null; const els = gE.selectAll('g.rel').nodes(); if (!els.length) return null; const [x, y] = d3.pointer(ev, rotG.node()); const lim = 7 / S.transform.k; let best = null, bd = lim;
     for (const el of els) { const P = el.__pts; if (!P) continue; for (let i = 1; i < P.length; i++) { const a = P[i - 1], b = P[i], dx = b.x - a.x, dy = b.y - a.y, L2 = dx * dx + dy * dy || 1; const t = clamp(((x - a.x) * dx + (y - a.y) * dy) / L2, 0, 1); const d = Math.hypot(x - a.x - t * dx, y - a.y - t * dy) + (el.classList.contains('chain') ? 0.6 / S.transform.k : 0); if (d < bd) { bd = d; best = el; } } }
     nearestRel.d = best ? bd : Infinity; return best; };
-  svg.on('click', ev => { if (ev.defaultPrevented) return; const g = nodeOf(ev); if (g) { select(g.getAttribute('data-id'), { from:'graph' }); return; } const pk = pick(ev); if (pk.node) { select(pk.node, { from:'graph' }); return; } const r = pk.rel || relOf(ev); if (r) { clickEdge(r); return; }
+  svg.on('click', ev => { if (ev.defaultPrevented) return; if (S.mode === 'budget') return; /* w widoku budżetu klik obsługują segmenty pierścienia */ const g = nodeOf(ev); if (g) { select(g.getAttribute('data-id'), { from:'graph' }); return; } const pk = pick(ev); if (pk.node) { select(pk.node, { from:'graph' }); return; } const r = pk.rel || relOf(ev); if (r) { clickEdge(r); return; }
     if (performance.now() - (S.legendClosedAt || 0) < 700) return; // U11: klik w pustą scenę, który zamknął legendę, nie kasuje wyboru
     select(null); });
   svg.on('keydown', ev => { const g = nodeOf(ev); if ((ev.key === 'Enter' || ev.key === ' ') && g) { ev.preventDefault(); select(g.getAttribute('data-id'), { from:'graph' }); } });
   svg.on('pointerover', ev => { const g = nodeOf(ev); if (g) { hotEdge(null); showTip(g.getAttribute('data-id'), ev, g); return; } const r = nearestRel(ev) || relOf(ev); if (r) showEdgeTip(r, ev); });
-  svg.on('pointermove', ev => { const pk = nodeOf(ev) ? {} : pick(ev); if (pk.node) { if (!hovG || hovG.getAttribute('data-id') !== pk.node) { hotEdge(null); showTip(pk.node, ev, elById[pk.node]); } moveTip(ev); return; } else if (!nodeOf(ev) && hovG && !relOf(ev) && ev.target === svg.node()) hideTip();
+  svg.on('pointermove', ev => { if (S.mode === 'budget') return; const pk = nodeOf(ev) ? {} : pick(ev); if (pk.node) { if (!hovG || hovG.getAttribute('data-id') !== pk.node) { hotEdge(null); showTip(pk.node, ev, elById[pk.node]); } moveTip(ev); return; } else if (!nodeOf(ev) && hovG && !relOf(ev) && ev.target === svg.node()) hideTip();
     if (!nodeOf(ev) && S.selected) { const r = pk.rel; if (r) { if (hovG) hideTip(); if (hotEid !== r.__edge.id) showEdgeTip(r, ev); } else if (hotEid && !relOf(ev)) { hotEdge(null); hideTip(); } } moveTip(ev); });
   svg.on('pointerout', ev => { const to = ev.relatedTarget && ev.relatedTarget.closest ? ev.relatedTarget : null; const g = nodeOf(ev); if (g && !(to && to.closest('g.node') === g)) hideTip(); const r = relOf(ev); if (r && !(to && to.closest('g.rel') === r)) { hotEdge(null); hideTip(); } });
   svg.on('focusin', ev => { const g = nodeOf(ev); if (g && g.matches(':focus-visible')) showTip(g.getAttribute('data-id'), ev, g); });
@@ -1486,7 +1521,8 @@ function select(id, opts = {}) {
   if (n && S.reveal.size) { const k = hiddenBy(n.id); toast(`Typ „${LEGEND_LABEL[k] || 'ten'}” jest ukryty w legendzie`); }
   const rotTo = rotationFor(n ? n.id : null); const turns = Math.abs(normDeg(rotTo - S.rot)) > 1.5; const wasFit = !S.userZoomed; setRotation(rotTo, instant); if (turns && wasFit && !S.mobile) fit(!instant); // widok dopasowany zostaje dopasowany także po obrocie (ta sama skala, nowe wyśrodkowanie)
   if (hovId && !turns && S.D.byId[hovId] && elById[hovId]) showTip(hovId, null, elById[hovId]); // po obrocie glif odjeżdża spod kursora, więc pigułka najazdu zostaje tylko bez obrotu
-  if (!S.applyingHistory) { const hash = n ? '#node=' + encodeURIComponent(n.id) : ''; if (location.hash !== hash) history.pushState({ node: n ? n.id : null }, '', hash || location.pathname + location.search); }
+  if (!n && opts.from !== 'budget') S.budgetPart = null;
+  writeHash(); if (S.mode === 'budget') budgetSync(instant);
   if (S.mobile) { setSheet(!!n || opts.keepOpen === true, { silent: true }); if (n) { setTimeout(() => revealAboveSheet(n.id), still() ? 60 : 340); setTimeout(() => revealAboveSheet(n.id), 700); } else setTimeout(() => fit(true), still() ? 60 : 340); }
   else if (n) revealInView(n.id);
   document.title = n ? `${n.name} · Graf Państwa Polskiego` : 'Graf Państwa Polskiego'; // U8: karty i historia rozróżnialne
@@ -1502,7 +1538,8 @@ function syncFilterUI() {
 function applyHash(opts = {}) {
   const m = location.hash.match(/node=([^&]+)/); let id = null; if (m) { try { id = decodeURIComponent(m[1]); } catch { id = m[1]; } }
   if (id && !S.D.byId[id]) { toast(`Nie ma węzła o adresie „${id}”`); try { history.replaceState(null, '', location.pathname + location.search); } catch {} id = null; }
-  S.applyingHistory = true; try { select(id, Object.assign({ from:'url' }, opts)); } finally { S.applyingHistory = false; }
+  const wantBudget = /(?:^#|&)view=budget/.test(location.hash) && !!S.B; const pm = location.hash.match(/part=([^&]+)/);
+  S.applyingHistory = true; try { if (wantBudget && S.mode !== 'budget') { if (id) S.tab = 'budget'; setMode('budget', { silent: true }); } else if (!wantBudget && S.mode === 'budget') setMode('graph', { silent: true }); select(id, Object.assign({ from:'url' }, opts)); if (wantBudget && !id && pm) pickBudgetPart(decodeURIComponent(pm[1])); } finally { S.applyingHistory = false; }
 }
 // pigułki z nazwą nad glifem (przestrzeń ekranu): stała nad wybranym węzłem i chwilowa nad najechanym
 function pillFor(cls, n) {
@@ -1736,6 +1773,7 @@ function renderNode(n) {
   const pv = n.provenance || {}; const srcs = Array.isArray(pv.sources) ? pv.sources.filter(s => typeof s === 'string' && /^https?:/.test(s)) : [];
   const conf = pv.confidence && CONF_LABEL[pv.confidence] ? pv.confidence : null;
   const nConn = n.in.length + n.out.length + n.children.length + (n.parent ? 1 : 0);
+  const hasB = !!S.B && budgetPartsFor(n.id).length > 0; const tab = S.tab === 'budget' && !hasB ? 'conn' : S.tab;
   const nameCls = n.name.length > 200 ? ' xlong' : n.name.length > 90 ? ' long' : '';
   return `<section class="card node-card" style="--i:0">
     <h2 class="node-name${nameCls}">${esc(n.name)}</h2>
@@ -1746,9 +1784,10 @@ function renderNode(n) {
     <div class="node-meta">${sub.length ? `<p class="node-sub mono">${esc(sub.join(' · '))}</p>` : ''}<div class="chips">${chips.join('')}</div></div>${ecHtml}
     ${renderHeadSection(n)}</section>
     <section class="card" style="--i:1">
-      <div class="tabs" role="tablist"><button role="tab" data-tab="conn" aria-selected="${S.tab === 'conn'}">Powiązania · ${nConn}</button><button role="tab" data-tab="prov" aria-selected="${S.tab === 'prov'}">Źródła i metryka</button></div>
-      <div class="tabpane" data-pane="conn" ${S.tab === 'conn' ? '' : 'hidden'}>${renderConnections(n)}</div>
-      <div class="tabpane prov" data-pane="prov" ${S.tab === 'prov' ? '' : 'hidden'}>
+      <div class="tabs${hasB ? ' three' : ''}" role="tablist"><button role="tab" data-tab="conn" aria-selected="${tab === 'conn'}">Powiązania · ${nConn}</button><button role="tab" data-tab="prov" aria-selected="${tab === 'prov'}">Źródła i metryka</button>${hasB ? `<button role="tab" data-tab="budget" aria-selected="${tab === 'budget'}">Budżet</button>` : ''}</div>
+      <div class="tabpane" data-pane="conn" ${tab === 'conn' ? '' : 'hidden'}>${renderConnections(n)}</div>
+      ${hasB ? `<div class="tabpane" data-pane="budget" ${tab === 'budget' ? '' : 'hidden'}>${budgetPaneHtml(n)}</div>` : ''}
+      <div class="tabpane prov" data-pane="prov" ${tab === 'prov' ? '' : 'hidden'}>
         <div>Źródła${srcs.length ? '' : ': brak w rekordzie'}</div>
         ${srcs.length ? `<div class="srcs">${(() => { const seen = new Map(); return srcs.map(s => { let l = srcLabel(s, srcs); const k = (seen.get(l) || 0) + 1; seen.set(l, k); if (k > 1) l += ` (${k})`; return `<a href="${esc(s)}" target="_blank" rel="noopener" title="${esc(s)}">${esc(l)}</a>`; }).join(''); })()}</div>` : ''}
         <div>Zweryfikowano: ${pv.verifiedAt ? esc(fmtDate(pv.verifiedAt)) : 'brak daty'} · ${conf ? `<span class="conf ${conf}"><i></i>pewność: ${CONF_LABEL[conf]}</span>` : '<span class="conf"><i></i>pewność: nieokreślona</span>'}${n.regon ? ` · REGON ${esc(n.regon)}` : ''}</div>
@@ -1846,6 +1885,119 @@ function bind() {
   let rt = null; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { const was = S.userZoomed; measure(); if (!was) fit(false); else placeSelLabel(); }, 120); });
 }
 
+/* ---------- widok „Budżet” (wzór: graph.civlab.org/sf: pierścień grup i pierścień jednostek, suma w środku, wybrany segment obraca się na godz. 6) ---------- */
+const BUDGET_URL_DEFAULT = './budget.json';
+const BGROUP_COLORS = ['#4C78A8', '#F58518', '#54A24B', '#E45756', '#72B7B2', '#EECA3B', '#B279A2', '#FF9DA6', '#9D755D', '#8C8C8C', '#2F9E9E', '#C45AA8'];
+let gB = null, gBrot = null, gBlab = null, brotTimer = null;
+function fmtPLN(tys) { if (tys == null || isNaN(tys)) return 'brak danych'; const zl = tys * 1000, a = Math.abs(zl); const f = (v, d) => v.toLocaleString('pl-PL', { minimumFractionDigits: d, maximumFractionDigits: d }); if (a >= 1e9) return f(zl / 1e9, a >= 1e11 ? 1 : 2) + ' mld zł'; if (a >= 1e6) return f(zl / 1e6, 1) + ' mln zł'; return f(zl / 1e3, 0) + ' tys. zł'; }
+const fmtPct = v => (v * 100).toLocaleString('pl-PL', { minimumFractionDigits: v < 0.1 ? 2 : 1, maximumFractionDigits: v < 0.1 ? 2 : 1 }) + '%';
+async function loadBudget(graphUrl) {
+  if (window.BUDGET_DATA) return window.BUDGET_DATA;
+  try { const params = new URLSearchParams(location.search); const url = params.get('budget') || (params.get('data') && /graph\.json/.test(graphUrl || '') ? graphUrl.replace(/graph\.json.*$/, 'budget.json') : BUDGET_URL_DEFAULT); const r = await fetch(url, { cache: 'no-cache' }); return r.ok ? await r.json() : null; } catch { return null; }
+}
+function normalizeBudget(raw) {
+  if (!raw || !raw.parts || !Array.isArray(raw.groups) || !raw.meta) return null;
+  const year = String(raw.meta.currentYear); const yv = p => (p.years || {})[year] || {}; const val = p => { const y = yv(p); return y.actual != null ? y.actual : (y.planAfterChanges != null ? y.planAfterChanges : y.plan); };
+  const codes = Object.keys(raw.parts); const parents = new Set(codes.filter(c => c.includes('/')).map(c => c.split('/')[0]));
+  const gname = {}; raw.groups.forEach(g => { gname[g.code] = g.name; });
+  const leaves = codes.filter(c => !parents.has(c)).map(c => { const p = raw.parts[c]; const par = c.includes('/') ? raw.parts[c.split('/')[0]] : null; return Object.assign({}, p, { code: c, group: p.group || (par && par.group) || 'inne', value: +val(p) || 0, parent: par ? par.code || c.split('/')[0] : null }); }).filter(p => p.value > 0);
+  const total = leaves.reduce((a, p) => a + p.value, 0); if (!total) return null;
+  const groups = [...new Set(leaves.map(p => p.group))].map(code => { const parts = leaves.filter(p => p.group === code).sort((a, b) => b.value - a.value); return { code, name: gname[code] || code, parts, value: parts.reduce((a, p) => a + p.value, 0) }; }).sort((a, b) => b.value - a.value);
+  groups.forEach((g, i) => { g.color = BGROUP_COLORS[i % BGROUP_COLORS.length]; });
+  let a = 0; for (const g of groups) { g.a0 = a; for (const p of g.parts) { p.a0 = a; a += p.value / total * 2 * Math.PI; p.a1 = a; p.color = g.color; p.groupName = g.name; } g.a1 = a; }
+  const ranked = leaves.slice().sort((x, y) => y.value - x.value); ranked.forEach((p, i) => { p.rank = i + 1; });
+  const byCode = {}; leaves.forEach(p => { byCode[p.code] = p; }); const byNode = {};
+  for (const c of codes) { const p = raw.parts[c]; if (!p.nodeId) continue; (byNode[p.nodeId] = byNode[p.nodeId] || []).push(c); }
+  return { raw, year, total, groups, leaves, byCode, byNode, count: leaves.length, kind: raw.meta.currentKind || 'wykonanie' };
+}
+function budgetPartsFor(nodeId) { if (!S.B || !nodeId) return []; const own = S.B.byNode[nodeId] || []; if (own.length) return own; const n = S.D.byId[nodeId]; const via = n && (n.headOf || (n.type !== 'dept_head' ? n.head : null)); return via ? (S.B.byNode[via] || []) : []; }
+function leafFor(code) { if (!S.B) return null; if (S.B.byCode[code]) return S.B.byCode[code]; return S.B.leaves.find(p => p.parent === code) || null; }
+function budgetGeom() { measure(); const W = S.W, H = S.H; const sheet = S.mobile ? ($('#panel').classList.contains('open') ? Math.min($('#panel').offsetHeight, H * 0.66) : 74) : 0; const availH = H - sheet - (S.mobile ? 70 : 84); const R = Math.max(90, Math.min(W - (S.mobile ? 28 : 120), availH) / 2); return { cx: W / 2, cy: (S.mobile ? 58 : 30) + availH / 2, R, r0: R * 0.57, r1: R * 0.785 }; }
+function drawBudget() {
+  if (!S.B) return; const G = budgetGeom(); if (gB) gB.remove();
+  gB = svg.append('g').attr('class', 'budget').attr('transform', `translate(${F(G.cx)},${F(G.cy)})`); gBrot = gB.append('g').attr('class', 'brot').attr('transform', `rotate(${F(S.brot || 0)})`);
+  const arcIn = d3.arc().innerRadius(G.r0).outerRadius(G.r1 - 1), arcOut = d3.arc().innerRadius(G.r1).outerRadius(G.R);
+  const gi = gBrot.append('g').attr('class', 'bring inner'); const go = gBrot.append('g').attr('class', 'bring outer');
+  for (const g of S.B.groups) gi.append('path').attr('class', 'bseg bgroup').attr('data-group', g.code).attr('d', arcIn({ startAngle: g.a0, endAngle: g.a1 })).style('--g', g.color).datum(g);
+  for (const p of S.B.leaves) go.append('path').attr('class', 'bseg bpart').attr('data-part', p.code).attr('data-group', p.group).attr('tabindex', 0).attr('role', 'button').attr('aria-label', `${p.name}: ${fmtPLN(p.value)}`).attr('d', arcOut({ startAngle: p.a0, endAngle: p.a1 })).style('--g', p.color).datum(p);
+  gBlab = gBrot.append('g').attr('class', 'blabels');
+  const c = gB.append('g').attr('class', 'bcenter'); const kindTxt = S.B.kind === 'wykonanie' ? `wykonanie ${S.B.year}` : `plan ${S.B.year}`;
+  c.append('text').attr('class', 'bc-k').attr('y', -G.R * 0.115).text('Budżet państwa'); c.append('text').attr('class', 'bc-v').attr('y', G.R * 0.03).style('font-size', F(Math.max(20, G.R * 0.155)) + 'px').text(fmtPLN(S.B.total)); c.append('text').attr('class', 'bc-s').attr('y', G.R * 0.135).text(`wydatki · ${kindTxt}`);
+  const tip = $('#btip'); const show = (ev, d, isGroup) => { tip.hidden = false; tip.style.setProperty('--g', d.color); tip.innerHTML = `<b>${esc(d.name)}</b><span>${fmtPLN(d.value)} · ${fmtPct(d.value / S.B.total)}</span>${isGroup ? '' : `<small>${esc(d.groupName)}${d.code ? ' · część ' + esc(d.code) : ''}</small>`}`; const r = $('#stage').getBoundingClientRect(); const x = clamp(ev.clientX - r.left + 14, 8, r.width - tip.offsetWidth - 8), y = clamp(ev.clientY - r.top - tip.offsetHeight - 10, 8, r.height - tip.offsetHeight - 8); tip.style.transform = `translate(${F(x)}px,${F(y)}px)`; };
+  gBrot.selectAll('path.bseg').on('pointermove', function (ev, d) { show(ev, d, this.classList.contains('bgroup')); }).on('pointerleave', () => { tip.hidden = true; });
+  go.selectAll('path.bpart').on('click', (ev, d) => pickBudgetPart(d.code)).on('keydown', (ev, d) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pickBudgetPart(d.code); } });
+  gi.selectAll('path.bgroup').on('click', (ev, d) => pickBudgetPart(d.parts[0].code));
+  budgetSync(true);
+}
+function budgetRotate(target, instant) {
+  const from = S.brot || 0, to = from + normDeg(target - from); if (brotTimer) { brotTimer.stop(); brotTimer = null; }
+  const apply = deg => { S.brot = deg; if (gBrot) gBrot.attr('transform', `rotate(${F(deg)})`); };
+  if (instant || still() || Math.abs(to - from) < 0.4) { apply(normDeg(to)); return; }
+  const dur = clamp(620 + Math.abs(to - from) * 3.1, 900, 1180); brotTimer = d3.timer(el => { const t = Math.min(1, el / dur); apply(from + (to - from) * d3.easeCubicInOut(t)); if (t >= 1) { brotTimer.stop(); brotTimer = null; apply(normDeg(to)); } });
+}
+// zaznaczenie: segment części i jej grupy, podpisy po łuku, obrót na godz. 6 (jak w oryginale)
+function budgetSync(instant) {
+  if (!S.B || !gBrot) return; const G = budgetGeom(); let code = S.budgetPart; const fromNode = S.selected ? budgetPartsFor(S.selected) : [];
+  if (S.selected) code = fromNode.includes(code) || (code && fromNode.some(c => leafFor(code) && leafFor(code).parent === c)) ? code : (fromNode[0] || null);
+  const p = code ? leafFor(code) : null; S.budgetPart = p ? p.code : null;
+  gBrot.selectAll('path.bpart').classed('sel', d => !!p && d.code === p.code).classed('dim', d => !!p && d.group !== p.group); gBrot.selectAll('path.bgroup').classed('sel', d => !!p && d.code === p.group).classed('dim', d => !!p && d.code !== p.group);
+  gBlab.selectAll('*').remove(); gB.classed('has-sel', !!p);
+  if (!p) { budgetRotate(0, instant); return; }
+  const g = S.B.groups.find(x => x.code === p.group); const label = (id, r, mid, cls, text) => { const half = Math.min(Math.PI * 0.62, Math.max(0.5, (text.length * 8.2) / r / 2 + 0.06)); gBlab.append('path').attr('id', id).attr('fill', 'none').attr('d', arcPath(r, mid - half, mid + half, true)); gBlab.append('text').attr('class', cls).style('--g', p.color).append('textPath').attr('href', '#' + id).attr('startOffset', '50%').attr('text-anchor', 'middle').text(text); };
+  const pm = (p.a0 + p.a1) / 2, gm = (g.a0 + g.a1) / 2; const fs = Math.max(11, G.R * 0.042);
+  gBlab.style('font-size', F(fs) + 'px');
+  label('bl-p1', G.R + fs * 1.15, pm, 'blabel', p.name.length > 46 ? p.name.slice(0, 44) + '…' : p.name); label('bl-p2', G.R + fs * 2.35, pm, 'blabel amt', fmtPLN(p.value));
+  label('bl-g1', (G.r0 + G.r1) / 2 - fs * 0.15, gm, 'blabel in', g.name.length > 34 ? g.name.slice(0, 32) + '…' : g.name); label('bl-g2', (G.r0 + G.r1) / 2 + fs * 1.05, gm, 'blabel in amt', fmtPLN(g.value));
+  budgetRotate(180 - pm * 180 / Math.PI, instant);
+}
+function pickBudgetPart(code) {
+  const p = leafFor(code); if (!p) return; S.budgetPart = p.code; $('#btip').hidden = true; const parentNode = p.parent && S.B.raw.parts[p.parent] ? S.B.raw.parts[p.parent].nodeId : null; const nodeId = (p.nodeId && S.D.byId[p.nodeId]) ? p.nodeId : (parentNode && S.D.byId[parentNode] ? parentNode : null);
+  if (nodeId) { S.tab = 'budget'; if (S.selected === nodeId) { budgetSync(); renderPanel(S.D.byId[nodeId]); writeHash(); } else select(nodeId, { from: 'budget' }); }
+  else { if (S.selected) select(null, { keepOpen: true, from: 'budget' }); S.budgetPart = p.code; budgetSync(); renderBudgetPartPanel(p); if (S.mobile) setSheet(true); writeHash(); }
+}
+function hashFor() { const parts = []; if (S.selected) parts.push('node=' + encodeURIComponent(S.selected)); if (S.mode === 'budget') { parts.push('view=budget'); if (!S.selected && S.budgetPart) parts.push('part=' + encodeURIComponent(S.budgetPart)); } return parts.length ? '#' + parts.join('&') : ''; }
+function writeHash(replace) { if (S.applyingHistory) return; const h = hashFor(); if (location.hash === h) return; try { history[replace ? 'replaceState' : 'pushState']({ node: S.selected || null }, '', h || location.pathname + location.search); } catch {} }
+function setMode(mode, opts = {}) {
+  if (mode === 'budget' && !S.B) mode = 'graph'; const was = S.mode || 'graph'; S.mode = mode; const st = $('#stage'); st.classList.toggle('mode-budget', mode === 'budget'); $('#btip').hidden = true;
+  document.querySelectorAll('#mode-toggle button').forEach(b => b.setAttribute('aria-pressed', String(b.getAttribute('data-mode') === mode)));
+  if (mode === 'budget') { setLegend(false); if (S.selected && budgetPartsFor(S.selected).length) { S.tab = 'budget'; renderPanel(S.D.byId[S.selected]); } drawBudget(); }
+  else { if (gB) { gB.remove(); gB = null; gBrot = null; } if (!S.selected && S.budgetPart) { S.budgetPart = null; renderPanel(null); } if (!S.userZoomed) fit(false); }
+  if (was !== mode && !opts.silent) writeHash();
+}
+function budgetBlockHtml(code) {
+  const B = S.B, raw = B.raw.parts[code]; if (!raw) return ''; const kids = B.leaves.filter(p => p.parent === code); const leaf = B.byCode[code]; const Y = B.year; const y = (raw.years || {})[Y] || {};
+  const value = leaf ? leaf.value : kids.reduce((a, p) => a + p.value, 0) || y.actual || 0; const rankBase = leaf ? leaf.rank : null;
+  const row = (k, v, extra) => v == null ? '' : `<tr><th>${k}</th><td>${fmtPLN(v)}${extra ? ` <small>${extra}</small>` : ''}</td></tr>`;
+  const exec = y.actual != null && y.planAfterChanges ? fmtPct(y.actual / y.planAfterChanges) + ' planu po zmianach' : '';
+  const years = Object.keys(raw.years || {}).filter(k => (raw.years[k].actual != null)).sort(); const mx = Math.max(1, ...years.map(k => raw.years[k].actual));
+  const hist = years.length > 1 ? `<div class="bh-t">Wykonanie wydatków w latach</div><div class="bhist" style="--n:${years.length}">${years.map(k => `<div class="bh-col" title="${k}: ${fmtPLN(raw.years[k].actual)}"><i style="height:${F(Math.max(3, raw.years[k].actual / mx * 60))}px"></i><span>${k}</span></div>`).join('')}</div>` : '';
+  const br = (raw.breakdown || []).filter(d => (d.actual != null ? d.actual : d.plan) > 0).sort((a, b) => (b.actual ?? b.plan) - (a.actual ?? a.plan)); const bmx = br.length ? (br[0].actual ?? br[0].plan) : 1; const top = br.slice(0, 6), rest = br.slice(6).reduce((a, d) => a + (d.actual ?? d.plan), 0);
+  const brk = top.length ? `<div class="bh-t">Na co: działy klasyfikacji budżetowej</div><div class="bbreak">${top.map(d => `<div class="bb-row"><span class="bb-n">${esc(d.name || d.dzial)}</span><span class="bb-v">${fmtPLN(d.actual ?? d.plan)}</span><i style="width:${F(Math.max(1.5, (d.actual ?? d.plan) / bmx * 100))}%"></i></div>`).join('')}${rest > 0 ? `<div class="bb-row rest"><span class="bb-n">pozostałe działy (${br.length - 6})</span><span class="bb-v">${fmtPLN(rest)}</span></div>` : ''}</div>` : '';
+  const plan = B.raw.meta.planYear && (raw.years || {})[String(B.raw.meta.planYear)] ? row(`Plan na ${B.raw.meta.planYear} (ustawa budżetowa)`, raw.years[String(B.raw.meta.planYear)].plan) : '';
+  const kidsHtml = kids.length > 1 ? `<div class="bh-t">Podczęści (${kids.length})</div><div class="bkids">${kids.slice().sort((a, b) => b.value - a.value).map(k => `<button class="bkid" data-bpart="${esc(k.code)}"><span>${esc(k.name)}</span><b>${fmtPLN(k.value)}</b></button>`).join('')}</div>` : '';
+  return `<div class="bpart-block" style="--g:${leaf ? leaf.color : (kids[0] ? kids[0].color : 'var(--muted)')}"><div class="bp-head"><span class="bp-code">część ${esc(code)}</span><b>${esc(raw.name || '')}</b></div>
+    <div class="bp-big">${fmtPLN(value)}</div><div class="bp-sub">${B.kind === 'wykonanie' ? 'wykonanie' : 'plan'} ${esc(Y)} · ${fmtPct(value / B.total)} wydatków budżetu państwa${rankBase ? ` · ${rankBase}. miejsce na ${B.count}` : ''}</div>
+    <table class="btable">${row('Plan według ustawy budżetowej', y.plan)}${row('Plan po zmianach', y.planAfterChanges)}${row('Wykonanie', y.actual, exec)}${plan}</table>
+    ${raw.dysponent ? `<div class="bp-dys">Dysponent: ${esc(raw.dysponent)}</div>` : ''}${hist}${brk}${kidsHtml}${raw.note ? `<p class="bp-note">${esc(raw.note)}</p>` : ''}</div>`;
+}
+function budgetSourcesHtml() { const src = (S.B.raw.meta.sources || []).filter(s => s.url); return `<p class="bp-src">Budżet państwa to nie cały sektor finansów publicznych: bez samorządów, NFZ i funduszy celowych. Kwoty w źródle są w tys. zł. Źródła: ${src.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title || s.id)}</a>`).join(', ')}.</p>`; }
+function budgetPaneHtml(n) { let codes = budgetPartsFor(n.id); if (!codes.length) return ''; const cur = S.budgetPart ? (codes.includes(S.budgetPart) ? S.budgetPart : (leafFor(S.budgetPart) || {}).parent) : null; if (cur && codes.includes(cur)) codes = [cur, ...codes.filter(c => c !== cur)]; /* kliknięta część idzie na górę listy */ const own = (S.B.byNode[n.id] || []).length; const via = !own ? `<p class="bp-note">Części budżetowe przypisane do ${esc(n.type === 'dept_head' ? 'urzędu obsługującego to stanowisko' : 'stanowiska dysponenta')}.</p>` : ''; return via + codes.map(budgetBlockHtml).join('') + budgetSourcesHtml(); }
+function renderBudgetPartPanel(p) {
+  const home = $('#view-home'), view = $('#view-node'); home.hidden = true; view.hidden = false; $('#crumb').innerHTML = `/ ${esc(String(S.D.meta.gov || 'pl').toUpperCase())} / <b>Budżet</b>`;
+  view.innerHTML = `<section class="card node-card" style="--i:0"><h2 class="node-name${p.name.length > 90 ? ' long' : ''}">${esc(p.name)}</h2><p class="desc">Część budżetu państwa bez własnego organu w grafie. ${esc(p.groupName)}.</p>${budgetBlockHtml(p.code)}${budgetSourcesHtml()}</section>`;
+  document.title = `${p.name} · Budżet · Graf Państwa Polskiego`;
+}
+function initBudget() {
+  if (!S.B) return; $('#mode-toggle').hidden = false;
+  document.querySelectorAll('#mode-toggle button').forEach(b => b.addEventListener('click', () => setMode(b.getAttribute('data-mode'))));
+  document.addEventListener('click', ev => { const k = ev.target.closest && ev.target.closest('[data-bpart]'); if (k) { pickBudgetPart(k.getAttribute('data-bpart')); return; } const o = ev.target.closest && ev.target.closest('[data-open-budget]'); if (o) setMode('budget'); });
+  const top3 = S.B.groups.slice(0, 3).map(g => `${esc(g.name)} ${fmtPct(g.value / S.B.total)}`).join(', ');
+  const card = document.createElement('section'); card.className = 'card'; card.id = 'budget-card'; card.style.setProperty('--i', 3);
+  card.innerHTML = `<h3>Budżet państwa <span class="n">${esc(S.B.kind)} ${esc(S.B.year)}</span></h3><p class="lede" style="margin-bottom:6px"><b style="color:var(--ink)">${fmtPLN(S.B.total)}</b> wydatków w ${S.B.count} częściach budżetowych. Największe grupy: ${top3}.</p><button class="bopen" type="button" data-open-budget>Pokaż budżet na kole</button>`;
+  const first = $('#view-home').querySelector('section.card'); first.insertAdjacentElement('afterend', card);
+  let rt = null; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (S.mode === 'budget') drawBudget(); }, 140); });
+}
+
 /* ---------- start ---------- */
 async function loadData() {
   if (window.GRAPH_DATA) return { data: window.GRAPH_DATA, source: 'inline (window.GRAPH_DATA)' };
@@ -1865,8 +2017,9 @@ async function main() {
   try { payload = await loadData(); } catch (err) { fail(String(err && err.message || err), location.href); return; }
   try {
     S.D = normalize(payload.data); if (!S.D.nodes.length) throw new Error('Graf nie zawiera żadnych węzłów.');
+    S.mode = 'graph'; S.brot = 0; S.B = normalizeBudget(await loadBudget(payload.source));
     S.L = computeLayout(S.D); loadHidden();
-    renderHome(); renderLegend(); render(); bind(); setCrumb(null);
+    renderHome(); renderLegend(); render(); bind(); setCrumb(null); initBudget();
     new MutationObserver(syncSheet).observe($('#panel'), { attributes:true, attributeFilter:['class'] }); syncSheet();
     $('#status').hidden = true; window.__GP = { stats: S.L.stats, layout: S.L, state: S };
     // ---- uchwyty testowe (kontrakt: tests/parity/README.md §Uchwyty) — tylko odczyt stanu, bez wpływu na działanie ----
@@ -1875,6 +2028,7 @@ async function main() {
       const txt = sel => { const el = document.querySelector(sel); return el ? el.textContent : null; };
       return {
         version: 1, skin: 'D',
+        budget: () => { if (!S.B) return { available: false }; const G = budgetGeom(); const r = $('#stage').getBoundingClientRect(); const rot = (S.brot || 0) * Math.PI / 180; return { available: true, mode: S.mode, year: S.B.year, total: S.B.total, count: S.B.count, groups: S.B.groups.map(g => ({ code: g.code, name: g.name, value: g.value })), selectedPart: S.budgetPart || null, rot: S.brot || 0, rotating: !!brotTimer, segments: S.B.leaves.map(p => { const a = (p.a0 + p.a1) / 2 + rot, rr = (G.r1 + G.R) / 2; return { code: p.code, nodeId: p.nodeId || null, effNodeId: p.nodeId || (p.parent && S.B.raw.parts[p.parent] ? S.B.raw.parts[p.parent].nodeId : null) || null, group: p.group, value: p.value, span: p.a1 - p.a0, x: r.left + G.cx + rr * Math.sin(a), y: r.top + G.cy - rr * Math.cos(a) }; }) }; },
         ids: () => S.D.nodes.map(n => n.id),
         node: id => { const n = S.D.byId[id]; return n ? { id: n.id, name: n.name, type: n.type, sector: n.sector, inCount: n.in.length, outCount: n.out.length, children: n.children.length, head: n.head || null, headOf: n.headOf || null, people: n.people.type === 'people' ? n.people.people.length : null } : null; },
         state: () => ({ selected: S.selected, relFilter: S.relFilter, legendOpen: $('#legend-toggle').getAttribute('aria-expanded') === 'true',

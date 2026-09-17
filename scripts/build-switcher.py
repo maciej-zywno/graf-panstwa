@@ -12,6 +12,8 @@ SKINS = [  # (id, etykieta, plik[, overlay]) — pierwsza pozycja jest domyślna
 ]  # decyzja 17.09.2026: zostaje wyłącznie skórka D; pozostałe leżą w archive/skorki/. Przy jednej skórce przełącznik jest ukryty.
 esc = lambda s: s.replace('</', '<\\/')
 data_text = esc(json.dumps(json.load(open(data_path, encoding='utf-8')), ensure_ascii=False, separators=(',', ':')))
+budget_path = os.path.join(os.path.dirname(data_path), 'budget.json')
+budget_text = esc(json.dumps(json.load(open(budget_path, encoding='utf-8')), ensure_ascii=False, separators=(',', ':'))) if os.path.exists(budget_path) else 'null'
 skins_js, embedded = [], []
 for sid, label, rel, *flags in SKINS:
     p = os.path.join(ROOT, rel)
@@ -66,17 +68,18 @@ body.single .bar { display:none; }
 <iframe id="stage" title="Widok grafu"></iframe>
 __EMBEDDED__
 <script type="application/json" id="graph-data">__DATA__</script>
+<script type="application/json" id="budget-data">__BUDGET__</script>
 <script>
 (() => {
   const SKINS = __SKINS__;
-  const DATA_TEXT = document.getElementById('graph-data').textContent;
+  const DATA_TEXT = document.getElementById('graph-data').textContent; const BUDGET_TEXT = document.getElementById('budget-data').textContent;
   const frame = document.getElementById('stage'), sel = document.getElementById('skin-select'), nameEl = document.getElementById('skin-name');
   const state = { skin: null, node: null };
   const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
   const nodeFromHash = h => { const m = /[#&](?:node|resort)=([^&]+)/.exec(h || ''); return m ? decodeURIComponent(m[1]) : null; };
   // Kod wstrzykiwany do każdej skórki: dane, stan początkowy, bezpieczne history w about:srcdoc, raportowanie stanu do powłoki.
   const barWidth = () => document.body.classList.contains('overlay') && !document.body.classList.contains('single') ? Math.ceil(document.querySelector('.bar').getBoundingClientRect().width) + 10 : 0;
-  const bootstrap = node => '<script>window.GRAPH_DATA=' + DATA_TEXT + ';window.GP_EMBED=' + JSON.stringify({ topRight: barWidth() }) + ';<\/script><script>(' + function (hash) {
+  const bootstrap = node => '<script>window.GRAPH_DATA=' + DATA_TEXT + ';window.BUDGET_DATA=' + BUDGET_TEXT + ';window.GP_EMBED=' + JSON.stringify({ topRight: barWidth() }) + ';<\/script><script>(' + function (hash) {
     const ps = history.pushState.bind(history), rs = history.replaceState.bind(history);
     const viaHash = u => { try { const s = String(u || ''); const i = s.indexOf('#'); location.hash = i >= 0 ? s.slice(i) : ''; } catch (e) {} };
     history.pushState = function (s, t, u) { try { ps(s, t, u); } catch (e) { viaHash(u); } };
@@ -122,7 +125,7 @@ __EMBEDDED__
 })();
 </script>
 '''
-page = SHELL.replace('__EMBEDDED__', '\n'.join(embedded)).replace('__DATA__', data_text).replace('__SKINS__', json.dumps(skins_js, ensure_ascii=False))
+page = SHELL.replace('__EMBEDDED__', '\n'.join(embedded)).replace('__DATA__', data_text).replace('__BUDGET__', budget_text).replace('__SKINS__', json.dumps(skins_js, ensure_ascii=False))
 os.makedirs(os.path.dirname(out), exist_ok=True)
 open(out, 'w', encoding='utf-8').write(page)
 # wersja lokalna: pełny szkielet HTML z deklaracją kodowania (artefakt dostaje szkielet od publikatora)

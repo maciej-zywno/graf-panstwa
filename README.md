@@ -15,14 +15,15 @@ Projekt jest obywatelski i nie jest nastawiony na zysk. Dane i kod są otwarte.
 2. [Skąd są dane](#skąd-są-dane)
 3. [Jak dane powstały i jak były sprawdzane](#jak-dane-powstały-i-jak-były-sprawdzane)
 4. [Struktura danych](#struktura-danych)
-5. [Jak dane są aktualizowane](#jak-dane-są-aktualizowane)
-6. [Jak użyć danych](#jak-użyć-danych)
-7. [Uruchomienie i testy](#uruchomienie-i-testy)
-8. [Struktura repozytorium](#struktura-repozytorium)
-9. [Ograniczenia i znane braki](#ograniczenia-i-znane-braki)
-10. [Zgłaszanie błędów](#zgłaszanie-błędów)
-11. [Licencje](#licencje)
-12. [Inspiracja](#inspiracja)
+5. [Budżet państwa](#budżet-państwa)
+6. [Jak dane są aktualizowane](#jak-dane-są-aktualizowane)
+7. [Jak użyć danych](#jak-użyć-danych)
+8. [Uruchomienie i testy](#uruchomienie-i-testy)
+9. [Struktura repozytorium](#struktura-repozytorium)
+10. [Ograniczenia i znane braki](#ograniczenia-i-znane-braki)
+11. [Zgłaszanie błędów](#zgłaszanie-błędów)
+12. [Licencje](#licencje)
+13. [Inspiracja](#inspiracja)
 
 ## Co jest w grafie
 
@@ -205,6 +206,22 @@ Osoby siedzą w polu `people.people` węzła, zwykle przy stanowisku.
 
 Dane o osobach obejmują wyłącznie informacje o pełnieniu funkcji publicznych, jawne z mocy ustawy o dostępie do informacji publicznej.
 
+## Budżet państwa
+
+Przełącznik „Graf | Budżet” w prawym dolnym rogu zamienia koło organów na pierścień wydatków budżetu państwa: wewnątrz grupy funkcjonalne, na zewnątrz części budżetowe, w środku suma. Klik w część wybiera organ jej dysponenta i otwiera w panelu zakładkę „Budżet” z planem, wykonaniem, historią i podziałem na działy. Części bez własnego organu, na przykład obsługa długu, rezerwy i subwencje dla samorządów, mają własną kartę.
+
+| | |
+|---|---|
+| Plik | `data/pl/budget.json`, odtwarzany przez `scripts/build-budget.py` |
+| Rok bieżący | 2025, wykonanie: 870,1 mld zł; plan na 2026 z ustawy budżetowej: 918,9 mld zł |
+| Historia | 2021–2024 z tego samego zbioru |
+| Zakres | 85 części i 77 podczęści (sądy apelacyjne, wojewodowie, samorządowe kolegia odwoławcze) |
+| Powiązanie z grafem | pole `nodeId`; części z przypisanym organem to 98% kwoty wydatków |
+| Źródło | Ministerstwo Finansów, zbiór [„Część tabelaryczna sprawozdań z wykonania budżetu państwa”](https://dane.gov.pl/pl/dataset/163) na dane.gov.pl (CC0), ustawa budżetowa na 2026 r., rozporządzenie o klasyfikacji części budżetowych |
+| Kontrola | suma części równa się wierszowi „ogółem” źródła co do grosza dla każdego roku; drugi, niezależny odczyt 25 części z plików PDF bez różnic |
+
+Każda część ma kwoty `plan`, `planAfterChanges` i `actual` dla każdego roku (w tys. zł, z dokładnością źródła), podział na działy klasyfikacji budżetowej, dysponenta z podstawą prawną i grupę funkcjonalną wyznaczoną z działu o największym wykonaniu. Budżet państwa to nie cały sektor finansów publicznych: nie obejmuje samorządów, NFZ ani funduszy celowych. Pełny opis źródeł, metody i ograniczeń: [`docs/06-budzet-zrodla-i-metoda.md`](docs/06-budzet-zrodla-i-metoda.md).
+
 ## Jak dane są aktualizowane
 
 W każdy poniedziałek rano GitHub Actions uruchamia `scripts/weekly-update.py` (przebieg: [`.github/workflows/weekly-update.yml`](.github/workflows/weekly-update.yml)). Każdy przebieg zostawia jawny ślad: commit z opisem zmian, zgłoszenie z listą do przejrzenia albo zgłoszenie o niepowodzeniu.
@@ -284,6 +301,7 @@ Testy sprawdzają między innymi: brak nakładających się glifów, trafianie k
 | `docs/03-projekt-graf-panstwa.md` | projekt: taksonomia, relacje, potok danych, decyzje prawne |
 | `docs/04-zrodla-danych.md` | rejestr źródeł dla każdej części danych |
 | `docs/05-wdrozenie-grafpanstwa-pl.md` | jak zbudowana i wdrożona jest strona |
+| `docs/06-budzet-zrodla-i-metoda.md` | budżet państwa według części: źródła, metoda, kontrola sum, ograniczenia |
 | `seeds/employee-count/` | zalążek danych o zatrudnieniu, jeszcze niewłączony do grafu |
 | `deploy/` | przykładowa konfiguracja serwera |
 

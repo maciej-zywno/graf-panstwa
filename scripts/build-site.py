@@ -26,6 +26,11 @@ if os.path.isdir(SITE): shutil.rmtree(SITE)
 os.makedirs(SITE)
 open(os.path.join(SITE, 'index.html'), 'w', encoding='utf-8').write(html)
 open(os.path.join(SITE, 'graph.json'), 'wb').write(blob)
+bpath = os.path.join(ROOT, 'data/pl/budget.json')
+if os.path.exists(bpath):   # widok „Budżet” pojawia się tylko wtedy, gdy plik istnieje
+    bblob = json.dumps(json.load(open(bpath, encoding='utf-8')), ensure_ascii=False, separators=(',', ':')).encode('utf-8'); bver = hashlib.sha1(bblob).hexdigest()[:10]
+    open(os.path.join(SITE, 'budget.json'), 'wb').write(bblob); index = os.path.join(SITE, 'index.html'); h = open(index, encoding='utf-8').read()
+    assert h.count("const BUDGET_URL_DEFAULT = './budget.json';") == 1; open(index, 'w', encoding='utf-8').write(h.replace("const BUDGET_URL_DEFAULT = './budget.json';", f"const BUDGET_URL_DEFAULT = './budget.json?v={bver}';"))
 open(os.path.join(SITE, 'robots.txt'), 'w').write('User-agent: *\n' + ('Allow: /\n' if allow_index else 'Disallow: /\n'))
 open(os.path.join(SITE, 'BUILD.txt'), 'w').write(f"zbudowano: {datetime.datetime.now().isoformat(timespec='seconds')}\ndane: {ver}, {len(data['nodes'])} węzłów, {len(data['edges'])} relacji\nindeksowanie: {'tak' if allow_index else 'nie'}\n")
 for f in sorted(os.listdir(SITE)): print(f"{f}: {os.path.getsize(os.path.join(SITE, f)) / 1024:.0f} KB")
