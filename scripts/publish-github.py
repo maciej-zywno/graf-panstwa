@@ -2,7 +2,10 @@
 """Wysyła projekt na GitHuba przez API (gh), bez lokalnego gita. Jedno uruchomienie = jeden commit z pełnym stanem katalogu.
 Pomija wszystko, co pasuje do .gitignore (prosta obsługa: katalogi „nazwa/”, ścieżki dokładne i wzorce z „*”).
 Wysyła tylko pliki, których treść różni się od tej w repozytorium (porównanie po skrócie SHA-1 obiektu git).
-Użycie: python3 scripts/publish-github.py <właściciel/repo> "opis zmiany" [--dry-run] [--exclude wzorzec]…
+Bez gita trzeba samemu pilnować zmian zrobionych w repozytorium przez kogoś innego (np. bota cotygodniowej aktualizacji):
+skrypt pamięta w .publish-state.json skróty plików z repozytorium po swojej ostatniej publikacji albo pobraniu.
+Plik zmieniony tylko w repozytorium jest pobierany na dysk; zmieniony po obu stronach zatrzymuje publikację.
+Użycie: python3 scripts/publish-github.py <właściciel/repo> "opis zmiany" [--dry-run] [--pull-only] [--exclude wzorzec]…
 """
 import base64, fnmatch, hashlib, json, os, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -45,14 +48,31 @@ force = '--replace-last' in sys.argv  # cofnięcie ostatniego commita: nowy comm
 if force: parent = gh('GET', f'repos/{repo}/git/commits/{parent}')['parents'][0]['sha']
 base_tree = gh('GET', f'repos/{repo}/git/commits/{parent}')['tree']['sha']
 remote = {t['path']: t['sha'] for t in gh('GET', f'repos/{repo}/git/trees/{base_tree}?recursive=1').get('tree', []) if t['type'] == 'blob'}
+# --- synchronizacja z repozytorium. Stan = skróty plików W REPOZYTORIUM widziane przy ostatniej publikacji albo pobraniu (nigdy skróty lokalne).
+SP = os.path.join(ROOT, '.publish-state.json'); last = json.load(open(SP)) if os.path.exists(SP) else {}
+pulled, conflicts = [], []
+for path, rsha in remote.items():
+    if force or ignored(path): continue
+    lsha = local[path][0] if path in local else None; base = last.get(path)
+    if rsha == lsha or rsha == base: continue                      # zgodne albo repozytorium bez zmian od ostatniego razu (zmieniałem najwyżej ja)
+    if base is None: continue                                      # nie znam historii tej ścieżki: niczego nie nadpisuję, wygrywa plik lokalny
+    if lsha is None or lsha == base:                               # zmiana wyłącznie w repozytorium: pobierz
+        data = base64.b64decode(gh('GET', f'repos/{repo}/git/blobs/{rsha}')['content']); full = os.path.join(ROOT, path); os.makedirs(os.path.dirname(full), exist_ok=True); open(full, 'wb').write(data)
+        local[path] = (rsha, local.get(path, (None, '100644'))[1], data); pulled.append(path)
+    else: conflicts.append(path)
+if pulled: print('pobrano z repozytorium:', ', '.join(pulled))
+if conflicts: raise SystemExit('KONFLIKT, plik zmieniony i lokalnie, i w repozytorium: ' + ', '.join(conflicts) + '. Rozstrzygnij ręcznie i uruchom ponownie.')
+if '--pull-only' in sys.argv:
+    json.dump(remote, open(SP, 'w'), indent=0, sort_keys=True); print('tylko pobranie: gotowe'); raise SystemExit(0)
 tree = []; sent = 0
 for rel, (sha, mode, data) in local.items():
     if remote.get(rel) != sha:
         got = gh('POST', f'repos/{repo}/git/blobs', {'content': base64.b64encode(data).decode(), 'encoding': 'base64'})['sha']; assert got == sha, rel; sent += 1
     tree.append({'path': rel, 'mode': mode, 'type': 'blob', 'sha': sha})
 removed = [p for p in remote if p not in local]
-if not sent and not removed: print('bez zmian'); raise SystemExit(0)
+if not sent and not removed: json.dump(remote, open(SP, 'w'), indent=0, sort_keys=True); print('bez zmian'); raise SystemExit(0)
 new_tree = gh('POST', f'repos/{repo}/git/trees', {'tree': tree})['sha']   # pełne drzewo: pliki usunięte lokalnie znikają też z repozytorium
 commit = gh('POST', f'repos/{repo}/git/commits', {'message': message, 'tree': new_tree, 'parents': [parent]})['sha']
 gh('PATCH', f'repos/{repo}/git/refs/heads/{BRANCH}', {'sha': commit, 'force': force})
+json.dump({p: v[0] for p, v in local.items()}, open(SP, 'w'), indent=0, sort_keys=True)  # po publikacji repozytorium = stan lokalny
 print(f'wysłano plików: {sent}, usunięto: {len(removed)}, commit {commit[:10]}')

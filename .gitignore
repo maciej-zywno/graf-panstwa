@@ -24,4 +24,5 @@ docs/korespondencja/
 deploy/local.env
 deploy/NOTATKI-PRYWATNE.md
 
+.publish-state.json
 .DS_Store
