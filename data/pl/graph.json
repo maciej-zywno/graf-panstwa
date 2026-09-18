@@ -3,7 +3,7 @@
   "gov": "pl",
   "name": "Graf Państwa Polskiego",
   "version": "0.1",
-  "generatedAt": "2026-09-17",
+  "generatedAt": "2026-09-18",
   "constituency": "pl-narod",
   "description": "Kto kogo powołuje, zatwierdza, kontroluje i nadzoruje. Mapa organów państwa: od Narodu jako suwerena po urzędy centralne i ich jednostki.",
   "counts": {
@@ -29918,7 +29918,7 @@
      "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
      "https://api.sejm.gov.pl/eli/acts/MP/2026/573/text.pdf"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -29972,7 +29972,7 @@
     "sources": [
      "https://api.sejm.gov.pl/eli/acts/MP/2026/573/text.pdf"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30143,7 +30143,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ASW"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30263,7 +30263,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/CNT"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30399,7 +30399,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/DER"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30535,7 +30535,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/DIM"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30703,7 +30703,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ENM"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30791,7 +30791,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/EPS"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30959,7 +30959,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ESK"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31143,7 +31143,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/FPB"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31263,7 +31263,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/GMZ"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31415,7 +31415,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/GOR"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31567,7 +31567,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/INF"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31719,7 +31719,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KFS"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31839,7 +31839,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KOP"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32007,7 +32007,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KSP"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32111,7 +32111,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KSS"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32263,7 +32263,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/LPG"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32383,7 +32383,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/MNE"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32535,7 +32535,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NKK"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32655,7 +32655,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NON"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32775,7 +32775,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NOZ"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32911,7 +32911,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NPC"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33047,7 +33047,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NSP"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33199,7 +33199,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NZC"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33383,7 +33383,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/OBN"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33519,7 +33519,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ODK"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33703,7 +33703,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33807,7 +33807,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PET"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33943,7 +33943,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PSN"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34143,7 +34143,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PSR"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34295,7 +34295,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/RRW"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34415,7 +34415,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/RSP"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34535,7 +34535,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKGK"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34639,7 +34639,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKPC"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34759,7 +34759,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKPG"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34927,7 +34927,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SPC"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35079,7 +35079,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/STR"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35231,7 +35231,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SUE"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35383,7 +35383,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SZA"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35535,7 +35535,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/UST"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35687,7 +35687,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35788,7 +35788,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Centrum/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35857,7 +35857,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Demokracja/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36034,7 +36034,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36135,7 +36135,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36220,7 +36220,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja_KP/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36365,7 +36365,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36466,7 +36466,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/PiS/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36567,7 +36567,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36700,7 +36700,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/PSL-TD/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36785,7 +36785,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Razem/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36866,7 +36866,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36997,7 +36997,7 @@
      "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html",
      "https://api.sejm.gov.pl/eli/acts/MP/2025/1251/text.pdf"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37051,7 +37051,7 @@
     "sources": [
      "https://api.sejm.gov.pl/eli/acts/MP/2025/1251/text.pdf"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37179,7 +37179,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,218,komisja-budzetu-i-finansow-publicznych.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37296,7 +37296,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,238,komisja-edukacji.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37413,7 +37413,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,219,komisja-gospodarki-narodowej-i-innowacyjnosci.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37514,7 +37514,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,220,komisja-infrastruktury.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37631,7 +37631,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,226,komisja-klimatu-i-srodowiska.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37748,7 +37748,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,222,komisja-kultury-i-srodkow-przekazu.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37849,7 +37849,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,225,komisja-nauki.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37934,11 +37934,11 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,232,komisja-obrony-narodowej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
-   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-09-17); funkcja może być nieobsadzona.",
+   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-09-18); funkcja może być nieobsadzona.",
    "children": [],
    "level": 1,
    "connectedNodes": [
@@ -38020,7 +38020,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,227,komisja-petycji.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38137,7 +38137,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,228,komisja-praw-czlowieka-i-praworzadnosci.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38222,7 +38222,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,223,komisja-regulaminowa-etyki-i-spraw-senatorskich.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38323,7 +38323,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,233,komisja-rodziny-polityki-senioralnej-i-spolecznej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38424,7 +38424,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,234,komisja-rolnictwa-i-rozwoju-wsi.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38557,7 +38557,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,235,komisja-samorzadu-terytorialnego-i-administracji-panstwowej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38658,7 +38658,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,229,komisja-sportu.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38791,7 +38791,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38908,7 +38908,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39009,7 +39009,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39126,7 +39126,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,236,komisja-ustawodawcza.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39243,7 +39243,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,221,komisja-zdrowia.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39359,7 +39359,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39427,7 +39427,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39511,7 +39511,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39595,7 +39595,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39679,7 +39679,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39726,7 +39726,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-17",
+    "verifiedAt": "2026-09-18",
     "confidence": "high",
     "verdict": "confirmed"
    },
