@@ -39,6 +39,18 @@ local = {}
 for rel in files:
     data = open(os.path.join(ROOT, rel), 'rb').read(); mode = '100755' if os.access(os.path.join(ROOT, rel), os.X_OK) and rel.endswith(('.sh', '.py')) else '100644'
     local[rel] = (blob_sha(data), mode, data)
+# --- bezpiecznik: żadnych kluczy i haseł w publicznym repozytorium. Publikacja zatrzymuje się na pierwszym podejrzeniu.
+import re as _re
+SECRET_PATTERNS = [('klucz OpenRouter', rb'sk-or-v1-[A-Za-z0-9]{20,}'), ('klucz Anthropic', rb'sk-ant-[A-Za-z0-9_-]{20,}'), ('klucz OpenAI', rb'sk-(?:proj-)?[A-Za-z0-9]{32,}'), ('token GitHub', rb'gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}'),
+                   ('klucz AWS', rb'AKIA[0-9A-Z]{16}'), ('klucz prywatny', rb'-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----'), ('klucz Google', rb'AIza[0-9A-Za-z_-]{35}'), ('token Slack', rb'xox[baprs]-[A-Za-z0-9-]{20,}'),
+                   ('przypisanie sekretu', rb'(?i)(?:api[_-]?key|secret|token|password|passwd)[A-Z_]*\s*[=:]\s*["\']?[A-Za-z0-9/+_-]{24,}')]
+leaks = []
+for rel, (_, _, data) in local.items():
+    if rel == 'scripts/publish-github.py': continue
+    for name, pat in SECRET_PATTERNS:
+        m = _re.search(pat, data)
+        if m: leaks.append(f'{rel}: {name} (…{m.group(0)[:6].decode("ascii", "replace")}…)')
+if leaks: raise SystemExit('PUBLIKACJA ZATRZYMANA, w plikach jest coś, co wygląda na sekret:\n  ' + '\n  '.join(leaks) + '\nUsuń to z pliku albo dodaj plik do .gitignore. Klucz, który trafił do pliku, trzeba unieważnić u dostawcy.')
 total = sum(len(v[2]) for v in local.values()); print(f'plików do repozytorium: {len(local)}, razem {total / 1e6:.1f} MB')
 if dry:
     for rel in files: print(' ', rel)

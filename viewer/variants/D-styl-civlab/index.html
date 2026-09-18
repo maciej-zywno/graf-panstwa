@@ -385,6 +385,15 @@ button.tile[aria-pressed="true"] { border-color: var(--ink-2); }
 .bkids { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; } .bkid { display: flex; justify-content: space-between; gap: 8px; text-align: left; border: 1px solid var(--hair-2); border-radius: 9px; background: none; padding: 7px 10px; font-size: 12.5px; cursor: pointer; } .bkid:hover { border-color: var(--g); } .bkid b { font-weight: 500; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .bopen { border: 1px solid var(--hair-2); border-radius: 10px; background: none; padding: 8px 14px; font: 500 13.5px var(--font-ui); cursor: pointer; margin-top: 6px; } .bopen:hover { border-color: var(--ink-2); }
 .tabs.three { grid-template-columns: 1fr 1fr 1fr; }
+.stage.jst .seal-text { font-size: 15px; }
+.crumb a { color: inherit; text-decoration: none; } .crumb a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.jst-up { display: flex; flex-wrap: wrap; gap: 4px 8px; font-size: 13.5px; margin: -4px 0 4px; } .jst-up a { color: var(--ink-2); text-underline-offset: 3px; } .jst-up span { color: var(--muted); }
+.jst-kids { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 6px; max-height: 340px; overflow-y: auto; padding-right: 2px; }
+.jst-kid { display: block; border: 1px solid var(--hair-2); border-radius: 10px; padding: 7px 10px; text-decoration: none; color: var(--ink); font-size: 13px; line-height: 1.3; } .jst-kid:hover, .jst-kid:focus-visible { border-color: var(--ink-2); outline: none; }
+.jst-kid b { font-weight: 500; display: block; } .jst-kid small { display: block; color: var(--muted); font-size: 11.5px; margin-top: 1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.res-head { font: 500 10px var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding: 8px 10px 4px; }
+a.result { text-decoration: none; }
+.xref { margin: 10px 0 0; font-size: 13px; } .xref a, .xref .morelink { color: var(--ink-2); font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
 .zoomer { position: absolute; right: 14px; bottom: 14px; z-index: 3; display: flex; background: var(--card); border-radius: 10px; overflow: hidden; }
 .zoomer button { border: 0; background: none; height: 36px; min-width: 38px; padding: 0 10px; display: inline-flex; gap: 6px; align-items: center; justify-content: center; cursor: pointer; color: var(--ink-2); font-size: 13.5px; font-weight: 500; }
 .zoomer button + button { border-left: 1px solid var(--hair); }
@@ -603,7 +612,7 @@ const PLURAL_RE = /^(sądy|izby|urzędy|uczelnie|instytuty|spółki|parki|kurato
 
 /* ---------- geometria (jednostki sceny; proporcje liczone względem R = RAD[3]) ---------- */
 const RAD = [232, 322, 408, 510];      // promienie pierścieni wg RING_DRAW
-const R_DISC = 148, R_SEAL = 82;
+let R_DISC = 148, R_SEAL = 82, SEAL_LH = 24; // koło jednostki samorządu ma kilkanaście węzłów, więc dostaje ciaśniejszą geometrię (applyJstGeometry), żeby glify nie ginęły
 const DOT = 7.4, DOT_R = 2.7;          // siatka kropek-satelitów (promień ≈ 0,53% R)
 const SQ = 8.8, SQ_S = 6.1, ROW_GAP = 10; // rzędy kwadracików klas zbiorczych (bok ≈ 1,2% R)
 const OUT_OFF = 86;                    // start grona satelitów za pierścieniem zewnętrznym
@@ -1082,7 +1091,7 @@ function render() {
   const hasCab = L.bands.length > 0;
   const ringText = [[RING_LABEL.highest, R_DISC + 19], [RING_LABEL.oversight, RAD[1] - 41], [RING_LABEL.administration, RAD[2] - 44]];
   if (!hasCab) ringText.push([RING_LABEL.cabinet, RAD[3] - 42]);
-  if (bottomSector) ringText.forEach(([t, r], i) => arcLabel(gT, 'rl-' + i, 'ring-label', t.toUpperCase(), r, Math.PI - 1.1, Math.PI + 1.1));
+  if (bottomSector && !S.jst) ringText.forEach(([t, r], i) => arcLabel(gT, 'rl-' + i, 'ring-label', t.toUpperCase(), r, Math.PI - 1.1, Math.PI + 1.1));
   L.bands.forEach((b, i) => arcLabel(gT, 'bl-' + i, 'band-label', RING_LABEL.cabinet.toUpperCase(), bottom => b.tabR - (bottom ? 5 : -5), b.l0 - 0.05, b.l1 + 0.05));
   L.vbands.forEach((v, i) => arcLabel(gT, 'vl-' + i, 'vband-label', TERR_LABEL, v.R + (V_OUT - V_IN) / 2 - 5, v.l0 + 0.012, v.l1 + 0.012));
   for (const s of L.active) { const sl = L.sectorLabel[s]; arcLabel(gT, 'sl-' + s, 'sector-label', SECTOR_TITLE[s], sl.r, sl.a0 - 0.2, sl.a1 + 0.2, `--c:var(--sec-${s})`); }
@@ -1114,7 +1123,7 @@ function render() {
     else if (p.kind === 'head') { const st = headState(n); const g = mk(n, p, `k-head ${st}`); g.append('circle').attr('class', 'hit').attr('r', p.s + 2.5); g.append('circle').attr('class', 'glyph').attr('r', p.s);
       if (st === 'acting') g.append('path').attr('class', 'half').attr('d', `M0,${F(-p.s)}A${F(p.s)},${F(p.s)} 0 0 1 0,${F(p.s)}Z`); }
     else if (p.kind === 'root') { const g = mk(n, p, 'k-root', false).attr('tabindex', 0); g.append('path').attr('class', 'seal').attr('d', wavyPath(R_SEAL, 18, 0.052));
-      sealTxt = g.append('g').attr('class', 'seal-txt'); const lines = sealLines(n, D.meta); lines.forEach((t, i) => sealTxt.append('text').attr('class', 'seal-text').attr('y', (i - (lines.length - 1) / 2) * 24 + 7.4).text(t)); }
+      sealTxt = g.append('g').attr('class', 'seal-txt'); const lines = sealLines(n, D.meta); lines.forEach((t, i) => sealTxt.append('text').attr('class', 'seal-text').attr('y', (i - (lines.length - 1) / 2) * SEAL_LH + SEAL_LH * 0.31).text(t)); }
   }
   nodeSel = gN.selectAll('g.node');
   S.satsOf = {}; for (const id of L.draw) { const q = L.pos[id]; if (q && (q.kind === 'sat' || q.kind === 'row') && q.anchor) (S.satsOf[q.anchor] = S.satsOf[q.anchor] || []).push(id); }
@@ -1656,7 +1665,7 @@ function renderHome() {
 }
 // etykieta podtypu tylko wtedy, gdy mówi coś więcej niż etykieta typu
 function subLabel(n) { const l = n && n.subtype && n.subtype !== 'other' ? (SUBTYPE_LABEL[n.subtype] || null) : null; return l && l !== TYPE_LABEL[n.type] && !TYPE_LABEL[n.type].includes(l) ? l : null; }
-function setCrumb(n) { const gov = String(S.D.meta.gov || 'pl').toUpperCase(); $('#crumb').innerHTML = n ? `/ ${esc(gov)} / <b>${esc(n.sector && n.type !== 'constituency' ? (n.sector === 'independent' ? 'Niezależne' : SECTOR_LABEL[n.sector]) : 'Suweren')}</b>` : `/ ${esc(gov)}`; }
+function setCrumb(n) { if (S.D.meta.gov === 'jst') { const m = S.D.meta; $('#crumb').innerHTML = `/ <a href="${esc(jstHref(null))}">PL</a> ` + (m.chain || []).map(c => `/ <a href="${esc(jstHref(c.t))}">${esc(c.n.replace(/^Województwo /, ''))}</a> `).join('') + `/ <b>${esc(n ? (SECTOR_LABEL[n.sector] || 'Mieszkańcy') : m.name)}</b>`; return; } const gov = String(S.D.meta.gov || 'pl').toUpperCase(); $('#crumb').innerHTML = n ? `/ ${esc(gov)} / <b>${esc(n.sector && n.type !== 'constituency' ? (n.sector === 'independent' ? 'Niezależne' : SECTOR_LABEL[n.sector]) : 'Suweren')}</b>` : `/ ${esc(gov)}`; }
 
 /* ---------- wyszukiwarka ---------- */
 const norm = s => String(s || '').toLowerCase().replace(/ł/g, 'l').normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -1677,8 +1686,9 @@ function search(qRaw) {
 function renderResults(list, q) {
   const box = $('#results'); const sc = box.closest('.search'); if (sc) sc.classList.toggle('has-q', !!q.trim());
   if (!q.trim()) { box.innerHTML = ''; return; }
-  if (!list.length) { box.innerHTML = `<div class="empty">Brak wyników dla „${esc(q)}”.</div>`; return; }
-  box.innerHTML = list.map((n, i) => `<button class="result" role="option" aria-selected="false" id="res-${i}" tabindex="-1" data-goto="${esc(n.id)}"><span class="sw">${swatchSvg(n)}</span><span class="r-name">${esc(n.name)}<small>${esc(TYPE_LABEL[n.type])}${subLabel(n) ? ' · ' + esc(subLabel(n)) : ''}${n.sector && n.type !== 'constituency' ? ' · ' + esc(SECTOR_LABEL[n.sector]) : ''}</small></span></button>`).join('');
+  const units = searchJst(q); const unitsHtml = units.length ? `<div class="res-head">Samorząd</div>` + units.map(jstResultHtml).join('') : '';
+  if (!list.length) { box.innerHTML = unitsHtml || `<div class="empty">Brak wyników dla „${esc(q)}”.</div>`; return; }
+  box.innerHTML = list.map((n, i) => `<button class="result" role="option" aria-selected="false" id="res-${i}" tabindex="-1" data-goto="${esc(n.id)}"><span class="sw">${swatchSvg(n)}</span><span class="r-name">${esc(n.name)}<small>${esc(TYPE_LABEL[n.type])}${subLabel(n) ? ' · ' + esc(subLabel(n)) : ''}${n.sector && n.type !== 'constituency' ? ' · ' + esc(SECTOR_LABEL[n.sector]) : ''}</small></span></button>`).join('') + unitsHtml;
 }
 function swatchSvg(n) {
   const k = glyphKind(n); const c = n.type === 'constituency' ? 'var(--seal-stroke)' : `var(--sec-${n.sector || 'independent'})`; const st = `fill="var(--card)" stroke="${c}" stroke-width="1.5" stroke-linejoin="round"`;
@@ -1694,7 +1704,7 @@ function firstPeople(n) { return n && n.people && n.people.type === 'people' ? n
 function initials(name) { const parts = String(name || '').replace(/[()]/g, '').split(/\s+/).filter(Boolean); if (!parts.length || /uzupe/.test(name)) return '?'; return (parts[0][0] + (parts.length > 1 ? parts[parts.length - 1][0] : '')).toUpperCase(); }
 const cap = t => { t = String(t || ''); return t ? t.charAt(0).toUpperCase() + t.slice(1) : t; };
 function personCard(p, position, sector, orgMode, lead) {
-  const ph = !p.name || /do uzupełnienia/i.test(p.name); const year = p.startedAt ? String(p.startedAt).slice(0, 4) : null;
+  const ph = !p.name || /do uzupełnienia/i.test(p.name); const year = p.startedAt ? String(p.startedAt).slice(0, 4) : (p.electedAt ? String(p.electedAt).slice(0, 4) : null);
   const verb = p.acting ? 'P.o. od' : p.type === 'elected' ? 'Wybrany' : 'Powołany';
   const img = `<span>${esc(initials(p.name))}</span>` + (p.imageUrl ? `<img src="${esc(p.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '');
   const pos = cap(p.positionName || (position && position.name) || '');
@@ -1724,7 +1734,8 @@ function renderHeadSection(n) {
   const label = merged ? (seats ? `${seats} ${plural(seats, 'miejsce', 'miejsca', 'miejsc')}${total < seats ? ` <span class="n">· w danych ${total}</span>` : ''}` : (own ? `Osoby · ${total}` : `Kierownictwo · ${total}`)) : esc(cap(title));
   html += `<div class="sect-label">${label}</div>`;
   const cards = [];
-  if (!people.length) cards.push(`<div class="head-card vacant"><div class="avatar">—</div><div class="who"><div class="name">Wakat</div><div class="when">${position ? 'stanowisko nieobsadzone lub brak danych' : 'brak danych o obsadzie'}</div></div></div>`);
+  const noData = (position || n).status === 'unverified' && !people.length;
+  if (!people.length) cards.push(noData ? `<div class="head-card vacant"><div class="avatar">?</div><div class="who"><div class="name">Brak danych o obsadzie</div><div class="when">nie ma rejestru urzędowego; do uzupełnienia ze strony BIP</div></div></div>` : `<div class="head-card vacant"><div class="avatar">—</div><div class="who"><div class="name">Wakat</div><div class="when">${position ? 'stanowisko nieobsadzone lub brak danych' : 'brak danych o obsadzie'}</div></div></div>`);
   else people.forEach((p, i) => cards.push(personCard(p, own ? null : position, n.sector, !isPos && !own, !own && i === 0))); // jak w oryginale: obwódka tylko u pierwszej osoby (szefa)
   for (const p of rest) cards.push(personCard(p, null, n.sector, false, false));
   html += peopleGrid(cards);
@@ -1781,6 +1792,7 @@ function renderNode(n) {
     ${n.statusNote ? `<p class="desc" style="border-left:2px solid var(--st-serious);padding-left:10px;font-size:13px">${esc(n.statusNote)}</p>` : ''}
     ${links.length ? `<div class="linkrow">${links.join('')}</div>` : ''}
     ${n.legalSource && n.legalSource.title ? `<p class="legal-title">${esc(n.legalSource.title)}</p>` : ''}
+    ${n.externalRef ? `<p class="xref"><a href="${esc(jstHref(null, n.externalRef))}">Zobacz ten organ w grafie państwa</a></p>` : ''}${!S.jst && n.subtype === 'voivode' ? `<p class="xref"><button type="button" class="morelink" data-jst-woj="${esc(n.name.replace(/^Wojewoda\s+/, ''))}">Samorząd tego województwa: sejmik, zarząd, powiaty i gminy</button></p>` : ''}
     <div class="node-meta">${sub.length ? `<p class="node-sub mono">${esc(sub.join(' · '))}</p>` : ''}<div class="chips">${chips.join('')}</div></div>${ecHtml}
     ${renderHeadSection(n)}</section>
     <section class="card" style="--i:1">
@@ -1851,6 +1863,7 @@ function bind() {
   document.addEventListener('click', ev => {
     const t = ev.target; if (!t.closest) return;
     const b = t.closest('[data-goto]'); if (b) { ev.preventDefault(); select(b.getAttribute('data-goto'), { from:'panel' }); return; }
+    const jw = t.closest('[data-jst-woj]'); if (jw) { const adj = norm(jw.getAttribute('data-jst-woj')); const pr = loadJstIndex(); if (pr) pr.then(ix => { const u = ix && ix.units.find(x => x.k === 'wojewodztwo' && norm(x.n).replace(/^wojewodztwo /, '') === adj + 'e'); if (u) location.href = jstHref(u.t); else toast('Dane samorządowe nie są dostępne w tej wersji strony'); }); return; }
     const sa = t.closest('[data-seeall]'); if (sa) { const g = sa.previousElementSibling; if (g && g.classList.contains('pgrid')) { const open = !g.classList.toggle('clip'); sa.setAttribute('aria-expanded', String(open)); sa.textContent = open ? 'Zwiń listę' : sa.dataset.label; } return; }
     const rk = t.closest('[data-relkey]'); if (rk) { setRelFilter(rk.getAttribute('data-relkey')); return; }
     const c = t.closest('[data-chg]'); if (c) { S.chgTab = c.getAttribute('data-chg'); renderChanges(); return; }
@@ -1859,9 +1872,10 @@ function bind() {
     if (t.closest('#btn-copy')) { const btn = t.closest('#btn-copy'); navigator.clipboard?.writeText(location.href).then(() => { btn.textContent = 'Skopiowano'; setTimeout(() => btn.textContent = 'Kopiuj link', 1500); }).catch(() => {}); }
   });
   const q = $('#q'); let timer = null;
+  q.addEventListener('focus', () => { const had = !!JST_INDEX; const pr = loadJstIndex(); if (!had && pr) pr.then(() => { if (q.value.trim().length > 1) renderResults(search(q.value), q.value); }); });
   q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => renderResults(search(q.value), q.value), 70); });
   q.addEventListener('keydown', ev => { if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') { const items = [...document.querySelectorAll('#results .result')]; if (!items.length) return; ev.preventDefault(); let i = items.findIndex(x => x.classList.contains('active')); i = ev.key === 'ArrowDown' ? (i + 1) % items.length : (i <= 0 ? items.length - 1 : i - 1); items.forEach((x, j) => { x.classList.toggle('active', j === i); x.setAttribute('aria-selected', String(j === i)); }); items[i].scrollIntoView({ block:'nearest' }); q.setAttribute('aria-activedescendant', items[i].id || ''); return; }
-    if (ev.key === 'Enter') { const first = $('#results .result.active') || $('#results .result'); if (first) { select(first.getAttribute('data-goto'), { from:'panel' }); q.value = ''; renderResults([], ''); q.blur(); } } if (ev.key === 'Escape') { ev.stopPropagation(); q.value = ''; renderResults([], ''); q.blur(); } }); // Esc w polu zamyka tylko wyszukiwarkę, nie odznacza węzła
+    if (ev.key === 'Enter') { const first = $('#results .result.active') || $('#results .result'); if (first && first.classList.contains('jst-result')) { location.href = first.href; return; } if (first) { select(first.getAttribute('data-goto'), { from:'panel' }); q.value = ''; renderResults([], ''); q.blur(); } } if (ev.key === 'Escape') { ev.stopPropagation(); q.value = ''; renderResults([], ''); q.blur(); } }); // Esc w polu zamyka tylko wyszukiwarkę, nie odznacza węzła
   $('#results').addEventListener('click', () => { q.value = ''; setTimeout(() => renderResults([], ''), 0); });
   document.addEventListener('keydown', ev => {
     const inField = /^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName || '');
@@ -1884,6 +1898,60 @@ function bind() {
   window.addEventListener('hashchange', () => { const m = location.hash.match(/node=([^&]+)/); const id = m ? decodeURIComponent(m[1]) : null; if (id !== S.selected) applyHash(); });
   let rt = null; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { const was = S.userZoomed; measure(); if (!was) fit(false); else placeSelLabel(); }, 120); });
 }
+
+function applyJstGeometry() { [150, 210, 268, 296].forEach((v, i) => { RAD[i] = v; }); R_DISC = 104; R_SEAL = 62; SEAL_LH = 17; $('#stage').classList.add('jst'); Object.assign(RING_LABEL, { highest:'Organ jednostki', oversight:'Nadzór i kontrola', administration:'Urząd i stanowiska', cabinet:'Organ jednostki', satellite:'Komisja albo jednostka podległa' }); }
+/* ---------- samorząd: jedno koło na jednostkę (województwo, powiat, gmina), dane z data/jst/ ----------
+   Adres: ?jst=<TERYT 6 cyfr>. Graf jednostki składa się z szablonu wariantu (tiers.json) i zwartych danych jednostki (woj/<XX>.json).
+   expandJst jest bliźniakiem funkcji expand() ze scripts/jst/build-frame.py: zmiana w jednej wymaga zmiany w drugiej. */
+const JST_BASE_DEFAULT = './jst/';
+const JST_PKW = 'https://samorzad2024.pkw.gov.pl/samorzad2024/pl/dane_w_arkuszach';
+function jstBase() { if (window.JST_BASE) return window.JST_BASE; if (window.GRAPH_DATA) return null; /* dane wstrzyknięte (prototyp w ramce): samorządu tam nie ma, więc nic nie pobieramy */ const d = new URLSearchParams(location.search).get('data'); return d && /pl\/graph\.json/.test(d) ? d.replace(/pl\/graph\.json.*$/, 'jst/') : JST_BASE_DEFAULT; }
+function jstParam() { const t = new URLSearchParams(location.search).get('jst'); return t && /^\d{6}$/.test(t) ? t : null; }
+function jstHref(t, nodeKey) { const p = new URLSearchParams(location.search); if (t) p.set('jst', t); else p.delete('jst'); const q = p.toString(); return location.pathname + (q ? '?' + q : '') + (nodeKey ? '#node=' + encodeURIComponent(nodeKey) : ''); }
+const jstSlug = s => String(s).replace(/ł/g, 'l').replace(/Ł/g, 'L').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+function expandJst(tiers, bundle, t) {
+  const u = bundle.units[t]; if (!u) throw new Error(`Nie ma jednostki o kodzie ${t} w województwie ${bundle.meta.name}`); const sh = bundle.shared, com = bundle.committees, electedAt = bundle.meta.electedAt;
+  const esc = v => JSON.stringify(String(v)).slice(1, -1); const nm = /:m$/.test(u.v) && u.n.startsWith('Miasto ') ? u.n.slice(7) : u.n;
+  const txt = tiers.variants[u.v].split('@@T@@').join(t).split('@@NAME@@').join(esc(nm)).split('@@COUNCIL@@').join(esc(u.c)).split('@@ORGAN@@').join(esc((u.o || '').split(' ').slice(1).join(' ')));
+  const g = JSON.parse(txt), P = 'jst-' + t, N = g.nodes;
+  const person = (nid, name, pos, party, extra) => Object.assign({ id: `${P}-${jstSlug(name)}`, name, positionId: nid, positionName: pos, type: 'elected', startedAt: null, startedAtSource: null, electedAt, acting: false, status: 'verified', party: party || null, imageUrl: null, sourceUrl: JST_PKW, note: null, verdict: 'confirmed' }, extra || {});
+  const r = N[`${P}-rada`]; r.seatsCount = u.s; r.description = r.description.replace('0 mandatów', `${u.s} mandatów`); r.people = { type: 'people', people: u.m.map(m => person(r.id, m[0], u.k === 'wojewodztwo' ? 'Radny województwa' : 'Radny', com[m[1]])) };
+  const m = N[`${P}-m`]; m.description = m.description.replace(' 0 mieszkańców', ' ' + u.pop.toLocaleString('pl-PL') + ' mieszkańców');
+  if (u.h) { const w = N[`${P}-wojt`]; w.people = { type: 'people', people: [person(w.id, u.h[0], u.o, com[u.h[1]])] }; }
+  for (const [key, ppl] of Object.entries(u.ov || {})) { const n = N[`${P}-${key}`]; if (!n) continue;
+    n.people = { type: 'people', people: ppl.map(p => person(n.id, p.name, p.positionName || n.name, null, { electedAt: null, sourceUrl: p.sourceUrl, startedAt: p.startedAt || null, startedAtSource: p.startedAtSource || null, verifiedAt: p.verifiedAt || null })) }; n.status = 'active'; n.statusNote = null;
+    n.provenance = { sources: [...new Set(ppl.map(p => p.sourceUrl))].sort(), verifiedAt: ppl.map(p => p.verifiedAt || '').sort().pop() || g.meta.generatedAt, confidence: 'high', verdict: 'confirmed' }; }
+  if (u.url) N[`${P}-urzad`].officialUrl = u.url; if (u.bip) N[`${P}-urzad`].bipUrl = u.bip;
+  const wv = N[`${P}-wojewoda`]; wv.name = sh.wojewoda.name; wv.externalRef = sh.wojewoda.ref; wv.people = { type: 'people', people: sh.wojewoda.people }; wv.provenance.sources = ['https://grafpanstwa.pl/#node=' + (sh.wojewoda.ref || '')];
+  N[`${P}-prm`].people = { type: 'people', people: sh.prm.people }; N[`${P}-rio`].name = 'Regionalna Izba Obrachunkowa ' + sh.rio;
+  const unitInfo = c => { const x = bundle.units[c]; return { t: c, n: x.n, k: x.k, pop: x.pop, h: x.h ? x.h[0] : null, o: x.o || null }; };
+  const kids = Object.keys(bundle.units).filter(c => bundle.units[c].p === t).sort((a, b) => bundle.units[a].n.localeCompare(bundle.units[b].n, 'pl'));
+  const chain = []; let cur = u.p; while (cur && bundle.units[cur]) { chain.unshift({ t: cur, n: bundle.units[cur].n }); cur = bundle.units[cur].p; }
+  Object.assign(g.meta, { teryt: t, kind: u.k, name: u.n, parent: u.p, woj: t.slice(0, 2), population: u.pop, children: kids, childUnits: kids.map(unitInfo), chain, wojName: bundle.meta.name });
+  return g;
+}
+async function loadJst(t) {
+  const base = jstBase(); if (!base) throw new Error('Dane samorządowe nie są dostępne w tej wersji strony'); const get = async f => { const r = await fetch(base + f, { cache: 'no-cache' }); if (!r.ok) throw new Error(`HTTP ${r.status} — nie udało się pobrać ${base + f}`); return r.json(); };
+  const [tiers, bundle] = await Promise.all([get('tiers.json'), get(`woj/${t.slice(0, 2)}.json`)]); return { data: expandJst(tiers, bundle, t), source: `${base}woj/${t.slice(0, 2)}.json#${t}` };
+}
+const JST_KIND = { wojewodztwo: 'Województwo', powiat: 'Powiat', mnpp: 'Miasto na prawach powiatu', gmina: 'Gmina' };
+// karta nawigacji na stronie startowej jednostki: jednostka nadrzędna, podrzędne, powrót do grafu państwa
+function renderJstHome() {
+  const m = S.D.meta; if (m.gov !== 'jst') return; const pop = (m.population || 0).toLocaleString('pl-PL');
+  const kids = m.childUnits || []; const groups = [['powiat', 'Powiaty'], ['mnpp', 'Miasta na prawach powiatu'], ['gmina', 'Gminy']].map(([k, l]) => [l, kids.filter(c => c.k === k)]).filter(x => x[1].length);
+  const card = document.createElement('section'); card.className = 'card'; card.id = 'jst-card'; card.style.setProperty('--i', 3);
+  card.innerHTML = `<h3>${esc(JST_KIND[m.kind] || 'Jednostka')} <span class="n">TERYT ${esc(m.teryt)} · ${pop} mieszkańców</span></h3>
+    <div class="jst-up">${(m.chain || []).map(c => `<a href="${esc(jstHref(c.t))}">${esc(c.n)}</a>`).concat([`<a href="${esc(jstHref(null))}">Graf państwa</a>`]).join('<span>·</span>')}</div>
+    ${groups.map(([l, arr]) => `<h4>${esc(l)} <span class="n">${arr.length}</span></h4><div class="jst-kids">${arr.map(c => `<a class="jst-kid" href="${esc(jstHref(c.t))}"><b>${esc(c.n)}</b>${c.h ? `<small>${esc((c.o || '').split(' ')[0])}: ${esc(c.h)}</small>` : ''}</a>`).join('')}</div>`).join('')}
+    <p class="bp-src">Radni i organy wykonawcze według wyników wyborów samorządowych z 7 i 21 kwietnia 2024 r. (<a href="${JST_PKW}" target="_blank" rel="noopener">arkusze PKW</a>). Zmiany w trakcie kadencji nie są jeszcze śledzone. Stanowiska bez nazwiska czekają na dane ze strony BIP jednostki.</p>`;
+  const first = $('#view-home').querySelector('section.card'); first.insertAdjacentElement('afterend', card);
+}
+// wyszukiwarka miejscowości: spis jednostek ładuje się przy pierwszym użyciu
+let JST_INDEX = null, JST_INDEX_P = null;
+function loadJstIndex() { if (JST_INDEX || JST_INDEX_P) return JST_INDEX_P; const base = jstBase(); if (!base) return null; JST_INDEX_P = fetch(base + 'index.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(d => { if (d) { JST_INDEX = d; const byT = {}; d.units.forEach(u => { byT[u.t] = u; u.key = norm(u.n + ' ' + (u.h || '')); }); JST_INDEX.byT = byT; } return JST_INDEX; }).catch(() => null); return JST_INDEX_P; }
+function searchJst(q) { if (!JST_INDEX) return []; const words = norm(q).split(/\s+/).filter(w => w.length > 1); if (!words.length) return []; const hits = JST_INDEX.units.filter(u => words.every(w => u.key.includes(w))); const rank = { wojewodztwo: 0, mnpp: 1, powiat: 2, gmina: 3 }; const first = words[0];
+  return hits.sort((a, b) => (norm(a.n).split(' ').some(x => x.startsWith(first)) ? 0 : 1) - (norm(b.n).split(' ').some(x => x.startsWith(first)) ? 0 : 1) || rank[a.k] - rank[b.k] || b.pop - a.pop).slice(0, 8); }
+function jstResultHtml(u, i) { const par = JST_INDEX.byT[u.p]; return `<a class="result jst-result" role="option" id="jres-${i}" tabindex="-1" href="${esc(jstHref(u.t))}"><span class="sw"><svg viewBox="-8 -8 16 16"><circle r="5.2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle r="1.8" fill="currentColor"/></svg></span><span class="r-name">${esc(u.n)}<small>${esc(JST_KIND[u.k])}${par ? ' · ' + esc(par.n) : ''}${u.h ? ' · ' + esc(u.h) : ''}</small></span></a>`; }
 
 /* ---------- widok „Budżet” (wzór: graph.civlab.org/sf: pierścień grup i pierścień jednostek, suma w środku, wybrany segment obraca się na godz. 6) ---------- */
 const BUDGET_URL_DEFAULT = './budget.json';
@@ -1982,6 +2050,9 @@ function renderBudgetPartPanel(p) {
   view.innerHTML = `<section class="card node-card" style="--i:0"><h2 class="node-name${p.name.length > 90 ? ' long' : ''}">${esc(p.name)}</h2><p class="desc">Część budżetu państwa bez własnego organu w grafie. ${esc(p.groupName)}.</p>${budgetBlockHtml(p.code)}${budgetSourcesHtml()}</section>`;
   document.title = `${p.name} · Budżet · Graf Państwa Polskiego`;
 }
+function renderJstEntry() { const pr = loadJstIndex(); if (!pr) return; pr.then(ix => { if (!ix || $('#jst-entry')) return; const w = ix.units.filter(u => u.k === 'wojewodztwo').sort((a, b) => a.n.localeCompare(b.n, 'pl')); const st = ix.meta.stats || {};
+    const card = document.createElement('section'); card.className = 'card'; card.id = 'jst-entry'; card.innerHTML = `<h3>Samorząd <span class="n">${(st.units || ix.units.length).toLocaleString('pl-PL')} jednostek</span></h3><p class="lede" style="margin-bottom:10px">Województwa, powiaty i gminy mają własne koła: rada, organ wykonawczy i organy nadzoru, z radnymi wybranymi w 2024 r. Wpisz nazwę miejscowości w wyszukiwarce albo wybierz województwo.</p><div class="jst-kids">${w.map(u => `<a class="jst-kid" href="${esc(jstHref(u.t))}"><b>${esc(u.n.replace(/^Województwo /, ''))}</b></a>`).join('')}</div>`;
+    const anchor = $('#budget-card') || $('#view-home').querySelector('section.card'); anchor.insertAdjacentElement('afterend', card); }); }
 function initBudget() {
   if (!S.B) return; $('#mode-toggle').hidden = false;
   document.querySelectorAll('#mode-toggle button').forEach(b => b.addEventListener('click', () => setMode(b.getAttribute('data-mode'))));
@@ -1995,6 +2066,7 @@ function initBudget() {
 
 /* ---------- start ---------- */
 async function loadData() {
+  const jt = jstParam(); if (jt) return loadJst(jt);
   if (window.GRAPH_DATA) return { data: window.GRAPH_DATA, source: 'inline (window.GRAPH_DATA)' };
   const params = new URLSearchParams(location.search); const url = params.get('data') || './graph.json';
   const res = await fetch(url, { cache: 'no-cache' });
@@ -2012,9 +2084,10 @@ async function main() {
   try { payload = await loadData(); } catch (err) { fail(String(err && err.message || err), location.href); return; }
   try {
     S.D = normalize(payload.data); if (!S.D.nodes.length) throw new Error('Graf nie zawiera żadnych węzłów.');
-    S.mode = 'graph'; S.brot = 0; S.B = normalizeBudget(await loadBudget(payload.source));
+    S.mode = 'graph'; S.brot = 0; S.jst = S.D.meta.gov === 'jst'; S.B = S.jst ? null : normalizeBudget(await loadBudget(payload.source));
+    if (S.jst) applyJstGeometry(); if (S.D.meta.sectorTitles) Object.assign(SECTOR_TITLE, S.D.meta.sectorTitles); if (S.D.meta.sectorLabels) Object.assign(SECTOR_LABEL, S.D.meta.sectorLabels);
     S.L = computeLayout(S.D); loadHidden();
-    renderHome(); renderLegend(); render(); bind(); setCrumb(null); initBudget();
+    renderHome(); renderLegend(); render(); bind(); setCrumb(null); initBudget(); if (S.jst) renderJstHome(); else renderJstEntry();
     new MutationObserver(syncSheet).observe($('#panel'), { attributes:true, attributeFilter:['class'] }); syncSheet();
     $('#status').hidden = true; window.__GP = { stats: S.L.stats, layout: S.L, state: S };
     // ---- uchwyty testowe (kontrakt: tests/parity/README.md §Uchwyty) — tylko odczyt stanu, bez wpływu na działanie ----
@@ -2023,6 +2096,7 @@ async function main() {
       const txt = sel => { const el = document.querySelector(sel); return el ? el.textContent : null; };
       return {
         version: 1, skin: 'D',
+        jst: () => S.D.meta.gov === 'jst' ? { teryt: S.D.meta.teryt, kind: S.D.meta.kind, name: S.D.meta.name, parent: S.D.meta.parent, children: (S.D.meta.children || []).length, population: S.D.meta.population } : null,
         budget: () => { if (!S.B) return { available: false }; const G = budgetGeom(); const r = $('#stage').getBoundingClientRect(); const rot = (S.brot || 0) * Math.PI / 180; return { available: true, mode: S.mode, year: S.B.year, total: S.B.total, count: S.B.count, groups: S.B.groups.map(g => ({ code: g.code, name: g.name, value: g.value })), selectedPart: S.budgetPart || null, rot: S.brot || 0, rotating: !!brotTimer, segments: S.B.leaves.map(p => { const a = (p.a0 + p.a1) / 2 + rot, rr = (G.r1 + G.R) / 2; return { code: p.code, nodeId: p.nodeId || null, effNodeId: p.nodeId || (p.parent && S.B.raw.parts[p.parent] ? S.B.raw.parts[p.parent].nodeId : null) || null, group: p.group, value: p.value, span: p.a1 - p.a0, x: r.left + G.cx + rr * Math.sin(a), y: r.top + G.cy - rr * Math.cos(a) }; }) }; },
         ids: () => S.D.nodes.map(n => n.id),
         node: id => { const n = S.D.byId[id]; return n ? { id: n.id, name: n.name, type: n.type, sector: n.sector, inCount: n.in.length, outCount: n.out.length, children: n.children.length, head: n.head || null, headOf: n.headOf || null, people: n.people.type === 'people' ? n.people.people.length : null } : null; },

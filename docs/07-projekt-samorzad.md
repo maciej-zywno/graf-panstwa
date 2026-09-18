@@ -1,6 +1,6 @@
 # Projekt: samorząd terytorialny w Grafie Państwa
 
-Stan: projekt z 18.09.2026, nic z tego nie jest jeszcze zbudowane. Dokument odpowiada na dwa pytania właściciela: kto i jak uruchamia zadania, żeby dane były aktualne, oraz jak rozszerzyć graf o województwa, powiaty i gminy.
+Stan: projekt z 18.09.2026. Decyzje właściciela z tego samego dnia: samorząd wchodzi do Grafu Państwa, pilot to województwo łódzkie, radni widoczni z nazwiska od początku. **Etap 0 (rama krajowa) jest zbudowany** (`scripts/jst/build-frame.py`, `data/jst/`), etap 1 (zarządy i przewodniczący rad w łódzkim) w toku. Dokument odpowiada na dwa pytania właściciela: kto i jak uruchamia zadania, żeby dane były aktualne, oraz jak rozszerzyć graf o województwa, powiaty i gminy.
 
 ## 1. Kto i jak uruchamia zadania (stan obecny, działa)
 

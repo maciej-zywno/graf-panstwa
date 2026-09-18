@@ -16,14 +16,15 @@ Projekt jest obywatelski i nie jest nastawiony na zysk. Dane i kod są otwarte.
 3. [Jak dane powstały i jak były sprawdzane](#jak-dane-powstały-i-jak-były-sprawdzane)
 4. [Struktura danych](#struktura-danych)
 5. [Budżet państwa](#budżet-państwa)
-6. [Jak dane są aktualizowane](#jak-dane-są-aktualizowane)
-7. [Jak użyć danych](#jak-użyć-danych)
-8. [Uruchomienie i testy](#uruchomienie-i-testy)
-9. [Struktura repozytorium](#struktura-repozytorium)
-10. [Ograniczenia i znane braki](#ograniczenia-i-znane-braki)
-11. [Zgłaszanie błędów](#zgłaszanie-błędów)
-12. [Licencje](#licencje)
-13. [Inspiracja](#inspiracja)
+6. [Samorząd: województwa, powiaty i gminy](#samorząd-województwa-powiaty-i-gminy)
+7. [Jak dane są aktualizowane](#jak-dane-są-aktualizowane)
+8. [Jak użyć danych](#jak-użyć-danych)
+9. [Uruchomienie i testy](#uruchomienie-i-testy)
+10. [Struktura repozytorium](#struktura-repozytorium)
+11. [Ograniczenia i znane braki](#ograniczenia-i-znane-braki)
+12. [Zgłaszanie błędów](#zgłaszanie-błędów)
+13. [Licencje](#licencje)
+14. [Inspiracja](#inspiracja)
 
 ## Co jest w grafie
 
@@ -222,6 +223,22 @@ Przełącznik „Graf | Budżet” w prawym dolnym rogu zamienia koło organów 
 
 Każda część ma kwoty `plan`, `planAfterChanges` i `actual` dla każdego roku (w tys. zł, z dokładnością źródła), podział na działy klasyfikacji budżetowej, dysponenta z podstawą prawną i grupę funkcjonalną wyznaczoną z działu o największym wykonaniu. Budżet państwa to nie cały sektor finansów publicznych: nie obejmuje samorządów, NFZ ani funduszy celowych. Pełny opis źródeł, metody i ograniczeń: [`docs/06-budzet-zrodla-i-metoda.md`](docs/06-budzet-zrodla-i-metoda.md).
 
+## Samorząd: województwa, powiaty i gminy
+
+Każda jednostka samorządu ma własne koło pod adresem `?jst=<kod TERYT>`, np. https://grafpanstwa.pl/?jst=102003 (miasto Zgierz). Trzy sektory: stanowiąca i kontrolna (rada z radnymi i komisjami), wykonawcza (wójt, burmistrz albo prezydent, zarząd ze starostą lub marszałkiem, urząd, stanowiska) oraz nadzór i kontrola (wojewoda, Prezes Rady Ministrów, regionalna izba obrachunkowa, samorządowe kolegium odwoławcze, NIK). Wojewoda jest przejściem między kołem państwa a kołem województwa; wyszukiwarka rozumie nazwy miejscowości.
+
+| | |
+|---|---|
+| Jednostki | 16 województw, 314 powiatów, 66 miast na prawach powiatu, 2411 gmin |
+| Osoby | wszyscy radni oraz wójtowie, burmistrzowie i prezydenci wybrani 7 i 21 kwietnia 2024 r. (ok. 47 tys. mandatów) |
+| Źródło osób | [arkusze PKW z wyborów samorządowych 2024](https://samorzad2024.pkw.gov.pl/samorzad2024/pl/dane_w_arkuszach); z plików przenosimy tylko imię, nazwisko i komitet, bez wieku, wykształcenia i miejsca zamieszkania |
+| Ustrój | jeden zweryfikowany szablon na szczebel: 36 cytatów z ustaw o samorządzie gminnym, powiatowym, województwa, o samorządowych kolegiach odwoławczych i z Konstytucji, sprawdzonych automatycznie na tekstach jednolitych z ELI (`scripts/jst/verify-templates.py`) |
+| Kontrola | w każdej radzie liczba wybranych równa się liczbie mandatów z plików okręgów; każda z 2807 jednostek składa się i przechodzi kontrolę spójności przy budowie |
+| Dane | `data/jst/tiers.json` (szablony wariantów ze znacznikami), `data/jst/woj/<XX>.json` (zwarte dane jednostek), `data/jst/index.json` (spis); graf jednostki składa przeglądarka |
+| Skrypt | `scripts/jst/build-frame.py` |
+
+Czego jeszcze nie ma: starostów, marszałków, zarządów i przewodniczących rad (nie ma dla nich rejestru maszynowego; zbierane ze stron BIP, najpierw dla województwa łódzkiego), zmian w trakcie kadencji, składów komisji, list jednostek organizacyjnych i budżetów jednostek. Takie stanowiska pokazują „Brak danych o obsadzie”, nie „Wakat”. Projekt całej warstwy: [`docs/07-projekt-samorzad.md`](docs/07-projekt-samorzad.md).
+
 ## Jak dane są aktualizowane
 
 W każdy poniedziałek rano GitHub Actions uruchamia `scripts/weekly-update.py` (przebieg: [`.github/workflows/weekly-update.yml`](.github/workflows/weekly-update.yml)). Każdy przebieg zostawia jawny ślad: commit z opisem zmian, zgłoszenie z listą do przejrzenia albo zgłoszenie o niepowodzeniu.
@@ -293,6 +310,7 @@ Testy sprawdzają między innymi: brak nakładających się glifów, trafianie k
 | `data/pl/` | dane: scalony graf, części tematyczne, werdykty weryfikatorów |
 | `viewer/variants/D-styl-civlab/` | widok: jeden plik HTML z D3 |
 | `scripts/` | walidator schematu, scalanie części, budowa części `parlament` z API, cotygodniowa aktualizacja (`weekly-update.py`, `watch-eli.py`, `diff-graph.py`), budowa strony i prototypu, wdrożenie |
+| `scripts/jst/`, `data/jst/` | samorząd: szablony ustrojowe ze sprawdzarką cytatów, generator ramy z danych PKW, dane jednostek |
 | `.github/workflows/` | cotygodniowa aktualizacja danych w GitHub Actions |
 | `tests/e2e/` | testy Playwright |
 | `tests/parity/` | porównanie z pierwowzorem: scenariusze, zaobserwowane zachowania, różnice zamierzone, raporty |
@@ -313,7 +331,7 @@ Testy sprawdzają między innymi: brak nakładających się glifów, trafianie k
 - **Zdjęcia** ma 420 osób. To odnośniki do stron urzędów, więc mogą przestać działać.
 - **10 węzłów ma status `unverified`**, a 11 niską pewność. Widać to w polu `provenance` i w panelu strony.
 - **Nie wszystko jest organem w ścisłym sensie.** Instytuty, agencje i państwowe osoby prawne to jednostki podległe, a kluby i koła to struktury polityczne wewnątrz izb.
-- **Poza zakresem:** samorząd terytorialny, spółki Skarbu Państwa, oświadczenia majątkowe, powiązania biznesowe, newsy i rankingi medialne.
+- **Poza zakresem:** spółki Skarbu Państwa, oświadczenia majątkowe, powiązania biznesowe, newsy i rankingi medialne.
 - Części stron urzędowych nie dało się odczytać automatycznie. Takie braki są wypisane w `data/pl/chunks/*.verdicts.json` w polu `missing`.
 
 ## Zgłaszanie błędów

@@ -5,6 +5,7 @@ dist/
 
 # pobrane pliki źródłowe budżetu (duże; w repo zostają adresy i sumy kontrolne)
 data/pl/budget-src/
+data/jst/src/
 
 # tylko lokalnie: materiały analityczne z oryginału CivLab (nie nasze, nie do rozpowszechniania)
 reference/

@@ -31,6 +31,11 @@ if os.path.exists(bpath):   # widok „Budżet” pojawia się tylko wtedy, gdy 
     bblob = json.dumps(json.load(open(bpath, encoding='utf-8')), ensure_ascii=False, separators=(',', ':')).encode('utf-8'); bver = hashlib.sha1(bblob).hexdigest()[:10]
     open(os.path.join(SITE, 'budget.json'), 'wb').write(bblob); index = os.path.join(SITE, 'index.html'); h = open(index, encoding='utf-8').read()
     assert h.count("const BUDGET_URL_DEFAULT = './budget.json';") == 1; open(index, 'w', encoding='utf-8').write(h.replace("const BUDGET_URL_DEFAULT = './budget.json';", f"const BUDGET_URL_DEFAULT = './budget.json?v={bver}';"))
+jst = os.path.join(ROOT, 'data/jst')
+if os.path.exists(os.path.join(jst, 'index.json')):   # samorząd: szablony, spis jednostek i dane województw obok strony (adres ?jst=<TERYT>)
+    os.makedirs(os.path.join(SITE, 'jst', 'woj')); shutil.copy(os.path.join(jst, 'tiers.json'), os.path.join(SITE, 'jst')); shutil.copy(os.path.join(jst, 'index.json'), os.path.join(SITE, 'jst'))
+    for f in sorted(os.listdir(os.path.join(jst, 'woj'))): shutil.copy(os.path.join(jst, 'woj', f), os.path.join(SITE, 'jst', 'woj'))
 open(os.path.join(SITE, 'robots.txt'), 'w').write('User-agent: *\n' + ('Allow: /\n' if allow_index else 'Disallow: /\n'))
 open(os.path.join(SITE, 'BUILD.txt'), 'w').write(f"zbudowano: {datetime.datetime.now().isoformat(timespec='seconds')}\ndane: {ver}, {len(data['nodes'])} węzłów, {len(data['edges'])} relacji\nindeksowanie: {'tak' if allow_index else 'nie'}\n")
-for f in sorted(os.listdir(SITE)): print(f"{f}: {os.path.getsize(os.path.join(SITE, f)) / 1024:.0f} KB")
+for f in sorted(os.listdir(SITE)):
+    fp = os.path.join(SITE, f); print(f"{f}: {(os.path.getsize(fp) if os.path.isfile(fp) else sum(os.path.getsize(os.path.join(dp, x)) for dp, _, fs in os.walk(fp) for x in fs)) / 1024:.0f} KB")
