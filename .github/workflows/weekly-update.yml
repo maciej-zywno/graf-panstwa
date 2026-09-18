@@ -23,6 +23,11 @@ jobs:
         with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "20", cache: "npm" }
+      - name: Pamięć podręczna arkuszy PKW (pliki wyborów 2024 są stałe; bez niej każdy przebieg pobierałby 8 MB z PKW)
+        uses: actions/cache@v4
+        with:
+          path: data/jst/src/*_csv.zip
+          key: pkw-samorzad2024-csv-v1
       - name: Narzędzia systemowe (pdftotext do treści aktów, tesseract z pakietem polskim do skanów w BIP)
         run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-pol
 
@@ -53,7 +58,9 @@ jobs:
           git add data/pl data/jst
           if git diff --cached --quiet; then echo "Brak zmian w danych."; exit 0; fi
           git commit -m "Aktualizacja tygodniowa ${{ steps.update.outputs.date }}: parlament (zmian: ${{ steps.update.outputs.events }}), samorząd (ponowne sprawdzenie nakładek)"
-          git push
+          # ktoś mógł opublikować w trakcie przebiegu: commit bota idzie na wierzch aktualnego main (przy konflikcie w tych samych plikach przebieg kończy się błędem i zgłoszeniem)
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
+          git log --oneline -1
 
       - name: Lista do przejrzenia (akty personalne, podstawy prawne)
         if: steps.update.outputs.findings != '0'

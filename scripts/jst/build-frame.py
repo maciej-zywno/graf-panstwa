@@ -15,7 +15,17 @@ arg = lambda k, d=None: sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
 DATE = arg('--date'); ONLY = arg('--only'); assert DATE, 'podaj --date'
 PKW_PAGE = 'https://samorzad2024.pkw.gov.pl/samorzad2024/pl/dane_w_arkuszach'; ELECTED_AT = '2024-04-07'
 T = json.load(open(os.path.join(ROOT, 'scripts/jst/templates.json'), encoding='utf-8')); CENTRAL = json.load(open(os.path.join(ROOT, 'data/pl/graph.json'), encoding='utf-8'))['nodes']
+PKW_CSV = 'https://samorzad2024.pkw.gov.pl/samorzad2024/data/csv/'  # stałe pliki ZIP z CSV, te same, do których prowadzi strona „dane w arkuszach”
+def fetch_pkw(name):
+    """Pobiera i rozpakowuje plik PKW, gdy nie ma go w pamięci podręcznej data/jst/src (np. w CI, gdzie ten katalog nie jest w repozytorium)."""
+    import time, urllib.request, zipfile
+    os.makedirs(SRC, exist_ok=True); zp = os.path.join(SRC, name + '_csv.zip')
+    if not os.path.exists(zp):
+        req = urllib.request.Request(PKW_CSV + name + '_csv.zip', headers={'User-Agent': 'graf-panstwa/0.1 (+https://github.com/maciej-zywno/graf-panstwa; projekt obywatelski)'})
+        data = urllib.request.urlopen(req, timeout=180).read(); open(zp, 'wb').write(data); time.sleep(1.5)
+    with zipfile.ZipFile(zp) as z: z.extractall(os.path.join(SRC, name))
 def rows(name):
+    if not glob.glob(os.path.join(SRC, name, '*.csv')): fetch_pkw(name)
     path = glob.glob(os.path.join(SRC, name, '*.csv'))[0]; txt = open(path, 'rb').read().decode('utf-8-sig'); rd = csv.reader(io.StringIO(txt), delimiter=';'); hdr = next(rd)
     for r in rd:
         if len(r) >= len(hdr) - 1: yield dict(zip(hdr, r))
