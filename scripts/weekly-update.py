@@ -49,6 +49,8 @@ if overlays:
             lost = [k for k in after if before.get(k) == 'confirmed' and after[k] != 'confirmed']
             back = [k for k in after if before.get(k) != 'confirmed' and after[k] == 'confirmed']
             unchecked = [k for k in after if notes[k].startswith('nie sprawdzono')]
+            if len(unchecked) > 0.2 * max(1, len(after)):  # z tego miejsca (np. runner GitHuba) źródła są w większości nieosiągalne: przebieg niewiarygodny, plik zostaje jak był
+                open(f, 'wb').write(bak_jst[f]); jst_lines.append(f"- `{f}`: nie sprawdzono {len(unchecked)} z {len(after)} osób (strony nieosiągalne z tego miejsca, np. blokada 403 adresów centrów danych); **plik nietknięty**, werdykty bez zmian."); continue
             st = after_doc['meta'].get('stats', {}); jst_flipped += len(lost)
             jst_lines.append(f"- `{f}`: {st.get('people', len(after))} osób, potwierdzonych {st.get('confirmed', '?')}, niepotwierdzonych {st.get('unverified', '?')}, nie sprawdzono (awaria strony) {len(unchecked)}.")
             for k in lost: jst_lines.append(f"  - **znika z koła:** {k[2]} ({k[1]}, jednostka {k[0]}): {notes[k]}")

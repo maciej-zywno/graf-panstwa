@@ -16,7 +16,8 @@ Zasady sieci: User-Agent projektu, odstęp ≥1 s między żądaniami do tego sa
 a Playwright jest w node_modules, drugi odczyt przeglądarką. Ładunek Next.js (self.__next_f.push) jest dekodowany, bo
 niektóre BIP-y (dostawca bip.net.pl) trzymają treść artykułu tylko tam. PDF-y czytane przez pdftotext (skany bez warstwy
 tekstu przechodzą przez OCR: tesseract z pakietem `pol` w CI albo Apple Vision przez ocrmac na macOS). Awaria sieci lub serwera
-(błąd połączenia, HTTP 5xx) nie zmienia werdyktu, tylko dopisuje notatkę „nie sprawdzono”; strona, która zniknęła (404), daje `unverified`.
+(błąd połączenia, HTTP 5xx) ani blokada klienta (HTTP 403, 406, 429: zapory urzędów odrzucają adresy centrów danych, np. runnerów GitHuba)
+nie zmienia werdyktu, tylko dopisuje notatkę „nie sprawdzono”; strona, która zniknęła (404, 410), daje `unverified`.
 """
 import datetime, html, json, os, re, subprocess, sys, time, unicodedata, urllib.error, urllib.parse, urllib.request, urllib.robotparser
 
@@ -243,8 +244,8 @@ def main():
                 if url not in cache:
                     cache[url] = fetch_js(url) if force_js else fetch(url)
                 text, err = cache[url]
-                if err and not text and (err.startswith('błąd pobrania') or re.match(r'HTTP 5\d\d', err)):
-                    # awaria sieci albo serwera: werdykt zostaje, tylko notatka; strona zniknięta (404) albo skan bez OCR daje unverified niżej
+                if err and not text and (err.startswith('błąd pobrania') or re.match(r'HTTP (5\d\d|403|406|429)', err)):
+                    # awaria sieci, serwera albo blokada klienta (403/429: zapory urzędów odrzucają adresy centrów danych, np. runnery GitHuba): werdykt zostaje, tylko notatka; strona zniknięta (404/410) albo skan bez OCR daje unverified niżej
                     p['note'] = f'nie sprawdzono {today}: {err}'; stats[p.get('verdict') if p.get('verdict') in stats else 'unverified'] += 1
                     print(f'??? {key} {pos["role"]:24} {p["name"]:32} {p["note"]}  {url}'); continue
                 verdict, note = ('unverified', err) if err and not text else check(text, p, pos['role'])
