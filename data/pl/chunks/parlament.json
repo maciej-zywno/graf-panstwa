@@ -129,8 +129,8 @@
    },
    "provenance": {
     "sources": [
-     "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
      "https://eli.gov.pl/eli/MP/2025/1189/ogl",
+     "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
      "https://api.sejm.gov.pl/eli/acts/MP/2026/573/text.pdf"
     ],
     "verifiedAt": "2026-09-18",
@@ -190,7 +190,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 40,
+   "seatsCount": 39,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -203,7 +203,7 @@
    "ring": "satellite",
    "name": "Komisja Administracji i Spraw Wewnętrznych (Sejm)",
    "shortName": "ASW",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 40 posłów. Zakres: Do zakresu działania Komisji należą sprawy administracji państwowej oraz bezpieczeństwa, ładu i porządku publicznego.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 39 posłów. Zakres: Do zakresu działania Komisji należą sprawy administracji państwowej oraz bezpieczeństwa, ładu i porządku publicznego.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -434,7 +434,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 17,
+   "seatsCount": 15,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -447,7 +447,7 @@
    "ring": "satellite",
    "name": "Komisja do Spraw Deregulacji (Sejm)",
    "shortName": "DER",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2025-03-07. Liczy 17 posłów. Zakres: Do zakresu działania Komisji należą sprawy związane z ograniczeniem biurokracji oraz przeglądem i analizą przepisów regulujących kwestie społeczne, ekonomiczne i gospodarcze w celu eliminacji przepisów niejasnych, niespójnych, nieskutecznych, zbędnych lub nadmiernie regulujących, w szczególności zmierzające do uproszczenia prowadzenia działalności gospodarczej, w tym…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2025-03-07. Liczy 15 posłów. Zakres: Do zakresu działania Komisji należą sprawy związane z ograniczeniem biurokracji oraz przeglądem i analizą przepisów regulujących kwestie społeczne, ekonomiczne i gospodarcze w celu eliminacji przepisów niejasnych, niespójnych, nieskutecznych, zbędnych lub nadmiernie regulujących, w szczególności zmierzające do uproszczenia prowadzenia działalności gospodarczej, w tym…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -678,7 +678,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 38,
+   "seatsCount": 35,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -691,7 +691,7 @@
    "ring": "satellite",
    "name": "Komisja Edukacji i Nauki (Sejm)",
    "shortName": "ENM",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 38 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształcenia i wychowania przedszkolnego, podstawowego, ogólnokształcącego, zawodowego, pomaturalnego i wyższego, oświaty dorosłych, kształcenia, dokształcania i doskonalenia zawodowego nauczycieli oraz kadr naukowych, wypoczynku, kultury fizycznej i sportu dzieci i młodzieży, opieki nad dziećmi i młodzieżą, archiwów, polityk…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 35 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształcenia i wychowania przedszkolnego, podstawowego, ogólnokształcącego, zawodowego, pomaturalnego i wyższego, oświaty dorosłych, kształcenia, dokształcania i doskonalenia zawodowego nauczycieli oraz kadr naukowych, wypoczynku, kultury fizycznej i sportu dzieci i młodzieży, opieki nad dziećmi i młodzieżą, archiwów, polityk…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -1059,7 +1059,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 44,
+   "seatsCount": 46,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -1072,7 +1072,7 @@
    "ring": "satellite",
    "name": "Komisja Finansów Publicznych (Sejm)",
    "shortName": "FPB",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 44 posłów. Zakres: Do zakresu działania Komisji należą sprawy systemu pieniężnego, kredytowego i podatkowego, płac i dochodów, budżetu i planów finansowych państwa, funduszy celowych, agencji i fundacji z udziałem Skarbu Państwa, ubezpieczeń majątkowych oraz ceł i statystyki.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 46 posłów. Zakres: Do zakresu działania Komisji należą sprawy systemu pieniężnego, kredytowego i podatkowego, płac i dochodów, budżetu i planów finansowych państwa, funduszy celowych, agencji i fundacji z udziałem Skarbu Państwa, ubezpieczeń majątkowych oraz ceł i statystyki.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -1333,7 +1333,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 39,
+   "seatsCount": 36,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -1346,7 +1346,7 @@
    "ring": "satellite",
    "name": "Komisja Gospodarki i Rozwoju (Sejm)",
    "shortName": "GOR",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 39 posłów. Zakres: Do zakresu działania Komisji należą sprawy polityki gospodarczej, a w szczególności: restrukturyzacji gospodarki, efektywności przemysłu, handlu międzynarodowego i wewnętrznego, technologii, normalizacji, inwestycji bezpośrednich i udziału kapitału zagranicznego, a także samorządu pracowniczego, gospodarczego i pracodawców, oraz sprawy związane z tworzeniem właściwyc…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 36 posłów. Zakres: Do zakresu działania Komisji należą sprawy polityki gospodarczej, a w szczególności: restrukturyzacji gospodarki, efektywności przemysłu, handlu międzynarodowego i wewnętrznego, technologii, normalizacji, inwestycji bezpośrednich i udziału kapitału zagranicznego, a także samorządu pracowniczego, gospodarczego i pracodawców, oraz sprawy związane z tworzeniem właściwyc…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -1607,7 +1607,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 28,
+   "seatsCount": 27,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -1620,7 +1620,7 @@
    "ring": "satellite",
    "name": "Komisja Kultury Fizycznej, Sportu i Turystyki (Sejm)",
    "shortName": "KFS",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 28 posłów. Zakres: Do zakresu działania Komisji należą sprawy kultury fizycznej, sportu oraz turystyki.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 27 posłów. Zakres: Do zakresu działania Komisji należą sprawy kultury fizycznej, sportu oraz turystyki.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -1744,7 +1744,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 15,
+   "seatsCount": 14,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -1757,7 +1757,7 @@
    "ring": "satellite",
    "name": "Komisja do Spraw Kontroli Państwowej (Sejm)",
    "shortName": "KOP",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 15 posłów. Zakres: Do zakresu działania Komisji należą sprawy działalności Najwyższej Izby Kontroli oraz Państwowej Inspekcji Pracy, a w szczególności opiniowanie planów pracy Najwyższej Izby Kontroli i rocznych sprawozdań z działalności Najwyższej Izby Kontroli oraz Państwowej Inspekcji Pracy, ich budżetów i sprawozdań z ich wykonania, opiniowanie projektu statutu Najwyższej Izby Kont…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 14 posłów. Zakres: Do zakresu działania Komisji należą sprawy działalności Najwyższej Izby Kontroli oraz Państwowej Inspekcji Pracy, a w szczególności opiniowanie planów pracy Najwyższej Izby Kontroli i rocznych sprawozdań z działalności Najwyższej Izby Kontroli oraz Państwowej Inspekcji Pracy, ich budżetów i sprawozdań z ich wykonania, opiniowanie projektu statutu Najwyższej Izby Kont…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -2095,7 +2095,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 36,
+   "seatsCount": 35,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -2108,7 +2108,7 @@
    "ring": "satellite",
    "name": "Komisja Łączności z Polakami za Granicą (Sejm)",
    "shortName": "LPG",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 36 posłów. Zakres: Do zakresu działania Komisji należą sprawy więzi z krajem Polaków i osób pochodzenia polskiego zamieszkałych za granicą na stałe lub czasowo.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 35 posłów. Zakres: Do zakresu działania Komisji należą sprawy więzi z krajem Polaków i osób pochodzenia polskiego zamieszkałych za granicą na stałe lub czasowo.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -2476,7 +2476,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 18,
+   "seatsCount": 16,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -2489,7 +2489,7 @@
    "ring": "satellite",
    "name": "Komisja Nadzwyczajna do rozpatrzenia projektów ustaw dotyczących statusu osoby najbliższej w związku i umowy o wspólnym pożyciu (Sejm)",
    "shortName": "NON",
-   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2026-02-13. Liczy 18 posłów. ",
+   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2026-02-13. Liczy 16 posłów. ",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 19 (komisje nadzwyczajne); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -2583,7 +2583,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 19,
+   "seatsCount": 18,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -2596,7 +2596,7 @@
    "ring": "satellite",
    "name": "Komisja Nadzwyczajna do spraw ochrony zwierząt (Sejm)",
    "shortName": "NOZ",
-   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2024-10-18. Liczy 19 posłów. ",
+   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2024-10-18. Liczy 18 posłów. ",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 19 (komisje nadzwyczajne); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -2690,7 +2690,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 27,
+   "seatsCount": 26,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -2703,7 +2703,7 @@
    "ring": "satellite",
    "name": "Komisja Nadzwyczajna do rozpatrzenia projektów ustaw dotyczących prawa do przerywania ciąży (Sejm)",
    "shortName": "NPC",
-   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2024-04-12. Liczy 27 posłów. ",
+   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2024-04-12. Liczy 26 posłów. ",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 19 (komisje nadzwyczajne); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -2812,7 +2812,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 27,
+   "seatsCount": 25,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -2825,7 +2825,7 @@
    "ring": "satellite",
    "name": "Komisja Nadzwyczajna do spraw działań przeciwpowodziowych i usuwania skutków powodzi z roku 2024 (Sejm)",
    "shortName": "NSP",
-   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2024-09-26. Liczy 27 posłów. ",
+   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2024-09-26. Liczy 25 posłów. ",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 19 (komisje nadzwyczajne); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3071,7 +3071,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 50,
+   "seatsCount": 51,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3084,7 +3084,7 @@
    "ring": "satellite",
    "name": "Komisja Obrony Narodowej (Sejm)",
    "shortName": "OBN",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 50 posłów. Zakres: Do zakresu działania Komisji należą sprawy obrony państwa, dotyczące zwłaszcza działalności sił zbrojnych, systemu oraz funkcjonowania obrony terytorialnej kraju i obrony cywilnej, wykonywania obowiązków w dziedzinie umacniania obronności przez organy państwowe i przedsiębiorstwa państwowe, organizacje spółdzielcze i społeczne oraz przez obywateli, a także sprawy zak…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 51 posłów. Zakres: Do zakresu działania Komisji należą sprawy obrony państwa, dotyczące zwłaszcza działalności sił zbrojnych, systemu oraz funkcjonowania obrony terytorialnej kraju i obrony cywilnej, wykonywania obowiązków w dziedzinie umacniania obronności przez organy państwowe i przedsiębiorstwa państwowe, organizacje spółdzielcze i społeczne oraz przez obywateli, a także sprawy zak…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3238,7 +3238,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 23,
+   "seatsCount": 21,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3251,7 +3251,7 @@
    "ring": "satellite",
    "name": "Komisja Odpowiedzialności Konstytucyjnej (Sejm)",
    "shortName": "ODK",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 23 posłów. Zakres: Do zakresu działania Komisji należy prowadzenie postępowania w sprawie badania zasadności skierowanych do niej wniosków wstępnych o pociągnięcie do odpowiedzialności konstytucyjnej, podejmowanie uchwał w tym przedmiocie oraz przedstawianie Sejmowi sprawozdań z przeprowadzonych prac.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 21 posłów. Zakres: Do zakresu działania Komisji należy prowadzenie postępowania w sprawie badania zasadności skierowanych do niej wniosków wstępnych o pociągnięcie do odpowiedzialności konstytucyjnej, podejmowanie uchwał w tym przedmiocie oraz przedstawianie Sejmowi sprawozdań z przeprowadzonych prac.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3360,7 +3360,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 41,
+   "seatsCount": 40,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3373,7 +3373,7 @@
    "ring": "satellite",
    "name": "Komisja Ochrony Środowiska, Zasobów Naturalnych i Leśnictwa (Sejm)",
    "shortName": "OSZ",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 41 posłów. Zakres: Do zakresu działania Komisji należą sprawy ochrony i kształtowania środowiska oraz ochrony nieodnawialnych jego zasobów, geologii oraz leśnictwa i gospodarki leśnej.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 40 posłów. Zakres: Do zakresu działania Komisji należą sprawy ochrony i kształtowania środowiska oraz ochrony nieodnawialnych jego zasobów, geologii oraz leśnictwa i gospodarki leśnej.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3527,7 +3527,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 16,
+   "seatsCount": 17,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3540,7 +3540,7 @@
    "ring": "satellite",
    "name": "Komisja do Spraw Petycji (Sejm)",
    "shortName": "PET",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 16 posłów. Zakres: Do zakresu działania Komisji należy rozpatrywanie petycji złożonych do Sejmu.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 17 posłów. Zakres: Do zakresu działania Komisji należy rozpatrywanie petycji złożonych do Sejmu.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3619,7 +3619,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 18,
+   "seatsCount": 16,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3632,7 +3632,7 @@
    "ring": "satellite",
    "name": "Komisja Polityki Senioralnej (Sejm)",
    "shortName": "PSN",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 18 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształtowania polityki państwa dotyczącej osób starszych.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 16 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształtowania polityki państwa dotyczącej osób starszych.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3741,7 +3741,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 39,
+   "seatsCount": 37,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3754,7 +3754,7 @@
    "ring": "satellite",
    "name": "Komisja Polityki Społecznej i Rodziny (Sejm)",
    "shortName": "PSR",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 39 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształtowania polityki społecznej państwa, problemów socjalnych, ubezpieczeń społecznych, świadczeń socjalnych, pomocy społecznej, komunalnego budownictwa mieszkaniowego i problemów osób niepełnosprawnych i kombatantów oraz sprawy prawa pracy, w tym ochrony pracowników, bezpieczeństwa i higieny pracy, równego traktowania w z…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 37 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształtowania polityki społecznej państwa, problemów socjalnych, ubezpieczeń społecznych, świadczeń socjalnych, pomocy społecznej, komunalnego budownictwa mieszkaniowego i problemów osób niepełnosprawnych i kombatantów oraz sprawy prawa pracy, w tym ochrony pracowników, bezpieczeństwa i higieny pracy, równego traktowania w z…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3775,21 +3775,6 @@
       "status": "verified",
       "party": "Lewica",
       "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/402/photo",
-      "sourceUrl": "https://api.sejm.gov.pl/sejm/term10/committees/PSR",
-      "startedAtSource": null,
-      "note": "Data objęcia funkcji w komisji nie jest podawana przez API (joinDate to data wejścia do komisji)."
-     },
-     {
-      "id": "pl-agnieszka-buczynska",
-      "name": "Agnieszka Buczyńska",
-      "positionId": "pl-sejm-komisja-psr",
-      "positionName": "Zastępca przewodniczącego komisji",
-      "type": "elected",
-      "startedAt": null,
-      "acting": false,
-      "status": "verified",
-      "party": "Polska2050",
-      "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/36/photo",
       "sourceUrl": "https://api.sejm.gov.pl/sejm/term10/committees/PSR",
       "startedAtSource": null,
       "note": "Data objęcia funkcji w komisji nie jest podawana przez API (joinDate to data wejścia do komisji)."
@@ -3923,7 +3908,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 41,
+   "seatsCount": 40,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3936,7 +3921,7 @@
    "ring": "satellite",
    "name": "Komisja Rolnictwa i Rozwoju Wsi (Sejm)",
    "shortName": "RRW",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 41 posłów. Zakres: Do zakresu działania Komisji należą sprawy rolnictwa, ogrodnictwa, sadownictwa, skupu płodów rolnych, hodowli, spółdzielczości rolniczej, gospodarki i ochrony gruntów rolnych i leśnych, zaopatrzenia wsi i rolnictwa w środki produkcji, w tym melioracji i zaopatrzenia wsi w wodę, przemysłu spożywczego oraz przetwórstwa rybnego, społeczno-zawodowych organizacji rolników…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 40 posłów. Zakres: Do zakresu działania Komisji należą sprawy rolnictwa, ogrodnictwa, sadownictwa, skupu płodów rolnych, hodowli, spółdzielczości rolniczej, gospodarki i ochrony gruntów rolnych i leśnych, zaopatrzenia wsi i rolnictwa w środki produkcji, w tym melioracji i zaopatrzenia wsi w wodę, przemysłu spożywczego oraz przetwórstwa rybnego, społeczno-zawodowych organizacji rolników…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -4473,7 +4458,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 37,
+   "seatsCount": 36,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -4486,7 +4471,7 @@
    "ring": "satellite",
    "name": "Komisja Sprawiedliwości i Praw Człowieka (Sejm)",
    "shortName": "SPC",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 37 posłów. Zakres: Do zakresu działania Komisji należą sprawy przestrzegania prawa i praworządności, sądów, prokuratury, notariatu, adwokatury i obsługi prawnej, funkcjonowania samorządów adwokackiego i radcowskiego, sprawy przestrzegania praw człowieka.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 36 posłów. Zakres: Do zakresu działania Komisji należą sprawy przestrzegania prawa i praworządności, sądów, prokuratury, notariatu, adwokatury i obsługi prawnej, funkcjonowania samorządów adwokackiego i radcowskiego, sprawy przestrzegania praw człowieka.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -4625,7 +4610,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 28,
+   "seatsCount": 26,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -4638,7 +4623,7 @@
    "ring": "satellite",
    "name": "Komisja Samorządu Terytorialnego i Polityki Regionalnej (Sejm)",
    "shortName": "STR",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 28 posłów. Zakres: Do zakresu działania Komisji należą sprawy organizacji i funkcjonowania struktur samorządu terytorialnego, zarządu mieniem komunalnym, gospodarki komunalnej, zagospodarowania przestrzennego oraz rozwoju regionów i społeczności lokalnych; do zakresu działania Komisji należy także rozpatrywanie założeń polityki regionalnej państwa.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 26 posłów. Zakres: Do zakresu działania Komisji należą sprawy organizacji i funkcjonowania struktur samorządu terytorialnego, zarządu mieniem komunalnym, gospodarki komunalnej, zagospodarowania przestrzennego oraz rozwoju regionów i społeczności lokalnych; do zakresu działania Komisji należy także rozpatrywanie założeń polityki regionalnej państwa.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -8952,7 +8937,7 @@
    "toId": "pl-sejm-komisja-asw",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 40,
+   "seatsAppointed": 39,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -8986,7 +8971,7 @@
    "toId": "pl-sejm-komisja-der",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 17,
+   "seatsAppointed": 15,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9020,7 +9005,7 @@
    "toId": "pl-sejm-komisja-enm",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 38,
+   "seatsAppointed": 35,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9071,7 +9056,7 @@
    "toId": "pl-sejm-komisja-fpb",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 44,
+   "seatsAppointed": 46,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9105,7 +9090,7 @@
    "toId": "pl-sejm-komisja-gor",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 39,
+   "seatsAppointed": 36,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9139,7 +9124,7 @@
    "toId": "pl-sejm-komisja-kfs",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 28,
+   "seatsAppointed": 27,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9156,7 +9141,7 @@
    "toId": "pl-sejm-komisja-kop",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 15,
+   "seatsAppointed": 14,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9207,7 +9192,7 @@
    "toId": "pl-sejm-komisja-lpg",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 36,
+   "seatsAppointed": 35,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9258,7 +9243,7 @@
    "toId": "pl-sejm-komisja-non",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 18,
+   "seatsAppointed": 16,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9275,7 +9260,7 @@
    "toId": "pl-sejm-komisja-noz",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 19,
+   "seatsAppointed": 18,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9292,7 +9277,7 @@
    "toId": "pl-sejm-komisja-npc",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 27,
+   "seatsAppointed": 26,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9309,7 +9294,7 @@
    "toId": "pl-sejm-komisja-nsp",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 27,
+   "seatsAppointed": 25,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9343,7 +9328,7 @@
    "toId": "pl-sejm-komisja-obn",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 50,
+   "seatsAppointed": 51,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9360,7 +9345,7 @@
    "toId": "pl-sejm-komisja-odk",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 23,
+   "seatsAppointed": 21,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9377,7 +9362,7 @@
    "toId": "pl-sejm-komisja-osz",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 41,
+   "seatsAppointed": 40,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9394,7 +9379,7 @@
    "toId": "pl-sejm-komisja-pet",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 16,
+   "seatsAppointed": 17,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9411,7 +9396,7 @@
    "toId": "pl-sejm-komisja-psn",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 18,
+   "seatsAppointed": 16,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9428,7 +9413,7 @@
    "toId": "pl-sejm-komisja-psr",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 39,
+   "seatsAppointed": 37,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9445,7 +9430,7 @@
    "toId": "pl-sejm-komisja-rrw",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 41,
+   "seatsAppointed": 40,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9530,7 +9515,7 @@
    "toId": "pl-sejm-komisja-spc",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 37,
+   "seatsAppointed": 36,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9547,7 +9532,7 @@
    "toId": "pl-sejm-komisja-str",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 28,
+   "seatsAppointed": 26,
    "disputed": false,
    "provenance": {
     "sources": [

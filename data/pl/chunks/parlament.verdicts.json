@@ -4,7 +4,7 @@
  "summary": "Weryfikacja skryptowa: drugie pobranie źródeł i kontrola nazwisk; przepisy sprawdzone w tekstach regulaminów z ELI.",
  "stats": {
   "nodes_checked": 81,
-  "people_checked": 346,
+  "people_checked": 345,
   "edges_checked": 82
  },
  "nodes": [
@@ -1584,13 +1584,6 @@
   {
    "nodeId": "pl-sejm-komisja-psr",
    "personId": "pl-katarzyna-ueberhan",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"
-  },
-  {
-   "nodeId": "pl-sejm-komisja-psr",
-   "personId": "pl-agnieszka-buczynska",
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/PSR"

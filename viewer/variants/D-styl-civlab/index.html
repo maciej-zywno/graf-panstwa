@@ -370,6 +370,35 @@ button.tile[aria-pressed="true"] { border-color: var(--ink-2); }
 .budget .bcenter text { text-anchor: middle; fill: var(--ink); pointer-events: none; }
 .budget .bc-k { font: 500 15px var(--font-ui); } .budget .bc-v { font-weight: 600; font-family: var(--font-ui); letter-spacing: -.02em; } .budget .bc-s { font: 400 12.5px var(--font-ui); fill: var(--muted) !important; }
 .budget .blabel { font-family: var(--font-ui); font-weight: 600; fill: color-mix(in srgb, var(--g) 62%, var(--ink)); pointer-events: none; }
+/* ---------- mapa władzy formalnej: odpowiednik „power map” z oryginału, ale liczony z relacji ustawowych grafu, nie z newsów ---------- */
+.stage.mode-power svg .vp, .stage.mode-power .legend, .stage.mode-power .zoomer, .stage.mode-power .rel-bar, .stage.mode-power .sel-pill { display: none !important; }
+.power { position: absolute; inset: 0; overflow: auto; z-index: 2; }
+.power[hidden] { display: none; }
+.power .p-head { position: absolute; left: 24px; right: 24px; top: 18px; text-align: center; pointer-events: none; }
+.power .p-title { font: 500 12.5px var(--font-ui); letter-spacing: .22em; text-transform: uppercase; color: var(--ink); }
+.power .p-sub { font: 400 13px/1.35 var(--font-ui); color: var(--muted); margin: 6px auto 0; max-width: 640px; text-wrap: balance; }
+.power svg.p-lines { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; }
+.power .p-lines path { fill: none; stroke: var(--ink); stroke-opacity: .16; stroke-width: 1; transition: stroke-opacity .2s, stroke-width .2s; }
+.power.has-focus .p-lines path { stroke-opacity: .05; } .power.has-focus .p-lines path.on { stroke-opacity: .6; stroke-width: 1.5; }
+.power .ptile { position: absolute; width: 140px; margin-left: -70px; text-align: center; background: transparent; border: 0; padding: 0; cursor: pointer; color: var(--ink); font-family: var(--font-ui); transition: opacity .2s; }
+.power.has-focus .ptile:not(.on) { opacity: .32; }
+.power .ptile .av { width: 50px; height: 50px; border-radius: 50%; margin: 0 auto 6px; display: grid; place-items: center; position: relative; background: var(--card-2); color: var(--ink-2); font: 600 17px var(--font-ui); box-shadow: 0 0 0 2px var(--c), 0 0 18px color-mix(in srgb, var(--c) 42%, transparent); overflow: hidden; }
+.power .ptile.r1 { width: 190px; margin-left: -95px; } .power .ptile.r1 .av { width: 62px; height: 62px; font-size: 20px; }
+.power .ptile .av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.power .ptile .nm { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-weight: 600; font-size: 13.5px; line-height: 1.18; }
+.power .ptile .ps { display: block; font-size: 11.5px; color: var(--muted); line-height: 1.25; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.power .ptile .sc { display: block; font-size: 11.5px; color: var(--ink-2); margin-top: 3px; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.power .ptile .sc b { color: var(--c); font-weight: 600; }
+.power .ptile.sel .av { box-shadow: 0 0 0 3px var(--ink), 0 0 18px color-mix(in srgb, var(--c) 42%, transparent); }
+.power .ptile:focus-visible { outline: 2px solid var(--ink-2); outline-offset: 4px; border-radius: 10px; }
+.power .p-note { position: absolute; left: 18px; bottom: 14px; right: 300px; font: 400 11px/1.3 var(--font-ui); color: var(--muted); pointer-events: none; }
+.power-bar { display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px 12px; border-radius: 10px; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); background: var(--card-2); color: var(--ink); cursor: pointer; font: 500 13.5px var(--font-ui); text-align: left; }
+.power-bar:hover { border-color: color-mix(in srgb, var(--ink) 30%, transparent); }
+.power-bar .avs { display: flex; padding-right: 8px; }
+.power-bar .av { width: 26px; height: 26px; border-radius: 50%; margin-right: -8px; box-shadow: 0 0 0 2px var(--card-2), 0 0 0 3px var(--c); display: grid; place-items: center; font: 600 10px var(--font-ui); background: var(--card); color: var(--ink-2); position: relative; overflow: hidden; }
+.power-bar .av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.power-bar .lbl { flex: 1; margin-left: 8px; } .power-bar .go { color: var(--ink-2); white-space: nowrap; }
+@media (max-width: 760px) { .power .ptile { width: 130px; margin-left: -65px; } .power .p-head { top: 58px; } .power .p-note { display: none; } }
 .budget .blabel.amt { font-weight: 500; } .budget .blabel.in { fill: color-mix(in srgb, var(--g) 35%, var(--ink)); }
 .btip { position: absolute; left: 0; top: 0; z-index: 6; pointer-events: none; display: flex; flex-direction: column; gap: 1px; max-width: 300px; padding: 7px 11px; border-radius: 8px; background: var(--card); box-shadow: var(--shadow); border-left: 3px solid var(--g, var(--muted)); font-size: 13px; line-height: 1.3; }
 .btip[hidden] { display: none; } .btip b { font-weight: 600; color: var(--ink); } .btip span { color: var(--ink-2); } .btip small { color: var(--muted); font-size: 11.5px; }
@@ -558,7 +587,8 @@ a.result { text-decoration: none; }
     </div>
     <div class="rel-bar" id="rel-bar" hidden></div>
     <div class="sel-pill" id="sel-pill" hidden></div>
-    <div class="mode-toggle" id="mode-toggle" role="group" aria-label="Widok" hidden><button type="button" data-mode="graph" aria-pressed="true">Graf</button><button type="button" data-mode="budget" aria-pressed="false">Budżet</button></div>
+    <div class="power" id="power" hidden><div class="p-head"><div class="p-title" id="p-title"></div><div class="p-sub" id="p-sub"></div></div><svg class="p-lines" id="p-lines" aria-hidden="true"></svg><div id="p-tiles"></div><div class="p-note" id="p-note"></div></div>
+    <div class="mode-toggle" id="mode-toggle" role="group" aria-label="Widok" hidden><button type="button" data-mode="graph" aria-pressed="true">Graf</button><button type="button" data-mode="budget" aria-pressed="false">Budżet</button><button type="button" data-mode="power" aria-pressed="false">Mapa władzy</button></div>
     <div class="btip" id="btip" hidden></div>
     <div class="zoomer" role="group" aria-label="Powiększenie">
       <button id="btn-zout" title="Oddal" aria-label="Oddal"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8h10"/></svg></button>
@@ -1531,7 +1561,7 @@ function select(id, opts = {}) {
   const rotTo = rotationFor(n ? n.id : null); const turns = Math.abs(normDeg(rotTo - S.rot)) > 1.5; const wasFit = !S.userZoomed; setRotation(rotTo, instant); if (turns && wasFit && !S.mobile) fit(!instant); // widok dopasowany zostaje dopasowany także po obrocie (ta sama skala, nowe wyśrodkowanie)
   if (hovId && !turns && S.D.byId[hovId] && elById[hovId]) showTip(hovId, null, elById[hovId]); // po obrocie glif odjeżdża spod kursora, więc pigułka najazdu zostaje tylko bez obrotu
   if (!n && opts.from !== 'budget') S.budgetPart = null;
-  writeHash(); if (S.mode === 'budget') budgetSync(instant);
+  writeHash(); if (S.mode === 'budget') budgetSync(instant); if (S.mode === 'power') powerSync();
   if (S.mobile) { setSheet(!!n || opts.keepOpen === true, { silent: true }); if (n) { setTimeout(() => revealAboveSheet(n.id), still() ? 60 : 340); setTimeout(() => revealAboveSheet(n.id), 700); } else setTimeout(() => fit(true), still() ? 60 : 340); }
   else if (n) revealInView(n.id);
   document.title = n ? `${n.name} · Graf Państwa Polskiego` : 'Graf Państwa Polskiego'; // U8: karty i historia rozróżnialne
@@ -1547,8 +1577,8 @@ function syncFilterUI() {
 function applyHash(opts = {}) {
   const m = location.hash.match(/node=([^&]+)/); let id = null; if (m) { try { id = decodeURIComponent(m[1]); } catch { id = m[1]; } }
   if (id && !S.D.byId[id]) { toast(`Nie ma węzła o adresie „${id}”`); try { history.replaceState(null, '', location.pathname + location.search); } catch {} id = null; }
-  const wantBudget = /(?:^#|&)view=budget/.test(location.hash) && !!S.B; const pm = location.hash.match(/part=([^&]+)/);
-  S.applyingHistory = true; try { if (wantBudget && S.mode !== 'budget') { if (id) S.tab = 'budget'; setMode('budget', { silent: true }); } else if (!wantBudget && S.mode === 'budget') setMode('graph', { silent: true }); select(id, Object.assign({ from:'url' }, opts)); if (wantBudget && !id && pm) pickBudgetPart(decodeURIComponent(pm[1])); } finally { S.applyingHistory = false; }
+  const wantBudget = /(?:^#|&)view=budget/.test(location.hash) && !!S.B; const wantPower = /(?:^#|&)view=power/.test(location.hash) && !!S.P; const pm = location.hash.match(/part=([^&]+)/);
+  S.applyingHistory = true; try { if (wantBudget && S.mode !== 'budget') { if (id) S.tab = 'budget'; setMode('budget', { silent: true }); } else if (wantPower && S.mode !== 'power') setMode('power', { silent: true }); else if (!wantBudget && !wantPower && S.mode !== 'graph') setMode('graph', { silent: true }); select(id, Object.assign({ from:'url' }, opts)); if (wantBudget && !id && pm) pickBudgetPart(decodeURIComponent(pm[1])); } finally { S.applyingHistory = false; }
 }
 // pigułki z nazwą nad glifem (przestrzeń ekranu): stała nad wybranym węzłem i chwilowa nad najechanym
 function pillFor(cls, n) {
@@ -2018,13 +2048,16 @@ function pickBudgetPart(code) {
   if (nodeId) { S.tab = 'budget'; if (S.selected === nodeId) { budgetSync(); renderPanel(S.D.byId[nodeId]); writeHash(); } else select(nodeId, { from: 'budget' }); }
   else { if (S.selected) select(null, { keepOpen: true, from: 'budget' }); S.budgetPart = p.code; budgetSync(); renderBudgetPartPanel(p); if (S.mobile) setSheet(true); writeHash(); }
 }
-function hashFor() { const parts = []; if (S.selected) parts.push('node=' + encodeURIComponent(S.selected)); if (S.mode === 'budget') { parts.push('view=budget'); if (!S.selected && S.budgetPart) parts.push('part=' + encodeURIComponent(S.budgetPart)); } return parts.length ? '#' + parts.join('&') : ''; }
+function hashFor() { const parts = []; if (S.selected) parts.push('node=' + encodeURIComponent(S.selected)); if (S.mode === 'budget') { parts.push('view=budget'); if (!S.selected && S.budgetPart) parts.push('part=' + encodeURIComponent(S.budgetPart)); } if (S.mode === 'power') parts.push('view=power'); return parts.length ? '#' + parts.join('&') : ''; }
 function writeHash(replace) { if (S.applyingHistory) return; const h = hashFor(); if (location.hash === h) return; try { history[replace ? 'replaceState' : 'pushState']({ node: S.selected || null }, '', h || location.pathname + location.search); } catch {} }
 function setMode(mode, opts = {}) {
-  if (mode === 'budget' && !S.B) mode = 'graph'; const was = S.mode || 'graph'; S.mode = mode; const st = $('#stage'); st.classList.toggle('mode-budget', mode === 'budget'); $('#btip').hidden = true;
+  if (mode === 'budget' && !S.B) mode = 'graph'; if (mode === 'power' && !S.P) mode = 'graph'; const was = S.mode || 'graph'; S.mode = mode; const st = $('#stage'); st.classList.toggle('mode-budget', mode === 'budget'); st.classList.toggle('mode-power', mode === 'power'); $('#btip').hidden = true;
   document.querySelectorAll('#mode-toggle button').forEach(b => b.setAttribute('aria-pressed', String(b.getAttribute('data-mode') === mode)));
+  if (mode !== 'budget' && gB) { gB.remove(); gB = null; gBrot = null; }
+  if (mode !== 'power') $('#power').hidden = true;
   if (mode === 'budget') { setLegend(false); if (S.selected && budgetPartsFor(S.selected).length) { S.tab = 'budget'; renderPanel(S.D.byId[S.selected]); } drawBudget(); }
-  else { if (gB) { gB.remove(); gB = null; gBrot = null; } if (!S.selected && S.budgetPart) { S.budgetPart = null; renderPanel(null); } if (!S.userZoomed) fit(false); }
+  else if (mode === 'power') { setLegend(false); drawPower(); }
+  else { if (!S.selected && S.budgetPart) { S.budgetPart = null; renderPanel(null); } if (!S.userZoomed) fit(false); }
   if (was !== mode && !opts.silent) writeHash();
 }
 function budgetBlockHtml(code) {
@@ -2053,9 +2086,79 @@ function renderBudgetPartPanel(p) {
 function renderJstEntry() { const pr = loadJstIndex(); if (!pr) return; pr.then(ix => { if (!ix || $('#jst-entry')) return; const w = ix.units.filter(u => u.k === 'wojewodztwo').sort((a, b) => a.n.localeCompare(b.n, 'pl')); const st = ix.meta.stats || {};
     const card = document.createElement('section'); card.className = 'card'; card.id = 'jst-entry'; card.innerHTML = `<h3>Samorząd <span class="n">${(st.units || ix.units.length).toLocaleString('pl-PL')} jednostek</span></h3><p class="lede" style="margin-bottom:10px">Województwa, powiaty i gminy mają własne koła: rada, organ wykonawczy i organy nadzoru, z radnymi wybranymi w 2024 r. Wpisz nazwę miejscowości w wyszukiwarce albo wybierz województwo.</p><div class="jst-kids">${w.map(u => `<a class="jst-kid" href="${esc(jstHref(u.t))}"><b>${esc(u.n.replace(/^Województwo /, ''))}</b></a>`).join('')}</div>`;
     const anchor = $('#budget-card') || $('#view-home').querySelector('section.card'); anchor.insertAdjacentElement('afterend', card); }); }
+
+/* ---------- mapa władzy formalnej ----------
+   Odpowiednik „power map” z oryginału (siatka dwudziestu osób z liniami powołań). Tam sygnałem są wzmianki w mediach z 90 dni;
+   tu wyłącznie relacje z podstawą prawną z grafu: kto powołuje, wybiera, wnioskuje o powołanie, zatwierdza i nadzoruje.
+   Bez newsów (decyzja właściciela z 17 i 18.09.2026). Jednostka mapy to „klaster”: stanowisko jednoosobowe razem z organem, którym
+   kieruje (Prezes Rady Ministrów + Rada Ministrów, Marszałek + Sejm, minister + ministerstwo), żeby ta sama osoba nie miała dwóch kafli. */
+const POWER_W = { appoints: 3, elects: 3, nominates: 1.5, confirms: 1, oversees: 1, administers: 0.3 };
+const POWER_VERB = { appoints: 'powołuje', elects: 'wybiera', nominates: 'wnioskuje o', confirms: 'zatwierdza', oversees: 'nadzoruje' };
+const POWER_N = 20;
+function powerAvailable() { return !!S.D && !S.jst && S.D.edges.some(e => POWER_W[e.type]); }
+function powerClusters() {
+  const D = S.D, byId = D.byId, clusterOf = {}, clusters = []; const isSeat = n => n.type === 'dept_head' || (n.type === 'elected' && n.seatsCount === 1 && n.people.type === 'people');
+  for (const n of D.nodes) { if (!isSeat(n)) continue; const org = n.headOf && byId[n.headOf] ? byId[n.headOf] : null; const c = { id: n.id, seat: n, org }; clusters.push(c); clusterOf[n.id] = c; if (org && !clusterOf[org.id]) clusterOf[org.id] = c; }
+  for (const n of D.nodes) if (!clusterOf[n.id] && n.type !== 'constituency' && n.type !== 'political_group') { const c = { id: n.id, seat: null, org: n }; clusters.push(c); clusterOf[n.id] = c; }
+  return { clusters, clusterOf };
+}
+function computePower() {
+  const D = S.D, byId = D.byId; const { clusters, clusterOf } = powerClusters(); const acc = new Map(clusters.map(c => [c, { score: 0, counts: {}, targets: new Map() }]));
+  const inside = (from, to) => { let n = byId[to]; for (let i = 0; n && i < 6; i++) { if (n.parent === from) return true; n = n.parent ? byId[n.parent] : null; } return false; }; // relacja wewnątrz własnej struktury (Sejm i jego komisje, ministerstwo i jego jednostki) liczy się ćwierć i bez mnożenia przez miejsca
+  for (const e of D.edges) { const w = POWER_W[e.type]; if (!w) continue; const a = clusterOf[e.fromId], b = clusterOf[e.toId]; if (!a || !b || a === b) continue; const internal = inside(e.fromId, e.toId) || (a.org && inside(a.org.id, e.toId)); const seats = internal ? 1 : Math.max(1, e.seatsAppointed || 1); const d = acc.get(a); d.score += w * seats * (internal ? 0.25 : 1);
+    if (internal) { d.counts.internal = (d.counts.internal || 0) + 1; continue; } d.counts[e.type] = (d.counts[e.type] || 0) + seats; if (!d.targets.has(b)) d.targets.set(b, new Set()); d.targets.get(b).add(e.type); }
+  for (const c of clusters) { const d = acc.get(c); let ind = 0; for (const [b, types] of d.targets) if (types.has('appoints') || types.has('elects')) ind += acc.get(b).score * 0.5; d.indirect = ind; d.total = d.score + ind; } // zasięg pośredni: połowa punktów tych, których się powołuje albo wybiera (jeden krok)
+  const ranked = clusters.filter(c => acc.get(c).total > 0).sort((a, b) => acc.get(b).total - acc.get(a).total || a.id.localeCompare(b.id)).slice(0, POWER_N); const idx = new Map(ranked.map((c, i) => [c, i]));
+  const tiles = ranked.map((c, i) => { const d = acc.get(c); const seat = c.seat || (c.org && c.org.head && byId[c.org.head] ? byId[c.org.head] : null); const person = seat ? firstPeople(seat)[0] : null; const node = c.seat || c.org;
+    return { rank: i + 1, id: node.id, seatId: seat ? seat.id : null, orgId: c.org ? c.org.id : null, name: person ? person.name : null, imageUrl: person ? person.imageUrl : null, acting: !!(person && person.acting), position: seat ? seat.name : c.org.name, org: c.org && c.seat ? c.org.name : null, sector: node.sector || 'independent', score: d.total, direct: d.score, indirect: d.indirect, counts: d.counts }; });
+  const links = []; for (const c of ranked) for (const [b, types] of acc.get(c).targets) { if (!idx.has(b)) continue; const t = ['appoints', 'elects', 'nominates', 'confirms'].find(k => types.has(k)); if (t) links.push({ from: idx.get(c), to: idx.get(b), type: t }); }
+  return { tiles, links, edges: D.edges.filter(e => POWER_W[e.type]).length, clusters: clusters.length };
+}
+// rozrzut jak w oryginale: lider na środku u góry, niżej rzędy po kilka kafli z lekkim przesunięciem co drugiej kolumny
+function powerLayout(W, H) {
+  const n = S.P.tiles.length; const top = S.mobile ? 118 : 84, bottom = S.mobile ? 100 : 74; const cols = S.mobile ? 2 : W < 700 ? 3 : W < 860 ? 4 : W < 1180 ? 5 : 6;
+  const rows = [[0]]; for (let i = 1; i < n; i += cols) rows.push(Array.from({ length: Math.min(cols, n - i) }, (_, k) => i + k));
+  const lead = 134; const rowH = Math.max(120, (H - top - bottom - lead) / Math.max(1, rows.length - 1)); const pos = new Array(n); const pad = S.mobile ? 4 : 20;
+  rows.forEach((r, ri) => r.forEach((t, ci) => { const x = pad + (W - 2 * pad) * (ci + 0.5) / r.length; const jitter = ri === 0 ? 0 : (ci % 2 ? 6 : 0); pos[t] = { x, y: (ri === 0 ? top : top + lead + rowH * (ri - 1)) + jitter }; }));
+  return { pos, height: Math.max(H, top + lead + rowH * (rows.length - 1) + bottom) };
+}
+function powerTileHtml(t, i, p) {
+  const nm = t.seatId ? (t.name || '(wakat)') : t.position; const ps = t.seatId ? t.position + (t.org ? ' · ' + t.org : '') : 'organ kolegialny'; const counts = ['appoints', 'elects', 'nominates', 'confirms', 'oversees'].filter(k => t.counts[k]).slice(0, 3).map(k => `${POWER_VERB[k]} <b>${t.counts[k]}</b>`).join(' · ') || (t.counts.internal ? `w swojej strukturze <b>${t.counts.internal}</b>` : '');
+  const img = t.imageUrl ? `<img src="${esc(t.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '';
+  return `<button type="button" class="ptile r${t.rank}" data-pid="${esc(t.id)}" data-i="${i}" style="--c:var(--sec-${esc(t.sector)});left:${F(p.x)}px;top:${F(p.y)}px" aria-label="${esc(`${t.rank}. ${nm}, ${t.position}`)}"><span class="av">${esc(t.name ? initials(t.name) : '—')}${img}</span><span class="nm">${esc(nm)}${t.acting ? ' <span class="badge">p.o.</span>' : ''}</span><span class="ps" title="${esc(ps)}">${esc(ps)}</span><span class="sc">${counts}</span></button>`;
+}
+function drawPower() {
+  if (!S.P) return; const box = $('#power'); box.hidden = false; measure(); const W = S.W, H = S.H; const L = powerLayout(W, H); const T = S.P.tiles;
+  $('#p-title').textContent = 'Mapa władzy: kto powołuje kogo'; $('#p-sub').textContent = `${T.length} stanowisk o największym zasięgu władzy formalnej według ${S.P.edges} relacji z podstawą prawną: powołuje, wybiera, wnioskuje, zatwierdza, nadzoruje. Bez newsów.`;
+  $('#p-tiles').innerHTML = T.map((t, i) => powerTileHtml(t, i, L.pos[i])).join('');
+  const svg = $('#p-lines'); svg.setAttribute('width', W); svg.setAttribute('height', L.height); const rad = i => (T[i].rank === 1 ? 31 : 25);
+  svg.innerHTML = S.P.links.map(l => { const a = L.pos[l.from], b = L.pos[l.to]; const ay = a.y + rad(l.from), by = b.y + rad(l.to); const dy = (by - ay) * 0.5; return `<path data-from="${l.from}" data-to="${l.to}" d="M${F(a.x)},${F(ay)} C${F(a.x)},${F(ay + dy)} ${F(b.x)},${F(by - dy)} ${F(b.x)},${F(by)}"/>`; }).join('');
+  $('#p-note').textContent = 'Zasięg: powołanie i wybór ×3 na miejsce, wniosek ×1,5, zatwierdzenie i nadzór ×1 (wewnątrz własnej struktury ćwierć tego) plus połowa zasięgu powoływanych. Linie: kto powołuje albo wybiera kogo w tej dwudziestce.';
+  powerSync();
+}
+function powerSync() {
+  const box = $('#power'); if (box.hidden || !S.P) return; const T = S.P.tiles; const si = S.selected ? T.findIndex(t => t.id === S.selected || t.seatId === S.selected || t.orgId === S.selected) : -1; const fi = S.pHover != null ? S.pHover : si;
+  box.classList.toggle('has-focus', fi >= 0); const near = i => fi < 0 || i === fi || S.P.links.some(l => (l.from === fi && l.to === i) || (l.to === fi && l.from === i));
+  box.querySelectorAll('.ptile').forEach((el, i) => { el.classList.toggle('sel', i === si); el.classList.toggle('on', near(i)); });
+  box.querySelectorAll('.p-lines path').forEach(p => p.classList.toggle('on', fi >= 0 && (+p.dataset.from === fi || +p.dataset.to === fi)));
+}
+function bindModeToggle() { document.querySelectorAll('#mode-toggle button').forEach(b => { if (b.__bound) return; b.__bound = true; b.addEventListener('click', () => setMode(b.getAttribute('data-mode'))); }); }
+function initPower() {
+  const btn = $('#mode-toggle').querySelector('[data-mode="power"]'); if (!powerAvailable()) { btn.hidden = true; return; }
+  S.P = computePower(); if (!S.P.tiles.length) { btn.hidden = true; return; } $('#mode-toggle').hidden = false; if (!S.B) $('#mode-toggle').querySelector('[data-mode="budget"]').hidden = true; bindModeToggle();
+  const box = $('#power'); box.addEventListener('click', ev => { const t = ev.target.closest('.ptile'); if (!t) return; const id = t.getAttribute('data-pid'); select(S.selected === id ? null : id, { from: 'power' }); });
+  box.addEventListener('pointerover', ev => { const t = ev.target.closest('.ptile'); const i = t ? +t.getAttribute('data-i') : null; if (i !== S.pHover) { S.pHover = i; powerSync(); } });
+  box.addEventListener('pointerleave', () => { S.pHover = null; powerSync(); });
+  document.addEventListener('click', ev => { const o = ev.target.closest && ev.target.closest('[data-open-power]'); if (o) { ev.preventDefault(); setMode('power'); } });
+  const strip = S.P.tiles.slice(0, 6).map(t => `<span class="av" style="--c:var(--sec-${esc(t.sector)})">${esc(t.name ? initials(t.name) : '—')}${t.imageUrl ? `<img src="${esc(t.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}</span>`).join('');
+  const card = document.createElement('section'); card.className = 'card'; card.id = 'power-card'; card.style.setProperty('--i', 3);
+  card.innerHTML = `<h3>Mapa władzy <span class="n">z relacji ustawowych, bez newsów</span></h3><p class="lede" style="font-size:14px;margin-bottom:12px">Kto powołuje, wybiera i nadzoruje najwięcej. Liczone z ${S.P.edges} relacji z podstawą prawną w grafie, nie z medialnych wzmianek.</p><button type="button" class="power-bar" data-open-power><span class="avs">${strip}</span><span class="lbl">${esc(S.P.tiles[0].name || S.P.tiles[0].position)} i ${S.P.tiles.length - 1} kolejnych stanowisk</span><span class="go">Mapa władzy ›</span></button>`;
+  $('#view-home').querySelector('section.card').insertAdjacentElement('afterend', card);
+  let rt = null; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (S.mode === 'power') drawPower(); }, 140); });
+}
 function initBudget() {
   if (!S.B) return; $('#mode-toggle').hidden = false;
-  document.querySelectorAll('#mode-toggle button').forEach(b => b.addEventListener('click', () => setMode(b.getAttribute('data-mode'))));
+  bindModeToggle();
   document.addEventListener('click', ev => { const k = ev.target.closest && ev.target.closest('[data-bpart]'); if (k) { pickBudgetPart(k.getAttribute('data-bpart')); return; } const o = ev.target.closest && ev.target.closest('[data-open-budget]'); if (o) setMode('budget'); });
   const top3 = S.B.groups.slice(0, 3).map(g => `${esc(g.name)} ${fmtPct(g.value / S.B.total)}`).join(', ');
   const card = document.createElement('section'); card.className = 'card'; card.id = 'budget-card'; card.style.setProperty('--i', 3);
@@ -2087,7 +2190,7 @@ async function main() {
     S.mode = 'graph'; S.brot = 0; S.jst = S.D.meta.gov === 'jst'; S.B = S.jst ? null : normalizeBudget(await loadBudget(payload.source));
     if (S.jst) applyJstGeometry(); if (S.D.meta.sectorTitles) Object.assign(SECTOR_TITLE, S.D.meta.sectorTitles); if (S.D.meta.sectorLabels) Object.assign(SECTOR_LABEL, S.D.meta.sectorLabels);
     S.L = computeLayout(S.D); loadHidden();
-    renderHome(); renderLegend(); render(); bind(); setCrumb(null); initBudget(); if (S.jst) renderJstHome(); else renderJstEntry();
+    renderHome(); renderLegend(); render(); bind(); setCrumb(null); initBudget(); initPower(); if (S.jst) renderJstHome(); else renderJstEntry();
     new MutationObserver(syncSheet).observe($('#panel'), { attributes:true, attributeFilter:['class'] }); syncSheet();
     $('#status').hidden = true; window.__GP = { stats: S.L.stats, layout: S.L, state: S };
     // ---- uchwyty testowe (kontrakt: tests/parity/README.md §Uchwyty) — tylko odczyt stanu, bez wpływu na działanie ----
@@ -2097,6 +2200,7 @@ async function main() {
       return {
         version: 1, skin: 'D',
         jst: () => S.D.meta.gov === 'jst' ? { teryt: S.D.meta.teryt, kind: S.D.meta.kind, name: S.D.meta.name, parent: S.D.meta.parent, children: (S.D.meta.children || []).length, population: S.D.meta.population } : null,
+        power: () => S.P ? { available: true, mode: S.mode, edges: S.P.edges, tiles: S.P.tiles.map(t => ({ rank: t.rank, id: t.id, seatId: t.seatId, orgId: t.orgId, name: t.name, position: t.position, sector: t.sector, score: Math.round(t.score * 10) / 10, counts: t.counts })), links: S.P.links.length, drawn: $('#power').hidden ? 0 : document.querySelectorAll('#power .ptile').length, lines: $('#power').hidden ? 0 : document.querySelectorAll('#power .p-lines path').length, selTile: document.querySelector('#power .ptile.sel') ? document.querySelector('#power .ptile.sel').getAttribute('data-pid') : null } : { available: false },
         budget: () => { if (!S.B) return { available: false }; const G = budgetGeom(); const r = $('#stage').getBoundingClientRect(); const rot = (S.brot || 0) * Math.PI / 180; return { available: true, mode: S.mode, year: S.B.year, total: S.B.total, count: S.B.count, groups: S.B.groups.map(g => ({ code: g.code, name: g.name, value: g.value })), selectedPart: S.budgetPart || null, rot: S.brot || 0, rotating: !!brotTimer, segments: S.B.leaves.map(p => { const a = (p.a0 + p.a1) / 2 + rot, rr = (G.r1 + G.R) / 2; return { code: p.code, nodeId: p.nodeId || null, effNodeId: p.nodeId || (p.parent && S.B.raw.parts[p.parent] ? S.B.raw.parts[p.parent].nodeId : null) || null, group: p.group, value: p.value, span: p.a1 - p.a0, x: r.left + G.cx + rr * Math.sin(a), y: r.top + G.cy - rr * Math.cos(a) }; }) }; },
         ids: () => S.D.nodes.map(n => n.id),
         node: id => { const n = S.D.byId[id]; return n ? { id: n.id, name: n.name, type: n.type, sector: n.sector, inCount: n.in.length, outCount: n.out.length, children: n.children.length, head: n.head || null, headOf: n.headOf || null, people: n.people.type === 'people' ? n.people.people.length : null } : null; },

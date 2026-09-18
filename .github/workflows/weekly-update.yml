@@ -23,8 +23,8 @@ jobs:
         with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "20", cache: "npm" }
-      - name: Narzędzia systemowe (pdftotext do sprawdzania treści aktów)
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Narzędzia systemowe (pdftotext do treści aktów, tesseract z pakietem polskim do skanów w BIP)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-pol
 
       - name: Pobierz źródła urzędowe i przelicz dane
         id: update
@@ -50,9 +50,9 @@ jobs:
         run: |
           git config user.name "graf-panstwa-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pl
+          git add data/pl data/jst
           if git diff --cached --quiet; then echo "Brak zmian w danych."; exit 0; fi
-          git commit -m "Aktualizacja tygodniowa ${{ steps.update.outputs.date }}: parlament, zmian merytorycznych: ${{ steps.update.outputs.events }}"
+          git commit -m "Aktualizacja tygodniowa ${{ steps.update.outputs.date }}: parlament (zmian: ${{ steps.update.outputs.events }}), samorząd (ponowne sprawdzenie nakładek)"
           git push
 
       - name: Lista do przejrzenia (akty personalne, podstawy prawne)

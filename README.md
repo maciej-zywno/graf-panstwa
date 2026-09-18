@@ -16,15 +16,16 @@ Projekt jest obywatelski i nie jest nastawiony na zysk. Dane i kod są otwarte.
 3. [Jak dane powstały i jak były sprawdzane](#jak-dane-powstały-i-jak-były-sprawdzane)
 4. [Struktura danych](#struktura-danych)
 5. [Budżet państwa](#budżet-państwa)
-6. [Samorząd: województwa, powiaty i gminy](#samorząd-województwa-powiaty-i-gminy)
-7. [Jak dane są aktualizowane](#jak-dane-są-aktualizowane)
-8. [Jak użyć danych](#jak-użyć-danych)
-9. [Uruchomienie i testy](#uruchomienie-i-testy)
-10. [Struktura repozytorium](#struktura-repozytorium)
-11. [Ograniczenia i znane braki](#ograniczenia-i-znane-braki)
-12. [Zgłaszanie błędów](#zgłaszanie-błędów)
-13. [Licencje](#licencje)
-14. [Inspiracja](#inspiracja)
+6. [Mapa władzy formalnej](#mapa-władzy-formalnej)
+7. [Samorząd: województwa, powiaty i gminy](#samorząd-województwa-powiaty-i-gminy)
+8. [Jak dane są aktualizowane](#jak-dane-są-aktualizowane)
+9. [Jak użyć danych](#jak-użyć-danych)
+10. [Uruchomienie i testy](#uruchomienie-i-testy)
+11. [Struktura repozytorium](#struktura-repozytorium)
+12. [Ograniczenia i znane braki](#ograniczenia-i-znane-braki)
+13. [Zgłaszanie błędów](#zgłaszanie-błędów)
+14. [Licencje](#licencje)
+15. [Inspiracja](#inspiracja)
 
 ## Co jest w grafie
 
@@ -223,6 +224,12 @@ Przełącznik „Graf | Budżet” w prawym dolnym rogu zamienia koło organów 
 
 Każda część ma kwoty `plan`, `planAfterChanges` i `actual` dla każdego roku (w tys. zł, z dokładnością źródła), podział na działy klasyfikacji budżetowej, dysponenta z podstawą prawną i grupę funkcjonalną wyznaczoną z działu o największym wykonaniu. Budżet państwa to nie cały sektor finansów publicznych: nie obejmuje samorządów, NFZ ani funduszy celowych. Pełny opis źródeł, metody i ograniczeń: [`docs/06-budzet-zrodla-i-metoda.md`](docs/06-budzet-zrodla-i-metoda.md).
 
+## Mapa władzy formalnej
+
+Trzeci widok sceny (przełącznik „Graf · Budżet · Mapa władzy” w prawym dolnym rogu, adres `#view=power`). To odpowiednik „power map” z oryginału: dwadzieścia osób z liniami powołań między nimi. Różnica jest zasadnicza: w oryginale sygnałem są wzmianki w mediach z 90 dni, u nas wyłącznie relacje z podstawą prawną z grafu. Newsów nie ma i nie będzie (decyzja właściciela z 17 i 18 września 2026).
+
+Jednostką mapy jest stanowisko jednoosobowe razem z organem, którym kieruje (Prezes Rady Ministrów z Radą Ministrów, Marszałek z Sejmem, minister z ministerstwem), żeby ta sama osoba nie miała dwóch kafli. Zasięg władzy liczy się z relacji wychodzących: powołanie i wybór po 3 punkty za każde obsadzane miejsce, wniosek o powołanie 1,5, zatwierdzenie i nadzór po 1, administrowanie 0,3. Relacje wewnątrz własnej struktury (Sejm i jego komisje, ministerstwo i jego jednostki) liczą się ćwierć tego i bez mnożenia przez miejsca. Do tego dochodzi połowa zasięgu stanowisk, które dane stanowisko powołuje albo wybiera (jeden krok). Wzór jest widoczny na stronie i celowo prosty: ma porządkować, nie orzekać. Liczby na kaflach (np. „powołuje 235”) to sumy miejsc z relacji poza własną strukturą; kliknięcie kafla otwiera stronę węzła z pełną listą relacji i przepisów.
+
 ## Samorząd: województwa, powiaty i gminy
 
 Każda jednostka samorządu ma własne koło pod adresem `?jst=<kod TERYT>`, np. https://grafpanstwa.pl/?jst=102003 (miasto Zgierz). Trzy sektory: stanowiąca i kontrolna (rada z radnymi i komisjami), wykonawcza (wójt, burmistrz albo prezydent, zarząd ze starostą lub marszałkiem, urząd, stanowiska) oraz nadzór i kontrola (wojewoda, Prezes Rady Ministrów, regionalna izba obrachunkowa, samorządowe kolegium odwoławcze, NIK). Wojewoda jest przejściem między kołem państwa a kołem województwa; wyszukiwarka rozumie nazwy miejscowości.
@@ -235,9 +242,9 @@ Każda jednostka samorządu ma własne koło pod adresem `?jst=<kod TERYT>`, np.
 | Ustrój | jeden zweryfikowany szablon na szczebel: 42 cytaty z ustaw o samorządzie gminnym, powiatowym, województwa, o pracownikach samorządowych, o samorządowych kolegiach odwoławczych i z Konstytucji, sprawdzonych automatycznie na tekstach jednolitych z ELI (`scripts/jst/verify-templates.py`) |
 | Kontrola | w każdej radzie liczba wybranych równa się liczbie mandatów z plików okręgów; każda z 2807 jednostek składa się i przechodzi kontrolę spójności przy budowie |
 | Dane | `data/jst/tiers.json` (szablony wariantów ze znacznikami), `data/jst/woj/<XX>.json` (zwarte dane jednostek), `data/jst/index.json` (spis), `data/jst/overlay/<XX>.json` (nakładka: stanowiska ze stron BIP); graf jednostki składa przeglądarka |
-| Skrypty | `scripts/jst/build-frame.py` (rama z PKW plus nakładka), `scripts/jst/verify-overlay.py` (niezależna weryfikacja nakładki: pobiera każdy adres od nowa i szuka nazwiska obok słowa funkcji) |
+| Skrypty | `scripts/jst/build-frame.py` (rama z PKW plus nakładka), `scripts/jst/verify-overlay.py` (niezależna weryfikacja nakładki: pobiera każdy adres od nowa i szuka nazwiska w dowolnej odmianie obok słowa funkcji; skany PDF czyta przez OCR), `scripts/jst/watch-pkw.py` (wybory uzupełniające, przedterminowe, ponowne i referenda lokalne w toku kadencji z portali PKW) |
 
-Nakładka `data/jst/overlay/<XX>.json` to jedyna część warstwy samorządowej zbierana ręcznie ze stron urzędów, bo starostowie, marszałkowie, zarządy, prezydia rad, skarbnicy i sekretarze nie mają rejestru maszynowego. Klucz jednostki to skrócony TERYT (`10` województwo, `1020` powiat, `1061` miasto na prawach powiatu, pełny sześciocyfrowy kod dla gminy). Każda jednostka ma `positions` z polem `role` (`marszalek`, `wicemarszalek`, `czlonek_zarzadu`, `starosta`, `wicestarosta`, `przewodniczacy_rady`, `wiceprzewodniczacy_rady`, `zastepca_prezydenta`, `skarbnik`, `sekretarz`) i listą `people`; osoba ma `name`, `sourceUrl`, `quote`, `retrievedAt`, opcjonalnie `startedAt` ze źródłem oraz `verdict` z `note` i `verifiedAt` nadawane przez sprawdzarkę. Do grafu trafiają tylko rekordy `confirmed`; brak rekordu daje na stanowisku „Brak danych o obsadzie”, nie „Wakat”. Lista `failed` w pliku wymienia, czego nie udało się odczytać i dlaczego (np. BIP powiatu bełchatowskiego ma puste kategorie „Starosta” i „Zarząd”, a protokoły sesji to skany bez tekstu).
+Nakładka `data/jst/overlay/<XX>.json` to jedyna część warstwy samorządowej zbierana ręcznie ze stron urzędów, bo starostowie, marszałkowie, zarządy, prezydia rad, skarbnicy i sekretarze nie mają rejestru maszynowego. Klucz jednostki to skrócony TERYT (`10` województwo, `1020` powiat, `1061` miasto na prawach powiatu, pełny sześciocyfrowy kod dla gminy). Każda jednostka ma `positions` z polem `role` (`marszalek`, `wicemarszalek`, `czlonek_zarzadu`, `starosta`, `wicestarosta`, `przewodniczacy_rady`, `wiceprzewodniczacy_rady`, `zastepca_prezydenta`, `skarbnik`, `sekretarz`) i listą `people`; osoba ma `name`, `sourceUrl`, `quote`, `retrievedAt`, opcjonalnie `startedAt` ze źródłem oraz `verdict` z `note` i `verifiedAt` nadawane przez sprawdzarkę. Do grafu trafiają tylko rekordy `confirmed`; brak rekordu daje na stanowisku „Brak danych o obsadzie”, nie „Wakat”. Lista `failed` w pliku wymienia, czego nie udało się odczytać i dlaczego. Przykład granicy metody: zarząd i prezydium rady powiatu bełchatowskiego są tylko w protokole I sesji, skanie PDF w BIP; OCR go czyta, ale `robots.txt` tego BIP zabrania automatom pobierać załączniki, więc sprawdzarka nie może potwierdzić tych ośmiu osób i pozostają one w pliku jako `unverified`, a na kole widać „Brak danych o obsadzie”. Zasad robots.txt nie obchodzimy.
 
 Czego jeszcze nie ma: nakładki dla pozostałych 15 województw, zmian w trakcie kadencji, składów komisji, list jednostek organizacyjnych i budżetów jednostek. Projekt całej warstwy: [`docs/07-projekt-samorzad.md`](docs/07-projekt-samorzad.md).
 
@@ -250,6 +257,8 @@ W każdy poniedziałek rano GitHub Actions uruchamia `scripts/weekly-update.py` 
 | Sejm i Senat: komisje, prezydia komisji, kluby i koła | buduje część `parlament` od nowa z API Sejmu i stron Senatu, potem drugim, niezależnym pobraniem sprawdza każde nazwisko | **tak**, ale tylko gdy drugi odczyt potwierdzi 100% osób i przejdzie komplet testów |
 | Akty personalne w Monitorze Polskim i Dzienniku Ustaw | wyłapuje nowe powołania, odwołania, wybory i zmiany w składzie Rady Ministrów przez API ELI i podpowiada, których węzłów mogą dotyczyć | nie, otwiera zgłoszenie z listą do przejrzenia przez człowieka |
 | Podstawy prawne węzłów | sprawdza status każdego aktu przywołanego w `legalSource` i sygnalizuje uchylenie albo zmianę statusu | nie, trafia na tę samą listę |
+| Samorząd: nakładka ze stron BIP | co tydzień pobiera od nowa stronę każdej osoby z nakładki i sprawdza nazwisko obok słowa funkcji (`scripts/jst/verify-overlay.py`), potem przebudowuje ramę | **tak**: osoba, której strona już nie potwierdza, znika z koła (zostaje w pliku jako `unverified` z powodem) i trafia na listę do przejrzenia; awaria strony (błąd sieci, HTTP 5xx) niczego nie zmienia |
+| Samorząd: wybory w toku kadencji | czyta portale wyników PKW dla kadencji 2024–2029 (wybory uzupełniające, przedterminowe, ponowne, referenda) i zgłasza nowe pozycje z kodem TERYT jednostki (`scripts/jst/watch-pkw.py`) | nie, lista do przejrzenia; wynik wyborów trzeba wprowadzić ręcznie |
 | Pozostałe osoby i struktura | jeszcze ręcznie; planowany jest monitor stron „kierownictwo” urzędów | nie |
 
 Zasady bezpieczeństwa: gdy źródło jest chwilowo niedostępne albo drugi odczyt nie potwierdzi kogokolwiek, dane zostają nietknięte. Data sprawdzenia (`provenance.verifiedAt`) zmienia się tylko przy rekordach, które automat faktycznie przeczytał. Zmiany merytoryczne są dopisywane do dziennika `data/pl/changes.jsonl` (jedno zdarzenie w wierszu: nowa osoba, odejście, zmiana funkcji, nowy albo usunięty węzeł i relacja), a stan strażnika aktów leży w `data/pl/state/eli.json`.

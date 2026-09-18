@@ -5,7 +5,7 @@ niezależny odczyt potwierdził 100% nazwisk. Akty personalne z Monitora Polskie
 trafiają na listę do przejrzenia przez człowieka.
 Wynik: dist/weekly/report.md i dist/weekly/summary.json. Kod wyjścia 0 także przy problemie ze źródłem (dane zostają wtedy nietknięte).
 Użycie: python3 scripts/weekly-update.py --date RRRR-MM-DD"""
-import json, os, re, shutil, subprocess, sys
+import glob, json, os, re, shutil, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
 date = sys.argv[sys.argv.index('--date') + 1]; OUT = os.path.join(ROOT, 'dist/weekly'); os.makedirs(OUT, exist_ok=True)
 FILES = ['data/pl/chunks/parlament.json', 'data/pl/chunks/parlament.verdicts.json', 'data/pl/graph.json']
@@ -34,9 +34,41 @@ except Exception as e:
     restore(); problem = str(e); verified = ''
 rc, eli_md, err = run('scripts/watch-eli.py', '--date', date); lines = err.strip().splitlines(); findings = int(lines[-1]) if rc == 0 and lines and lines[-1].isdigit() else 0
 if rc: eli_md = 'Strażnik aktów prawnych nie zadziałał: ' + err[-400:]
+# ---------- samorząd: ponowna weryfikacja nakładek (BIP) i przebudowa ramy ----------
+def verdicts(d): return {(k, p['role'], x['name']): x.get('verdict') for k, u in d['units'].items() for p in u.get('positions', []) for x in p.get('people', [])}
+overlays = sorted(glob.glob('data/jst/overlay/*.json')); jst_lines = []; jst_flipped = 0; jst_problem = None
+if overlays:
+    bak_jst = {f: open(f, 'rb').read() for f in overlays}
+    try:
+        for f in overlays:
+            before = verdicts(json.loads(bak_jst[f]))
+            rc, out, err = run('scripts/jst/verify-overlay.py', f, timeout=3000)
+            if rc not in (0, 1): raise RuntimeError(f'sprawdzarka nakładki {f}: ' + (err or out)[-400:])
+            after_doc = json.load(open(f, encoding='utf-8')); after = verdicts(after_doc)
+            notes = {(k, p['role'], x['name']): (x.get('note') or '') for k, u in after_doc['units'].items() for p in u.get('positions', []) for x in p.get('people', [])}
+            lost = [k for k in after if before.get(k) == 'confirmed' and after[k] != 'confirmed']
+            back = [k for k in after if before.get(k) != 'confirmed' and after[k] == 'confirmed']
+            unchecked = [k for k in after if notes[k].startswith('nie sprawdzono')]
+            st = after_doc['meta'].get('stats', {}); jst_flipped += len(lost)
+            jst_lines.append(f"- `{f}`: {st.get('people', len(after))} osób, potwierdzonych {st.get('confirmed', '?')}, niepotwierdzonych {st.get('unverified', '?')}, nie sprawdzono (awaria strony) {len(unchecked)}.")
+            for k in lost: jst_lines.append(f"  - **znika z koła:** {k[2]} ({k[1]}, jednostka {k[0]}): {notes[k]}")
+            for k in back: jst_lines.append(f"  - wraca na koło: {k[2]} ({k[1]}, jednostka {k[0]})")
+        rc, out, err = run('scripts/jst/build-frame.py', '--date', date, timeout=1500)
+        if rc: raise RuntimeError('budowa ramy samorządu: ' + (err or out)[-400:])
+        jst_lines.append('- Rama przebudowana: ' + (out.strip().splitlines() or [''])[-1])
+    except Exception as e:
+        for f, b in bak_jst.items(): open(f, 'wb').write(b)
+        jst_problem = str(e); jst_lines = [f'**Nakładki nietknięte.** Powód: {jst_problem}']
+findings += jst_flipped
+# ---------- samorząd: wybory w toku kadencji (PKW: uzupełniające, przedterminowe, ponowne, referenda) ----------
+rc, pkw_md, err = run('scripts/jst/watch-pkw.py', '--date', date, timeout=600); lines = err.strip().splitlines(); pkw_new = int(lines[-1]) if rc == 0 and lines and lines[-1].isdigit() else 0
+if rc: pkw_md = 'Strażnik PKW nie zadziałał (stan nietknięty): ' + (err or pkw_md)[-400:]
+findings += pkw_new
 report = [f'# Aktualizacja tygodniowa {date}', '', '## Parlament (wchodzi automatycznie)', '']
 report += [f'**Nie wprowadzono zmian.** Powód: {problem}'] if problem else [verified, '', summary_md.strip()]
 report += ['', '## Akty prawne (do przejrzenia przez człowieka)', '', eli_md.strip(), '']
+if overlays: report += ['', '## Samorząd: nakładki ze stron BIP (ponowne sprawdzenie każdej osoby)', '', *jst_lines, '']
+report += ['', '## Samorząd: wybory w toku kadencji (PKW, do przejrzenia przez człowieka)', '', pkw_md.strip(), '']
 open(os.path.join(OUT, 'report.md'), 'w', encoding='utf-8').write('\n'.join(report))
-json.dump({'date': date, 'events': events, 'findings': findings, 'problem': problem}, open(os.path.join(OUT, 'summary.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+json.dump({'date': date, 'events': events, 'findings': findings, 'problem': problem, 'jstFlipped': jst_flipped, 'jstProblem': jst_problem, 'pkwNew': pkw_new}, open(os.path.join(OUT, 'summary.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 print('\n'.join(report))

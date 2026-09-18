@@ -15,7 +15,8 @@ Zasady sieci: User-Agent projektu, odstęp ≥1 s między żądaniami do tego sa
 (strona zabroniona → `unverified` z powodem, bez obchodzenia). Strony JS: najpierw zwykłe pobranie; gdy nazwiska nie ma,
 a Playwright jest w node_modules, drugi odczyt przeglądarką. Ładunek Next.js (self.__next_f.push) jest dekodowany, bo
 niektóre BIP-y (dostawca bip.net.pl) trzymają treść artykułu tylko tam. PDF-y czytane przez pdftotext (skany bez warstwy
-tekstu dają `unverified`).
+tekstu przechodzą przez OCR: tesseract z pakietem `pol` w CI albo Apple Vision przez ocrmac na macOS). Awaria sieci lub serwera
+(błąd połączenia, HTTP 5xx) nie zmienia werdyktu, tylko dopisuje notatkę „nie sprawdzono”; strona, która zniknęła (404), daje `unverified`.
 """
 import datetime, html, json, os, re, subprocess, sys, time, unicodedata, urllib.error, urllib.parse, urllib.request, urllib.robotparser
 
@@ -33,6 +34,8 @@ KEYWORDS = {  # słowa kluczowe funkcji; wystarczy jedno; porównanie bez wielko
     'zastepca_prezydenta': ['wiceprezydent', 'zastępca prezydenta', 'zastępcy prezydenta', 'z-ca prezydenta', 'zastępca prezydent'],
     'skarbnik': ['skarbnik'],
     'sekretarz': ['sekretarz'],
+    'burmistrz_dzielnicy': ['burmistrz'],
+    'zastepca_burmistrza': ['zastępca burmistrza', 'zastępcy burmistrza', 'zastępczyni burmistrza', 'wiceburmistrz', 'z-ca burmistrza'],
 }
 WINDOW = 600  # znaki: jak blisko nazwiska musi stać słowo kluczowe
 _last = {}
@@ -80,7 +83,9 @@ def fetch(url):
         try:
             out = subprocess.run(['pdftotext', '-layout', '-', '-'], input=raw, capture_output=True, timeout=60)
             txt = out.stdout.decode('utf-8', 'replace')
-            return txt, ('' if txt.strip() else 'PDF bez warstwy tekstu (skan)')
+            if len(re.sub(r'[^\w]', '', txt)) >= 200:
+                return txt, ''
+            return ocr_pdf(raw)  # skan bez warstwy tekstu
         except FileNotFoundError:
             return '', 'brak pdftotext'
     enc = 'utf-8'
@@ -94,6 +99,38 @@ def fetch(url):
     except Exception:
         body = raw.decode('utf-8', 'replace')
     return to_text(body), ''
+
+
+OCR_VENV = os.path.expanduser('~/.venvs/ocr/bin/python')  # macOS: Vision przez pakiet ocrmac (Homebrew bez licencji Xcode nie instaluje tesseracta)
+
+
+def ocr_pdf(raw):
+    """Skany: pdftoppm → tesseract z pakietem polskim (Linux, CI) albo Apple Vision przez ocrmac (macOS). Zwraca (tekst, opis_błędu)."""
+    import glob as _glob, shutil, tempfile
+    d = tempfile.mkdtemp(prefix='gp-ocr-')
+    try:
+        src = os.path.join(d, 'in.pdf'); open(src, 'wb').write(raw)
+        subprocess.run(['pdftoppm', '-r', '200', '-png', src, os.path.join(d, 'p')], check=True, timeout=300, capture_output=True)
+        pages = sorted(_glob.glob(os.path.join(d, 'p-*.png')))
+        if not pages:
+            return '', 'PDF bez warstwy tekstu (skan); pdftoppm nie dał stron'
+        if shutil.which('tesseract'):
+            out = []
+            for png in pages:
+                r = subprocess.run(['tesseract', png, '-', '-l', 'pol'], capture_output=True, timeout=300); out.append(r.stdout.decode('utf-8', 'replace'))
+            return '\n'.join(out), ''
+        if os.path.exists(OCR_VENV):
+            code = ("import sys, glob\nfrom ocrmac import ocrmac\n"
+                    "for f in sorted(glob.glob(sys.argv[1] + '/p-*.png')):\n"
+                    "    a = ocrmac.OCR(f, language_preference=['pl-PL'], recognition_level='accurate').recognize()\n"
+                    "    print('\\n'.join(x[0] for x in sorted(a, key=lambda x: (-x[2][1], x[2][0]))))\n")
+            r = subprocess.run([OCR_VENV, '-c', code, d], capture_output=True, timeout=900)
+            return r.stdout.decode('utf-8', 'replace'), ('' if r.returncode == 0 else 'OCR (ocrmac) nie zadziałał: ' + r.stderr.decode('utf-8', 'replace')[-120:])
+        return '', 'PDF bez warstwy tekstu (skan); brak OCR (tesseract z pakietem pol albo ocrmac)'
+    except Exception as e:
+        return '', f'OCR nie zadziałał: {type(e).__name__}: {str(e)[:80]}'
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
 
 
 def fetch_js(url):
@@ -143,15 +180,21 @@ def norm(s):
     return re.sub(r'\s+', ' ', s)
 
 
+def tok_re(t):
+    """Wzorzec członu nazwiska odporny na odmianę: temat (bez 1–2 ostatnich liter) plus do 5 liter końcówki, np. „Jacka Zatorskiego” dla „Jacek Zatorski”."""
+    stem = t[:max(3, len(t) - (2 if len(t) > 4 else 1))]
+    return re.compile(r'(?<!\w)' + re.escape(stem) + r'\w{0,5}')
+
+
 def name_positions(text, name):
-    """Pozycje wszystkich wystąpień nazwiska: każdy człon imienia i nazwiska (≥3 znaki) w oknie 80 znaków, w dowolnej kolejności."""
+    """Pozycje wszystkich wystąpień nazwiska: każdy człon imienia i nazwiska (≥3 znaki, w dowolnej odmianie) w oknie 80 znaków, w dowolnej kolejności."""
     toks = [t for t in re.split(r'[\s\-]+', norm(name)) if len(t) >= 3]
     if not toks:
         return []
-    anchor = max(toks, key=len); out = []
-    for m in re.finditer(re.escape(anchor), text):
+    anchor = max(toks, key=len); pats = [tok_re(t) for t in toks]; out = []
+    for m in tok_re(anchor).finditer(text):
         win = text[max(0, m.start() - 80):m.end() + 80]
-        if all(t in win for t in toks):
+        if all(pt.search(win) for pt in pats):
             out.append(m.start())
     return out
 
@@ -194,6 +237,10 @@ def main():
                 if url not in cache:
                     cache[url] = fetch_js(url) if force_js else fetch(url)
                 text, err = cache[url]
+                if err and not text and (err.startswith('błąd pobrania') or re.match(r'HTTP 5\d\d', err)):
+                    # awaria sieci albo serwera: werdykt zostaje, tylko notatka; strona zniknięta (404) albo skan bez OCR daje unverified niżej
+                    p['note'] = f'nie sprawdzono {today}: {err}'; stats[p.get('verdict') if p.get('verdict') in stats else 'unverified'] += 1
+                    print(f'??? {key} {pos["role"]:24} {p["name"]:32} {p["note"]}  {url}'); continue
                 verdict, note = ('unverified', err) if err and not text else check(text, p, pos['role'])
                 if verdict == 'unverified' and not force_js and not (err and 'robots' in err):
                     jtext, jerr = fetch_js(url)  # drugi odczyt przeglądarką: strony JS

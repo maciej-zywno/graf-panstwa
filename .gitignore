@@ -27,3 +27,7 @@ deploy/NOTATKI-PRYWATNE.md
 
 .publish-state.json
 .DS_Store
+
+# Python
+__pycache__/
+*.pyc

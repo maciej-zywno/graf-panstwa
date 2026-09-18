@@ -6,9 +6,9 @@
   "method": "Ręczno-agentowy odczyt stron BIP i oficjalnych stron urzędów (curl z UA projektu, ≥1 s/host, robots.txt; strony JS przez Playwright; ładunek Next.js dekodowany). Każda osoba ma adres strony, cytat i datę odczytu. Verdict nadaje niezależny przebieg scripts/jst/verify-overlay.py, który pobiera każdy sourceUrl od nowa i szuka nazwiska obok słowa kluczowego funkcji.",
   "stats": {
    "units": 25,
-   "people": 226,
+   "people": 234,
    "confirmed": 226,
-   "unverified": 0
+   "unverified": 8
   },
   "verifiedAt": "2026-09-18"
  },
@@ -196,6 +196,124 @@
    "bipUrl": "https://spbelchatow.bip.gov.pl/",
    "positions": [
     {
+     "role": "starosta",
+     "title": "Starosta",
+     "people": [
+      {
+       "name": "Jacek Zatorski",
+       "sourceUrl": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "quote": "Komisja Skrutacyjna stwierdziła wybór radnego Jacka Zatorskiego na Starostę",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "verdict": "unverified",
+       "note": "robots.txt zabrania pobrania",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta",
+     "people": [
+      {
+       "name": "Jolanta Pawlikowska",
+       "sourceUrl": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "quote": "Komisja Skrutacyjna stwierdziła wybór radnej Jolanty Pawlikowskiej na Wicestarostę",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "verdict": "unverified",
+       "note": "robots.txt zabrania pobrania",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek zarządu",
+     "people": [
+      {
+       "name": "Marek Jasiński",
+       "sourceUrl": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "quote": "Komisja Skrutacyjna stwierdziła wybór radnego Marka Jasińskiego na członka Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "verdict": "unverified",
+       "note": "robots.txt zabrania pobrania",
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Anna Kamieniak",
+       "sourceUrl": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "quote": "Komisja Skrutacyjna stwierdziła wybór radnej Anny Kamieniak na członka Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "verdict": "unverified",
+       "note": "robots.txt zabrania pobrania",
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Łukasz Bartosik",
+       "sourceUrl": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "quote": "Komisja Skrutacyjna stwierdziła wybór radnego Lukasza Bartosika na członka Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "verdict": "unverified",
+       "note": "robots.txt zabrania pobrania",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący rady",
+     "people": [
+      {
+       "name": "Marek Chrzanowski",
+       "sourceUrl": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "quote": "Chrzanowskiemu wyboru na Przewodniczącego Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "verdict": "unverified",
+       "note": "robots.txt zabrania pobrania",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący rady",
+     "people": [
+      {
+       "name": "Agnieszka First",
+       "sourceUrl": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "quote": "Komisja Skrutacyjna stwierdziła wybór radnej Agnieszki First oraz radnego Jaroslawa Janaszewskiego na Wiceprzewodniczących Rady Powiatu w Belchatowie",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "verdict": "unverified",
+       "note": "robots.txt zabrania pobrania",
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jarosław Janaszewski",
+       "sourceUrl": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "quote": "Komisja Skrutacyjna stwierdziła wybór radnej Agnieszki First oraz radnego Jaroslawa Janaszewskiego na Wiceprzewodniczących Rady Powiatu w Belchatowie",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
+       "verdict": "unverified",
+       "note": "robots.txt zabrania pobrania",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
      "role": "sekretarz",
      "title": "Sekretarz Powiatu Bełchatowskiego",
      "people": [
@@ -232,7 +350,8 @@
    ],
    "notes": [
     "Ani BIP (spbelchatow.bip.gov.pl, system SSDIP), ani oficjalna strona nie publikują w HTML składu Zarządu Powiatu ani prezydium Rady: kategorie BIP 'Starosta' i 'Zarząd Powiatu' są puste, strona 'Rada Powiatu 2024-2029' wymienia tylko składy komisji. Protokoły sesji w BIP to skany PDF bez warstwy tekstu. Oświadczenia majątkowe w BIP wymieniają osoby pod nagłówkiem 'Członkowie Zarządu Powiatu', ale bez funkcji i z pozycjami z poprzedniej kadencji, więc nie użyto ich jako źródła.",
-    "Sekretarz i skarbnik ze strony 'Wydziały Starostwa Powiatowego' (oficjalna strona)."
+    "Sekretarz i skarbnik ze strony 'Wydziały Starostwa Powiatowego' (oficjalna strona).",
+    "Zarząd i prezydium rady odczytane z protokołu I sesji Rady Powiatu z 7 maja 2024 r. (skan PDF w BIP, warstwa tekstu przez OCR). To stan z dnia wyboru: BIP nie publikuje aktualnego składu, więc późniejsza zmiana na tych stanowiskach nie byłaby tu widoczna bez kolejnego protokołu."
    ]
   },
   "1002": {
@@ -910,7 +1029,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwisko przed imionami: „Sokołowski Sławomir Marek”.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -927,7 +1046,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwisko przed imionami: „Biała Agnieszka Regina”.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       },
       {
@@ -938,7 +1057,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwisko przed imieniem: „Kotecka Ewa”.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -1074,7 +1193,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwisko przed imieniem.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -1091,7 +1210,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwisko przed imieniem.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       },
       {
@@ -1102,7 +1221,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwisko przed imieniem.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -1182,7 +1301,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona zapisuje nazwisko z odstępami wokół łącznika: „Wenne - Błażyńska”.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -1566,7 +1685,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwiska wielkimi literami.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -1583,7 +1702,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwiska wielkimi literami.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       },
       {
@@ -1594,7 +1713,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Strona podaje nazwiska wielkimi literami.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -1611,7 +1730,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Nazwisko na stronie wielkimi literami; treść artykułu tylko w ładunku RSC Next.js.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -1628,7 +1747,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "Nazwisko na stronie wielkimi literami; treść artykułu tylko w ładunku RSC Next.js.",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -3554,7 +3673,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "(odczyt Playwright)",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -3571,7 +3690,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "(odczyt Playwright)",
+       "note": null,
        "verifiedAt": "2026-09-18"
       },
       {
@@ -3582,7 +3701,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "(odczyt Playwright)",
+       "note": null,
        "verifiedAt": "2026-09-18"
       },
       {
@@ -3593,7 +3712,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "(odczyt Playwright)",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -3788,33 +3907,5 @@
    ]
   }
  },
- "failed": [
-  {
-   "key": "1001",
-   "what": "Starosta, wicestarosta, członkowie Zarządu Powiatu Bełchatowskiego",
-   "why": "BIP (SSDIP) ma puste kategorie 'Starosta' i 'Zarząd Powiatu'; oficjalna strona nie ma podstrony o zarządzie (artykuł 'Rada Powiatu 2024-2029' zawiera tylko komisje); protokoły sesji to skany PDF bez tekstu; oświadczenia majątkowe nie podają funkcji.",
-   "tried": [
-    "https://spbelchatow.bip.gov.pl/starosta/",
-    "https://spbelchatow.bip.gov.pl/zarzad-powiatu/",
-    "https://spbelchatow.bip.gov.pl/czlonkowie-zarzadu-powiatu/",
-    "https://www.powiat-belchatowski.pl/powiat-t70/rada-powiatu-i-zarzad-powiatu-t290/rada-powiatu-2024-2029-a457",
-    "https://www.powiat-belchatowski.pl/powiat-t70/rada-powiatu-i-zarzad-powiatu-t290/rada-powiatu-2024-2029-a457/rada-powiatu-i-zarzad-powiatu-r18213",
-    "https://www.powiat-belchatowski.pl/powiat-t70/wydzialy-starostwa-powiatowego-t296",
-    "https://spbelchatow.bip.gov.pl/protokoly-sesji-2024-2029-vii-kadencja/protokol-i-sesji-z-dnia-7-maja-2024-r.html (PDF skan)",
-    "https://spbelchatow.bip.gov.pl/protokoly-sesji-2024-2029-vii-kadencja/protokol-xx-sesji-z-dnia-28-stycznia-2026-r.html (PDF skan)",
-    "https://spbelchatow.bip.gov.pl/rada-powiatu-w-belchatowie-kadencja-2024-2029/uchwaly-rady-powiatu-w-belchatowie/ (lista uchwał bez nazwisk w tytułach)"
-   ]
-  },
-  {
-   "key": "1001",
-   "what": "Przewodniczący i wiceprzewodniczący Rady Powiatu w Bełchatowie",
-   "why": "Jak wyżej: BIP nie ma strony prezydium (kategoria kadencji 2024-2029 zawiera tylko sesje, protokoły, interpelacje, uchwały); oficjalna strona podaje wyłącznie przewodniczących komisji; protokół I sesji z 7 maja 2024 r. to skan bez warstwy tekstu (brak OCR w tym przebiegu).",
-   "tried": [
-    "https://spbelchatow.bip.gov.pl/rada-powiatu-w-belchatowie-kadencja-2024-2029/",
-    "https://spbelchatow.bip.gov.pl/radni-rady-powiatu/",
-    "https://www.powiat-belchatowski.pl/powiat-t70/rada-powiatu-i-zarzad-powiatu-t290/rada-powiatu-2024-2029-a457",
-    "https://spbelchatow.bip.gov.pl/protokoly-sesji-2024-2029-vii-kadencja/protokol-i-sesji-z-dnia-7-maja-2024-r.html (PDF skan)"
-   ]
-  }
- ]
+ "failed": []
 }

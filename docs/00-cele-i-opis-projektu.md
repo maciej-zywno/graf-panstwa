@@ -47,7 +47,7 @@ projektowych.** Przy każdym wyborze pytamy najpierw „jak robi to CivLab?”. 
 | Wyszukiwarka po nazwie i aliasach | jest |
 | Latest Changes: wakaty, acting officials, oś czasu | kafle są, brak danych o zmianach |
 | Latest News ze streszczeniem i linkami do organów | świadomie pominięte (decyzja 17.09.2026) |
-| Power map: kto jest w newsach (90 dni) | świadomie pominięte: w oryginale liczy wzmianki w mediach, a mediów nie używamy |
+| Power map: kto jest w newsach (90 dni) | zastąpione **mapą władzy formalnej** (18.09.2026): ten sam układ dwudziestu osób z liniami powołań, ale liczony z relacji ustawowych grafu, bez mediów |
 | Animacje sceny: obrót do godz. 6, rozsuwanie rzędu podjednostek, wzrost wybranego glifu | jest (zmierzone na oryginale klatka po klatce, testy `10-fan-animation`) |
 | Rozmiar koła i układ boxu informacyjnego jak na stronie organu w oryginale | jest (testy `09-circle-size-and-panel`) |
 | Widok „Budżet” jak w wersji SF: pierścień wydatków, zakładka w panelu | jest: budżet państwa według części, wykonanie 2025 i plan 2026 (testy `12-budget`); koło celowo się nie obraca |
@@ -65,7 +65,7 @@ Studenci i nauczyciele prawa oraz WOS. Obywatel, który chce sprawdzić, „kto 
 - Oświadczenia majątkowe, powiązania biznesowe, dane prywatne.
 - Oceny i werdykty. Pokazujemy dane z cytatem, także w sporach ustrojowych.
 - **Newsy i media w jakiejkolwiek postaci** (decyzja właściciela z 17.09.2026): żadnej zakładki z aktualnościami, żadnego poboru RSS mediów ani Google News, żadnych streszczeń artykułów. Powód: projekt ma pokazywać ustrój z dokumentów urzędowych, a nie powielać przekaz mediów, zwłaszcza sensacyjnych i niskiej jakości.
-- **Power map z oryginału**, bo jej jedynym sygnałem są wzmianki w mediach. Do rozważenia kiedyś wyłącznie w wersji opartej na aktach urzędowych (np. liczba powołań w Monitorze Polskim), nigdy na newsach.
+- **Power map z oryginału w wersji newsowej**, bo jej jedynym sygnałem są wzmianki w mediach. Zbudowana jest za to wersja formalna: zasięg władzy z relacji ustawowych grafu (powołuje, wybiera, wnioskuje, zatwierdza, nadzoruje), opisana w README.
 - Rankingi osób.
 - Monetyzacja, konta użytkowników, aplikacja mobilna.
 
