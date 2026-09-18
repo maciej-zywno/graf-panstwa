@@ -1822,7 +1822,7 @@ function renderNode(n) {
     ${n.statusNote ? `<p class="desc" style="border-left:2px solid var(--st-serious);padding-left:10px;font-size:13px">${esc(n.statusNote)}</p>` : ''}
     ${links.length ? `<div class="linkrow">${links.join('')}</div>` : ''}
     ${n.legalSource && n.legalSource.title ? `<p class="legal-title">${esc(n.legalSource.title)}</p>` : ''}
-    ${n.externalRef ? `<p class="xref"><a href="${esc(jstHref(null, n.externalRef))}">Zobacz ten organ w grafie państwa</a></p>` : ''}${!S.jst && n.subtype === 'voivode' ? `<p class="xref"><button type="button" class="morelink" data-jst-woj="${esc(n.name.replace(/^Wojewoda\s+/, ''))}">Samorząd tego województwa: sejmik, zarząd, powiaty i gminy</button></p>` : ''}
+    ${n.externalRef ? `<p class="xref"><a href="${esc(jstHref(null, n.externalRef))}">Zobacz ten organ w grafie państwa</a></p>` : ''}${n.externalJst && n.externalJst.t ? `<p class="xref"><a href="${esc(jstHref(n.externalJst.t, n.externalJst.node))}">Zobacz ten organ w kole: ${esc(n.externalJst.label || n.externalJst.t)}</a></p>` : ''}${!S.jst && n.subtype === 'voivode' ? `<p class="xref"><button type="button" class="morelink" data-jst-woj="${esc(n.name.replace(/^Wojewoda\s+/, ''))}">Samorząd tego województwa: sejmik, zarząd, powiaty i gminy</button></p>` : ''}
     <div class="node-meta">${sub.length ? `<p class="node-sub mono">${esc(sub.join(' · '))}</p>` : ''}<div class="chips">${chips.join('')}</div></div>${ecHtml}
     ${renderHeadSection(n)}</section>
     <section class="card" style="--i:1">
@@ -1951,9 +1951,9 @@ function expandJst(tiers, bundle, t) {
   for (const [key, ppl] of Object.entries(u.ov || {})) { const n = N[`${P}-${key}`]; if (!n) continue;
     n.people = { type: 'people', people: ppl.map(p => person(n.id, p.name, p.positionName || n.name, null, { electedAt: null, sourceUrl: p.sourceUrl, startedAt: p.startedAt || null, startedAtSource: p.startedAtSource || null, verifiedAt: p.verifiedAt || null })) }; n.status = 'active'; n.statusNote = null;
     n.provenance = { sources: [...new Set(ppl.map(p => p.sourceUrl))].sort(), verifiedAt: ppl.map(p => p.verifiedAt || '').sort().pop() || g.meta.generatedAt, confidence: 'high', verdict: 'confirmed' }; }
-  if (u.url) N[`${P}-urzad`].officialUrl = u.url; if (u.bip) N[`${P}-urzad`].bipUrl = u.bip;
-  const wv = N[`${P}-wojewoda`]; wv.name = sh.wojewoda.name; wv.externalRef = sh.wojewoda.ref; wv.people = { type: 'people', people: sh.wojewoda.people }; wv.provenance.sources = ['https://grafpanstwa.pl/#node=' + (sh.wojewoda.ref || '')];
-  N[`${P}-prm`].people = { type: 'people', people: sh.prm.people }; N[`${P}-rio`].name = 'Regionalna Izba Obrachunkowa ' + sh.rio;
+  const site = N[`${P}-urzad`] || N[`${P}-zarzad`]; if (site && u.url) site.officialUrl = u.url; if (site && u.bip) site.bipUrl = u.bip; // dzielnica m.st. Warszawy nie ma węzła urzędu
+  if (N[`${P}-wojewoda`]) { const wv = N[`${P}-wojewoda`]; wv.name = sh.wojewoda.name; wv.externalRef = sh.wojewoda.ref; wv.people = { type: 'people', people: sh.wojewoda.people }; wv.provenance.sources = ['https://grafpanstwa.pl/#node=' + (sh.wojewoda.ref || '')];
+    N[`${P}-prm`].people = { type: 'people', people: sh.prm.people }; N[`${P}-rio`].name = 'Regionalna Izba Obrachunkowa ' + sh.rio; }
   const unitInfo = c => { const x = bundle.units[c]; return { t: c, n: x.n, k: x.k, pop: x.pop, h: x.h ? x.h[0] : null, o: x.o || null }; };
   const kids = Object.keys(bundle.units).filter(c => bundle.units[c].p === t).sort((a, b) => bundle.units[a].n.localeCompare(bundle.units[b].n, 'pl'));
   const chain = []; let cur = u.p; while (cur && bundle.units[cur]) { chain.unshift({ t: cur, n: bundle.units[cur].n }); cur = bundle.units[cur].p; }
@@ -1964,11 +1964,11 @@ async function loadJst(t) {
   const base = jstBase(); if (!base) throw new Error('Dane samorządowe nie są dostępne w tej wersji strony'); const get = async f => { const r = await fetch(base + f, { cache: 'no-cache' }); if (!r.ok) throw new Error(`HTTP ${r.status} — nie udało się pobrać ${base + f}`); return r.json(); };
   const [tiers, bundle] = await Promise.all([get('tiers.json'), get(`woj/${t.slice(0, 2)}.json`)]); return { data: expandJst(tiers, bundle, t), source: `${base}woj/${t.slice(0, 2)}.json#${t}` };
 }
-const JST_KIND = { wojewodztwo: 'Województwo', powiat: 'Powiat', mnpp: 'Miasto na prawach powiatu', gmina: 'Gmina' };
+const JST_KIND = { wojewodztwo: 'Województwo', powiat: 'Powiat', mnpp: 'Miasto na prawach powiatu', gmina: 'Gmina', dzielnica: 'Dzielnica m.st. Warszawy' };
 // karta nawigacji na stronie startowej jednostki: jednostka nadrzędna, podrzędne, powrót do grafu państwa
 function renderJstHome() {
   const m = S.D.meta; if (m.gov !== 'jst') return; const pop = (m.population || 0).toLocaleString('pl-PL');
-  const kids = m.childUnits || []; const groups = [['powiat', 'Powiaty'], ['mnpp', 'Miasta na prawach powiatu'], ['gmina', 'Gminy']].map(([k, l]) => [l, kids.filter(c => c.k === k)]).filter(x => x[1].length);
+  const kids = m.childUnits || []; const groups = [['powiat', 'Powiaty'], ['mnpp', 'Miasta na prawach powiatu'], ['gmina', 'Gminy'], ['dzielnica', 'Dzielnice']].map(([k, l]) => [l, kids.filter(c => c.k === k)]).filter(x => x[1].length);
   const card = document.createElement('section'); card.className = 'card'; card.id = 'jst-card'; card.style.setProperty('--i', 3);
   card.innerHTML = `<h3>${esc(JST_KIND[m.kind] || 'Jednostka')} <span class="n">TERYT ${esc(m.teryt)} · ${pop} mieszkańców</span></h3>
     <div class="jst-up">${(m.chain || []).map(c => `<a href="${esc(jstHref(c.t))}">${esc(c.n)}</a>`).concat([`<a href="${esc(jstHref(null))}">Graf państwa</a>`]).join('<span>·</span>')}</div>
@@ -1979,7 +1979,7 @@ function renderJstHome() {
 // wyszukiwarka miejscowości: spis jednostek ładuje się przy pierwszym użyciu
 let JST_INDEX = null, JST_INDEX_P = null;
 function loadJstIndex() { if (JST_INDEX || JST_INDEX_P) return JST_INDEX_P; const base = jstBase(); if (!base) return null; JST_INDEX_P = fetch(base + 'index.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(d => { if (d) { JST_INDEX = d; const byT = {}; d.units.forEach(u => { byT[u.t] = u; u.key = norm(u.n + ' ' + (u.h || '')); }); JST_INDEX.byT = byT; } return JST_INDEX; }).catch(() => null); return JST_INDEX_P; }
-function searchJst(q) { if (!JST_INDEX) return []; const words = norm(q).split(/\s+/).filter(w => w.length > 1); if (!words.length) return []; const hits = JST_INDEX.units.filter(u => words.every(w => u.key.includes(w))); const rank = { wojewodztwo: 0, mnpp: 1, powiat: 2, gmina: 3 }; const first = words[0];
+function searchJst(q) { if (!JST_INDEX) return []; const words = norm(q).split(/\s+/).filter(w => w.length > 1); if (!words.length) return []; const hits = JST_INDEX.units.filter(u => words.every(w => u.key.includes(w))); const rank = { wojewodztwo: 0, mnpp: 1, powiat: 2, gmina: 3, dzielnica: 4 }; const first = words[0];
   return hits.sort((a, b) => (norm(a.n).split(' ').some(x => x.startsWith(first)) ? 0 : 1) - (norm(b.n).split(' ').some(x => x.startsWith(first)) ? 0 : 1) || rank[a.k] - rank[b.k] || b.pop - a.pop).slice(0, 8); }
 function jstResultHtml(u, i) { const par = JST_INDEX.byT[u.p]; return `<a class="result jst-result" role="option" id="jres-${i}" tabindex="-1" href="${esc(jstHref(u.t))}"><span class="sw"><svg viewBox="-8 -8 16 16"><circle r="5.2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle r="1.8" fill="currentColor"/></svg></span><span class="r-name">${esc(u.n)}<small>${esc(JST_KIND[u.k])}${par ? ' · ' + esc(par.n) : ''}${u.h ? ' · ' + esc(u.h) : ''}</small></span></a>`; }
 

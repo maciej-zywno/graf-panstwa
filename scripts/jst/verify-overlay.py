@@ -31,7 +31,7 @@ KEYWORDS = {  # słowa kluczowe funkcji; wystarczy jedno; porównanie bez wielko
     'wicestarosta': ['wicestarost'],
     'przewodniczacy_rady': ['przewodnicz'],
     'wiceprzewodniczacy_rady': ['wiceprzewodnicz'],
-    'zastepca_prezydenta': ['wiceprezydent', 'zastępca prezydenta', 'zastępcy prezydenta', 'z-ca prezydenta', 'zastępca prezydent'],
+    'zastepca_prezydenta': ['wiceprezydent', 'zastępca prezydenta', 'zastępcy prezydenta', 'zastępczyni prezydenta', 'z-ca prezydenta', 'zastępca prezydent'],
     'skarbnik': ['skarbnik'],
     'sekretarz': ['sekretarz'],
     'burmistrz_dzielnicy': ['burmistrz'],
@@ -67,14 +67,20 @@ def robots_ok(url):
     return rp.can_fetch(UA, url) and rp.can_fetch('graf-panstwa', url)
 
 
+import http.cookiejar
+_opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+
+
 def fetch(url):
-    """Zwraca (tekst, opis_błędu). Tekst po zdjęciu HTML; PDF przez pdftotext."""
+    """Zwraca (tekst, opis_błędu). Tekst po zdjęciu HTML; PDF przez pdftotext, skany przez OCR. Ciasteczka sesji są trzymane w obrębie przebiegu."""
     if not robots_ok(url):
         return '', 'robots.txt zabrania pobrania'
     host_wait(url)
     try:
-        r = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/pdf,*/*'}), timeout=45)
-        raw = r.read(); ct = r.headers.get('Content-Type', '')
+        req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/pdf,*/*'})
+        r = _opener.open(req, timeout=45); raw = r.read(); ct = r.headers.get('Content-Type', '')
+        if not raw.strip() and r.status == 200:  # BIP m.st. Warszawy (Liferay) oddaje pustą odpowiedź na pierwsze żądanie bez ciasteczka sesji; drugie żądanie z ciasteczkiem ma treść
+            host_wait(url); r = _opener.open(urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/pdf,*/*'}), timeout=45); raw = r.read(); ct = r.headers.get('Content-Type', '')
     except urllib.error.HTTPError as e:
         return '', f'HTTP {e.code}'
     except Exception as e:

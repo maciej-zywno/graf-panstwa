@@ -30,6 +30,11 @@
    "eli": "DU/2008/1458",
    "text": "DU/2024/1135",
    "title": "Ustawa z dnia 21 listopada 2008 r. o pracownikach samorządowych (t.j. Dz.U. 2024 poz. 1135)"
+  },
+  "uw": {
+   "eli": "DU/2002/361",
+   "text": "DU/2018/1817",
+   "title": "Ustawa z dnia 15 marca 2002 r. o ustroju miasta stołecznego Warszawy (t.j. Dz.U. 2018 poz. 1817)"
   }
  },
  "cites": {
@@ -397,6 +402,89 @@
    "label": "art. 20 ust. 1",
    "must": [
     "wiceprzewodniczących"
+   ]
+  },
+  "d.dzielnice": {
+   "act": "uw",
+   "art": "5",
+   "label": "art. 5 ust. 1",
+   "must": [
+    "jednostek pomocniczych",
+    "dzielnic m.st. Warszawy"
+   ]
+  },
+  "d.statut": {
+   "act": "uw",
+   "art": "5",
+   "label": "art. 5 ust. 4",
+   "must": [
+    "Statut dzielnicy nadany przez Radę m.st. Warszawy"
+   ]
+  },
+  "d.organy": {
+   "act": "uw",
+   "art": "6",
+   "label": "art. 6",
+   "must": [
+    "rada dzielnicy",
+    "zarząd dzielnicy"
+   ]
+  },
+  "d.wybory": {
+   "act": "uw",
+   "art": "7",
+   "label": "art. 7 ust. 1",
+   "must": [
+    "Wybory do rad dzielnic"
+   ]
+  },
+  "d.radni": {
+   "act": "uw",
+   "art": "8",
+   "label": "art. 8 ust. 1",
+   "must": [
+    "radnych dzielnicy stosuje się odpowiednio przepisy dotyczące radnych gminy"
+   ]
+  },
+  "d.przewodniczacy": {
+   "act": "uw",
+   "art": "9",
+   "label": "art. 9 ust. 4",
+   "must": [
+    "przewodniczący rady dzielnicy"
+   ]
+  },
+  "d.zarzad": {
+   "act": "uw",
+   "art": "10",
+   "label": "art. 10 ust. 1",
+   "must": [
+    "Rada dzielnicy wybiera zarząd dzielnicy"
+   ]
+  },
+  "d.burmistrz": {
+   "act": "uw",
+   "art": "10",
+   "label": "art. 10 ust. 2 i 3",
+   "must": [
+    "burmistrz dzielnicy",
+    "Wybór burmistrza"
+   ]
+  },
+  "d.prezydent": {
+   "act": "uw",
+   "art": "10",
+   "label": "art. 10 ust. 4 i 5",
+   "must": [
+    "Prezydent m.st. Warszawy"
+   ]
+  },
+  "d.zadania": {
+   "act": "uw",
+   "art": "11",
+   "label": "art. 11 ust. 2",
+   "must": [
+    "sprawy lokalne"
    ]
   }
  }

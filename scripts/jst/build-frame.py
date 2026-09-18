@@ -38,10 +38,12 @@ for r in rows('okregi_rady_powiatow'):
 for r in rows('okregi_rady_gmin'):
     t = r['TERYT Gminy']; mnpp = int(t[2:4]) >= 61; g = r['Gmina']; nm = ('Miasto ' + g[3:]) if g.startswith('m. ') else ('Gmina ' + g[4:]) if g.startswith('gm. ') else g
     u = units.setdefault(t, {'t': t, 'kind': 'mnpp' if mnpp else 'gmina', 'parent': (t[:2] + '0000') if mnpp else (t[:4] + '00'), 'woj': t[:2], 'name': nm, 'council': r['Wybierany organ'], 'seats': 0, 'pop': 0, 'powiatName': r['Powiat']}); u['seats'] += int(r['Liczba mandatów']); u['pop'] += int(r['Mieszkańcy'] or 0)
+for r in rows('okregi_rady_dzielnic'):  # dzielnice m.st. Warszawy: jednostki pomocnicze z własną radą i zarządem (ustawa o ustroju m.st. Warszawy)
+    t = r['TERYT Dzielnicy']; u = units.setdefault(t, {'t': t, 'kind': 'dzielnica', 'parent': '146501', 'woj': '14', 'name': 'Dzielnica ' + r['Dzielnica'] + ' m.st. Warszawy', 'council': r['Wybierany organ'], 'seats': 0, 'pop': 0, 'short': r['Dzielnica']}); u['seats'] += int(r['Liczba mandatów']); u['pop'] += int(r['Mieszkańcy'])
 heads = {}
 for r in rows('wybrani_wojt_burmistrz_prezydent'): heads[r['TERYT Gminy']] = {'organ': r['Wybierany organ'], 'name': person_name(r['Wybrany kandydat']), 'committee': r['Komitet zgłaszający kandydata'].strip()}
 members = collections.defaultdict(list)
-for f, key in (('kandydaci_sejmiki_wojewodztw', 'TERYT Województwa'), ('kandydaci_rady_powiatow', 'TERYT Powiatu'), ('kandydaci_rady_gmin_do_20k', 'TERYT Gminy'), ('kandydaci_rady_gmin_powyzej_20k', 'TERYT Gminy')):
+for f, key in (('kandydaci_sejmiki_wojewodztw', 'TERYT Województwa'), ('kandydaci_rady_powiatow', 'TERYT Powiatu'), ('kandydaci_rady_gmin_do_20k', 'TERYT Gminy'), ('kandydaci_rady_gmin_powyzej_20k', 'TERYT Gminy'), ('kandydaci_rady_dzielnic', 'TERYT Dzielnicy')):
     for r in rows(f):
         if r.get('Czy uzyskał mandat') == 'Tak': members[r[key]].append({'name': person_name(r['Nazwisko i imiona']), 'committee': (r.get('Skrót nazwy komitetu') or r.get('Nazwa komitetu') or '').strip()})
 
@@ -70,7 +72,7 @@ for path in glob.glob(os.path.join(OUT, 'overlay', '*.json')):
     o = json.load(open(path, encoding='utf-8'))
     for k, v in (o.get('units') or {}).items(): overlay[k] = v
 def overlay_for(u):  # klucze nakładki: województwo „10”, powiat „1001”, miasto na prawach powiatu „1061”, gmina pełny kod „100201”
-    t = u['t']; return overlay.get(t[:2] if u['kind'] == 'wojewodztwo' else t if u['kind'] == 'gmina' else t[:4]) or {}
+    t = u['t']; return overlay.get(t[:2] if u['kind'] == 'wojewodztwo' else t if u['kind'] in ('gmina', 'dzielnica') else t[:4]) or {}
 def canonical_name(name, t):
     """Strony BIP podają zwykle jedno imię, PKW wszystkie. Gdy w radzie tej jednostki jest dokładnie jedna osoba o tym samym pierwszym imieniu i nazwisku, używamy pełnego zapisu PKW, żeby ta sama osoba miała jeden zapis w całym kole."""
     parts = name.split()
@@ -90,6 +92,7 @@ def ov_people(ov, roles, position_id, position_name):
 
 # ---------- budowa grafu jednostki ----------
 def build(u):
+    if u['kind'] == 'dzielnica': return build_dzielnica(u)
     t = u['t']; K = u['kind']; P = f'jst-{t}'; nodes = {}; edges = {}; ov = overlay_for(u)
     tier = 'g' if K in ('gmina', 'mnpp') else 'p' if K == 'powiat' else 'w'
     gen = {'g': ('gminy', 'Mieszkańcy gminy'), 'p': ('powiatu', 'Mieszkańcy powiatu'), 'w': ('województwa', 'Mieszkańcy województwa')}[tier]
@@ -162,6 +165,39 @@ def build(u):
             'sectorTitles': {'legislative': 'STANOWIĄCA I KONTROLNA', 'executive': 'WYKONAWCZA', 'independent': 'NADZÓR I KONTROLA'}, 'sectorLabels': {'legislative': 'Stanowiąca i kontrolna', 'executive': 'Wykonawcza', 'independent': 'Nadzór i kontrola'}, 'children': kids}
     return {'meta': meta, 'nodes': nodes, 'edges': edges}
 
+def build_dzielnica(u):
+    """Dzielnica m.st. Warszawy: rada dzielnicy z prezydium, zarząd z burmistrzem, nadzór Prezydenta i Rady m.st. Warszawy (ustawa z 2002 r. o ustroju m.st. Warszawy)."""
+    t = u['t']; P = f'jst-{t}'; nodes = {}; edges = {}; ov = overlay_for(u); short = u.get('short') or u['name']
+    def node(i, **kw):
+        n = {'id': f'{P}-{i}', 'type': 'department', 'subtype': None, 'sector': 'executive', 'ring': 'administration', 'name': '', 'shortName': None, 'description': '', 'aliases': [], 'legalSource': None, 'officialUrl': None, 'bipUrl': None, 'regon': None, 'budgetPart': None,
+             'parent': None, 'children': [], 'head': None, 'headOf': None, 'seatsCount': 0, 'status': 'active', 'statusNote': None, 'topics': [], 'employeeCount': {'actual': None, 'budget': None, 'source': None}, 'people': {'type': 'people', 'people': []}, 'provenance': PROV(), 'externalRef': None}
+        n.update(kw); n['id'] = f'{P}-{i}'; nodes[n['id']] = n; return n
+    def edge(a, b, ty, key, seats=0):
+        c = cite(key); i = f"e-{t}-{a}--{ty}--{b}"; edges[i] = {'id': i, 'type': ty, 'fromId': f'{P}-{a}', 'toId': f'{P}-{b}', 'cite': c['cite'], 'citeUrl': c['citeUrl'], 'seatsAppointed': seats, 'disputed': False, 'provenance': {'sources': [c['citeUrl']], 'verifiedAt': DATE, 'confidence': 'high', 'verdict': 'confirmed'}}
+    NO = dict(status='unverified', statusNote='Obsada tego stanowiska nie wynika z żadnego rejestru urzędowego. Zostanie uzupełniona ze strony BIP jednostki, ze wskazaniem źródła.')
+    pop = f"{u['pop']:,}".replace(',', ' ')
+    node('m', type='constituency', sector=None, ring='sovereign', name=f"Mieszkańcy dzielnicy: {u['name']}", shortName='Mieszkańcy dzielnicy', description=f"Wspólnota mieszkańców dzielnicy m.st. Warszawy: {pop} mieszkańców według danych PKW przygotowanych na wybory samorządowe 2024. Dzielnica jest obowiązkową jednostką pomocniczą stolicy.", legalSource=legal('d.dzielnice'))
+    council = node('rada', type='elected', subtype='council', sector='legislative', ring='highest', name=u['council'], description=f"Organ stanowiący i kontrolny dzielnicy. {u['seats']} mandatów. Skład według wyników wyborów z 7 kwietnia 2024 r. ogłoszonych przez PKW; zmiany w trakcie kadencji nie są jeszcze śledzone.", legalSource=legal('d.organy'), seatsCount=u['seats'], head=f'{P}-przew')
+    council['people']['people'] = [{'id': f"{P}-{slug(m['name'])}", 'name': m['name'], 'positionId': council['id'], 'positionName': 'Radny dzielnicy', 'type': 'elected', 'startedAt': None, 'startedAtSource': None, 'electedAt': ELECTED_AT, 'acting': False, 'status': 'verified', 'party': m['committee'] or None, 'imageUrl': None, 'sourceUrl': PKW_PAGE, 'note': None, 'verdict': 'confirmed'} for m in sorted(members.get(t, []), key=lambda m: (slug(m['name'].split()[-1]), slug(m['name'])))]
+    chair = ov_people(ov, ('przewodniczacy_rady',), f'{P}-przew', 'Przewodniczący')
+    node('przew', type='dept_head', sector='legislative', ring='highest', name='Przewodniczący: ' + u['council'], shortName='Przewodniczący rady dzielnicy', headOf=council['id'], description='Kieruje pracami rady dzielnicy. Wybierany przez radę ze swego grona.', legalSource=legal('d.przewodniczacy'), people={'type': 'people', 'people': chair}, **({} if chair else NO))
+    vice = ov_people(ov, ('wiceprzewodniczacy_rady',), f'{P}-wiceprzew', 'Wiceprzewodniczący')
+    node('wiceprzew', type='dept_head', sector='legislative', ring='highest', name='Wiceprzewodniczący: ' + u['council'], shortName='Wiceprzewodniczący rady dzielnicy', description='Wiceprzewodniczący wybierani przez radę dzielnicy ze swego grona; do radnych dzielnicy stosuje się przepisy o radnych gminy.', legalSource=legal('d.radni'), people={'type': 'people', 'people': vice}, **({} if vice else NO))
+    board = ov_people(ov, ('zastepca_burmistrza', 'czlonek_zarzadu'), f'{P}-zarzad', 'Członek zarządu')
+    node('zarzad', type='department', subtype='council', sector='executive', ring='highest', name=f"Zarząd Dzielnicy {short}", shortName='Zarząd dzielnicy', description='Organ wykonawczy dzielnicy: burmistrz i jego zastępcy, od 3 do 5 osób. Wybierany przez radę dzielnicy.', legalSource=legal('d.zarzad'), head=f'{P}-lider', people={'type': 'people', 'people': board}, **({} if board else {'statusNote': 'Skład zarządu nie wynika z żadnego rejestru urzędowego. Zostanie uzupełniony ze strony BIP jednostki.'}))
+    lp = ov_people(ov, ('burmistrz_dzielnicy',), f'{P}-lider', 'Burmistrz dzielnicy')
+    node('lider', type='dept_head', sector='executive', ring='highest', name=f"Burmistrz Dzielnicy {short}", shortName='Burmistrz dzielnicy', headOf=f'{P}-zarzad', description='Przewodniczy zarządowi dzielnicy. Wybierany przez radę dzielnicy w głosowaniu tajnym bezwzględną większością głosów; odwoływany na wniosek Prezydenta m.st. Warszawy albo co najmniej 1/4 składu rady.', legalSource=legal('d.burmistrz'), people={'type': 'people', 'people': lp}, **({} if lp else NO))
+    hw = heads.get('146501'); wu = units.get('146501') or {}
+    node('prezydent', type='dept_head', sector='independent', ring='oversight', name='Prezydent m.st. Warszawy', description='Organ wykonawczy stolicy. Zwołuje pierwszą sesję rady dzielnicy, powołuje zarząd dzielnicy, gdy rada go nie wybierze w 30 dni, i może wnioskować o odwołanie burmistrza.', legalSource=legal('d.prezydent'), externalJst={'t': '146501', 'node': 'jst-146501-wojt', 'label': 'm.st. Warszawa'}, people={'type': 'people', 'people': [{'id': f"{P}-{slug(hw['name'])}", 'name': hw['name'], 'positionId': f'{P}-prezydent', 'positionName': hw['organ'], 'type': 'elected', 'startedAt': None, 'startedAtSource': None, 'electedAt': ELECTED_AT, 'acting': False, 'status': 'verified', 'party': hw['committee'] or None, 'imageUrl': None, 'sourceUrl': PKW_PAGE, 'note': None, 'verdict': 'confirmed'}] if hw else []})
+    node('rada-m', type='elected', subtype='council', sector='independent', ring='oversight', name='Rada m.st. Warszawy', description='Nadaje dzielnicy statut, tworzy, łączy, dzieli i znosi dzielnice oraz przekazuje im zadania i kompetencje uchwałami.', legalSource=legal('d.statut'), externalJst={'t': '146501', 'node': 'jst-146501-rada', 'label': 'm.st. Warszawa'}, seatsCount=wu.get('seats', 0), people={'type': 'count', 'count': wu.get('seats', 0)})
+    edge('m', 'rada', 'elects', 'd.wybory', u['seats']); edge('rada', 'przew', 'dept_head', 'd.przewodniczacy'); edge('rada', 'przew', 'elects', 'd.przewodniczacy', 1); edge('rada', 'wiceprzew', 'elects', 'd.radni')
+    edge('rada', 'zarzad', 'elects', 'd.zarzad'); edge('zarzad', 'lider', 'dept_head', 'd.burmistrz'); edge('rada', 'lider', 'elects', 'd.burmistrz', 1)
+    edge('prezydent', 'zarzad', 'oversees', 'd.prezydent'); edge('prezydent', 'lider', 'nominates', 'd.prezydent'); edge('rada-m', 'rada', 'oversees', 'd.statut'); edge('rada-m', 'zarzad', 'oversees', 'd.zadania')
+    meta = {'gov': 'jst', 'teryt': t, 'kind': 'dzielnica', 'name': u['name'], 'version': '0.1', 'generatedAt': DATE, 'constituency': f'{P}-m', 'parent': u['parent'], 'woj': '14', 'population': u['pop'],
+            'description': 'Dzielnica m.st. Warszawy: rada dzielnicy z prezydium, zarząd z burmistrzem oraz nadzór Prezydenta i Rady m.st. Warszawy.',
+            'sectorTitles': {'legislative': 'STANOWIĄCA I KONTROLNA', 'executive': 'WYKONAWCZA', 'independent': 'NADZÓR MIASTA'}, 'sectorLabels': {'legislative': 'Stanowiąca i kontrolna', 'executive': 'Wykonawcza', 'independent': 'Nadzór miasta'}, 'children': []}
+    return {'meta': meta, 'nodes': nodes, 'edges': edges}
+
 # ---------- zapis: szablony wariantów + zwarte dane jednostek ----------
 S_T, S_NAME, S_COUNCIL, S_ORGAN, S_SEATS, S_POP = '@@T@@', '@@NAME@@', '@@COUNCIL@@', '@@ORGAN@@', '@@SEATS@@', '@@POP@@'
 def variant(u):
@@ -185,7 +221,7 @@ def compact(u, committees):
     rec = {'n': u['name'], 'k': u['kind'], 'p': u['parent'], 'v': variant(u), 'c': u['council'], 's': u['seats'], 'pop': u['pop'], 'm': [[m['name'], ci(m['committee'])] for m in sorted(members.get(t, []), key=lambda m: (slug(m['name'].split()[-1]), slug(m['name'])))]}
     if h: rec['o'] = h['organ']; rec['h'] = [h['name'], ci(h['committee'])]
     P = f'jst-{t}'; ovp = {}
-    for key, roles, title in (('przew', ('przewodniczacy_rady',), 'Przewodniczący'), ('wiceprzew', ('wiceprzewodniczacy_rady',), 'Wiceprzewodniczący'), ('lider', ('starosta', 'marszalek'), ''), ('zarzad', ('wicestarosta', 'wicemarszalek', 'czlonek_zarzadu'), 'Członek zarządu'), ('skarbnik', ('skarbnik',), 'Skarbnik'), ('sekretarz', ('sekretarz',), 'Sekretarz'), ('zastepca', ('zastepca_prezydenta',), 'Zastępca')):
+    for key, roles, title in (('przew', ('przewodniczacy_rady',), 'Przewodniczący'), ('wiceprzew', ('wiceprzewodniczacy_rady',), 'Wiceprzewodniczący'), ('lider', ('starosta', 'marszalek', 'burmistrz_dzielnicy'), ''), ('zarzad', ('wicestarosta', 'wicemarszalek', 'czlonek_zarzadu', 'zastepca_burmistrza'), 'Członek zarządu'), ('skarbnik', ('skarbnik',), 'Skarbnik'), ('sekretarz', ('sekretarz',), 'Sekretarz'), ('zastepca', ('zastepca_prezydenta',), 'Zastępca')):
         ppl = ov_people(ov, roles, f'{P}-{key}', title)
         if ppl: ovp[key] = [{k: v for k, v in p.items() if v not in (None, False, '') and k not in ('id', 'positionId', 'type', 'status', 'verdict')} for p in ppl]
     if ovp: rec['ov'] = ovp
@@ -206,11 +242,12 @@ def expand(tiers, bundle, t):
         if not n: continue
         n['people'] = {'type': 'people', 'people': [dict(person(n['id'], p['name'], p.get('positionName') or n['name'], None), electedAt=None, sourceUrl=p['sourceUrl'], startedAt=p.get('startedAt'), startedAtSource=p.get('startedAtSource'), verifiedAt=p.get('verifiedAt')) for p in ppl]}; n['status'] = 'active'; n['statusNote'] = None
         n['provenance'] = {'sources': sorted({p['sourceUrl'] for p in ppl}), 'verifiedAt': max((p.get('verifiedAt') or DATE) for p in ppl), 'confidence': 'high', 'verdict': 'confirmed'}
-    for key in ('urzad', 'rada'):
-        if u.get('url') and key == 'urzad': N[f'{P}-urzad']['officialUrl'] = u['url']
-        if u.get('bip') and key == 'urzad': N[f'{P}-urzad']['bipUrl'] = u['bip']
-    wv = N[f'{P}-wojewoda']; wv['name'] = sh['wojewoda']['name']; wv['externalRef'] = sh['wojewoda']['ref']; wv['people'] = {'type': 'people', 'people': sh['wojewoda']['people']}; wv['provenance']['sources'] = ['https://grafpanstwa.pl/#node=' + (sh['wojewoda']['ref'] or '')]
-    N[f'{P}-prm']['people'] = {'type': 'people', 'people': sh['prm']['people']}; N[f'{P}-rio']['name'] = 'Regionalna Izba Obrachunkowa ' + sh['rio']
+    site = N.get(f'{P}-urzad') or N.get(f'{P}-zarzad')  # adresy stron: urząd, a w dzielnicy (bez węzła urzędu) zarząd
+    if site and u.get('url'): site['officialUrl'] = u['url']
+    if site and u.get('bip'): site['bipUrl'] = u['bip']
+    if N.get(f'{P}-wojewoda'):  # organy nadzoru wspólne dla województw, powiatów i gmin; dzielnica ma zamiast nich Prezydenta i Radę m.st. Warszawy
+        wv = N[f'{P}-wojewoda']; wv['name'] = sh['wojewoda']['name']; wv['externalRef'] = sh['wojewoda']['ref']; wv['people'] = {'type': 'people', 'people': sh['wojewoda']['people']}; wv['provenance']['sources'] = ['https://grafpanstwa.pl/#node=' + (sh['wojewoda']['ref'] or '')]
+        N[f'{P}-prm']['people'] = {'type': 'people', 'people': sh['prm']['people']}; N[f'{P}-rio']['name'] = 'Regionalna Izba Obrachunkowa ' + sh['rio']
     g['meta'].update(teryt=t, kind=u['k'], name=u['n'], parent=u['p'], woj=t[:2], population=u['pop'], children=sorted(c for c, x in bundle['units'].items() if x['p'] == t), parentName=(bundle['units'].get(u['p']) or {}).get('n'))
     return g
 

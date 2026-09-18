@@ -6,10 +6,10 @@ test.use({ viewport: { width: 1512, height: 803 } });
 const open = async (page, teryt, hash = '') => { const errors = []; page.on('pageerror', e => errors.push(e.message)); page.on('console', m => { if (m.type() === 'error' && !/favicon|fonts/i.test(m.text())) errors.push(m.text()); }); await page.goto(D_URL + (teryt ? '&jst=' + teryt : '') + hash); await page.waitForFunction(() => window.__GP_TEST && document.querySelector('#status').hidden, null, { timeout: 30000 }); await page.waitForTimeout(800); return errors; };
 const sel = (page, id) => page.evaluate(i => { location.hash = '#node=' + i; window.dispatchEvent(new PopStateEvent('popstate')); }, id);
 
-for (const u of [{ t: '100000', kind: 'wojewodztwo', name: 'Województwo łódzkie', seats: 33, lead: 'lider' }, { t: '102000', kind: 'powiat', name: 'Powiat zgierski', lead: 'lider' }, { t: '106101', kind: 'mnpp', name: 'Miasto Łódź', lead: 'wojt' }, { t: '102003', kind: 'gmina', name: 'Miasto Zgierz', lead: 'wojt' }])
+for (const u of [{ t: '100000', kind: 'wojewodztwo', name: 'Województwo łódzkie', seats: 33, lead: 'lider' }, { t: '102000', kind: 'powiat', name: 'Powiat zgierski', lead: 'lider' }, { t: '106101', kind: 'mnpp', name: 'Miasto Łódź', lead: 'wojt' }, { t: '102003', kind: 'gmina', name: 'Miasto Zgierz', lead: 'wojt' }, { t: '146502', kind: 'dzielnica', name: 'Dzielnica Bemowo m.st. Warszawy', seats: 25, lead: 'lider', oversight: 'NADZÓR MIASTA' }])
   test(`${u.name}: koło jednostki z trzema sektorami, rada ma tylu radnych, ile mandatów, każda relacja ma przepis`, async ({ page }) => {
     const errors = await open(page, u.t); const r = await page.evaluate(() => { const G = window.__GP_TEST; return { j: G.jst(), labels: [...document.querySelectorAll('#stage svg text.sector-label')].map(x => x.textContent), title: document.querySelector('#title').textContent, seal: [...document.querySelectorAll('#stage svg .seal-text')].map(x => x.textContent).join(' '), toggle: !document.querySelector('#mode-toggle').hidden }; });
-    expect(r.j.kind).toBe(u.kind); expect(r.j.name).toBe(u.name); expect(r.title).toBe(u.name); expect(r.labels).toEqual(['STANOWIĄCA I KONTROLNA', 'WYKONAWCZA', 'NADZÓR I KONTROLA']); expect(r.seal).toMatch(/^Mieszkańcy /); expect(r.toggle, 'widok budżetu jest tylko dla budżetu państwa').toBe(false);
+    expect(r.j.kind).toBe(u.kind); expect(r.j.name).toBe(u.name); expect(r.title).toBe(u.name); expect(r.labels).toEqual(['STANOWIĄCA I KONTROLNA', 'WYKONAWCZA', u.oversight || 'NADZÓR I KONTROLA']); expect(r.seal).toMatch(/^Mieszkańcy /); expect(r.toggle, 'widok budżetu jest tylko dla budżetu państwa').toBe(false);
     await sel(page, `jst-${u.t}-rada`); await page.waitForTimeout(400); const c = await page.evaluate(() => { const n = window.__GP_TEST.node(window.__GP_TEST.state().selected); const label = document.querySelector('#view-node .sect-label').textContent; const headPeople = n.head ? (window.__GP_TEST.node(n.head).people || 0) : 0; return { people: n.people, headPeople, label, cards: document.querySelectorAll('#view-node .pgrid .head-card').length, cardNames: [...document.querySelectorAll('#view-node .pgrid .head-card .name')].map(x => x.textContent.trim()), rows: [...document.querySelectorAll('#view-node .row[data-eid] .r-cite')].map(x => x.textContent) }; });
     expect(c.people).toBeGreaterThanOrEqual(15); if (u.seats) expect(c.people).toBe(u.seats); expect(c.label).toContain(`${c.people} miejsc`); expect(c.cards, 'karty: wszyscy radni, plus przewodniczący nad listą, jeśli jest znany i nie jest już na liście').toBeGreaterThanOrEqual(c.people); expect(c.cards).toBeLessThanOrEqual(c.people + c.headPeople); expect(new Set(c.cardNames).size, 'żadna osoba nie ma dwóch kart').toBe(c.cardNames.length); expect(c.rows.length).toBeGreaterThan(3); for (const x of c.rows) expect(x).toMatch(/art\. \d+/);
     expect(errors).toEqual([]);
@@ -45,6 +45,19 @@ test('nakładka łódzkie: starosta, zarząd, prezydium rady, sekretarz i skarbn
   await page.goto(D_URL + '&jst=102003'); await page.waitForFunction(() => window.__GP_TEST && window.__GP_TEST.jst() && window.__GP_TEST.jst().teryt === '102003', null, { timeout: 20000 });
   const g = await page.evaluate(() => { const G = window.__GP_TEST; return { sekretarz: G.node('jst-102003-sekretarz').people, skarbnik: G.node('jst-102003-skarbnik').people, przew: G.node('jst-102003-przew').people }; });
   expect(g, 'gmina Zgierz nie ma jeszcze nakładki, więc stanowiska muszą być puste, nie przepisane z powiatu').toEqual({ sekretarz: 0, skarbnik: 0, przew: 0 });
+  expect(errors).toEqual([]);
+});
+
+test('Warszawa: miasto ma 18 dzielnic w nawigacji; dzielnica ma burmistrza, zarząd i prezydium z BIP, a Prezydent m.st. Warszawy prowadzi do koła miasta', async ({ page }) => {
+  const errors = await open(page, '146501');
+  const kids = await page.evaluate(() => [...document.querySelectorAll('#jst-card .jst-kid')].map(a => a.textContent.trim()));
+  expect(kids.filter(k => /^Dzielnica /.test(k)).length).toBe(18);
+  await page.goto(D_URL + '&jst=146502#node=jst-146502-lider'); await page.waitForFunction(() => window.__GP_TEST && window.__GP_TEST.jst() && window.__GP_TEST.jst().teryt === '146502', null, { timeout: 20000 }); await page.waitForTimeout(500);
+  const r = await page.evaluate(() => { const G = window.__GP_TEST; const n = k => G.node('jst-146502-' + k); const card = document.querySelector('#view-node .head-card'); return { lider: n('lider').people, zarzad: n('zarzad').people, przew: n('przew').people, wice: n('wiceprzew').people, prez: n('prezydent').people, title: document.querySelector('#view-node .node-name').textContent, src: card && card.querySelector('.src') ? card.querySelector('.src').href : '', labels: [...document.querySelectorAll('#stage svg text.sector-label')].map(x => x.textContent) }; });
+  expect(r.lider).toBe(1); expect(r.zarzad).toBeGreaterThanOrEqual(2); expect(r.przew).toBe(1); expect(r.wice).toBeGreaterThanOrEqual(1); expect(r.prez).toBe(1); expect(r.title).toMatch(/^Burmistrz Dzielnicy Bemowo/); expect(r.src).toMatch(/um\.warszawa\.pl/); expect(r.labels).toEqual(['STANOWIĄCA I KONTROLNA', 'WYKONAWCZA', 'NADZÓR MIASTA']);
+  await sel(page, 'jst-146502-prezydent'); await page.waitForTimeout(400);
+  const x = await page.evaluate(() => { const a = document.querySelector('#view-node .xref a'); return a ? a.getAttribute('href') : null; });
+  expect(x).toContain('jst=146501'); expect(x).toContain('node=jst-146501-wojt');
   expect(errors).toEqual([]);
 });
 

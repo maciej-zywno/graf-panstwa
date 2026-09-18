@@ -1,0 +1,2406 @@
+{
+ "meta": {
+  "woj": "14",
+  "name": "mazowieckie",
+  "generatedAt": "2026-09-18",
+  "method": "Ręczno-agentowy odczyt oficjalnych stron m.st. Warszawy i dzielnic (um.warszawa.pl, <dzielnica>.um.warszawa.pl) oraz BIP m.st. Warszawy (curl z UA projektu, ≥1 s/host, robots.txt; strony JS przez Playwright). Każda osoba ma adres strony, cytat i datę odczytu. Verdict nadaje niezależny przebieg scripts/jst/verify-overlay.py, który pobiera każdy sourceUrl od nowa i szuka nazwiska obok słowa kluczowego funkcji.",
+  "stats": {
+   "people": 145,
+   "confirmed": 145,
+   "unverified": 0
+  },
+  "verifiedAt": "2026-09-18"
+ },
+ "units": {
+  "1465": {
+   "teryt": "146501",
+   "kind": "mnpp",
+   "name": "Miasto st. Warszawa",
+   "officialUrl": "https://um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady m.st. Warszawy",
+     "people": [
+      {
+       "name": "Ewa Malinowska-Grupińska",
+       "sourceUrl": "https://um.warszawa.pl/waw/radawarszawy/-/ewa-malinowska-grupinska-radna-m-st-warsza-1",
+       "quote": "Nadal też sprawuje funkcję Przewodniczącej Rady.",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady m.st. Warszawy",
+     "people": [
+      {
+       "name": "Ewa Janczar",
+       "sourceUrl": "https://bip.warszawa.pl/web/rada-warszawy/radni-2024-2029",
+       "quote": "Janczar Ewa - Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Kamila Gołębiowska",
+       "sourceUrl": "https://bip.warszawa.pl/web/rada-warszawy/radni-2024-2029",
+       "quote": "Gołębiowska Kamila - Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2025-08-28",
+       "startedAtSource": "https://um.warszawa.pl/waw/radawarszawy/-/golebiowska-kamila-radna-m-st-warszawy („W obecnej kadencji od 28 sierpnia 2025 r., pełni funkcję wiceprzewodniczącej Rady m.st. Warszawy”)",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Sławomir Potapowicz",
+       "sourceUrl": "https://bip.warszawa.pl/web/rada-warszawy/radni-2024-2029",
+       "quote": "Potapowicz Sławomir - Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_prezydenta",
+     "title": "Zastępca Prezydenta m.st. Warszawy",
+     "people": [
+      {
+       "name": "Karolina Bober",
+       "sourceUrl": "https://um.warszawa.pl/zastepcy-prezydenta",
+       "quote": "Karolina Bober Zastępczyni Prezydenta m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Tomasz Mencina",
+       "sourceUrl": "https://um.warszawa.pl/zastepcy-prezydenta",
+       "quote": "Tomasz Mencina Zastępca Prezydenta m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Magdalena Młochowska",
+       "sourceUrl": "https://um.warszawa.pl/zastepcy-prezydenta",
+       "quote": "Magdalena Młochowska Zastępca Prezydenta m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Izabela Marcewicz-Jendrysik",
+       "sourceUrl": "https://um.warszawa.pl/zastepcy-prezydenta",
+       "quote": "Izabela Marcewicz-Jendrysik Zastępca Prezydenta m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik m.st. Warszawy",
+     "people": [
+      {
+       "name": "Marzanna Krajewska",
+       "sourceUrl": "https://um.warszawa.pl/skarbnik",
+       "quote": "Skarbnik m.st Warszawy Marzanna Krajewska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.warszawa.pl/web/prezydent/-/skarbnik („7 maja 2024 r. została powołana na stanowisko Skarbnika m.st. Warszawy”)",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz m.st. Warszawy",
+     "people": [
+      {
+       "name": "Maciej Fijałkowski",
+       "sourceUrl": "https://um.warszawa.pl/sekretarz1",
+       "quote": "Sekretarz m.st. Warszawy Maciej Fijałkowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Rada m.st. Warszawy: Przewodnicząca potwierdzona na stronie radnej w serwisie um.warszawa.pl (funkcja w notce biograficznej). Troje Wiceprzewodniczących ma źródło w BIP (bip.warszawa.pl/web/rada-warszawy/radni-2024-2029: „Prezydium Rady m.st. Warszawy”), bo strony radnych na um.warszawa.pl podają funkcję tylko w środku notki (Janczar, Gołębiowska) albo wcale (Potapowicz). BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT, więc sprawdzarka nie potwierdzi tych trzech rekordów.",
+    "Urząd używa nazw „Zastępca Prezydenta m.st. Warszawy” i „Zastępczyni Prezydenta m.st. Warszawy” (Karolina Bober); słownik sprawdzarki dla roli zastepca_prezydenta nie zna formy żeńskiej, stąd rekord Bober może pozostać unverified mimo jednoznacznej treści strony.",
+    "Skarbnik: data objęcia stanowiska z biogramu w BIP (7 maja 2024 r.); strona um.warszawa.pl/skarbnik daty nie podaje. Sekretarz: brak daty powołania na stronach urzędu."
+   ]
+  },
+  "146502": {
+   "teryt": "146502",
+   "kind": "dzielnica",
+   "name": "Dzielnica Bemowo m.st. Warszawy",
+   "officialUrl": "https://bemowo.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/bemowo",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Bemowo m.st. Warszawy",
+     "people": [
+      {
+       "name": "Jarosław Dąbrowski",
+       "sourceUrl": "https://bemowo.um.warszawa.pl/radni-2024-2029",
+       "quote": "Jarosław Dąbrowski – Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Bemowo m.st. Warszawy",
+     "people": [
+      {
+       "name": "Maciej Bartosiak",
+       "sourceUrl": "https://bemowo.um.warszawa.pl/radni-2024-2029",
+       "quote": "Maciej Bartosiak - Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Ewa Przychodzień-Schmidt",
+       "sourceUrl": "https://bemowo.um.warszawa.pl/radni-2024-2029",
+       "quote": "Ewa Przychodzień-Schmidt – Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Bemowo m.st. Warszawy",
+     "people": [
+      {
+       "name": "Grzegorz Kuca",
+       "sourceUrl": "https://bemowo.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Grzegorz Kuca – Burmistrz Dzielnicy Bemowo",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Bemowo m.st. Warszawy",
+     "people": [
+      {
+       "name": "Maciej Wójtowicz",
+       "sourceUrl": "https://bemowo.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Maciej Wójtowicz – Zastępca Burmistrza Dzielnicy Bemowo",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Michał Przybylski",
+       "sourceUrl": "https://bemowo.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Michał Przybylski – Zastępca Burmistrza Dzielnicy Bemowo",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jakub Gręziak",
+       "sourceUrl": "https://bemowo.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Jakub Gręziak – Zastępca Burmistrza Dzielnicy Bemowo",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Karol Sobociński",
+       "sourceUrl": "https://bemowo.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Karol Sobociński – Zastępca Burmistrza Dzielnicy Bemowo",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady odczytane z listy radnych kadencji 2024-2029 (funkcja przy nazwisku); strona rada-dzielnicy wymienia tylko Przewodniczącego."
+   ]
+  },
+  "146503": {
+   "teryt": "146503",
+   "kind": "dzielnica",
+   "name": "Dzielnica Białołęka m.st. Warszawy",
+   "officialUrl": "https://bialoleka.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/bialoleka",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Białołęka m.st. Warszawy",
+     "people": [
+      {
+       "name": "Piotr Jaworski",
+       "sourceUrl": "https://bip.warszawa.pl/web/bialoleka/radni-dzielnicy",
+       "quote": "Piotr Jaworski Funkcja osoby Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Białołęka m.st. Warszawy",
+     "people": [
+      {
+       "name": "Elżbieta Kocik",
+       "sourceUrl": "https://bip.warszawa.pl/web/bialoleka/radni-dzielnicy",
+       "quote": "Elżbieta Kocik Funkcja osoby Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Kinga Solarek",
+       "sourceUrl": "https://bip.warszawa.pl/web/bialoleka/radni-dzielnicy",
+       "quote": "Kinga Solarek Funkcja osoby Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Danuta Zaleska",
+       "sourceUrl": "https://bip.warszawa.pl/web/bialoleka/radni-dzielnicy",
+       "quote": "Danuta Zaleska Funkcja osoby Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Białołęka m.st. Warszawy",
+     "people": [
+      {
+       "name": "Anna Majchrzak",
+       "sourceUrl": "https://bialoleka.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Anna Majchrzak - Burmistrz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Białołęka m.st. Warszawy",
+     "people": [
+      {
+       "name": "Piotr Cieszkowski",
+       "sourceUrl": "https://bialoleka.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Piotr Cieszkowski - Zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Anna Myślińska",
+       "sourceUrl": "https://bialoleka.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Anna Myślińska - Zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Mariusz Wajszczak",
+       "sourceUrl": "https://bialoleka.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Mariusz Wajszczak - Zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jan Mackiewicz",
+       "sourceUrl": "https://bialoleka.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Jan Mackiewicz- zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady dzielnicy tylko w BIP m.st. Warszawy (bip.warszawa.pl/web/<dzielnica>/radni-dzielnicy); oficjalna strona dzielnicy odsyła do BIP. BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT. Sprawdzarka bez cookie jar nie potwierdzi tych rekordów."
+   ]
+  },
+  "146504": {
+   "teryt": "146504",
+   "kind": "dzielnica",
+   "name": "Dzielnica Bielany m.st. Warszawy",
+   "officialUrl": "https://bielany.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/bielany",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Bielany m.st. Warszawy",
+     "people": [
+      {
+       "name": "Maciej Chmielewski",
+       "sourceUrl": "https://bip.warszawa.pl/web/bielany/radni-dzielnicy",
+       "quote": "Maciej Chmielewski Funkcja osoby Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Bielany m.st. Warszawy",
+     "people": [
+      {
+       "name": "Agnieszka Gola",
+       "sourceUrl": "https://bip.warszawa.pl/web/bielany/radni-dzielnicy",
+       "quote": "Agnieszka Gola Funkcja osoby Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Joanna Radziejewska",
+       "sourceUrl": "https://bip.warszawa.pl/web/bielany/radni-dzielnicy",
+       "quote": "Joanna Radziejewska Funkcja osoby Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Iwona Walentynowicz",
+       "sourceUrl": "https://bip.warszawa.pl/web/bielany/radni-dzielnicy",
+       "quote": "Iwona Walentynowicz Funkcja osoby Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Bielany m.st. Warszawy",
+     "people": [
+      {
+       "name": "Grzegorz Pietruczuk",
+       "sourceUrl": "https://bielany.um.warszawa.pl/zarzad-dzielnicy-bielany",
+       "quote": "Grzegorz Pietruczuk – Burmistrz Dzielnicy Bielany",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Bielany m.st. Warszawy",
+     "people": [
+      {
+       "name": "Sylwia Lacek",
+       "sourceUrl": "https://bielany.um.warszawa.pl/zarzad-dzielnicy-bielany",
+       "quote": "Sylwia Lacek – zastępczyni Burmistrza Dzielnicy Bielany",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Andrzej Malina",
+       "sourceUrl": "https://bielany.um.warszawa.pl/zarzad-dzielnicy-bielany",
+       "quote": "Andrzej Malina – zastępca Burmistrza Dzielnicy Bielany",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Ilona Popławska",
+       "sourceUrl": "https://bielany.um.warszawa.pl/zarzad-dzielnicy-bielany",
+       "quote": "Ilona Popławska – zastępczyni Burmistrza Dzielnicy Bielany",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Włodzimierz Piątkowski",
+       "sourceUrl": "https://bielany.um.warszawa.pl/zarzad-dzielnicy-bielany",
+       "quote": "Włodzimierz Piątkowski – zastępca Burmistrza Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady dzielnicy tylko w BIP m.st. Warszawy (bip.warszawa.pl/web/<dzielnica>/radni-dzielnicy); oficjalna strona dzielnicy odsyła do BIP. BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT. Sprawdzarka bez cookie jar nie potwierdzi tych rekordów."
+   ]
+  },
+  "146505": {
+   "teryt": "146505",
+   "kind": "dzielnica",
+   "name": "Dzielnica Mokotów m.st. Warszawy",
+   "officialUrl": "https://mokotow.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/mokotow",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Mokotów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Michał Mycka",
+       "sourceUrl": "https://bip.warszawa.pl/web/mokotow/radni-dzielnicy",
+       "quote": "Michał Mycka Funkcja osoby Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Mokotów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Michał Cichosz",
+       "sourceUrl": "https://bip.warszawa.pl/web/mokotow/radni-dzielnicy",
+       "quote": "Michał Cichosz Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Bożena Kosińska-Krauze",
+       "sourceUrl": "https://bip.warszawa.pl/web/mokotow/radni-dzielnicy",
+       "quote": "Bożena Kosińska-Krauze Funkcja osoby Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Witold Wasilewski",
+       "sourceUrl": "https://bip.warszawa.pl/web/mokotow/radni-dzielnicy",
+       "quote": "Witold Wasilewski Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Mokotów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Rafał Miastowski",
+       "sourceUrl": "https://mokotow.um.warszawa.pl/zarzad-dzielnicy-mokotow",
+       "quote": "Rafał Miastowski – Burmistrz Dzielnicy Mokotów",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2018-11-27",
+       "startedAtSource": "https://mokotow.um.warszawa.pl/zarzad-dzielnicy-mokotow („Burmistrz Dzielnicy Mokotów od 27 listopada 2018 r.”)",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Mokotów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Katarzyna Potapowicz",
+       "sourceUrl": "https://mokotow.um.warszawa.pl/zarzad-dzielnicy-mokotow",
+       "quote": "Katarzyna Potapowicz – Zastępczyni Burmistrza Dzielnicy Mokotów",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Piotr Sławiński",
+       "sourceUrl": "https://mokotow.um.warszawa.pl/zarzad-dzielnicy-mokotow",
+       "quote": "Piotr Sławiński – Zastępca Burmistrza Dzielnicy Mokotów",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Marek Rojszyk",
+       "sourceUrl": "https://mokotow.um.warszawa.pl/zarzad-dzielnicy-mokotow",
+       "quote": "Marek Rojszyk – Zastępca Burmistrza Dzielnicy Mokotów",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Krzysztof Skolimowski",
+       "sourceUrl": "https://mokotow.um.warszawa.pl/zarzad-dzielnicy-mokotow",
+       "quote": "Krzysztof Skolimowski – Zastępca Burmistrza Dzielnicy Mokotów",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady dzielnicy tylko w BIP m.st. Warszawy (bip.warszawa.pl/web/<dzielnica>/radni-dzielnicy); oficjalna strona dzielnicy odsyła do BIP. BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT. Sprawdzarka bez cookie jar nie potwierdzi tych rekordów.",
+    "Strona zarządu podaje „Burmistrz Dzielnicy Mokotów od 27 listopada 2018 r.” (kontynuacja funkcji w kadencji 2024-2029)."
+   ]
+  },
+  "146506": {
+   "teryt": "146506",
+   "kind": "dzielnica",
+   "name": "Dzielnica Ochota m.st. Warszawy",
+   "officialUrl": "https://ochota.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/ochota",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Ochota m.st. Warszawy",
+     "people": [
+      {
+       "name": "Sylwia Mróz",
+       "sourceUrl": "https://bip.warszawa.pl/web/ochota/radni-dzielnicy",
+       "quote": "Sylwia Mróz Funkcja osoby Radna Dzielnicy m.st. Warszawy Przewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Ochota m.st. Warszawy",
+     "people": [
+      {
+       "name": "Magdalena Nowakowska",
+       "sourceUrl": "https://bip.warszawa.pl/web/ochota/radni-dzielnicy",
+       "quote": "Magdalena Nowakowska Funkcja osoby Radna Dzielnicy m.st. Warszawy Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Ochota m.st. Warszawy",
+     "people": [
+      {
+       "name": "Piotr Krasnodębski",
+       "sourceUrl": "https://ochota.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Burmistrz Dzielnicy Ochota m.st. Warszawy – Piotr Krasnodębski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Ochota m.st. Warszawy",
+     "people": [
+      {
+       "name": "Justyna Glusman",
+       "sourceUrl": "https://ochota.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Zastępca Burmistrza – Justyna Glusman",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Sławomir Cygler",
+       "sourceUrl": "https://ochota.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Zastępca Burmistrza – Sławomir Cygler",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady dzielnicy tylko w BIP m.st. Warszawy (bip.warszawa.pl/web/<dzielnica>/radni-dzielnicy); oficjalna strona dzielnicy odsyła do BIP. BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT. Sprawdzarka bez cookie jar nie potwierdzi tych rekordów.",
+    "BIP wymienia w prezydium tylko jedną Wiceprzewodniczącą Rady (Magdalena Nowakowska)."
+   ]
+  },
+  "146507": {
+   "teryt": "146507",
+   "kind": "dzielnica",
+   "name": "Dzielnica Praga-Południe m.st. Warszawy",
+   "officialUrl": "https://pragapld.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/praga-poludnie",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Praga-Południe m.st. Warszawy",
+     "people": [
+      {
+       "name": "Bożena Manarczyk",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/sklad-rady-dzielnicy-praga-poludnie",
+       "quote": "Manarczyk Bożena – Przewodnicząca Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Praga-Południe m.st. Warszawy",
+     "people": [
+      {
+       "name": "Bogdan Jeziorski",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/sklad-rady-dzielnicy-praga-poludnie",
+       "quote": "Jeziorski Bogdan- Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Mirosława Terlecka",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/sklad-rady-dzielnicy-praga-poludnie",
+       "quote": "Terlecka Mirosława - Wiceprzewodnicząca Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Michał Wieremiejczyk",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/sklad-rady-dzielnicy-praga-poludnie",
+       "quote": "Wieremiejczyk Michał - Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Praga-Południe m.st. Warszawy",
+     "people": [
+      {
+       "name": "Tomasz Kucharski",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Tomasz Kucharski Burmistrz Dzielnicy Praga-Południe m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Praga-Południe m.st. Warszawy",
+     "people": [
+      {
+       "name": "Bożena Przybyszewska",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Bożena Przybyszewska Zastępczyni Burmistrza Dzielnicy Praga-Południe m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Karol Kowalczyk",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Karol Kowalczyk Zastępca Burmistrza Dzielnicy Praga-Południe m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Łukasz Polinceusz",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Łukasz Polinceusz Zastępca Burmistrza Dzielnicy Praga-Południe m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Katarzyna Niwińska",
+       "sourceUrl": "https://pragapld.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Katarzyna Niwińska Zastępczyni Burmistrza Dzielnicy Praga-Południe m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Strona składu rady podaje nazwiska w porządku „Nazwisko Imię” (np. „Manarczyk Bożena – Przewodnicząca Rady Dzielnicy”); w pliku imię i nazwisko odwrócono."
+   ]
+  },
+  "146508": {
+   "teryt": "146508",
+   "kind": "dzielnica",
+   "name": "Dzielnica Praga-Północ m.st. Warszawy",
+   "officialUrl": "https://pragapn.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/praga-polnoc",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Praga-Północ m.st. Warszawy",
+     "people": [
+      {
+       "name": "Marcin Dąbrowski",
+       "sourceUrl": "https://pragapn.um.warszawa.pl/radni-dzielnicy",
+       "quote": "Marcin Dąbrowski Przewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Praga-Północ m.st. Warszawy",
+     "people": [
+      {
+       "name": "Patrycja Sondij",
+       "sourceUrl": "https://pragapn.um.warszawa.pl/radni-dzielnicy",
+       "quote": "Patrycja Sondij Wiceprzewodnicząca Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Mariusz Borowski",
+       "sourceUrl": "https://pragapn.um.warszawa.pl/radni-dzielnicy",
+       "quote": "Mariusz Borowski Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Krzysztof Michalski",
+       "sourceUrl": "https://pragapn.um.warszawa.pl/radni-dzielnicy",
+       "quote": "Krzysztof Michalski Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Praga-Północ m.st. Warszawy",
+     "people": [
+      {
+       "name": "Gabriela Szustek",
+       "sourceUrl": "https://pragapn.um.warszawa.pl/-/zarzad-dzielnicy2",
+       "quote": "Gabriela Szustek - Burmistrz Dzielnicy Praga-Północ m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Praga-Północ m.st. Warszawy",
+     "people": [
+      {
+       "name": "Sylwester Klimiuk",
+       "sourceUrl": "https://pragapn.um.warszawa.pl/-/zarzad-dzielnicy2",
+       "quote": "Sylwester Klimiuk – Zastępca Burmistrza Dzielnicy Praga-Północ m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Anna Tomaszewska",
+       "sourceUrl": "https://pragapn.um.warszawa.pl/-/zarzad-dzielnicy2",
+       "quote": "Anna Tomaszewska - Zastępczyni Burmistrza Dzielnicy Praga-Północ m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ]
+  },
+  "146509": {
+   "teryt": "146509",
+   "kind": "dzielnica",
+   "name": "Dzielnica Rembertów m.st. Warszawy",
+   "officialUrl": "https://rembertow.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/rembertow",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Rembertów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Stanisław Kowalczuk",
+       "sourceUrl": "https://bip.warszawa.pl/web/rembertow/radni-dzielnicy",
+       "quote": "Stanisław Kowalczuk Funkcja osoby Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Rembertów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Marek Jarzęcki",
+       "sourceUrl": "https://bip.warszawa.pl/web/rembertow/radni-dzielnicy",
+       "quote": "Marek Jarzęcki Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Kamil Staruch",
+       "sourceUrl": "https://bip.warszawa.pl/web/rembertow/radni-dzielnicy",
+       "quote": "Kamil Staruch Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Marcin Ziętek",
+       "sourceUrl": "https://bip.warszawa.pl/web/rembertow/radni-dzielnicy",
+       "quote": "Marcin Ziętek Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Rembertów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Maciej Iwanicki",
+       "sourceUrl": "https://rembertow.um.warszawa.pl/-/zarzad-dzielnicy",
+       "quote": "Maciej Iwanicki Burmistrz Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Rembertów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Aleksander Lesiński",
+       "sourceUrl": "https://rembertow.um.warszawa.pl/-/zarzad-dzielnicy",
+       "quote": "Aleksander Lesiński Zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Arkadiusz Piotrowski",
+       "sourceUrl": "https://rembertow.um.warszawa.pl/-/zarzad-dzielnicy",
+       "quote": "Arkadiusz Piotrowski Zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady dzielnicy tylko w BIP m.st. Warszawy (bip.warszawa.pl/web/<dzielnica>/radni-dzielnicy); oficjalna strona dzielnicy odsyła do BIP. BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT. Sprawdzarka bez cookie jar nie potwierdzi tych rekordów."
+   ]
+  },
+  "146510": {
+   "teryt": "146510",
+   "kind": "dzielnica",
+   "name": "Dzielnica Śródmieście m.st. Warszawy",
+   "officialUrl": "https://srodmiescie.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/srodmiescie",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Śródmieście m.st. Warszawy",
+     "people": [
+      {
+       "name": "Marcin Rolnik",
+       "sourceUrl": "https://srodmiescie.um.warszawa.pl/radni-dzielnicy",
+       "quote": "Marcin Rolnik – Przewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Śródmieście m.st. Warszawy",
+     "people": [
+      {
+       "name": "Piotr Salach",
+       "sourceUrl": "https://srodmiescie.um.warszawa.pl/radni-dzielnicy",
+       "quote": "Piotr Salach – Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Tomasz Woźniak",
+       "sourceUrl": "https://srodmiescie.um.warszawa.pl/radni-dzielnicy",
+       "quote": "Tomasz Woźniak – Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Julia Zimmermann",
+       "sourceUrl": "https://srodmiescie.um.warszawa.pl/radni-dzielnicy",
+       "quote": "Julia Zimmermann - Wiceprzewodnicząca Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Śródmieście m.st. Warszawy",
+     "people": [
+      {
+       "name": "Aleksander Ferens",
+       "sourceUrl": "https://srodmiescie.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Aleksander Ferens – Burmistrz Dzielnicy Śródmieście",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Śródmieście m.st. Warszawy",
+     "people": [
+      {
+       "name": "Magdalena Wojciechowska",
+       "sourceUrl": "https://srodmiescie.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Magdalena Wojciechowska – Zastępczyni Burmistrza Dzielnicy Śródmieście",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Rafał Krasuski",
+       "sourceUrl": "https://srodmiescie.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Rafał Krasuski - Zastępca Burmistrza Dzielnicy Śródmieście",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ]
+  },
+  "146511": {
+   "teryt": "146511",
+   "kind": "dzielnica",
+   "name": "Dzielnica Targówek m.st. Warszawy",
+   "officialUrl": "https://targowek.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/targowek",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Targówek m.st. Warszawy",
+     "people": [
+      {
+       "name": "Michał Jamiński",
+       "sourceUrl": "https://targowek.um.warszawa.pl/rada-dzielnicy-targowek-m-st-warszawy-kadencja-2024-2029",
+       "quote": "Michał Jamiński Przewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Targówek m.st. Warszawy",
+     "people": [
+      {
+       "name": "Joanna Mroczek",
+       "sourceUrl": "https://targowek.um.warszawa.pl/rada-dzielnicy-targowek-m-st-warszawy-kadencja-2024-2029",
+       "quote": "Joanna Mroczek I Wiceprzewodnicząca Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jacek Duczman",
+       "sourceUrl": "https://targowek.um.warszawa.pl/rada-dzielnicy-targowek-m-st-warszawy-kadencja-2024-2029",
+       "quote": "Jacek Duczman Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Marek Waszczak",
+       "sourceUrl": "https://targowek.um.warszawa.pl/rada-dzielnicy-targowek-m-st-warszawy-kadencja-2024-2029",
+       "quote": "Marek Waszczak Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Targówek m.st. Warszawy",
+     "people": [
+      {
+       "name": "Krzysztof Miszewski",
+       "sourceUrl": "https://targowek.um.warszawa.pl/zarzad-dzielnicy-targowek",
+       "quote": "Krzysztof Miszewski Burmistrz Dzielnicy Targówek m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Targówek m.st. Warszawy",
+     "people": [
+      {
+       "name": "Dorota Kozielska",
+       "sourceUrl": "https://targowek.um.warszawa.pl/zarzad-dzielnicy-targowek",
+       "quote": "Dorota Kozielska I Zastępczyni Burmistrza Dzielnicy Targówek m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Katarzyna Górska-Manczenko",
+       "sourceUrl": "https://targowek.um.warszawa.pl/zarzad-dzielnicy-targowek",
+       "quote": "Katarzyna Górska-Manczenko Zastępczyni Burmistrza Dzielnicy Targówek m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Małgorzata Kwiatkowska",
+       "sourceUrl": "https://targowek.um.warszawa.pl/zarzad-dzielnicy-targowek",
+       "quote": "Małgorzata Kwiatkowska Zastępczyni Burmistrza Dzielnicy Targówek m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Monika Rutkowska",
+       "sourceUrl": "https://targowek.um.warszawa.pl/zarzad-dzielnicy-targowek",
+       "quote": "Monika Rutkowska Zastępczyni Burmistrza Dzielnicy Targówek m.st. Warszawy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Wszystkie cztery osoby w zarządzie poza burmistrzem noszą tytuł „Zastępczyni Burmistrza” (Dorota Kozielska jako „I Zastępczyni”)."
+   ]
+  },
+  "146512": {
+   "teryt": "146512",
+   "kind": "dzielnica",
+   "name": "Dzielnica Ursus m.st. Warszawy",
+   "officialUrl": "https://ursus.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/ursus",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Ursus m.st. Warszawy",
+     "people": [
+      {
+       "name": "Dariusz Pastor",
+       "sourceUrl": "https://ursus.um.warszawa.pl/rada-dzielnicy",
+       "quote": "Pastor Dariusz – Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Ursus m.st. Warszawy",
+     "people": [
+      {
+       "name": "Paweł Dilis",
+       "sourceUrl": "https://ursus.um.warszawa.pl/rada-dzielnicy",
+       "quote": "Dilis Paweł – Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Adam Chmielewski",
+       "sourceUrl": "https://ursus.um.warszawa.pl/rada-dzielnicy",
+       "quote": "Chmielewski Adam – Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Stanisław Dratkiewicz",
+       "sourceUrl": "https://ursus.um.warszawa.pl/rada-dzielnicy",
+       "quote": "Dratkiewicz Stanisław – Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Ursus m.st. Warszawy",
+     "people": [
+      {
+       "name": "Bogdan Olesiński",
+       "sourceUrl": "https://ursus.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Burmistrz Bogdan Olesiński",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Ursus m.st. Warszawy",
+     "people": [
+      {
+       "name": "Anna Lewandowska",
+       "sourceUrl": "https://ursus.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Zastępca burmistrza Anna Lewandowska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Aneta Wachnicka",
+       "sourceUrl": "https://ursus.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Zastępca burmistrza Aneta Wachnicka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Strona rady podaje nazwiska w porządku „Nazwisko Imię” (np. „Pastor Dariusz – Przewodniczący Rady”); w pliku imię i nazwisko odwrócono."
+   ]
+  },
+  "146513": {
+   "teryt": "146513",
+   "kind": "dzielnica",
+   "name": "Dzielnica Ursynów m.st. Warszawy",
+   "officialUrl": "https://ursynow.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/ursynow",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Ursynów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Karolina Mioduszewska",
+       "sourceUrl": "https://ursynow.um.warszawa.pl/-/radni-dzielnicy-2024-2029",
+       "quote": "Karolina Mioduszewska – Przewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Ursynów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Halina Kupiecka",
+       "sourceUrl": "https://ursynow.um.warszawa.pl/-/radni-dzielnicy-2024-2029",
+       "quote": "Halina Kupiecka – Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Paweł Lenarczyk",
+       "sourceUrl": "https://ursynow.um.warszawa.pl/-/radni-dzielnicy-2024-2029",
+       "quote": "Paweł Lenarczyk – Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Antoni Pomianowski",
+       "sourceUrl": "https://ursynow.um.warszawa.pl/-/radni-dzielnicy-2024-2029",
+       "quote": "Antoni Pomianowski – Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Ursynów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Robert Kempa",
+       "sourceUrl": "https://ursynow.um.warszawa.pl/-/sklad-zarzadu",
+       "quote": "Burmistrz Robert Kempa",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Ursynów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Jakub Berent",
+       "sourceUrl": "https://ursynow.um.warszawa.pl/-/sklad-zarzadu",
+       "quote": "Zastępca Burmistrza Jakub Berent",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Cezary Holdenmajer",
+       "sourceUrl": "https://ursynow.um.warszawa.pl/-/sklad-zarzadu",
+       "quote": "Zastępca Burmistrza Cezary Holdenmajer",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Klaudiusz Ostrowski",
+       "sourceUrl": "https://ursynow.um.warszawa.pl/-/sklad-zarzadu",
+       "quote": "Zastępca Burmistrza Klaudiusz Ostrowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ]
+  },
+  "146514": {
+   "teryt": "146514",
+   "kind": "dzielnica",
+   "name": "Dzielnica Wawer m.st. Warszawy",
+   "officialUrl": "https://wawer.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/wawer",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Wawer m.st. Warszawy",
+     "people": [
+      {
+       "name": "Michał Żebrowski",
+       "sourceUrl": "https://wawer.um.warszawa.pl/-/radni-dzielnicy-2024-2029",
+       "quote": "Michał Żebrowski – Przewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Wawer m.st. Warszawy",
+     "people": [
+      {
+       "name": "Tomasz Nałęcz",
+       "sourceUrl": "https://wawer.um.warszawa.pl/-/radni-dzielnicy-2024-2029",
+       "quote": "Tomasz Nałęcz – Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Zdzisław Gójski",
+       "sourceUrl": "https://wawer.um.warszawa.pl/-/radni-dzielnicy-2024-2029",
+       "quote": "Zdzisław Gójski – Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Wawer m.st. Warszawy",
+     "people": [
+      {
+       "name": "Paweł Michalec",
+       "sourceUrl": "https://wawer.um.warszawa.pl/-/zarzad-dzielnicy",
+       "quote": "Burmistrz Dzielnicy Paweł Michalec",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Wawer m.st. Warszawy",
+     "people": [
+      {
+       "name": "Leszek Baraniewski",
+       "sourceUrl": "https://wawer.um.warszawa.pl/-/zarzad-dzielnicy",
+       "quote": "Zastępca Burmistrza Leszek Baraniewski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Łukasz Jeziorski",
+       "sourceUrl": "https://wawer.um.warszawa.pl/-/zarzad-dzielnicy",
+       "quote": "Zastępca Burmistrza Łukasz Jeziorski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ]
+  },
+  "146515": {
+   "teryt": "146515",
+   "kind": "dzielnica",
+   "name": "Dzielnica Wesoła m.st. Warszawy",
+   "officialUrl": "https://wesola.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/wesola",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Wesoła m.st. Warszawy",
+     "people": [
+      {
+       "name": "Ewa Magdalena Tucholska",
+       "sourceUrl": "https://wesola.um.warszawa.pl/radni",
+       "quote": "Ewa Magdalena Tucholska – Przewodnicząca Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Wesoła m.st. Warszawy",
+     "people": [
+      {
+       "name": "Lidia Irena Cybulska-Przesław",
+       "sourceUrl": "https://wesola.um.warszawa.pl/radni",
+       "quote": "Lidia Irena Cybulska – Przesław – Wiceprzewodnicząca Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Leszek Stanisław Winiarski",
+       "sourceUrl": "https://wesola.um.warszawa.pl/radni",
+       "quote": "Leszek Stanisław Winiarski – Wiceprzewodniczący Rady Dzielnicy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Wesoła m.st. Warszawy",
+     "people": [
+      {
+       "name": "Marian Mahor",
+       "sourceUrl": "https://wesola.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Marian Mahor – Burmistrz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Wesoła m.st. Warszawy",
+     "people": [
+      {
+       "name": "Hubert Zieliński",
+       "sourceUrl": "https://wesola.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Hubert Zieliński – Zastępca Burmistrza ds. inwestycji",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Aleksandra Paradowska",
+       "sourceUrl": "https://wesola.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Aleksandra Paradowska – Zastępczyni Burmistrza ds. społecznych",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Strona radnych podaje dwa imiona; Wiceprzewodnicząca zapisana na stronie jako „Lidia Irena Cybulska – Przesław” (nazwisko dwuczłonowe). Hubert Zieliński „od stycznia 2026 roku pełni funkcję Zastępcy Burmistrza” (bez dnia, więc startedAt puste)."
+   ]
+  },
+  "146516": {
+   "teryt": "146516",
+   "kind": "dzielnica",
+   "name": "Dzielnica Wilanów m.st. Warszawy",
+   "officialUrl": "https://wilanow.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/wilanow",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Wilanów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Hubert Królak",
+       "sourceUrl": "https://wilanow.um.warszawa.pl/-/rada-dzielnicy-wilanow-m-st-warszawy-w-kadencji-2024-2029",
+       "quote": "Hubert Królak – Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Wilanów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Urszula Włodarska-Sęk",
+       "sourceUrl": "https://wilanow.um.warszawa.pl/-/rada-dzielnicy-wilanow-m-st-warszawy-w-kadencji-2024-2029",
+       "quote": "Urszula Włodarska-Sęk – Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Małgorzata Drop",
+       "sourceUrl": "https://wilanow.um.warszawa.pl/-/rada-dzielnicy-wilanow-m-st-warszawy-w-kadencji-2024-2029",
+       "quote": "Małgorzata Drop – Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Rafał Krzyżanowski",
+       "sourceUrl": "https://wilanow.um.warszawa.pl/-/rada-dzielnicy-wilanow-m-st-warszawy-w-kadencji-2024-2029",
+       "quote": "Rafał Krzyżanowski – Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Wilanów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Ludwik Rakowski",
+       "sourceUrl": "https://wilanow.um.warszawa.pl/-/sklad-zarzadu-1",
+       "quote": "Ludwik Rakowski – Burmistrz Dzielnicy Wilanów",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Wilanów m.st. Warszawy",
+     "people": [
+      {
+       "name": "Marek Kwiatkowski",
+       "sourceUrl": "https://wilanow.um.warszawa.pl/-/sklad-zarzadu-1",
+       "quote": "Marek Kwiatkowski – Zastępca Burmistrza Dzielnicy Wilanów",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Artur Buczyński",
+       "sourceUrl": "https://wilanow.um.warszawa.pl/-/sklad-zarzadu-1",
+       "quote": "Artur Buczyński – Zastępca Burmistrza Dzielnicy Wilanów",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ]
+  },
+  "146517": {
+   "teryt": "146517",
+   "kind": "dzielnica",
+   "name": "Dzielnica Włochy m.st. Warszawy",
+   "officialUrl": "https://wlochy.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/wlochy",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Włochy m.st. Warszawy",
+     "people": [
+      {
+       "name": "Halina Berłowska",
+       "sourceUrl": "https://bip.warszawa.pl/web/wlochy/radni-dzielnicy",
+       "quote": "Halina Berłowska Funkcja osoby Przewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Włochy m.st. Warszawy",
+     "people": [
+      {
+       "name": "Mariusz Czapla",
+       "sourceUrl": "https://bip.warszawa.pl/web/wlochy/radni-dzielnicy",
+       "quote": "Mariusz Czapla Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Łukasz Jarosz",
+       "sourceUrl": "https://bip.warszawa.pl/web/wlochy/radni-dzielnicy",
+       "quote": "Łukasz Jarosz Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Tomasz Pisarek",
+       "sourceUrl": "https://bip.warszawa.pl/web/wlochy/radni-dzielnicy",
+       "quote": "Tomasz Pisarek Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Włochy m.st. Warszawy",
+     "people": [
+      {
+       "name": "Jarosław Karcz",
+       "sourceUrl": "https://wlochy.um.warszawa.pl/zarzad",
+       "quote": "Jarosław Karcz – Burmistrz Dzielnicy Włochy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Włochy m.st. Warszawy",
+     "people": [
+      {
+       "name": "Monika Kryk",
+       "sourceUrl": "https://wlochy.um.warszawa.pl/zarzad",
+       "quote": "Monika Kryk - Zastępca Burmistrza Dzielnicy Włochy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Dominik Wymysłowski",
+       "sourceUrl": "https://wlochy.um.warszawa.pl/zarzad",
+       "quote": "Dominik Wymysłowski - Zastępca Burmistrza Dzielnicy Włochy",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady dzielnicy tylko w BIP m.st. Warszawy (bip.warszawa.pl/web/<dzielnica>/radni-dzielnicy); oficjalna strona dzielnicy odsyła do BIP. BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT. Sprawdzarka bez cookie jar nie potwierdzi tych rekordów."
+   ]
+  },
+  "146518": {
+   "teryt": "146518",
+   "kind": "dzielnica",
+   "name": "Dzielnica Wola m.st. Warszawy",
+   "officialUrl": "https://wola.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/wola",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Wola m.st. Warszawy",
+     "people": [
+      {
+       "name": "Marcin Hoffman",
+       "sourceUrl": "https://bip.warszawa.pl/web/wola/radni-dzielnicy",
+       "quote": "Marcin Hoffman Funkcja osoby Radny Dzielnicy m.st. Warszawy Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Wola m.st. Warszawy",
+     "people": [
+      {
+       "name": "Bartłomiej Kubicki",
+       "sourceUrl": "https://bip.warszawa.pl/web/wola/radni-dzielnicy",
+       "quote": "Bartłomiej Kubicki Funkcja osoby Radny Dzielnicy m.st. Warszawy Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Agata Pruszczyńska",
+       "sourceUrl": "https://bip.warszawa.pl/web/wola/radni-dzielnicy",
+       "quote": "Agata Pruszczyńska Funkcja osoby Radna Dzielnicy m.st. Warszawy Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Anna Rudziak-Tałałaj",
+       "sourceUrl": "https://bip.warszawa.pl/web/wola/radni-dzielnicy",
+       "quote": "Anna Rudziak-Tałałaj Funkcja osoby Radna Dzielnicy m.st. Warszawy Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Wola m.st. Warszawy",
+     "people": [
+      {
+       "name": "Krzysztof Strzałkowski",
+       "sourceUrl": "https://wola.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Krzysztof Strzałkowski Burmistrz Dzielnicy Wola",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Wola m.st. Warszawy",
+     "people": [
+      {
+       "name": "Grażyna Orzechowska-Mikulska",
+       "sourceUrl": "https://wola.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Grażyna Orzechowska-Mikulska Zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Wojciech Lesiuk",
+       "sourceUrl": "https://wola.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Wojciech Lesiuk Zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Adam Hać",
+       "sourceUrl": "https://wola.um.warszawa.pl/zarzad-dzielnicy",
+       "quote": "Adam Hać Zastępca Burmistrza",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady dzielnicy tylko w BIP m.st. Warszawy (bip.warszawa.pl/web/<dzielnica>/radni-dzielnicy); oficjalna strona dzielnicy odsyła do BIP. BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT. Sprawdzarka bez cookie jar nie potwierdzi tych rekordów.",
+    "Strona wola.um.warszawa.pl ma tylko listę radnych kadencji 2018-2024 (prezydium nieaktualne); wyszukiwarka tagu „radni” zwraca stronę Agaty Pruszczyńskiej z kadencji VIII."
+   ]
+  },
+  "146519": {
+   "teryt": "146519",
+   "kind": "dzielnica",
+   "name": "Dzielnica Żoliborz m.st. Warszawy",
+   "officialUrl": "https://zoliborz.um.warszawa.pl/",
+   "bipUrl": "https://bip.warszawa.pl/web/zoliborz",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Dzielnicy Żoliborz m.st. Warszawy",
+     "people": [
+      {
+       "name": "Wiktor Jasionowski",
+       "sourceUrl": "https://bip.warszawa.pl/web/zoliborz/radni-dzielnicy",
+       "quote": "Wiktor Jasionowski Funkcja osoby Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Dzielnicy Żoliborz m.st. Warszawy",
+     "people": [
+      {
+       "name": "Grzegorz Hlebowicz",
+       "sourceUrl": "https://bip.warszawa.pl/web/zoliborz/radni-dzielnicy",
+       "quote": "Grzegorz Hlebowicz Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Konrad Smoczny",
+       "sourceUrl": "https://bip.warszawa.pl/web/zoliborz/radni-dzielnicy",
+       "quote": "Konrad Smoczny Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Łukasz Ostrowski",
+       "sourceUrl": "https://bip.warszawa.pl/web/zoliborz/radni-dzielnicy",
+       "quote": "Łukasz Ostrowski Funkcja osoby Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "burmistrz_dzielnicy",
+     "title": "Burmistrz Dzielnicy Żoliborz m.st. Warszawy",
+     "people": [
+      {
+       "name": "Renata Kozłowska",
+       "sourceUrl": "https://zoliborz.um.warszawa.pl/zarzad-dzielnicy2",
+       "quote": "Renata Kozłowska - Burmistrz Dzielnicy Żoliborz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_burmistrza",
+     "title": "Zastępca Burmistrza Dzielnicy Żoliborz m.st. Warszawy",
+     "people": [
+      {
+       "name": "Joanna Kotkowska-Pyzel",
+       "sourceUrl": "https://zoliborz.um.warszawa.pl/zarzad-dzielnicy2",
+       "quote": "Joanna Kotkowska-Pyzel - Zastępczyni Burmistrza Dzielnicy Żoliborz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Tomasz Mielcarz",
+       "sourceUrl": "https://zoliborz.um.warszawa.pl/zarzad-dzielnicy2",
+       "quote": "Tomasz Mielcarz - Zastępca Burmistrza Dzielnicy Żoliborz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium rady dzielnicy tylko w BIP m.st. Warszawy (bip.warszawa.pl/web/<dzielnica>/radni-dzielnicy); oficjalna strona dzielnicy odsyła do BIP. BIP m.st. Warszawy (Liferay) oddaje pusty dokument (content-length 0) na pierwsze żądanie bez ciasteczka sesji, także w Chromium; treść dopiero przy drugim żądaniu z JSESSIONID/LFR_SIDENT. Sprawdzarka bez cookie jar nie potwierdzi tych rekordów."
+   ]
+  }
+ },
+ "failed": [
+  {
+   "key": "1465",
+   "what": "Wiceprzewodniczący Rady m.st. Warszawy (Ewa Janczar, Kamila Gołębiowska, Sławomir Potapowicz) – potwierdzenie przez sprawdzarkę",
+   "why": "Jedyna strona z nazwiskiem obok funkcji to BIP (bip.warszawa.pl/web/rada-warszawy/radni-2024-2029). BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP). Strony radnych na um.warszawa.pl podają funkcję tylko w notce biograficznej dalej niż 600 znaków od nazwiska (Janczar, Gołębiowska) albo wcale (Potapowicz); strona radni-2024-2029 ma prezydium jako banery graficzne bez tekstu.",
+   "tried": [
+    "https://bip.warszawa.pl/web/rada-warszawy/radni-2024-2029",
+    "https://um.warszawa.pl/waw/radawarszawy/radni-2024-2029",
+    "https://um.warszawa.pl/waw/radawarszawy/-/ewa-janczar-radna-m-st-warsza-1",
+    "https://um.warszawa.pl/waw/radawarszawy/-/golebiowska-kamila-radna-m-st-warszawy",
+    "https://um.warszawa.pl/waw/radawarszawy/-/slawomir-potapowicz-radny-m-st-warsza-2",
+    "https://bip.warszawa.pl/uchwaly?scope=Rada+m.st.+Warszawy (listing bez nazwisk; strony uchwał też w /web/…)"
+   ]
+  },
+  {
+   "key": "1465",
+   "what": "Karolina Bober – Zastępczyni Prezydenta m.st. Warszawy – potwierdzenie przez sprawdzarkę",
+   "why": "Strona um.warszawa.pl/zastepcy-prezydenta podaje „Zastępczyni Prezydenta m.st. Warszawy”; słownik KEYWORDS roli zastepca_prezydenta zawiera tylko formy męskie (bez zmian w tym przebiegu), a najbliższe „Zastępca Prezydenta” stoi dalej niż 600 znaków. BIP (/web/prezydent/zastepcy-prezydenta) używa tej samej formy i wymaga ciasteczka.",
+   "tried": [
+    "https://um.warszawa.pl/zastepcy-prezydenta",
+    "https://bip.warszawa.pl/web/prezydent/zastepcy-prezydenta",
+    "https://um.warszawa.pl/waw/um/-/struktura-organizacyjna"
+   ]
+  },
+  {
+   "key": "1465",
+   "what": "Daty powołania Zastępców Prezydenta i Sekretarza (zarządzenia)",
+   "why": "Strony um.warszawa.pl i BIP nie podają dat ani numerów zarządzeń; wyszukiwarka zarządzeń w BIP (bip.warszawa.pl/zarzadzenia) nie ma filtrowania po treści przez GET, a strony pojedynczych zarządzeń leżą w /web/… (pusty dokument bez ciasteczka).",
+   "tried": [
+    "https://um.warszawa.pl/zastepcy-prezydenta",
+    "https://bip.warszawa.pl/web/prezydent/zastepcy-prezydenta",
+    "https://bip.warszawa.pl/web/prezydent/sekretarz"
+   ]
+  },
+  {
+   "key": "1465-bialoleka",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Dzielnicy Białołęka – potwierdzenie przez sprawdzarkę",
+   "why": "BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP).",
+   "tried": [
+    "https://bip.warszawa.pl/web/bialoleka/radni-dzielnicy",
+    "https://bip.warszawa.pl/web/bialoleka/rada-dzielnicy",
+    "https://bialoleka.um.warszawa.pl/"
+   ]
+  },
+  {
+   "key": "1465-bielany",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Dzielnicy Bielany – potwierdzenie przez sprawdzarkę",
+   "why": "BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP).",
+   "tried": [
+    "https://bip.warszawa.pl/web/bielany/radni-dzielnicy",
+    "https://bip.warszawa.pl/web/bielany/rada-dzielnicy",
+    "https://bielany.um.warszawa.pl/"
+   ]
+  },
+  {
+   "key": "1465-mokotow",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Dzielnicy Mokotów – potwierdzenie przez sprawdzarkę",
+   "why": "BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP).",
+   "tried": [
+    "https://bip.warszawa.pl/web/mokotow/radni-dzielnicy",
+    "https://bip.warszawa.pl/web/mokotow/rada-dzielnicy",
+    "https://mokotow.um.warszawa.pl/rada-dzielnicy"
+   ]
+  },
+  {
+   "key": "1465-ochota",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Dzielnicy Ochota – potwierdzenie przez sprawdzarkę",
+   "why": "BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP).",
+   "tried": [
+    "https://bip.warszawa.pl/web/ochota/radni-dzielnicy",
+    "https://bip.warszawa.pl/web/ochota/rada-dzielnicy",
+    "https://ochota.um.warszawa.pl/rada-dzielnicy"
+   ]
+  },
+  {
+   "key": "1465-rembertow",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Dzielnicy Rembertów – potwierdzenie przez sprawdzarkę",
+   "why": "BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP).",
+   "tried": [
+    "https://bip.warszawa.pl/web/rembertow/radni-dzielnicy",
+    "https://bip.warszawa.pl/web/rembertow/rada-dzielnicy",
+    "https://rembertow.um.warszawa.pl/prace-rada-dzielnicy"
+   ]
+  },
+  {
+   "key": "1465-wlochy",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Dzielnicy Włochy – potwierdzenie przez sprawdzarkę",
+   "why": "BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP).",
+   "tried": [
+    "https://bip.warszawa.pl/web/wlochy/radni-dzielnicy",
+    "https://bip.warszawa.pl/web/wlochy/rada-dzielnicy",
+    "https://wlochy.um.warszawa.pl/rada-dzielnicy"
+   ]
+  },
+  {
+   "key": "1465-wola",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Dzielnicy Wola – potwierdzenie przez sprawdzarkę",
+   "why": "BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP).",
+   "tried": [
+    "https://bip.warszawa.pl/web/wola/radni-dzielnicy",
+    "https://bip.warszawa.pl/web/wola/rada-dzielnicy",
+    "https://wola.um.warszawa.pl/rada-dzielnicy-wola"
+   ]
+  },
+  {
+   "key": "1465-zoliborz",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Dzielnicy Żoliborz – potwierdzenie przez sprawdzarkę",
+   "why": "BIP m.st. Warszawy (bip.warszawa.pl, Liferay) oddaje pusty dokument (HTTP 200, content-length 0) na pierwsze żądanie bez ciasteczka sesji, również w Chromium (Playwright); treść pojawia się dopiero przy kolejnym żądaniu z ciasteczkiem JSESSIONID/LFR_SIDENT. Sprawdzarka (urllib bez cookie jar, Playwright z jednym goto) nie potwierdzi żadnego adresu w /web/…; dane odczytano ręcznie (drugie żądanie z ciasteczkiem) i zostawiono jako unverified. Oficjalne strony tych dzielnic nie publikują prezydium rady (odsyłają do BIP).",
+   "tried": [
+    "https://bip.warszawa.pl/web/zoliborz/radni-dzielnicy",
+    "https://bip.warszawa.pl/web/zoliborz/rada-dzielnicy",
+    "https://zoliborz.um.warszawa.pl/waw/zoliborz/-/radni-dzielnicy-2"
+   ]
+  }
+ ]
+}
