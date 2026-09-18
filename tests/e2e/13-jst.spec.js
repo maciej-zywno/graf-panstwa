@@ -10,8 +10,8 @@ for (const u of [{ t: '100000', kind: 'wojewodztwo', name: 'Województwo łódzk
   test(`${u.name}: koło jednostki z trzema sektorami, rada ma tylu radnych, ile mandatów, każda relacja ma przepis`, async ({ page }) => {
     const errors = await open(page, u.t); const r = await page.evaluate(() => { const G = window.__GP_TEST; return { j: G.jst(), labels: [...document.querySelectorAll('#stage svg text.sector-label')].map(x => x.textContent), title: document.querySelector('#title').textContent, seal: [...document.querySelectorAll('#stage svg .seal-text')].map(x => x.textContent).join(' '), toggle: !document.querySelector('#mode-toggle').hidden }; });
     expect(r.j.kind).toBe(u.kind); expect(r.j.name).toBe(u.name); expect(r.title).toBe(u.name); expect(r.labels).toEqual(['STANOWIĄCA I KONTROLNA', 'WYKONAWCZA', 'NADZÓR I KONTROLA']); expect(r.seal).toMatch(/^Mieszkańcy /); expect(r.toggle, 'widok budżetu jest tylko dla budżetu państwa').toBe(false);
-    await sel(page, `jst-${u.t}-rada`); await page.waitForTimeout(400); const c = await page.evaluate(() => { const n = window.__GP_TEST.node(window.__GP_TEST.state().selected); const label = document.querySelector('#view-node .sect-label').textContent; return { people: n.people, label, cards: document.querySelectorAll('#view-node .pgrid .head-card').length, rows: [...document.querySelectorAll('#view-node .row[data-eid] .r-cite')].map(x => x.textContent) }; });
-    expect(c.people).toBeGreaterThanOrEqual(15); if (u.seats) expect(c.people).toBe(u.seats); expect(c.label).toContain(`${c.people} miejsc`); expect(c.cards).toBe(c.people); expect(c.rows.length).toBeGreaterThan(3); for (const x of c.rows) expect(x).toMatch(/art\. \d+/);
+    await sel(page, `jst-${u.t}-rada`); await page.waitForTimeout(400); const c = await page.evaluate(() => { const n = window.__GP_TEST.node(window.__GP_TEST.state().selected); const label = document.querySelector('#view-node .sect-label').textContent; const headPeople = n.head ? (window.__GP_TEST.node(n.head).people || 0) : 0; return { people: n.people, headPeople, label, cards: document.querySelectorAll('#view-node .pgrid .head-card').length, cardNames: [...document.querySelectorAll('#view-node .pgrid .head-card .name')].map(x => x.textContent.trim()), rows: [...document.querySelectorAll('#view-node .row[data-eid] .r-cite')].map(x => x.textContent) }; });
+    expect(c.people).toBeGreaterThanOrEqual(15); if (u.seats) expect(c.people).toBe(u.seats); expect(c.label).toContain(`${c.people} miejsc`); expect(c.cards, 'karty: wszyscy radni, plus przewodniczący nad listą, jeśli jest znany i nie jest już na liście').toBeGreaterThanOrEqual(c.people); expect(c.cards).toBeLessThanOrEqual(c.people + c.headPeople); expect(new Set(c.cardNames).size, 'żadna osoba nie ma dwóch kart').toBe(c.cardNames.length); expect(c.rows.length).toBeGreaterThan(3); for (const x of c.rows) expect(x).toMatch(/art\. \d+/);
     expect(errors).toEqual([]);
   });
 
@@ -33,6 +33,19 @@ test('graf państwa: wyszukiwarka znajduje miejscowość, karta „Samorząd” 
   await page.click('#q'); await page.waitForTimeout(600); await page.keyboard.type('Zgierz'); await page.waitForTimeout(700); const res = await page.evaluate(() => [...document.querySelectorAll('#results .jst-result .r-name')].map(x => x.textContent)); expect(res.length).toBeGreaterThanOrEqual(2); expect(res.join(' | ')).toContain('Miasto Zgierz'); expect(res.join(' | ')).toContain('Powiat zgierski');
   await page.click('#results .jst-result:has-text("Miasto Zgierz")'); await page.waitForFunction(() => window.__GP_TEST && window.__GP_TEST.jst() && window.__GP_TEST.jst().teryt === '102003');
   await open(page, null, '#node=pl-wojewoda-lodzki'); await page.waitForTimeout(500); await page.click('[data-jst-woj]'); await page.waitForFunction(() => window.__GP_TEST && window.__GP_TEST.jst() && window.__GP_TEST.jst().teryt === '100000');
+});
+
+test('nakładka łódzkie: starosta, zarząd, prezydium rady, sekretarz i skarbnik mają nazwiska ze źródłem BIP; gmina w tym samym powiecie ich nie dziedziczy', async ({ page }) => {
+  const errors = await open(page, '102000');
+  const r = await page.evaluate(() => { const G = window.__GP_TEST; const n = k => G.node('jst-102000-' + k); return { lider: n('lider').people, zarzad: n('zarzad').people, przew: n('przew').people, wice: n('wiceprzew').people, sekretarz: n('sekretarz').people, skarbnik: n('skarbnik').people }; });
+  expect(r.lider).toBe(1); expect(r.zarzad).toBeGreaterThanOrEqual(3); expect(r.przew).toBe(1); expect(r.wice).toBeGreaterThanOrEqual(1); expect(r.sekretarz).toBe(1); expect(r.skarbnik).toBe(1);
+  await sel(page, 'jst-102000-lider'); await page.waitForTimeout(500);
+  const h = await page.evaluate(() => { const c = document.querySelector('#view-node .head-card'); return { text: c.textContent, src: c.querySelector('.src') ? c.querySelector('.src').href : '', vacancy: /Brak danych o obsadzie|Wakat/.test(document.querySelector('#view-node').textContent) }; });
+  expect(h.text).toMatch(/Starosta/); expect(h.src).toMatch(/^https:\/\/(www\.)?powiat/); expect(h.vacancy).toBe(false);
+  await page.goto(D_URL + '&jst=102003'); await page.waitForFunction(() => window.__GP_TEST && window.__GP_TEST.jst() && window.__GP_TEST.jst().teryt === '102003', null, { timeout: 20000 });
+  const g = await page.evaluate(() => { const G = window.__GP_TEST; return { sekretarz: G.node('jst-102003-sekretarz').people, skarbnik: G.node('jst-102003-skarbnik').people, przew: G.node('jst-102003-przew').people }; });
+  expect(g, 'gmina Zgierz nie ma jeszcze nakładki, więc stanowiska muszą być puste, nie przepisane z powiatu').toEqual({ sekretarz: 0, skarbnik: 0, przew: 0 });
+  expect(errors).toEqual([]);
 });
 
 test('nieistniejący kod jednostki daje czytelny komunikat, a nie pustą stronę', async ({ page }) => {

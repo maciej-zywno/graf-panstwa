@@ -1,6 +1,6 @@
 # Projekt: samorząd terytorialny w Grafie Państwa
 
-Stan: projekt z 18.09.2026. Decyzje właściciela z tego samego dnia: samorząd wchodzi do Grafu Państwa, pilot to województwo łódzkie, radni widoczni z nazwiska od początku. **Etap 0 (rama krajowa) jest zbudowany** (`scripts/jst/build-frame.py`, `data/jst/`), etap 1 (zarządy i przewodniczący rad w łódzkim) w toku. Dokument odpowiada na dwa pytania właściciela: kto i jak uruchamia zadania, żeby dane były aktualne, oraz jak rozszerzyć graf o województwa, powiaty i gminy.
+Stan: projekt z 18.09.2026. Decyzje właściciela z tego samego dnia: samorząd wchodzi do Grafu Państwa, pilot to województwo łódzkie, radni widoczni z nazwiska od początku. **Etap 0 (rama krajowa) jest zbudowany** (`scripts/jst/build-frame.py`, `data/jst/`). **Etap 1 (łódzkie) jest zrobiony**: nakładka `data/jst/overlay/10.json` z 226 potwierdzonymi osobami w 25 jednostkach (województwo, 21 powiatów, 3 miasta na prawach powiatu): zarządy, prezydia rad, zastępcy prezydentów, skarbnicy i sekretarze, każda osoba z adresem strony, cytatem i datą; niezależna sprawdzarka `scripts/jst/verify-overlay.py`. Luka: zarząd i prezydium rady powiatu bełchatowskiego (BIP bez treści, protokoły jako skany). Dokument odpowiada na dwa pytania właściciela: kto i jak uruchamia zadania, żeby dane były aktualne, oraz jak rozszerzyć graf o województwa, powiaty i gminy.
 
 ## 1. Kto i jak uruchamia zadania (stan obecny, działa)
 
@@ -136,6 +136,16 @@ Etap 0 jest w całości deterministyczny i nie wymaga modelu ani ręcznej pracy 
 - **Osoby o tym samym nazwisku.** Bez numeru PESEL nie ma pewnej tożsamości między jednostkami. Dlatego tylko miękkie powiązania.
 - **Prywatność.** Tylko funkcje publiczne i tylko z urzędowych źródeł; bez wieku, wykształcenia, adresu; strony osób bez indeksowania. Oświadczenia majątkowe to osobny, zaparkowany projekt i nie wchodzą do grafu.
 - **Rozmiar repozytorium.** Kilka tysięcy plików zmienianych co tydzień. Pomaga stabilny zapis, zmiana tylko plików z faktyczną różnicą i trzymanie migawek w wydaniach (releases), nie w historii.
+
+## 9a. Wnioski z pilota łódzkiego (18.09.2026)
+
+- **Wynik:** 25 jednostek, 226 osób, wszystkie potwierdzone dwoma niezależnymi przebiegami sprawdzarki (`scripts/jst/verify-overlay.py`: każdy adres pobrany od nowa, nazwisko obok słowa funkcji w oknie 600 znaków). 141 osób ze stron BIP, 85 z oficjalnych stron urzędów tam, gdzie BIP nie ma składu albo jest nieczytelny. Data objęcia stanowiska tylko dla 20 osób (BIP podaje uchwałę z datą).
+- **Czas:** ok. 26 minut zegarowych na 25 jednostek w czterech równoległych wątkach; powiat z czytelnym BIP 1–2 minuty, z BIP jako aplikacją JS albo bez strony składu 5–10 minut; weryfikacja 226 osób ok. 2,5 minuty przy limicie jednego żądania na sekundę na host.
+- **Główna przeszkoda to odnalezienie właściwej podstrony, nie odczyt.** Nie ma maszynowego rejestru adresów BIP (wyszukiwarka gov.pl/bip to aplikacja JS bez otwartego API), zgadywane adresy `bip.<domena>` nie istniały w połowie przypadków; właściwy adres trzeba brać z odnośnika na stronie urzędu. Ta sama informacja bywa w BIP, na stronie urzędu, w tabeli kadencji dwa poziomy niżej albo w skanie PDF.
+- **Dostawcy BIP:** bip.net.pl (Next.js: treść artykułu tylko w ładunku `self.__next_f.push`, nie w DOM nawet po Playwright; sprawdzarka go dekoduje), biuletyn.net, nv.pl, finn.pl, SSDIP na gov.pl, 4bip. Kilku dostawców pokrywa większość stron, więc przy skalowaniu na 380 powiatów i miast opłaca się adapter na dostawcę.
+- **Blokady i awarie:** `powiat-pabianice.bip.info.pl` zabrania automatom w robots.txt (użyto oficjalnej strony, bez obchodzenia); `bip.piotrkow.pl` dał raz HTTP 500 (przebieg tygodniowy potrzebuje ponowienia); `www.powiatkutno.eu` nie odpowiada; `www.powiat.wielun.pl` ma certyfikat tylko na domenę bez `www`.
+- **Luka:** powiat bełchatowski: BIP (SSDIP) ma puste kategorie „Starosta” i „Zarząd Powiatu”, oficjalna strona podaje tylko komisje, protokoły sesji to skany bez warstwy tekstu. Takie przypadki wymagają OCR albo człowieka.
+- **Granica sprawdzarki:** potwierdza współwystępowanie nazwiska i słowa funkcji na stronie; nie wykryje strony niezaktualizowanej po zmianie na stanowisku. Stąd cotygodniowe ponowne sprawdzanie i obserwacja uchwał rad (etap 3).
 
 ## 10. Decyzje do podjęcia przez właściciela
 

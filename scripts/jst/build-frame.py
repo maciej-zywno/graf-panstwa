@@ -69,15 +69,23 @@ overlay = {}
 for path in glob.glob(os.path.join(OUT, 'overlay', '*.json')):
     o = json.load(open(path, encoding='utf-8'))
     for k, v in (o.get('units') or {}).items(): overlay[k] = v
-def overlay_for(u):  # klucze nakładki: „10”, „1001”, „1061”
-    t = u['t']; return overlay.get(t[:2] if u['kind'] == 'wojewodztwo' else t[:4]) or {}
+def overlay_for(u):  # klucze nakładki: województwo „10”, powiat „1001”, miasto na prawach powiatu „1061”, gmina pełny kod „100201”
+    t = u['t']; return overlay.get(t[:2] if u['kind'] == 'wojewodztwo' else t if u['kind'] == 'gmina' else t[:4]) or {}
+def canonical_name(name, t):
+    """Strony BIP podają zwykle jedno imię, PKW wszystkie. Gdy w radzie tej jednostki jest dokładnie jedna osoba o tym samym pierwszym imieniu i nazwisku, używamy pełnego zapisu PKW, żeby ta sama osoba miała jeden zapis w całym kole."""
+    parts = name.split()
+    if len(parts) < 2: return name
+    key = (slug(parts[0]), slug(parts[-1]))
+    hits = [m['name'] for m in members.get(t, []) if (slug(m['name'].split()[0]), slug(m['name'].split()[-1])) == key]
+    return hits[0] if len(hits) == 1 else name
 def ov_people(ov, roles, position_id, position_name):
-    out = []
+    out = []; t = position_id.split('-')[1]
     for pos in ov.get('positions') or []:
         if pos.get('role') not in roles: continue
         for p in pos.get('people') or []:
             if p.get('verdict') != 'confirmed' or not p.get('sourceUrl'): continue
-            out.append({'id': f"{position_id}-{slug(p['name'])}", 'name': p['name'], 'positionId': position_id, 'positionName': pos.get('title') or position_name, 'type': 'elected', 'startedAt': p.get('startedAt'), 'startedAtSource': p.get('startedAtSource'), 'acting': False, 'status': 'verified', 'party': None, 'imageUrl': None, 'sourceUrl': p['sourceUrl'], 'note': None, 'verdict': 'confirmed', 'verifiedAt': p.get('retrievedAt')})
+            name = canonical_name(p['name'], t)
+            out.append({'id': f"{position_id}-{slug(name)}", 'name': name, 'positionId': position_id, 'positionName': pos.get('title') or position_name, 'type': 'elected', 'startedAt': p.get('startedAt'), 'startedAtSource': p.get('startedAtSource'), 'acting': False, 'status': 'verified', 'party': None, 'imageUrl': None, 'sourceUrl': p['sourceUrl'], 'note': None, 'verdict': 'confirmed', 'verifiedAt': p.get('retrievedAt')})
     return out
 
 # ---------- budowa grafu jednostki ----------
@@ -99,9 +107,11 @@ def build(u):
     council['people']['people'] = [{'id': f"{P}-{slug(m['name'])}", 'name': m['name'], 'positionId': council['id'], 'positionName': 'Radny' if tier != 'w' else 'Radny województwa', 'type': 'elected', 'startedAt': None, 'startedAtSource': None, 'electedAt': ELECTED_AT, 'acting': False, 'status': 'verified', 'party': m['committee'] or None, 'imageUrl': None, 'sourceUrl': PKW_PAGE, 'note': None, 'verdict': 'confirmed'} for m in sorted(members.get(t, []), key=lambda m: (slug(m['name'].split()[-1]), slug(m['name'])))]
     chair_people = ov_people(ov, ('przewodniczacy_rady',), f'{P}-przew', 'Przewodniczący')
     node('przew', type='dept_head', sector='legislative', ring='highest', name='Przewodniczący: ' + u['council'], shortName='Przewodniczący rady' if tier != 'w' else 'Przewodniczący sejmiku', headOf=council['id'], description='Organizuje pracę rady i prowadzi jej obrady. Wybierany przez radę ze swego grona.', legalSource=legal(tier + '.przewodniczacy'), people={'type': 'people', 'people': chair_people}, **({} if chair_people else NO))
+    vice = ov_people(ov, ('wiceprzewodniczacy_rady',), f'{P}-wiceprzew', 'Wiceprzewodniczący')
+    node('wiceprzew', type='dept_head', sector='legislative', ring='highest', name='Wiceprzewodniczący: ' + u['council'], shortName='Wiceprzewodniczący rady' if tier != 'w' else 'Wiceprzewodniczący sejmiku', description='Od jednego do trzech wiceprzewodniczących wybieranych przez radę ze swego grona; zastępują przewodniczącego.', legalSource=legal(tier + '.wiceprzewodniczacy'), people={'type': 'people', 'people': vice}, **({} if vice else NO))
     node('kom-rew', type='commission', subtype='committee', sector='legislative', ring='satellite', parent=council['id'], name='Komisja rewizyjna', description='Obowiązkowa komisja rady do kontroli organu wykonawczego i jednostek organizacyjnych.', legalSource=legal(tier + '.kontrola'), people={'type': 'count', 'count': 0})
     node('kom-skarg', type='commission', subtype='committee', sector='legislative', ring='satellite', parent=council['id'], name='Komisja skarg, wniosków i petycji', description='Obowiązkowa komisja rady rozpatrująca skargi, wnioski i petycje mieszkańców.', legalSource=legal(tier + '.skargi'), people={'type': 'count', 'count': 0})
-    edge('m', 'rada', 'elects', 'k.wybory', u['seats']); edge('rada', 'przew', 'dept_head', tier + '.przewodniczacy'); edge('rada', 'przew', 'elects', tier + '.przewodniczacy', 1); edge('rada', 'kom-rew', 'appoints', tier + '.kontrola'); edge('rada', 'kom-skarg', 'appoints', tier + '.skargi')
+    edge('m', 'rada', 'elects', 'k.wybory', u['seats']); edge('rada', 'przew', 'dept_head', tier + '.przewodniczacy'); edge('rada', 'przew', 'elects', tier + '.przewodniczacy', 1); edge('rada', 'wiceprzew', 'elects', tier + '.wiceprzewodniczacy'); edge('rada', 'kom-rew', 'appoints', tier + '.kontrola'); edge('rada', 'kom-skarg', 'appoints', tier + '.skargi')
     if tier == 'g':
         h = heads.get(t); organ = h['organ'] if h else 'Wójt, burmistrz albo prezydent miasta'; word = organ.split()[0]
         ex = node('wojt', type='elected', sector='executive', ring='highest', name=organ, shortName=word, description='Organ wykonawczy gminy, wybierany przez mieszkańców w wyborach bezpośrednich. Kieruje urzędem.', legalSource=legal('g.wojt'), seatsCount=1)
@@ -115,7 +125,7 @@ def build(u):
         node('jednostki', type='department', subtype='other', sector='executive', ring='satellite', parent=urz['id'], name='Jednostki organizacyjne (szkoły, ośrodki pomocy społecznej, zakłady)', shortName='Jednostki organizacyjne', description='Jednostki tworzone przez gminę do wykonywania jej zadań. Lista nie jest jeszcze zebrana.', legalSource=legal('g.jednostki'), people={'type': 'count', 'count': 0})
         node('pomocnicze', type='department', subtype='other', sector='legislative', ring='satellite', parent=council['id'], name='Jednostki pomocnicze (sołectwa, dzielnice, osiedla)', shortName='Jednostki pomocnicze', description='Tworzone uchwałą rady po konsultacjach z mieszkańcami. Lista nie jest jeszcze zebrana.', legalSource=legal('g.pomocnicze'), people={'type': 'count', 'count': 0})
         edge('m', 'wojt', 'elects', 'g.mieszkancy', 1); edge('rada', 'wojt', 'oversees', 'g.kontrola'); edge('wojt', 'urzad', 'oversees', 'g.urzad'); edge('urzad', 'wojt', 'administers', 'g.urzad'); edge('wojt', 'zastepca', 'appoints', 'g.zastepca'); edge('rada', 'skarbnik', 'appoints', 'g.skarbnik'); edge('wojt', 'skarbnik', 'nominates', 'g.skarbnik'); edge('rada', 'pomocnicze', 'oversees', 'g.pomocnicze')
-        execs = ['wojt']; nadzor = 'g.nadzor'
+        execs = ['wojt']; nadzor = 'g.nadzor'; boss = 'wojt'; sec_name = 'Sekretarz miasta' if gen[0] == 'miasta' else 'Sekretarz gminy'
     else:
         lead_role, lead_title, board_name, office = (('starosta', 'Starosta', 'Zarząd powiatu', 'Starostwo powiatowe') if tier == 'p' else ('marszalek', 'Marszałek województwa', 'Zarząd województwa', 'Urząd marszałkowski'))
         board_people = ov_people(ov, ('wicestarosta', 'wicemarszalek', 'czlonek_zarzadu'), f'{P}-zarzad', 'Członek zarządu')
@@ -124,12 +134,17 @@ def build(u):
         node('lider', type='dept_head', sector='executive', ring='highest', name=f"{lead_title}: {u['name']}", shortName=lead_title, headOf=f'{P}-zarzad', description='Przewodniczący zarządu, kieruje urzędem jednostki.' + (' Zwierzchnik powiatowych służb, inspekcji i straży.' if tier == 'p' else ''), legalSource=legal(tier + '.wybor'), people={'type': 'people', 'people': lp}, **({} if lp else NO))
         urz = node('urzad', type='department', sector='executive', ring='administration', name=office, description='Aparat pomocniczy zarządu.', legalSource=legal('p.starostwo' if tier == 'p' else 'w.urzad'), people={'type': 'count', 'count': 0})
         edge('rada', 'zarzad', 'elects', tier + '.wybor'); edge('zarzad', 'lider', 'dept_head', tier + '.zarzad'); edge('rada', 'lider', 'elects', tier + '.wybor', 1); edge('rada', 'zarzad', 'oversees', tier + '.kontrola'); edge('lider', 'urzad', 'oversees', 'p.starostwo' if tier == 'p' else 'w.urzad'); edge('urzad', 'zarzad', 'administers', 'p.starostwo' if tier == 'p' else 'w.urzad')
+        sk_name = 'Skarbnik powiatu' if tier == 'p' else 'Skarbnik województwa'; sk = ov_people(ov, ('skarbnik',), f'{P}-skarbnik', sk_name)
+        node('skarbnik', type='dept_head', sector='executive', ring='administration', name=sk_name, description='Główny księgowy budżetu powiatu. Powoływany przez radę na wniosek starosty.' if tier == 'p' else 'Główny księgowy budżetu województwa. Powoływany przez sejmik na wniosek marszałka.', legalSource=legal(tier + '.skarbnik'), people={'type': 'people', 'people': sk}, **({} if sk else NO))
+        edge('rada', 'skarbnik', 'appoints', tier + '.skarbnik'); edge('lider', 'skarbnik', 'nominates', tier + '.skarbnik')
         if tier == 'p':
-            sk = ov_people(ov, ('skarbnik',), f'{P}-skarbnik', 'Skarbnik powiatu')
-            node('skarbnik', type='dept_head', sector='executive', ring='administration', name='Skarbnik powiatu', description='Główny księgowy budżetu powiatu. Powoływany przez radę na wniosek starosty.', legalSource=legal('p.skarbnik'), people={'type': 'people', 'people': sk}, **({} if sk else NO))
             node('sluzby', type='department', subtype='other', sector='executive', ring='satellite', parent=urz['id'], name='Powiatowe służby, inspekcje i straże', description='Administracja zespolona pod zwierzchnictwem starosty. Lista nie jest jeszcze zebrana.', legalSource=legal('p.starostwo'), people={'type': 'count', 'count': 0})
-            edge('rada', 'skarbnik', 'appoints', 'p.skarbnik'); edge('lider', 'skarbnik', 'nominates', 'p.skarbnik'); edge('lider', 'sluzby', 'oversees', 'p.starostwo')
-        execs = ['zarzad']; nadzor = tier + '.nadzor'
+            edge('lider', 'sluzby', 'oversees', 'p.starostwo')
+        execs = ['zarzad']; nadzor = tier + '.nadzor'; boss = 'lider'; sec_name = 'Sekretarz powiatu' if tier == 'p' else 'Sekretarz województwa'
+    # sekretarz: stanowisko obowiązkowe w każdym urzędzie (ustawa o pracownikach samorządowych), podlega kierownikowi urzędu
+    sec = ov_people(ov, ('sekretarz',), f'{P}-sekretarz', sec_name)
+    node('sekretarz', type='dept_head', sector='executive', ring='administration', name=sec_name, description='Odpowiada za organizację pracy urzędu z upoważnienia jego kierownika. Zatrudniany na umowę o pracę, nie może należeć do partii politycznej.', legalSource=legal('ups.sekretarz'), people={'type': 'people', 'people': sec}, **({} if sec else NO))
+    edge(boss, 'sekretarz', 'oversees', 'ups.sekretarz.podleglosc')
     # nadzór i kontrola: te same organy na każdym szczeblu, osoby z grafu centralnego
     w = u['woj']; vid = voivode_for(w); adj = woj_name[w][:-1]
     node('wojewoda', type='dept_head', sector='independent', ring='oversight', name='Wojewoda ' + '-'.join(x.capitalize() for x in adj.split('-')), description='Przedstawiciel Rady Ministrów w województwie. Organ nadzoru nad legalnością działania samorządu.', legalSource=legal('k.nadzor'), externalRef=vid, people={'type': 'people', 'people': central_people(vid)}, provenance={'sources': ['https://grafpanstwa.pl/#node=' + (vid or '')], 'verifiedAt': DATE, 'confidence': 'high', 'verdict': 'confirmed'})
@@ -170,7 +185,7 @@ def compact(u, committees):
     rec = {'n': u['name'], 'k': u['kind'], 'p': u['parent'], 'v': variant(u), 'c': u['council'], 's': u['seats'], 'pop': u['pop'], 'm': [[m['name'], ci(m['committee'])] for m in sorted(members.get(t, []), key=lambda m: (slug(m['name'].split()[-1]), slug(m['name'])))]}
     if h: rec['o'] = h['organ']; rec['h'] = [h['name'], ci(h['committee'])]
     P = f'jst-{t}'; ovp = {}
-    for key, roles, title in (('przew', ('przewodniczacy_rady',), 'Przewodniczący'), ('lider', ('starosta', 'marszalek'), ''), ('zarzad', ('wicestarosta', 'wicemarszalek', 'czlonek_zarzadu'), 'Członek zarządu'), ('skarbnik', ('skarbnik',), 'Skarbnik'), ('zastepca', ('zastepca_prezydenta',), 'Zastępca')):
+    for key, roles, title in (('przew', ('przewodniczacy_rady',), 'Przewodniczący'), ('wiceprzew', ('wiceprzewodniczacy_rady',), 'Wiceprzewodniczący'), ('lider', ('starosta', 'marszalek'), ''), ('zarzad', ('wicestarosta', 'wicemarszalek', 'czlonek_zarzadu'), 'Członek zarządu'), ('skarbnik', ('skarbnik',), 'Skarbnik'), ('sekretarz', ('sekretarz',), 'Sekretarz'), ('zastepca', ('zastepca_prezydenta',), 'Zastępca')):
         ppl = ov_people(ov, roles, f'{P}-{key}', title)
         if ppl: ovp[key] = [{k: v for k, v in p.items() if v not in (None, False, '') and k not in ('id', 'positionId', 'type', 'status', 'verdict')} for p in ppl]
     if ovp: rec['ov'] = ovp

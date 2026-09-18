@@ -1,350 +1,403 @@
 {
-  "_opis": "Szablony ustrojowe jednostek samorządu. Ustrój każdej gminy, powiatu i województwa wynika z ustawy, więc relacje są wspólne dla szczebla. Każdy cytat ma pole must: słowa, które muszą wystąpić w treści artykułu. Sprawdza to scripts/jst/verify-templates.py na tekstach jednolitych z ELI.",
-  "acts": {
-    "usg": {
-      "eli": "DU/1990/95",
-      "text": "DU/2026/662",
-      "title": "Ustawa z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz.U. 2026 poz. 662)"
-    },
-    "usp": {
-      "eli": "DU/1998/578",
-      "text": "DU/2025/1684",
-      "title": "Ustawa z dnia 5 czerwca 1998 r. o samorządzie powiatowym (t.j. Dz.U. 2025 poz. 1684)"
-    },
-    "usw": {
-      "eli": "DU/1998/576",
-      "text": "DU/2026/720",
-      "title": "Ustawa z dnia 5 czerwca 1998 r. o samorządzie województwa (t.j. Dz.U. 2026 poz. 720)"
-    },
-    "konst": {
-      "eli": "DU/1997/483",
-      "text": "DU/1997/483",
-      "title": "Konstytucja Rzeczypospolitej Polskiej z dnia 2 kwietnia 1997 r. (Dz.U. 1997 nr 78 poz. 483)"
-    },
-    "sko": {
-      "eli": "DU/1994/593",
-      "text": "DU/2018/570",
-      "title": "Ustawa z dnia 12 października 1994 r. o samorządowych kolegiach odwoławczych (t.j. Dz.U. 2018 poz. 570)"
-    }
+ "_opis": "Szablony ustrojowe jednostek samorządu. Ustrój każdej gminy, powiatu i województwa wynika z ustawy, więc relacje są wspólne dla szczebla. Każdy cytat ma pole must: słowa, które muszą wystąpić w treści artykułu. Sprawdza to scripts/jst/verify-templates.py na tekstach jednolitych z ELI.",
+ "acts": {
+  "usg": {
+   "eli": "DU/1990/95",
+   "text": "DU/2026/662",
+   "title": "Ustawa z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz.U. 2026 poz. 662)"
   },
-  "cites": {
-    "g.mieszkancy": {
-      "act": "usg",
-      "art": "11",
-      "label": "art. 11 ust. 1",
-      "must": [
-        "Mieszkańcy gminy",
-        "wybory"
-      ]
-    },
-    "g.organy": {
-      "act": "usg",
-      "art": "11a",
-      "label": "art. 11a ust. 1",
-      "must": [
-        "Organami gminy",
-        "rada gminy",
-        "wójt"
-      ]
-    },
-    "g.rada": {
-      "act": "usg",
-      "art": "15",
-      "label": "art. 15 ust. 1",
-      "must": [
-        "stanowiącym i kontrolnym",
-        "rada gminy"
-      ]
-    },
-    "g.skarbnik": {
-      "act": "usg",
-      "art": "18",
-      "label": "art. 18 ust. 2 pkt 3",
-      "must": [
-        "skarbnika gminy",
-        "na wniosek wójta"
-      ]
-    },
-    "g.kontrola": {
-      "act": "usg",
-      "art": "18a",
-      "label": "art. 18a ust. 1",
-      "must": [
-        "kontroluje działalność wójta",
-        "komisję rewizyjną"
-      ]
-    },
-    "g.skargi": {
-      "act": "usg",
-      "art": "18b",
-      "label": "art. 18b ust. 1",
-      "must": [
-        "komisję skarg, wniosków i petycji"
-      ]
-    },
-    "g.przewodniczacy": {
-      "act": "usg",
-      "art": "19",
-      "label": "art. 19 ust. 1",
-      "must": [
-        "wybiera ze swego grona przewodniczącego"
-      ]
-    },
-    "g.wojt": {
-      "act": "usg",
-      "art": "26",
-      "label": "art. 26 ust. 1",
-      "must": [
-        "Organem wykonawczym gminy jest wójt"
-      ]
-    },
-    "g.zastepca": {
-      "act": "usg",
-      "art": "26a",
-      "label": "art. 26a ust. 1",
-      "must": [
-        "powołuje oraz odwołuje swojego zastępcę"
-      ]
-    },
-    "g.urzad": {
-      "act": "usg",
-      "art": "33",
-      "label": "art. 33 ust. 1 i 3",
-      "must": [
-        "przy pomocy urzędu gminy",
-        "Kierownikiem urzędu jest wójt"
-      ]
-    },
-    "g.pomocnicze": {
-      "act": "usg",
-      "art": "5",
-      "label": "art. 5 ust. 1 i 2",
-      "must": [
-        "jednostki pomocnicze",
-        "sołectwa"
-      ]
-    },
-    "g.jednostki": {
-      "act": "usg",
-      "art": "9",
-      "label": "art. 9 ust. 1",
-      "must": [
-        "jednostki organizacyjne"
-      ]
-    },
-    "g.nadzor": {
-      "act": "usg",
-      "art": "86",
-      "label": "art. 86",
-      "must": [
-        "Organami nadzoru",
-        "Prezes Rady Ministrów",
-        "wojewoda",
-        "regionalna izba obrachunkowa"
-      ]
-    },
-    "p.organy": {
-      "act": "usp",
-      "art": "8",
-      "label": "art. 8",
-      "must": [
-        "rada powiatu",
-        "zarząd powiatu"
-      ]
-    },
-    "p.rada": {
-      "act": "usp",
-      "art": "9",
-      "label": "art. 9 ust. 1",
-      "must": [
-        "stanowiącym i kontrolnym"
-      ]
-    },
-    "p.przewodniczacy": {
-      "act": "usp",
-      "art": "14",
-      "label": "art. 14 ust. 1",
-      "must": [
-        "wybiera ze swego grona przewodniczącego"
-      ]
-    },
-    "p.kontrola": {
-      "act": "usp",
-      "art": "16",
-      "label": "art. 16 ust. 1",
-      "must": [
-        "kontroluje działalność zarządu",
-        "komisję rewizyjną"
-      ]
-    },
-    "p.skargi": {
-      "act": "usp",
-      "art": "16a",
-      "label": "art. 16a ust. 1",
-      "must": [
-        "komisję skarg, wniosków i petycji"
-      ]
-    },
-    "p.zarzad": {
-      "act": "usp",
-      "art": "26",
-      "label": "art. 26 ust. 1 i 2",
-      "must": [
-        "organem wykonawczym powiatu",
-        "starosta jako jego przewodniczący"
-      ]
-    },
-    "p.wybor": {
-      "act": "usp",
-      "art": "27",
-      "label": "art. 27 ust. 1",
-      "must": [
-        "Rada powiatu wybiera zarząd",
-        "starostę"
-      ]
-    },
-    "p.starostwo": {
-      "act": "usp",
-      "art": "35",
-      "label": "art. 35 ust. 2",
-      "must": [
-        "kierownikiem starostwa powiatowego",
-        "zwierzchnikiem powiatowych służb, inspekcji i straży"
-      ]
-    },
-    "p.skarbnik": {
-      "act": "usp",
-      "art": "37",
-      "label": "art. 37 ust. 1",
-      "must": [
-        "skarbnika powiatu",
-        "na wniosek starosty"
-      ]
-    },
-    "p.nadzor": {
-      "act": "usp",
-      "art": "76",
-      "label": "art. 76 ust. 1",
-      "must": [
-        "Prezes Rady Ministrów",
-        "wojewoda",
-        "regionalna izba obrachunkowa"
-      ]
-    },
-    "w.organy": {
-      "act": "usw",
-      "art": "15",
-      "label": "art. 15",
-      "must": [
-        "sejmik województwa",
-        "zarząd województwa"
-      ]
-    },
-    "w.sejmik": {
-      "act": "usw",
-      "art": "16",
-      "label": "art. 16 ust. 1",
-      "must": [
-        "stanowiącym i kontrolnym"
-      ]
-    },
-    "w.przewodniczacy": {
-      "act": "usw",
-      "art": "20",
-      "label": "art. 20 ust. 1",
-      "must": [
-        "wybiera ze swojego grona przewodniczącego"
-      ]
-    },
-    "w.kontrola": {
-      "act": "usw",
-      "art": "30",
-      "label": "art. 30 ust. 1",
-      "must": [
-        "kontroluje działalność zarządu",
-        "komisję rewizyjną"
-      ]
-    },
-    "w.skargi": {
-      "act": "usw",
-      "art": "30a",
-      "label": "art. 30a ust. 1",
-      "must": [
-        "komisję skarg, wniosków i petycji"
-      ]
-    },
-    "w.zarzad": {
-      "act": "usw",
-      "art": "31",
-      "label": "art. 31 ust. 1 i 2",
-      "must": [
-        "organem wykonawczym województwa",
-        "marszałek"
-      ]
-    },
-    "w.wybor": {
-      "act": "usw",
-      "art": "32",
-      "label": "art. 32 ust. 1 i 2",
-      "must": [
-        "Sejmik województwa wybiera zarząd",
-        "Marszałka województwa"
-      ]
-    },
-    "w.urzad": {
-      "act": "usw",
-      "art": "43",
-      "label": "art. 43 ust. 1 i 3",
-      "must": [
-        "Marszałek województwa organizuje pracę zarządu",
-        "kierownikiem urzędu marszałkowskiego"
-      ]
-    },
-    "w.nadzor": {
-      "act": "usw",
-      "art": "78",
-      "label": "art. 78 ust. 1",
-      "must": [
-        "Prezes Rady Ministrów",
-        "wojewoda",
-        "regionalna izba obrachunkowa"
-      ]
-    },
-    "k.nadzor": {
-      "act": "konst",
-      "art": "171",
-      "label": "art. 171 ust. 2",
-      "must": [
-        "Organami nadzoru",
-        "Prezes Rady Ministrów",
-        "wojewodowie",
-        "regionalne izby obrachunkowe"
-      ]
-    },
-    "k.nik": {
-      "act": "konst",
-      "art": "203",
-      "label": "art. 203 ust. 2",
-      "must": [
-        "może kontrolować działalność organów samorządu terytorialnego"
-      ]
-    },
-    "k.wybory": {
-      "act": "konst",
-      "art": "169",
-      "label": "art. 169 ust. 2",
-      "must": [
-        "Wybory do organów stanowiących są powszechne"
-      ]
-    },
-    "sko.art1": {
-      "act": "sko",
-      "art": "1",
-      "label": "art. 1 ust. 1",
-      "must": [
-        "organami wyższego stopnia",
-        "jednostek samorządu terytorialnego"
-      ]
-    }
+  "usp": {
+   "eli": "DU/1998/578",
+   "text": "DU/2025/1684",
+   "title": "Ustawa z dnia 5 czerwca 1998 r. o samorządzie powiatowym (t.j. Dz.U. 2025 poz. 1684)"
+  },
+  "usw": {
+   "eli": "DU/1998/576",
+   "text": "DU/2026/720",
+   "title": "Ustawa z dnia 5 czerwca 1998 r. o samorządzie województwa (t.j. Dz.U. 2026 poz. 720)"
+  },
+  "konst": {
+   "eli": "DU/1997/483",
+   "text": "DU/1997/483",
+   "title": "Konstytucja Rzeczypospolitej Polskiej z dnia 2 kwietnia 1997 r. (Dz.U. 1997 nr 78 poz. 483)"
+  },
+  "sko": {
+   "eli": "DU/1994/593",
+   "text": "DU/2018/570",
+   "title": "Ustawa z dnia 12 października 1994 r. o samorządowych kolegiach odwoławczych (t.j. Dz.U. 2018 poz. 570)"
+  },
+  "ups": {
+   "eli": "DU/2008/1458",
+   "text": "DU/2024/1135",
+   "title": "Ustawa z dnia 21 listopada 2008 r. o pracownikach samorządowych (t.j. Dz.U. 2024 poz. 1135)"
   }
+ },
+ "cites": {
+  "g.mieszkancy": {
+   "act": "usg",
+   "art": "11",
+   "label": "art. 11 ust. 1",
+   "must": [
+    "Mieszkańcy gminy",
+    "wybory"
+   ]
+  },
+  "g.organy": {
+   "act": "usg",
+   "art": "11a",
+   "label": "art. 11a ust. 1",
+   "must": [
+    "Organami gminy",
+    "rada gminy",
+    "wójt"
+   ]
+  },
+  "g.rada": {
+   "act": "usg",
+   "art": "15",
+   "label": "art. 15 ust. 1",
+   "must": [
+    "stanowiącym i kontrolnym",
+    "rada gminy"
+   ]
+  },
+  "g.skarbnik": {
+   "act": "usg",
+   "art": "18",
+   "label": "art. 18 ust. 2 pkt 3",
+   "must": [
+    "skarbnika gminy",
+    "na wniosek wójta"
+   ]
+  },
+  "g.kontrola": {
+   "act": "usg",
+   "art": "18a",
+   "label": "art. 18a ust. 1",
+   "must": [
+    "kontroluje działalność wójta",
+    "komisję rewizyjną"
+   ]
+  },
+  "g.skargi": {
+   "act": "usg",
+   "art": "18b",
+   "label": "art. 18b ust. 1",
+   "must": [
+    "komisję skarg, wniosków i petycji"
+   ]
+  },
+  "g.przewodniczacy": {
+   "act": "usg",
+   "art": "19",
+   "label": "art. 19 ust. 1",
+   "must": [
+    "wybiera ze swego grona przewodniczącego"
+   ]
+  },
+  "g.wojt": {
+   "act": "usg",
+   "art": "26",
+   "label": "art. 26 ust. 1",
+   "must": [
+    "Organem wykonawczym gminy jest wójt"
+   ]
+  },
+  "g.zastepca": {
+   "act": "usg",
+   "art": "26a",
+   "label": "art. 26a ust. 1",
+   "must": [
+    "powołuje oraz odwołuje swojego zastępcę"
+   ]
+  },
+  "g.urzad": {
+   "act": "usg",
+   "art": "33",
+   "label": "art. 33 ust. 1 i 3",
+   "must": [
+    "przy pomocy urzędu gminy",
+    "Kierownikiem urzędu jest wójt"
+   ]
+  },
+  "g.pomocnicze": {
+   "act": "usg",
+   "art": "5",
+   "label": "art. 5 ust. 1 i 2",
+   "must": [
+    "jednostki pomocnicze",
+    "sołectwa"
+   ]
+  },
+  "g.jednostki": {
+   "act": "usg",
+   "art": "9",
+   "label": "art. 9 ust. 1",
+   "must": [
+    "jednostki organizacyjne"
+   ]
+  },
+  "g.nadzor": {
+   "act": "usg",
+   "art": "86",
+   "label": "art. 86",
+   "must": [
+    "Organami nadzoru",
+    "Prezes Rady Ministrów",
+    "wojewoda",
+    "regionalna izba obrachunkowa"
+   ]
+  },
+  "p.organy": {
+   "act": "usp",
+   "art": "8",
+   "label": "art. 8",
+   "must": [
+    "rada powiatu",
+    "zarząd powiatu"
+   ]
+  },
+  "p.rada": {
+   "act": "usp",
+   "art": "9",
+   "label": "art. 9 ust. 1",
+   "must": [
+    "stanowiącym i kontrolnym"
+   ]
+  },
+  "p.przewodniczacy": {
+   "act": "usp",
+   "art": "14",
+   "label": "art. 14 ust. 1",
+   "must": [
+    "wybiera ze swego grona przewodniczącego"
+   ]
+  },
+  "p.kontrola": {
+   "act": "usp",
+   "art": "16",
+   "label": "art. 16 ust. 1",
+   "must": [
+    "kontroluje działalność zarządu",
+    "komisję rewizyjną"
+   ]
+  },
+  "p.skargi": {
+   "act": "usp",
+   "art": "16a",
+   "label": "art. 16a ust. 1",
+   "must": [
+    "komisję skarg, wniosków i petycji"
+   ]
+  },
+  "p.zarzad": {
+   "act": "usp",
+   "art": "26",
+   "label": "art. 26 ust. 1 i 2",
+   "must": [
+    "organem wykonawczym powiatu",
+    "starosta jako jego przewodniczący"
+   ]
+  },
+  "p.wybor": {
+   "act": "usp",
+   "art": "27",
+   "label": "art. 27 ust. 1",
+   "must": [
+    "Rada powiatu wybiera zarząd",
+    "starostę"
+   ]
+  },
+  "p.starostwo": {
+   "act": "usp",
+   "art": "35",
+   "label": "art. 35 ust. 2",
+   "must": [
+    "kierownikiem starostwa powiatowego",
+    "zwierzchnikiem powiatowych służb, inspekcji i straży"
+   ]
+  },
+  "p.skarbnik": {
+   "act": "usp",
+   "art": "37",
+   "label": "art. 37 ust. 1",
+   "must": [
+    "skarbnika powiatu",
+    "na wniosek starosty"
+   ]
+  },
+  "p.nadzor": {
+   "act": "usp",
+   "art": "76",
+   "label": "art. 76 ust. 1",
+   "must": [
+    "Prezes Rady Ministrów",
+    "wojewoda",
+    "regionalna izba obrachunkowa"
+   ]
+  },
+  "w.organy": {
+   "act": "usw",
+   "art": "15",
+   "label": "art. 15",
+   "must": [
+    "sejmik województwa",
+    "zarząd województwa"
+   ]
+  },
+  "w.sejmik": {
+   "act": "usw",
+   "art": "16",
+   "label": "art. 16 ust. 1",
+   "must": [
+    "stanowiącym i kontrolnym"
+   ]
+  },
+  "w.przewodniczacy": {
+   "act": "usw",
+   "art": "20",
+   "label": "art. 20 ust. 1",
+   "must": [
+    "wybiera ze swojego grona przewodniczącego"
+   ]
+  },
+  "w.kontrola": {
+   "act": "usw",
+   "art": "30",
+   "label": "art. 30 ust. 1",
+   "must": [
+    "kontroluje działalność zarządu",
+    "komisję rewizyjną"
+   ]
+  },
+  "w.skargi": {
+   "act": "usw",
+   "art": "30a",
+   "label": "art. 30a ust. 1",
+   "must": [
+    "komisję skarg, wniosków i petycji"
+   ]
+  },
+  "w.zarzad": {
+   "act": "usw",
+   "art": "31",
+   "label": "art. 31 ust. 1 i 2",
+   "must": [
+    "organem wykonawczym województwa",
+    "marszałek"
+   ]
+  },
+  "w.wybor": {
+   "act": "usw",
+   "art": "32",
+   "label": "art. 32 ust. 1 i 2",
+   "must": [
+    "Sejmik województwa wybiera zarząd",
+    "Marszałka województwa"
+   ]
+  },
+  "w.urzad": {
+   "act": "usw",
+   "art": "43",
+   "label": "art. 43 ust. 1 i 3",
+   "must": [
+    "Marszałek województwa organizuje pracę zarządu",
+    "kierownikiem urzędu marszałkowskiego"
+   ]
+  },
+  "w.nadzor": {
+   "act": "usw",
+   "art": "78",
+   "label": "art. 78 ust. 1",
+   "must": [
+    "Prezes Rady Ministrów",
+    "wojewoda",
+    "regionalna izba obrachunkowa"
+   ]
+  },
+  "k.nadzor": {
+   "act": "konst",
+   "art": "171",
+   "label": "art. 171 ust. 2",
+   "must": [
+    "Organami nadzoru",
+    "Prezes Rady Ministrów",
+    "wojewodowie",
+    "regionalne izby obrachunkowe"
+   ]
+  },
+  "k.nik": {
+   "act": "konst",
+   "art": "203",
+   "label": "art. 203 ust. 2",
+   "must": [
+    "może kontrolować działalność organów samorządu terytorialnego"
+   ]
+  },
+  "k.wybory": {
+   "act": "konst",
+   "art": "169",
+   "label": "art. 169 ust. 2",
+   "must": [
+    "Wybory do organów stanowiących są powszechne"
+   ]
+  },
+  "sko.art1": {
+   "act": "sko",
+   "art": "1",
+   "label": "art. 1 ust. 1",
+   "must": [
+    "organami wyższego stopnia",
+    "jednostek samorządu terytorialnego"
+   ]
+  },
+  "ups.sekretarz": {
+   "act": "ups",
+   "art": "5",
+   "label": "art. 5 ust. 1",
+   "must": [
+    "sekretarza gminy, powiatu i województwa"
+   ]
+  },
+  "ups.sekretarz.podleglosc": {
+   "act": "ups",
+   "art": "5",
+   "label": "art. 5 ust. 3",
+   "must": [
+    "Sekretarz podlega bezpośrednio kierownikowi urzędu"
+   ]
+  },
+  "w.skarbnik": {
+   "act": "usw",
+   "art": "18",
+   "label": "art. 18 pkt 17",
+   "must": [
+    "skarbnika województwa"
+   ]
+  },
+  "g.wiceprzewodniczacy": {
+   "act": "usg",
+   "art": "19",
+   "label": "art. 19 ust. 1",
+   "must": [
+    "wiceprzewodniczących"
+   ]
+  },
+  "p.wiceprzewodniczacy": {
+   "act": "usp",
+   "art": "14",
+   "label": "art. 14 ust. 1",
+   "must": [
+    "wiceprzewodniczących"
+   ]
+  },
+  "w.wiceprzewodniczacy": {
+   "act": "usw",
+   "art": "20",
+   "label": "art. 20 ust. 1",
+   "must": [
+    "wiceprzewodniczących"
+   ]
+  }
+ }
 }

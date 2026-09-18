@@ -1,0 +1,3820 @@
+{
+ "meta": {
+  "woj": "10",
+  "name": "łódzkie",
+  "generatedAt": "2026-09-18",
+  "method": "Ręczno-agentowy odczyt stron BIP i oficjalnych stron urzędów (curl z UA projektu, ≥1 s/host, robots.txt; strony JS przez Playwright; ładunek Next.js dekodowany). Każda osoba ma adres strony, cytat i datę odczytu. Verdict nadaje niezależny przebieg scripts/jst/verify-overlay.py, który pobiera każdy sourceUrl od nowa i szuka nazwiska obok słowa kluczowego funkcji.",
+  "stats": {
+   "units": 25,
+   "people": 226,
+   "confirmed": 226,
+   "unverified": 0
+  },
+  "verifiedAt": "2026-09-18"
+ },
+ "units": {
+  "10": {
+   "teryt": "100000",
+   "kind": "wojewodztwo",
+   "name": "Województwo łódzkie",
+   "officialUrl": "https://www.lodzkie.pl/",
+   "bipUrl": "https://bip.lodzkie.pl/",
+   "positions": [
+    {
+     "role": "marszalek",
+     "title": "Marszałek Województwa Łódzkiego",
+     "people": [
+      {
+       "name": "Joanna Skrzydlewska",
+       "sourceUrl": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/sklad",
+       "quote": "Joanna Skrzydlewska - Marszałek Województwa Łódzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicemarszalek",
+     "title": "Wicemarszałek Województwa Łódzkiego",
+     "people": [
+      {
+       "name": "Piotr Wojtysiak",
+       "sourceUrl": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/sklad",
+       "quote": "Piotr Wojtysiak - Wicemarszałek Województwa Łódzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Agnieszka Ryś",
+       "sourceUrl": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/sklad",
+       "quote": "Agnieszka Ryś - Wicemarszałek Województwa Łódzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Województwa Łódzkiego",
+     "people": [
+      {
+       "name": "Artur Bagieński",
+       "sourceUrl": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/sklad",
+       "quote": "Artur Bagieński - Członek Zarządu Województwa Łódzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Artur Ostrowski",
+       "sourceUrl": "https://bip.lodzkie.pl/zarzad-wojewodztwa-lodzkiego/sklad",
+       "quote": "Artur Ostrowski - Członek Zarządu Województwa Łódzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Sejmiku Województwa Łódzkiego",
+     "people": [
+      {
+       "name": "Małgorzata Grabarczyk",
+       "sourceUrl": "https://bip.lodzkie.pl/sejmik-wojewodztwa/prezydium",
+       "quote": "Przewodnicząca Sejmiku Województwa Łódzkiego - Małgorzata Grabarczyk",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Sejmiku Województwa Łódzkiego",
+     "people": [
+      {
+       "name": "Magdalena Spólnicka",
+       "sourceUrl": "https://bip.lodzkie.pl/sejmik-wojewodztwa/prezydium",
+       "quote": "Wiceprzewodnicząca Sejmiku Województwa Łódzkiego - Magdalena Spólnicka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Piotr Bors",
+       "sourceUrl": "https://bip.lodzkie.pl/sejmik-wojewodztwa/prezydium",
+       "quote": "Wiceprzewodniczący Sejmiku Województwa Łódzkiego - Piotr Bors",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Magdalena Werstak",
+       "sourceUrl": "https://bip.lodzkie.pl/sejmik-wojewodztwa/prezydium",
+       "quote": "Wiceprzewodnicząca Sejmiku Województwa Łódzkiego - Magdalena Werstak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Województwa Łódzkiego",
+     "people": [
+      {
+       "name": "Michał Miazek",
+       "sourceUrl": "https://bip.lodzkie.pl/urzad-marszalkowski/organizacja/skarbnik",
+       "quote": "Michał Miazek Skarbnik Województwa Łódzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Województwa Łódzkiego",
+     "people": [
+      {
+       "name": "Robert Kolczyński",
+       "sourceUrl": "https://bip.lodzkie.pl/urzad-marszalkowski/organizacja/sekretarz-wojewodztwa-lodzkiego",
+       "quote": "Robert Kolczyński Sekretarz Województwa Łódzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Sejmik VII kadencji (2024-2029); BIP podaje prezydium z jedną przewodniczącą i trojgiem wiceprzewodniczących."
+   ]
+  },
+  "1001": {
+   "teryt": "100100",
+   "kind": "powiat",
+   "name": "Powiat bełchatowski",
+   "officialUrl": "https://www.powiat-belchatowski.pl/",
+   "bipUrl": "https://spbelchatow.bip.gov.pl/",
+   "positions": [
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Bełchatowskiego",
+     "people": [
+      {
+       "name": "Małgorzata Nowak",
+       "sourceUrl": "https://www.powiat-belchatowski.pl/powiat-t70/wydzialy-starostwa-powiatowego-t296",
+       "quote": "Sekretarz Powiatu - Małgorzata Nowak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Bełchatowskiego",
+     "people": [
+      {
+       "name": "Magdalena Lipska",
+       "sourceUrl": "https://www.powiat-belchatowski.pl/powiat-t70/wydzialy-starostwa-powiatowego-t296",
+       "quote": "Skarbnik Powiatu - Magdalena Lipska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Ani BIP (spbelchatow.bip.gov.pl, system SSDIP), ani oficjalna strona nie publikują w HTML składu Zarządu Powiatu ani prezydium Rady: kategorie BIP 'Starosta' i 'Zarząd Powiatu' są puste, strona 'Rada Powiatu 2024-2029' wymienia tylko składy komisji. Protokoły sesji w BIP to skany PDF bez warstwy tekstu. Oświadczenia majątkowe w BIP wymieniają osoby pod nagłówkiem 'Członkowie Zarządu Powiatu', ale bez funkcji i z pozycjami z poprzedniej kadencji, więc nie użyto ich jako źródła.",
+    "Sekretarz i skarbnik ze strony 'Wydziały Starostwa Powiatowego' (oficjalna strona)."
+   ]
+  },
+  "1002": {
+   "teryt": "100200",
+   "kind": "powiat",
+   "name": "Powiat kutnowski",
+   "officialUrl": "https://www.powiatkutno.eu/",
+   "bipUrl": "https://bip.powiatkutno.eu/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Kutnowski",
+     "people": [
+      {
+       "name": "Daniel Kowalik",
+       "sourceUrl": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "quote": "Daniel Kowalik - Starosta Kutnowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Kutnowski",
+     "people": [
+      {
+       "name": "Anna Konwerska",
+       "sourceUrl": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "quote": "Anna Konwerska - Wicestarosta",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Kutnowskiego",
+     "people": [
+      {
+       "name": "Tomasz Walczewski",
+       "sourceUrl": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "quote": "Tomasz Walczewski - Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jolanta Pietrusiak",
+       "sourceUrl": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "quote": "Jolanta Pietrusiak - Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Marek Kubasiński",
+       "sourceUrl": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "quote": "Marek Kubasiński - Społeczny Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.powiatkutno.eu/artykul/sklad-zarzadu-powiatu-kutnowskiego-od-dnia-7-maja-2024-roku",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Kutnowskiego",
+     "people": [
+      {
+       "name": "Marek Drabik",
+       "sourceUrl": "https://bip.powiatkutno.eu/artykul/rada-powiatu-kutnowskiego",
+       "quote": "Drabik Marek – Przewodniczący Rady Powiatu Kutnowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.powiatkutno.eu/artykul/rada-powiatu-kutnowskiego",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Kutnowskiego",
+     "people": [
+      {
+       "name": "Artur Gierula",
+       "sourceUrl": "https://bip.powiatkutno.eu/artykul/rada-powiatu-kutnowskiego",
+       "quote": "Gierula Artur – Wiceprzewodniczący Rady Powiatu Kutnowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.powiatkutno.eu/artykul/rada-powiatu-kutnowskiego",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Andrzej Szarwas",
+       "sourceUrl": "https://bip.powiatkutno.eu/artykul/rada-powiatu-kutnowskiego",
+       "quote": "Szarwas Andrzej – Wiceprzewodniczący Rady Powiatu Kutnowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://bip.powiatkutno.eu/artykul/rada-powiatu-kutnowskiego",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Oficjalna strona www.powiatkutno.eu nie odpowiadała (curl: brak połączenia); wszystkie dane z BIP.",
+    "Daty objęcia funkcji: BIP podaje 'Skład Zarządu ... od dnia 7 maja 2024 roku' oraz uchwały Nr 1/I/24 i 2/I/24 Rady Powiatu z dnia 7 maja 2024 r. (wybór przewodniczącego i wiceprzewodniczących).",
+    "BIP podaje nazwiska radnych w kolejności nazwisko-imię; w polu name imię pierwsze.",
+    "Skarbnika i sekretarza nie zbierano (opcjonalne)."
+   ]
+  },
+  "1003": {
+   "teryt": "100300",
+   "kind": "powiat",
+   "name": "Powiat łaski",
+   "officialUrl": "https://lask.com.pl/",
+   "bipUrl": "https://lask.bip.net.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Łaski",
+     "people": [
+      {
+       "name": "Piotr Wołosz",
+       "sourceUrl": "https://lask.com.pl/asp/wladze-powiatu,37",
+       "quote": "Starosta Łaski Piotr Wołosz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Łaski",
+     "people": [
+      {
+       "name": "Mateusz Barwaśny",
+       "sourceUrl": "https://lask.com.pl/asp/wladze-powiatu,37",
+       "quote": "Wicestarosta Łaski Mateusz Barwaśny",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Łaskiego",
+     "people": [
+      {
+       "name": "Robert Szczepaniak",
+       "sourceUrl": "https://lask.com.pl/asp/wladze-powiatu,37",
+       "quote": "Etatowy Członek Zarządu Robert Szczepaniak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Teresa Wesołowska",
+       "sourceUrl": "https://lask.com.pl/asp/wladze-powiatu,37",
+       "quote": "Etatowy Członek Zarządu Teresa Wesołowska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Bogdan Lipowski",
+       "sourceUrl": "https://lask.com.pl/asp/wladze-powiatu,37",
+       "quote": "Członek Zarządu Bogdan Lipowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Łaskiego",
+     "people": [
+      {
+       "name": "Sławomir Walczak",
+       "sourceUrl": "https://lask.bip.net.pl/kategorie/67-rada-powiatu-laskiego/artykuly/202-sklad-rady-powiatu-laskiego?lang=PL",
+       "quote": "Sławomir Walczak - Przewodniczący",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Łaskiego",
+     "people": [
+      {
+       "name": "Florian Podębski",
+       "sourceUrl": "https://lask.bip.net.pl/kategorie/67-rada-powiatu-laskiego/artykuly/202-sklad-rady-powiatu-laskiego?lang=PL",
+       "quote": "Florian Podębski - Wiceprzewodniczący",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Barbara Potasiak",
+       "sourceUrl": "https://lask.bip.net.pl/kategorie/67-rada-powiatu-laskiego/artykuly/202-sklad-rady-powiatu-laskiego?lang=PL",
+       "quote": "Barbara Potasiak - Wiceprzewodnicząca",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Łaskiego",
+     "people": [
+      {
+       "name": "Joanna Dębkowska",
+       "sourceUrl": "https://lask.com.pl/asp/wladze-powiatu,37",
+       "quote": "Sekretarz Powiatu Joanna Dębkowska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Łaskiego",
+     "people": [
+      {
+       "name": "Dorota Cieślak",
+       "sourceUrl": "https://lask.com.pl/asp/wladze-powiatu,37",
+       "quote": "Skarbnik Powiatu Dorota Cieślak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "BIP (lask.bip.net.pl, dostawca Nefeni/bip.net.pl) to aplikacja Next.js: treść artykułu nie jest w DOM nawet po Playwright, tylko w ładunku RSC (self.__next_f.push) w HTML; artykuł 'Skład Zarządu' wymienia same nazwiska bez funkcji, dlatego zarząd wzięto z oficjalnej strony 'Władze Powiatu'.",
+    "Strona BIP rady podaje funkcje tylko jako 'Przewodniczący'/'Wiceprzewodniczący' (bez nazwy rady) — w cytacie dosłownie."
+   ]
+  },
+  "1004": {
+   "teryt": "100400",
+   "kind": "powiat",
+   "name": "Powiat łęczycki",
+   "officialUrl": "https://www.leczycki.pl/",
+   "bipUrl": "https://leczyca.biuletyn.net/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Łęczycki",
+     "people": [
+      {
+       "name": "Janusz Mielczarek",
+       "sourceUrl": "https://leczyca.biuletyn.net/?bip=1&cid=234&bsc=N",
+       "quote": "Skład Zarządu Janusz Mielczarek - Starosta",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Łęczycki",
+     "people": [
+      {
+       "name": "Wojciech Zdziarski",
+       "sourceUrl": "https://leczyca.biuletyn.net/?bip=1&cid=234&bsc=N",
+       "quote": "Wojciech Zdziarski - Wicestarosta",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Łęczyckiego",
+     "people": [
+      {
+       "name": "Bogusław Foks",
+       "sourceUrl": "https://leczyca.biuletyn.net/?bip=1&cid=234&bsc=N",
+       "quote": "Bogusław Foks - Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Małgorzata Raczkiewicz",
+       "sourceUrl": "https://leczyca.biuletyn.net/?bip=1&cid=234&bsc=N",
+       "quote": "Małgorzata Raczkiewicz - Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Łęczyckiego",
+     "people": [
+      {
+       "name": "Krzysztof Hopaluk",
+       "sourceUrl": "https://leczyca.biuletyn.net/?bip=1&cid=39&bsc=N",
+       "quote": "Krzysztof Hopaluk Przewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Łęczyckiego",
+     "people": [
+      {
+       "name": "Edward Cymmer",
+       "sourceUrl": "https://leczyca.biuletyn.net/?bip=1&cid=39&bsc=N",
+       "quote": "Edward Cymmer Wiceprzewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Łęczyckiego",
+     "people": [
+      {
+       "name": "Przemysław Grabarczyk",
+       "sourceUrl": "https://www.leczycki.pl/asp/sekretarz,49",
+       "quote": "SEKRETARZ POWIATU ŁĘCZYCKIEGO PRZEMYSŁAW GRABARCZYK",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Łęczyckiego",
+     "people": [
+      {
+       "name": "Renata Wilińska",
+       "sourceUrl": "https://www.leczycki.pl/asp/skarbnik,50",
+       "quote": "SKARBNIK POWIATU ŁĘCZYCKIEGO RENATA WILIŃSKA",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "BIP (leczyca.biuletyn.net) podaje skład zarządu i skład rady kadencji 2024-2029 (tabela z funkcjami); sekretarz i skarbnik ze stron oficjalnych (nazwiska wielkimi literami).",
+    "Skład rady wymienia tylko jednego wiceprzewodniczącego."
+   ]
+  },
+  "1005": {
+   "teryt": "100500",
+   "kind": "powiat",
+   "name": "Powiat łowicki",
+   "officialUrl": "https://powiatlowicki.pl/",
+   "bipUrl": "https://www.bip.powiat.lowicz.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Łowicki",
+     "people": [
+      {
+       "name": "Marcin Kosiorek",
+       "sourceUrl": "https://www.bip.powiat.lowicz.pl/197,zarzad-powiatu",
+       "quote": "Starosta Łowicki Marcin Kosiorek Uchwała Nr I/3/2024",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-06",
+       "startedAtSource": "https://www.bip.powiat.lowicz.pl/197,zarzad-powiatu",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Łowicki",
+     "people": [
+      {
+       "name": "Krystian Cipiński",
+       "sourceUrl": "https://www.bip.powiat.lowicz.pl/197,zarzad-powiatu",
+       "quote": "Wicestarosta Łowicki Krystian Cipiński Uchwała Nr I/4/2024",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-06",
+       "startedAtSource": "https://www.bip.powiat.lowicz.pl/197,zarzad-powiatu",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Łowickiego",
+     "people": [
+      {
+       "name": "Michał Trzoska",
+       "sourceUrl": "https://www.bip.powiat.lowicz.pl/197,zarzad-powiatu",
+       "quote": "Członek Zarządu Michał Trzoska Uchwała Nr I/5/2024",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-06",
+       "startedAtSource": "https://www.bip.powiat.lowicz.pl/197,zarzad-powiatu",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Łowickiego",
+     "people": [
+      {
+       "name": "Marek Jędrzejczak",
+       "sourceUrl": "https://www.bip.powiat.lowicz.pl/1021,przewodniczacy-rady-powiatu",
+       "quote": "PRZEWODNICZĄCY RADY POWIATU ŁOWICKIEGO Marek Jędrzejczak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Łowickiego",
+     "people": [
+      {
+       "name": "Katarzyna Szkup",
+       "sourceUrl": "https://www.bip.powiat.lowicz.pl/2826,rada-powiatu-vii-kadencji",
+       "quote": "Wiceprzewodnicząca Rady Katarzyna Szkup",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Monika Wawrzyn",
+       "sourceUrl": "https://www.bip.powiat.lowicz.pl/2826,rada-powiatu-vii-kadencji",
+       "quote": "Wiceprzewodnicząca Rady Monika Wawrzyn",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Łowickiego",
+     "people": [
+      {
+       "name": "Monika Mamcarz",
+       "sourceUrl": "https://www.bip.powiat.lowicz.pl/1558,skarbnik-powiatu-lowickiego",
+       "quote": "SKARBNIK POWIATU ŁOWICKIEGO Monika Mamcarz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Łowickiego",
+     "people": [
+      {
+       "name": "Magdalena Pietrzak",
+       "sourceUrl": "https://www.bip.powiat.lowicz.pl/1557,sekretarz-powiatu-lowickiego",
+       "quote": "SEKRETARZ POWIATU ŁOWICKIEGO Magdalena Pietrzak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Zarząd trzyosobowy (starosta, wicestarosta, jeden członek); BIP podaje przy każdym numery i daty uchwał wyboru z 6 maja 2024 r. Daty objęcia funkcji przyjęto z tych uchwał."
+   ]
+  },
+  "1006": {
+   "teryt": "100600",
+   "kind": "powiat",
+   "name": "Powiat łódzki wschodni",
+   "officialUrl": "https://www.lodzkiwschodni.pl/",
+   "bipUrl": "https://bip.lodzkiwschodni.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Łódzki Wschodni",
+     "people": [
+      {
+       "name": "Mateusz Karwowski",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/71,zarzad-powiatu",
+       "quote": "Starosta Łódzki Wschodni Mateusz Karwowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Łódzki Wschodni",
+     "people": [
+      {
+       "name": "Ewa Gładysz",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/71,zarzad-powiatu",
+       "quote": "Wicestarosta Łódzki Wschodni Ewa Gładysz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Łódzkiego Wschodniego",
+     "people": [
+      {
+       "name": "Paweł Pomorski",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/71,zarzad-powiatu",
+       "quote": "Członkowie Zarządu Powiatu Łódzkiego Wschodniego Paweł Pomorski Marta Stasiak Zofia Sójka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Marta Stasiak",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/71,zarzad-powiatu",
+       "quote": "Członkowie Zarządu Powiatu Łódzkiego Wschodniego Paweł Pomorski Marta Stasiak Zofia Sójka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Zofia Sójka",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/71,zarzad-powiatu",
+       "quote": "Członkowie Zarządu Powiatu Łódzkiego Wschodniego Paweł Pomorski Marta Stasiak Zofia Sójka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Łódzkiego Wschodniego",
+     "people": [
+      {
+       "name": "Sławomir Marek Sokołowski",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/976,sklad-osobowy-rady-powiatu",
+       "quote": "Prezydium Rady Powiatu Łódzkiego Wschodniego Przewodniczący Sokołowski Sławomir Marek",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwisko przed imionami: „Sokołowski Sławomir Marek”.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Łódzkiego Wschodniego",
+     "people": [
+      {
+       "name": "Agnieszka Regina Biała",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/976,sklad-osobowy-rady-powiatu",
+       "quote": "Wiceprzewodniczący Biała Agnieszka Regina",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwisko przed imionami: „Biała Agnieszka Regina”.",
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Ewa Kotecka",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/976,sklad-osobowy-rady-powiatu",
+       "quote": "Wiceprzewodniczący Kotecka Ewa",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwisko przed imieniem: „Kotecka Ewa”.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Łódzkiego Wschodniego",
+     "people": [
+      {
+       "name": "Katarzyna Wojtaszek",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/52,kierownictwo",
+       "quote": "Skarbnik Powiatu Łódzkiego Wschodniego Katarzyna Wojtaszek",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Łódzkiego Wschodniego",
+     "people": [
+      {
+       "name": "Tomasz Dominiak",
+       "sourceUrl": "https://bip.lodzkiwschodni.pl/52,kierownictwo",
+       "quote": "Sekretarz Powiatu Łódzkiego Wschodniego Tomasz Dominiak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Siedziba starostwa w Łodzi. BIP podaje zarząd na lata 2024-2029 bez dat uchwał wyboru."
+   ]
+  },
+  "1007": {
+   "teryt": "100700",
+   "kind": "powiat",
+   "name": "Powiat opoczyński",
+   "officialUrl": "https://www.opocznopowiat.pl/",
+   "bipUrl": "https://bip.opocznopowiat.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Opoczyński",
+     "people": [
+      {
+       "name": "Marcin Baranowski",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-5696-zarzad_powiatu_opoczynskiego.html",
+       "quote": "Zarząd Powiatu Opoczyńskiego: Marcin Baranowski - Starosta Opoczyński",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Opoczyński",
+     "people": [
+      {
+       "name": "Maria Barbara Chomicz",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-5696-zarzad_powiatu_opoczynskiego.html",
+       "quote": "Maria Barbara Chomicz - Wicestarosta",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Opoczyńskiego",
+     "people": [
+      {
+       "name": "Maria Witkowska",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-5696-zarzad_powiatu_opoczynskiego.html",
+       "quote": "Maria Witkowska - Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Krzysztof Wojewódzki",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-5696-zarzad_powiatu_opoczynskiego.html",
+       "quote": "Krzysztof Wojewódzki - Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Sławomir Zieliński",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-5696-zarzad_powiatu_opoczynskiego.html",
+       "quote": "Sławomir Zieliński - Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Opoczyńskiego",
+     "people": [
+      {
+       "name": "Michał Białek",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-5668-rada_powiatu_opoczynskiego_vii_kadencji.html",
+       "quote": "Białek Michał – Przewodniczący Rady Powiatu Opoczyńskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwisko przed imieniem.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Opoczyńskiego",
+     "people": [
+      {
+       "name": "Sławomir Rek",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-5668-rada_powiatu_opoczynskiego_vii_kadencji.html",
+       "quote": "Rek Sławomir – Wiceprzewodniczący Rady Powiatu Opoczyńskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwisko przed imieniem.",
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Andrzej Urbańczyk",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-5668-rada_powiatu_opoczynskiego_vii_kadencji.html",
+       "quote": "Urbańczyk Andrzej – Wiceprzewodniczący Rady Powiatu Opoczyńskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwisko przed imieniem.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Opoczyńskiego",
+     "people": [
+      {
+       "name": "Monika Bielas",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-108-skarbnik_powiatu_mgr_monika_bielas.html",
+       "quote": "SKARBNIK POWIATU-GŁÓWNY KSIĘGOWY BUDŻETU POWIATU - mgr Monika Bielas",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Opoczyńskiego",
+     "people": [
+      {
+       "name": "Magdalena Zapałacz",
+       "sourceUrl": "https://bip.opocznopowiat.pl/strona-107-sekretarz_powiatu_mgr_magdalena_zapalacz.html",
+       "quote": "SEKRETARZ POWIATU - mgr Magdalena Zapałacz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Skład zarządu potwierdza też oficjalna strona: https://www.opocznopowiat.pl/strona-921-zarzad_powiatu_opoczynskiego.html; prezydium rady także https://www.opocznopowiat.pl/strona-3-rada_powiatu_opoczynskiego.html."
+   ]
+  },
+  "1008": {
+   "teryt": "100800",
+   "kind": "powiat",
+   "name": "Powiat pabianicki",
+   "officialUrl": "https://powiat.pabianice.pl/",
+   "bipUrl": "https://powiat-pabianice.bip.info.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Pabianicki",
+     "people": [
+      {
+       "name": "Arkadiusz Jaksa",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-6-zarzad_powiatu.html",
+       "quote": "Starosta Pabianicki Arkadiusz Jaksa",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Pabianicki",
+     "people": [
+      {
+       "name": "Gabriela Wenne-Błażyńska",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-6-zarzad_powiatu.html",
+       "quote": "Wicestarosta Pabianicki Gabriela Wenne - Błażyńska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona zapisuje nazwisko z odstępami wokół łącznika: „Wenne - Błażyńska”.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Pabianickiego",
+     "people": [
+      {
+       "name": "Dobrosława Cybulska",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-6-zarzad_powiatu.html",
+       "quote": "Członek Zarządu - Dobrosława Cybulska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Paulina Rzetelska",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-6-zarzad_powiatu.html",
+       "quote": "Członek Zarządu - Paulina Rzetelska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Robert Kraska",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-6-zarzad_powiatu.html",
+       "quote": "Członek Zarządu - Robert Kraska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Pabianickiego",
+     "people": [
+      {
+       "name": "Marek Gryglewski",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-28-radni_powiatu.html",
+       "quote": "Marek Gryglewski Przewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Pabianickiego",
+     "people": [
+      {
+       "name": "Anna Bujacz",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-28-radni_powiatu.html",
+       "quote": "Anna Bujacz Wiceprzewodnicząca Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Łukasz Stencel",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-28-radni_powiatu.html",
+       "quote": "Łukasz Stencel Wiceprzewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Pabianickiego",
+     "people": [
+      {
+       "name": "Barbara Janeczek",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-6-zarzad_powiatu.html",
+       "quote": "Barbara Janeczek - Skarbnik",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Pabianickiego",
+     "people": [
+      {
+       "name": "Aneta Rutkowska",
+       "sourceUrl": "https://powiat.pabianice.pl/strona-6-zarzad_powiatu.html",
+       "quote": "Aneta Rutkowska - Sekretarz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "BIP (powiat-pabianice.bip.info.pl) ma robots.txt zabraniający automatom pobierania, więc źródłem jest oficjalna strona starostwa powiat.pabianice.pl."
+   ]
+  },
+  "1009": {
+   "teryt": "100900",
+   "kind": "powiat",
+   "name": "Powiat pajęczański",
+   "officialUrl": "https://www.powiatpajeczno.pl/",
+   "bipUrl": "http://www.powiatpajeczno.biuletyn.net/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Pajęczański",
+     "people": [
+      {
+       "name": "Jarosław Szczęsny",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/zarzad-powiatu-pajeczanskiego,330",
+       "quote": "Jarosław Szczęsny – Starosta Pajęczański - Przewodniczący Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Pajęczański",
+     "people": [
+      {
+       "name": "Zbigniew Gajęcki",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/zarzad-powiatu-pajeczanskiego,330",
+       "quote": "Zbigniew Gajęcki – Wicestarosta Pajęczański",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Pajęczańskiego",
+     "people": [
+      {
+       "name": "Elżbieta Przydacz",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/zarzad-powiatu-pajeczanskiego,330",
+       "quote": "Elżbieta Przydacz – Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jerzy Staszczyk",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/zarzad-powiatu-pajeczanskiego,330",
+       "quote": "Jerzy Staszczyk - Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Damian Wrona",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/zarzad-powiatu-pajeczanskiego,330",
+       "quote": "Damian Wrona - Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Pajęczańskiego",
+     "people": [
+      {
+       "name": "Karol Młynarczyk",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/przewodniczacy-rady-powiatu-pajeczanskiego,325",
+       "quote": "Karol Młynarczyk – Przewodniczący Rady Powiatu Pajęczańskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Pajęczańskiego",
+     "people": [
+      {
+       "name": "Marta Kołodziej",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/przewodniczacy-rady-powiatu-pajeczanskiego,325",
+       "quote": "Marta Kołodziej – Wiceprzewodniczący Rady Powiatu Pajęczańskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Kamil Bąk",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/przewodniczacy-rady-powiatu-pajeczanskiego,325",
+       "quote": "Kamil Bąk - Wiceprzewodniczący Rady Powiatu Pajęczańskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Pajęczańskiego",
+     "people": [
+      {
+       "name": "Sylwia Konieczko",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/kierownictwo,52",
+       "quote": "Skarbnik Powiatu Sylwia Konieczko",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Pajęczańskiego",
+     "people": [
+      {
+       "name": "Anna Borowiecka",
+       "sourceUrl": "https://www.powiatpajeczno.pl/asp/kierownictwo,52",
+       "quote": "Sekretarz Powiatu Anna Borowiecka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Źródłem jest oficjalna strona starostwa (www.powiatpajeczno.pl); BIP na powiatpajeczno.biuletyn.net nie był przeglądany pod kątem składu zarządu."
+   ]
+  },
+  "1010": {
+   "teryt": "101000",
+   "kind": "powiat",
+   "name": "Powiat piotrkowski",
+   "officialUrl": "https://powiat-piotrkowski.pl/",
+   "bipUrl": "https://powiat-piotrkowski.bip.net.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Powiatu Piotrkowskiego",
+     "people": [
+      {
+       "name": "Piotr Łączny",
+       "sourceUrl": "https://powiat-piotrkowski.pl/samorzad/zarzad-powiatu-piotrkowskiego/",
+       "quote": "Piotr Łączny Starosta Powiatu Piotrkowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Powiatu Piotrkowskiego",
+     "people": [
+      {
+       "name": "Michał Tokarski",
+       "sourceUrl": "https://powiat-piotrkowski.pl/samorzad/zarzad-powiatu-piotrkowskiego/",
+       "quote": "Michał Tokarski Wicestarosta Powiatu Piotrkowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Piotrkowskiego",
+     "people": [
+      {
+       "name": "Bartosz Borkowski",
+       "sourceUrl": "https://powiat-piotrkowski.pl/samorzad/zarzad-powiatu-piotrkowskiego/",
+       "quote": "Bartosz Borkowski Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Elżbieta Ościk",
+       "sourceUrl": "https://powiat-piotrkowski.pl/samorzad/zarzad-powiatu-piotrkowskiego/",
+       "quote": "Elżbieta Ościk Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Sylwester Ossowski",
+       "sourceUrl": "https://powiat-piotrkowski.pl/samorzad/zarzad-powiatu-piotrkowskiego/",
+       "quote": "Sylwester Ossowski Członek Zarządu Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu w Piotrkowie Trybunalskim",
+     "people": [
+      {
+       "name": "Bernard Matyszewski",
+       "sourceUrl": "https://powiat-piotrkowski.pl/samorzad/rada-powiatu-w-piotrkowie-trybunalskim/",
+       "quote": "BERNARD MATYSZEWSKI PRZEWODNICZĄCY RADY POWIATU",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwiska wielkimi literami.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu w Piotrkowie Trybunalskim",
+     "people": [
+      {
+       "name": "Marcin Strumiłło",
+       "sourceUrl": "https://powiat-piotrkowski.pl/samorzad/rada-powiatu-w-piotrkowie-trybunalskim/",
+       "quote": "MARCIN STRUMIŁŁO WICEPRZEWODNICZĄCY RADY POWIATU",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwiska wielkimi literami.",
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Michał Szymański",
+       "sourceUrl": "https://powiat-piotrkowski.pl/samorzad/rada-powiatu-w-piotrkowie-trybunalskim/",
+       "quote": "MICHAŁ SZYMAŃSKI WICEPRZEWODNICZĄCY RADY POWIATU",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Strona podaje nazwiska wielkimi literami.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Piotrkowskiego",
+     "people": [
+      {
+       "name": "Ireneusz Czerwiński",
+       "sourceUrl": "https://powiat-piotrkowski.bip.net.pl/kategorie/316-kierownictwo/artykuly/124?lang=PL",
+       "quote": "SEKRETARZ POWIATU PIOTRKOWSKIEGO IRENEUSZ CZERWIŃSKI",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Nazwisko na stronie wielkimi literami; treść artykułu tylko w ładunku RSC Next.js.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Piotrkowskiego",
+     "people": [
+      {
+       "name": "Janusz Misztela",
+       "sourceUrl": "https://powiat-piotrkowski.bip.net.pl/kategorie/316-kierownictwo/artykuly/123?lang=PL",
+       "quote": "SKARBNIK POWIATU PIOTRKOWSKIEGO JANUSZ MISZTELA",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "Nazwisko na stronie wielkimi literami; treść artykułu tylko w ładunku RSC Next.js.",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "BIP (powiat-piotrkowski.bip.net.pl, Next.js/bip.net.pl) trzyma treść artykułów tylko w ładunku RSC (self.__next_f.push) w HTML, nie w DOM; sekretarz i skarbnik odczytani po zdekodowaniu ładunku. Rada powiatu nosi nazwę „Rada Powiatu w Piotrkowie Trybunalskim”."
+   ]
+  },
+  "1011": {
+   "teryt": "101100",
+   "kind": "powiat",
+   "name": "Powiat poddębicki",
+   "officialUrl": "https://www.poddebicki.pl/",
+   "bipUrl": "https://poddebice.biuletyn.net/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Poddębicki",
+     "people": [
+      {
+       "name": "Sebastian Romanowski",
+       "sourceUrl": "https://www.poddebicki.pl/asp/,20",
+       "quote": "Sebastian Romanowski – Starosta Poddębicki",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Poddębicki",
+     "people": [
+      {
+       "name": "Piotr Kozłowski",
+       "sourceUrl": "https://www.poddebicki.pl/asp/,20",
+       "quote": "Piotr Kozłowski - Wicestarosta Poddębicki",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Poddębickiego",
+     "people": [
+      {
+       "name": "Zdzisław Cyganiak",
+       "sourceUrl": "https://www.poddebicki.pl/asp/,20",
+       "quote": "Cyganiak Zdzisław – Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Beata Przybylska",
+       "sourceUrl": "https://www.poddebicki.pl/asp/,20",
+       "quote": "Przybylska Beata – Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Poddębickiego",
+     "people": [
+      {
+       "name": "Danuta Pecyna",
+       "sourceUrl": "https://www.poddebicki.pl/asp/sklad-rady,15,,1",
+       "quote": "Pecyna Danuta - Przewodnicząca Rady Powiatu Poddębickiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Poddębickiego",
+     "people": [
+      {
+       "name": "Małgorzata Komajda",
+       "sourceUrl": "https://www.poddebicki.pl/asp/sklad-rady,15,,1",
+       "quote": "Komajda Małgorzata - Wiceprzewodniczący Rady Powiatu Poddębickiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Poddębickiego",
+     "people": [
+      {
+       "name": "Jadwiga Zagozda",
+       "sourceUrl": "https://www.poddebicki.pl/asp/,26",
+       "quote": "Skarbnik Jadwiga Zagozda",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Poddębickiego",
+     "people": [
+      {
+       "name": "Anna Biernacik",
+       "sourceUrl": "https://www.poddebicki.pl/asp/,25",
+       "quote": "Sekretarz Powiatu Poddębickiego Anna Biernacik",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Źródłem jest oficjalna strona starostwa (poddebicki.pl): BIP (poddebice.biuletyn.net) ma zakładki Starosta/Wicestarosta bez nazwisk (tylko kompetencje). Strona podaje część nazwisk w kolejności nazwisko-imię (Cyganiak Zdzisław, Pecyna Danuta); w rekordach imię stoi pierwsze. Strona 'Skład Rady' wymienia tylko jedną wiceprzewodniczącą."
+   ]
+  },
+  "1012": {
+   "teryt": "101200",
+   "kind": "powiat",
+   "name": "Powiat radomszczański",
+   "officialUrl": "https://www.radomszczanski.pl/",
+   "bipUrl": "https://bip.radomszczanski.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Radomszczański",
+     "people": [
+      {
+       "name": "Łukasz Więcek",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/001",
+       "quote": "Łukasz Więcek STAROSTA RADOMSZCZAŃSKI",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Radomszczański",
+     "people": [
+      {
+       "name": "Jacek Gębicz",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/002",
+       "quote": "Jacek Gębicz WICESTAROSTA RADOMSZCZAŃSKI",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Radomszczańskiego",
+     "people": [
+      {
+       "name": "Renata Kosela",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/003",
+       "quote": "Renata Kosela ETATOWY CZŁONEK ZARZĄDU",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Waldemar Zasada",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/003",
+       "quote": "Waldemar Zasada ETATOWY CZŁONEK ZARZĄDU",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Wojciech Ślusarczyk",
+       "sourceUrl": "https://www.radomszczanski.pl/strona-3366-wladze_powiatu.html",
+       "quote": "Członek Zarządu Powiatu Wojciech Ślusarczyk",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Radomszczańskiego",
+     "people": [
+      {
+       "name": "Ewa Gajzler",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/006/001",
+       "quote": "Ewa Gajzler Przewodnicząca Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Radomszczańskiego",
+     "people": [
+      {
+       "name": "Marek Rząsowski",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/006/001",
+       "quote": "Marek Rząsowski Wiceprzewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Arkadiusz Ciach",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/006/001",
+       "quote": "Arkadiusz Ciach Wiceprzewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Radomszczańskiego",
+     "people": [
+      {
+       "name": "Magdalena Jędrzejczyk",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/005",
+       "quote": "Magdalena Jędrzejczyk SKARBNIK POWIATU",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Radomszczańskiego",
+     "people": [
+      {
+       "name": "Magdalena Drewniak",
+       "sourceUrl": "https://bip.radomszczanski.pl/bipkod/002/004",
+       "quote": "Magdalena Drewniak SEKRETARZ POWIATU",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "BIP (zakładka Członkowie Zarządu) wymienia tylko dwóch etatowych członków zarządu (Kosela, Zasada); trzeciego, nieetatowego (Wojciech Ślusarczyk) podaje tylko blok kontaktowy oficjalnej strony starostwa. Ta sama strona ma niespójny podpis pod grafiką (Magda Jędrzeczyk / Tomasz Kornacki jako sekretarz) – rozstrzygające są zakładki BIP: skarbnik Magdalena Jędrzejczyk, sekretarz Magdalena Drewniak."
+   ]
+  },
+  "1013": {
+   "teryt": "101300",
+   "kind": "powiat",
+   "name": "Powiat rawski",
+   "officialUrl": "https://www.powiatrawski.pl/",
+   "bipUrl": "https://bip.powiatrawski.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Rawski",
+     "people": [
+      {
+       "name": "Adrian Galach",
+       "sourceUrl": "https://bip.powiatrawski.pl/3444,sklad-zarzadu-powiatu-rawskiego-vii-kadencji",
+       "quote": "Adrian Galach – Starosta jako Przewodniczący Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Rawski",
+     "people": [
+      {
+       "name": "Justyna Walczak",
+       "sourceUrl": "https://bip.powiatrawski.pl/3444,sklad-zarzadu-powiatu-rawskiego-vii-kadencji",
+       "quote": "Justyna Walczak – Wicestarosta",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Rawskiego",
+     "people": [
+      {
+       "name": "Roman Ciszewski",
+       "sourceUrl": "https://bip.powiatrawski.pl/3444,sklad-zarzadu-powiatu-rawskiego-vii-kadencji",
+       "quote": "Roman Ciszewski – Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Mirosław Trzonek",
+       "sourceUrl": "https://bip.powiatrawski.pl/3444,sklad-zarzadu-powiatu-rawskiego-vii-kadencji",
+       "quote": "Mirosław Trzonek – Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Stanisław Skoneczny",
+       "sourceUrl": "https://bip.powiatrawski.pl/3444,sklad-zarzadu-powiatu-rawskiego-vii-kadencji",
+       "quote": "Stanisław Skoneczny – Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Rawskiego",
+     "people": [
+      {
+       "name": "Zbigniew Sienkiewicz",
+       "sourceUrl": "https://bip.powiatrawski.pl/3425,sklad-rady-powiatu-rawskiego-vii-kadencji",
+       "quote": "Zbigniew Sienkiewicz – Przewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Rawskiego",
+     "people": [
+      {
+       "name": "Bożena Cichowicz",
+       "sourceUrl": "https://bip.powiatrawski.pl/3425,sklad-rady-powiatu-rawskiego-vii-kadencji",
+       "quote": "Bożena Cichowicz – Wiceprzewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Henryk Majewski",
+       "sourceUrl": "https://bip.powiatrawski.pl/3425,sklad-rady-powiatu-rawskiego-vii-kadencji",
+       "quote": "Henryk Majewski – Wiceprzewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Rawskiego",
+     "people": [
+      {
+       "name": "Arkadiusz Gajewski",
+       "sourceUrl": "https://www.powiatrawski.pl/3183,kierownictwo-starostwa-powiatowego-w-rawie-mazowieckiej",
+       "quote": "Skarbnik - Arkadiusz Gajewski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Rawskiego",
+     "people": [
+      {
+       "name": "Mariusz Dziuba",
+       "sourceUrl": "https://www.powiatrawski.pl/3183,kierownictwo-starostwa-powiatowego-w-rawie-mazowieckiej",
+       "quote": "Sekretarz - Mariusz Dziuba",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Zarząd i prezydium rady z BIP (strony 'Skład Zarządu Powiatu VII Kadencji' i 'Skład Rady Powiatu Rawskiego VII Kadencji', metryka: data wytworzenia 2024-05-16). Skarbnik i sekretarz tylko z oficjalnej strony 'Kierownictwo Starostwa' (powiatrawski.pl), która potwierdza też starostę i wicestarostę. Strony 'Zarząd Powiatu' i 'Rada Powiatu' w BIP oraz 'Władze Powiatu' na stronie oficjalnej nie zawierają nazwisk w tekście – trzeba wejść w podstronę kadencji."
+   ]
+  },
+  "1014": {
+   "teryt": "101400",
+   "kind": "powiat",
+   "name": "Powiat sieradzki",
+   "officialUrl": "https://www.powiat-sieradz.pl/",
+   "bipUrl": "https://bip.powiat-sieradz.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Sieradzki",
+     "people": [
+      {
+       "name": "Mariusz Bądzior",
+       "sourceUrl": "https://bip.powiat-sieradz.pl/bipkod/001/002",
+       "quote": "Mariusz Bądzior - Przewodniczący Zarządu Powiatu Sieradzkiego, Starosta Sieradzki",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Sieradzki",
+     "people": [
+      {
+       "name": "Konrad Wilczyński",
+       "sourceUrl": "https://bip.powiat-sieradz.pl/bipkod/001/002",
+       "quote": "Konrad Wilczyński - Wiceprzewodniczący Zarządu Powiatu Sieradzkiego, Wicestarosta Sieradzki",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Sieradzkiego",
+     "people": [
+      {
+       "name": "Małgorzata Jurkowska",
+       "sourceUrl": "https://bip.powiat-sieradz.pl/bipkod/001/002",
+       "quote": "Małgorzata Jurkowska - Członek Zarządu Powiatu Sieradzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Tomasz Baliński",
+       "sourceUrl": "https://bip.powiat-sieradz.pl/bipkod/001/002",
+       "quote": "Tomasz Baliński - Członek Zarządu Powiatu Sieradzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Marek Płóciennik",
+       "sourceUrl": "https://bip.powiat-sieradz.pl/bipkod/001/002",
+       "quote": "Marek Płóciennik - Członek Zarządu Powiatu Sieradzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Sieradzkiego",
+     "people": [
+      {
+       "name": "Michał Wzgarda",
+       "sourceUrl": "https://bip.powiat-sieradz.pl/bipkod/41707817",
+       "quote": "Michał Wzgarda - Przewodniczący Rady Powiatu Sieradzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Sieradzkiego",
+     "people": [
+      {
+       "name": "Arkadiusz Góraj",
+       "sourceUrl": "https://bip.powiat-sieradz.pl/bipkod/41707817",
+       "quote": "Arkadiusz Góraj - Wiceprzewodniczący Rady Powiatu Sieradzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jan Kołodziejczyk",
+       "sourceUrl": "https://bip.powiat-sieradz.pl/bipkod/41707817",
+       "quote": "Kołodziejczyk Jan - Wiceprzewodniczący Rady Powiatu Sieradzkiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Sieradzkiego",
+     "people": [
+      {
+       "name": "Iwona Piekarczyk",
+       "sourceUrl": "https://www.powiat-sieradz.pl/asp/wladze-powiatu,108",
+       "quote": "Skarbnik Powiatu Sieradzkiego: IWONA PIEKARCZYK",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Sieradzkiego",
+     "people": [
+      {
+       "name": "Katarzyna Dąbrowska",
+       "sourceUrl": "https://www.powiat-sieradz.pl/asp/wladze-powiatu,108",
+       "quote": "Sekretarz Powiatu Sieradzkiego: KATARZYNA DĄBROWSKA",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Zarząd i prezydium rady z BIP (bip.powiat-sieradz.pl); skarbnik i sekretarz tylko z oficjalnej strony 'Władze Powiatu' (nazwiska wielkimi literami, w rekordzie znormalizowane). BIP podaje 'Kołodziejczyk Jan' (nazwisko pierwsze)."
+   ]
+  },
+  "1015": {
+   "teryt": "101500",
+   "kind": "powiat",
+   "name": "Powiat skierniewicki",
+   "officialUrl": "https://www.powiat-skierniewice.pl/",
+   "bipUrl": "https://bip.spskierniewice.nv.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Skierniewicki",
+     "people": [
+      {
+       "name": "Mirosław Belina",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/rada-powiatu/",
+       "quote": "1. Belina Mirosław Starosta Skierniewicki",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Skierniewicki",
+     "people": [
+      {
+       "name": "Tadeusz Grotkowski",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/zarzad-powiatu/",
+       "quote": "2. Tadeusz Grotkowski Wicestarosta Skierniewicki",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Skierniewickiego",
+     "people": [
+      {
+       "name": "Piotr Adamczyk",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/zarzad-powiatu/",
+       "quote": "3. Piotr Adamczyk Członek Zarządu Powiatu Skierniewickiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Stanisław Linart",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/zarzad-powiatu/",
+       "quote": "4. Stanisław Linart Członek Zarządu Powiatu Skierniewickiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Ewa Pawlak",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/zarzad-powiatu/",
+       "quote": "5. Ewa Pawlak Członek Zarządu Powiatu Skierniewickiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Skierniewickiego",
+     "people": [
+      {
+       "name": "Teresa Małgorzata Jędraszek",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/rada-powiatu/",
+       "quote": "Jędraszek Teresa Małgorzata Przewodnicząca Rady Powiatu Skierniewickiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Skierniewickiego",
+     "people": [
+      {
+       "name": "Łukasz Kolis",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/rada-powiatu/",
+       "quote": "Kolis Łukasz Wiceprzewodniczący Rady Powiatu Skierniewickiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Grzegorz Stykowski",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/rada-powiatu/",
+       "quote": "Stykowski Grzegorz Wiceprzewodniczący Rady Powiatu Skierniewickiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Skierniewickiego",
+     "people": [
+      {
+       "name": "Ewa Ulanowska",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/starostwo-powiatowe/",
+       "quote": "Skarbnik Ewa Ulanowska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Skierniewickiego",
+     "people": [
+      {
+       "name": "Marcin Szymański",
+       "sourceUrl": "https://www.powiat-skierniewice.pl/index.php/starostwo-powiatowe/",
+       "quote": "Sekretarz Powiatu Marcin Szymański",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Źródłem jest oficjalna strona starostwa (powiat-skierniewice.pl); BIP (bip.spskierniewice.nv.pl) zwraca stronę 4 KB bez treści (aplikacja JS), nie użyto. Strona 'Zarząd Powiatu' nazywa starostę 'Przewodniczący Zarządu Powiatu Skierniewickiego', strona 'Rada Powiatu' – 'Starosta Skierniewicki'; tam nazwiska w kolejności nazwisko-imię. Strona 'Rada Powiatu' publikuje prywatne numery telefonów radnych – pominięte."
+   ]
+  },
+  "1016": {
+   "teryt": "101600",
+   "kind": "powiat",
+   "name": "Powiat tomaszowski",
+   "officialUrl": "https://powiat-tomaszowski.pl/",
+   "bipUrl": "https://bip.powiat-tomaszowski.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Tomaszowski",
+     "people": [
+      {
+       "name": "Dariusz Kowalczyk",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "quote": "Dariusz Kowalczyk - Starosta Tomaszowski od 21.01.2026",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2026-01-21",
+       "startedAtSource": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Tomaszowski",
+     "people": [
+      {
+       "name": "Sławomir Żegota",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "quote": "Sławomir Żegota - Wicestarosta od 21.01.2026",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2026-01-21",
+       "startedAtSource": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Tomaszowskiego",
+     "people": [
+      {
+       "name": "Krzysztof Biskup",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "quote": "Krzysztof Biskup - Członek Zarządu od 21.01.2026",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2026-01-21",
+       "startedAtSource": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Michał Czechowicz",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "quote": "Michał Czechowicz - Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Grzegorz Glimasiński",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "quote": "Grzegorz Glimasiński - Członek Zarządu od 21.01.2026",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2026-01-21",
+       "startedAtSource": "https://bip.powiat-tomaszowski.pl/5021-kadencja-2024-2029.html",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Tomaszowskiego",
+     "people": [
+      {
+       "name": "Michał Jodłowski",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/kadencja-2024-2029.html",
+       "quote": "Jodłowski Michał (KKW Koalicja Obywatelska) - Przewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Tomaszowskiego",
+     "people": [
+      {
+       "name": "Marek Olkiewicz",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/kadencja-2024-2029.html",
+       "quote": "Olkiewicz Marek (KW PiS) - Wiceprzewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Tomaszowskiego",
+     "people": [
+      {
+       "name": "Beata Zysiak",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/29-kierownictwo-urzedu.html",
+       "quote": "Skarbnik Powiatu Beata Zysiak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Tomaszowskiego",
+     "people": [
+      {
+       "name": "Jerzy Kowalczyk",
+       "sourceUrl": "https://bip.powiat-tomaszowski.pl/29-kierownictwo-urzedu.html",
+       "quote": "Sekretarz Powiatu Jerzy Kowalczyk",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "BIP podaje zmianę zarządu 21.01.2026 (poprzedni starosta Mariusz Węgrzynowski, wicestarosta Włodzimierz Justyna, członkowie Elżbieta Łojszczyk i Teodora Sowik – 'do 21.01.2026'); daty objęcia wzięte wprost z tej strony, bez numeru uchwały. Strona składu rady wymienia tylko jednego wiceprzewodniczącego (Marek Olkiewicz); nazwiska w kolejności nazwisko-imię."
+   ]
+  },
+  "1017": {
+   "teryt": "101700",
+   "kind": "powiat",
+   "name": "Powiat wieluński",
+   "officialUrl": "https://powiat.wielun.pl/",
+   "bipUrl": "https://www.powiat-wielun.finn.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Wieluński",
+     "people": [
+      {
+       "name": "Maciej Bryś",
+       "sourceUrl": "https://powiat.wielun.pl/Kierownictwo.html",
+       "quote": "Kierownictwo Maciej Bryś Starosta Wieluński",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Wieluński",
+     "people": [
+      {
+       "name": "Krzysztof Dziuba",
+       "sourceUrl": "https://powiat.wielun.pl/Kierownictwo.html",
+       "quote": "Krzysztof Dziuba Wicestarosta Wieluński",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu w Wieluniu",
+     "people": [
+      {
+       "name": "Łukasz Dybka",
+       "sourceUrl": "https://powiat.wielun.pl/Rada_Powiatu.html",
+       "quote": "Pan Łukasz Dybka - członek Zarządu Powiatu w Wieluniu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jakub Jurdziński",
+       "sourceUrl": "https://powiat.wielun.pl/Rada_Powiatu.html",
+       "quote": "Pan Jakub Jurdziński - członek Zarządu Powiatu w Wieluniu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Piotr Kędzia",
+       "sourceUrl": "https://powiat.wielun.pl/Rada_Powiatu.html",
+       "quote": "Pan Piotr Kędzia - członek Zarządu Powiatu w Wieluniu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu w Wieluniu",
+     "people": [
+      {
+       "name": "Andrzej Stępień",
+       "sourceUrl": "https://powiat.wielun.pl/Rada_Powiatu.html",
+       "quote": "Pan Andrzej Stępień - Przewodniczący Rady Powiatu w Wieluniu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu w Wieluniu",
+     "people": [
+      {
+       "name": "Joanna Kałdońska",
+       "sourceUrl": "https://powiat.wielun.pl/Rada_Powiatu.html",
+       "quote": "Pani Joanna Kałdońska - Wiceprzewodniczący Rady Powiatu w Wieluniu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Grażyna Ryczyńska",
+       "sourceUrl": "https://powiat.wielun.pl/Rada_Powiatu.html",
+       "quote": "Pani Grażyna Ryczyńska - Wiceprzewodniczący Rady Powiatu w Wieluniu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Wieluńskiego",
+     "people": [
+      {
+       "name": "Przemysław Krężel",
+       "sourceUrl": "https://powiat.wielun.pl/Kierownictwo.html",
+       "quote": "Przemysław Krężel Skarbnik",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Wieluńskiego",
+     "people": [
+      {
+       "name": "Małgorzata Pach",
+       "sourceUrl": "https://powiat.wielun.pl/Kierownictwo.html",
+       "quote": "Małgorzata Pach Sekretarz Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Adres z www (www.powiat.wielun.pl) ma certyfikat TLS wystawiony tylko na powiat.wielun.pl i nie odpowiada automatom; działa https://powiat.wielun.pl/.",
+    "BIP (powiat-wielun.finn.pl) nie ma osobnej strony ze składem zarządu i prezydium rady; wszystkie osoby z oficjalnej strony starostwa (zakładki Kierownictwo i Rada Powiatu). Rada Powiatu nazywana na stronie „Rada Powiatu w Wieluniu”, stąd taka forma w tytułach.",
+    "Członkowie zarządu ustaleni z listy radnych z adnotacją „członek Zarządu”; ewentualny członek zarządu spoza rady nie byłby tam widoczny."
+   ]
+  },
+  "1018": {
+   "teryt": "101800",
+   "kind": "powiat",
+   "name": "Powiat wieruszowski",
+   "officialUrl": "https://www.powiat-wieruszowski.pl/",
+   "bipUrl": "https://bip.powiat-wieruszowski.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Wieruszowski",
+     "people": [
+      {
+       "name": "Stefan Pietras",
+       "sourceUrl": "https://bip.powiat-wieruszowski.pl/bipkod/004",
+       "quote": "Stefan Pietras Starosta Wieruszowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Wieruszowski",
+     "people": [
+      {
+       "name": "Marek Kanicki",
+       "sourceUrl": "https://bip.powiat-wieruszowski.pl/bipkod/004",
+       "quote": "Marek Kanicki Wicestarosta Wieruszowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Wieruszowskiego",
+     "people": [
+      {
+       "name": "Adam Musiała",
+       "sourceUrl": "https://bip.powiat-wieruszowski.pl/bipkod/004",
+       "quote": "Adam Musiała Członek Zarządu Powiatu Wieruszowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Ryszard Starek",
+       "sourceUrl": "https://bip.powiat-wieruszowski.pl/bipkod/004",
+       "quote": "Ryszard Starek Członek Zarządu Powiatu Wieruszowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Wieruszowskiego",
+     "people": [
+      {
+       "name": "Andrzej Szymanek",
+       "sourceUrl": "https://bip.powiat-wieruszowski.pl/bipkod/003/001",
+       "quote": "Andrzej Szymanek Przewodniczący Rady Powiatu Wieruszowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Wieruszowskiego",
+     "people": [
+      {
+       "name": "Zofia Siwik",
+       "sourceUrl": "https://bip.powiat-wieruszowski.pl/bipkod/003/001",
+       "quote": "Zofia Siwik Wiceprzewodnicząca Rady Powiatu Wieruszowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Malwina Grzybek",
+       "sourceUrl": "https://bip.powiat-wieruszowski.pl/bipkod/003/001",
+       "quote": "Malwina Grzybek Wiceprzewodnicząca Rady Powiatu Wieruszowskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Wieruszowskiego",
+     "people": [
+      {
+       "name": "Agnieszka Polus",
+       "sourceUrl": "https://www.powiat-wieruszowski.pl/wladze-powiatu.html",
+       "quote": "Agnieszka Polus Sekretarz Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Wieruszowskiego",
+     "people": [
+      {
+       "name": "Elżbieta Kubiak",
+       "sourceUrl": "https://www.powiat-wieruszowski.pl/wladze-powiatu.html",
+       "quote": "Elżbieta Kubiak Skarbnik Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Zarząd czteroosobowy według BIP (starosta, wicestarosta, dwóch członków). Sekretarz i skarbnik tylko na oficjalnej stronie starostwa (zakładka Władze powiatu), w BIP nie znaleziono osobnej strony."
+   ]
+  },
+  "1019": {
+   "teryt": "101900",
+   "kind": "powiat",
+   "name": "Powiat zduńskowolski",
+   "officialUrl": "https://www.powiatzdunskowolski.pl/",
+   "bipUrl": "https://bip.powiatzdunskowolski.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Zduńskowolski",
+     "people": [
+      {
+       "name": "Wojciech Rychlik",
+       "sourceUrl": "https://bip.powiatzdunskowolski.pl/artykuly/3/zarzad-powiatu",
+       "quote": "Zarząd Powiatu 1. Starosta - Wojciech Rychlik",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Zduńskowolski",
+     "people": [
+      {
+       "name": "Tomasz Ziółkowski",
+       "sourceUrl": "https://bip.powiatzdunskowolski.pl/artykuly/3/zarzad-powiatu",
+       "quote": "2. Wicestarosta - Tomasz Ziółkowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Zduńskowolskiego",
+     "people": [
+      {
+       "name": "Katarzyna Balzam",
+       "sourceUrl": "https://bip.powiatzdunskowolski.pl/artykuly/3/zarzad-powiatu",
+       "quote": "Wicestarosta - Tomasz Ziółkowski 3. Katarzyna Balzam",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Ewa Mielczarek-Sójka",
+       "sourceUrl": "https://bip.powiatzdunskowolski.pl/artykuly/3/zarzad-powiatu",
+       "quote": "3. Katarzyna Balzam 4. Ewa Mielczarek-Sójka 5. Joanna Pawłowska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Joanna Pawłowska",
+       "sourceUrl": "https://bip.powiatzdunskowolski.pl/artykuly/3/zarzad-powiatu",
+       "quote": "3. Katarzyna Balzam 4. Ewa Mielczarek-Sójka 5. Joanna Pawłowska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Zduńskowolskiego",
+     "people": [
+      {
+       "name": "Magdalena Kazek",
+       "sourceUrl": "https://bip.powiatzdunskowolski.pl/artykul/4/24/rada-powiatu",
+       "quote": "5. Magdalena Kazek - Przewodnicząca Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Zduńskowolskiego",
+     "people": [
+      {
+       "name": "Piotr Warchlewski",
+       "sourceUrl": "https://bip.powiatzdunskowolski.pl/artykul/4/24/rada-powiatu",
+       "quote": "17. Piotr Warchlewski - Wiceprzewodniczący Rady Powiatu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Zduńskowolskiego",
+     "people": [
+      {
+       "name": "Anna Szubert",
+       "sourceUrl": "http://powiatzdunskowolski.pl/strona-1118-sekretarz_powiatu.html",
+       "quote": "Sekretarz Anna Szubert",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Zduńskowolskiego",
+     "people": [
+      {
+       "name": "Beata Barton",
+       "sourceUrl": "http://powiatzdunskowolski.pl/strona-1119-skarbnik_powiatu.html",
+       "quote": "Skarbnik Beata Barton",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "BIP wymienia członków zarządu (poz. 3-5) samymi nazwiskami, bez słowa „członek”; role wynika z listy „Zarząd Powiatu w składzie”.",
+    "Strona BIP rady powiatu wymienia jednego wiceprzewodniczącego.",
+    "Sekretarz i skarbnik ze strony oficjalnej starostwa (serwis przekierowuje z https://www na http://powiatzdunskowolski.pl)."
+   ]
+  },
+  "1020": {
+   "teryt": "102000",
+   "kind": "powiat",
+   "name": "Powiat zgierski",
+   "officialUrl": "https://www.powiat.zgierz.pl/",
+   "bipUrl": "https://powiatzgierski.bip.net.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Zgierski",
+     "people": [
+      {
+       "name": "Iwona Dąbek",
+       "sourceUrl": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "quote": "Starosta Zgierski Iwona Dąbek - powołana Uchwałą nr I/3/24",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Zgierski",
+     "people": [
+      {
+       "name": "Sebastian Dunin",
+       "sourceUrl": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "quote": "Wicestarosta Zgierski: Sebastian Dunin- powołany Uchwałą nr I/4/24",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Zgierskiego",
+     "people": [
+      {
+       "name": "Joanna Mariankowska",
+       "sourceUrl": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "quote": "Członkowie Zarządu: Joanna Mariankowska- powołana Uchwałą nr I/4/24",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Justyna Romanow-Przybylak",
+       "sourceUrl": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "quote": "Justyna Romanow-Przybylak- powołana Uchwałą nr I/4/24 Rady Powiatu Zgierskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Edyta Strumian",
+       "sourceUrl": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "quote": "Edyta Strumian- powołana Uchwałą nr I/4/24 Rady Powiatu Zgierskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": "2024-05-07",
+       "startedAtSource": "https://powiatzgierski.bip.net.pl/kategorie/138-zarzad-powiatu/artykuly/134-zarzad-powiatu?lang=PL",
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Zgierskiego",
+     "people": [
+      {
+       "name": "Bogdan Jarota",
+       "sourceUrl": "https://powiatzgierski.bip.net.pl/kategorie/222-radni-powiatu/artykuly/801-bogdan-jarota-przewodniczacy-rady?lang=PL",
+       "quote": "Bogdan Jarota - Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Zgierskiego",
+     "people": [
+      {
+       "name": "Lidia Elert",
+       "sourceUrl": "https://powiatzgierski.bip.net.pl/kategorie/222-radni-powiatu/artykuly/798-lidia-elert-wiceprzewodniczaca-rady?lang=PL",
+       "quote": "Lidia Elert - Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Bożena Palmowska",
+       "sourceUrl": "https://powiatzgierski.bip.net.pl/kategorie/222-radni-powiatu/artykuly/806-bozena-palmowska-wiceprzewodniczaca-rady?lang=PL",
+       "quote": "Bożena Palmowska - Wiceprzewodnicząca Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Zgierskiego",
+     "people": [
+      {
+       "name": "Barbara Polasińska",
+       "sourceUrl": "https://www.powiat.zgierz.pl/strona-3490-sekretarz_powiatu_zgierskiego_barbara.html",
+       "quote": "Sekretarz Powiatu Zgierskiego - Barbara Polasińska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Zgierskiego",
+     "people": [
+      {
+       "name": "Agnieszka Szymczyk",
+       "sourceUrl": "https://www.powiat.zgierz.pl/strona-3491-skarbnik_powiatu_zgierskiego_agnieszka.html",
+       "quote": "Skarbnik Powiatu Zgierskiego - Agnieszka Szymczyk",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Nowy BIP (powiatzgierski.bip.net.pl, Next.js) trzyma treść artykułów tylko w ładunku RSC (self.__next_f.push) w HTML, nie w DOM; po zdekodowaniu ładunku zarząd i przewodniczący rady pochodzą z bieżącego BIP. Strona zarządu podaje uchwały powołania nr I/3/24 i I/4/24 Rady Powiatu Zgierskiego z dnia 7 maja 2024 r. (stąd startedAt).",
+    "Zarząd, sekretarz i skarbnik z oficjalnej strony starostwa; oficjalna zakładka „Rada Powiatu” przekierowuje do BIP."
+   ]
+  },
+  "1021": {
+   "teryt": "102100",
+   "kind": "powiat",
+   "name": "Powiat brzeziński",
+   "officialUrl": "https://powiat-brzeziny.pl/",
+   "bipUrl": "https://www.powiat-brzeziny.4bip.pl/",
+   "positions": [
+    {
+     "role": "starosta",
+     "title": "Starosta Brzeziński",
+     "people": [
+      {
+       "name": "Bartłomiej Lipski",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=5&id=30&x=1",
+       "quote": "Bartłomiej Lipski - Starosta Brzeziński",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wicestarosta",
+     "title": "Wicestarosta Brzeziński",
+     "people": [
+      {
+       "name": "Arkadiusz Garnys",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=5&id=30&x=1",
+       "quote": "Arkadiusz Garnys - Wicestarosta",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "czlonek_zarzadu",
+     "title": "Członek Zarządu Powiatu Brzezińskiego",
+     "people": [
+      {
+       "name": "Aneta Szymczak",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=5&id=30&x=1",
+       "quote": "Aneta Szymczak - Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Edmund Kotecki",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=5&id=30&x=1",
+       "quote": "Edmund Kotecki - Członek Zarządu",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Powiatu Brzezińskiego",
+     "people": [
+      {
+       "name": "Krzysztof Orłowski",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=4&id=26&x=1",
+       "quote": "Przewodniczący Rady Krzysztof Orłowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Powiatu Brzezińskiego",
+     "people": [
+      {
+       "name": "Beata Kaczmarska",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=4&id=26&x=1",
+       "quote": "Wiceprzewodniczący Rady Beata Kaczmarska Małgorzata Pyka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Małgorzata Pyka",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=4&id=26&x=1",
+       "quote": "Wiceprzewodniczący Rady Beata Kaczmarska Małgorzata Pyka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Powiatu Brzezińskiego",
+     "people": [
+      {
+       "name": "Aleksandra Frydrych",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=2&id=8&x=3",
+       "quote": "Sekretarz P owiatu: Aleksandra Frydrych",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Powiatu Brzezińskiego",
+     "people": [
+      {
+       "name": "Tomasz Makowski",
+       "sourceUrl": "https://www.powiat-brzeziny.4bip.pl/index.php?idg=2&id=7&x=2",
+       "quote": "Skarbnik Powiatu: Tomasz Makowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Oficjalna strona powiat-brzeziny.pl nie ma podstron o zarządzie i radzie; wszystko z BIP (4bip.pl). Przewodniczący rady potwierdzony też na osobnej stronie BIP index.php?idg=2&id=321&x=1.",
+    "Cytat dla sekretarza zawiera literówkę ze strony BIP („Sekretarz P owiatu”)."
+   ]
+  },
+  "1061": {
+   "teryt": "106101",
+   "kind": "miasto_na_prawach_powiatu",
+   "name": "Miasto Łódź",
+   "officialUrl": "https://uml.lodz.pl/",
+   "bipUrl": "https://bip.uml.lodz.pl/",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Miejskiej w Łodzi",
+     "people": [
+      {
+       "name": "Bartosz Domaszewicz",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/rada-miejska-w-lodzi/przewodniczacy-rady-miejskiej/",
+       "quote": "Przewodniczący Rady Miejskiej Radny Bartosz Domaszewicz",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Miejskiej w Łodzi",
+     "people": [
+      {
+       "name": "Paulina Setnik",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/rada-miejska-w-lodzi/przewodniczacy-rady-miejskiej/",
+       "quote": "Wiceprzewodniczący Rady Miejskiej Radna Paulina Setnik",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Krzysztof Stasiak",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/rada-miejska-w-lodzi/przewodniczacy-rady-miejskiej/",
+       "quote": "Radny Krzysztof Stasiak",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Agnieszka Wieteska",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/rada-miejska-w-lodzi/przewodniczacy-rady-miejskiej/",
+       "quote": "Radna Agnieszka Wieteska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_prezydenta",
+     "title": "Wiceprezydent Miasta Łodzi",
+     "people": [
+      {
+       "name": "Adam Pustelnik",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/wiceprezydenci-miasta-lodzi/",
+       "quote": "Pierwszy Wiceprezydent Adam Pustelnik",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Tomasz Piotrowski",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/wiceprezydenci-miasta-lodzi/",
+       "quote": "Wiceprezydent Tomasz Piotrowski",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Małgorzata Moskwa-Wodnicka",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/wiceprezydenci-miasta-lodzi/",
+       "quote": "Wiceprezydent Małgorzata Moskwa-Wodnicka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Adam Wieczorek",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/wiceprezydenci-miasta-lodzi/",
+       "quote": "Wiceprezydent Adam Wieczorek",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Miasta Łodzi",
+     "people": [
+      {
+       "name": "Wojciech Rosicki",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/sekretarz-miasta-lodzi/",
+       "quote": "Sekretarz Miasta Łodzi Wojciech Rosicki Sekretarz Miasta Łodzi",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Miasta Łodzi",
+     "people": [
+      {
+       "name": "Krzysztof Mączkowski",
+       "sourceUrl": "https://bip.uml.lodz.pl/wladze/skarbnik-miasta-lodzi/",
+       "quote": "Skarbnik Miasta Łodzi Krzysztof Mączkowski Skarbnik Miasta Łodzi",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Prezydium: strona BIP ma sekcję (akordeon) „Wiceprzewodniczący Rady Miejskiej” obejmującą troje radnych: Paulinę Setnik, Krzysztofa Stasiaka i Agnieszkę Wieteskę; w tekście funkcja stoi bezpośrednio tylko przy pierwszym nazwisku, stąd cytaty Stasiaka i Wieteski to same podpisy „Radny/Radna …” pod tym nagłówkiem.",
+    "Urząd używa nazwy „Wiceprezydent Miasta Łodzi”; Adam Pustelnik jest podpisany jako „Pierwszy Wiceprezydent”."
+   ]
+  },
+  "1062": {
+   "teryt": "106201",
+   "kind": "miasto_na_prawach_powiatu",
+   "name": "Miasto Piotrków Trybunalski",
+   "officialUrl": "https://www.piotrkow.pl/",
+   "bipUrl": "https://www.bip.piotrkow.pl/",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Miasta Piotrkowa Trybunalskiego",
+     "people": [
+      {
+       "name": "Mariusz Staszek",
+       "sourceUrl": "https://www.bip.piotrkow.pl/index.php?idg=15&id=2299&x=9&y=5",
+       "quote": "Prezydium Rady Miasta Przewodniczący Rady Miasta Mariusz Staszek",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "(odczyt Playwright)",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Miasta Piotrkowa Trybunalskiego",
+     "people": [
+      {
+       "name": "Rafał Paweł Czajka",
+       "sourceUrl": "https://www.bip.piotrkow.pl/index.php?idg=15&id=2299&x=9&y=5",
+       "quote": "Wiceprzewodniczący Rady Miasta Rafał Paweł Czajka",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "(odczyt Playwright)",
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Konrad Czyżyński",
+       "sourceUrl": "https://www.bip.piotrkow.pl/index.php?idg=15&id=2299&x=9&y=5",
+       "quote": "Wiceprzewodniczący Rady Miasta Konrad Czyżyński",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "(odczyt Playwright)",
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Małgorzata Pingot",
+       "sourceUrl": "https://www.bip.piotrkow.pl/index.php?idg=15&id=2299&x=9&y=5",
+       "quote": "Wiceprzewodnicząca Rady Miasta Małgorzata Pingot",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": "(odczyt Playwright)",
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_prezydenta",
+     "title": "Zastępca Prezydenta Miasta Piotrkowa Trybunalskiego",
+     "people": [
+      {
+       "name": "Piotr Kulbat",
+       "sourceUrl": "https://www.bip.piotrkow.pl/index.php?idg=2&id=315&x=16",
+       "quote": "Piotr Kulbat - I Zastępca Prezydenta Miasta Piotrkowa Trybunalskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Katarzyna Pabich-Gaj",
+       "sourceUrl": "https://www.bip.piotrkow.pl/index.php?idg=2&id=315&x=16",
+       "quote": "Katarzyna Pabich-Gaj - II Zastępca Prezydenta Miasta Piotrkowa Trybunalskiego",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Miasta Piotrkowa Trybunalskiego",
+     "people": [
+      {
+       "name": "Włodzimierz Lasek",
+       "sourceUrl": "https://www.bip.piotrkow.pl/index.php?idg=2&id=245&x=20",
+       "quote": "Włodzimierz Lasek - Sekretarz Miasta",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Miasta Piotrkowa Trybunalskiego",
+     "people": [
+      {
+       "name": "Izabela Wroniszewska",
+       "sourceUrl": "https://www.bip.piotrkow.pl/index.php?idg=2&id=246&x=24",
+       "quote": "Skarbnik miasta - Izabela Wroniszewska",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "BIP podaje przy Piotrze Kulbacie, że objął stanowisko „w maju 2024 roku” — bez dokładnej daty, więc startedAt = null.",
+    "Strona BIP ma liczne parametry w adresie (index.php?idg=…&id=…); przy weryfikacji używać adresu dokładnie w tej postaci."
+   ]
+  },
+  "1063": {
+   "teryt": "106301",
+   "kind": "miasto_na_prawach_powiatu",
+   "name": "Miasto Skierniewice",
+   "officialUrl": "https://www.skierniewice.eu/",
+   "bipUrl": "https://www.bip.um.skierniewice.pl/",
+   "positions": [
+    {
+     "role": "przewodniczacy_rady",
+     "title": "Przewodniczący Rady Miasta Skierniewice",
+     "people": [
+      {
+       "name": "Jarosław Chęcielewski",
+       "sourceUrl": "https://www.skierniewice.eu/urzad-miata/urzad-miasta/rada-miasta/radni/",
+       "quote": "Chęcielewski Jarosław - Przewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "wiceprzewodniczacy_rady",
+     "title": "Wiceprzewodniczący Rady Miasta Skierniewice",
+     "people": [
+      {
+       "name": "Dariusz Chęcielewski",
+       "sourceUrl": "https://www.skierniewice.eu/urzad-miata/urzad-miasta/rada-miasta/radni/",
+       "quote": "Chęcielewski Dariusz - Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Jerzy Gołębiewski",
+       "sourceUrl": "https://www.skierniewice.eu/urzad-miata/urzad-miasta/rada-miasta/radni/",
+       "quote": "Gołębiewski Jerzy - Wiceprzewodniczący Rady",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "zastepca_prezydenta",
+     "title": "Zastępca Prezydenta Miasta Skierniewice",
+     "people": [
+      {
+       "name": "Iwona Górniak",
+       "sourceUrl": "https://www.skierniewice.eu/urzad-miata/urzad-miasta/kierownictwo-urzedu/zastepcy-prezydenta/",
+       "quote": "Iwona Górniak Zastępca Prezydenta Miasta Skierniewice",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      },
+      {
+       "name": "Dominik Dudek",
+       "sourceUrl": "https://www.skierniewice.eu/urzad-miata/urzad-miasta/kierownictwo-urzedu/zastepcy-prezydenta/",
+       "quote": "Dominik Dudek Zastępca Prezydenta Miasta Skierniewice",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "skarbnik",
+     "title": "Skarbnik Miasta Skierniewice",
+     "people": [
+      {
+       "name": "Liliana Majka",
+       "sourceUrl": "https://www.skierniewice.eu/urzad-miata/urzad-miasta/kierownictwo-urzedu/skarbnik/",
+       "quote": "Skarbnik Miasta Skierniewice Liliana Majka Skarbnik Miasta Skierniewice",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "role": "sekretarz",
+     "title": "Sekretarz Miasta Skierniewice",
+     "people": [
+      {
+       "name": "Edyta Cieślak",
+       "sourceUrl": "https://www.skierniewice.eu/urzad-miata/urzad-miasta/kierownictwo-urzedu/sekretarz/",
+       "quote": "Sekretarz Miasta Edyta Cieślak Sekretarz Miasta",
+       "retrievedAt": "2026-09-18",
+       "startedAt": null,
+       "startedAtSource": null,
+       "verdict": "confirmed",
+       "note": null,
+       "verifiedAt": "2026-09-18"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Źródłem jest oficjalna strona urzędu (skierniewice.eu): BIP (bip.um.skierniewice.pl, kategoria „Rada Miasta”) nie ma osobnej strony prezydium ani kierownictwa urzędu, tylko dyżury, wykazy telefonów i składy komisji.",
+    "Na stronie radnych nazwiska są w porządku „Nazwisko Imię” (np. „Chęcielewski Jarosław - Przewodniczący Rady”); w polu name zapisano „Imię Nazwisko”. Przewodniczący jest też potwierdzony na stronie dyżurów radnych: „Jarosław Chęcielewski Przewodniczący Rady Miasta”.",
+    "Przewodniczący i wiceprzewodniczący Dariusz i Jarosław Chęcielewscy to dwie różne osoby (odrębne wpisy na liście radnych)."
+   ]
+  }
+ },
+ "failed": [
+  {
+   "key": "1001",
+   "what": "Starosta, wicestarosta, członkowie Zarządu Powiatu Bełchatowskiego",
+   "why": "BIP (SSDIP) ma puste kategorie 'Starosta' i 'Zarząd Powiatu'; oficjalna strona nie ma podstrony o zarządzie (artykuł 'Rada Powiatu 2024-2029' zawiera tylko komisje); protokoły sesji to skany PDF bez tekstu; oświadczenia majątkowe nie podają funkcji.",
+   "tried": [
+    "https://spbelchatow.bip.gov.pl/starosta/",
+    "https://spbelchatow.bip.gov.pl/zarzad-powiatu/",
+    "https://spbelchatow.bip.gov.pl/czlonkowie-zarzadu-powiatu/",
+    "https://www.powiat-belchatowski.pl/powiat-t70/rada-powiatu-i-zarzad-powiatu-t290/rada-powiatu-2024-2029-a457",
+    "https://www.powiat-belchatowski.pl/powiat-t70/rada-powiatu-i-zarzad-powiatu-t290/rada-powiatu-2024-2029-a457/rada-powiatu-i-zarzad-powiatu-r18213",
+    "https://www.powiat-belchatowski.pl/powiat-t70/wydzialy-starostwa-powiatowego-t296",
+    "https://spbelchatow.bip.gov.pl/protokoly-sesji-2024-2029-vii-kadencja/protokol-i-sesji-z-dnia-7-maja-2024-r.html (PDF skan)",
+    "https://spbelchatow.bip.gov.pl/protokoly-sesji-2024-2029-vii-kadencja/protokol-xx-sesji-z-dnia-28-stycznia-2026-r.html (PDF skan)",
+    "https://spbelchatow.bip.gov.pl/rada-powiatu-w-belchatowie-kadencja-2024-2029/uchwaly-rady-powiatu-w-belchatowie/ (lista uchwał bez nazwisk w tytułach)"
+   ]
+  },
+  {
+   "key": "1001",
+   "what": "Przewodniczący i wiceprzewodniczący Rady Powiatu w Bełchatowie",
+   "why": "Jak wyżej: BIP nie ma strony prezydium (kategoria kadencji 2024-2029 zawiera tylko sesje, protokoły, interpelacje, uchwały); oficjalna strona podaje wyłącznie przewodniczących komisji; protokół I sesji z 7 maja 2024 r. to skan bez warstwy tekstu (brak OCR w tym przebiegu).",
+   "tried": [
+    "https://spbelchatow.bip.gov.pl/rada-powiatu-w-belchatowie-kadencja-2024-2029/",
+    "https://spbelchatow.bip.gov.pl/radni-rady-powiatu/",
+    "https://www.powiat-belchatowski.pl/powiat-t70/rada-powiatu-i-zarzad-powiatu-t290/rada-powiatu-2024-2029-a457",
+    "https://spbelchatow.bip.gov.pl/protokoly-sesji-2024-2029-vii-kadencja/protokol-i-sesji-z-dnia-7-maja-2024-r.html (PDF skan)"
+   ]
+  }
+ ]
+}

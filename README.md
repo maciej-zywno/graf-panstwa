@@ -230,14 +230,16 @@ Każda jednostka samorządu ma własne koło pod adresem `?jst=<kod TERYT>`, np.
 | | |
 |---|---|
 | Jednostki | 16 województw, 314 powiatów, 66 miast na prawach powiatu, 2411 gmin |
-| Osoby | wszyscy radni oraz wójtowie, burmistrzowie i prezydenci wybrani 7 i 21 kwietnia 2024 r. (ok. 47 tys. mandatów) |
-| Źródło osób | [arkusze PKW z wyborów samorządowych 2024](https://samorzad2024.pkw.gov.pl/samorzad2024/pl/dane_w_arkuszach); z plików przenosimy tylko imię, nazwisko i komitet, bez wieku, wykształcenia i miejsca zamieszkania |
-| Ustrój | jeden zweryfikowany szablon na szczebel: 36 cytatów z ustaw o samorządzie gminnym, powiatowym, województwa, o samorządowych kolegiach odwoławczych i z Konstytucji, sprawdzonych automatycznie na tekstach jednolitych z ELI (`scripts/jst/verify-templates.py`) |
+| Osoby | wszyscy radni oraz wójtowie, burmistrzowie i prezydenci wybrani 7 i 21 kwietnia 2024 r. (ok. 47 tys. mandatów); w województwie łódzkim dodatkowo zarząd województwa, zarządy powiatów, prezydia rad, zastępcy prezydentów, skarbnicy i sekretarze (226 osób w 25 jednostkach) |
+| Źródło osób | [arkusze PKW z wyborów samorządowych 2024](https://samorzad2024.pkw.gov.pl/samorzad2024/pl/dane_w_arkuszach); z plików przenosimy tylko imię, nazwisko i komitet, bez wieku, wykształcenia i miejsca zamieszkania. Stanowiska spoza rejestrów PKW: strony BIP i oficjalne strony urzędów, każda osoba z adresem strony, cytatem i datą odczytu |
+| Ustrój | jeden zweryfikowany szablon na szczebel: 42 cytaty z ustaw o samorządzie gminnym, powiatowym, województwa, o pracownikach samorządowych, o samorządowych kolegiach odwoławczych i z Konstytucji, sprawdzonych automatycznie na tekstach jednolitych z ELI (`scripts/jst/verify-templates.py`) |
 | Kontrola | w każdej radzie liczba wybranych równa się liczbie mandatów z plików okręgów; każda z 2807 jednostek składa się i przechodzi kontrolę spójności przy budowie |
-| Dane | `data/jst/tiers.json` (szablony wariantów ze znacznikami), `data/jst/woj/<XX>.json` (zwarte dane jednostek), `data/jst/index.json` (spis); graf jednostki składa przeglądarka |
-| Skrypt | `scripts/jst/build-frame.py` |
+| Dane | `data/jst/tiers.json` (szablony wariantów ze znacznikami), `data/jst/woj/<XX>.json` (zwarte dane jednostek), `data/jst/index.json` (spis), `data/jst/overlay/<XX>.json` (nakładka: stanowiska ze stron BIP); graf jednostki składa przeglądarka |
+| Skrypty | `scripts/jst/build-frame.py` (rama z PKW plus nakładka), `scripts/jst/verify-overlay.py` (niezależna weryfikacja nakładki: pobiera każdy adres od nowa i szuka nazwiska obok słowa funkcji) |
 
-Czego jeszcze nie ma: starostów, marszałków, zarządów i przewodniczących rad (nie ma dla nich rejestru maszynowego; zbierane ze stron BIP, najpierw dla województwa łódzkiego), zmian w trakcie kadencji, składów komisji, list jednostek organizacyjnych i budżetów jednostek. Takie stanowiska pokazują „Brak danych o obsadzie”, nie „Wakat”. Projekt całej warstwy: [`docs/07-projekt-samorzad.md`](docs/07-projekt-samorzad.md).
+Nakładka `data/jst/overlay/<XX>.json` to jedyna część warstwy samorządowej zbierana ręcznie ze stron urzędów, bo starostowie, marszałkowie, zarządy, prezydia rad, skarbnicy i sekretarze nie mają rejestru maszynowego. Klucz jednostki to skrócony TERYT (`10` województwo, `1020` powiat, `1061` miasto na prawach powiatu, pełny sześciocyfrowy kod dla gminy). Każda jednostka ma `positions` z polem `role` (`marszalek`, `wicemarszalek`, `czlonek_zarzadu`, `starosta`, `wicestarosta`, `przewodniczacy_rady`, `wiceprzewodniczacy_rady`, `zastepca_prezydenta`, `skarbnik`, `sekretarz`) i listą `people`; osoba ma `name`, `sourceUrl`, `quote`, `retrievedAt`, opcjonalnie `startedAt` ze źródłem oraz `verdict` z `note` i `verifiedAt` nadawane przez sprawdzarkę. Do grafu trafiają tylko rekordy `confirmed`; brak rekordu daje na stanowisku „Brak danych o obsadzie”, nie „Wakat”. Lista `failed` w pliku wymienia, czego nie udało się odczytać i dlaczego (np. BIP powiatu bełchatowskiego ma puste kategorie „Starosta” i „Zarząd”, a protokoły sesji to skany bez tekstu).
+
+Czego jeszcze nie ma: nakładki dla pozostałych 15 województw, zmian w trakcie kadencji, składów komisji, list jednostek organizacyjnych i budżetów jednostek. Projekt całej warstwy: [`docs/07-projekt-samorzad.md`](docs/07-projekt-samorzad.md).
 
 ## Jak dane są aktualizowane
 
