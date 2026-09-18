@@ -61,6 +61,14 @@ test('Warszawa: miasto ma 18 dzielnic w nawigacji; dzielnica ma burmistrza, zarz
   expect(errors).toEqual([]);
 });
 
+test('werdykt ręczny: starosta bełchatowski jest na kole z etykietą „sprawdzone ręcznie” i powodem w podpowiedzi', async ({ page }) => {
+  await open(page, '100100', '#node=jst-100100-lider'); await page.waitForTimeout(500);
+  const r = await page.evaluate(() => { const c = document.querySelector('#view-node .head-card'); const b = c && c.querySelector('.badge.manual'); return { name: c ? c.querySelector('.name').textContent.trim() : null, badge: b ? b.textContent : null, why: b ? b.getAttribute('title') : '', zarzad: window.__GP_TEST.node('jst-100100-zarzad').people, przew: window.__GP_TEST.node('jst-100100-przew').people }; });
+  expect(r.name).toMatch(/Zatorski/); expect(r.badge).toBe('sprawdzone ręcznie'); expect(r.why).toMatch(/robots\.txt/); expect(r.zarzad).toBe(4); expect(r.przew).toBe(1);
+  await open(page, '102000', '#node=jst-102000-lider'); await page.waitForTimeout(400);
+  expect(await page.evaluate(() => !!document.querySelector('#view-node .head-card .badge.manual')), 'rekord potwierdzony automatem nie ma etykiety').toBe(false);
+});
+
 test('nieistniejący kod jednostki daje czytelny komunikat, a nie pustą stronę', async ({ page }) => {
   await page.goto(D_URL + '&jst=109999'); await page.waitForTimeout(2500); const st = await page.evaluate(() => ({ hidden: document.querySelector('#status').hidden, msg: document.querySelector('#status-msg').textContent })); expect(st.hidden).toBe(false); expect(st.msg).toContain('109999');
 });

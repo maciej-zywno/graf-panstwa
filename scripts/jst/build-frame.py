@@ -95,9 +95,9 @@ def ov_people(ov, roles, position_id, position_name):
     for pos in ov.get('positions') or []:
         if pos.get('role') not in roles: continue
         for p in pos.get('people') or []:
-            if p.get('verdict') != 'confirmed' or not p.get('sourceUrl'): continue
-            name = canonical_name(p['name'], t)
-            out.append({'id': f"{position_id}-{slug(name)}", 'name': name, 'positionId': position_id, 'positionName': pos.get('title') or position_name, 'type': 'elected', 'startedAt': p.get('startedAt'), 'startedAtSource': p.get('startedAtSource'), 'acting': False, 'status': 'verified', 'party': None, 'imageUrl': None, 'sourceUrl': p['sourceUrl'], 'note': None, 'verdict': 'confirmed', 'verifiedAt': p.get('retrievedAt')})
+            if p.get('verdict') not in ('confirmed', 'confirmed-manual') or not p.get('sourceUrl'): continue
+            name = canonical_name(p['name'], t); manual = p.get('verdict') == 'confirmed-manual'
+            out.append({'id': f"{position_id}-{slug(name)}", 'name': name, 'positionId': position_id, 'positionName': pos.get('title') or position_name, 'type': 'elected', 'startedAt': p.get('startedAt'), 'startedAtSource': p.get('startedAtSource'), 'acting': False, 'status': 'verified', 'party': None, 'imageUrl': None, 'sourceUrl': p['sourceUrl'], 'note': (p.get('note') if manual else None), 'verdict': p['verdict'], 'verifiedAt': p.get('verifiedAt') or p.get('retrievedAt'), **({'verifiedBy': p.get('verifiedBy') or 'człowiek'} if manual else {})})
     return out
 
 # ---------- budowa grafu jednostki ----------
@@ -233,7 +233,7 @@ def compact(u, committees):
     P = f'jst-{t}'; ovp = {}
     for key, roles, title in (('przew', ('przewodniczacy_rady',), 'Przewodniczący'), ('wiceprzew', ('wiceprzewodniczacy_rady',), 'Wiceprzewodniczący'), ('lider', ('starosta', 'marszalek', 'burmistrz_dzielnicy'), ''), ('zarzad', ('wicestarosta', 'wicemarszalek', 'czlonek_zarzadu', 'zastepca_burmistrza'), 'Członek zarządu'), ('skarbnik', ('skarbnik',), 'Skarbnik'), ('sekretarz', ('sekretarz',), 'Sekretarz'), ('zastepca', ('zastepca_prezydenta',), 'Zastępca')):
         ppl = ov_people(ov, roles, f'{P}-{key}', title)
-        if ppl: ovp[key] = [{k: v for k, v in p.items() if v not in (None, False, '') and k not in ('id', 'positionId', 'type', 'status', 'verdict')} for p in ppl]
+        if ppl: ovp[key] = [{k: v for k, v in p.items() if v not in (None, False, '') and k not in ('id', 'positionId', 'type', 'status') and (k != 'verdict' or v == 'confirmed-manual')} for p in ppl]
     if ovp: rec['ov'] = ovp
     if ov.get('officialUrl'): rec['url'] = ov['officialUrl']
     if ov.get('bipUrl'): rec['bip'] = ov['bipUrl']
@@ -250,7 +250,7 @@ def expand(tiers, bundle, t):
     for key, ppl in (u.get('ov') or {}).items():
         n = N.get(f'{P}-{key}')
         if not n: continue
-        n['people'] = {'type': 'people', 'people': [dict(person(n['id'], p['name'], p.get('positionName') or n['name'], None), electedAt=None, sourceUrl=p['sourceUrl'], startedAt=p.get('startedAt'), startedAtSource=p.get('startedAtSource'), verifiedAt=p.get('verifiedAt')) for p in ppl]}; n['status'] = 'active'; n['statusNote'] = None
+        n['people'] = {'type': 'people', 'people': [dict(person(n['id'], p['name'], p.get('positionName') or n['name'], None), electedAt=None, sourceUrl=p['sourceUrl'], startedAt=p.get('startedAt'), startedAtSource=p.get('startedAtSource'), verifiedAt=p.get('verifiedAt'), verdict=p.get('verdict') or 'confirmed', note=p.get('note'), verifiedBy=p.get('verifiedBy')) for p in ppl]}; n['status'] = 'active'; n['statusNote'] = None
         n['provenance'] = {'sources': sorted({p['sourceUrl'] for p in ppl}), 'verifiedAt': max((p.get('verifiedAt') or DATE) for p in ppl), 'confidence': 'high', 'verdict': 'confirmed'}
     site = N.get(f'{P}-urzad') or N.get(f'{P}-zarzad')  # adresy stron: urząd, a w dzielnicy (bez węzła urzędu) zarząd
     if site and u.get('url'): site['officialUrl'] = u['url']

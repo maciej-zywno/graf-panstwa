@@ -8,7 +8,8 @@
    "units": 25,
    "people": 234,
    "confirmed": 226,
-   "unverified": 8
+   "unverified": 0,
+   "manual": 8
   },
   "verifiedAt": "2026-09-18"
  },
@@ -206,9 +207,10 @@
        "retrievedAt": "2026-09-18",
        "startedAt": "2024-05-07",
        "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
-       "verdict": "unverified",
-       "note": "nie sprawdzono 2026-09-18: błąd pobrania: URLError: <urlopen error timed out>",
-       "verifiedAt": "2026-09-18"
+       "verdict": "confirmed-manual",
+       "note": "Sprawdzone ręcznie (werdykt dopuszczony przez właściciela projektu 18.09.2026): źródłem jest protokół I sesji Rady Powiatu w Bełchatowie z 7 maja 2024 r., skan PDF w BIP odczytany przez OCR i przejrzany przez człowieka. Automatyczna weryfikacja jest niemożliwa, bo robots.txt tego BIP zabrania pobierania załączników (/fobjects/). To stan z dnia wyboru; BIP nie publikuje aktualnego składu.",
+       "verifiedAt": "2026-09-18",
+       "verifiedBy": "człowiek (właściciel projektu)"
       }
      ]
     },
@@ -223,9 +225,10 @@
        "retrievedAt": "2026-09-18",
        "startedAt": "2024-05-07",
        "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
-       "verdict": "unverified",
-       "note": "nie sprawdzono 2026-09-18: błąd pobrania: URLError: <urlopen error timed out>",
-       "verifiedAt": "2026-09-18"
+       "verdict": "confirmed-manual",
+       "note": "Sprawdzone ręcznie (werdykt dopuszczony przez właściciela projektu 18.09.2026): źródłem jest protokół I sesji Rady Powiatu w Bełchatowie z 7 maja 2024 r., skan PDF w BIP odczytany przez OCR i przejrzany przez człowieka. Automatyczna weryfikacja jest niemożliwa, bo robots.txt tego BIP zabrania pobierania załączników (/fobjects/). To stan z dnia wyboru; BIP nie publikuje aktualnego składu.",
+       "verifiedAt": "2026-09-18",
+       "verifiedBy": "człowiek (właściciel projektu)"
       }
      ]
     },
@@ -240,9 +243,10 @@
        "retrievedAt": "2026-09-18",
        "startedAt": "2024-05-07",
        "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
-       "verdict": "unverified",
-       "note": "nie sprawdzono 2026-09-18: błąd pobrania: URLError: <urlopen error timed out>",
-       "verifiedAt": "2026-09-18"
+       "verdict": "confirmed-manual",
+       "note": "Sprawdzone ręcznie (werdykt dopuszczony przez właściciela projektu 18.09.2026): źródłem jest protokół I sesji Rady Powiatu w Bełchatowie z 7 maja 2024 r., skan PDF w BIP odczytany przez OCR i przejrzany przez człowieka. Automatyczna weryfikacja jest niemożliwa, bo robots.txt tego BIP zabrania pobierania załączników (/fobjects/). To stan z dnia wyboru; BIP nie publikuje aktualnego składu.",
+       "verifiedAt": "2026-09-18",
+       "verifiedBy": "człowiek (właściciel projektu)"
       },
       {
        "name": "Anna Kamieniak",
@@ -251,9 +255,10 @@
        "retrievedAt": "2026-09-18",
        "startedAt": "2024-05-07",
        "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
-       "verdict": "unverified",
-       "note": "nie sprawdzono 2026-09-18: błąd pobrania: URLError: <urlopen error timed out>",
-       "verifiedAt": "2026-09-18"
+       "verdict": "confirmed-manual",
+       "note": "Sprawdzone ręcznie (werdykt dopuszczony przez właściciela projektu 18.09.2026): źródłem jest protokół I sesji Rady Powiatu w Bełchatowie z 7 maja 2024 r., skan PDF w BIP odczytany przez OCR i przejrzany przez człowieka. Automatyczna weryfikacja jest niemożliwa, bo robots.txt tego BIP zabrania pobierania załączników (/fobjects/). To stan z dnia wyboru; BIP nie publikuje aktualnego składu.",
+       "verifiedAt": "2026-09-18",
+       "verifiedBy": "człowiek (właściciel projektu)"
       },
       {
        "name": "Łukasz Bartosik",
@@ -262,9 +267,10 @@
        "retrievedAt": "2026-09-18",
        "startedAt": "2024-05-07",
        "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
-       "verdict": "unverified",
-       "note": "nie sprawdzono 2026-09-18: błąd pobrania: URLError: <urlopen error timed out>",
-       "verifiedAt": "2026-09-18"
+       "verdict": "confirmed-manual",
+       "note": "Sprawdzone ręcznie (werdykt dopuszczony przez właściciela projektu 18.09.2026): źródłem jest protokół I sesji Rady Powiatu w Bełchatowie z 7 maja 2024 r., skan PDF w BIP odczytany przez OCR i przejrzany przez człowieka. Automatyczna weryfikacja jest niemożliwa, bo robots.txt tego BIP zabrania pobierania załączników (/fobjects/). To stan z dnia wyboru; BIP nie publikuje aktualnego składu.",
+       "verifiedAt": "2026-09-18",
+       "verifiedBy": "człowiek (właściciel projektu)"
       }
      ]
     },
@@ -279,9 +285,10 @@
        "retrievedAt": "2026-09-18",
        "startedAt": "2024-05-07",
        "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
-       "verdict": "unverified",
-       "note": "nie sprawdzono 2026-09-18: błąd pobrania: URLError: <urlopen error timed out>",
-       "verifiedAt": "2026-09-18"
+       "verdict": "confirmed-manual",
+       "note": "Sprawdzone ręcznie (werdykt dopuszczony przez właściciela projektu 18.09.2026): źródłem jest protokół I sesji Rady Powiatu w Bełchatowie z 7 maja 2024 r., skan PDF w BIP odczytany przez OCR i przejrzany przez człowieka. Automatyczna weryfikacja jest niemożliwa, bo robots.txt tego BIP zabrania pobierania załączników (/fobjects/). To stan z dnia wyboru; BIP nie publikuje aktualnego składu.",
+       "verifiedAt": "2026-09-18",
+       "verifiedBy": "człowiek (właściciel projektu)"
       }
      ]
     },
@@ -296,9 +303,10 @@
        "retrievedAt": "2026-09-18",
        "startedAt": "2024-05-07",
        "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
-       "verdict": "unverified",
-       "note": "nie sprawdzono 2026-09-18: błąd pobrania: URLError: <urlopen error timed out>",
-       "verifiedAt": "2026-09-18"
+       "verdict": "confirmed-manual",
+       "note": "Sprawdzone ręcznie (werdykt dopuszczony przez właściciela projektu 18.09.2026): źródłem jest protokół I sesji Rady Powiatu w Bełchatowie z 7 maja 2024 r., skan PDF w BIP odczytany przez OCR i przejrzany przez człowieka. Automatyczna weryfikacja jest niemożliwa, bo robots.txt tego BIP zabrania pobierania załączników (/fobjects/). To stan z dnia wyboru; BIP nie publikuje aktualnego składu.",
+       "verifiedAt": "2026-09-18",
+       "verifiedBy": "człowiek (właściciel projektu)"
       },
       {
        "name": "Jarosław Janaszewski",
@@ -307,9 +315,10 @@
        "retrievedAt": "2026-09-18",
        "startedAt": "2024-05-07",
        "startedAtSource": "https://spbelchatow.bip.gov.pl/fobjects/download/1946718/protokol-i-sesji-pdf.html",
-       "verdict": "unverified",
-       "note": "nie sprawdzono 2026-09-18: błąd pobrania: URLError: <urlopen error timed out>",
-       "verifiedAt": "2026-09-18"
+       "verdict": "confirmed-manual",
+       "note": "Sprawdzone ręcznie (werdykt dopuszczony przez właściciela projektu 18.09.2026): źródłem jest protokół I sesji Rady Powiatu w Bełchatowie z 7 maja 2024 r., skan PDF w BIP odczytany przez OCR i przejrzany przez człowieka. Automatyczna weryfikacja jest niemożliwa, bo robots.txt tego BIP zabrania pobierania załączników (/fobjects/). To stan z dnia wyboru; BIP nie publikuje aktualnego składu.",
+       "verifiedAt": "2026-09-18",
+       "verifiedBy": "człowiek (właściciel projektu)"
       }
      ]
     },

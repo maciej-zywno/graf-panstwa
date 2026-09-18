@@ -200,6 +200,7 @@ button.tile[aria-pressed="true"] { border-color: var(--ink-2); }
 .head-card .when a { color: var(--muted); }
 .badge { font: 500 10px/1.5 var(--font-mono); letter-spacing: .06em; padding: 0 6px; border-radius: 4px; color: var(--st-warn); background: color-mix(in srgb, var(--st-warn) 15%, transparent); }
 .badge.soft { color: var(--ink-2); background: var(--card-2); }
+.badge.manual { color: var(--ink-2); background: transparent; border: 1px dashed var(--muted); cursor: help; }
 .vacant .avatar { background: transparent; box-shadow: none; border: 1.5px dashed var(--hair-2); color: var(--muted); }
 .morelink { background: none; border: 0; padding: 0; color: var(--ink-2); cursor: pointer; font-size: 12px; line-height: 1.3; text-align: left; }
 .morelink:hover { text-decoration: underline; }
@@ -1738,7 +1739,7 @@ function personCard(p, position, sector, orgMode, lead) {
   const verb = p.acting ? 'P.o. od' : p.type === 'elected' ? 'Wybrany' : 'Powołany';
   const img = `<span>${esc(initials(p.name))}</span>` + (p.imageUrl ? `<img src="${esc(p.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '');
   const pos = cap(p.positionName || (position && position.name) || '');
-  const when = `${year ? `${verb} ${esc(year)}` : ''}${p.acting ? ' <span class="badge">p.o.</span>' : ''}${p.status && PSTATUS_LABEL[p.status] ? ` <span class="badge soft" title="${esc(p.note || '')}">${esc(PSTATUS_LABEL[p.status])}</span>` : ''}${p.party ? ` <span class="badge soft">${esc(p.party)}</span>` : ''}`.trim();
+  const when = `${year ? `${verb} ${esc(year)}` : ''}${p.acting ? ' <span class="badge">p.o.</span>' : ''}${p.status && PSTATUS_LABEL[p.status] ? ` <span class="badge soft" title="${esc(p.note || '')}">${esc(PSTATUS_LABEL[p.status])}</span>` : ''}${p.party ? ` <span class="badge soft">${esc(p.party)}</span>` : ''}${p.verdict === 'confirmed-manual' ? ` <span class="badge manual" title="${esc(p.note || 'Sprawdzone ręcznie: źródło urzędowe istnieje, ale automat nie ma do niego dostępu')}">sprawdzone ręcznie</span>` : ''}`.trim();
   const src = p.sourceUrl ? `<a class="src" href="${esc(p.sourceUrl)}" target="_blank" rel="noopener" title="Źródło informacji o obsadzie" aria-label="Źródło informacji o obsadzie: ${esc(p.name || '')}">↗</a>` : '';
   return `<div class="head-card${lead ? ' lead' : ''}" style="--c:var(--sec-${esc(sector || 'independent')})"><div class="avatar">${img}</div><div class="who">
       <div class="name${ph ? ' ph' : ''}">${esc(ph ? '(do uzupełnienia)' : p.name)}</div>
@@ -1949,7 +1950,7 @@ function expandJst(tiers, bundle, t) {
   const m = N[`${P}-m`]; m.description = m.description.replace(' 0 mieszkańców', ' ' + u.pop.toLocaleString('pl-PL') + ' mieszkańców');
   if (u.h) { const w = N[`${P}-wojt`]; w.people = { type: 'people', people: [person(w.id, u.h[0], u.o, com[u.h[1]])] }; }
   for (const [key, ppl] of Object.entries(u.ov || {})) { const n = N[`${P}-${key}`]; if (!n) continue;
-    n.people = { type: 'people', people: ppl.map(p => person(n.id, p.name, p.positionName || n.name, null, { electedAt: null, sourceUrl: p.sourceUrl, startedAt: p.startedAt || null, startedAtSource: p.startedAtSource || null, verifiedAt: p.verifiedAt || null })) }; n.status = 'active'; n.statusNote = null;
+    n.people = { type: 'people', people: ppl.map(p => person(n.id, p.name, p.positionName || n.name, null, { electedAt: null, sourceUrl: p.sourceUrl, startedAt: p.startedAt || null, startedAtSource: p.startedAtSource || null, verifiedAt: p.verifiedAt || null, verdict: p.verdict || 'confirmed', note: p.note || null, verifiedBy: p.verifiedBy || null })) }; n.status = 'active'; n.statusNote = null;
     n.provenance = { sources: [...new Set(ppl.map(p => p.sourceUrl))].sort(), verifiedAt: ppl.map(p => p.verifiedAt || '').sort().pop() || g.meta.generatedAt, confidence: 'high', verdict: 'confirmed' }; }
   const site = N[`${P}-urzad`] || N[`${P}-zarzad`]; if (site && u.url) site.officialUrl = u.url; if (site && u.bip) site.bipUrl = u.bip; // dzielnica m.st. Warszawy nie ma węzła urzędu
   if (N[`${P}-wojewoda`]) { const wv = N[`${P}-wojewoda`]; wv.name = sh.wojewoda.name; wv.externalRef = sh.wojewoda.ref; wv.people = { type: 'people', people: sh.wojewoda.people }; wv.provenance.sources = ['https://grafpanstwa.pl/#node=' + (sh.wojewoda.ref || '')];

@@ -16,7 +16,8 @@ Zasady sieci: User-Agent projektu, odstęp ≥1 s między żądaniami do tego sa
 a Playwright jest w node_modules, drugi odczyt przeglądarką. Ładunek Next.js (self.__next_f.push) jest dekodowany, bo
 niektóre BIP-y (dostawca bip.net.pl) trzymają treść artykułu tylko tam. PDF-y czytane przez pdftotext (skany bez warstwy
 tekstu przechodzą przez OCR: tesseract z pakietem `pol` w CI albo Apple Vision przez ocrmac na macOS). Awaria sieci lub serwera
-(błąd połączenia, HTTP 5xx) ani blokada klienta (HTTP 403, 406, 429: zapory urzędów odrzucają adresy centrów danych, np. runnerów GitHuba)
+Rekordy `verdict: confirmed-manual` (sprawdzone ręcznie, gdy źródło urzędowe istnieje, ale automat nie ma do niego dostępu, np. robots.txt) są pomijane i liczone osobno.
+Awaria sieci lub serwera (błąd połączenia, HTTP 5xx) ani blokada klienta (HTTP 403, 406, 429: zapory urzędów odrzucają adresy centrów danych, np. runnerów GitHuba)
 nie zmienia werdyktu, tylko dopisuje notatkę „nie sprawdzono”; strona, która zniknęła (404, 410), daje `unverified`.
 """
 import datetime, html, json, os, re, subprocess, sys, time, unicodedata, urllib.error, urllib.parse, urllib.request, urllib.robotparser
@@ -232,7 +233,7 @@ def main():
     force_js = '--js' in sys.argv; write = '--no-write' not in sys.argv; verbose = '--verbose' in sys.argv
     data = json.load(open(path, encoding='utf-8'))
     cache = {}
-    stats = {'people': 0, 'confirmed': 0, 'unverified': 0}
+    stats = {'people': 0, 'confirmed': 0, 'unverified': 0, 'manual': 0}
     today = datetime.date.today().isoformat()
     for key, unit in data['units'].items():
         if only and key not in only:
@@ -240,6 +241,10 @@ def main():
         for pos in unit.get('positions', []):
             for p in pos.get('people', []):
                 stats['people'] += 1
+                if p.get('verdict') == 'confirmed-manual':  # sprawdzone ręcznie (decyzja właściciela z 18.09.2026): źródło urzędowe istnieje, ale automat nie ma do niego dostępu; werdykt zostaje z widoczną etykietą i powodem w note
+                    stats['manual'] += 1
+                    if verbose: print(f'RĘK {key} {pos["role"]:24} {p["name"]:32} {(p.get("note") or "")[:80]}')
+                    continue
                 url = p['sourceUrl']
                 if url not in cache:
                     cache[url] = fetch_js(url) if force_js else fetch(url)
@@ -262,18 +267,18 @@ def main():
                 if verbose or verdict != 'confirmed':
                     print(f'{mark} {key} {pos["role"]:24} {p["name"]:32} {note or ""}  {url}')
     # statystyki liczone z całego pliku (także przy --only), żeby meta zawsze zgadzała się z rekordami
-    total = {'people': 0, 'confirmed': 0, 'unverified': 0, 'unchecked': 0}
+    total = {'people': 0, 'confirmed': 0, 'manual': 0, 'unverified': 0, 'unchecked': 0}
     for unit in data['units'].values():
         for pos in unit.get('positions', []):
             for p in pos.get('people', []):
-                total['people'] += 1; total[p.get('verdict') or 'unchecked'] += 1
+                total['people'] += 1; total[{'confirmed-manual': 'manual'}.get(p.get('verdict'), p.get('verdict')) or 'unchecked'] += 1
     data['meta'].setdefault('stats', {}).update({k: v for k, v in total.items() if k != 'unchecked' or v})
     if not total['unchecked']:
         data['meta']['stats'].pop('unchecked', None)
     data['meta']['verifiedAt'] = today
     if write:
         json.dump(data, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print(f'osoby: {stats["people"]}, potwierdzone: {stats["confirmed"]}, niepotwierdzone: {stats["unverified"]}')
+    print(f'osoby: {stats["people"]}, potwierdzone: {stats["confirmed"]}, sprawdzone ręcznie: {stats["manual"]}, niepotwierdzone: {stats["unverified"]}')
     sys.exit(1 if stats['unverified'] else 0)
 
 

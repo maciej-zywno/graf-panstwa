@@ -52,7 +52,7 @@ if overlays:
             if len(unchecked) > 0.2 * max(1, len(after)):  # z tego miejsca (np. runner GitHuba) źródła są w większości nieosiągalne: przebieg niewiarygodny, plik zostaje jak był
                 open(f, 'wb').write(bak_jst[f]); jst_lines.append(f"- `{f}`: nie sprawdzono {len(unchecked)} z {len(after)} osób (strony nieosiągalne z tego miejsca, np. blokada 403 adresów centrów danych); **plik nietknięty**, werdykty bez zmian."); continue
             st = after_doc['meta'].get('stats', {}); jst_flipped += len(lost)
-            jst_lines.append(f"- `{f}`: {st.get('people', len(after))} osób, potwierdzonych {st.get('confirmed', '?')}, niepotwierdzonych {st.get('unverified', '?')}, nie sprawdzono (awaria strony) {len(unchecked)}.")
+            jst_lines.append(f"- `{f}`: {st.get('people', len(after))} osób, potwierdzonych {st.get('confirmed', '?')}, sprawdzonych ręcznie {st.get('manual', 0)}, niepotwierdzonych {st.get('unverified', '?')}, nie sprawdzono (awaria strony) {len(unchecked)}.")
             for k in lost: jst_lines.append(f"  - **znika z koła:** {k[2]} ({k[1]}, jednostka {k[0]}): {notes[k]}")
             for k in back: jst_lines.append(f"  - wraca na koło: {k[2]} ({k[1]}, jednostka {k[0]})")
         rc, out, err = run('scripts/jst/build-frame.py', '--date', date, timeout=1500)
