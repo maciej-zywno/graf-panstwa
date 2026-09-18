@@ -3128,7 +3128,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "nie sprawdzono 2026-09-18: HTTP 500",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]
@@ -3145,7 +3145,7 @@
        "startedAt": null,
        "startedAtSource": null,
        "verdict": "confirmed",
-       "note": "nie sprawdzono 2026-09-18: HTTP 500",
+       "note": null,
        "verifiedAt": "2026-09-18"
       }
      ]

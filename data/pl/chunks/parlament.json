@@ -129,8 +129,8 @@
    },
    "provenance": {
     "sources": [
-     "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
      "https://eli.gov.pl/eli/MP/2025/1189/ogl",
+     "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
      "https://api.sejm.gov.pl/eli/acts/MP/2026/573/text.pdf"
     ],
     "verifiedAt": "2026-09-18",
