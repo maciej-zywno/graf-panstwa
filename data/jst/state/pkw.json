@@ -1,6 +1,6 @@
 {
  "baselineAt": "2026-09-18",
- "checkedAt": "2026-09-18",
+ "checkedAt": "2026-09-21",
  "items": {
   "rady/3549": {
    "announced": "2024-04-23",
@@ -10744,7 +10744,7 @@
    "announced": "2026-07-13",
    "date": "2026-09-20",
    "id": "rady/4461",
-   "level": 7,
+   "level": 15,
    "seenAt": "2026-09-18",
    "src": "rady",
    "suspended": false,
@@ -10954,7 +10954,7 @@
    "announced": "2026-07-30",
    "date": "2026-10-18",
    "id": "rady/4483",
-   "level": 3,
+   "level": 5,
    "seenAt": "2026-09-18",
    "src": "rady",
    "suspended": false,
@@ -10996,7 +10996,7 @@
    "announced": "2026-08-06",
    "date": "2026-10-18",
    "id": "rady/4488",
-   "level": 3,
+   "level": 5,
    "seenAt": "2026-09-18",
    "src": "rady",
    "suspended": false,
@@ -11038,7 +11038,7 @@
    "announced": "2026-08-12",
    "date": "2026-10-18",
    "id": "rady/4492",
-   "level": 3,
+   "level": 5,
    "seenAt": "2026-09-18",
    "src": "rady",
    "suspended": false,
@@ -11439,6 +11439,34 @@
    "unit": "Gmina Lubasz",
    "unitPkw": "gm. Lubasz, pow. czarnkowsko-trzcianecki, woj. wielkopolskie",
    "url": "https://wybory.gov.pl/radygmin_2024_2029/pl/4534/home"
+  },
+  "rady/4535": {
+   "announced": "2026-09-21",
+   "date": "2026-11-29",
+   "id": "rady/4535",
+   "level": 0,
+   "seenAt": "2026-09-21",
+   "src": "rady",
+   "suspended": false,
+   "teryt": "081110",
+   "title": "Wybory uzupełniające do Rady Gminy Żary",
+   "unit": "Gmina Żary",
+   "unitPkw": "gm. Żary, pow. żarski, woj. lubuskie",
+   "url": "https://wybory.gov.pl/radygmin_2024_2029/pl/4535/home"
+  },
+  "rady/4536": {
+   "announced": "2026-09-21",
+   "date": "2026-11-22",
+   "id": "rady/4536",
+   "level": 0,
+   "seenAt": "2026-09-21",
+   "src": "rady",
+   "suspended": false,
+   "teryt": "180709",
+   "title": "Wybory uzupełniające do Rady Gminy Wojaszówka",
+   "unit": "Gmina Wojaszówka",
+   "unitPkw": "gm. Wojaszówka, pow. krośnieński, woj. podkarpackie",
+   "url": "https://wybory.gov.pl/radygmin_2024_2029/pl/4536/home"
   },
   "referenda/4006": {
    "announced": "2025-03-10",
@@ -12158,7 +12186,7 @@
    "announced": "2026-08-03",
    "date": "2026-09-20",
    "id": "referenda/4487",
-   "level": 7,
+   "level": 14,
    "seenAt": "2026-09-18",
    "src": "referenda",
    "suspended": false,
@@ -12214,7 +12242,7 @@
    "announced": "2026-09-01",
    "date": "2026-10-18",
    "id": "referenda/4503",
-   "level": 0,
+   "level": 5,
    "seenAt": "2026-09-18",
    "src": "referenda",
    "suspended": false,
@@ -12788,7 +12816,7 @@
    "announced": "2026-09-01",
    "date": "2026-10-25",
    "id": "wojt/4502",
-   "level": 2,
+   "level": 3,
    "seenAt": "2026-09-18",
    "src": "wojt",
    "suspended": false,
@@ -12815,13 +12843,13 @@
  },
  "sources": {
   "rady": {
-   "count": 817,
+   "count": 819,
    "dateRange": [
     "2024-06-30",
     "2026-11-29"
    ],
    "desc": "wybory uzupełniające, ponowne i przedterminowe do rad gmin i powiatów",
-   "updatedAt": "2026-09-18",
+   "updatedAt": "2026-09-21",
    "url": "https://wybory.gov.pl/radygmin_2024_2029/data/list.blob"
   },
   "referenda": {
@@ -12831,7 +12859,7 @@
     "2026-10-25"
    ],
    "desc": "referenda lokalne w sprawie odwołania organu (rady lub wójta)",
-   "updatedAt": "2026-09-18",
+   "updatedAt": "2026-09-21",
    "url": "https://wybory.gov.pl/referendum_lokalne_2024_2029/data/list.blob"
   },
   "wojt": {
@@ -12841,7 +12869,7 @@
     "2026-11-08"
    ],
    "desc": "przedterminowe i ponowne wybory wójtów, burmistrzów i prezydentów miast",
-   "updatedAt": "2026-09-18",
+   "updatedAt": "2026-09-21",
    "url": "https://wybory.gov.pl/wojtburmistrz_2024_2029/data/list.blob"
   }
  }

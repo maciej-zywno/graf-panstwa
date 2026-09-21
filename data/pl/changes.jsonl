@@ -20,3 +20,5 @@
 {"date": "2026-09-18", "source": "parlament", "kind": "node_changed", "nodeId": "pl-sejm-komisja-rrw", "nodeName": "Komisja Rolnictwa i Rozwoju Wsi (Sejm)", "field": "seatsCount", "old": 41, "new": 40}
 {"date": "2026-09-18", "source": "parlament", "kind": "node_changed", "nodeId": "pl-sejm-komisja-spc", "nodeName": "Komisja Sprawiedliwości i Praw Człowieka (Sejm)", "field": "seatsCount", "old": 37, "new": 36}
 {"date": "2026-09-18", "source": "parlament", "kind": "node_changed", "nodeId": "pl-sejm-komisja-str", "nodeName": "Komisja Samorządu Terytorialnego i Polityki Regionalnej (Sejm)", "field": "seatsCount", "old": 28, "new": 26}
+{"date": "2026-09-21", "source": "parlament", "kind": "node_changed", "nodeId": "pl-sejm-klub-pis", "nodeName": "Klub Parlamentarny Prawo i Sprawiedliwość", "field": "seatsCount", "old": 146, "new": 147}
+{"date": "2026-09-21", "source": "parlament", "kind": "node_changed", "nodeId": "pl-sejm-klub-rozwojplus", "nodeName": "Klub Parlamentarny Rozwój Plus", "field": "seatsCount", "old": 41, "new": 40}
