@@ -1,10 +1,10 @@
 {
  "chunk": "parlament",
- "verifiedAt": "2026-09-21",
+ "verifiedAt": "2026-09-28",
  "summary": "Weryfikacja skryptowa: drugie pobranie źródeł i kontrola nazwisk; przepisy sprawdzone w tekstach regulaminów z ELI.",
  "stats": {
   "nodes_checked": 81,
-  "people_checked": 345,
+  "people_checked": 342,
   "edges_checked": 82
  },
  "nodes": [
@@ -2227,21 +2227,7 @@
   },
   {
    "nodeId": "pl-sejm-klub-polska2050",
-   "personId": "pl-pawel-sliz",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
-  },
-  {
-   "nodeId": "pl-sejm-klub-polska2050",
-   "personId": "pl-bartosz-romowicz",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
-  },
-  {
-   "nodeId": "pl-sejm-klub-polska2050",
-   "personId": "pl-kamil-wnuk",
+   "personId": "pl-szymon-holownia",
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
@@ -2728,13 +2714,6 @@
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html"
-  },
-  {
-   "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
-   "personId": "pl-tomasz-grodzki",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html"
   },
   {
    "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
