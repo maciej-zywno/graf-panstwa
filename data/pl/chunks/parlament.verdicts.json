@@ -1,10 +1,10 @@
 {
  "chunk": "parlament",
- "verifiedAt": "2026-09-28",
+ "verifiedAt": "2026-10-12",
  "summary": "Weryfikacja skryptowa: drugie pobranie źródeł i kontrola nazwisk; przepisy sprawdzone w tekstach regulaminów z ELI.",
  "stats": {
   "nodes_checked": 81,
-  "people_checked": 342,
+  "people_checked": 343,
   "edges_checked": 82
  },
  "nodes": [
@@ -1094,6 +1094,13 @@
   {
    "nodeId": "pl-sejm-komisja-kss",
    "personId": "pl-krzysztof-tuduj",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSS"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-kss",
+   "personId": "pl-zbigniew-konwinski",
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSS"

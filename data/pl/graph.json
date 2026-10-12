@@ -3,13 +3,13 @@
   "gov": "pl",
   "name": "Graf Państwa Polskiego",
   "version": "0.1",
-  "generatedAt": "2026-09-28",
+  "generatedAt": "2026-10-12",
   "constituency": "pl-narod",
   "description": "Kto kogo powołuje, zatwierdza, kontroluje i nadzoruje. Mapa organów państwa: od Narodu jako suwerena po urzędy centralne i ich jednostki.",
   "counts": {
    "nodes": 570,
    "edges": 1111,
-   "people": 885,
+   "people": 886,
    "byType": {
     "commission": 89,
     "dept_head": 192,
@@ -46,12 +46,12 @@
     "confirms": 8
    },
    "peopleByStatus": {
-    "verified": 854,
+    "verified": 855,
     "acting": 10,
     "disputed": 21
    },
    "peopleByVerdict": {
-    "confirmed": 770,
+    "confirmed": 771,
     "unchecked": 28,
     "corrected": 83,
     "null": 4
@@ -29918,7 +29918,7 @@
      "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
      "https://api.sejm.gov.pl/eli/acts/MP/2026/573/text.pdf"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -29972,7 +29972,7 @@
     "sources": [
      "https://api.sejm.gov.pl/eli/acts/MP/2026/573/text.pdf"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30143,7 +30143,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ASW"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30263,7 +30263,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/CNT"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30288,7 +30288,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 15,
+   "seatsCount": 16,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -30301,7 +30301,7 @@
    "ring": "satellite",
    "name": "Komisja do Spraw Deregulacji (Sejm)",
    "shortName": "DER",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2025-03-07. Liczy 15 posłów. Zakres: Do zakresu działania Komisji należą sprawy związane z ograniczeniem biurokracji oraz przeglądem i analizą przepisów regulujących kwestie społeczne, ekonomiczne i gospodarcze w celu eliminacji przepisów niejasnych, niespójnych, nieskutecznych, zbędnych lub nadmiernie regulujących, w szczególności zmierzające do uproszczenia prowadzenia działalności gospodarczej, w tym…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2025-03-07. Liczy 16 posłów. Zakres: Do zakresu działania Komisji należą sprawy związane z ograniczeniem biurokracji oraz przeglądem i analizą przepisów regulujących kwestie społeczne, ekonomiczne i gospodarcze w celu eliminacji przepisów niejasnych, niespójnych, nieskutecznych, zbędnych lub nadmiernie regulujących, w szczególności zmierzające do uproszczenia prowadzenia działalności gospodarczej, w tym…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -30399,7 +30399,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/DER"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30535,7 +30535,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/DIM"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30703,7 +30703,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ENM"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30791,7 +30791,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/EPS"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30959,7 +30959,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ESK"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -30984,7 +30984,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 46,
+   "seatsCount": 48,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -30997,7 +30997,7 @@
    "ring": "satellite",
    "name": "Komisja Finansów Publicznych (Sejm)",
    "shortName": "FPB",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 46 posłów. Zakres: Do zakresu działania Komisji należą sprawy systemu pieniężnego, kredytowego i podatkowego, płac i dochodów, budżetu i planów finansowych państwa, funduszy celowych, agencji i fundacji z udziałem Skarbu Państwa, ubezpieczeń majątkowych oraz ceł i statystyki.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 48 posłów. Zakres: Do zakresu działania Komisji należą sprawy systemu pieniężnego, kredytowego i podatkowego, płac i dochodów, budżetu i planów finansowych państwa, funduszy celowych, agencji i fundacji z udziałem Skarbu Państwa, ubezpieczeń majątkowych oraz ceł i statystyki.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -31143,7 +31143,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/FPB"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31168,7 +31168,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 18,
+   "seatsCount": 17,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -31181,7 +31181,7 @@
    "ring": "satellite",
    "name": "Komisja Gospodarki Morskiej i Żeglugi Śródlądowej (Sejm)",
    "shortName": "GMZ",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 18 posłów. Zakres: Do zakresu działania Komisji należą sprawy gospodarki morskiej, w tym transportu morskiego i żeglugi morskiej, obszarów morskich, portów i przystani morskich, ochrony środowiska morskiego, rybołówstwa morskiego i popularyzacji problematyki morskiej, a także sprawy żeglugi śródlądowej, dróg wodnych śródlądowych i rybactwa śródlądowego oraz gospodarki wodnej, meterolog…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 17 posłów. Zakres: Do zakresu działania Komisji należą sprawy gospodarki morskiej, w tym transportu morskiego i żeglugi morskiej, obszarów morskich, portów i przystani morskich, ochrony środowiska morskiego, rybołówstwa morskiego i popularyzacji problematyki morskiej, a także sprawy żeglugi śródlądowej, dróg wodnych śródlądowych i rybactwa śródlądowego oraz gospodarki wodnej, meterolog…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -31263,7 +31263,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/GMZ"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31415,7 +31415,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/GOR"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31567,7 +31567,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/INF"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31719,7 +31719,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KFS"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -31839,7 +31839,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KOP"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32007,7 +32007,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KSP"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32102,6 +32102,22 @@
       "startedAtSource": null,
       "note": "Data objęcia funkcji w komisji nie jest podawana przez API (joinDate to data wejścia do komisji).",
       "verdict": "confirmed"
+     },
+     {
+      "id": "pl-zbigniew-konwinski",
+      "name": "Zbigniew Konwiński",
+      "positionId": "pl-sejm-komisja-kss",
+      "positionName": "Zastępca przewodniczącego komisji",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": "KO",
+      "imageUrl": "https://api.sejm.gov.pl/sejm/term10/MP/173/photo",
+      "sourceUrl": "https://api.sejm.gov.pl/sejm/term10/committees/KSS",
+      "startedAtSource": null,
+      "note": "Data objęcia funkcji w komisji nie jest podawana przez API (joinDate to data wejścia do komisji).",
+      "verdict": "confirmed"
      }
     ]
    },
@@ -32111,7 +32127,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KSS"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32263,7 +32279,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/LPG"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32383,7 +32399,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/MNE"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32408,7 +32424,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 24,
+   "seatsCount": 23,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -32421,7 +32437,7 @@
    "ring": "satellite",
    "name": "Komisja Nadzwyczajna do spraw zmian w kodyfikacjach (Sejm)",
    "shortName": "NKK",
-   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2023-11-28. Liczy 24 posłów. ",
+   "description": "Komisja nadzwyczajna Sejmu X kadencji, powołana 2023-11-28. Liczy 23 posłów. ",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 19 (komisje nadzwyczajne); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -32535,7 +32551,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NKK"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32655,7 +32671,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NON"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32775,7 +32791,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NOZ"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -32911,7 +32927,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NPC"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33047,7 +33063,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NSP"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33199,7 +33215,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NZC"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33383,7 +33399,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/OBN"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33519,7 +33535,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ODK"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33703,7 +33719,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33807,7 +33823,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PET"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -33943,7 +33959,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PSN"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34127,7 +34143,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PSR"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34152,7 +34168,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 40,
+   "seatsCount": 39,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -34165,7 +34181,7 @@
    "ring": "satellite",
    "name": "Komisja Rolnictwa i Rozwoju Wsi (Sejm)",
    "shortName": "RRW",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 40 posłów. Zakres: Do zakresu działania Komisji należą sprawy rolnictwa, ogrodnictwa, sadownictwa, skupu płodów rolnych, hodowli, spółdzielczości rolniczej, gospodarki i ochrony gruntów rolnych i leśnych, zaopatrzenia wsi i rolnictwa w środki produkcji, w tym melioracji i zaopatrzenia wsi w wodę, przemysłu spożywczego oraz przetwórstwa rybnego, społeczno-zawodowych organizacji rolników…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 39 posłów. Zakres: Do zakresu działania Komisji należą sprawy rolnictwa, ogrodnictwa, sadownictwa, skupu płodów rolnych, hodowli, spółdzielczości rolniczej, gospodarki i ochrony gruntów rolnych i leśnych, zaopatrzenia wsi i rolnictwa w środki produkcji, w tym melioracji i zaopatrzenia wsi w wodę, przemysłu spożywczego oraz przetwórstwa rybnego, społeczno-zawodowych organizacji rolników…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -34279,7 +34295,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/RRW"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34399,7 +34415,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/RSP"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34519,7 +34535,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKGK"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34623,7 +34639,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKPC"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34743,7 +34759,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKPG"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -34911,7 +34927,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SPC"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35063,7 +35079,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/STR"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35088,7 +35104,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 43,
+   "seatsCount": 42,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -35101,7 +35117,7 @@
    "ring": "satellite",
    "name": "Komisja do Spraw Unii Europejskiej (Sejm)",
    "shortName": "SUE",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 43 posłów. Zakres: Do zakresu działania Komisji należą sprawy związane z członkostwem Rzeczypospolitej Polskiej w Unii Europejskiej, w szczególności zajmowanie stanowisk i wyrażanie opinii na temat projektów aktów prawnych Unii Europejskiej, projektów umów międzynarodowych, których stroną mają być Unia Europejska lub Europejska Wspólnota Energii Atomowej, planów pracy Rady i rocznych p…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 42 posłów. Zakres: Do zakresu działania Komisji należą sprawy związane z członkostwem Rzeczypospolitej Polskiej w Unii Europejskiej, w szczególności zajmowanie stanowisk i wyrażanie opinii na temat projektów aktów prawnych Unii Europejskiej, projektów umów międzynarodowych, których stroną mają być Unia Europejska lub Europejska Wspólnota Energii Atomowej, planów pracy Rady i rocznych p…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -35215,7 +35231,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SUE"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35367,7 +35383,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SZA"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35519,7 +35535,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/UST"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35671,7 +35687,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35772,7 +35788,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Centrum/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -35841,7 +35857,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Demokracja/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36018,7 +36034,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36119,7 +36135,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36204,7 +36220,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja_KP/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36349,7 +36365,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36450,7 +36466,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/PiS/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36519,7 +36535,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36652,7 +36668,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/PSL-TD/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36737,7 +36753,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Razem/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36818,7 +36834,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -36949,7 +36965,7 @@
      "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html",
      "https://api.sejm.gov.pl/eli/acts/MP/2025/1251/text.pdf"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37003,7 +37019,7 @@
     "sources": [
      "https://api.sejm.gov.pl/eli/acts/MP/2025/1251/text.pdf"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37131,7 +37147,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,218,komisja-budzetu-i-finansow-publicznych.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37248,7 +37264,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,238,komisja-edukacji.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37365,7 +37381,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,219,komisja-gospodarki-narodowej-i-innowacyjnosci.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37466,7 +37482,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,220,komisja-infrastruktury.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37583,7 +37599,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,226,komisja-klimatu-i-srodowiska.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37700,7 +37716,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,222,komisja-kultury-i-srodkow-przekazu.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37801,7 +37817,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,225,komisja-nauki.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -37886,11 +37902,11 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,232,komisja-obrony-narodowej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
-   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-09-28); funkcja może być nieobsadzona.",
+   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-10-12); funkcja może być nieobsadzona.",
    "children": [],
    "level": 1,
    "connectedNodes": [
@@ -37972,7 +37988,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,227,komisja-petycji.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38089,7 +38105,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,228,komisja-praw-czlowieka-i-praworzadnosci.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38174,7 +38190,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,223,komisja-regulaminowa-etyki-i-spraw-senatorskich.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38275,7 +38291,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,233,komisja-rodziny-polityki-senioralnej-i-spolecznej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38376,7 +38392,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,234,komisja-rolnictwa-i-rozwoju-wsi.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38509,7 +38525,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,235,komisja-samorzadu-terytorialnego-i-administracji-panstwowej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38610,7 +38626,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,229,komisja-sportu.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38743,7 +38759,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -38844,11 +38860,11 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
-   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-09-28); funkcja może być nieobsadzona.",
+   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-10-12); funkcja może być nieobsadzona.",
    "children": [],
    "level": 1,
    "connectedNodes": [
@@ -38946,7 +38962,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39063,7 +39079,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,236,komisja-ustawodawcza.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39180,7 +39196,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,221,komisja-zdrowia.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39296,7 +39312,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39364,7 +39380,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39448,7 +39464,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39532,7 +39548,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39616,7 +39632,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -39663,7 +39679,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-09-28",
+    "verifiedAt": "2026-10-12",
     "confidence": "high",
     "verdict": "confirmed"
    },
@@ -63191,7 +63207,7 @@
    "toId": "pl-sejm-komisja-der",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 15,
+   "seatsAppointed": 16,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -63281,7 +63297,7 @@
    "toId": "pl-sejm-komisja-fpb",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 46,
+   "seatsAppointed": 48,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -63299,7 +63315,7 @@
    "toId": "pl-sejm-komisja-gmz",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 18,
+   "seatsAppointed": 17,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -63461,7 +63477,7 @@
    "toId": "pl-sejm-komisja-nkk",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 24,
+   "seatsAppointed": 23,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -63677,7 +63693,7 @@
    "toId": "pl-sejm-komisja-rrw",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 40,
+   "seatsAppointed": 39,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -63803,7 +63819,7 @@
    "toId": "pl-sejm-komisja-sue",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 43,
+   "seatsAppointed": 42,
    "disputed": false,
    "provenance": {
     "sources": [
