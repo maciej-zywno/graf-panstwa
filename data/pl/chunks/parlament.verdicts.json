@@ -1,11 +1,11 @@
 {
  "chunk": "parlament",
- "verifiedAt": "2026-10-12",
+ "verifiedAt": "2026-10-26",
  "summary": "Weryfikacja skryptowa: drugie pobranie źródeł i kontrola nazwisk; przepisy sprawdzone w tekstach regulaminów z ELI.",
  "stats": {
-  "nodes_checked": 81,
-  "people_checked": 343,
-  "edges_checked": 82
+  "nodes_checked": 82,
+  "people_checked": 338,
+  "edges_checked": 83
  },
  "nodes": [
   {
@@ -435,13 +435,19 @@
    "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
   },
   {
-   "id": "pl-senat-komisja-spraw-unii-europejskiej",
+   "id": "pl-senat-komisja-spraw-unii-europejskiej-do-13-10-2026",
    "status": "confirmed",
    "fixes": {},
    "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
   },
   {
-   "id": "pl-senat-komisja-spraw-zagranicznych",
+   "id": "pl-senat-komisja-spraw-zagranicznych-do-13-10-2026",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
+  },
+  {
+   "id": "pl-senat-komisja-spraw-zagranicznych-i-unii-europejskiej",
    "status": "confirmed",
    "fixes": {},
    "note": "węzeł zbudowany z danych urzędowych; osoby sprawdzone drugim pobraniem"
@@ -2521,6 +2527,13 @@
   },
   {
    "nodeId": "pl-senat-komisja-obrony-narodowej",
+   "personId": "pl-tomasz-grodzki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,232,komisja-obrony-narodowej.html"
+  },
+  {
+   "nodeId": "pl-senat-komisja-obrony-narodowej",
    "personId": "pl-jerzy-wcisla",
    "status": "confirmed",
    "fixes": {},
@@ -2721,48 +2734,6 @@
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html"
-  },
-  {
-   "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
-   "personId": "pl-gabriela-morawska-stanecka",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html"
-  },
-  {
-   "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
-   "personId": "pl-henryk-siedlaczek",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html"
-  },
-  {
-   "nodeId": "pl-senat-komisja-spraw-unii-europejskiej",
-   "personId": "pl-jacek-wlosowicz",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html"
-  },
-  {
-   "nodeId": "pl-senat-komisja-spraw-zagranicznych",
-   "personId": "pl-grzegorz-schetyna",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html"
-  },
-  {
-   "nodeId": "pl-senat-komisja-spraw-zagranicznych",
-   "personId": "pl-andrzej-kalata",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html"
-  },
-  {
-   "nodeId": "pl-senat-komisja-spraw-zagranicznych",
-   "personId": "pl-maciej-kopiec",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html"
   },
   {
    "nodeId": "pl-senat-komisja-ustawodawcza",
@@ -3344,13 +3315,19 @@
    "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
   },
   {
-   "id": "e-senat--appoints--senat-komisja-spraw-unii-europejskiej",
+   "id": "e-senat--appoints--senat-komisja-spraw-unii-europejskiej-do-13-10-2026",
    "status": "confirmed",
    "fixes": {},
    "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
   },
   {
-   "id": "e-senat--appoints--senat-komisja-spraw-zagranicznych",
+   "id": "e-senat--appoints--senat-komisja-spraw-zagranicznych-do-13-10-2026",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"
+  },
+  {
+   "id": "e-senat--appoints--senat-komisja-spraw-zagranicznych-i-unii-europejskiej",
    "status": "confirmed",
    "fixes": {},
    "note": "cytat z tekstu regulaminu lub Konstytucji odczytanego przez ELI (pdftotext) w dniu budowy"

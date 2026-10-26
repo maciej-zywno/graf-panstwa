@@ -1,6 +1,6 @@
 {
  "chunk": "parlament",
- "generatedAt": "2026-10-12",
+ "generatedAt": "2026-10-26",
  "builtBy": "scripts/build-parliament-chunk.py (deterministycznie z API Sejmu i stron Senatu)",
  "coverageNote": "Pominięto: podkomisje, pełne składy komisji (tylko liczba i prezydia komisji), zespoły parlamentarne, posłów niezrzeszonych, imienny skład konwentów seniorów (niepublikowany), komisje nadzwyczajne Senatu (brak w wykazie). Zdjęcia senatorów pominięte, bo robots.txt Senatu wyklucza /gfx/.",
  "nodes": {
@@ -133,7 +133,7 @@
      "https://sejm.gov.pl/wicemarszalkowie10.nsf/",
      "https://api.sejm.gov.pl/eli/acts/MP/2026/573/text.pdf"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -174,7 +174,7 @@
     "sources": [
      "https://api.sejm.gov.pl/eli/acts/MP/2026/573/text.pdf"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -190,7 +190,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 39,
+   "seatsCount": 40,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -203,7 +203,7 @@
    "ring": "satellite",
    "name": "Komisja Administracji i Spraw Wewnętrznych (Sejm)",
    "shortName": "ASW",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 39 posłów. Zakres: Do zakresu działania Komisji należą sprawy administracji państwowej oraz bezpieczeństwa, ładu i porządku publicznego.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 40 posłów. Zakres: Do zakresu działania Komisji należą sprawy administracji państwowej oraz bezpieczeństwa, ładu i porządku publicznego.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -311,7 +311,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ASW"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -327,7 +327,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 17,
+   "seatsCount": 16,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -340,7 +340,7 @@
    "ring": "satellite",
    "name": "Komisja Cyfryzacji, Innowacyjności i Nowoczesnych Technologii (Sejm)",
    "shortName": "CNT",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 17 posłów. Zakres: Do zakresu działania Komisji należą sprawy łączności radiowej i telefonicznej, sieci komputerowych oraz telekomunikacji, innowacyjności, informatyzacji oraz rozwoju społeczeństwa informacyjnego.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 16 posłów. Zakres: Do zakresu działania Komisji należą sprawy łączności radiowej i telefonicznej, sieci komputerowych oraz telekomunikacji, innowacyjności, informatyzacji oraz rozwoju społeczeństwa informacyjnego.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -418,7 +418,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/CNT"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -540,7 +540,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/DER"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -662,7 +662,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/DIM"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -678,7 +678,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 35,
+   "seatsCount": 34,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -691,7 +691,7 @@
    "ring": "satellite",
    "name": "Komisja Edukacji i Nauki (Sejm)",
    "shortName": "ENM",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 35 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształcenia i wychowania przedszkolnego, podstawowego, ogólnokształcącego, zawodowego, pomaturalnego i wyższego, oświaty dorosłych, kształcenia, dokształcania i doskonalenia zawodowego nauczycieli oraz kadr naukowych, wypoczynku, kultury fizycznej i sportu dzieci i młodzieży, opieki nad dziećmi i młodzieżą, archiwów, polityk…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 34 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształcenia i wychowania przedszkolnego, podstawowego, ogólnokształcącego, zawodowego, pomaturalnego i wyższego, oświaty dorosłych, kształcenia, dokształcania i doskonalenia zawodowego nauczycieli oraz kadr naukowych, wypoczynku, kultury fizycznej i sportu dzieci i młodzieży, opieki nad dziećmi i młodzieżą, archiwów, polityk…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -814,7 +814,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ENM"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -830,7 +830,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 7,
+   "seatsCount": 8,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -843,7 +843,7 @@
    "ring": "satellite",
    "name": "Komisja Etyki Poselskiej (Sejm)",
    "shortName": "EPS",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 7 posłów. Zakres: Do zakresu działania Komisji należą sprawy opracowania \"Zasad Etyki Poselskiej\", ich uzupełniania i korygowania oraz upowszechnianie ich wśród posłów, rozpatrywanie spraw posłów, którzy zachowują się w sposób nie odpowiadający godności posła, rozpatrywanie spraw wynikających z Rejestru Korzyści i majątkowych oświadczeń poselskich.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 8 posłów. Zakres: Do zakresu działania Komisji należą sprawy opracowania \"Zasad Etyki Poselskiej\", ich uzupełniania i korygowania oraz upowszechnianie ich wśród posłów, rozpatrywanie spraw posłów, którzy zachowują się w sposób nie odpowiadający godności posła, rozpatrywanie spraw wynikających z Rejestru Korzyści i majątkowych oświadczeń poselskich.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -891,7 +891,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/EPS"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -1043,7 +1043,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ESK"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -1059,7 +1059,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 48,
+   "seatsCount": 49,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -1072,7 +1072,7 @@
    "ring": "satellite",
    "name": "Komisja Finansów Publicznych (Sejm)",
    "shortName": "FPB",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 48 posłów. Zakres: Do zakresu działania Komisji należą sprawy systemu pieniężnego, kredytowego i podatkowego, płac i dochodów, budżetu i planów finansowych państwa, funduszy celowych, agencji i fundacji z udziałem Skarbu Państwa, ubezpieczeń majątkowych oraz ceł i statystyki.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 49 posłów. Zakres: Do zakresu działania Komisji należą sprawy systemu pieniężnego, kredytowego i podatkowego, płac i dochodów, budżetu i planów finansowych państwa, funduszy celowych, agencji i fundacji z udziałem Skarbu Państwa, ubezpieczeń majątkowych oraz ceł i statystyki.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -1210,7 +1210,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/FPB"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -1226,7 +1226,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 17,
+   "seatsCount": 19,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -1239,7 +1239,7 @@
    "ring": "satellite",
    "name": "Komisja Gospodarki Morskiej i Żeglugi Śródlądowej (Sejm)",
    "shortName": "GMZ",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 17 posłów. Zakres: Do zakresu działania Komisji należą sprawy gospodarki morskiej, w tym transportu morskiego i żeglugi morskiej, obszarów morskich, portów i przystani morskich, ochrony środowiska morskiego, rybołówstwa morskiego i popularyzacji problematyki morskiej, a także sprawy żeglugi śródlądowej, dróg wodnych śródlądowych i rybactwa śródlądowego oraz gospodarki wodnej, meterolog…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 19 posłów. Zakres: Do zakresu działania Komisji należą sprawy gospodarki morskiej, w tym transportu morskiego i żeglugi morskiej, obszarów morskich, portów i przystani morskich, ochrony środowiska morskiego, rybołówstwa morskiego i popularyzacji problematyki morskiej, a także sprawy żeglugi śródlądowej, dróg wodnych śródlądowych i rybactwa śródlądowego oraz gospodarki wodnej, meterolog…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -1317,7 +1317,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/GMZ"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -1333,7 +1333,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 36,
+   "seatsCount": 37,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -1346,7 +1346,7 @@
    "ring": "satellite",
    "name": "Komisja Gospodarki i Rozwoju (Sejm)",
    "shortName": "GOR",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 36 posłów. Zakres: Do zakresu działania Komisji należą sprawy polityki gospodarczej, a w szczególności: restrukturyzacji gospodarki, efektywności przemysłu, handlu międzynarodowego i wewnętrznego, technologii, normalizacji, inwestycji bezpośrednich i udziału kapitału zagranicznego, a także samorządu pracowniczego, gospodarczego i pracodawców, oraz sprawy związane z tworzeniem właściwyc…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 37 posłów. Zakres: Do zakresu działania Komisji należą sprawy polityki gospodarczej, a w szczególności: restrukturyzacji gospodarki, efektywności przemysłu, handlu międzynarodowego i wewnętrznego, technologii, normalizacji, inwestycji bezpośrednich i udziału kapitału zagranicznego, a także samorządu pracowniczego, gospodarczego i pracodawców, oraz sprawy związane z tworzeniem właściwyc…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -1454,7 +1454,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/GOR"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -1591,7 +1591,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/INF"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -1728,7 +1728,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KFS"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -1835,7 +1835,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KOP"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -1987,7 +1987,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KSP"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -2094,7 +2094,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/KSS"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -2110,7 +2110,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 35,
+   "seatsCount": 36,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -2123,7 +2123,7 @@
    "ring": "satellite",
    "name": "Komisja Łączności z Polakami za Granicą (Sejm)",
    "shortName": "LPG",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 35 posłów. Zakres: Do zakresu działania Komisji należą sprawy więzi z krajem Polaków i osób pochodzenia polskiego zamieszkałych za granicą na stałe lub czasowo.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 36 posłów. Zakres: Do zakresu działania Komisji należą sprawy więzi z krajem Polaków i osób pochodzenia polskiego zamieszkałych za granicą na stałe lub czasowo.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -2231,7 +2231,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/LPG"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -2338,7 +2338,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/MNE"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -2475,7 +2475,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NKK"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -2582,7 +2582,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NON"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -2689,7 +2689,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NOZ"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -2811,7 +2811,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NPC"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -2933,7 +2933,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NSP"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -3070,7 +3070,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/NZC"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -3237,7 +3237,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/OBN"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -3253,7 +3253,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 21,
+   "seatsCount": 22,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3266,7 +3266,7 @@
    "ring": "satellite",
    "name": "Komisja Odpowiedzialności Konstytucyjnej (Sejm)",
    "shortName": "ODK",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 21 posłów. Zakres: Do zakresu działania Komisji należy prowadzenie postępowania w sprawie badania zasadności skierowanych do niej wniosków wstępnych o pociągnięcie do odpowiedzialności konstytucyjnej, podejmowanie uchwał w tym przedmiocie oraz przedstawianie Sejmowi sprawozdań z przeprowadzonych prac.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 22 posłów. Zakres: Do zakresu działania Komisji należy prowadzenie postępowania w sprawie badania zasadności skierowanych do niej wniosków wstępnych o pociągnięcie do odpowiedzialności konstytucyjnej, podejmowanie uchwał w tym przedmiocie oraz przedstawianie Sejmowi sprawozdań z przeprowadzonych prac.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3359,7 +3359,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ODK"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -3526,7 +3526,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/OSZ"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -3618,7 +3618,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PET"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -3634,7 +3634,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 16,
+   "seatsCount": 15,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -3647,7 +3647,7 @@
    "ring": "satellite",
    "name": "Komisja Polityki Senioralnej (Sejm)",
    "shortName": "PSN",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 16 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształtowania polityki państwa dotyczącej osób starszych.",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-21. Liczy 15 posłów. Zakres: Do zakresu działania Komisji należą sprawy kształtowania polityki państwa dotyczącej osób starszych.",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -3740,7 +3740,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PSN"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -3907,7 +3907,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/PSR"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -4044,7 +4044,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/RRW"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -4060,7 +4060,7 @@
    "parent": "pl-sejm",
    "head": null,
    "headOf": null,
-   "seatsCount": 19,
+   "seatsCount": 18,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -4073,7 +4073,7 @@
    "ring": "satellite",
    "name": "Komisja Regulaminowa, Spraw Poselskich i Immunitetowych (Sejm)",
    "shortName": "RSP",
-   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-14. Liczy 19 posłów. Zakres: Do zakresu działania Komisji należą sprawy związane z wyrażeniem przez Sejm zgody na pociągnięcie posła, Rzecznika Praw Obywatelskich, Prezesa Najwyższej Izby Kontroli, Rzecznika Praw Dziecka, Prezesa Urzędu Ochrony Danych Osobowych oraz Prezesa Instytutu Pamięci Narodowej - Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu do odpowiedzialności za przestępstwa lu…",
+   "description": "Komisja stała Sejmu X kadencji, powołana 2023-11-14. Liczy 18 posłów. Zakres: Do zakresu działania Komisji należą sprawy związane z wyrażeniem przez Sejm zgody na pociągnięcie posła, Rzecznika Praw Obywatelskich, Prezesa Najwyższej Izby Kontroli, Rzecznika Praw Dziecka, Prezesa Urzędu Ochrony Danych Osobowych oraz Prezesa Instytutu Pamięci Narodowej - Komisji Ścigania Zbrodni przeciwko Narodowi Polskiemu do odpowiedzialności za przestępstwa lu…",
    "legalSource": {
     "title": "Regulamin Sejmu RP, art. 18 ust. 1 (komisje stałe); Konstytucja RP art. 110 ust. 3",
     "url": "https://eli.gov.pl/eli/MP/1992/185/ogl",
@@ -4151,7 +4151,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/RSP"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -4258,7 +4258,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKGK"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -4350,7 +4350,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKPC"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -4457,7 +4457,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SKPG"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -4609,7 +4609,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SPC"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -4746,7 +4746,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/STR"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -4883,7 +4883,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SUE"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5020,7 +5020,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/SZA"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5157,7 +5157,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/UST"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5294,7 +5294,7 @@
     "sources": [
      "https://api.sejm.gov.pl/sejm/term10/committees/ZDR"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5383,7 +5383,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Centrum/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5442,7 +5442,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Demokracja/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5606,7 +5606,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/KO/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5695,7 +5695,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5769,7 +5769,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Konfederacja_KP/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5903,7 +5903,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Lewica/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -5992,7 +5992,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/PiS/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6051,7 +6051,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Polska2050/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6170,7 +6170,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/PSL-TD/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6244,7 +6244,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/Razem/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6318,7 +6318,7 @@
      "https://api.sejm.gov.pl/sejm/term10/clubs",
      "https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6435,7 +6435,7 @@
      "https://www.senat.gov.pl/sklad/senatorowie/prezydium.html",
      "https://api.sejm.gov.pl/eli/acts/MP/2025/1251/text.pdf"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6476,7 +6476,7 @@
     "sources": [
      "https://api.sejm.gov.pl/eli/acts/MP/2025/1251/text.pdf"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6580,7 +6580,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,218,komisja-budzetu-i-finansow-publicznych.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6684,7 +6684,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,238,komisja-edukacji.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6788,7 +6788,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,219,komisja-gospodarki-narodowej-i-innowacyjnosci.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6877,7 +6877,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,220,komisja-infrastruktury.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -6981,7 +6981,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,226,komisja-klimatu-i-srodowiska.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7085,7 +7085,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,222,komisja-kultury-i-srodkow-przekazu.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7174,7 +7174,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,225,komisja-nauki.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7212,6 +7212,21 @@
     "type": "people",
     "people": [
      {
+      "id": "pl-tomasz-grodzki",
+      "name": "Tomasz Grodzki",
+      "positionId": "pl-senat-komisja-obrony-narodowej",
+      "positionName": "Przewodniczący komisji",
+      "type": "elected",
+      "startedAt": null,
+      "acting": false,
+      "status": "verified",
+      "party": null,
+      "imageUrl": null,
+      "sourceUrl": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,232,komisja-obrony-narodowej.html",
+      "startedAtSource": null,
+      "note": null
+     },
+     {
       "id": "pl-jerzy-wcisla",
       "name": "Jerzy Wcisła",
       "positionId": "pl-senat-komisja-obrony-narodowej",
@@ -7248,10 +7263,9 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,232,komisja-obrony-narodowej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
-   },
-   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-10-12); funkcja może być nieobsadzona."
+   }
   },
   "pl-senat-komisja-petycji": {
    "id": "pl-senat-komisja-petycji",
@@ -7323,7 +7337,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,227,komisja-petycji.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7427,7 +7441,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,228,komisja-praw-czlowieka-i-praworzadnosci.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7501,7 +7515,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,223,komisja-regulaminowa-etyki-i-spraw-senatorskich.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7590,7 +7604,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,233,komisja-rodziny-polityki-senioralnej-i-spolecznej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7679,7 +7693,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,234,komisja-rolnictwa-i-rozwoju-wsi.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7798,7 +7812,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,235,komisja-samorzadu-terytorialnego-i-administracji-panstwowej.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -7887,7 +7901,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,229,komisja-sportu.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -8006,21 +8020,21 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,237,komisja-spraw-emigracji-i-lacznosci-z-polakami-za-granica.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
-  "pl-senat-komisja-spraw-unii-europejskiej": {
-   "id": "pl-senat-komisja-spraw-unii-europejskiej",
+  "pl-senat-komisja-spraw-unii-europejskiej-do-13-10-2026": {
+   "id": "pl-senat-komisja-spraw-unii-europejskiej-do-13-10-2026",
    "aliases": [
-    "Komisja Spraw Unii Europejskiej"
+    "Komisja Spraw Unii Europejskiej (do 13.10.2026)"
    ],
-   "officialUrl": "https://www.senat.gov.pl/prace/komisje-senackie/komisja,230,komisja-spraw-unii-europejskiej.html",
+   "officialUrl": "https://www.senat.gov.pl/prace/komisje-senackie/komisja,230,komisja-spraw-unii-europejskiej-do-13-10-2026.html",
    "bipUrl": null,
    "parent": "pl-senat",
    "head": null,
    "headOf": null,
-   "seatsCount": 10,
+   "seatsCount": 0,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -8031,9 +8045,9 @@
    "subtype": "committee",
    "sector": "legislative",
    "ring": "satellite",
-   "name": "Komisja Spraw Unii Europejskiej (Senat)",
-   "shortName": "Kom. Spraw Unii Europejskiej",
-   "description": "Komisja stała Senatu XI kadencji, 10 senatorów. Komisje rozpatrują ustawy uchwalone przez Sejm, przygotowują inicjatywy ustawodawcze Senatu i opiniują sprawy przekazane przez Marszałka (Regulamin Senatu art. 12–15).",
+   "name": "Komisja Spraw Unii Europejskiej (do 13.10.2026) (Senat)",
+   "shortName": "Kom. Spraw Unii Europejskiej (do 13.10.2",
+   "description": "Komisja stała Senatu XI kadencji, 0 senatorów. Komisje rozpatrują ustawy uchwalone przez Sejm, przygotowują inicjatywy ustawodawcze Senatu i opiniują sprawy przekazane przez Marszałka (Regulamin Senatu art. 12–15).",
    "legalSource": {
     "title": "Regulamin Senatu, art. 13 ust. 1 i art. 15 ust. 1 (komisje stałe)",
     "url": "https://eli.gov.pl/eli/MP/1991/11/ogl",
@@ -8042,75 +8056,29 @@
    },
    "people": {
     "type": "people",
-    "people": [
-     {
-      "id": "pl-gabriela-morawska-stanecka",
-      "name": "Gabriela Morawska-Stanecka",
-      "positionId": "pl-senat-komisja-spraw-unii-europejskiej",
-      "positionName": "Zastępca przewodniczącego komisji",
-      "type": "elected",
-      "startedAt": "2025-01-07",
-      "acting": false,
-      "status": "verified",
-      "party": null,
-      "imageUrl": null,
-      "sourceUrl": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html",
-      "startedAtSource": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html",
-      "note": null
-     },
-     {
-      "id": "pl-henryk-siedlaczek",
-      "name": "Henryk Piotr Siedlaczek",
-      "positionId": "pl-senat-komisja-spraw-unii-europejskiej",
-      "positionName": "Zastępca przewodniczącego komisji",
-      "type": "elected",
-      "startedAt": null,
-      "acting": false,
-      "status": "verified",
-      "party": null,
-      "imageUrl": null,
-      "sourceUrl": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html",
-      "startedAtSource": null,
-      "note": null
-     },
-     {
-      "id": "pl-jacek-wlosowicz",
-      "name": "Jacek Włosowicz",
-      "positionId": "pl-senat-komisja-spraw-unii-europejskiej",
-      "positionName": "Zastępca przewodniczącego komisji",
-      "type": "elected",
-      "startedAt": null,
-      "acting": false,
-      "status": "verified",
-      "party": null,
-      "imageUrl": null,
-      "sourceUrl": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html",
-      "startedAtSource": null,
-      "note": null
-     }
-    ]
+    "people": []
    },
    "provenance": {
     "sources": [
-     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html",
+     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej-do-13-10-2026.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    },
-   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-10-12); funkcja może być nieobsadzona."
+   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-10-26); funkcja może być nieobsadzona."
   },
-  "pl-senat-komisja-spraw-zagranicznych": {
-   "id": "pl-senat-komisja-spraw-zagranicznych",
+  "pl-senat-komisja-spraw-zagranicznych-do-13-10-2026": {
+   "id": "pl-senat-komisja-spraw-zagranicznych-do-13-10-2026",
    "aliases": [
-    "Komisja Spraw Zagranicznych"
+    "Komisja Spraw Zagranicznych (do 13.10.2026)"
    ],
-   "officialUrl": "https://www.senat.gov.pl/prace/komisje-senackie/komisja,231,komisja-spraw-zagranicznych.html",
+   "officialUrl": "https://www.senat.gov.pl/prace/komisje-senackie/komisja,231,komisja-spraw-zagranicznych-do-13-10-2026.html",
    "bipUrl": null,
    "parent": "pl-senat",
    "head": null,
    "headOf": null,
-   "seatsCount": 7,
+   "seatsCount": 0,
    "status": "active",
    "employeeCount": {
     "actual": null,
@@ -8121,9 +8089,9 @@
    "subtype": "committee",
    "sector": "legislative",
    "ring": "satellite",
-   "name": "Komisja Spraw Zagranicznych (Senat)",
-   "shortName": "Kom. Spraw Zagranicznych",
-   "description": "Komisja stała Senatu XI kadencji, 7 senatorów. Komisje rozpatrują ustawy uchwalone przez Sejm, przygotowują inicjatywy ustawodawcze Senatu i opiniują sprawy przekazane przez Marszałka (Regulamin Senatu art. 12–15).",
+   "name": "Komisja Spraw Zagranicznych (do 13.10.2026) (Senat)",
+   "shortName": "Kom. Spraw Zagranicznych (do 13.10.2026)",
+   "description": "Komisja stała Senatu XI kadencji, 0 senatorów. Komisje rozpatrują ustawy uchwalone przez Sejm, przygotowują inicjatywy ustawodawcze Senatu i opiniują sprawy przekazane przez Marszałka (Regulamin Senatu art. 12–15).",
    "legalSource": {
     "title": "Regulamin Senatu, art. 13 ust. 1 i art. 15 ust. 1 (komisje stałe)",
     "url": "https://eli.gov.pl/eli/MP/1991/11/ogl",
@@ -8132,62 +8100,61 @@
    },
    "people": {
     "type": "people",
-    "people": [
-     {
-      "id": "pl-grzegorz-schetyna",
-      "name": "Grzegorz Schetyna",
-      "positionId": "pl-senat-komisja-spraw-zagranicznych",
-      "positionName": "Przewodniczący komisji",
-      "type": "elected",
-      "startedAt": null,
-      "acting": false,
-      "status": "verified",
-      "party": null,
-      "imageUrl": null,
-      "sourceUrl": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html",
-      "startedAtSource": null,
-      "note": null
-     },
-     {
-      "id": "pl-andrzej-kalata",
-      "name": "Andrzej Kalata",
-      "positionId": "pl-senat-komisja-spraw-zagranicznych",
-      "positionName": "Zastępca przewodniczącego komisji",
-      "type": "elected",
-      "startedAt": "2025-10-15",
-      "acting": false,
-      "status": "verified",
-      "party": null,
-      "imageUrl": null,
-      "sourceUrl": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html",
-      "startedAtSource": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html",
-      "note": null
-     },
-     {
-      "id": "pl-maciej-kopiec",
-      "name": "Maciej Kopiec",
-      "positionId": "pl-senat-komisja-spraw-zagranicznych",
-      "positionName": "Zastępca przewodniczącego komisji",
-      "type": "elected",
-      "startedAt": null,
-      "acting": false,
-      "status": "verified",
-      "party": null,
-      "imageUrl": null,
-      "sourceUrl": "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html",
-      "startedAtSource": null,
-      "note": null
-     }
-    ]
+    "people": []
    },
    "provenance": {
     "sources": [
-     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html",
+     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych-do-13-10-2026.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
-   }
+   },
+   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-10-26); funkcja może być nieobsadzona."
+  },
+  "pl-senat-komisja-spraw-zagranicznych-i-unii-europejskiej": {
+   "id": "pl-senat-komisja-spraw-zagranicznych-i-unii-europejskiej",
+   "aliases": [
+    "Komisja Spraw Zagranicznych i Unii Europejskiej"
+   ],
+   "officialUrl": "https://www.senat.gov.pl/prace/komisje-senackie/komisja,258,komisja-spraw-zagranicznych-i-unii-europejskiej.html",
+   "bipUrl": null,
+   "parent": "pl-senat",
+   "head": null,
+   "headOf": null,
+   "seatsCount": 15,
+   "status": "active",
+   "employeeCount": {
+    "actual": null,
+    "budget": null,
+    "source": null
+   },
+   "type": "commission",
+   "subtype": "committee",
+   "sector": "legislative",
+   "ring": "satellite",
+   "name": "Komisja Spraw Zagranicznych i Unii Europejskiej (Senat)",
+   "shortName": "Kom. Spraw Zagranicznych i Unii Europejs",
+   "description": "Komisja stała Senatu XI kadencji, 15 senatorów. Komisje rozpatrują ustawy uchwalone przez Sejm, przygotowują inicjatywy ustawodawcze Senatu i opiniują sprawy przekazane przez Marszałka (Regulamin Senatu art. 12–15).",
+   "legalSource": {
+    "title": "Regulamin Senatu, art. 13 ust. 1 i art. 15 ust. 1 (komisje stałe)",
+    "url": "https://eli.gov.pl/eli/MP/1991/11/ogl",
+    "act": "MP/1991/11",
+    "article": "art. 13 ust. 1, art. 15 ust. 1"
+   },
+   "people": {
+    "type": "people",
+    "people": []
+   },
+   "provenance": {
+    "sources": [
+     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,258,komisja-spraw-zagranicznych-i-unii-europejskiej.html",
+     "https://www.senat.gov.pl/prace/komisje-senackie/"
+    ],
+    "verifiedAt": "2026-10-26",
+    "confidence": "high"
+   },
+   "statusNote": "Strona składu komisji nie wskazuje przewodniczącego (stan na 2026-10-26); funkcja może być nieobsadzona."
   },
   "pl-senat-komisja-ustawodawcza": {
    "id": "pl-senat-komisja-ustawodawcza",
@@ -8289,7 +8256,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,236,komisja-ustawodawcza.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -8393,7 +8360,7 @@
      "https://www.senat.gov.pl/prace/komisje-senackie/sklad,221,komisja-zdrowia.html",
      "https://www.senat.gov.pl/prace/komisje-senackie/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -8496,7 +8463,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -8554,7 +8521,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -8627,7 +8594,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -8700,7 +8667,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -8773,7 +8740,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   },
@@ -8815,7 +8782,7 @@
     "sources": [
      "https://www.senat.gov.pl/sklad/kluby-i-kola/"
     ],
-    "verifiedAt": "2026-10-12",
+    "verifiedAt": "2026-10-26",
     "confidence": "high"
    }
   }
@@ -8908,7 +8875,7 @@
    "toId": "pl-sejm-komisja-asw",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 39,
+   "seatsAppointed": 40,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -8925,7 +8892,7 @@
    "toId": "pl-sejm-komisja-cnt",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 17,
+   "seatsAppointed": 16,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -8976,7 +8943,7 @@
    "toId": "pl-sejm-komisja-enm",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 35,
+   "seatsAppointed": 34,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -8993,7 +8960,7 @@
    "toId": "pl-sejm-komisja-eps",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 7,
+   "seatsAppointed": 8,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9027,7 +8994,7 @@
    "toId": "pl-sejm-komisja-fpb",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 48,
+   "seatsAppointed": 49,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9044,7 +9011,7 @@
    "toId": "pl-sejm-komisja-gmz",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 17,
+   "seatsAppointed": 19,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9061,7 +9028,7 @@
    "toId": "pl-sejm-komisja-gor",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 36,
+   "seatsAppointed": 37,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9163,7 +9130,7 @@
    "toId": "pl-sejm-komisja-lpg",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 35,
+   "seatsAppointed": 36,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9316,7 +9283,7 @@
    "toId": "pl-sejm-komisja-odk",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 21,
+   "seatsAppointed": 22,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9367,7 +9334,7 @@
    "toId": "pl-sejm-komisja-psn",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 16,
+   "seatsAppointed": 15,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -9418,7 +9385,7 @@
    "toId": "pl-sejm-komisja-rsp",
    "cite": "Konstytucja RP art. 110 ust. 3 (Sejm powołuje komisje stałe oraz może powoływać komisje nadzwyczajne)",
    "citeUrl": "https://eli.gov.pl/eli/DU/1997/483/ogl",
-   "seatsAppointed": 19,
+   "seatsAppointed": 18,
    "disputed": false,
    "provenance": {
     "sources": [
@@ -10061,35 +10028,52 @@
     "confidence": "high"
    }
   },
-  "e-senat--appoints--senat-komisja-spraw-unii-europejskiej": {
-   "id": "e-senat--appoints--senat-komisja-spraw-unii-europejskiej",
+  "e-senat--appoints--senat-komisja-spraw-unii-europejskiej-do-13-10-2026": {
+   "id": "e-senat--appoints--senat-komisja-spraw-unii-europejskiej-do-13-10-2026",
    "type": "appoints",
    "fromId": "pl-senat",
-   "toId": "pl-senat-komisja-spraw-unii-europejskiej",
+   "toId": "pl-senat-komisja-spraw-unii-europejskiej-do-13-10-2026",
    "cite": "Regulamin Senatu art. 13 ust. 1 (Senat powołuje komisje stałe); Konstytucja RP art. 110 ust. 3 w zw. z art. 124",
    "citeUrl": "https://eli.gov.pl/eli/MP/1991/11/ogl",
-   "seatsAppointed": 10,
+   "seatsAppointed": 0,
    "disputed": false,
    "provenance": {
     "sources": [
-     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej.html",
+     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,230,komisja-spraw-unii-europejskiej-do-13-10-2026.html",
      "https://eli.gov.pl/eli/MP/1991/11/ogl"
     ],
     "confidence": "high"
    }
   },
-  "e-senat--appoints--senat-komisja-spraw-zagranicznych": {
-   "id": "e-senat--appoints--senat-komisja-spraw-zagranicznych",
+  "e-senat--appoints--senat-komisja-spraw-zagranicznych-do-13-10-2026": {
+   "id": "e-senat--appoints--senat-komisja-spraw-zagranicznych-do-13-10-2026",
    "type": "appoints",
    "fromId": "pl-senat",
-   "toId": "pl-senat-komisja-spraw-zagranicznych",
+   "toId": "pl-senat-komisja-spraw-zagranicznych-do-13-10-2026",
    "cite": "Regulamin Senatu art. 13 ust. 1 (Senat powołuje komisje stałe); Konstytucja RP art. 110 ust. 3 w zw. z art. 124",
    "citeUrl": "https://eli.gov.pl/eli/MP/1991/11/ogl",
-   "seatsAppointed": 7,
+   "seatsAppointed": 0,
    "disputed": false,
    "provenance": {
     "sources": [
-     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych.html",
+     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,231,komisja-spraw-zagranicznych-do-13-10-2026.html",
+     "https://eli.gov.pl/eli/MP/1991/11/ogl"
+    ],
+    "confidence": "high"
+   }
+  },
+  "e-senat--appoints--senat-komisja-spraw-zagranicznych-i-unii-europejskiej": {
+   "id": "e-senat--appoints--senat-komisja-spraw-zagranicznych-i-unii-europejskiej",
+   "type": "appoints",
+   "fromId": "pl-senat",
+   "toId": "pl-senat-komisja-spraw-zagranicznych-i-unii-europejskiej",
+   "cite": "Regulamin Senatu art. 13 ust. 1 (Senat powołuje komisje stałe); Konstytucja RP art. 110 ust. 3 w zw. z art. 124",
+   "citeUrl": "https://eli.gov.pl/eli/MP/1991/11/ogl",
+   "seatsAppointed": 15,
+   "disputed": false,
+   "provenance": {
+    "sources": [
+     "https://www.senat.gov.pl/prace/komisje-senackie/sklad,258,komisja-spraw-zagranicznych-i-unii-europejskiej.html",
      "https://eli.gov.pl/eli/MP/1991/11/ogl"
     ],
     "confidence": "high"
