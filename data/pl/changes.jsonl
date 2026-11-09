@@ -61,3 +61,5 @@
 {"date": "2026-10-26", "source": "parlament", "kind": "edge_removed", "type": "appoints", "fromId": "pl-senat", "toId": "pl-senat-komisja-spraw-zagranicznych"}
 {"date": "2026-11-02", "source": "parlament", "kind": "node_changed", "nodeId": "pl-sejm-klub-konfederacja", "nodeName": "Klub Poselski Konfederacja", "field": "seatsCount", "old": 16, "new": 17}
 {"date": "2026-11-02", "source": "parlament", "kind": "node_changed", "nodeId": "pl-sejm-kolo-demokracja", "nodeName": "Koło Poselskie Demokracja Bezpośrednia", "field": "seatsCount", "old": 4, "new": 3}
+{"date": "2026-11-09", "source": "parlament", "kind": "node_changed", "nodeId": "pl-sejm-klub-ko", "nodeName": "Klub Parlamentarny Koalicja Obywatelska - Platforma Obywatelska, Nowoczesna, Inicjatywa Polska, Zieloni", "field": "seatsCount", "old": 156, "new": 155}
+{"date": "2026-11-09", "source": "parlament", "kind": "person_changed", "nodeId": "pl-sejm-komisja-ksp", "nodeName": "Komisja Kultury, Dziedzictwa Narodowego i Środków Przekazu (Sejm)", "person": "Wojciech Król", "field": "party", "old": "KO", "new": "niez.", "evidence": "https://api.sejm.gov.pl/sejm/term10/committees/KSP"}
