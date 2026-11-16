@@ -1,10 +1,10 @@
 {
  "chunk": "parlament",
- "verifiedAt": "2026-11-09",
+ "verifiedAt": "2026-11-16",
  "summary": "Weryfikacja skryptowa: drugie pobranie źródeł i kontrola nazwisk; przepisy sprawdzone w tekstach regulaminów z ELI.",
  "stats": {
   "nodes_checked": 82,
-  "people_checked": 338,
+  "people_checked": 344,
   "edges_checked": 83
  },
  "nodes": [
@@ -2296,14 +2296,56 @@
   },
   {
    "nodeId": "pl-sejm-klub-rozwojplus",
-   "personId": "pl-mateusz-morawiecki",
+   "personId": "pl-lukasz-schreiber",
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
   },
   {
    "nodeId": "pl-sejm-klub-rozwojplus",
-   "personId": "pl-lukasz-schreiber",
+   "personId": "pl-grzegorz-puda",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-rozwojplus",
+   "personId": "pl-krzysztof-szczucki",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-rozwojplus",
+   "personId": "pl-maria-koc",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-rozwojplus",
+   "personId": "pl-olga-semeniuk-patkowska",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-rozwojplus",
+   "personId": "pl-pawel-jablonski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-rozwojplus",
+   "personId": "pl-piotr-uscinski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
+  },
+  {
+   "nodeId": "pl-sejm-klub-rozwojplus",
+   "personId": "pl-szymon-sek",
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/clubs/RozwojPlus/members"
