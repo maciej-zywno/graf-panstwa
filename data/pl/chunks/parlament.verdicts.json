@@ -1,10 +1,10 @@
 {
  "chunk": "parlament",
- "verifiedAt": "2026-11-16",
+ "verifiedAt": "2026-11-23",
  "summary": "Weryfikacja skryptowa: drugie pobranie źródeł i kontrola nazwisk; przepisy sprawdzone w tekstach regulaminów z ELI.",
  "stats": {
   "nodes_checked": 82,
-  "people_checked": 344,
+  "people_checked": 343,
   "edges_checked": 83
  },
  "nodes": [
@@ -1064,6 +1064,13 @@
   },
   {
    "nodeId": "pl-sejm-komisja-ksp",
+   "personId": "pl-krzysztof-piatkowski",
+   "status": "confirmed",
+   "fixes": {},
+   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
+  },
+  {
+   "nodeId": "pl-sejm-komisja-ksp",
    "personId": "pl-norbert-kaczmarczyk",
    "status": "confirmed",
    "fixes": {},
@@ -1072,13 +1079,6 @@
   {
    "nodeId": "pl-sejm-komisja-ksp",
    "personId": "pl-urszula-augustyn",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
-  },
-  {
-   "nodeId": "pl-sejm-komisja-ksp",
-   "personId": "pl-wojciech-krol",
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/KSP"
@@ -1709,13 +1709,6 @@
   {
    "nodeId": "pl-sejm-komisja-rsp",
    "personId": "pl-tomasz-glogowski",
-   "status": "confirmed",
-   "fixes": {},
-   "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RSP"
-  },
-  {
-   "nodeId": "pl-sejm-komisja-rsp",
-   "personId": "pl-lukasz-osmalak",
    "status": "confirmed",
    "fixes": {},
    "note": "nazwisko znalezione w https://api.sejm.gov.pl/sejm/term10/committees/RSP"
